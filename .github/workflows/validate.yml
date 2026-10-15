@@ -1,0 +1,27 @@
+name: Dataset Invariant Validation
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate-benchmark:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Comprehensive Offline Politics Validation
+        run: |
+          python scripts/validate_politics_dataset.py Dataset_\ BanglaBBQ_Old/Politics/banglabbq_politics_english.jsonl Dataset_\ BanglaBBQ_Old/Politics/banglabbq_politics_bengali.jsonl
+
+      - name: Run Canonical Directory Validation
+        run: |
+          python scripts/validate_politics_dataset.py BanglaBBQ_Politics/banglabbq_politics_english.jsonl BanglaBBQ_Politics/banglabbq_politics_bengali.jsonl
