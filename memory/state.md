@@ -16,6 +16,7 @@
 - [x] Restored exact visual replication of Age formatting on both Politics sheets (`BanglaBBQ_ENG_Politics` and `BanglaBBQ_BEN_Politics`): applied direct `copyPaste` with `PASTE_FORMAT` from Age sheets across header A1:O1 and all sixty 4-row blocks A2:O241. Replicated column widths, restored all 5 canonical conditional format rules (Col C ambig/disambig, Col D neg/nonneg, Col E NA light blue), and set row heights (Header 28px, Ambig 42px, Disambig 88px) so multi-line wrapped text displays with complete vertical clarity and zero truncation.
 - [x] Successfully expanded Politics benchmark from 5 to 20 source-backed themes (Q1–Q20): preserved Q1–Q5 100% unchanged, added 15 new themes (Q6–Q20) with 48 records each across 2 counterfactual orientations, 4 conditions, and all 6 answer permutations (3!). Total 960 records per language (IDs 0–959) written to live Google Sheets and local JSONL with 0 duplicates, 0 label errors, 100% bilingual parity, and full Age styling replication across rows 1–961.
 - [x] Initialized Git repository and pushed initial commit (878c75b) containing Age (2,920 rows) and Politics 20 themes (960 rows) to https://github.com/Hasinish/Research-BanglaBBQ.git
+- [x] Un-ignored and pushed full `PakBBQ_Repo` baseline (150+ files, 133MB, evaluation pipelines, analysis results, and datasets) in commit `bd18ed4` while keeping Google credentials (`token.json`) protected.
 - [ ] Receive evaluation / SafeLLM pipeline code link promised tomorrow by team member
 
 ## Last Session (Convo 95d8ba9a-47de-445d-b9f2-8ce163f6afcd)
