@@ -6,6 +6,10 @@ client_secret*.json
 *.env
 .env
 
+# Personal & Sensitive Info
+personal_info.md
+memory/personal_info.md
+
 
 # Python Cache & Bytecode
 __pycache__/
