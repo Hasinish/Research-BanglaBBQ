@@ -6,8 +6,6 @@ client_secret*.json
 *.env
 .env
 
-# Cloned External Repositories
-PakBBQ_Repo/
 
 # Python Cache & Bytecode
 __pycache__/
