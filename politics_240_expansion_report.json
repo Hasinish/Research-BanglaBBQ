@@ -1,0 +1,23 @@
+{
+  "total_records": 240,
+  "records_per_template": {
+    "1": 48,
+    "2": 48,
+    "3": 48,
+    "4": 48,
+    "5": 48
+  },
+  "condition_counts": {
+    "ambig": 120,
+    "disambig": 120
+  },
+  "polarity_counts": {
+    "neg": 120,
+    "nonneg": 120
+  },
+  "label_distribution": {
+    "0": 80,
+    "1": 80,
+    "2": 80
+  }
+}

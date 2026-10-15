@@ -1,0 +1,32 @@
+# Authentication & Credentials
+token.json
+token.pickle
+credentials.json
+client_secret*.json
+*.env
+.env
+
+# Cloned External Repositories
+PakBBQ_Repo/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Virtual Environments
+venv/
+.venv/
+env/
+
+# IDE / Editor Settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS Artifacts
+Thumbs.db
+Desktop.ini
+.DS_Store
