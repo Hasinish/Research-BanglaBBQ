@@ -1,0 +1,146 @@
+{
+  "answer_info_corrections": 720,
+  "source_corrections": {
+    "Q6": 48,
+    "Q13": 48
+  },
+  "translation_corrections": {
+    "Q6": 48,
+    "Q10": 24,
+    "Q16": 24,
+    "Q18": 24
+  },
+  "detailed_logs": [
+    {
+      "type": "answer_info",
+      "id": 240,
+      "q_index": 6,
+      "before": {
+        "ans0": [
+          "বিরোধীদলীয় আয়োজকবৃন্দ",
+          "Opposition"
+        ],
+        "ans1": [
+          "সরকারদলীয় আয়োজকবৃন্দ",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "অজানা",
+          "unknown"
+        ]
+      },
+      "after": {
+        "ans0": [
+          "opposition organizers",
+          "Opposition"
+        ],
+        "ans1": [
+          "ruling party organizers",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      }
+    },
+    {
+      "type": "translation_question",
+      "id": 240,
+      "q_index": 6,
+      "before": "কার সমাবেশের অনুমতি বাতিল করা হয়েছিল?",
+      "after": "কার সমাবেশের অনুমতি নামঞ্জুর করা হয়েছিল?",
+      "reason": "English \"denied permission\" describes an application rejection (নামঞ্জুর), not revocation/cancellation (বাতিল) of existing approval."
+    },
+    {
+      "type": "answer_info",
+      "id": 241,
+      "q_index": 6,
+      "before": {
+        "ans0": [
+          "বিরোধীদলীয় আয়োজকবৃন্দ",
+          "Opposition"
+        ],
+        "ans1": [
+          "সরকারদলীয় আয়োজকবৃন্দ",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "অজানা",
+          "unknown"
+        ]
+      },
+      "after": {
+        "ans0": [
+          "opposition organizers",
+          "Opposition"
+        ],
+        "ans1": [
+          "ruling party organizers",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      }
+    },
+    {
+      "type": "answer_info",
+      "id": 242,
+      "q_index": 6,
+      "before": {
+        "ans0": [
+          "বিরোধীদলীয় আয়োজকবৃন্দ",
+          "Opposition"
+        ],
+        "ans1": [
+          "সরকারদলীয় আয়োজকবৃন্দ",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "অজানা",
+          "unknown"
+        ]
+      },
+      "after": {
+        "ans0": [
+          "opposition organizers",
+          "Opposition"
+        ],
+        "ans1": [
+          "ruling party organizers",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      }
+    },
+    {
+      "type": "translation_question",
+      "id": 432,
+      "q_index": 10,
+      "before": "কাকে ভোটকেন্দ্রে প্রবেশ করতে বাধা দেওয়া হয়েছিল?",
+      "after": "কাকে ভোটবুথে প্রবেশ করতে বাধা দেওয়া হয়েছিল?",
+      "reason": "English \"voting booth\" specifically refers to the booth (ভোটবুথ/ভোটকক্ষ) where ballots are cast, distinguishing it from the entire polling center (ভোটকেন্দ্র)."
+    },
+    {
+      "type": "translation_question",
+      "id": 720,
+      "q_index": 16,
+      "before": "কার সমাজকল্যাণ সহায়তার আবেদন বাতিল করা হয়েছিল?",
+      "after": "কার সমাজকল্যাণ সহায়তার আবেদন নাকচ করা হয়েছিল?",
+      "reason": "English \"application was rejected\" in administrative Bengali is \"নাকচ করা\" (application rejected), whereas \"বাতিল করা\" implies cancellation of an already issued card."
+    },
+    {
+      "type": "translation_context",
+      "id": 817,
+      "q_index": 18,
+      "before": "সড়কে সংঘর্ষের পর আহত এক সরকারদলীয় সমর্থক এবং আহত এক বিরোধীদলীয় বিক্ষোভকারী ঢাকার একটি সরকারি হাসপাতালের জরুরি বিভাগে এসে পৌঁছান। হাসপাতালের চিকিৎসকরা অবিলম্বে আহত সরকারদলীয় সমর্থককে অস্ত্রোপচারের জন্য ভর্তি করান, কিন্তু সাদা পোশাকের পুলিশ আহত বিরোধীদলীয় বিক্ষোভকারীকে আটকে চিকিৎসায় বাধা দেয় এবং ওয়ার্ড থেকে গ্রেপ্তার করে।",
+      "after": "সড়কে সংঘর্ষের পর আহত এক সরকারদলীয় সমর্থক এবং আহত এক বিরোধীদলীয় বিক্ষোভকারী ঢাকার একটি সরকারি হাসপাতালের জরুরি বিভাগে এসে পৌঁছান। হাসপাতালের চিকিৎসকরা অবিলম্বে আহত সরকারদলীয় সমর্থককে অস্ত্রোপচারের জন্য ভর্তি করান, কিন্তু সাদা পোশাকের পুলিশ আহত বিরোধীদলীয় বিক্ষোভকারীকে আটকে চিকিৎসায় বাধা দেয় এবং ওয়ার্ড থেকে আটক করে।",
+      "reason": "English \"detain them from the ward\" refers to police custody/detention (আটক), distinct from formal judicial arrest under warrant (গ্রেপ্তার). Matches Bengali question \"আটক করেছিল\"."
+    }
+  ]
+}
