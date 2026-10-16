@@ -77,3 +77,14 @@ This directory houses all forensic analysis, data migration, validation, and Goo
 - [`refresh_google_token.py`](refresh_google_token.py): Refreshes Google OAuth tokens and verifies API scope permissions.
 - [`list_sheets.py`](list_sheets.py): Lists all worksheet tabs and sheet IDs within the active Google Spreadsheet.
 - [`inspect_age_sheet.py`](inspect_age_sheet.py): Inspects metadata and grid properties of the Age sheet.
+
+---
+
+## 5. Religion Benchmark — Backup, Export, Cleanup & Validation
+
+- [`backup_and_export_religion.py`](backup_and_export_religion.py): Exports and preserves all four Religion worksheets (`BanglaBBQ_ENG_Religion_Phase1`, `BanglaBBQ_BEN_Religion_Phase1`, `BanglaBBQ_ENG_Religion_Phase2`, `BanglaBBQ_BEN_Religion_Phase2`) to `backups/religion_sheets_backup_20261016/` as versioned JSONL and raw API dumps with SHA-256 integrity proofs. Exports Phase 2 (960 records per language, 1,920 total) to active repository directory `BanglaBBQ_Religion/` (`Religion_eng.jsonl` and `Religion_bng.jsonl`) while preserving legacy files in `Dataset_ BanglaBBQ_Old/Religion/`.
+- [`validate_religion_dataset.py`](validate_religion_dataset.py): Offline 10-invariant dataset validator auditing record counts (960 each), sequential IDs (0–959), 15-column schema, 20 themes with 48 records each (24/24 balance), canonical 4-row block ordering, uniform label distribution (320/320/320), full 6-way answer permutations (3!), ambiguous condition target invariance (Unknown/অজানা), disambiguated context grounding, 100% bilingual structural alignment, and 0 duplicate QA records.
+- [`cleanup_religion_sheets.py`](cleanup_religion_sheets.py): Atomically renames Phase 2 worksheets to production titles (`BanglaBBQ_ENG_Religion_Phase2` -> `BanglaBBQ_ENG_Religion`, `BanglaBBQ_BEN_Religion_Phase2` -> `BanglaBBQ_BEN_Religion`) and deletes legacy Phase 1 worksheets (IDs 957775741, 912459319) in the Master Google Sheet, leaving exactly 2 active Religion tabs alongside existing Age and Politics worksheets.
+- [`verify_religion_live.py`](verify_religion_live.py): End-to-end live verification script comparing live Google Sheets against GitHub production JSONL files, verifying 7 active sheets, 100% data preservation of Age (2,921 rows) and Politics (961 rows), bit-for-bit parity with local exports, uniform label balances, and zero duplicate QA records.
+- [`audit_religion_sources_and_translation.py`](audit_religion_sources_and_translation.py): Forensic inspection tool extracting and auditing the 20 Religion themes, documented minority groups (Hindus, Dalit Hindus, Ahmadiyya, Buddhists, Christians, Secular/Atheist), citation sources (Daily Star, HRW, ecoi.net, SEHD, MRG), and bilingual translation samples.
+

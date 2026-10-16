@@ -18,6 +18,11 @@ This repository hosts the research assets, dataset manifests, validation tooling
    - Canonical 4-row block sequence throughout (`ambig+neg`, `disambig+neg`, `ambig+nonneg`, `disambig+nonneg`).
    - Perfectly balanced labels (320 / 320 / 320), 0 label errors, 0 duplicate QA pairs.
    - Complete bilingual alignment across all 10 structural/metadata fields.
+3. **Religious Bias Benchmark (`Religion`)**:
+   - **20 socio-cultural themes** representing documented religious minority contexts in Bangladesh (Hindus, Dalit Hindus, Ahmadiyya Muslims, Buddhists, Christians, Secular/Atheists).
+   - **960 records** each in English and Bengali (1,920 total records) exported directly from Phase 2 worksheets.
+   - 100% mathematical invariant parity: full 6-way answer permutations (3!), canonical 4-row block sequence (`ambig+neg`, `disambig+neg`, `ambig+nonneg`, `disambig+nonneg`), uniform 320/320/320 label balance, and 0 duplicate records.
+   - Synchronized live with Master Google Sheet tabs `BanglaBBQ_ENG_Religion` and `BanglaBBQ_BEN_Religion`.
 
 ---
 
@@ -26,6 +31,9 @@ This repository hosts the research assets, dataset manifests, validation tooling
 To ensure clean distinction between active production datasets, canonical exports, reference baselines, and historical archives:
 
 ```
+├── BanglaBBQ_Religion/               # Canonical, clean production exports for Religion (Phase 2)
+│   ├── Religion_eng.jsonl                 # 960-record verified English Religion benchmark
+│   └── Religion_bng.jsonl                 # 960-record verified Bengali Religion benchmark
 ├── BanglaBBQ_Politics/               # Canonical, clean production exports for Politics
 │   ├── banglabbq_politics_english.jsonl   # 960-record verified English Politics benchmark
 │   └── banglabbq_politics_bengali.jsonl   # 960-record verified Bengali Politics benchmark
@@ -105,8 +113,9 @@ cd Research-BanglaBBQ
 # Install dependencies
 pip install -r requirements.txt
 
-# Execute comprehensive offline test suite
+# Execute comprehensive offline test suites
 python scripts/validate_politics_dataset.py
+python scripts/validate_religion_dataset.py
 ```
 This tests all 10 mathematical and semantic invariants:
 1. Exact 960 records per language.
@@ -118,11 +127,12 @@ This tests all 10 mathematical and semantic invariants:
 7. Disambiguated QA pairs logically proven by contextual evidence and counterfactual inversion.
 8. 100% bilingual structural and metadata equality.
 9. Zero duplicate QA records (960 completely unique tuples).
-10. Byte-for-byte SHA-256 hash preservation of baseline Q1–Q5.
+10. Byte-for-byte SHA-256 hash preservation of baselines.
 
 ### 2. Live Google Sheets Audit (Requires `token.json`)
 ```bash
 python scripts/verify_politics_960_live.py
+python scripts/verify_religion_live.py
 python scripts/verify_exact_age_style.py
 python scripts/audit_live_p1_p2.py
 ```

@@ -97,18 +97,31 @@ The official PakBBQ benchmark repository (`Hashmat02/PakBBQ-A-Culturally-Adapted
 
 ---
 
+### Production Datasets (`BanglaBBQ_Religion/`, `BanglaBBQ_Politics/`, `BanglaBBQ_BEN_New/`)
+- `BanglaBBQ_Religion/`:
+  - `Religion_eng.jsonl`: 960-record English Religion benchmark across 20 source-grounded themes, 48 rows/theme, full 6-way answer permutations (3!), canonical 4-row BBQ block sequence, uniform 320/320/320 label distribution, 0 duplicates, 15-column schema.
+  - `Religion_bng.jsonl`: 960-record parallel Bengali Religion benchmark with 100% structural parity.
+- `BanglaBBQ_Politics/`:
+  - `banglabbq_politics_english.jsonl`: 960-record English Politics benchmark across 20 themes.
+  - `banglabbq_politics_bengali.jsonl`: 960-record Bengali Politics benchmark.
+- `BanglaBBQ_BEN_New/`:
+  - `Age.jsonl`: 2,920-record production Bengali Age benchmark.
+
+---
+
 ### Scripts Directory (`scripts/`)
-Centralized directory containing all 43 automated research, migration, and verification scripts:
-- `README.md`: Index and documentation of all scripts grouped by domain (Age migrations, Age audits, Politics expansion, Utilities).
-- `apply_p1_p2_corrections.py`: Applies Grandparent/Grandchild (56 rows) and Q7 (48 rows) fixes to Google Sheets and JSONL.
-- `audit_live_p1_p2.py`: Automated live Google Sheets audit validating P1 and P2 corrections.
-- `apply_family_corrections.py`: Disambiguates Grandma/Grandpa (48 rows) into নানি/নানা.
-- `audit_live_sheet_corrections.py`: Validates family term disambiguation on live Google Sheet.
-- `expand_politics_to_160.py`: Expands Politics benchmark from 112 to 160 balanced rows.
-- `apply_160_expansion.py`: Pushes 160-row Politics benchmark to Google Sheets.
-- `fix_politics_color_coding.py`: Applies styling and executive color coding to Politics sheets.
+Centralized directory containing all 45+ automated research, migration, and verification scripts:
+- `README.md`: Index and documentation of all scripts grouped by domain (Age migrations, Age audits, Politics expansion, Religion backup/validation, Utilities).
+- `backup_and_export_religion.py`: Exports all 4 Religion worksheets to versioned backup and exports Phase 2 to active dataset.
+- `validate_religion_dataset.py`: 10-invariant offline test suite for Religion benchmark.
+- `cleanup_religion_sheets.py`: Renames Phase 2 worksheets to `BanglaBBQ_ENG_Religion` and `BanglaBBQ_BEN_Religion` and deletes Phase 1 worksheets.
+- `verify_religion_live.py`: Automated live verification comparing Google Sheets to GitHub JSONL files.
+- `audit_religion_sources_and_translation.py`: Forensic audit of 20 Religion themes, minority groups, and source URLs.
+- `validate_politics_dataset.py`: 10-invariant offline test suite for Politics benchmark.
+- `repair_politics_dataset.py`: Deterministic repair aligning 720 Bengali answer_info records.
+- `apply_p1_p2_corrections.py`: Applies Grandparent/Grandchild (56 rows) and Q7 (48 rows) fixes.
 - `refresh_google_token.py`: Handles Google OAuth token refresh and validation.
-- Additional 34 forensic scanning, inspection, matrix validation, and simulation scripts.
+- Additional forensic scanning, inspection, matrix validation, and simulation scripts.
 
 ---
 

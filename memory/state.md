@@ -18,9 +18,19 @@
 - [x] Initialized Git repository and pushed initial commit (878c75b) containing Age (2,920 rows) and Politics 20 themes (960 rows) to https://github.com/Hasinish/Research-BanglaBBQ.git
 - [x] Un-ignored and pushed full `PakBBQ_Repo` baseline (150+ files, 133MB, evaluation pipelines, analysis results, and datasets) in commit `bd18ed4` while keeping Google credentials (`token.json`) protected.
 - [x] Completed end-to-end audit, repair, validation, and live synchronization of Politics benchmark: aligned 720 Bengali `answer_info` records to English canonical identities, corrected Bengali administrative translations (Q6, Q10, Q16, Q18), updated source URLs (Q6 HRW, Q13 CPJ), built comprehensive 10-invariant offline test suite (`scripts/validate_politics_dataset.py`), added GitHub Actions CI (`.github/workflows/validate.yml`), authored `CITATION.cff`, updated `README.md` and relative links in `scripts/README.md`, synchronized Google Sheets tabs, and verified 100% parity with untouched Q1-Q5 and Age tabs.
+- [x] Exported and preserved all 4 Religion worksheets to versioned GitHub backup `backups/religion_sheets_backup_20261016/` with raw API dumps, metadata, and SHA-256 integrity proofs.
+- [x] Preserved legacy Religion files in `Dataset_ BanglaBBQ_Old/Religion/` with 100% byte-for-byte SHA-256 preservation.
+- [x] Exported Phase 2 as active Religion benchmark (20 themes x 48 records = 960 records each, 1,920 total) to `BanglaBBQ_Religion/` (`Religion_eng.jsonl` and `Religion_bng.jsonl`).
+- [x] Committed and pushed backups and active Religion datasets to GitHub before modifying Google Sheets (`6b415c3`).
+- [x] Cleaned up Master Google Sheet: renamed Phase 2 sheets to `BanglaBBQ_ENG_Religion` and `BanglaBBQ_BEN_Religion`, and deleted legacy Phase 1 sheets (`BanglaBBQ_ENG_Religion_Phase1`, `BanglaBBQ_BEN_Religion_Phase1`).
+- [x] Executed independent end-to-end validation (`scripts/validate_religion_dataset.py` and `scripts/verify_religion_live.py`): confirmed exact agreement between live Google Sheets and GitHub JSONL, uniform 320/320/320 label balance, 0 duplicates, sequential IDs 0-959, and untouched Age and Politics sheets.
 - [ ] Receive evaluation / SafeLLM pipeline code link promised tomorrow by team member
 
-## Last Session (Convo 95d8ba9a-47de-445d-b9f2-8ce163f6afcd)
+## Last Session (Convo 88107fa0-e853-403f-8950-4ede808b9fdb)
+- Backed up Phase 1 & Phase 2 Religion worksheets to GitHub (`backups/religion_sheets_backup_20261016/`).
+- Established `BanglaBBQ_Religion/` active dataset directory with `Religion_eng.jsonl` and `Religion_bng.jsonl` (960 records each).
+- Cleaned up Master Google Sheet (atomic rename of Phase 2, deletion of Phase 1).
+- Independently verified 10 structural & live invariants across Google Sheets and GitHub exports.
 - Created full workspace memory infrastructure (`personality.md`, `personal_info.md`, `purpose.md`, `state.md`, `history.md`, `index.md`).
 - Senior brother identified as Provat Saha (BRACU CSE, author on T2510616).
 - Task specified: Provat requested direct translation of `PakBBQ_Repo/PakBBQ/PakBBQ_ENG/Age.jsonl` into Bengali.

@@ -25,3 +25,8 @@ jobs:
       - name: Run Canonical Directory Validation
         run: |
           python scripts/validate_politics_dataset.py BanglaBBQ_Politics/banglabbq_politics_english.jsonl BanglaBBQ_Politics/banglabbq_politics_bengali.jsonl
+
+      - name: Run Religion Benchmark Validation
+        run: |
+          python scripts/validate_religion_dataset.py BanglaBBQ_Religion/Religion_eng.jsonl BanglaBBQ_Religion/Religion_bng.jsonl
+
