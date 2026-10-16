@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-10-16T10:57:37.798667Z",
+  "spreadsheet_id": "1xZhhKZoZuSy-ZXAWWdhCpq9QLh705ScErcnBZacmZnY",
+  "tabs": {
+    "BanglaBBQ_ENG_Religion_Phase1": {
+      "records_count": 392,
+      "filename": "BanglaBBQ_ENG_Religion_Phase1.jsonl",
+      "sha256": "b2fd291c0786c6ccf84b52d41edfd5d3c124c65498618caebd1c375ff27e1c4b"
+    },
+    "BanglaBBQ_BEN_Religion_Phase1": {
+      "records_count": 392,
+      "filename": "BanglaBBQ_BEN_Religion_Phase1.jsonl",
+      "sha256": "7169356883f5156b4d8f525e8a7a357fb5565a2feadc4cb8fc991a153f0919e1"
+    },
+    "BanglaBBQ_ENG_Religion_Phase2": {
+      "records_count": 960,
+      "filename": "BanglaBBQ_ENG_Religion_Phase2.jsonl",
+      "sha256": "25adc12cbf70e018407677077734cd145d2b9ad035708ea89abe8e2c415d52cd"
+    },
+    "BanglaBBQ_BEN_Religion_Phase2": {
+      "records_count": 960,
+      "filename": "BanglaBBQ_BEN_Religion_Phase2.jsonl",
+      "sha256": "ba7fd7cb6404711f7f8b1e44640065db7fd1481f9bbb22d9a484386a627e6905"
+    }
+  },
+  "raw_sheets_data_sha256": "a59fc26057e8942b48c8b4555a80d470e556e03b15c718753bc3d4eadc481bee"
+}
