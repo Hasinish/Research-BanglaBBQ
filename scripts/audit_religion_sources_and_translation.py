@@ -115,6 +115,8 @@ def main():
     print("LIMITATION: Independent native Bengali linguistic naturalness review")
     print("and independent source-to-scenario relevance checks remain required.")
     print("====================================================================")
+    if cf_errors or ambig_err or disambig_err:
+        raise SystemExit(1)
 
 if __name__ == '__main__':
     main()
