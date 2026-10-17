@@ -3,7 +3,7 @@
 **Last Verified Date**: 2026-10-17  
 **Latest Verified Production Expansion Main Commit**: `937835f3f02b42695891d995d80c2de08a78207e` (Religion V1+V2+V3 canonical files at 2,880 records per language; main-branch Dataset Invariant Validation run `39049474804` and Religion assembly run `39049474790` both succeeded). **Preserved Pre-Expansion Baseline**: `9f72d105d8dd16b6d69dd4121983ec7a90c4a745` (960/language).
 **Latest Memory Synchronization**: 2026-10-17, verified expansion main checkpoint `937835f3`; this header refresh is an additional memory-only commit (no dataset changes).
-**Current Milestone**: Religion expanded from 960 to 2,880 records/language after bilingual V2/V3 template review and structural validation; Politics remains 2,880/language; Age accepted for current research phase; remaining six categories pending.
+**Current Milestone**: Religion expanded from 960 to 2,880 records/language after bilingual V2/V3 template review and structural validation; Politics remains 2,880/language; Age accepted for current research phase; Religion six-theme evidence audit complete with substantive source issues awaiting production repair; remaining six categories pending.
 
 ---
 
@@ -41,6 +41,7 @@
 | `review_20_politics_templates` | `1636577158` | 1 | 21 (20 themes) | Existing Politics Q1–Q20 disambiguated context exemplars comparing current English, original thesis Bengali (Q1–Q5), and current Bengali. Review-only; production datasets untouched. |
 | `Review_Politics_20_Variations` | `722176577` | 2 | 21 (20 themes) | Side-by-side original/V2/V3 bilingual contexts Q1–Q20; user authorized integration of 40 additional bilingual wording pairs into the active dataset on 2026-10-17. Independent linguistic/source review still outstanding. |
 | `Review_Religion_20_Variations` | `1743426767` | 13 (verified 2026-10-17) | 21 (20 themes) | Original Religion disambiguated contexts plus proposed English/Bengali V2/V3 variants, 40 candidate pairs. **Review only**; amber source-relevance flags in Q3, Q8, Q9–Q10 and Q12–Q13. |
+| `Review_Religion_Source_Audit_20261017` | `1272448316` | 22 at creation (2026-10-17) | 7 rows (6 audited themes) | Source-to-scenario verdicts for Q3/Q8/Q9/Q10/Q12/Q13; exact evidence URLs, support limits, proposed repairs. Separate review artifact, not production data. |
 | `PakBBQ_ENG_Age` | `0` | 3 | 2,921 (2,920 data) | Complete English Age benchmark source pool imported from PakBBQ. |
 | `BanglaBBQ_BEN_Age` | `1006819770` | 4 | 2,921 (2,920 data) | Complete Bengali Age benchmark updated with Q1 context alignment, Q9 technology alignment, Q19 semantic signer/youth repairs, and Q3, Q8, Q10, Q11, Q12 lexical distinctions. 100% unique context parity with English. |
 | `BanglaBBQ_ENG_Politics` | `1888499205` | 5 | 2,881 (2,880 data) | Expanded active Politics English; exact live read-back against GitHub 480-row versioned shards, 144 records/theme. |
