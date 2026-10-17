@@ -6,6 +6,10 @@ This directory houses all forensic analysis, data migration, validation, and Goo
 
 ## 1. Age Benchmark — Corrections & Migrations
 
+- [`push_age_repairs.py`](push_age_repairs.py): Pushes deterministic batch updates for the 6 repaired Age themes (Q3, Q8, Q10, Q11, Q12, Q19 — 332 modified rows) to Google Sheet `BanglaBBQ_BEN_Age` and synchronizes `BanglaBBQ_BEN_New/Age.jsonl`.
+- [`simulate_all_age_repairs.py`](simulate_all_age_repairs.py): Complete dry-run simulator and offline 10-invariant QA verification engine across all 2,920 Age records.
+- [`sync_and_validate_age.py`](sync_and_validate_age.py): Comprehensive live verification script verifying bit-for-bit parity with Google Sheets and validating all 10 invariants including 100% unique context parity across all 20 themes.
+- [`audit_cultural_localization.py`](audit_cultural_localization.py): Scans Age TM records (Q13–Q20, IDs 1872–2919) for Pakistani commercial/geographic entities and compares against Bengali domestic localizations.
 - [`apply_p1_p2_corrections.py`](apply_p1_p2_corrections.py): Corrects Grandparent / Grandchild dual terms (`দাদা-দাদি` -> `দাদু`, `নাতি-নাতনি` -> `নাতিটি`) across 56 rows and restores Q7 negative comparative question ("কে তুলনামূলকভাবে কম সৃজনশীল ছিল?") across 48 rows. Updates both live Google Sheets (`BanglaBBQ_BEN_Age`) and local mirror (`BanglaBBQ_BEN_New/Age.jsonl`).
 - [`apply_family_corrections.py`](apply_family_corrections.py): Applies project-standard convention for `Grandma` -> `নানি` (24 rows) and `Grandpa` -> `নানা` (24 rows) in `BanglaBBQ_BEN_Age`.
 - [`test_fixes_simulation.py`](test_fixes_simulation.py): Dry-run replacement logic simulator for Problem 1 (GP/GC) and Problem 2 (Q7) before live Sheets execution.

@@ -110,6 +110,10 @@ These are the canonical, working datasets currently under active research and ev
 
 ## 4. Versioned Backups ([`backups/`](file:///d:/Research-BanglaBBQ/backups))
 
+- **`backups/age_sheets_backup_20261017/`**:
+  - `BanglaBBQ_BEN_Age.csv` & `BanglaBBQ_BEN_Age.json` (2,921 rows pre-edit backup).
+  - `PakBBQ_ENG_Age.csv` & `PakBBQ_ENG_Age.json` (2,921 rows English baseline backup).
+  - `Review_Age_20_Templates.csv` & `Review_Age_20_Templates.json` (21 rows review tab backup).
 - **`backups/religion_sheets_backup_20261016/`**:
   - `BanglaBBQ_ENG_Religion_Phase1.jsonl` (480 records).
   - `BanglaBBQ_BEN_Religion_Phase1.jsonl` (480 records).
@@ -125,7 +129,7 @@ These are the canonical, working datasets currently under active research and ev
 
 ## 5. Automation, Validation, & Audit Scripts ([`scripts/`](file:///d:/Research-BanglaBBQ/scripts))
 
-Contains 82 specialized scripts documented in [`scripts/README.md`](file:///d:/Research-BanglaBBQ/scripts/README.md). Key active tools include:
+Contains specialized scripts documented in [`scripts/README.md`](file:///d:/Research-BanglaBBQ/scripts/README.md). Key active tools include:
 
 ### Benchmark Invariant Validators & CI
 - [`scripts/validate_politics_dataset.py`](file:///d:/Research-BanglaBBQ/scripts/validate_politics_dataset.py): 10-invariant offline validator for Politics (counts, sequential IDs, block ordering, label balance, disambig grounding, bilingual parity, 0 duplicates, Q1–Q5 hash preservation).
@@ -133,12 +137,14 @@ Contains 82 specialized scripts documented in [`scripts/README.md`](file:///d:/R
 - [`.github/workflows/validate.yml`](file:///d:/Research-BanglaBBQ/.github/workflows/validate.yml): Automated GitHub Actions CI workflow executing offline validators on every push and pull request.
 
 ### Live Google Sheets Sync & Verification
-- [`scripts/sync_and_validate_age.py`](file:///d:/Research-BanglaBBQ/scripts/sync_and_validate_age.py): Synchronizes live Google Sheets updates from `BanglaBBQ_BEN_Age` to `BanglaBBQ_BEN_New/Age.jsonl` and executes 10-invariant benchmark quality assurance tests.
+- [`scripts/sync_and_validate_age.py`](file:///d:/Research-BanglaBBQ/scripts/sync_and_validate_age.py): Synchronizes live Google Sheets updates from `BanglaBBQ_BEN_Age` to `BanglaBBQ_BEN_New/Age.jsonl` and executes 10-invariant benchmark quality assurance tests across all 20 themes.
+- [`scripts/push_age_repairs.py`](file:///d:/Research-BanglaBBQ/scripts/push_age_repairs.py): Pushes deterministic batch updates for repaired themes to Google Sheets and updates local canonical files.
 - [`scripts/verify_politics_960_live.py`](file:///d:/Research-BanglaBBQ/scripts/verify_politics_960_live.py): Fetches live Google Sheets rows 1–961 and verifies 100% bit-for-bit parity with GitHub JSONL files, conditional rules, and row heights.
 - [`scripts/verify_religion_live.py`](file:///d:/Research-BanglaBBQ/scripts/verify_religion_live.py): Fetches live Google Sheets tabs `BanglaBBQ_ENG_Religion` and `BanglaBBQ_BEN_Religion` and verifies complete parity with GitHub JSONL files.
 - [`scripts/list_sheets.py`](file:///d:/Research-BanglaBBQ/scripts/list_sheets.py): Lists all worksheets, sheet IDs, and indices in the master Google Spreadsheet.
 
 ### Forensic Audit & Diagnostic Tools
+- [`scripts/audit_cultural_localization.py`](file:///d:/Research-BanglaBBQ/scripts/audit_cultural_localization.py): Scans Age TM records (Q13–Q20) for Pakistani commercial/geographic entities and compares against Bengali domestic localizations.
 - [`scripts/audit_religion_sources_and_translation.py`](file:///d:/Research-BanglaBBQ/scripts/audit_religion_sources_and_translation.py): Audits all 20 Religion themes, targeted minority groups, context text, and external source citations.
 - [`scripts/repair_politics_dataset.py`](file:///d:/Research-BanglaBBQ/scripts/repair_politics_dataset.py): Deterministically aligned 720 Bengali `answer_info` records.
 - [`scripts/apply_p1_p2_corrections.py`](file:///d:/Research-BanglaBBQ/scripts/apply_p1_p2_corrections.py): Applied Grandparent/Grandchild (56 rows) and Q7 (48 rows) fixes to Age.
@@ -174,4 +180,7 @@ Contains 82 specialized scripts documented in [`scripts/README.md`](file:///d:/R
 - [`research_logs/TEMPLATE.md`](file:///d:/Research-BanglaBBQ/research_logs/TEMPLATE.md): Standardized template schema for authoring research and audit logs.
 - [`research_logs/2026-10-17_age_q1_context_alignment.md`](file:///d:/Research-BanglaBBQ/research_logs/2026-10-17_age_q1_context_alignment.md): Retrospective audit and context alignment of Age Q1 expanding unique contexts from 11 to 16.
 - [`research_logs/2026-10-17_age_q9_context_alignment.md`](file:///d:/Research-BanglaBBQ/research_logs/2026-10-17_age_q9_context_alignment.md): Retrospective audit and alignment of Age Q9 expanding unique contexts from 60 to 144 and aligning 272 answer options.
+- [`research_logs/2026-10-17_age_q19_semantic_repair.md`](file:///d:/Research-BanglaBBQ/research_logs/2026-10-17_age_q19_semantic_repair.md): Semantic translation repair of neighbor mistranslation and teen/teenager lexical distinction in Age Q19 (120 -> 140 unique contexts).
+- [`research_logs/2026-10-17_age_q3_q8_q10_q11_q12_lexical_repairs.md`](file:///d:/Research-BanglaBBQ/research_logs/2026-10-17_age_q3_q8_q10_q11_q12_lexical_repairs.md): Lexical distinctions across Zoomer vs Gen-Z kid, teen vs teenager, high schooler vs high school student, and fights vs confrontations.
+- [`research_logs/2026-10-17_age_cultural_localization_audit.md`](file:///d:/Research-BanglaBBQ/research_logs/2026-10-17_age_cultural_localization_audit.md): Forensic audit of Pakistani cultural/geographic entities in TM records (Q13–Q20) and recommendations for downstream bilingual alignment.
 
