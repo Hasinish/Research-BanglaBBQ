@@ -150,9 +150,7 @@ def main() -> None:
         corrected_lines = []
         for previous, fixed, raw_line in zip(original_rows, revised_rows, old_lines):
             corrected_lines.append(raw_line if previous == fixed else
-                                   json.dumps(fixed, ensure_ascii=False) + "\\n")
-        # The escaped Python string above represents a newline escape, not
-        # a literal backslash-n in the generated JSONL content.
+                                   json.dumps(fixed, ensure_ascii=False) + "\n")
         corrected_bytes = "".join(corrected_lines).encode("utf-8")
         canonical = DATA / LANG_NAMES[lang]
         current = load_jsonl(canonical.read_bytes())
