@@ -30,3 +30,7 @@ jobs:
         run: |
           python scripts/validate_religion_dataset.py BanglaBBQ_Religion/Religion_eng.jsonl BanglaBBQ_Religion/Religion_bng.jsonl
 
+
+      - name: Run Age English Reproduction and Bilingual Structural QA
+        run: |
+          python scripts/apply_age_english_localization_20261018.py
