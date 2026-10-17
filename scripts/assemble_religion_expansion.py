@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Safely assemble the 2,880-record BanglaBBQ Religion benchmark from immutable shards and an audited post-assembly patch.
 
-The old 960-row V1 prefix remains byte-for-byte intact. The 1,920 appended
-rows are pinned by immutable Git blob hashes, source-row lineage and explicit
-bilingual ambiguous/disambiguated/counterfactual templates. No source review
-or native-speaker linguistic certification is implied by this assembly.
+The historical V1 source and 1,920 expansion rows remain frozen in SHA-pinned
+snapshots and shards. For authorized Q3/Q8/Q9/Q10/Q12/Q13 repairs, this
+assembler applies a separate versioned correction layer to the canonical
+V1/V2/V3 records without rewriting historical inputs. Machine validation is
+not independent native-speaker or causal source-verification certification.
 """
 from __future__ import annotations
 
