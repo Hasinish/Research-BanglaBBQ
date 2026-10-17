@@ -60,7 +60,7 @@
 | Category | Canonical Directory | Primary Files | Record Count |
 | :--- | :--- | :--- | :---: |
 | **Politics** | [`BanglaBBQ_Politics/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Politics) | `banglabbq_politics_english.jsonl`<br/>`banglabbq_politics_bengali.jsonl` | 2,880 ENG<br/>2,880 BEN |
-| **Religion** | [`BanglaBBQ_Religion/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Religion) | `Religion_eng.jsonl`<br/>`Religion_bng.jsonl` | 960 ENG<br/>960 BEN |
+| **Religion** | [`BanglaBBQ_Religion/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Religion) | `Religion_eng.jsonl`<br/>`Religion_bng.jsonl` | 2,880 ENG<br/>2,880 BEN |
 | **Age** | [`BanglaBBQ_BEN_New/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_BEN_New)<br/>Root | `Age.jsonl`<br/>`PakBBQ_Age_English.csv` | 2,920 BEN<br/>2,920 ENG |
 
 ---
@@ -99,6 +99,7 @@
 - [x] Reconciled and documented all automated research, migration, and audit scripts in `scripts/`.
 - [x] Verified live Google Sheets and versioned GitHub snapshots for Politics, Religion, and Age before expansion; afterward verified all 1,920 appended Politics rows/language against the 15-column GitHub expansion shards in 240-row batches and verified CI-assembled canonical snapshots with original baselines.
 - [x] Synchronized approved Religion QA repairs across live Google Sheets (`BanglaBBQ_ENG_Religion` and `BanglaBBQ_BEN_Religion`) and canonical GitHub JSONL files (528 ENG, 504 BEN rows patched across Q2, Q3, Q4, Q5, Q7, Q8, Q9, Q10, Q12, Q13, Q18, Q20). Confirmed 100% bit-for-bit parity across all 960 rows x 15 columns (14,400 cells/lang) via Google Sheets API v4. Verified all 10 invariant checks and counterfactual reversibility. Authored `research_logs/2026-10-17_religion_qa_repair.md`.
+- [x] Completed comprehensive research-quality final validation of the full expanded Religion benchmark (2,880 ENG, 2,880 BEN across 20 themes, V1+V2+V3). Audited Q3, Q8, Q9, Q10, Q12, Q13 and remaining 14 themes for source evidence boundaries, caste-religion intersectionality, and non-eyewitness distinctions. Verified 100% counterfactual A/B inversion, 1,440/1,440 ambiguous Unknown targets, 1,440/1,440 disambiguated grounded entities, full 6-way answer permutations across 480 sub-blocks, zero string anomalies, and 43,200 data cells per language verified with live Google Sheets. Authored `research_logs/2026-10-18_religion_final_qa_and_validation.md`.
 
 ---
 
@@ -111,11 +112,12 @@
 - **English Cultural Modernization Decision (Outstanding)**: Bengali benchmark is already localized (Shwapno, Pathao, Tasty Treat, Dhaka, Chittagong), while English retains Pakistani names (Imtiaz, InDrive, Jalal Sons, Lahore, Karachi). A final editorial decision is pending on whether to modernize the English source to match Bengali or preserve it as a cross-country baseline.
 - **Review Worksheet Exemplar Outdated**: The `Review_Age_20_Templates` sheet currently holds older exemplar rows. Retained untouched per protocol; do not modify without separate authorization.
 
-### B. Religion QA Repairs & Outstanding Publication Considerations
-- **QA Repairs & Live Parity Complete**: Content repairs applied across Q2–Q20 (Q3 water access equal claim, Q5 nonreligious/devout alignment, Q7 civic project reframing, Q8 clerical job denial, Q9/Q10 academic classroom inclusion citations, Q12/Q13 MRG public exclusion citations, Q18 Feni flood relief grounding, Q20 Chittagong high school admission quota grounding). 100% bit-for-bit parity verified with live production sheets `BanglaBBQ_ENG_Religion` and `BanglaBBQ_BEN_Religion`.
-- **Source Relevance Boundary (Formalized)**: Forensic classification completed across all 20 themes. Crucial methodological boundary established: cited institutional reports (ECOI, MRG, Academic studies) substantiate macro socio-cultural discrimination patterns, not literal historical occurrences of fictional micro-vignettes.
-- **Independent Bengali Linguistic Naturalness (Outstanding)**: Colloquial review with native speakers across complex religious and caste terminology is still required prior to final publication submission.
-- **Publication Status**: **NOT publication-ready** until secondary human linguistic certification is completed.
+### B. Religion Benchmark Status & Outstanding Publication Considerations
+- **Comprehensive Validation Complete (2,880 records/lang)**: Full 20 themes x 144 records (V1+V2+V3) structurally verified, live Google Sheets parity confirmed (43,200 cells/lang), 10/10 invariant checks passed, zero duplicate QA tuples, zero string/whitespace anomalies.
+- **Source Relevance & Evidence Boundaries Documented**: Sources for Q3, Q8–Q10, Q12–Q13 and remaining 14 themes verified. Crucial evidentiary boundary established: cited institutional reports substantiate macro-level discrimination patterns, not literal historical accounts of fictional BBQ probes; Q8 documented as an inquiry into an allegation; Q3/Q9/Q10/Q13 recognized as intersectional (caste + religion).
+- **Evaluation Split Leakage Safeguards**: Records can be partitioned cleanly by `parent_example_id` (size 3) or by `question_index` (size 144) to ensure cross-validation without train/test paraphrase leakage.
+- **Independent Bengali Linguistic Naturalness (Outstanding)**: Final qualitative review by native Bangladeshi speakers across all 20 themes remains an explicit requirement prior to publication.
+- **Publication Status**: **NOT publication-ready** until secondary human linguistic certification is completed. Ready for proceeding to Gender Identity audit.
 
 ### C. Category-Level Audits for Remaining 6 Categories
 - **Immediate Priority**: `Gender Identity`, `Physical Appearance`, `Regional Affiliation`, `Educational Background`, `Marital Status`, and `Mental Health` currently reside only in `Dataset_ BanglaBBQ_Old/`.
