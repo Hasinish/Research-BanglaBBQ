@@ -40,6 +40,9 @@ jobs:
       - name: Run 2,880-record Religion invariant validator
         run: python scripts/validate_religion_dataset.py BanglaBBQ_Religion/Religion_eng.jsonl BanglaBBQ_Religion/Religion_bng.jsonl
 
+      - name: Check bilingual counterfactual inversions and label invariants
+        run: python scripts/audit_religion_sources_and_translation.py
+
       - name: Commit materialized canonical JSONL (fast-forward only)
         shell: bash
         run: |
