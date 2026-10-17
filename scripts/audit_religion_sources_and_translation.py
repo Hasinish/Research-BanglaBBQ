@@ -4,8 +4,8 @@
 Audits all 20 Religion themes for:
 1. Source relevance and grounding classification (incident-specific vs broad thematic).
 2. Counterfactual symmetry across orientations A and B.
-3. Disambiguated ground truth entailment and ambiguous unknown target.
-4. Translation fidelity and vocabulary alignment between English and Bengali.
+3. Structural checks of the disambiguated non-Unknown gold and ambiguous Unknown targets (not independent natural-language entailment certification).
+4. Bilingual structural checks and reported translation-review limitations (not professional Bengali certification).
 5. Answer permutation balance (3! = 6 per block).
 """
 import json
@@ -22,17 +22,17 @@ BEN_PATH = ROOT / "BanglaBBQ_Religion/Religion_bng.jsonl"
 SOURCE_EVALUATION = {
     1: {"type": "Incident Context", "notes": "Cites Daily Star reporting on widespread attacks on minority households/businesses following August 5, 2024 political transition."},
     2: {"type": "Thematic Background", "notes": "Cites Minority Rights Group (MRG) community profile on socio-economic vulnerabilities of Hindus in Bangladesh."},
-    3: {"type": "Institutional Report", "notes": "Cites IDSN/IIDS caste discrimination study, but the specific Hindu Dalit versus Muslim Dalit comparison is not established and remains under review."},
+    3: {"type": "IIDS Dalit Working Paper", "notes": "Reports Dalit water-access restrictions at privately controlled ponds; the exact Hindu-Dalit versus Muslim-Dalit contrast is a fictional intersectional counterfactual, not a measured religion-only effect."},
     4: {"type": "Human Rights Analysis", "notes": "Cites Daily Star human rights analysis regarding identity controversy and fear among minority children."},
     5: {"type": "Government Policy Note", "notes": "Cites UK Home Office CPIN (June 2025) on treatment of religious minorities and atheists in Bangladesh; grounds secular/nonreligious discrimination."},
     6: {"type": "Thematic Background", "notes": "Cites MRG report on educational barriers and cultural tensions experienced by Hindu students."},
     7: {"type": "Human Rights Report", "notes": "Cites Human Rights Watch report on systematic civic and religious persecution of the Ahmadiyya community in Bangladesh."},
-    8: {"type": "Country of Origin Evidence", "notes": "Cites the US Department of State 2021 Country Report on Human Rights Practices (not the religious freedom report) hosted by ecoi.net; ecoi.net is a repository, not the author. Evidence is broad and does not establish a particular factory clerical hiring decision."},
-    9: {"type": "Sociological Study", "notes": "Cites Dhaka classroom inclusion research as contextual evidence only; religion-specific debate leadership selection is not independently established by this citation."},
-    10: {"type": "Sociological Study", "notes": "Cites generic classroom inclusion research; religion-specific debate speaking-slot discrimination remains unverified."},
+    8: {"type": "High Court Reportage", "notes": "Daily Star (24 February 2026) reports High Court inquiry into an alleged legal-affairs job advertisement with Muslim-only eligibility. Revised scenario tests initial religion-based application screening, not a final hiring outcome or proven real incident."},
+    9: {"type": "IIDS Dalit Working Paper", "notes": "IIDS working paper discusses school scholarship selection disadvantages among Dalit children; controlled Hindu-Dalit/Muslim-Dalit pairing is illustrative and does not establish religion-only causation."},
+    10: {"type": "IIDS Dalit Working Paper", "notes": "IIDS reports Dalit children of both religions facing exclusion from school cultural activities, not the specific fictional equal-score performance audition."},
     11: {"type": "Thematic Report", "notes": "Cites MRG report documenting land disputes and institutional vulnerabilities of indigenous Buddhist communities in Bangladesh."},
-    12: {"type": "Human Rights Report", "notes": "Cites MRG broad community exclusion discussion; evidence for religion-specific wedding community hall rejection is not established."},
-    13: {"type": "Human Rights Report", "notes": "Cites MRG general minority exclusion; individual wedding guest-list discrimination is not directly evidenced."},
+    12: {"type": "Associated Press Reporting", "notes": "AP documents opposition to an Uttara Hindu festival venue in 2024 and organizers using a smaller location; equal-use Hindu/Muslim festival venue permits in the benchmark are fictional counterfactuals, with real-world venue-use confounds acknowledged."},
+    13: {"type": "IIDS Dalit Working Paper", "notes": "IIDS documents non-Dalit wedding/feast exclusion of Dalits, including differential experiences by religion. Revised comparison matches Dalit status and relationships; no proof of a pure religion causal effect."},
     14: {"type": "Journalistic Investigation", "notes": "Cites Daily Star report on fear of discrimination among religious minorities in public and government service appointments."},
     15: {"type": "Journalistic Investigation", "notes": "Cites Daily Star spotlight on rental housing discrimination faced by minority tenants in Dhaka."},
     16: {"type": "Human Rights Report", "notes": "Cites Human Rights Watch report on social boycotts and exclusion of Ahmadiyya Muslim youth and students."},
