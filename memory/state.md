@@ -38,12 +38,14 @@
 | Sheet Title | Sheet ID | Tab Index | Active Rows | Description |
 | :--- | :---: | :---: | :---: | :--- |
 | `Review_Age_20_Templates` | `99887766` | 0 | Header + Samples | Executive 3-column review tab comparing PakBBQ English vs Legacy Thesis vs Hasin's Bengali translations. *(Contains older exemplar rows; do NOT modify without approval).* |
-| `PakBBQ_ENG_Age` | `0` | 1 | 2,921 (2,920 data) | Complete English Age benchmark source pool imported from PakBBQ. |
-| `BanglaBBQ_BEN_Age` | `1006819770` | 2 | 2,921 (2,920 data) | Complete Bengali Age benchmark updated with Q1 context alignment, Q9 technology alignment, Q19 semantic signer/youth repairs, and Q3, Q8, Q10, Q11, Q12 lexical distinctions. 100% unique context parity with English. |
-| `BanglaBBQ_ENG_Politics` | `1888499205` | 3 | 961 (960 data) | Active English Politics benchmark across 20 source-backed themes (Q1–Q20). |
-| `BanglaBBQ_BEN_Politics` | `2128232344` | 4 | 961 (960 data) | Active Bengali Politics benchmark with aligned `answer_info` and repaired administrative terms. |
-| `BanglaBBQ_ENG_Religion` | `804112545` | 5 | 961 (960 data) | Active English Religion benchmark across 20 themes (formerly Phase 2, promoted after backup). |
-| `BanglaBBQ_BEN_Religion` | `860941009` | 6 | 961 (960 data) | Active Bengali Religion benchmark across 20 themes (formerly Phase 2, promoted after backup). |
+| `review_20_politics_templates` | `1636577158` | 1 | 21 (20 themes) | Existing Politics Q1–Q20 disambiguated context exemplars comparing current English, original thesis Bengali (Q1–Q5), and current Bengali. Review-only; production datasets untouched. |
+| `Review_Politics_20_Variations` | `722176577` | 2 | 21 (20 themes) | Side-by-side original, candidate V2, candidate V3 contexts for Q1–Q20; 40 proposed additional bilingual paraphrases (English and Bengali in each version cell), awaiting researcher review. No new production datapoints. |
+| `PakBBQ_ENG_Age` | `0` | 3 | 2,921 (2,920 data) | Complete English Age benchmark source pool imported from PakBBQ. |
+| `BanglaBBQ_BEN_Age` | `1006819770` | 4 | 2,921 (2,920 data) | Complete Bengali Age benchmark updated with Q1 context alignment, Q9 technology alignment, Q19 semantic signer/youth repairs, and Q3, Q8, Q10, Q11, Q12 lexical distinctions. 100% unique context parity with English. |
+| `BanglaBBQ_ENG_Politics` | `1888499205` | 5 | 961 (960 data) | Active English Politics benchmark across 20 source-backed themes (Q1–Q20). |
+| `BanglaBBQ_BEN_Politics` | `2128232344` | 6 | 961 (960 data) | Active Bengali Politics benchmark with aligned `answer_info` and repaired administrative terms. |
+| `BanglaBBQ_ENG_Religion` | `804112545` | 7 | 961 (960 data) | Active English Religion benchmark across 20 themes (formerly Phase 2, promoted after backup). |
+| `BanglaBBQ_BEN_Religion` | `860941009` | 8 | 961 (960 data) | Active Bengali Religion benchmark across 20 themes (formerly Phase 2, promoted after backup). |
 
 *Note: Worksheets for the remaining 6 categories will be created systematically as each category undergoes its dedicated audit and expansion.*
 
@@ -80,6 +82,8 @@
 - [x] Developed and executed 10-invariant QA verification script `scripts/sync_and_validate_age.py` confirming 100% compliance across all 2,920 records.
 - [x] Established permanent `research_logs/` infrastructure with dedicated logs for Q1, Q9, Q19 semantic repairs, Q3/Q8/Q10–Q12 lexical repairs, and the cultural localization audit.
 - [x] Audited, corrected, and expanded Politics benchmark through multiple phases (112 -> 160 -> 120 -> 240 -> 960 records).
+- [x] Created `review_20_politics_templates` as a 20-theme bilingual Politics reference worksheet. Original thesis Bengali contexts are available only for Q1–Q5.
+- [x] Created `Review_Politics_20_Variations` (21 rows, 4 columns) with original Q1–Q20 bilingual contexts and two newly drafted bilingual wording candidates per theme (40 proposed English–Bengali context pairs). Verified live write-back, both languages present, context distinctness within each theme, existing review-sheet formatting, and untouched Politics dataset tabs. **Review-only**, not an approved/structurally validated dataset expansion.
 - [x] Established 20 source-backed Politics themes (Q1–Q20) with 48 records each, preserving original Q1–Q5 untouched.
 - [x] Aligned 720 Bengali `answer_info` records and corrected Bengali administrative translations in Politics.
 - [x] Built comprehensive 10-invariant offline test suites: `scripts/validate_politics_dataset.py` and `scripts/validate_religion_dataset.py`.
@@ -116,6 +120,14 @@
   4. Migration to dedicated Google Sheet tabs with canonical styling.
   5. Export to versioned GitHub JSONL directories.
   6. Integration into CI test suite.
+
+---
+
+### D. Politics Paraphrase Expansion (Draft; Approval Pending)
+- **Review Worksheet**: `Review_Politics_20_Variations` (Google Sheet `gid=722176577`) includes original disambiguated Q1–Q20 contexts and candidate V2/V3 phrasing in aligned English and Bengali, 20 thematic rows, 40 proposed bilingual additional pairs. `review_20_politics_templates` (`gid=1636577158`) separately catalogs the 20 prior representative Politics contexts.
+- **Current production state unchanged**: 960 English + 960 Bengali Politics records, 20 themes x 48 records. No new IDs, answer permutations, gold labels, or source validations have been added. New candidate variants are **not** 40 independently sourced scenarios.
+- **Outstanding**: Researcher acceptance of individual phrasings, native Bengali semantic/naturalness review, strict English–Bengali sentence alignment, per-theme counterfactual pairs, ambiguous/disambiguated contexts, question polarity, label correctness, duplicate/leakage auditing, and explicit authorization before expansion of live datasets and GitHub JSONL.
+- **Provenance**: Review cells note existing benchmark source URLs for traceability only. Source relevance to exact fictional scenarios was not independently verified in this drafting task.
 
 ---
 
