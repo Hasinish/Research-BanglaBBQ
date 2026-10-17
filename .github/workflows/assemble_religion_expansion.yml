@@ -1,0 +1,54 @@
+name: Assemble BanglaBBQ Religion V2/V3 Expansion
+
+on:
+  push:
+    branches:
+      - main
+      - feat/religion-v2v3-expansion-20261017
+    paths:
+      - 'BanglaBBQ_Religion/expansion_v2v3_20261017/**'
+      - 'scripts/assemble_religion_expansion.py'
+      - 'scripts/validate_religion_dataset.py'
+      - '.github/workflows/assemble_religion_expansion.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: religion-expansion-assembly-${{ github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Assemble bilingual Religion canonical files from immutable baseline and shards
+        run: python scripts/assemble_religion_expansion.py
+
+      - name: Run 2,880-record Religion invariant validator
+        run: python scripts/validate_religion_dataset.py BanglaBBQ_Religion/Religion_eng.jsonl BanglaBBQ_Religion/Religion_bng.jsonl
+
+      - name: Commit materialized canonical JSONL (fast-forward only)
+        shell: bash
+        run: |
+          if git diff --quiet -- BanglaBBQ_Religion/Religion_eng.jsonl BanglaBBQ_Religion/Religion_bng.jsonl; then
+            echo "Canonical files already match hash-verified assembly."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add BanglaBBQ_Religion/Religion_eng.jsonl BanglaBBQ_Religion/Religion_bng.jsonl
+          git commit -m "feat(religion): materialize 2,880 bilingual records from reviewed wording shards"
+          git push origin HEAD:${GITHUB_REF_NAME}
