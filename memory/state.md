@@ -1,8 +1,8 @@
 # state.md — Current Verified Progress Dashboard
 
 **Last Verified Date**: 2026-10-17  
-**Latest Verified Data/Research Commit (prior synchronized baseline)**: `a992c9f5ad2c7f5929c4d4dba34643b26e1fc400` (Religion QA synchronization; current targeted corrections on `fix/religion-evidence-qa-20261017` pending merge)  
-**Latest Memory Synchronization**: 2026-10-17 evidence-QA follow-up (targeted repair branch; verify post-merge SHA).  
+**Latest Verified Data/Research Commit**: `07d4b46edc69988a3572f10a6555825f6204b7bb` (Religion evidence QA follow-up: 24 English Q18 context grammar repairs; synchronization with live Google Sheets, corrected research documentation).  
+**Latest Memory Synchronization**: 2026-10-17, through `07d4b46` (follow-up source-scope and language QA); this header refresh is committed subsequently.  
 **Current Milestone**: Politics expanded from 960 to 2,880 rows/language with structural and CI verification; Age accepted for current research phase; remaining six categories pending.  
 
 ---
