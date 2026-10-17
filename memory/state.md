@@ -1,8 +1,9 @@
 # state.md — Current Verified Progress Dashboard
 
-**Last Verified Date**: 2026-10-17  
+**Last Verified Date**: 2026-10-18  
 **Latest Verified Production Repair Main Commit**: `8acbd8f35092e1a572d2998dd9b5227a21b402b6` (Religion Q3/Q8/Q9/Q10/Q12/Q13 source-aligned V1/V2/V3 repairs across 864 records per language; entire bilingual live production verified at 2,880 records/language, zero 43,200-cell discrepancies/language; main GitHub Actions Religion assembly `39055874833` and Dataset Invariant Validation `39055874881` both succeeded). **Preserved Pre-Repair Main Baseline**: `bba8ef471ebe0bc53fcd116ada1b16849a4a6b14` (all 2,880 original pre-repair records in Git backup branch); pre-V2/V3 snapshot `9f72d105d8dd16b6d69dd4121983ec7a90c4a745`.
 **Latest Memory Synchronization**: 2026-10-17, six-theme evidence repair merged at `8acbd8f35092e1a572d2998dd9b5227a21b402b6` (this memory-header refresh is a subsequent documentation-only commit).
+**Latest Worksheet Structure Update**: 2026-10-18: Live `PakBBQ_ENG_Age` (sheetId `0`) was backed up as the hidden `Backup_PakBBQ_ENG_Age_preRename_20261018` (sheetId `124282477`, 2,921 grid rows including header) and renamed in place to `BanglaBBQ_ENG_Age` (same sheetId `0`). The original 2,920 English rows and 15-column schema were not edited; header/first/last and backup-end sample readbacks passed. Bengali Age and original GitHub datasets unchanged. The new name denotes a WORKING dataset only: full Bengali-English cultural localization and independent human/source checks are pending; it must not be represented as publication-ready.
 **Current Milestone**: Religion remains at 2,880 records/language with all six evidence-aligned V1/V2/V3 theme corrections verified and synchronized on GitHub main and Google Sheets. Politics remains 2,880/language; Age accepted for current research phase; six other categories pending.
 
 ---
@@ -42,7 +43,8 @@
 | `Review_Politics_20_Variations` | `722176577` | 2 | 21 (20 themes) | Side-by-side original/V2/V3 bilingual contexts Q1–Q20; user authorized integration of 40 additional bilingual wording pairs into the active dataset on 2026-10-17. Independent linguistic/source review still outstanding. |
 | `Review_Religion_20_Variations` | `1743426767` | 13 (verified 2026-10-17) | 21 (20 themes) | Original Religion disambiguated contexts plus proposed English/Bengali V2/V3 variants, 40 candidate pairs. **Review only**; amber source-relevance flags in Q3, Q8, Q9–Q10 and Q12–Q13. |
 | `Review_Religion_Source_Audit_20261017` | `1272448316` | 22 at original creation | 7 rows (6 audited themes) | Six source-evidence verdicts now updated with applied V1/V2/V3 bilingual repairs, corrected citations and explicit limits; companion working tab `Review_Religion_20_Variations` Q3/Q8/Q9/Q10/Q12/Q13 V1–V3 exemplars read back against production. |
-| `PakBBQ_ENG_Age` | `0` | 3 | 2,921 (2,920 data) | Complete English Age benchmark source pool imported from PakBBQ. |
+| `BanglaBBQ_ENG_Age` | `0` | 18 (verified 2026-10-18) | 2,921 (2,920 data) | Renamed in place from `PakBBQ_ENG_Age`, without changing content; English working dataset retaining PakBBQ-derived scenarios. Cultural alignment review outstanding. |
+| `Backup_PakBBQ_ENG_Age_preRename_20261018` | `124282477` | 20 (hidden) | 2,921 (2,920 data) | Verbatim Google Sheets backup duplicated immediately before worksheet rename; original PakBBQ source remains in GitHub. |
 | `BanglaBBQ_BEN_Age` | `1006819770` | 4 | 2,921 (2,920 data) | Complete Bengali Age benchmark updated with Q1 context alignment, Q9 technology alignment, Q19 semantic signer/youth repairs, and Q3, Q8, Q10, Q11, Q12 lexical distinctions. 100% unique context parity with English. |
 | `BanglaBBQ_ENG_Politics` | `1888499205` | 5 | 2,881 (2,880 data) | Expanded active Politics English; exact live read-back against GitHub 480-row versioned shards, 144 records/theme. |
 | `BanglaBBQ_BEN_Politics` | `2128232344` | 6 | 2,881 (2,880 data) | Expanded Bengali Politics benchmark, 144 records/theme, original answers and labels preserved, 100% structural and source-shard value read-back. |
