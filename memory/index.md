@@ -10,13 +10,13 @@
 ```
 Research-BanglaBBQ/
 ├── .github/workflows/           # Automated CI workflows (invariant validation)
-├── BanglaBBQ_Politics/          # Active verified Politics benchmark (960 ENG, 960 BEN)
+├── BanglaBBQ_Politics/          # Active Politics benchmark (2,880 ENG, 2,880 BEN; base + V2/V3)
 ├── BanglaBBQ_Religion/          # Active verified Religion benchmark (960 ENG, 960 BEN)
 ├── BanglaBBQ_BEN_New/           # Active verified Bengali Age benchmark (2,920 BEN)
 ├── Dataset_ BanglaBBQ_Old/      # Historical baseline from seniors' thesis (T2510616)
 ├── PakBBQ_Repo/                 # Cloned official PakBBQ benchmark repository (EMNLP 2025)
 ├── backups/                     # Timestamped backups of Google Sheets and datasets
-├── scripts/                     # Automation, validation, migration, and audit scripts (83 scripts)
+├── scripts/                     # Automation, validation, migration, and audit scripts (including Politics expander)
 ├── research_logs/               # Permanent detailed research and audit logs
 ├── memory/                      # Authoritative shared project memory
 ├── PakBBQ_Age_English.csv       # Active English Age benchmark source pool (2,920 rows)
@@ -34,9 +34,10 @@ Research-BanglaBBQ/
 These are the canonical, working datasets currently under active research and evaluation.
 
 ### A. Politics ([`BanglaBBQ_Politics/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Politics))
-- [`banglabbq_politics_english.jsonl`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Politics/banglabbq_politics_english.jsonl): 960 records across 20 source-grounded themes (Q1–Q20), 48 records per theme. Full 6-way answer permutations ($3!$), canonical 4-row block ordering, uniform label balance (320/320/320), 0 duplicates, 15-column schema.
-- [`banglabbq_politics_bengali.jsonl`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Politics/banglabbq_politics_bengali.jsonl): 960 parallel Bengali records with 100% bilingual parity and aligned `answer_info` identity labels.
-- **Status**: `VERIFIED COMPLETE` (Automated offline and live validation passing).
+- [`banglabbq_politics_english.jsonl`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Politics/banglabbq_politics_english.jsonl): 2,880 records across 20 source-referenced themes (Q1–Q20), 144/theme (original 48 + v2 48 + v3 48). Full 6-way permutations, four-row canonical ordering, uniform labels (960/960/960), zero exact QA duplicates, original IDs 0–959 unchanged, 15-column schema.
+- [`banglabbq_politics_bengali.jsonl`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Politics/banglabbq_politics_bengali.jsonl): 2,880 parallel Bengali records, source-aligned metadata, verified counterfactuals, retained original answer labels and review-vetted wording proposals.
+- **Status**: `IN PROGRESS` (Expansion structurally validated and live GitHub/Sheets synchronized; independent Bengali/source review and grouped test-split audit pending).
+- **Expansion materials**: [`expansion_v2v3_20261017/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Politics/expansion_v2v3_20261017) includes the 40 bilingual V2/V3 context templates, manifest and eight 480-row append-only shards. Canonical JSONL snapshots were materialized by GitHub Actions from SHA-verified historical backups and shards.
 
 ### B. Religion ([`BanglaBBQ_Religion/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Religion))
 - [`Religion_eng.jsonl`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Religion/Religion_eng.jsonl): 960 records across 20 source-grounded themes (Q1–Q20), 48 records per theme. Full 6-way answer permutations ($3!$), canonical 4-row block sequence, uniform label balance (320/320/320), 0 duplicates, 15-column schema.
@@ -120,6 +121,7 @@ These are the canonical, working datasets currently under active research and ev
   - `BanglaBBQ_ENG_Religion_Phase2.jsonl` (960 records).
   - `BanglaBBQ_BEN_Religion_Phase2.jsonl` (960 records).
   - `raw_sheets_data.json` & `metadata.json`: Raw Google Sheets API dumps with SHA-256 integrity proofs.
+- **`backups/politics_pre_wording_v2v3_20261017/`**: Immutable 960-record English/Bengali canonical JSONL snapshots (Git blob aliases); live workbook also contains two hidden native 960-record backup tabs.
 - **`backups/politics_before_corrections/`**:
   - Pre-correction backups of Politics sheets (`BanglaBBQ_ENG_Politics_backup.csv`, `BanglaBBQ_BEN_Politics_backup.csv`, raw JSON).
 - **`backups/audit_20261016/`**:
@@ -132,14 +134,15 @@ These are the canonical, working datasets currently under active research and ev
 Contains specialized scripts documented in [`scripts/README.md`](file:///d:/Research-BanglaBBQ/scripts/README.md). Key active tools include:
 
 ### Benchmark Invariant Validators & CI
-- [`scripts/validate_politics_dataset.py`](file:///d:/Research-BanglaBBQ/scripts/validate_politics_dataset.py): 10-invariant offline validator for Politics (counts, sequential IDs, block ordering, label balance, disambig grounding, bilingual parity, 0 duplicates, Q1–Q5 hash preservation).
+- [`scripts/validate_politics_dataset.py`](file:///d:/Research-BanglaBBQ/scripts/validate_politics_dataset.py): Expanded 960/2,880-aware validator, including V2/V3 lineage and permutation checks, bilingual alignment, hash-preserved original Q1–Q5, label counts and no exact duplicates.
+- [`scripts/assemble_politics_expansion.py`](file:///d:/Research-BanglaBBQ/scripts/assemble_politics_expansion.py): Deterministically assembles 2,880-record canonical Politics JSONL files from hashed original backups and eight append-only shards; refuses to replace unexpected content. Triggered by `.github/workflows/assemble_politics_expansion.yml`.
 - [`scripts/validate_religion_dataset.py`](file:///d:/Research-BanglaBBQ/scripts/validate_religion_dataset.py): 10-invariant offline validator for Religion (counts, 15-column schema, 48 rows/theme, 6-way permutations, ambig/disambig grounding, bilingual parity, 0 duplicates).
 - [`.github/workflows/validate.yml`](file:///d:/Research-BanglaBBQ/.github/workflows/validate.yml): Automated GitHub Actions CI workflow executing offline validators on every push and pull request.
 
 ### Live Google Sheets Sync & Verification
 - [`scripts/sync_and_validate_age.py`](file:///d:/Research-BanglaBBQ/scripts/sync_and_validate_age.py): Synchronizes live Google Sheets updates from `BanglaBBQ_BEN_Age` to `BanglaBBQ_BEN_New/Age.jsonl` and executes 10-invariant benchmark quality assurance tests across all 20 themes.
 - [`scripts/push_age_repairs.py`](file:///d:/Research-BanglaBBQ/scripts/push_age_repairs.py): Pushes deterministic batch updates for repaired themes to Google Sheets and updates local canonical files.
-- [`scripts/verify_politics_960_live.py`](file:///d:/Research-BanglaBBQ/scripts/verify_politics_960_live.py): Fetches live Google Sheets rows 1–961 and verifies 100% bit-for-bit parity with GitHub JSONL files, conditional rules, and row heights.
+- [`scripts/verify_politics_960_live.py`](file:///d:/Research-BanglaBBQ/scripts/verify_politics_960_live.py): Historical 960-row Politics baseline verification utility; not a full 2,880-record expanded-sheet validator. The 2026-10-17 expansion was independently verified with 15-field live chunk readbacks.
 - [`scripts/verify_religion_live.py`](file:///d:/Research-BanglaBBQ/scripts/verify_religion_live.py): Fetches live Google Sheets tabs `BanglaBBQ_ENG_Religion` and `BanglaBBQ_BEN_Religion` and verifies complete parity with GitHub JSONL files.
 - [`scripts/list_sheets.py`](file:///d:/Research-BanglaBBQ/scripts/list_sheets.py): Lists all worksheets, sheet IDs, and indices in the master Google Spreadsheet.
 
@@ -177,6 +180,7 @@ Contains specialized scripts documented in [`scripts/README.md`](file:///d:/Rese
 ## 8. Permanent Research Logs ([`research_logs/`](file:///d:/Research-BanglaBBQ/research_logs))
 
 - [`research_logs/README.md`](file:///d:/Research-BanglaBBQ/research_logs/README.md): Research logging guidelines, relationship to memory, and chronological index of all milestone logs.
+- [`research_logs/politics_wording_expansion_20261017.md`](file:///d:/Research-BanglaBBQ/research_logs/politics_wording_expansion_20261017.md): Methods, shard lineage, backup details, live read-back QA and outstanding human linguistic/source audits for the 2,880-row Politics expansion.
 - [`research_logs/TEMPLATE.md`](file:///d:/Research-BanglaBBQ/research_logs/TEMPLATE.md): Standardized template schema for authoring research and audit logs.
 - [`research_logs/2026-10-17_age_q1_context_alignment.md`](file:///d:/Research-BanglaBBQ/research_logs/2026-10-17_age_q1_context_alignment.md): Retrospective audit and context alignment of Age Q1 expanding unique contexts from 11 to 16.
 - [`research_logs/2026-10-17_age_q9_context_alignment.md`](file:///d:/Research-BanglaBBQ/research_logs/2026-10-17_age_q9_context_alignment.md): Retrospective audit and alignment of Age Q9 expanding unique contexts from 60 to 144 and aligning 272 answer options.

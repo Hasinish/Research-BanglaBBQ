@@ -2,6 +2,15 @@
 
 <!-- IMPORTANT FOR AGENTS: Always prepend new conversation log entries to the top of this list (most recent first). Do not append to the bottom. -->
 
+- **[2026-10-17] Politics V2/V3 integrated — 2,880 records per language, structurally validated and GitHub/Sheets synchronized**:
+  - Researcher explicitly authorized the two wording versions from `Review_Politics_20_Variations` for all 20 Politics themes. Added 1,920 rows/language, retaining the 960 original rows unmodified and assigning IDs 960–2879.
+  - Produced 20 themes x 144 records/language (3 x 48): counterfactual A/B, ambiguous/disambiguated, negative/nonnegative, six-way permutations. Added `additional_metadata.wording_variant` and `parent_example_id` while retaining inherited metadata/source links.
+  - Backed up source sheets in two hidden tabs (`Backup_Politics_ENG_preV2V3_20261017`, `Backup_Politics_BEN_preV2V3_20261017`) and 960-record GitHub snapshot files under `backups/politics_pre_wording_v2v3_20261017/`.
+  - Verified all appended Google Sheets cells against the versioned GitHub shards (15 columns, 240-row read-back chunks), all 2,880 records/language, 20 x 144 theme counts, uniform 960/960/960 gold labels, complete 6-way permutations, 0 exact duplicate QA tuples and bilingual structural equality.
+  - GitHub staging/QA commit `31c13939465fc146ab01a47fbb3c9043c796261d`; expanded canonical English/Bengali JSONL materialized by successful GitHub Actions CI at `cab9f72b6c969e19b4c97bd16b293986e4a2b771`.
+  - **Quality status**: Structural QA and synchronization passed. Independent native Bengali naturalness review, full bilingual entailment/semantic audit, source-relevance verification, and paraphrase-family evaluation split controls remain outstanding; NOT publication-ready. All new texts represent correlated lexical variants, not new independent bias incidents.
+
+
 - **[2026-10-17] Politics review worksheet completed (proposal only)**: Created `Review_Politics_20_Variations` (`gid=722176577`) with 20 rows comparing original contexts against two proposed English-Bengali wording variants per theme (40 candidate pairs). Also created `review_20_politics_templates` (`gid=1636577158`). Read-back checks confirmed 20 themes, complete bilingual cells and consistent layout. The production Politics benchmark remains at 960 records per language; no dataset edits, label changes, or expansion have been approved. Candidate paraphrases await user review and full QA before use.
 
 
