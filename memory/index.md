@@ -11,7 +11,7 @@
 Research-BanglaBBQ/
 ├── .github/workflows/           # Automated CI workflows (invariant validation)
 ├── BanglaBBQ_Politics/          # Active Politics benchmark (2,880 ENG, 2,880 BEN; base + V2/V3)
-├── BanglaBBQ_Religion/          # Active verified Religion benchmark (960 ENG, 960 BEN)
+├── BanglaBBQ_Religion/          # Active Religion benchmark (2,880 ENG, 2,880 BEN; V1+V2+V3)
 ├── BanglaBBQ_BEN_New/           # Active verified Bengali Age benchmark (2,920 BEN)
 ├── Dataset_ BanglaBBQ_Old/      # Historical baseline from seniors' thesis (T2510616)
 ├── PakBBQ_Repo/                 # Cloned official PakBBQ benchmark repository (EMNLP 2025)
@@ -40,9 +40,10 @@ These are the canonical, working datasets currently under active research and ev
 - **Expansion materials**: [`expansion_v2v3_20261017/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Politics/expansion_v2v3_20261017) includes the 40 bilingual V2/V3 context templates, manifest and eight 480-row append-only shards. Canonical JSONL snapshots were materialized by GitHub Actions from SHA-verified historical backups and shards.
 
 ### B. Religion ([`BanglaBBQ_Religion/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Religion))
-- [`Religion_eng.jsonl`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Religion/Religion_eng.jsonl): 960 records across 20 source-grounded themes (Q1–Q20), 48 records per theme. Full 6-way answer permutations ($3!$), canonical 4-row block sequence, uniform label balance (320/320/320), 0 duplicates, 15-column schema. Approved QA repairs applied across Q2–Q20 (Q3 equal water access premise, Q5 nonreligious/observant Muslim distinction, Q7 cultural-festival community-service proposal comparison, Q8 clerical job denial, Q9/Q10 academic classroom study citations, Q12/Q13 MRG public exclusion citations, Q18 Feni flood relief grounding, Q20 Chittagong government high school admission restrictions).
-- [`Religion_bng.jsonl`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Religion/Religion_bng.jsonl): 960 parallel Bengali records with 100% structural parity and 100% bit-for-bit agreement with live Google Sheet `BanglaBBQ_BEN_Religion`.
-- [`review_v2v3_20261017.json`](https://github.com/Hasinish/Research-BanglaBBQ/blob/main/BanglaBBQ_Religion/review_v2v3_20261017.json): 20 original bilingual exemplar contexts + 40 **candidate** V2/V3 bilingual contexts from `Review_Religion_20_Variations` (gid `1743426767`). **Proposal only**; production canonical JSONL remains at 960 records/language until separate approval and QA.
+- [`Religion_eng.jsonl`](https://github.com/Hasinish/Research-BanglaBBQ/blob/main/BanglaBBQ_Religion/Religion_eng.jsonl): **2,880** canonical English records, original IDs 0–959 retained with 1,920 bilingual-aligned V2/V3 additions. 20 themes × 144 records, label balance 960/960/960, six permutations per condition/polarity/orientation/wave, zero exact duplicate QA tuples. Source-specific human review remains pending.
+- [`Religion_bng.jsonl`](https://github.com/Hasinish/Research-BanglaBBQ/blob/main/BanglaBBQ_Religion/Religion_bng.jsonl): **2,880** Bengali records, 100% metadata parity with English and live native Religion Bengali worksheet (43,200 fields); native linguistic review remains pending.
+- [`review_v2v3_20261017.json`](https://github.com/Hasinish/Research-BanglaBBQ/blob/main/BanglaBBQ_Religion/review_v2v3_20261017.json): Original Q1–Q20 bilingual review source and 40 V2/V3 wording pairs, integrated into structurally validated production expansion on 2026-10-17; open source/translation caveats remain.
+- [`expansion_v2v3_20261017/`](https://github.com/Hasinish/Research-BanglaBBQ/tree/main/BanglaBBQ_Religion/expansion_v2v3_20261017): SHA-pinned bilingual context templates, lineage manifest, and 16 240-record append-only shards (1,920 added records per language).
 - **Status**: `IN PROGRESS` (Structurally validated and synchronized with live sheets; source relevance boundaries formalized; secondary native Bengali linguistic review pending; not publication-ready).
 
 ### C. Age ([`BanglaBBQ_BEN_New/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_BEN_New) & Root)
@@ -111,6 +112,7 @@ These are the canonical, working datasets currently under active research and ev
 ---
 
 ## 4. Versioned Backups ([`backups/`](file:///d:/Research-BanglaBBQ/backups))
+- **`backups/religion_pre_wording_v2v3_20261017/`**: byte-identical 960-record original Religion English/Bengali JSONL blobs from pre-expansion main; additional hidden native Google Sheet backup tabs preserve the pre-expansion 960 records and formatting.
 
 - **`backups/age_sheets_backup_20261017/`**:
   - `BanglaBBQ_BEN_Age.csv` & `BanglaBBQ_BEN_Age.json` (2,921 rows pre-edit backup).
@@ -138,7 +140,8 @@ Contains specialized scripts documented in [`scripts/README.md`](file:///d:/Rese
 - [`scripts/apply_politics_q5_q14_q19_fixes.py`](file:///d:/Research-BanglaBBQ/scripts/apply_politics_q5_q14_q19_fixes.py): Idempotent content correction script applying approved Q5 historical date, Q14 entailment, and Q19 Bengali critic terminology fixes.
 - [`scripts/validate_politics_dataset.py`](file:///d:/Research-BanglaBBQ/scripts/validate_politics_dataset.py): Expanded 960/2,880-aware validator with dual-hash verification (preserving historical baseline hashes as evidence while supporting approved post-repair hashes for active benchmark), V2/V3 lineage, permutations, bilingual alignment, and 0 duplicates.
 - [`scripts/assemble_politics_expansion.py`](file:///d:/Research-BanglaBBQ/scripts/assemble_politics_expansion.py): Verifies append-only expansion from hashed pre-expansion backups and shards, with cross-platform CRLF normalization and recognized post-repair canonical records.
-- [`scripts/validate_religion_dataset.py`](file:///d:/Research-BanglaBBQ/scripts/validate_religion_dataset.py): 10-invariant offline validator for Religion (counts, 15-column schema, 48 rows/theme, 6-way permutations, ambig/disambig grounding, bilingual parity, 0 duplicates).
+- [`scripts/validate_religion_dataset.py`](https://github.com/Hasinish/Research-BanglaBBQ/blob/main/scripts/validate_religion_dataset.py): 10-category structural invariant validator accepting both 960 historical and 2,880 expanded bilingual files, including variant-aware six-way answer permutations.
+- [`scripts/assemble_religion_expansion.py`](https://github.com/Hasinish/Research-BanglaBBQ/blob/main/scripts/assemble_religion_expansion.py): hash-pinned append-only assembly from immutable V1 snapshots and 16 shards, validating inherited answers, metadata, source links, counterfactuals, bilingual shared fields, labels and record counts.
 - [`.github/workflows/validate.yml`](file:///d:/Research-BanglaBBQ/.github/workflows/validate.yml): Automated GitHub Actions CI workflow executing offline validators on every push and pull request.
 
 ### Live Google Sheets Sync & Verification
@@ -184,6 +187,7 @@ Contains specialized scripts documented in [`scripts/README.md`](file:///d:/Rese
 - [`research_logs/README.md`](file:///d:/Research-BanglaBBQ/research_logs/README.md): Research logging guidelines, relationship to memory, and chronological index of all milestone logs.
 - [`research_logs/2026-10-17_religion_qa_repair.md`](file:///d:/Research-BanglaBBQ/research_logs/2026-10-17_religion_qa_repair.md): Comprehensive log for Religion QA repairs across Q2, Q3, Q4, Q5, Q7, Q8, Q9, Q10, Q12, Q13, Q18, Q20, source scrutiny/classification, counterfactual symmetry, and 100% bit-for-bit live Google Sheets parity.
 - [`research_logs/2026-10-17_religion_wording_variations_review.md`](https://github.com/Hasinish/Research-BanglaBBQ/blob/main/research_logs/2026-10-17_religion_wording_variations_review.md): Documents new 20-theme Religion V2/V3 review tab, 40 distinct bilingual candidate pairs, structural read-back checks, caveats, and future 48-row expansion gates.
+- [`research_logs/2026-10-17_religion_v2v3_expansion.md`](https://github.com/Hasinish/Research-BanglaBBQ/blob/main/research_logs/2026-10-17_religion_v2v3_expansion.md): full 2,880/language expansion method, backups, SHA-pinned shards, Sheets/JSONL read-back, CI validation and unresolved source review.
 - [`research_logs/politics_wording_expansion_20261017.md`](file:///d:/Research-BanglaBBQ/research_logs/politics_wording_expansion_20261017.md): Methods, shard lineage, backup details, live read-back QA and outstanding human linguistic/source audits for the 2,880-row Politics expansion.
 - [`research_logs/2026-10-17_politics_q5_q14_q19_fixes.md`](file:///d:/Research-BanglaBBQ/research_logs/2026-10-17_politics_q5_q14_q19_fixes.md): Forensic audit and synchronization of approved targeted repairs across Politics Q5 (historical date 2022), Q14 (dormitory belongings negative question refinement), and Q19 (government critic Bengali terminology).
 - [`research_logs/TEMPLATE.md`](file:///d:/Research-BanglaBBQ/research_logs/TEMPLATE.md): Standardized template schema for authoring research and audit logs.
