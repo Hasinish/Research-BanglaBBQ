@@ -2,6 +2,9 @@
 
 <!-- IMPORTANT FOR AGENTS: Always prepend new conversation log entries to the top of this list (most recent first). Do not append to the bottom. -->
 
+- **[2026-10-17] Politics review worksheet completed (proposal only)**: Created `Review_Politics_20_Variations` (`gid=722176577`) with 20 rows comparing original contexts against two proposed English-Bengali wording variants per theme (40 candidate pairs). Also created `review_20_politics_templates` (`gid=1636577158`). Read-back checks confirmed 20 themes, complete bilingual cells and consistent layout. The production Politics benchmark remains at 960 records per language; no dataset edits, label changes, or expansion have been approved. Candidate paraphrases await user review and full QA before use.
+
+
 - **[2026-10-17] Convo d939a6e8-f448-4b70-8668-891b85c48e7b**: **Recorded Age Benchmark Phase Acceptance, Preserved Q2, and Prioritized Remaining Six Categories**.
   - **Age Accepted for Current Research Phase**: Formally accepted the Age benchmark (2,920 English records and 2,920 Bengali records across 20 themes) for the current research phase. All previously reported structural repairs and context alignments are complete and verified (Q1, Q3, Q8–Q12, and Q19).
   - **Age Q2 Review & Preservation Decision**: Age Q2 (IDs 32–127, 96 records per language) was reviewed for translation issues involving grandparent terminology, age references, and context phrasing. The researcher explicitly decided to leave Q2 and the entire Age benchmark unchanged for now. No additional Age edits are authorized.
