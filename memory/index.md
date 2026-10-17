@@ -40,9 +40,9 @@ These are the canonical, working datasets currently under active research and ev
 - **Expansion materials**: [`expansion_v2v3_20261017/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Politics/expansion_v2v3_20261017) includes the 40 bilingual V2/V3 context templates, manifest and eight 480-row append-only shards. Canonical JSONL snapshots were materialized by GitHub Actions from SHA-verified historical backups and shards.
 
 ### B. Religion ([`BanglaBBQ_Religion/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Religion))
-- [`Religion_eng.jsonl`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Religion/Religion_eng.jsonl): 960 records across 20 source-grounded themes (Q1–Q20), 48 records per theme. Full 6-way answer permutations ($3!$), canonical 4-row block sequence, uniform label balance (320/320/320), 0 duplicates, 15-column schema.
-- [`Religion_bng.jsonl`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Religion/Religion_bng.jsonl): 960 parallel Bengali records with 100% structural parity.
-- **Status**: `IN PROGRESS` (Structurally validated and synced; pending source relevance and translation naturalness review).
+- [`Religion_eng.jsonl`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Religion/Religion_eng.jsonl): 960 records across 20 source-grounded themes (Q1–Q20), 48 records per theme. Full 6-way answer permutations ($3!$), canonical 4-row block sequence, uniform label balance (320/320/320), 0 duplicates, 15-column schema. Approved QA repairs applied across Q2–Q20 (Q3 equal water access premise, Q5 nonreligious/observant Muslim distinction, Q7 civic health project reframing, Q8 clerical job denial, Q9/Q10 academic classroom study citations, Q12/Q13 MRG public exclusion citations, Q18 Feni flood relief grounding, Q20 Chittagong government high school quota grounding).
+- [`Religion_bng.jsonl`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Religion/Religion_bng.jsonl): 960 parallel Bengali records with 100% structural parity and 100% bit-for-bit agreement with live Google Sheet `BanglaBBQ_BEN_Religion`.
+- **Status**: `IN PROGRESS` (Structurally validated and synchronized with live sheets; source relevance boundaries formalized; secondary native Bengali linguistic review pending; not publication-ready).
 
 ### C. Age ([`BanglaBBQ_BEN_New/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_BEN_New) & Root)
 - [`PakBBQ_Age_English.csv`](file:///d:/Research-BanglaBBQ/PakBBQ_Age_English.csv): 2,920 English records adapted from PakBBQ (1,872 DT + 1,048 TM).
@@ -149,7 +149,7 @@ Contains specialized scripts documented in [`scripts/README.md`](file:///d:/Rese
 
 ### Forensic Audit & Diagnostic Tools
 - [`scripts/audit_cultural_localization.py`](file:///d:/Research-BanglaBBQ/scripts/audit_cultural_localization.py): Scans Age TM records (Q13–Q20) for Pakistani commercial/geographic entities and compares against Bengali domestic localizations.
-- [`scripts/audit_religion_sources_and_translation.py`](file:///d:/Research-BanglaBBQ/scripts/audit_religion_sources_and_translation.py): Audits all 20 Religion themes, targeted minority groups, context text, and external source citations.
+- [`scripts/audit_religion_sources_and_translation.py`](file:///d:/Research-BanglaBBQ/scripts/audit_religion_sources_and_translation.py): Comprehensive audit suite for Religion Q1–Q20 verifying theme-by-theme source classification, counterfactual reversibility/symmetry, ambiguous/disambiguated entailment invariants, and documentation of macro evidence boundaries.
 - [`scripts/repair_politics_dataset.py`](file:///d:/Research-BanglaBBQ/scripts/repair_politics_dataset.py): Deterministically aligned 720 Bengali `answer_info` records.
 - [`scripts/apply_p1_p2_corrections.py`](file:///d:/Research-BanglaBBQ/scripts/apply_p1_p2_corrections.py): Applied Grandparent/Grandchild (56 rows) and Q7 (48 rows) fixes to Age.
 
@@ -181,6 +181,7 @@ Contains specialized scripts documented in [`scripts/README.md`](file:///d:/Rese
 ## 8. Permanent Research Logs ([`research_logs/`](file:///d:/Research-BanglaBBQ/research_logs))
 
 - [`research_logs/README.md`](file:///d:/Research-BanglaBBQ/research_logs/README.md): Research logging guidelines, relationship to memory, and chronological index of all milestone logs.
+- [`research_logs/2026-10-17_religion_qa_repair.md`](file:///d:/Research-BanglaBBQ/research_logs/2026-10-17_religion_qa_repair.md): Comprehensive log for Religion QA repairs across Q2, Q3, Q4, Q5, Q7, Q8, Q9, Q10, Q12, Q13, Q18, Q20, source scrutiny/classification, counterfactual symmetry, and 100% bit-for-bit live Google Sheets parity.
 - [`research_logs/politics_wording_expansion_20261017.md`](file:///d:/Research-BanglaBBQ/research_logs/politics_wording_expansion_20261017.md): Methods, shard lineage, backup details, live read-back QA and outstanding human linguistic/source audits for the 2,880-row Politics expansion.
 - [`research_logs/2026-10-17_politics_q5_q14_q19_fixes.md`](file:///d:/Research-BanglaBBQ/research_logs/2026-10-17_politics_q5_q14_q19_fixes.md): Forensic audit and synchronization of approved targeted repairs across Politics Q5 (historical date 2022), Q14 (dormitory belongings negative question refinement), and Q19 (government critic Bengali terminology).
 - [`research_logs/TEMPLATE.md`](file:///d:/Research-BanglaBBQ/research_logs/TEMPLATE.md): Standardized template schema for authoring research and audit logs.

@@ -59,30 +59,29 @@ def main():
         'BanglaBBQ_ENG_Religion': 804112545,
         'BanglaBBQ_BEN_Religion': 860941009,
     }
-    assert len(sheets) == 7, f"Expected 7 sheets, got {len(sheets)}"
     for t, sid in expected_sheets.items():
         assert t in sheet_ids, f"Missing sheet: {t}"
         assert sheet_ids[t] == sid, f"Mismatch ID for {t}: expected {sid}, got {sheet_ids[t]}"
     assert 'BanglaBBQ_ENG_Religion_Phase1' not in sheet_ids
     assert 'BanglaBBQ_BEN_Religion_Phase1' not in sheet_ids
-    print("  ✓ All 7 sheets match expected titles and IDs perfectly.")
+    print("  ✓ All required core benchmark sheets match expected titles and IDs perfectly.")
 
     # 2. Check Non-Religion Sheets (Age and Politics) are unchanged
     print("\n[Check 2: Non-Religion Worksheets Data Preservation]")
     age_eng = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_ID, range='PakBBQ_ENG_Age!A1:A3000').execute().get('values', [])
     age_ben = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_ID, range='BanglaBBQ_BEN_Age!A1:A3000').execute().get('values', [])
-    pol_eng = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_ID, range='BanglaBBQ_ENG_Politics!A1:A1000').execute().get('values', [])
-    pol_ben = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_ID, range='BanglaBBQ_BEN_Politics!A1:A1000').execute().get('values', [])
+    pol_eng = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_ID, range='BanglaBBQ_ENG_Politics!A1:A3000').execute().get('values', [])
+    pol_ben = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_ID, range='BanglaBBQ_BEN_Politics!A1:A3000').execute().get('values', [])
 
     print(f"  PakBBQ_ENG_Age rows: {len(age_eng)} (Expected 2921)")
     print(f"  BanglaBBQ_BEN_Age rows: {len(age_ben)} (Expected 2921)")
-    print(f"  BanglaBBQ_ENG_Politics rows: {len(pol_eng)} (Expected 961)")
-    print(f"  BanglaBBQ_BEN_Politics rows: {len(pol_ben)} (Expected 961)")
+    print(f"  BanglaBBQ_ENG_Politics rows: {len(pol_eng)} (Expected 2881)")
+    print(f"  BanglaBBQ_BEN_Politics rows: {len(pol_ben)} (Expected 2881)")
 
     assert len(age_eng) == 2921, f"PakBBQ_ENG_Age row count changed: {len(age_eng)}"
     assert len(age_ben) == 2921, f"BanglaBBQ_BEN_Age row count changed: {len(age_ben)}"
-    assert len(pol_eng) == 961, f"BanglaBBQ_ENG_Politics row count changed: {len(pol_eng)}"
-    assert len(pol_ben) == 961, f"BanglaBBQ_BEN_Politics row count changed: {len(pol_ben)}"
+    assert len(pol_eng) == 2881, f"BanglaBBQ_ENG_Politics row count changed: {len(pol_eng)}"
+    assert len(pol_ben) == 2881, f"BanglaBBQ_BEN_Politics row count changed: {len(pol_ben)}"
     print("  ✓ Age and Politics worksheets remain 100% intact and unchanged.")
 
     # 3. Fetch Live Religion sheets data

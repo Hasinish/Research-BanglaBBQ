@@ -1,5 +1,24 @@
 # history.md — Historical Research Log
 
+- **[2026-10-17] Convo d939a6e8-f448-4b70-8668-891b85c48e7b**: **Completed Religion QA Repairs, Source Link Scrutiny, and Google Sheets Synchronization**:
+  - **Applied Approved Targeted QA Repairs (528 ENG, 504 BEN rows patched)**:
+    - **Q3 (IDs 96–143)**: Added explicit equal entitlement premise ("The pump is open to every resident, and both have the same right to draw water" / "নলকূপটি সবার ব্যবহারের জন্য খোলা এবং পানি নেওয়ার ক্ষেত্রে উভয়েরই সমান অধিকার রয়েছে।") across all 24 ambiguous rows/language, perfectly sealing the ambiguous equal-claim invariant.
+    - **Q5 (IDs 192–239)**: Replaced flawed secular vs devout antonym pair with personal nonreligious identity vs observant Muslim ("openly identifies as nonreligious" vs "observant Muslim" / "ধর্মবিশ্বাসহীন" vs "ধর্মচর্চাকারী মুসলিম") across 48 rows/language.
+    - **Q7 (IDs 288–335)**: Reframed Ahmadiyya scenario from theological critique of worship rituals to institutional civic proposal review for a union health program across 48 rows/language.
+    - **Q8 (IDs 336–383)**: Eliminated occupational caste stereotyping ("assigned to cleaning duties" -> "denied the clerical position" / "দাপ্তরিক পদে নিয়োগ দেওয়া হয়নি") across 48 rows/language, and updated source to Austrian ECOI minority employment discrimination documentation.
+    - **Q9 & Q10 (IDs 384–479)**: Replaced communal riot casualty citations with peer-reviewed secondary school classroom inclusion academic study (`ResearchGate:318201463`) for school debate leadership and speaking slot scenarios across 96 rows/language.
+    - **Q12 & Q13 (IDs 528–623)**: Replaced violent communal conflict citations with Minority Rights Group (MRG) *Under Threat* human rights report on social/institutional isolation for community hall booking and wedding invitation scenarios across 96 rows/language.
+    - **Q18 (IDs 816–863)**: Grounded generic Sylhet flood scenario to documented August 2024 Feni flood relief distribution crisis, backed by India Today reporting across 48 rows/language.
+    - **Q20 (IDs 912–959)**: Grounded Christian school admission scenario to documented pre-2006 Chittagong premier government high schools admission policy restrictions, backed by bdnews24 reporting across 48 rows/language.
+    - **Q2 & Q4**: Targeted language and demographic clarity adjustments in English and Bengali.
+  - **100% Bit-for-Bit Live Parity**: Validated against live Google Sheets `BanglaBBQ_ENG_Religion` (ID: 804112545) and `BanglaBBQ_BEN_Religion` (ID: 860941009) via Google Sheets API v4. Confirmed 0 discrepancies across all 960 rows $\times$ 15 columns (14,400 cells per language).
+  - **Comprehensive QA & Invariants Verification**:
+    - Ran `scripts/validate_religion_dataset.py`: all 10/10 invariant checks passed (960 counts, 15 columns, sequential IDs, 48 rows/theme, uniform 320/320/320 gold labels, full 6-way permutations, ambig Unknown target, disambig grounded entities, bilingual parity, zero duplicate tuples).
+    - Ran `scripts/audit_religion_sources_and_translation.py`: verified theme-by-theme source classification, counterfactual reversibility/symmetry, and entailment logic across all 20 themes.
+  - **Source Scrutiny & Evidence Limitation Formalized**: Scrutinized source grounding across all 20 themes, specifically Q8, Q9–Q10, Q12–Q13. Explicitly documented that cited reports prove macro socio-cultural patterns and institutional discrimination in Bangladesh; they do NOT represent factual historical records of fictionalized BBQ evaluation vignettes.
+  - **Evidence & Backup Preservation**: Frozen historical thesis files (`Dataset_ BanglaBBQ_Old/Religion/`), Phase 1/Phase 2 backups (`backups/religion_sheets_backup_20261016/`), live hidden backups (`Backup_Religion_ENG_preQAfix_20261017`, `Backup_Religion_BEN_preQAfix_20261017`), and remote Git branch `backup/religion-pre-qa-repair-20261017` preserved untouched.
+  - **Quality Status**: Structurally verified and synchronized. Secondary native Bengali colloquial review remains outstanding; **benchmark is not publication-ready**.
+
 - **[2026-10-17] Convo d939a6e8-f448-4b70-8668-891b85c48e7b**: **Completed Politics Q5/Q14/Q19 Approved Fixes, Bilingual Synchronization, and Parity Verification**:
   - **Applied Approved Targeted QA Repairs**: Synchronized the three approved content fixes across both canonical JSONL files:
     - **Q5 (144 records/lang)**: Qualified context with historical year 2022 ("In Bangladesh in 2022, " / "In 2022, " in English; "২০২২ সালে " in Bengali) across V1 (Rows 192–239) and V2/V3 (Rows 1344–1439).
