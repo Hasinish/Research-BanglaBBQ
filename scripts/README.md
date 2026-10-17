@@ -92,3 +92,18 @@ This directory houses all forensic analysis, data migration, validation, and Goo
 - [`verify_religion_live.py`](verify_religion_live.py): End-to-end live verification script comparing live Google Sheets against GitHub production JSONL files, verifying 7 active sheets, 100% data preservation of Age (2,921 rows) and Politics (961 rows), bit-for-bit parity with local exports, uniform label balances, and zero duplicate QA records.
 - [`audit_religion_sources_and_translation.py`](audit_religion_sources_and_translation.py): Forensic inspection tool extracting and auditing the 20 Religion themes, documented minority groups (Hindus, Dalit Hindus, Ahmadiyya, Buddhists, Christians, Secular/Atheist), citation sources (Daily Star, HRW, ecoi.net, SEHD, MRG), and bilingual translation samples.
 
+---
+
+## 6. Gender Identity Benchmark — Generation, Formatting, Upload & Validation
+
+- [`generate_gender_dataset.py`](generate_gender_dataset.py): Deterministic generator and translation pipeline processing all 4,696 English records from PakBBQ source, translating unique context/QA entities into fluent Bangladeshi Bengali, and exporting canonical English and Bengali JSONLs with the exact 15-column schema to `BanglaBBQ_Gender/`.
+- [`gender_translation/`](gender_translation/): Modular translation engine components:
+  - `base_mappings.py`: 183 answer mappings and 74 question templates with exact grammatical inflections.
+  - `group1_translator.py`: Context translators for Group 1 (Themes 7, 10, 11, 12, 19).
+  - `group2_translator.py`: Prefix+evidence combinator translators for Group 2 (Themes 26..50, 4,200 records).
+  - `group3_translator.py`: Context translators for Group 3 (Themes 51..58, 272 records).
+- [`upload_bengali_gender_sheets.py`](upload_bengali_gender_sheets.py): Chunked idempotent uploader writing all 4,697 rows (A1:O4697) of `BanglaBBQ_BEN_Gender` (Sheet ID: 1990010102) to the Master Google Spreadsheet.
+- [`apply_gender_sheets_formatting.py`](apply_gender_sheets_formatting.py): Applies exact production formatting across both `BanglaBBQ_ENG_Gender` and `BanglaBBQ_BEN_Gender` (Sheet IDs: 1990010101, 1990010102) matching Religion/Age standards: frozen row 1, exact 15 column widths `[100, 100, 130, 130, 75, 510, 380, 190, 190, 190, 75, 465, 465, 100, 100]`, header fill `#16213D`, middle vertical alignment, clip text wrap, and 6 conditional formatting rules (`ambig`, `disambig`, `neg`, `nonneg`, `DT`, `NA`).
+- [`verify_gender_live_parity.py`](verify_gender_live_parity.py): Exhaustive cell-by-cell live verification comparing all 140,880 data cells (70,440 cells x 2 sheets) against local canonical JSONLs, confirming 0 mismatches, exact grid dimensions, and rule parity.
+- [`validate_gender_dataset.py`](validate_gender_dataset.py): Automated 10-invariant offline dataset validator checking record counts (4,696 each), sequential IDs (0–4695), 15-column schema, 100% bilingual metadata parity, gold label semantic grounding (2348 ambig -> 'তথ্য অপর্যাপ্ত', 2348 disambig -> entity), answer permutations, Bengali script integrity, 34 question themes, and inherited defect audits.
+

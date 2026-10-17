@@ -13,6 +13,7 @@ Research-BanglaBBQ/
 ├── BanglaBBQ_Politics/          # Active Politics benchmark (2,880 ENG, 2,880 BEN; base + V2/V3)
 ├── BanglaBBQ_Religion/          # Active Religion benchmark (2,880 ENG, 2,880 BEN; V1+V2+V3)
 ├── BanglaBBQ_BEN_New/           # Active verified Bengali Age benchmark (2,920 BEN)
+├── BanglaBBQ_Gender/            # Active verified Gender Identity benchmark (4,696 ENG, 4,696 BEN across 34 themes)
 ├── Dataset_ BanglaBBQ_Old/      # Historical baseline from seniors' thesis (T2510616)
 ├── PakBBQ_Repo/                 # Cloned official PakBBQ benchmark repository (EMNLP 2025)
 ├── backups/                     # Timestamped backups of Google Sheets and datasets
@@ -55,6 +56,13 @@ These are the canonical, working datasets currently under active research and ev
 - **Live worksheets:** `BanglaBBQ_ENG_Age` (`gid=0`) and `BanglaBBQ_BEN_Age` (`gid=1006819770`), 2,920 data rows each. 10/10 invariant validation passes.
 - [`PakBBQ_Age_English.csv`](file:///d:/Research-BanglaBBQ/PakBBQ_Age_English.csv): 2,920 English records adapted from PakBBQ (1,872 DT + 1,048 TM).
 - **Status**: `IN PROGRESS` (Structurally validated, zero underage drivers in Q20, 100% Google Sheets parity; independent colloquial Bengali linguistic review and external source-mechanism alignment remain pending; not publication-ready).
+
+### D. Gender Identity ([`BanglaBBQ_Gender/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Gender))
+- [`Gender_identity_eng.jsonl`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Gender/Gender_identity_eng.jsonl): **4,696** production English records across 34 themes (Q7, Q10–Q12, Q19, Q26, Q28, Q30–Q32, Q34–Q43, Q45–Q50, Q51–Q58) from PakBBQ source. Exact 15-column schema, sequential IDs 0–4695, source IDs 4388–9083, labels 1582/1552/1562.
+- [`Gender_identity_bng.jsonl`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Gender/Gender_identity_bng.jsonl): **4,696** production parallel Bengali records. Natural Bangladeshi Bengali translations adhering to gender-sensitive guidelines (transgender vs cisgender distinguished, hijra slurs avoided, Unknown standardized as 'তথ্য অপর্যাপ্ত').
+- **Live worksheets**: `BanglaBBQ_ENG_Gender` (Sheet ID: `1990010101`) and `BanglaBBQ_BEN_Gender` (Sheet ID: `1990010102`), 4,697 rows (A1:O4697) each. 100% bit-for-bit parity verified across all 140,880 data cells (0 mismatches). Production formatting replicated (navy headers #16213D, widths [100, 100, 130, 130, 75, 510, 380, 190, 190, 190, 75, 465, 465, 100, 100], frozen header row 1, middle/clip alignment, 6 CF rules).
+- **Validation**: `scripts/validate_gender_dataset.py` (tested in CI).
+- **Status**: `IN PROGRESS` (Structurally validated and synchronized with live sheets; 10/10 offline invariants pass; secondary native colloquial Bengali review and geographical localization pending; not publication-ready).
 
 ---
 
@@ -147,9 +155,15 @@ Contains specialized scripts documented in [`scripts/README.md`](file:///d:/Rese
 - [`scripts/assemble_politics_expansion.py`](file:///d:/Research-BanglaBBQ/scripts/assemble_politics_expansion.py): Verifies append-only expansion from hashed pre-expansion backups and shards, with cross-platform CRLF normalization and recognized post-repair canonical records.
 - [`scripts/validate_religion_dataset.py`](https://github.com/Hasinish/Research-BanglaBBQ/blob/main/scripts/validate_religion_dataset.py): 10-category structural invariant validator accepting both 960 historical and 2,880 expanded bilingual files, including variant-aware six-way answer permutations.
 - [`scripts/assemble_religion_expansion.py`](https://github.com/Hasinish/Research-BanglaBBQ/blob/main/scripts/assemble_religion_expansion.py): hash-pinned append-only assembly from immutable V1 snapshots and 16 shards, validating inherited answers, metadata, source links, counterfactuals, bilingual shared fields, labels and record counts.
+- [`scripts/validate_gender_dataset.py`](file:///d:/Research-BanglaBBQ/scripts/validate_gender_dataset.py): Automated 10-invariant offline dataset validator checking record counts (4,696 each), sequential IDs (0–4695), 15-column schema, 100% bilingual metadata parity, gold label semantic grounding (2348 ambig -> 'তথ্য অপর্যাপ্ত', 2348 disambig -> entity), answer permutations, Bengali script integrity, 34 question themes, and inherited defect audits.
+- [`scripts/generate_gender_dataset.py`](file:///d:/Research-BanglaBBQ/scripts/generate_gender_dataset.py): Deterministic generator and translation pipeline processing all 4,696 English records from PakBBQ source, translating unique context/QA entities into fluent Bangladeshi Bengali, and exporting canonical English and Bengali JSONLs with the exact 15-column schema to `BanglaBBQ_Gender/`.
+- [`scripts/gender_translation/`](file:///d:/Research-BanglaBBQ/scripts/gender_translation): Modular translation engine components (`base_mappings.py`, `group1_translator.py`, `group2_translator.py`, `group3_translator.py`).
 - [`.github/workflows/validate.yml`](file:///d:/Research-BanglaBBQ/.github/workflows/validate.yml): Automated GitHub Actions CI workflow executing offline validators on every push and pull request.
 
 ### Live Google Sheets Sync & Verification
+- [`scripts/upload_bengali_gender_sheets.py`](file:///d:/Research-BanglaBBQ/scripts/upload_bengali_gender_sheets.py): Chunked idempotent uploader writing all 4,697 rows (A1:O4697) of `BanglaBBQ_BEN_Gender` (Sheet ID: 1990010102) to the Master Google Spreadsheet.
+- [`scripts/apply_gender_sheets_formatting.py`](file:///d:/Research-BanglaBBQ/scripts/apply_gender_sheets_formatting.py): Applies exact production formatting across both `BanglaBBQ_ENG_Gender` and `BanglaBBQ_BEN_Gender` (Sheet IDs: 1990010101, 1990010102) matching Religion/Age standards.
+- [`scripts/verify_gender_live_parity.py`](file:///d:/Research-BanglaBBQ/scripts/verify_gender_live_parity.py): Exhaustive cell-by-cell live verification comparing all 140,880 data cells (70,440 cells x 2 sheets) against local canonical JSONLs, confirming 0 mismatches, exact grid dimensions, and rule parity.
 - [`scripts/sync_and_validate_age.py`](file:///d:/Research-BanglaBBQ/scripts/sync_and_validate_age.py): Synchronizes live Google Sheets updates from `BanglaBBQ_BEN_Age` to `BanglaBBQ_BEN_New/Age.jsonl` and executes 10-invariant benchmark quality assurance tests across all 20 themes.
 - [`scripts/push_age_repairs.py`](file:///d:/Research-BanglaBBQ/scripts/push_age_repairs.py): Pushes deterministic batch updates for repaired themes to Google Sheets and updates local canonical files.
 - [`scripts/verify_politics_960_live.py`](file:///d:/Research-BanglaBBQ/scripts/verify_politics_960_live.py): Historical 960-row Politics baseline verification utility; not a full 2,880-record expanded-sheet validator. The 2026-10-17 expansion was independently verified with 15-field live chunk readbacks.
@@ -190,6 +204,7 @@ Contains specialized scripts documented in [`scripts/README.md`](file:///d:/Rese
 ## 8. Permanent Research Logs ([`research_logs/`](file:///d:/Research-BanglaBBQ/research_logs))
 
 - [`research_logs/README.md`](file:///d:/Research-BanglaBBQ/research_logs/README.md): Research logging guidelines, relationship to memory, and chronological index of all milestone logs.
+- [`research_logs/2026-10-18_gender_identity_expansion_and_bilingual_qa.md`](file:///d:/Research-BanglaBBQ/research_logs/2026-10-18_gender_identity_expansion_and_bilingual_qa.md): Complete milestone documentation of the 4,696-record English-Bengali Gender Identity migration, translation methodology, 34-theme structure, inherited defects audit, live Google Sheets parity (140,880 cells, 0 mismatches), exact formatting replication, and CI integration.
 - [`research_logs/2026-10-18_religion_final_qa_and_validation.md`](file:///d:/Research-BanglaBBQ/research_logs/2026-10-18_religion_final_qa_and_validation.md): Final research-quality QA across all 20 themes (2,880 rows/lang, V1+V2+V3); source verification across Q3/Q8–Q10/Q12–Q13 and 14 themes; evaluation split grouping safeguards; live Google Sheets 43,200-cell parity.
 - [`research_logs/2026-10-17_religion_six_theme_evidence_repairs.md`](https://github.com/Hasinish/Research-BanglaBBQ/blob/main/research_logs/2026-10-17_religion_six_theme_evidence_repairs.md): verified sources, exact Q3/Q8/Q9/Q10/Q12/Q13 bilingual V1/V2/V3 repairs, protected 2,880-record backups, 43,200-field live parity and limitations.
 - [`research_logs/2026-10-17_religion_source_verification_q3_q8_q9_q10_q12_q13.md`](https://github.com/Hasinish/Research-BanglaBBQ/blob/main/research_logs/2026-10-17_religion_source_verification_q3_q8_q9_q10_q12_q13.md): verified citation-to-scenario findings, source URLs, contradictions, six-theme production repair gates; current canonical Religion remains 2,880/language.

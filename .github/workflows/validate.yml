@@ -34,3 +34,7 @@ jobs:
       - name: Run Age English Reproduction and Bilingual Structural QA
         run: |
           python scripts/apply_age_english_localization_20261018.py
+
+      - name: Run Gender Benchmark Validation
+        run: |
+          python scripts/validate_gender_dataset.py BanglaBBQ_Gender/Gender_identity_eng.jsonl BanglaBBQ_Gender/Gender_identity_bng.jsonl
