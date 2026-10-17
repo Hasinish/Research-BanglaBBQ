@@ -50,6 +50,7 @@ These are the canonical, working datasets currently under active research and ev
 - **Status**: `IN PROGRESS` (Structurally validated and synchronized with live sheets; source relevance boundaries formalized; secondary native Bengali linguistic review pending; not publication-ready).
 
 ### C. Age ([`BanglaBBQ_BEN_New/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_BEN_New) & Root)
+- **Live English worksheet (2026-10-18):** `BanglaBBQ_ENG_Age` (`gid=0`, 2,920 data rows), renamed without record edits from `PakBBQ_ENG_Age`. Preserved hidden original worksheet backup `Backup_PakBBQ_ENG_Age_preRename_20261018` (`gid=124282477`, header + 2,920 records). The original PakBBQ English source remains versioned in GitHub. **Working-name change only**; Bangladesh-specific English localization versus `BanglaBBQ_BEN_Age` is outstanding.
 - [`PakBBQ_Age_English.csv`](file:///d:/Research-BanglaBBQ/PakBBQ_Age_English.csv): 2,920 English records adapted from PakBBQ (1,872 DT + 1,048 TM).
 - [`BanglaBBQ_BEN_New/Age.jsonl`](file:///d:/Research-BanglaBBQ/BanglaBBQ_BEN_New/Age.jsonl): 2,920 parallel Bengali records translated and audited for family relationship terms (নানা/নানি, দাদু/নাতিটি) and Q7 comparative formulation.
 - **Status**: `IN PROGRESS` (Translation complete; pending cultural localization of Pakistani entities in TM records 1,872–2,919).
