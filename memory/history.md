@@ -1,22 +1,63 @@
-# Session Summary — 2026-10-13
-- Established workspace memory system (`personality.md`, `personal_info.md`, `purpose.md`, `state.md`, `history.md`, `index.md`).
-- Deep forensic extraction of thesis paper artifacts (`T2510616.pdf` and `T2510616_IEEE_Paper.pdf`).
-- Discovered Provat Saha's identity, team dynamics (2 members abroad), and specific task: Age benchmark creation from PakBBQ.
-- Cloned official `PakBBQ_Repo` (EMNLP 2025) and analyzed `PakBBQ_ENG/Age.jsonl` (2,920 rows).
-- Uncovered critical flaws in legacy `Dataset_ BanglaBBQ_Old/`: truncated to 799 rows, 101 broken JSON lines in combined file, literal Google Translate errors ("জুমারটি", "অবিশ্বাস্যযোগ্য", "স্কুলপড়ুয়া লোকটি").
-- Re-authenticated Google OAuth token and connected to live Google Sheet **BanglaBBQ** (`1xZhhKZoZuSy-ZXAWWdhCpq9QLh705ScErcnBZacmZnY`).
-- Successfully populated `PakBBQ_ENG_Age` (2,920 rows), created Tab 2 (`BanglaBBQ_BEN_Age`), and fully translated all 328 rows of `question_index = 1`, `2`, `3`, and `4` (Rows 0 to 327) into authentic conversational Bengali with zero mathematical errors.
+# history.md — Historical Research Log
 
+<!-- IMPORTANT FOR AGENTS: Always prepend new conversation log entries to the top of this list (most recent first). Do not append to the bottom. -->
 
-- **[2026-10-16] Convo 88107fa0-e853-403f-8950-4ede808b9fdb**: Started BanglaBBQ Religion GitHub backup and Google Sheets cleanup task (exporting Phase 1 & Phase 2 Religion worksheets, preserving legacy datasets, creating current active Religion dataset, and cleaning up Google Sheets tabs).
-- **[2026-10-16] Convo 95d8ba9a-47de-445d-b9f2-8ce163f6afcd**: Completed comprehensive research repository audit, repair, and validation. Aligned 720 Bengali `answer_info` records to English canonical identities. Repaired Bengali administrative translations in Q6 (বাতিল -> নামঞ্জুর), Q10 (ভোটকেন্দ্রে -> ভোটবুথে), Q16 (বাতিল -> নাকচ), and Q18 (গ্রেপ্তার -> আটক). Replaced insufficient source URLs for Q6 (HRW freedom of assembly) and Q13 (CPJ Dainik Dinkal printing press declaration cancellation). Developed comprehensive 10-invariant offline test suite (`scripts/validate_politics_dataset.py`) and GitHub Actions CI workflow (`.github/workflows/validate.yml`). Authored `CITATION.cff`, updated `README.md`, and converted `scripts/README.md` links to relative markdown links. Synchronized live Google Sheets tabs `BanglaBBQ_ENG_Politics` and `BanglaBBQ_BEN_Politics` with 0 differences, while verifying Age tabs and baseline Q1–Q5 remained 100% untouched.
-- **[2026-10-16] Convo 95d8ba9a-47de-445d-b9f2-8ce163f6afcd**: Expanded BanglaBBQ Politics benchmark from 5 to 20 source-backed themes (Q1–Q20). Preserved Q1–Q5 100% unchanged (verified against pre-expansion backup). Created 15 new source-backed themes (Q6–Q20) with 48 records each (720 new records per language) across 2 counterfactual orientations (version a and version b), 2 context conditions, 2 question polarities, and all 6 unique answer permutations (3!). Total dataset reached exactly 960 records per language (IDs 0–959) on live Google Sheets tabs `BanglaBBQ_ENG_Politics` and `BanglaBBQ_BEN_Politics` and synced to local JSONL files. Passed 11 rigorous automated verification checks: 0 duplicate QA records, 0 label errors, perfectly uniform label distribution (320/320/320), 100% bilingual parity, complete Age styling replication across rows 1–961, and untouched Age sheets.
-- **[2026-10-16] Convo 95d8ba9a-47de-445d-b9f2-8ce163f6afcd**: Expanded Politics benchmark from 120 to 240 records (48 per template, covering all 6 answer permutations (3!) for each of the 8 context-question combinations). Live Google Sheets tabs `BanglaBBQ_ENG_Politics` and `BanglaBBQ_BEN_Politics` updated (range A1:O241) with conditional formatting extended to row 300, and synced local JSONL files. Verified 100% mathematical invariant parity, 0 duplicate QA records, and untouched Age datasets.
-- **[2026-10-16] Convo 95d8ba9a-47de-445d-b9f2-8ce163f6afcd**: Fully audited, corrected, and validated Politics benchmark. Fixed 40 disambiguated gold labels strictly grounded in contextual evidence. Eliminated probability wording ("more likely to") across Q1-Q5 in English and Bengali with direct event questions. Pruned 40 exact duplicate records to yield a pristine 120-record benchmark (24 records per template, 50% ambig / 50% disambig, 50% neg / 50% nonneg, perfectly uniform 40/40/40 label distribution). Re-indexed IDs 0-119, updated live Google Sheets tabs `BanglaBBQ_ENG_Politics` and `BanglaBBQ_BEN_Politics`, and synced local JSONL files.
-- **[2026-10-16] Convo 95d8ba9a-47de-445d-b9f2-8ce163f6afcd**: Corrected 56 rows of Grandparent/Grandchild dual mistranslations (দাদা-দাদি -> দাদু, নাতি-নাতনি -> নাতিটি) and 48 rows of Q7 comparative meaning mismatch ("কার নতুন আইডিয়ার অভাব ছিল?" -> "কে তুলনামূলকভাবে কম সৃজনশীল ছিল?") directly in live Google Sheets tab `BanglaBBQ_BEN_Age` and local mirror `BanglaBBQ_BEN_New/Age.jsonl`. 100% audit verified with 0 label changes, 0 leaks, and untouched grandma/grandpa/grandmother/grandfather terms.
-- **[2026-10-15] Convo 95d8ba9a-47de-445d-b9f2-8ce163f6afcd**: Audited legacy Politics benchmark (`Dataset_ BanglaBBQ_Old/Politics/`). Created and styled two new tabs in the live Google Spreadsheet (`BanglaBBQ_ENG_Politics`, ID: `1888499205` and `BanglaBBQ_BEN_Politics`, ID: `2128232344`) with 112 rows each across 15 standard columns. Conducted full forensic breakdown of all 5 Politics templates, their sources (HRW, Amnesty, CPJ), and their 4 combinatoric variation axes (condition, polarity, name order, answer permutations).
-- **[2026-10-14] Convo 95d8ba9a-47de-445d-b9f2-8ce163f6afcd**: Created executive 3-column review tab `Review_Age_20_Templates` (Tab Index 0) in Google Sheet for Provat Saha's review comparing Original PakBBQ English vs Legacy Thesis BanglaBBQ (showing missing templates 9-20) vs Hasin's authentic Bengali translations.
-- **[2026-10-14] Convo 95d8ba9a-47de-445d-b9f2-8ce163f6afcd**: Fully translated and pushed all 1,384 remaining rows for Templates 11 to 20 into Google Sheet `BanglaBBQ_BEN_Age` (Rows 1538 to 2921). Completed 100% of the Age benchmark (all 2,920 rows). Executed forensic audit across the entire dataset (0 leaks, 0 inflections, 100% invariant parity). Exported production-ready dataset to `BanglaBBQ_BEN/Age.jsonl`.
-- **[2026-10-14] Convo 95d8ba9a-47de-445d-b9f2-8ce163f6afcd**: Validated and batch-pushed Templates 5 through 10 (1,208 rows) into Google Sheets tab `BanglaBBQ_BEN_Age` (Rows 330 to 1537) with 100% mathematical invariant parity. Dataset completion reached 1,536 / 2,920 rows (52.6%).
-- **[2026-10-13] Convo 95d8ba9a-47de-445d-b9f2-8ce163f6afcd**: Initialized workspace memory, cloned PakBBQ, audited dataset flaws, refreshed Google OAuth token, pushed all 2,920 rows into live Google Sheet, created Tab 2 (`BanglaBBQ_BEN_Age`), and fully translated and verified all 328 rows of `question_index = 1` through `4`.
+- **[2026-10-17] Convo d939a6e8-f448-4b70-8668-891b85c48e7b**: **Established BanglaBBQ Official Research Mission & Shared GitHub Memory System**.
+  - **Memory Entry Point**: Authored [`memory/README.md`](file:///d:/Research-BanglaBBQ/memory/README.md) as the mandatory first document for all coding agents and researchers, establishing the core mission (repairing/expanding seniors' T2510616 thesis benchmark, using BBQ/PakBBQ as methodological references), hierarchy of tools (Sheets = working canvas, GitHub = versioned repo, memory = single source of truth for project progress), and multi-phase synchronization protocol between ChatGPT and IDE coding agents.
+  - **Research Mission Formalized**: Overhauled [`memory/purpose.md`](file:///d:/Research-BanglaBBQ/memory/purpose.md) to define the foundational thesis heritage, specific defects of legacy files in `Dataset_ BanglaBBQ_Old/`, BBQ and PakBBQ invariant frameworks, the 9 bias categories, bilingual standards, and academic publication goals preceding SafeLLM experiments.
+  - **Dashboard Restructuring**: Overhauled [`memory/state.md`](file:///d:/Research-BanglaBBQ/memory/state.md) into a concise 9-category dashboard with verified record counts, explicit status markers (`VERIFIED COMPLETE`, `IN PROGRESS`, `PENDING`), live Google Sheet tab IDs, active paths, and transparent research-quality blockers (Religion source/translation review, Age Pakistani entity localization).
+  - **Reconciliation & Correction of Historical Record**:
+    - Recorded full completion of Religion Phase 2 (commits `6b415c3` and `f49fe17`) which was previously left as "Started".
+    - Clarified the multi-stage evolution of Politics (112 legacy -> 160 expansion -> 120 deduplication/correction -> 240 permutation expansion -> 960 20-theme benchmark).
+    - Removed stale Age translation blockers (all 2,920 rows are fully translated in `BanglaBBQ_BEN_Age` and `BanglaBBQ_BEN_New/Age.jsonl`; current outstanding work is cultural entity localization in TM rows 1,872–2,919).
+    - Clarified that `personal_info.md` is git-ignored via `.gitignore` for developer privacy and is not part of the tracked public GitHub memory.
+  - **Repository & Dataset Map Updated**: Overhauled [`memory/index.md`](file:///d:/Research-BanglaBBQ/memory/index.md), verifying every listed file path on disk, separating active production datasets from legacy baselines, and cataloging all 82 automation scripts.
 
+- **[2026-10-16] Convo 88107fa0-e853-403f-8950-4ede808b9fdb**: **Completed Religion Benchmark Backup, Export, Google Sheets Cleanup, and CI Validation**.
+  - **Worksheet Backups**: Exported all 4 Religion worksheets (Phase 1 ENG/BEN and Phase 2 ENG/BEN) to versioned GitHub backup `backups/religion_sheets_backup_20261016/` with raw API dumps, metadata, and SHA-256 proofs (`6b415c3`).
+  - **Active Dataset Export**: Exported Phase 2 (20 source-backed themes $\times$ 48 records = 960 records per language, 1,920 total) to canonical directory `BanglaBBQ_Religion/` (`Religion_eng.jsonl` and `Religion_bng.jsonl`).
+  - **Google Sheets Cleanup**: Safely renamed Phase 2 sheets to `BanglaBBQ_ENG_Religion` (ID: `804112545`) and `BanglaBBQ_BEN_Religion` (ID: `860941009`). Safely deleted legacy Phase 1 worksheets after backup confirmation.
+  - **Test Suite & CI Integration**: Built 10-invariant offline test suite `scripts/validate_religion_dataset.py` and live verification script `scripts/verify_religion_live.py`. Integrated Religion validation into `.github/workflows/validate.yml` (`f49fe17`). Confirmed 100% bit-for-bit parity between live sheets and GitHub JSONL.
+  - **Remaining Limitations Documented**: Flagged need for independent source relevance checks (e.g. Q20 Christian class enrollment vs ECOI source), naturalness review of Bengali phrasing, and realistic counterfactual auditing.
+
+- **[2026-10-16] Convo 95d8ba9a-47de-445d-b9f2-8ce163f6afcd**: **Completed Politics Benchmark Audit, Translation Repair, CI Integration, and Citation Authoring**.
+  - **Answer Info Alignment**: Aligned 720 Bengali `answer_info` records to English canonical identities across themes Q6–Q20.
+  - **Translation Repair**: Repaired stilted Bengali administrative translations in Q6 (বাতিল -> নামঞ্জুর for nomination rejection), Q10 (ভোটকেন্দ্রে -> ভোটবুথে for polling booth), Q16 (বাতিল -> নাকচ for bill veto), and Q18 (গ্রেপ্তার -> আটক for administrative detention).
+  - **Source Validation**: Replaced insufficient source URLs for Q6 (HRW freedom of assembly) and Q13 (CPJ Dainik Dinkal press declaration cancellation).
+  - **CI & Repository Governance**: Developed 10-invariant offline test suite (`scripts/validate_politics_dataset.py`) and GitHub Actions workflow (`.github/workflows/validate.yml`). Authored repository `CITATION.cff`, updated `README.md`, and fixed relative links in `scripts/README.md`. Synchronized live Google Sheets tabs with 0 differences and verified untouched baseline Q1–Q5 (`45e0201`, `9f9f91e`, `fce62b3`).
+
+- **[2026-10-16] Convo 95d8ba9a-47de-445d-b9f2-8ce163f6afcd**: **Expanded Politics Benchmark to 20 Themes (960 Records per Language)**.
+  - **Thematic Expansion**: Preserved baseline Q1–Q5 100% untouched. Added 15 new source-backed themes (Q6–Q20) with 48 records each (720 new records per language) across 2 counterfactual orientations, 2 context conditions, 2 question polarities, and all 6 answer permutations ($3!$).
+  - **Dataset Metrics**: Total dataset reached exactly 960 records per language (IDs 0–959) on live Google Sheet tabs `BanglaBBQ_ENG_Politics` and `BanglaBBQ_BEN_Politics` and local JSONL in `BanglaBBQ_Politics/`.
+  - **Automated Validation**: Passed 11 automated verification checks (0 duplicate QA records, 0 label errors, perfectly uniform 320/320/320 label distribution, 100% bilingual parity, and full Age styling replication across rows 1–961).
+
+- **[2026-10-16] Convo 95d8ba9a-47de-445d-b9f2-8ce163f6afcd**: **Expanded Politics Benchmark to 240 Records (Permutation Expansion)**.
+  - Expanded 5 themes to 48 rows each by implementing full 6-way answer permutations across all 8 context-question combinations.
+  - Formatted live Google Sheet tabs A1:O241 with Age-replicated conditional formatting and synced local JSONL files.
+
+- **[2026-10-16] Convo 95d8ba9a-47de-445d-b9f2-8ce163f6afcd**: **Forensic Audit & Correction of Politics Benchmark (120 Clean Records)**.
+  - Corrected 40 disambiguated gold labels strictly grounded in context text.
+  - Eliminated speculative probability wording ("more likely to") across Q1–Q5 in English and Bengali with direct factual event questions.
+  - Pruned 40 exact duplicate records to yield 120 unique records (24 per template, 50% ambig / 50% disambig, 50% neg / 50% nonneg, uniform 40/40/40 label distribution). Re-indexed IDs 0–119 and synced to live Google Sheets.
+
+- **[2026-10-16] Convo 95d8ba9a-47de-445d-b9f2-8ce163f6afcd**: **Corrected Bengali Age Family Terms & Q7 Comparative Formulation**.
+  - Corrected 56 rows of Grandparent/Grandchild dual mistranslations (দাদা-দাদি -> দাদু, নাতি-নাতনি -> নাতিটি) directly in live Google Sheet `BanglaBBQ_BEN_Age` and local mirror `BanglaBBQ_BEN_New/Age.jsonl`.
+  - Corrected 48 rows of Q7 comparative meaning mismatch ("কার নতুন আইডিয়ার অভাব ছিল?" -> "কে তুলনামূলকভাবে কম সৃজনশীল ছিল?").
+  - Verified 100% mathematical parity with 0 label changes and 0 entity leaks.
+
+- **[2026-10-15] Convo 95d8ba9a-47de-445d-b9f2-8ce163f6afcd**: **Audited Legacy Politics Benchmark & Initialized Google Sheets Tabs**.
+  - Audited legacy Politics benchmark (`Dataset_ BanglaBBQ_Old/Politics/`).
+  - Created and styled two new tabs in master Google Spreadsheet: `BanglaBBQ_ENG_Politics` (ID: `1888499205`) and `BanglaBBQ_BEN_Politics` (ID: `2128232344`) with 112 rows each across 15 standard columns.
+  - Conducted forensic breakdown of all 5 initial Politics templates, identifying human rights source documentation (HRW, Amnesty, CPJ).
+
+- **[2026-10-14] Convo 95d8ba9a-47de-445d-b9f2-8ce163f6afcd**: **Completed Full 2,920-Row Bengali Age Translation & Comparative Review Tab**.
+  - Created executive 3-column review tab `Review_Age_20_Templates` (Tab Index 0, ID: `99887766`) in Google Sheet for Provat Saha's review, comparing Original PakBBQ English vs Legacy Thesis BanglaBBQ vs Hasin's authentic Bengali translations.
+  - Translated and pushed all remaining rows for Templates 11 to 20 into Google Sheet `BanglaBBQ_BEN_Age` (Rows 1538 to 2921), bringing total translated rows to exactly 2,920.
+  - Executed forensic audit across entire dataset (0 leaks, 0 inflections, 100% invariant parity) and exported production-ready dataset to `BanglaBBQ_BEN_New/Age.jsonl`.
+
+- **[2026-10-13] Convo 95d8ba9a-47de-445d-b9f2-8ce163f6afcd**: **Workspace Initialization, Legacy Audit, and Initial Age Translations**.
+  - Established workspace memory system and cloned official `PakBBQ_Repo` (EMNLP 2025).
+  - Deep forensic analysis of thesis artifacts (`T2510616.pdf` and `T2510616_IEEE_Paper.pdf`).
+  - Uncovered critical flaws in legacy `Dataset_ BanglaBBQ_Old/`: truncated to 799 rows in Bengali Age, 101 broken JSON lines in combined file, literal Google Translate errors ("জুমারটি", "অবিশ্বাস্যযোগ্য").
+  - Authenticated Google OAuth token with Google Sheets API (`1xZhhKZoZuSy-ZXAWWdhCpq9QLh705ScErcnBZacmZnY`).
+  - Populated `PakBBQ_ENG_Age` (2,920 rows), created `BanglaBBQ_BEN_Age`, and fully translated initial 328 rows (Templates 1–4).

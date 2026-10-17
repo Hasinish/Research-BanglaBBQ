@@ -1,134 +1,165 @@
-# Workspace Index
+# Workspace Index & Repository Map
 
-## Directory Structure & Detailed File Context
-
-### Root Directory (`/`)
-- `T2510616.pdf`: BRAC University undergraduate CSE thesis book (84 pages, completed June 2025). Titled *"A Bilingual Study of Socio-Cultural Bias in Large Language Models through BanglaBBQ and a Post Processing Mitigation Pipeline"* by Taeeba Tasnia, Ashika Habib Khan, Sumit Anthony Gomes, Tahseen Tanha, and Provat Saha (Supervisors: Dr. Muhammad Iqbal Hossain, Tawhid Anwar, Sifat Tanvir). Contains exhaustive literature review, benchmark definitions, socio-cultural annotation guidelines, Fleiss' Kappa formulas, detailed evaluation benchmarks across models, and ablation studies.
-- `T2510616_IEEE_Paper.pdf`: 8-page IEEE conference-formatted paper draft. Formulates the BanglaBBQ benchmark (6,607 bilingual QA pairs across 9 bias categories) and the SafeLLM 3-stage inference-time bias mitigation pipeline (Sensitivity Layer -> Bias Evaluator -> Counterfactual Grounding). Key mathematical formulations include Fleiss' Kappa agreement:
-  kappa = (P_bar - P_e_bar) / (1 - P_e_bar)
-  Accuracy formulations (Acc_ambig, Acc_disambig, Acc_neg, Acc_nonneg, Acc_DT, Acc_TM, Acc_NA), paired t-tests (t = 6.666 for English, t = 12.005 for Bengali), and Cohen's d effect size (d = 2.22 for English, d = 4.00 for Bengali). Evaluates LLaMA-3.1-8B, LLaMA-3.3-70B, LLaMA-4-Scout-17B, and Gemini 2.0 Flash-Lite.
-- `PakBBQ_Age_English.csv`: Flattened, Excel-ready CSV export of the full 2,920 rows from `PakBBQ_Repo/PakBBQ/PakBBQ_ENG/Age.jsonl` with UTF-8 BOM encoding for seamless spreadsheet import. Contains columns: `example_id`, `type`, `context_condition`, `question_polarity`, `context`, `question`, `ans0`, `ans1`, `ans2`, `label`.
+> **VERIFIED REPOSITORY MAP**  
+> Every path listed in this index has been verified to exist on disk. Active production datasets are strictly separated from legacy baseline directories.
 
 ---
 
-### Dataset Root Directory (`Dataset_ BanglaBBQ_Old/`)
-Legacy, fragmented raw dataset dumps from the original 5-member thesis team. Samples are structured in multiple-choice JSONL format with fields: `example_id`, `question_index`, `question_polarity` (neg / nonneg), `context_condition` (ambig / disambig), `category`, `answer_info` (dictionary mapping ans0/ans1/ans2 to stereotype tags), `additional_metadata`, `context`, `question`, `ans0`, `ans1`, `ans2`, `label`, `type` (DT, TM, NA), and `id`.
+## 1. Directory Structure Overview
 
-- `banbbq_ben_combined.jsonl`: Partially aggregated Bengali JSONL dataset (2,866 lines) compiled during initial thesis experiments.
-
-#### Subdirectory: `Age/`
-- `Age_Bengali_800entries.jsonl`: Bengali samples (799 entries) targeting age-related socio-cultural stereotyping (elderly vs youth capability/frailty).
-- `Age_Eng.jsonl`: Expanded English age benchmark pool (2,920 entries) derived from BBQ adaptations.
-
-#### Subdirectory: `AGE_ENG/`
-- `Age.jsonl`: Curated 799-entry English age evaluation set matching the Bengali 799-entry counterpart.
-
-#### Subdirectory: `Banglabbq/`
-- `banglabbq_ben_combined.jsonl`: 850-entry aggregated Bengali multi-category subset used in early thesis smoke runs.
-- `banglabbq_eng_combined.jsonl`: 850-entry aggregated English multi-category parallel subset.
-
-#### Subdirectory: `BBQ/BanBBQ_BEN/` (Consolidated Bengali BBQ Categories)
-- `Age.jsonl`: 799 entries covering age stereotyping in Bengali context.
-- `Gender_identity.jsonl`: 506 entries evaluating gender stereotyping (traditional gender roles, occupations, societal judgment).
-- `Physical_appearance.jsonl`: 1,123 entries evaluating appearance discrimination, skin complexion ("shyamla", "fair"), height, and body shaming.
-- `Regional.jsonl`: 51 entries probing regional stereotyping across Bangladesh districts (Noakhali, Barisal, Chittagong, Sylhet, Old Dhaka).
-- `Religion.jsonl`: 392 entries covering religious harmony, minority stereotyping, and communal perceptions in Bangladesh.
-
-#### Subdirectory: `BBQ/BanBBQ_ENG/` (Consolidated English Parallel Categories)
-- `Age.jsonl`: 799 parallel English entries on age bias.
-- `Gender_identity.jsonl`: 506 parallel English entries on gender identity.
-- `Physical_appearance.jsonl`: 1,106 parallel English entries on physical appearance.
-- `Regional.jsonl`: 51 parallel English entries on regional stereotypes translated/adapted.
-- `Religion.jsonl`: 392 parallel English entries on religious bias.
-
-#### Subdirectory: `Educational background/`
-- `banglabbq_education_bengali.jsonl`: 128 entries probing bias based on university tier (public vs private vs national university) and education medium.
-- `banglabbq_education_english.jsonl`: 128 parallel English entries on educational hierarchy stereotypes.
-
-#### Subdirectory: `Gender_identity/` (Raw member working folder)
-- `Gender_identity_bng.jsonl`: 506 entries (raw working source matching `BBQ/BanBBQ_BEN/Gender_identity.jsonl`).
-- `Gender_identity_eng.jsonl`: 506 entries (raw working source matching `BBQ/BanBBQ_ENG/Gender_identity.jsonl`).
-
-#### Subdirectory: `Marital Status/`
-- `Marital_status_Bengali_100entries.jsonl`: 100 entries probing social stigma around unmarried, divorced, or widowed individuals in Bangladesh.
-- `Marital_status_Eng.jsonl`: 100 parallel English entries on marital status biases.
-
-#### Subdirectory: `Mental Health/`
-- `Mental_health_status_Bengali_100entries.jsonl`: 100 entries evaluating stigma against individuals with depression, therapy seeking, or psychiatric illnesses.
-- `Mental_health_status_Eng.jsonl`: 100 parallel English entries on mental health stereotypes.
-
-#### Subdirectory: `Physical_appearance/` (Raw member working folder)
-- `Physical_appearance.jsonl`: 1,123 entries (Bengali working file matching `BBQ/BanBBQ_BEN/Physical_appearance.jsonl`).
-
-#### Subdirectory: `Politics/`
-- `banglabbq_politics_bengali.jsonl`: 112 entries evaluating partisan political stereotyping in Bangladesh.
-- `banglabbq_politics_english.jsonl`: 112 parallel English entries on political affiliation stereotypes.
-
-#### Subdirectory: `P_A_E/` (Physical Appearance English raw folder)
-- `Physical_appearance.jsonl`: 1,106 entries (English working file matching `BBQ/BanBBQ_ENG/Physical_appearance.jsonl`).
-
-#### Subdirectory: `Regional/` (Raw member working folder)
-- `Regional_ban.jsonl`: 51 entries (working source for Bengali regional biases).
-- `Regional_eng.jsonl`: 51 entries (working source for English regional biases).
-
-#### Subdirectory: `Religion/` (Raw member working folder)
-- `Religion_bng.jsonl`: 392 entries (working source for Bengali religion biases).
-- `Religion_eng.jsonl`: 392 entries (working source for English religion biases).
+```
+Research-BanglaBBQ/
+├── .github/workflows/           # Automated CI workflows (invariant validation)
+├── BanglaBBQ_Politics/          # Active verified Politics benchmark (960 ENG, 960 BEN)
+├── BanglaBBQ_Religion/          # Active verified Religion benchmark (960 ENG, 960 BEN)
+├── BanglaBBQ_BEN_New/           # Active verified Bengali Age benchmark (2,920 BEN)
+├── Dataset_ BanglaBBQ_Old/      # Historical baseline from seniors' thesis (T2510616)
+├── PakBBQ_Repo/                 # Cloned official PakBBQ benchmark repository (EMNLP 2025)
+├── backups/                     # Timestamped backups of Google Sheets and datasets
+├── scripts/                     # Automation, validation, migration, and audit scripts (82 scripts)
+├── memory/                      # Authoritative shared project memory
+├── PakBBQ_Age_English.csv       # Active English Age benchmark source pool (2,920 rows)
+├── T2510616.pdf                 # Original undergraduate thesis book (84 pages)
+├── T2510616_IEEE_Paper.pdf      # Original 8-page IEEE conference paper draft
+├── CITATION.cff                 # Machine-readable academic citation metadata
+├── README.md                    # Public repository documentation
+└── requirements.txt             # Python dependencies
+```
 
 ---
 
-### PakBBQ Cloned Repository (`PakBBQ_Repo/`)
-The official PakBBQ benchmark repository (`Hashmat02/PakBBQ-A-Culturally-Adapted-Bias-Benchmark-for-QA`, EMNLP 2025 / arXiv:2508.10186).
-- `README.md`: Documentation on PakBBQ dataset generation, benchmark evaluation, and findings.
-- `requirements.txt`: Python package dependencies.
-- `Gemini_eval.py`: Evaluation scripts for Google Gemini API models.
-- `GPT_and_DeepSeek_eval.py`: Evaluation scripts for OpenAI GPT and DeepSeek models.
-- `Analysis/`: Data analysis notebooks and statistical scripts.
-- `PakBBQ/PakBBQ_ENG/`: English benchmark files across 8 categories:
-  - `Age.jsonl`: 2,920 entries (1,872 DT + 1,048 TM templates). This is the source pool Provat Saha assigned Hasin to adapt for BanglaBBQ!
-  - `Disability_status.jsonl`: 1,380 entries.
-  - `ENG-linguistic(language_formality_biases).jsonl`: 88 entries.
-  - `Gender_identity.jsonl`: 4,696 entries.
-  - `Physical_appearance.jsonl`: 1,368 entries.
-  - `Regional.jsonl`: 944 entries.
-  - `Religion.jsonl`: 400 entries.
-  - `SES.jsonl`: 5,384 entries (Socio-Economic Status).
-- `PakBBQ/PakBBQ_UR/`: Urdu benchmark files with parallel 1-to-1 translations across all 8 categories matching `PakBBQ_ENG`.
+## 2. Active Production Datasets
+
+These are the canonical, working datasets currently under active research and evaluation.
+
+### A. Politics ([`BanglaBBQ_Politics/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Politics))
+- [`banglabbq_politics_english.jsonl`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Politics/banglabbq_politics_english.jsonl): 960 records across 20 source-grounded themes (Q1–Q20), 48 records per theme. Full 6-way answer permutations ($3!$), canonical 4-row block ordering, uniform label balance (320/320/320), 0 duplicates, 15-column schema.
+- [`banglabbq_politics_bengali.jsonl`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Politics/banglabbq_politics_bengali.jsonl): 960 parallel Bengali records with 100% bilingual parity and aligned `answer_info` identity labels.
+- **Status**: `VERIFIED COMPLETE` (Automated offline and live validation passing).
+
+### B. Religion ([`BanglaBBQ_Religion/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Religion))
+- [`Religion_eng.jsonl`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Religion/Religion_eng.jsonl): 960 records across 20 source-grounded themes (Q1–Q20), 48 records per theme. Full 6-way answer permutations ($3!$), canonical 4-row block sequence, uniform label balance (320/320/320), 0 duplicates, 15-column schema.
+- [`Religion_bng.jsonl`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Religion/Religion_bng.jsonl): 960 parallel Bengali records with 100% structural parity.
+- **Status**: `IN PROGRESS` (Structurally validated and synced; pending source relevance and translation naturalness review).
+
+### C. Age ([`BanglaBBQ_BEN_New/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_BEN_New) & Root)
+- [`PakBBQ_Age_English.csv`](file:///d:/Research-BanglaBBQ/PakBBQ_Age_English.csv): 2,920 English records adapted from PakBBQ (1,872 DT + 1,048 TM).
+- [`BanglaBBQ_BEN_New/Age.jsonl`](file:///d:/Research-BanglaBBQ/BanglaBBQ_BEN_New/Age.jsonl): 2,920 parallel Bengali records translated and audited for family relationship terms (নানা/নানি, দাদু/নাতিটি) and Q7 comparative formulation.
+- **Status**: `IN PROGRESS` (Translation complete; pending cultural localization of Pakistani entities in TM records 1,872–2,919).
 
 ---
 
-### Production Datasets (`BanglaBBQ_Religion/`, `BanglaBBQ_Politics/`, `BanglaBBQ_BEN_New/`)
-- `BanglaBBQ_Religion/`:
-  - `Religion_eng.jsonl`: 960-record English Religion benchmark across 20 source-grounded themes, 48 rows/theme, full 6-way answer permutations (3!), canonical 4-row BBQ block sequence, uniform 320/320/320 label distribution, 0 duplicates, 15-column schema.
-  - `Religion_bng.jsonl`: 960-record parallel Bengali Religion benchmark with 100% structural parity.
-- `BanglaBBQ_Politics/`:
-  - `banglabbq_politics_english.jsonl`: 960-record English Politics benchmark across 20 themes.
-  - `banglabbq_politics_bengali.jsonl`: 960-record Bengali Politics benchmark.
-- `BanglaBBQ_BEN_New/`:
-  - `Age.jsonl`: 2,920-record production Bengali Age benchmark.
+## 3. Historical Baseline: Seniors' Original Dataset ([`Dataset_ BanglaBBQ_Old/`](file:///d:/Research-BanglaBBQ/Dataset_%20BanglaBBQ_Old))
+
+> **PRESERVATION POLICY**: All files in this directory are frozen historical artifacts from thesis T2510616. They must **never** be deleted, overwritten, or silently modified.
+
+### Root Files
+- `banbbq_ben_combined.jsonl`: Partially aggregated legacy Bengali dataset (2,866 lines; contains syntax issues).
+
+### Category Subdirectories
+- **`Age/`**:
+  - `Age_Bengali_800entries.jsonl`: 799 legacy Bengali records (truncated at row 798).
+  - `Age_Eng.jsonl`: 2,920 legacy English records.
+- **`AGE_ENG/`**:
+  - `Age.jsonl`: 799 parallel English records.
+- **`Banglabbq/`**:
+  - `banglabbq_ben_combined.jsonl`: 850 early Bengali experimental records.
+  - `banglabbq_eng_combined.jsonl`: 850 early English parallel records.
+- **`BBQ/BanBBQ_BEN/`** (Consolidated legacy Bengali categories):
+  - `Age.jsonl`: 799 records.
+  - `Gender_identity.jsonl`: 506 records.
+  - `Physical_appearance.jsonl`: 1,123 records.
+  - `Regional.jsonl`: 51 records.
+  - `Religion.jsonl`: 392 records.
+- **`BBQ/BanBBQ_ENG/`** (Consolidated legacy English categories):
+  - `Age.jsonl`: 799 records.
+  - `Gender_identity.jsonl`: 506 records.
+  - `Physical_appearance.jsonl`: 1,106 records.
+  - `Regional.jsonl`: 51 records.
+  - `Religion.jsonl`: 392 records.
+- **`Educational background/`**:
+  - `banglabbq_education_bengali.jsonl`: 128 records.
+  - `banglabbq_education_english.jsonl`: 128 records.
+- **`Gender_identity/`**:
+  - `Gender_identity_bng.jsonl`: 506 records.
+  - `Gender_identity_eng.jsonl`: 506 records.
+- **`Marital Status/`**:
+  - `Marital_status_Bengali_100entries.jsonl`: 100 records.
+  - `Marital_status_Eng.jsonl`: 100 records.
+- **`Mental Health/`**:
+  - `Mental_health_status_Bengali_100entries.jsonl`: 100 records.
+  - `Mental_health_status_Eng.jsonl`: 100 records.
+- **`Physical_appearance/`**:
+  - `Physical_appearance.jsonl`: 1,123 Bengali records.
+- **`P_A_E/`**:
+  - `Physical_appearance.jsonl`: 1,106 English records.
+- **`Politics/`**:
+  - `banglabbq_politics_bengali_112old.jsonl`: 112 original un-repaired legacy Bengali records.
+  - `banglabbq_politics_english_112old.jsonl`: 112 original un-repaired legacy English records.
+  - `banglabbq_politics_bengali.jsonl`: 960 records (mirrored from active expansion).
+  - `banglabbq_politics_english.jsonl`: 960 records (mirrored from active expansion).
+- **`Regional/`**:
+  - `Regional_ban.jsonl`: 51 records.
+  - `Regional_eng.jsonl`: 51 records.
+- **`Religion/`**:
+  - `Religion_bng.jsonl`: 392 records.
+  - `Religion_eng.jsonl`: 392 records.
 
 ---
 
-### Scripts Directory (`scripts/`)
-Centralized directory containing all 45+ automated research, migration, and verification scripts:
-- `README.md`: Index and documentation of all scripts grouped by domain (Age migrations, Age audits, Politics expansion, Religion backup/validation, Utilities).
-- `backup_and_export_religion.py`: Exports all 4 Religion worksheets to versioned backup and exports Phase 2 to active dataset.
-- `validate_religion_dataset.py`: 10-invariant offline test suite for Religion benchmark.
-- `cleanup_religion_sheets.py`: Renames Phase 2 worksheets to `BanglaBBQ_ENG_Religion` and `BanglaBBQ_BEN_Religion` and deletes Phase 1 worksheets.
-- `verify_religion_live.py`: Automated live verification comparing Google Sheets to GitHub JSONL files.
-- `audit_religion_sources_and_translation.py`: Forensic audit of 20 Religion themes, minority groups, and source URLs.
-- `validate_politics_dataset.py`: 10-invariant offline test suite for Politics benchmark.
-- `repair_politics_dataset.py`: Deterministic repair aligning 720 Bengali answer_info records.
-- `apply_p1_p2_corrections.py`: Applies Grandparent/Grandchild (56 rows) and Q7 (48 rows) fixes.
-- `refresh_google_token.py`: Handles Google OAuth token refresh and validation.
-- Additional forensic scanning, inspection, matrix validation, and simulation scripts.
+## 4. Versioned Backups ([`backups/`](file:///d:/Research-BanglaBBQ/backups))
+
+- **`backups/religion_sheets_backup_20261016/`**:
+  - `BanglaBBQ_ENG_Religion_Phase1.jsonl` (480 records).
+  - `BanglaBBQ_BEN_Religion_Phase1.jsonl` (480 records).
+  - `BanglaBBQ_ENG_Religion_Phase2.jsonl` (960 records).
+  - `BanglaBBQ_BEN_Religion_Phase2.jsonl` (960 records).
+  - `raw_sheets_data.json` & `metadata.json`: Raw Google Sheets API dumps with SHA-256 integrity proofs.
+- **`backups/politics_before_corrections/`**:
+  - Pre-correction backups of Politics sheets (`BanglaBBQ_ENG_Politics_backup.csv`, `BanglaBBQ_BEN_Politics_backup.csv`, raw JSON).
+- **`backups/audit_20261016/`**:
+  - Live sheet dumps and local JSONL snapshots during the Politics repair phase, including `q1_q5_hashes.json` and `translation_repair_report.json`.
 
 ---
 
-### Memory Directory (`memory/`)
-- `personality.md`: AI assistant personality and communication guidelines.
-- `personal_info.md`: Detailed developer profile for Hasin Ishrak.
-- `purpose.md`: Workspace mission, platform targets, research objectives, and publication roadmap.
-- `state.md`: Live tracking of active goals, completed milestones, last session notes, and blockers.
-- `history.md`: Chronological log of conversation summaries and session histories.
-- `index.md`: Comprehensive map and contextual index of all workspace files, math foundations, and folder structures.
+## 5. Automation, Validation, & Audit Scripts ([`scripts/`](file:///d:/Research-BanglaBBQ/scripts))
+
+Contains 82 specialized scripts documented in [`scripts/README.md`](file:///d:/Research-BanglaBBQ/scripts/README.md). Key active tools include:
+
+### Benchmark Invariant Validators & CI
+- [`scripts/validate_politics_dataset.py`](file:///d:/Research-BanglaBBQ/scripts/validate_politics_dataset.py): 10-invariant offline validator for Politics (counts, sequential IDs, block ordering, label balance, disambig grounding, bilingual parity, 0 duplicates, Q1–Q5 hash preservation).
+- [`scripts/validate_religion_dataset.py`](file:///d:/Research-BanglaBBQ/scripts/validate_religion_dataset.py): 10-invariant offline validator for Religion (counts, 15-column schema, 48 rows/theme, 6-way permutations, ambig/disambig grounding, bilingual parity, 0 duplicates).
+- [`.github/workflows/validate.yml`](file:///d:/Research-BanglaBBQ/.github/workflows/validate.yml): Automated GitHub Actions CI workflow executing offline validators on every push and pull request.
+
+### Live Google Sheets Sync & Verification
+- [`scripts/verify_politics_960_live.py`](file:///d:/Research-BanglaBBQ/scripts/verify_politics_960_live.py): Fetches live Google Sheets rows 1–961 and verifies 100% bit-for-bit parity with GitHub JSONL files, conditional rules, and row heights.
+- [`scripts/verify_religion_live.py`](file:///d:/Research-BanglaBBQ/scripts/verify_religion_live.py): Fetches live Google Sheets tabs `BanglaBBQ_ENG_Religion` and `BanglaBBQ_BEN_Religion` and verifies complete parity with GitHub JSONL files.
+- [`scripts/list_sheets.py`](file:///d:/Research-BanglaBBQ/scripts/list_sheets.py): Lists all worksheets, sheet IDs, and indices in the master Google Spreadsheet.
+
+### Forensic Audit & Diagnostic Tools
+- [`scripts/audit_religion_sources_and_translation.py`](file:///d:/Research-BanglaBBQ/scripts/audit_religion_sources_and_translation.py): Audits all 20 Religion themes, targeted minority groups, context text, and external source citations.
+- [`scripts/repair_politics_dataset.py`](file:///d:/Research-BanglaBBQ/scripts/repair_politics_dataset.py): Deterministically aligned 720 Bengali `answer_info` records.
+- [`scripts/apply_p1_p2_corrections.py`](file:///d:/Research-BanglaBBQ/scripts/apply_p1_p2_corrections.py): Applied Grandparent/Grandchild (56 rows) and Q7 (48 rows) fixes to Age.
+
+---
+
+## 6. Academic Artifacts & Methodological Reference Repositories
+
+- [`T2510616.pdf`](file:///d:/Research-BanglaBBQ/T2510616.pdf): Complete 84-page BRAC University undergraduate thesis book (*"A Bilingual Study of Socio-Cultural Bias in Large Language Models through BanglaBBQ and a Post Processing Mitigation Pipeline"*, June 2025).
+- [`T2510616_IEEE_Paper.pdf`](file:///d:/Research-BanglaBBQ/T2510616_IEEE_Paper.pdf): 8-page IEEE conference paper draft. Formulates benchmark metrics, Fleiss' Kappa formulas, paired t-tests, and SafeLLM 3-stage mitigation architecture.
+- [`PakBBQ_Repo/`](file:///d:/Research-BanglaBBQ/PakBBQ_Repo): Cloned official repository of PakBBQ (*"PakBBQ: A Culturally Adapted Bias Benchmark for Question Answering in Pakistan"*, EMNLP 2025 / arXiv:2508.10186). Contains 8 benchmark categories in English and Urdu, evaluation scripts, and analysis notebooks.
+- [`CITATION.cff`](file:///d:/Research-BanglaBBQ/CITATION.cff): Formal citation metadata for the BanglaBBQ project and ongoing research.
+
+---
+
+## 7. Authoritative Shared Memory System ([`memory/`](file:///d:/Research-BanglaBBQ/memory))
+
+- [`memory/README.md`](file:///d:/Research-BanglaBBQ/memory/README.md): **Mandatory Entry Point**. Research mission declaration, roles of Google Sheets / GitHub / memory, and multi-phase agent synchronization protocol.
+- [`memory/purpose.md`](file:///d:/Research-BanglaBBQ/memory/purpose.md): **Official Research Mission**. Historical thesis context, defects of legacy baseline, BBQ & PakBBQ methodological roles, 9 bias categories, bilingual standards, and publication roadmap.
+- [`memory/state.md`](file:///d:/Research-BanglaBBQ/memory/state.md): **Current Verified Progress Dashboard**. Category-by-category status table, live Google Sheet IDs, active paths, and transparent research-quality blockers.
+- [`memory/history.md`](file:///d:/Research-BanglaBBQ/memory/history.md): **Historical Research Log**. Chronological append-only milestone log documenting dataset transformations and bug fixes.
+- [`memory/index.md`](file:///d:/Research-BanglaBBQ/memory/index.md): **Workspace Index & Repository Map** (this document).
+- [`memory/personality.md`](file:///d:/Research-BanglaBBQ/memory/personality.md): **Communication Guidelines**. Guidelines defining assistant persona and response style. *(Does not override research integrity, dataset safety, or factual verification).*
+
+> **Notice on `personal_info.md`**:  
+> Developer personal profiles (e.g. `personal_info.md`), OAuth authentication secrets (`token.json`), and private communications are **intentionally git-ignored via `.gitignore`** to safeguard personal privacy. They are not part of the tracked public GitHub memory.
