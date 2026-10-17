@@ -1,9 +1,9 @@
 # state.md — Current Verified Progress Dashboard
 
 **Last Verified Date**: 2026-10-17  
-**Latest Verified Production Expansion Main Commit**: `937835f3f02b42695891d995d80c2de08a78207e` (Religion V1+V2+V3 canonical files at 2,880 records per language; main-branch Dataset Invariant Validation run `39049474804` and Religion assembly run `39049474790` both succeeded). **Preserved Pre-Expansion Baseline**: `9f72d105d8dd16b6d69dd4121983ec7a90c4a745` (960/language).
-**Latest Memory Synchronization**: 2026-10-17, six-theme Religion evidence-alignment repair, validated in staging branch `fix/religion-q3-q8-q9-q10-q12-q13-20261017`; merge/CI SHA pending final verification.
-**Current Milestone**: Religion has 2,880 records/language, with evidence-aligned QA repairs to 864 records/language across six themes in all three wording variants; production Google Sheets match the validated staged GitHub canonical files cell-for-cell. Politics remains at 2,880/language; Age accepted for current research phase; remaining six categories pending.
+**Latest Verified Production Repair Main Commit**: `8acbd8f35092e1a572d2998dd9b5227a21b402b6` (Religion Q3/Q8/Q9/Q10/Q12/Q13 source-aligned V1/V2/V3 repairs across 864 records per language; entire bilingual live production verified at 2,880 records/language, zero 43,200-cell discrepancies/language; main GitHub Actions Religion assembly `39055874833` and Dataset Invariant Validation `39055874881` both succeeded). **Preserved Pre-Repair Main Baseline**: `bba8ef471ebe0bc53fcd116ada1b16849a4a6b14` (all 2,880 original pre-repair records in Git backup branch); pre-V2/V3 snapshot `9f72d105d8dd16b6d69dd4121983ec7a90c4a745`.
+**Latest Memory Synchronization**: 2026-10-17, six-theme evidence repair merged at `8acbd8f35092e1a572d2998dd9b5227a21b402b6` (this memory-header refresh is a subsequent documentation-only commit).
+**Current Milestone**: Religion remains at 2,880 records/language with all six evidence-aligned V1/V2/V3 theme corrections verified and synchronized on GitHub main and Google Sheets. Politics remains 2,880/language; Age accepted for current research phase; six other categories pending.
 
 ---
 
