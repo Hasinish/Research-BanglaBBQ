@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "category": "Politics",
+  "date": "2026-10-17",
+  "baseline_snapshot_records_per_language": 960,
+  "appended_records_per_language": 1920,
+  "expanded_records_per_language": 2880,
+  "total_bilingual_records": 5760,
+  "themes": 20,
+  "records_per_theme_per_language": 144,
+  "record_generation": "Every original 48-row theme block is preserved; each candidate wording v2 and v3 is another 48-row block (2 counterfactual directions x 2 conditions x 2 polarities x 6 answer permutations).",
+  "original_repo_commit": "691de488ea135a4eaea8315f837f1393b52e2440",
+  "source_review_tab": "https://docs.google.com/spreadsheets/d/1xZhhKZoZuSy-ZXAWWdhCpq9QLh705ScErcnBZacmZnY/edit#gid=722176577",
+  "template_file": "BanglaBBQ_Politics/expansion_v2v3_20261017/wording_templates_v2v3.json",
+  "template_blob_sha": "65c444a62bfab44e8262abb9858617646b2b305f",
+  "canonical_files": [
+    "BanglaBBQ_Politics/banglabbq_politics_english.jsonl",
+    "BanglaBBQ_Politics/banglabbq_politics_bengali.jsonl"
+  ],
+  "candidate_facts": "Scenarios are fictional, controlled paraphrases of original contexts, not 40 new independently sourced events.",
+  "publication_status": "Structurally QA-tested and sheet-integrated. Independent native Bengali language and cultural/contextual source audits remain outstanding.",
+  "languages": {
+    "english": {
+      "pre_expansion_backup": "backups/politics_pre_wording_v2v3_20261017/banglabbq_politics_english_960.jsonl",
+      "pre_expansion_blob_sha": "d6a6f9cb1b71bb0a79d554b9a3df2a6952fd43a4",
+      "shards": [
+        {
+          "path": "BanglaBBQ_Politics/expansion_v2v3_20261017/english_q01_q05.jsonl",
+          "blob_sha": "a3f62e26118c8641c01340110d54b2debeb38134",
+          "first_id": 960,
+          "last_id": 1439,
+          "records": 480
+        },
+        {
+          "path": "BanglaBBQ_Politics/expansion_v2v3_20261017/english_q06_q10.jsonl",
+          "blob_sha": "be912becd93f3f3f4a02c7c3a636f22989480ff7",
+          "first_id": 1440,
+          "last_id": 1919,
+          "records": 480
+        },
+        {
+          "path": "BanglaBBQ_Politics/expansion_v2v3_20261017/english_q11_q15.jsonl",
+          "blob_sha": "c2471f9fff16633e585965d0ce3e4c74cd2df6f8",
+          "first_id": 1920,
+          "last_id": 2399,
+          "records": 480
+        },
+        {
+          "path": "BanglaBBQ_Politics/expansion_v2v3_20261017/english_q16_q20.jsonl",
+          "blob_sha": "7bb44c175deec9526f759c0fc647a1836c5040e0",
+          "first_id": 2400,
+          "last_id": 2879,
+          "records": 480
+        }
+      ]
+    },
+    "bengali": {
+      "pre_expansion_backup": "backups/politics_pre_wording_v2v3_20261017/banglabbq_politics_bengali_960.jsonl",
+      "pre_expansion_blob_sha": "8b0a5cb1f6ed09520be1b5a0010243c54c383dcc",
+      "shards": [
+        {
+          "path": "BanglaBBQ_Politics/expansion_v2v3_20261017/bengali_q01_q05.jsonl",
+          "blob_sha": "44dc83fcae95328c31b71d51f194311cefe1180c",
+          "first_id": 960,
+          "last_id": 1439,
+          "records": 480
+        },
+        {
+          "path": "BanglaBBQ_Politics/expansion_v2v3_20261017/bengali_q06_q10.jsonl",
+          "blob_sha": "49f46666d8ac6d421a0739a2e8ea3bab2a4967da",
+          "first_id": 1440,
+          "last_id": 1919,
+          "records": 480
+        },
+        {
+          "path": "BanglaBBQ_Politics/expansion_v2v3_20261017/bengali_q11_q15.jsonl",
+          "blob_sha": "8d7eb4aa1c3762b246eb4691f9648678089d0fdd",
+          "first_id": 1920,
+          "last_id": 2399,
+          "records": 480
+        },
+        {
+          "path": "BanglaBBQ_Politics/expansion_v2v3_20261017/bengali_q16_q20.jsonl",
+          "blob_sha": "8a9e315851d995054c7db779c0334dc62c6f4e1e",
+          "first_id": 2400,
+          "last_id": 2879,
+          "records": 480
+        }
+      ]
+    }
+  }
+}
