@@ -1,8 +1,8 @@
 # state.md — Current Verified Progress Dashboard
 
 **Last Verified Date**: 2026-10-17  
-**Latest Verified Research Baseline Commit**: `9f72d105d8dd16b6d69dd4121983ec7a90c4a745` (960-row Religion pre-expansion `main`). **Staged Expanded Canonical Materialization Commit**: `d1d7bf7b7353cfa721f19aa53ec3f8d06e3714c6` (2,880-row bilingual Religion files, checked on staging); verify final main merge SHA separately.
-**Latest Memory Synchronization**: 2026-10-17 Religion expansion research log, pending final main SHA checkpoint refresh after merge.
+**Latest Verified Production Expansion Main Commit**: `937835f3f02b42695891d995d80c2de08a78207e` (Religion V1+V2+V3 canonical files at 2,880 records per language; main-branch Dataset Invariant Validation run `39049474804` and Religion assembly run `39049474790` both succeeded). **Preserved Pre-Expansion Baseline**: `9f72d105d8dd16b6d69dd4121983ec7a90c4a745` (960/language).
+**Latest Memory Synchronization**: 2026-10-17, verified expansion main checkpoint `937835f3`; this header refresh is an additional memory-only commit (no dataset changes).
 **Current Milestone**: Religion expanded from 960 to 2,880 records/language after bilingual V2/V3 template review and structural validation; Politics remains 2,880/language; Age accepted for current research phase; remaining six categories pending.
 
 ---
