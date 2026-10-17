@@ -1,3 +1,5 @@
+- **[2026-10-18] Age English worksheet backup and rename (structural only):** Authorized live Google Sheets update: duplicated 2,921-row (header + 2,920 records), 26-grid-column `PakBBQ_ENG_Age` worksheet (`gid=0`) to hidden `Backup_PakBBQ_ENG_Age_preRename_20261018` (`gid=124282477`), then renamed original worksheet in place to `BanglaBBQ_ENG_Age` (`gid=0`). Verified both sheet properties, hidden status, 15-field header, IDs 0/2919, and final three matching backup/working rows. No English/Bengali Age record edits, source citations, IDs or formatting changes were requested or performed. Legacy PakBBQ English source preserved in GitHub. Dataset remains PakBBQ-derived and awaits separate English localization/cultural parity validation; this rename is not semantic certification. Other categories untouched.
+
 # history.md — Historical Research Log
 
 - **[2026-10-18] Convo d939a6e8-f448-4b70-8668-891b85c48e7b**: **Completed Final QA, Semantic Audit, Source Verification, and Leakage Safeguards for Religion Benchmark (2,880 rows/lang)**:
