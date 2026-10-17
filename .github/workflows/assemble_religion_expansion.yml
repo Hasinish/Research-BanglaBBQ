@@ -5,9 +5,12 @@ on:
     branches:
       - main
       - feat/religion-v2v3-expansion-20261017
+      - fix/religion-q3-q8-q9-q10-q12-q13-20261017
     paths:
       - 'BanglaBBQ_Religion/expansion_v2v3_20261017/**'
       - 'scripts/assemble_religion_expansion.py'
+      - 'scripts/apply_religion_evidence_revisions.py'
+      - 'BanglaBBQ_Religion/evidence_revisions_20261017.json'
       - 'scripts/validate_religion_dataset.py'
       - '.github/workflows/assemble_religion_expansion.yml'
   workflow_dispatch:
