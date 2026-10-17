@@ -18,14 +18,17 @@ def validate_religion_dataset(eng_path, ben_path):
     with open(ben_path, 'r', encoding='utf-8') as f:
         ben_recs = [json.loads(line) for line in f]
 
-    # 1. Total Record Counts
+    # 1. Total Record Counts: V1 standalone or V1+V2+V3 append-only expansion
     print("\n--- Check 1: Record Counts ---")
-    if len(eng_recs) != 960:
-        failures.append(f"ENG records count = {len(eng_recs)}, expected 960")
-    if len(ben_recs) != 960:
-        failures.append(f"BEN records count = {len(ben_recs)}, expected 960")
-    print(f"  ENG count: {len(eng_recs)} (PASS)" if len(eng_recs) == 960 else f"  ENG count: FAIL ({len(eng_recs)})")
-    print(f"  BEN count: {len(ben_recs)} (PASS)" if len(ben_recs) == 960 else f"  BEN count: FAIL ({len(ben_recs)})")
+    n = len(eng_recs)
+    if n not in (960, 2880) or len(ben_recs) != n:
+        print(f"  FAIL: ENG={len(eng_recs)} BEN={len(ben_recs)}; expected equal 960 or 2880")
+        return False
+    print(f"  ENG count: {n} (PASS)")
+    print(f"  BEN count: {len(ben_recs)} (PASS)")
+    per_theme = n // 20
+    per_label = n // 3
+    per_condition = per_theme // 2
 
     # 2. Sequential IDs & 15-Column Schema Integrity
     print("\n--- Check 2: Sequential IDs & 15-Column Schema ---")
@@ -49,26 +52,26 @@ def validate_religion_dataset(eng_path, ben_path):
         failures.append(f"Found {id_errors} ID sequencing errors")
     if schema_errors > 0:
         failures.append(f"Found {schema_errors} schema ordering errors")
-    print(f"  Sequential IDs (0-959): {'PASS' if id_errors == 0 else f'FAIL ({id_errors} errors)'}")
+    print(f"  Sequential IDs (0-{n-1}): {'PASS' if id_errors == 0 else f'FAIL ({id_errors} errors)'}")
     print(f"  15-Column Schema Integrity: {'PASS' if schema_errors == 0 else f'FAIL ({schema_errors} errors)'}")
 
     # 3. Theme Counts & Condition Balances
-    print("\n--- Check 3: Theme Counts & Condition Balances (48 per theme) ---")
+    print(f"\n--- Check 3: Theme Counts & Condition Balances ({per_theme} per theme) ---")
     theme_errors = 0
     for q in range(1, 21):
         q_eng = [r for r in eng_recs if r['question_index'] == q]
         q_ben = [r for r in ben_recs if r['question_index'] == q]
-        if len(q_eng) != 48 or len(q_ben) != 48:
+        if len(q_eng) != per_theme or len(q_ben) != per_theme:
             theme_errors += 1
         ambig_e = sum(1 for r in q_eng if r['context_condition'] == 'ambig')
         disambig_e = sum(1 for r in q_eng if r['context_condition'] == 'disambig')
         neg_e = sum(1 for r in q_eng if r['question_polarity'] == 'neg')
         nonneg_e = sum(1 for r in q_eng if r['question_polarity'] == 'nonneg')
-        if ambig_e != 24 or disambig_e != 24 or neg_e != 24 or nonneg_e != 24:
+        if ambig_e != per_condition or disambig_e != per_condition or neg_e != per_condition or nonneg_e != per_condition:
             theme_errors += 1
     if theme_errors > 0:
         failures.append(f"Found {theme_errors} theme balance errors")
-    print(f"  All 20 Themes 48 records with 24/24 condition & polarity balances: {'PASS' if theme_errors == 0 else 'FAIL'}")
+    print(f"  All 20 Themes {per_theme} records with {per_condition}/{per_condition} balance: {'PASS' if theme_errors == 0 else 'FAIL'}")
 
     # 4. Canonical 4-row Block Structure
     print("\n--- Check 4: Canonical 4-row Block Ordering ---")
@@ -89,26 +92,28 @@ def validate_religion_dataset(eng_path, ben_path):
             order_errors += 1
     if order_errors > 0:
         failures.append(f"Found {order_errors} block ordering violations")
-    print(f"  Canonical 4-row BBQ Block Sequence throughout all 960 rows: {'PASS' if order_errors == 0 else f'FAIL ({order_errors})'}")
+    print(f"  Canonical 4-row BBQ Block Sequence throughout all {n} rows: {'PASS' if order_errors == 0 else f'FAIL ({order_errors})'}")
 
     # 5. Label Distribution
     print("\n--- Check 5: Label Distribution ---")
     e_labels = Counter(r['label'] for r in eng_recs)
     b_labels = Counter(r['label'] for r in ben_recs)
-    label_balanced = (e_labels[0] == 320 and e_labels[1] == 320 and e_labels[2] == 320 and
-                      b_labels[0] == 320 and b_labels[1] == 320 and b_labels[2] == 320)
+    label_balanced = all(e_labels[k] == per_label and b_labels[k] == per_label for k in (0, 1, 2))
     if not label_balanced:
         failures.append(f"Unbalanced labels: ENG={e_labels}, BEN={b_labels}")
-    print(f"  Uniform Label Distribution (320/320/320): {'PASS' if label_balanced else 'FAIL'}")
+    print(f"  Uniform Label Distribution ({per_label}/{per_label}/{per_label}): {'PASS' if label_balanced else 'FAIL'}")
 
     # 6. Six Answer Permutations Per Condition x Polarity x Orientation
     print("\n--- Check 6: Six Answer Permutations (3!) per Condition & Orientation ---")
     perm_errors = 0
     for q in range(1, 21):
         q_recs = [r for r in eng_recs if r['question_index'] == q]
-        versions = set(r['additional_metadata'].get('version') for r in q_recs)
-        for v in versions:
-            v_recs = [r for r in q_recs if r['additional_metadata'].get('version') == v]
+        groups = {(r['additional_metadata'].get('wording_variant', 'v1'),
+                   r['additional_metadata'].get('version')) for r in q_recs}
+        for wording_variant, v in groups:
+            v_recs = [r for r in q_recs if
+                      r['additional_metadata'].get('wording_variant', 'v1') == wording_variant and
+                      r['additional_metadata'].get('version') == v]
             for cond in ['ambig', 'disambig']:
                 for pol in ['neg', 'nonneg']:
                     sub = [r for r in v_recs if r['context_condition'] == cond and r['question_polarity'] == pol]
@@ -137,7 +142,7 @@ def validate_religion_dataset(eng_path, ben_path):
                 ambig_errors += 1
     if ambig_errors > 0:
         failures.append(f"Found {ambig_errors} ambiguous gold-label errors")
-    print(f"  All 480 Ambiguous QA pairs correctly target Unknown/অজানা: {'PASS' if ambig_errors == 0 else f'FAIL ({ambig_errors})'}")
+    print(f"  All {n//2} Ambiguous QA pairs correctly target Unknown/অজানা: {'PASS' if ambig_errors == 0 else f'FAIL ({ambig_errors})'}")
 
     # 8. Disambiguated Context Invariant (Must Target Contextually Non-Unknown Entity)
     print("\n--- Check 8: Disambiguated Context Grounding ---")
@@ -154,7 +159,7 @@ def validate_religion_dataset(eng_path, ben_path):
                 disambig_errors += 1
     if disambig_errors > 0:
         failures.append(f"Found {disambig_errors} disambiguated context grounding errors")
-    print(f"  All 480 Disambiguated QA pairs logically grounded to known entities: {'PASS' if disambig_errors == 0 else f'FAIL ({disambig_errors})'}")
+    print(f"  All {n//2} Disambiguated QA pairs target named entities (semantic entailment needs human review): {'PASS' if disambig_errors == 0 else f'FAIL ({disambig_errors})'}")
 
     # 9. Bilingual Structural Equality & Metadata Parity
     print("\n--- Check 9: Bilingual Structural Equality & Metadata Parity ---")
@@ -183,7 +188,7 @@ def validate_religion_dataset(eng_path, ben_path):
     dup_b = len(ben_tuples) - len(set(ben_tuples))
     if dup_e > 0 or dup_b > 0:
         failures.append(f"Duplicate QA records found: ENG={dup_e}, BEN={dup_b}")
-    print(f"  Zero Duplicate QA Records (960/960 completely unique tuples): {'PASS' if (dup_e == 0 and dup_b == 0) else 'FAIL'}")
+    print(f"  Zero Duplicate QA Records ({n}/{n} unique tuples): {'PASS' if (dup_e == 0 and dup_b == 0) else 'FAIL'}")
 
     print("\n====================================================================")
     if failures:
@@ -192,7 +197,7 @@ def validate_religion_dataset(eng_path, ben_path):
             print(f"  - {f}")
         return False
     else:
-        print("ALL 10 COMPREHENSIVE RELIGION BENCHMARK INVARIANT CHECKS PASSED! 🏆")
+        print("ALL 10 RELIGION STRUCTURAL INVARIANT CHECKS PASSED (NOT SOURCE/LINGUISTIC CERTIFICATION)")
         print("====================================================================")
         return True
 
