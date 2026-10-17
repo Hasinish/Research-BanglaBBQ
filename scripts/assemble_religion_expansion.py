@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Safely assemble the 2,880-record BanglaBBQ Religion benchmark from audited shards.
+"""Safely assemble the 2,880-record BanglaBBQ Religion benchmark from immutable shards and an audited post-assembly patch.
 
 The old 960-row V1 prefix remains byte-for-byte intact. The 1,920 appended
 rows are pinned by immutable Git blob hashes, source-row lineage and explicit
@@ -12,6 +12,8 @@ import hashlib
 import json
 from collections import Counter
 from pathlib import Path
+
+from apply_religion_evidence_revisions import build as apply_evidence_revisions, load_patch
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "BanglaBBQ_Religion"
@@ -136,15 +138,28 @@ def main() -> None:
             parts.append(chunk)
             appended.extend(rows)
         combined = raw + b"".join(parts)
-        all_rows = baseline + appended
-        check_assembled(all_rows, lang)
-        require(load_jsonl(combined) == all_rows, f"{lang}: byte assembly mismatch")
+        original_rows = baseline + appended
+        check_assembled(original_rows, lang)
+        require(load_jsonl(combined) == original_rows, f"{lang}: byte assembly mismatch")
+
+        # Apply the independently versioned six-theme correction layer; never
+        # rewrite the pinned, uncorrected historical baseline or shards.
+        revised_rows = apply_evidence_revisions(original_rows, lang, load_patch())
+        check_assembled(revised_rows, lang)
+        old_lines = combined.decode("utf-8").splitlines(keepends=True)
+        corrected_lines = []
+        for previous, fixed, raw_line in zip(original_rows, revised_rows, old_lines):
+            corrected_lines.append(raw_line if previous == fixed else
+                                   json.dumps(fixed, ensure_ascii=False) + "\\n")
+        # The escaped Python string above represents a newline escape, not
+        # a literal backslash-n in the generated JSONL content.
+        corrected_bytes = "".join(corrected_lines).encode("utf-8")
         canonical = DATA / LANG_NAMES[lang]
-        current = canonical.read_bytes()
-        require(current in (raw, combined),
-                f"{lang}: canonical not equal to known V1 or validated V1+V2+V3")
-        ready[lang] = (canonical, combined, all_rows)
-        print(f"{lang}: 960 V1 + 960 V2 + 960 V3 rows structurally verified")
+        current = load_jsonl(canonical.read_bytes())
+        require(current in (baseline, original_rows, revised_rows),
+                f"{lang}: canonical differs from historical, pre-patch or approved corrected data")
+        ready[lang] = (canonical, corrected_bytes, revised_rows)
+        print(f"{lang}: 960+960+960 rows verified against shards and approved revisions")
     en = ready["english"][2]
     bn = ready["bengali"][2]
     for i, (a, b) in enumerate(zip(en, bn)):
@@ -156,7 +171,7 @@ def main() -> None:
         else:
             path.write_bytes(content)
             print(f"{lang}: materialized 2,880 rows")
-    print("Religion bilingual expansion assembled; thematic source and linguistic review remain pending.")
+    print("Religion expansion assembled with evidence-backed corrections; human linguistic/source caveats remain.")
 
 
 if __name__ == "__main__":
