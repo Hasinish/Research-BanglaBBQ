@@ -39,6 +39,7 @@ To maintain clarity and separation of concerns across human researchers, AI codi
 
 | Date | Log File | Category | Focus / Scope | Status |
 | :--- | :--- | :---: | :--- | :---: |
+| **2026-10-17** | [`2026-10-17_religion_source_verification_q3_q8_q9_q10_q12_q13.md`](2026-10-17_religion_source_verification_q3_q8_q9_q10_q12_q13.md) | Religion (Q3, Q8–Q10, Q12–Q13) | Six-theme citation verification; credible alternatives, contradicted/mismatched mechanisms, and source-backed redesign gates, without production data changes | `SOURCE AUDIT COMPLETE / REPAIRS PENDING` |
 | **2026-10-17** | [`2026-10-17_religion_v2v3_expansion.md`](2026-10-17_religion_v2v3_expansion.md) | Religion (Q1–Q20) | Bilingual V2/V3 expansion 960 → 2880 records/language; immutable baselines, SHA-pinned shards, Sheets write/read-back and source caveats | `STRUCTURAL PASS / SOURCE REVIEW PENDING` |
 | **2026-10-17** | [`2026-10-17_religion_wording_variations_review.md`](2026-10-17_religion_wording_variations_review.md) | Religion (Q1–Q20) | 40 bilingual V2/V3 review candidates in separate Google Sheet; source-sensitive caveats and no production expansion | `REVIEW PROPOSAL` |
 | **2026-10-17** | [`2026-10-17_religion_qa_repair.md`](2026-10-17_religion_qa_repair.md) | Religion (Q1–Q20) | QA repairs across Q2, Q3, Q4, Q5, Q7, Q8, Q9, Q10, Q12, Q13, Q18, Q20; source scrutiny; live sheets parity | `VERIFIED COMPLETE` |
