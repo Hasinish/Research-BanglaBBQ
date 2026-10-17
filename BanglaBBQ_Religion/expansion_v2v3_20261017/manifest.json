@@ -1,0 +1,156 @@
+{
+  "research_project": "Improvement of original BanglaBBQ, Religion category",
+  "status": "STAGED_FOR_STRUCTURAL_VALIDATION_SOURCE_REVIEW_PENDING",
+  "date": "2026-10-17",
+  "original_main_commit": "9f72d105d8dd16b6d69dd4121983ec7a90c4a745",
+  "working_review_sheet": "Review_Religion_20_Variations (gid=1743426767)",
+  "proposed_original_english_and_bengali_records": 960,
+  "additional_records_per_language": 1920,
+  "expected_final_records_per_language": 2880,
+  "original_review_manifest": "BanglaBBQ_Religion/review_v2v3_20261017.json",
+  "context_templates": "BanglaBBQ_Religion/expansion_v2v3_20261017/context_templates.json",
+  "counterfactual_note": "Version a and version b reverse the disadvantaged group with matched qualifications; V2/V3 each generate 48 records per theme.",
+  "source_caveat": "Inherited Q3,Q8,Q9,Q10,Q12,Q13 thematic evidence mismatches remain unresolved. Independent human bilingual naturalness review pending. Do not imply publication ready or independent incidents.",
+  "languages": {
+    "english": {
+      "pre_expansion_backup": "backups/religion_pre_wording_v2v3_20261017/Religion_eng.jsonl",
+      "pre_expansion_blob_sha": "6aca7c1097fb673d3edac94c20dc35cb8f821b03",
+      "shards": [
+        {
+          "path": "BanglaBBQ_Religion/expansion_v2v3_20261017/shards/en_v2_00.jsonl",
+          "blob_sha": "06335ada88bfb6652a53ffa947094dfb141ed779",
+          "first_id": 960,
+          "last_id": 1199,
+          "row_count": 240,
+          "wording_variant": "v2"
+        },
+        {
+          "path": "BanglaBBQ_Religion/expansion_v2v3_20261017/shards/en_v2_01.jsonl",
+          "blob_sha": "8e10c4560b59e65efe36442038ac5148b9e78d1e",
+          "first_id": 1200,
+          "last_id": 1439,
+          "row_count": 240,
+          "wording_variant": "v2"
+        },
+        {
+          "path": "BanglaBBQ_Religion/expansion_v2v3_20261017/shards/en_v2_02.jsonl",
+          "blob_sha": "03ab83ab2a6642d20bf6e8d0fa6dd23791d84423",
+          "first_id": 1440,
+          "last_id": 1679,
+          "row_count": 240,
+          "wording_variant": "v2"
+        },
+        {
+          "path": "BanglaBBQ_Religion/expansion_v2v3_20261017/shards/en_v2_03.jsonl",
+          "blob_sha": "e0f506c27c0235b00b42891c77e02f40ae6facac",
+          "first_id": 1680,
+          "last_id": 1919,
+          "row_count": 240,
+          "wording_variant": "v2"
+        },
+        {
+          "path": "BanglaBBQ_Religion/expansion_v2v3_20261017/shards/en_v3_00.jsonl",
+          "blob_sha": "a90bdfaea7b592c0e8964cb0b3203caa115b9efa",
+          "first_id": 1920,
+          "last_id": 2159,
+          "row_count": 240,
+          "wording_variant": "v3"
+        },
+        {
+          "path": "BanglaBBQ_Religion/expansion_v2v3_20261017/shards/en_v3_01.jsonl",
+          "blob_sha": "7d42ab173f0b0d94f87f66005f3ca31725c213de",
+          "first_id": 2160,
+          "last_id": 2399,
+          "row_count": 240,
+          "wording_variant": "v3"
+        },
+        {
+          "path": "BanglaBBQ_Religion/expansion_v2v3_20261017/shards/en_v3_02.jsonl",
+          "blob_sha": "81fe4fc8e03b4d169d0b5196c61379629e290552",
+          "first_id": 2400,
+          "last_id": 2639,
+          "row_count": 240,
+          "wording_variant": "v3"
+        },
+        {
+          "path": "BanglaBBQ_Religion/expansion_v2v3_20261017/shards/en_v3_03.jsonl",
+          "blob_sha": "15858def54053a6beb9a46001c072d49dce5dabc",
+          "first_id": 2640,
+          "last_id": 2879,
+          "row_count": 240,
+          "wording_variant": "v3"
+        }
+      ]
+    },
+    "bengali": {
+      "pre_expansion_backup": "backups/religion_pre_wording_v2v3_20261017/Religion_bng.jsonl",
+      "pre_expansion_blob_sha": "ccf33b375b995dbc269bb0abca1e58d67eb160b1",
+      "shards": [
+        {
+          "path": "BanglaBBQ_Religion/expansion_v2v3_20261017/shards/bn_v2_00.jsonl",
+          "blob_sha": "0e2d18fdf0510b9ba61f779b761bfae0f05f5c13",
+          "first_id": 960,
+          "last_id": 1199,
+          "row_count": 240,
+          "wording_variant": "v2"
+        },
+        {
+          "path": "BanglaBBQ_Religion/expansion_v2v3_20261017/shards/bn_v2_01.jsonl",
+          "blob_sha": "797fc52704f1e1898db39fca429eae46cab57e01",
+          "first_id": 1200,
+          "last_id": 1439,
+          "row_count": 240,
+          "wording_variant": "v2"
+        },
+        {
+          "path": "BanglaBBQ_Religion/expansion_v2v3_20261017/shards/bn_v2_02.jsonl",
+          "blob_sha": "c61e2e62a9602d5f37c9f19e653bcbc45f96bdc6",
+          "first_id": 1440,
+          "last_id": 1679,
+          "row_count": 240,
+          "wording_variant": "v2"
+        },
+        {
+          "path": "BanglaBBQ_Religion/expansion_v2v3_20261017/shards/bn_v2_03.jsonl",
+          "blob_sha": "1966dd5010c34a370374ce2c74ae2d89b809384f",
+          "first_id": 1680,
+          "last_id": 1919,
+          "row_count": 240,
+          "wording_variant": "v2"
+        },
+        {
+          "path": "BanglaBBQ_Religion/expansion_v2v3_20261017/shards/bn_v3_00.jsonl",
+          "blob_sha": "566069373d31bcec817dd26024afbcf53afc8b01",
+          "first_id": 1920,
+          "last_id": 2159,
+          "row_count": 240,
+          "wording_variant": "v3"
+        },
+        {
+          "path": "BanglaBBQ_Religion/expansion_v2v3_20261017/shards/bn_v3_01.jsonl",
+          "blob_sha": "e112d3c335be48be3649bd61ba3b6b95646b79a7",
+          "first_id": 2160,
+          "last_id": 2399,
+          "row_count": 240,
+          "wording_variant": "v3"
+        },
+        {
+          "path": "BanglaBBQ_Religion/expansion_v2v3_20261017/shards/bn_v3_02.jsonl",
+          "blob_sha": "d35774437ca081833f94bcd3efc9621b418d29b4",
+          "first_id": 2400,
+          "last_id": 2639,
+          "row_count": 240,
+          "wording_variant": "v3"
+        },
+        {
+          "path": "BanglaBBQ_Religion/expansion_v2v3_20261017/shards/bn_v3_03.jsonl",
+          "blob_sha": "22a7d640f39da9aeac457ca92d1db1f03faafd81",
+          "first_id": 2640,
+          "last_id": 2879,
+          "row_count": 240,
+          "wording_variant": "v3"
+        }
+      ]
+    }
+  }
+}
