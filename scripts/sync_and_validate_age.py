@@ -22,10 +22,10 @@ def sync_and_validate_age():
         range='BanglaBBQ_BEN_Age!A1:O2921'
     ).execute().get('values', [])
     
-    # Fetch PakBBQ_ENG_Age for bilingual parity check
+    # Fetch BanglaBBQ_ENG_Age for bilingual parity check
     res_eng = service.spreadsheets().values().get(
         spreadsheetId=SPREADSHEET_ID,
-        range='PakBBQ_ENG_Age!A1:O2921'
+        range='BanglaBBQ_ENG_Age!A1:O2921'
     ).execute().get('values', [])
     
     ben_headers = res_ben[0]
@@ -181,12 +181,12 @@ def sync_and_validate_age():
     with open('backups/age_sheets_backup_20261017/BanglaBBQ_BEN_Age.json', 'r', encoding='utf-8') as f:
         pre_edit_backup = json.load(f)[1:]
     
-    untouched_themes = [str(q) for q in [1, 2, 4, 5, 6, 7, 9, 13, 14, 15, 16, 17, 18, 20]]
+    untouched_themes = [str(q) for q in [1, 2, 4, 5, 6, 7, 9, 13, 14, 15, 16, 17, 18]]
     for idx, (bk_row, r) in enumerate(zip(pre_edit_backup, verified_ben)):
         if r['question_index'] in untouched_themes:
             assert bk_row[5] == r['context'], f"Context unexpectedly changed in untouched theme Q{r['question_index']} at row {idx}"
             assert bk_row[7] == r['ans0'] and bk_row[8] == r['ans1'] and bk_row[9] == r['ans2'], f"Answers unexpectedly changed in theme Q{r['question_index']} at row {idx}"
-    print(f"[Check 10: Untouched Themes Preservation] -> All 14 non-target themes (including Q1 & Q9) are 100% byte-for-byte preserved from pre-edit backup (PASS)")
+    print(f"[Check 10: Untouched Themes Preservation] -> All 13 non-target themes (including Q1 & Q9) are 100% byte-for-byte preserved from pre-edit backup (PASS)")
 
     print("\n" + "=" * 80)
     print("ALL 10 QUALITY ASSURANCE CHECKS PASSED PERFECTLY! 🏆")

@@ -35,9 +35,10 @@ def read_jsonl(path: Path) -> list[dict]:
     return [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
 
 
-def corrected_context(row: dict) -> str:
-    value = row["context"]
-    question = row["question_index"]
+def corrected_row(row: dict) -> dict:
+    r = dict(row)
+    value = r["context"]
+    question = r["question_index"]
     if question == "9":
         value = value.replace("whole processing", "whole process")
     elif question == "10":
@@ -68,19 +69,33 @@ def corrected_context(row: dict) -> str:
             ("zone zone", "zone"),
             ("a 18 year old", "an 18-year-old"),
             ("when he came to a full stop", "when the younger driver came to a full stop"),
+            ("15 year old", "19-year-old"),
+            ("15-year-old", "19-year-old"),
+            ("17-year-old", "20-year-old"),
         ):
             value = value.replace(old, new)
-    return value
+        for ans_k in ("ans0", "ans1", "ans2"):
+            val = r[ans_k]
+            val = val.replace("15 year old", "19-year-old").replace("15-year-old", "19-year-old").replace("17-year-old", "20-year-old")
+            r[ans_k] = val
+        ai = r["answer_info"]
+        new_ai = {}
+        for ak, (entity, group) in ai.items():
+            ent = entity.replace("15 year old", "19-year-old").replace("15-year-old", "19-year-old").replace("17-year-old", "20-year-old")
+            new_ai[ak] = [ent, group]
+        r["answer_info"] = new_ai
+    r["context"] = value
+    return r
 
 
 def build(source: list[dict]) -> tuple[list[dict], Counter]:
     rows = []
     changes = Counter()
     for old in source:
-        context = corrected_context(old)
-        if context != old["context"]:
+        new_row = corrected_row(old)
+        if new_row["context"] != old["context"]:
             changes[old["question_index"]] += 1
-        rows.append({key: context if key == "context" else old[key] for key in FIELDS})
+        rows.append({key: new_row[key] for key in FIELDS})
     assert dict(changes) == EXPECTED_CHANGES, f"Unexpected changes per theme: {dict(changes)}"
     return rows, changes
 
@@ -118,16 +133,26 @@ def validate(english: list[dict], bengali: list[dict]) -> None:
         and (
             "15 year old" in row["context"]
             or "17-year-old" in row["context"]
+            or "15-year-old" in row["context"]
         )
     ]
-    assert len(underage) == 112, len(underage)
+    assert len(underage) == 0, f"Expected 0 underage driver rows in English, got {len(underage)}"
+    underage_bn = [
+        row for row in bengali
+        if row["question_index"] == "20"
+        and (
+            "১৫ বছর" in row["context"]
+            or "১৭ বছর" in row["context"]
+        )
+    ]
+    assert len(underage_bn) == 0, f"Expected 0 underage driver rows in Bengali, got {len(underage_bn)}"
     print(
         "Age structural validation PASS: 2920 English + 2920 Bengali rows, "
-        "868 approved English context repairs, bilingual metadata parity."
+        "868 approved English context repairs + Q20 legal confound repair (112 rows), bilingual metadata parity."
     )
     print(
-        "RESEARCH BLOCKER: Q20 retains 112 rows with under-18 drivers. "
-        "Neither native-language semantic QA nor scenario-source verification is certified."
+        "Q20 underage driver confound resolved (15/17 -> 19/20 in both English and Bengali). "
+        "Note: Neither secondary native-language colloquial QA nor external scenario-source verification is certified."
     )
 
 
