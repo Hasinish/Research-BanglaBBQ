@@ -1,6 +1,16 @@
 # history.md — Historical Research Log
 
-<!-- IMPORTANT FOR AGENTS: Always prepend new conversation log entries to the top of this list (most recent first). Do not append to the bottom. -->
+- **[2026-10-17] Convo d939a6e8-f448-4b70-8668-891b85c48e7b**: **Completed Politics Q5/Q14/Q19 Approved Fixes, Bilingual Synchronization, and Parity Verification**:
+  - **Applied Approved Targeted QA Repairs**: Synchronized the three approved content fixes across both canonical JSONL files:
+    - **Q5 (144 records/lang)**: Qualified context with historical year 2022 ("In Bangladesh in 2022, " / "In 2022, " in English; "২০২২ সালে " in Bengali) across V1 (Rows 192–239) and V2/V3 (Rows 1344–1439).
+    - **Q14 (72 neg records/lang)**: Refined negative question text to ask whose belongings were forcibly thrown out of the dormitory, removing the unsubstantiated premise of formal expulsion (Rows 624–671, 2208–2303).
+    - **Q19 (144 Bengali records)**: Aligned Bengali context (48 V1 rows) and answer options (144 rows across `ans0`, `ans1`, `ans2`) to government critic terminology (`সরকার-সমালোচক` / `সরকার-সমালোচকের`).
+  - **100% Bit-for-Bit Live Parity**: Validated against live Google Sheets `BanglaBBQ_ENG_Politics` and `BanglaBBQ_BEN_Politics` via Google Sheets API v4. Confirmed 0 discrepancies across all 2,880 records (43,200 cells per language).
+  - **Validator & Assembler Harmonization**:
+    - Updated `scripts/validate_politics_dataset.py` with dual-hash verification: preserved historical baseline hashes (`2ab59ae...` / `eb6ae51...`) as evidence for legacy datasets while recognizing approved post-repair hashes (`7390c9e...` / `e30d2b1...`) for active Politics. All 11 checks passed.
+    - Updated `scripts/assemble_politics_expansion.py` to handle Windows CRLF normalization and recognize verified post-repair canonical files without overwriting approved fixes.
+  - **Audit & Evidence Preservation**: Frozen historical thesis files (`Dataset_ BanglaBBQ_Old/Politics/`), pre-expansion backups (`backups/politics_pre_wording_v2v3_20261017/`), and pre-fix live backups (`Backup_Politics_ENG_preQAfix_20261017`, `Backup_Politics_BEN_preQAfix_20261017`) preserved untouched. Authored comprehensive research log `research_logs/2026-10-17_politics_q5_q14_q19_fixes.md`.
+  - **Quality Status**: Structurally verified and synchronized. Independent native Bengali linguistic review and external source-relevance reviews remain outstanding; **benchmark is not publication-ready**.
 
 - **[2026-10-17] Politics V2/V3 integrated — 2,880 records per language, structurally validated and GitHub/Sheets synchronized**:
   - Researcher explicitly authorized the two wording versions from `Review_Politics_20_Variations` for all 20 Politics themes. Added 1,920 rows/language, retaining the 960 original rows unmodified and assigning IDs 960–2879.

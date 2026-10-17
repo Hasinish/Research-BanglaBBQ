@@ -24,9 +24,9 @@ def validate_dataset(eng_path, ben_path):
     # 1. Total Record Counts
     print("\n--- Check 1: Record Counts ---")
     if len(eng_recs) != expected_count:
-        failures.append(f"ENG records count = {len(eng_recs)}, expected 960")
+        failures.append(f"ENG records count = {len(eng_recs)}, expected {expected_count}")
     if len(ben_recs) != expected_count:
-        failures.append(f"BEN records count = {len(ben_recs)}, expected 960")
+        failures.append(f"BEN records count = {len(ben_recs)}, expected {expected_count}")
     print(f"  ENG count: {len(eng_recs)} (PASS)" if len(eng_recs) == expected_count else f"  ENG count: FAIL ({len(eng_recs)})")
     print(f"  BEN count: {len(ben_recs)} (PASS)" if len(ben_recs) == expected_count else f"  BEN count: FAIL ({len(ben_recs)})")
 
@@ -185,26 +185,35 @@ def validate_dataset(eng_path, ben_path):
     dup_b = len(ben_tuples) - len(set(ben_tuples))
     if dup_e > 0 or dup_b > 0:
         failures.append(f"Duplicate QA records found: ENG={dup_e}, BEN={dup_b}")
-    print(f"  Zero Duplicate QA Records (960/960 completely unique tuples): {'PASS' if (dup_e == 0 and dup_b == 0) else 'FAIL'}")
+    print(f"  Zero Duplicate QA Records ({expected_count}/{expected_count} completely unique tuples): {'PASS' if (dup_e == 0 and dup_b == 0) else 'FAIL'}")
 
-    # 10. Q1-Q5 Hash Preservation
-    print("\n--- Check 10: Q1-Q5 Hash Preservation against Baseline ---")
+    # 10. Q1-Q5 Hash Preservation against Baseline / Approved Repair
+    print("\n--- Check 10: Q1-Q5 Hash Preservation ---")
     q1_q5_eng_hash = hashlib.sha256(json.dumps(eng_recs[:240], sort_keys=True).encode('utf-8')).hexdigest()
     q1_q5_ben_hash = hashlib.sha256(json.dumps(ben_recs[:240], sort_keys=True).encode('utf-8')).hexdigest()
     
-    # Expected hashes from Phase A audit
-    exp_eng_hash = "2ab59aec0cb6f6ce42f60e8912c861373b96008db8dec2af281046def64595b3"
-    exp_ben_hash = "eb6ae51a7b0d4d739243c995e23e5e7a6a55dc895c4a791975dbb18c50d4fc23"
-    
-    hash_match = (q1_q5_eng_hash == exp_eng_hash and q1_q5_ben_hash == exp_ben_hash)
-    if not hash_match:
-        failures.append("Q1-Q5 baseline hashes DO NOT MATCH!")
-    print(f"  Q1-Q5 ENG SHA-256: {q1_q5_eng_hash} ({'PASS' if q1_q5_eng_hash == exp_eng_hash else 'FAIL'})")
-    print(f"  Q1-Q5 BEN SHA-256: {q1_q5_ben_hash} ({'PASS' if q1_q5_ben_hash == exp_ben_hash else 'FAIL'})")
+    # Preserved historical baseline hashes (evidence from pre-repair Phase A audit)
+    HISTORICAL_ENG_HASH = "2ab59aec0cb6f6ce42f60e8912c861373b96008db8dec2af281046def64595b3"
+    HISTORICAL_BEN_HASH = "eb6ae51a7b0d4d739243c995e23e5e7a6a55dc895c4a791975dbb18c50d4fc23"
 
+    # Approved post-repair hashes (Q5 historical year 2022 qualification applied)
+    POST_REPAIR_ENG_HASH = "7390c9ed9d008dc2c0e937ecab545e9d2521fbdb8b44b0adab2b9d218180c51a"
+    POST_REPAIR_BEN_HASH = "e30d2b1d8085f6f01ed95e12548ea466aac8cef6317b8c0a678fe4c10c32eda6"
+
+    valid_eng_hashes = {HISTORICAL_ENG_HASH, POST_REPAIR_ENG_HASH}
+    valid_ben_hashes = {HISTORICAL_BEN_HASH, POST_REPAIR_BEN_HASH}
+
+    eng_match = q1_q5_eng_hash in valid_eng_hashes
+    ben_match = q1_q5_ben_hash in valid_ben_hashes
+    if not (eng_match and ben_match):
+        failures.append(f"Q1-Q5 hashes do not match historical baseline or approved repair: ENG={q1_q5_eng_hash}, BEN={q1_q5_ben_hash}")
+    eng_status = "Historical Baseline" if q1_q5_eng_hash == HISTORICAL_ENG_HASH else ("Approved Post-Q5 Repair" if q1_q5_eng_hash == POST_REPAIR_ENG_HASH else "UNKNOWN")
+    ben_status = "Historical Baseline" if q1_q5_ben_hash == HISTORICAL_BEN_HASH else ("Approved Post-Q5 Repair" if q1_q5_ben_hash == POST_REPAIR_BEN_HASH else "UNKNOWN")
+    print(f"  Q1-Q5 ENG SHA-256: {q1_q5_eng_hash} ({'PASS - ' + eng_status if eng_match else 'FAIL'})")
+    print(f"  Q1-Q5 BEN SHA-256: {q1_q5_ben_hash} ({'PASS - ' + ben_status if ben_match else 'FAIL'})")
 
     # 11. Wording variant lineage, 48-row blocks, permutations, and identity preservation
-    print("\\n--- Check 11: V2/V3 Wording Expansion Audit ---")
+    print("\n--- Check 11: V2/V3 Wording Expansion Audit ---")
     expansion_errors = 0
     if expected_count == 2880:
         for lang, records in (("ENG", eng_recs), ("BEN", ben_recs)):

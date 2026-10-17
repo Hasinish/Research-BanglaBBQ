@@ -1,17 +1,22 @@
 #!/usr/bin/env python3
-"""Rebuild Politics v2/v3 canonical bilingual JSONL from immutable source plus shards.
+"""Rebuild or verify Politics v2/v3 canonical bilingual JSONL from immutable source plus shards.
 
-This operation is append-only relative to the 960-record pre-expansion snapshot.
-Running it again after a successful build is safe and leaves files unchanged.
+This operation verifies the append-only expansion relative to the 960-record pre-expansion snapshot.
+It supports both the initial unpatched expansion baseline and the verified post-repair dataset
+incorporating approved Q5, Q14, and Q19 corrections while preserving historical baselines as evidence.
 """
 from __future__ import annotations
 
 import hashlib
 import json
+import sys
 from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+from scripts.apply_politics_q5_q14_q19_fixes import patch
+
 BASE = ROOT / "BanglaBBQ_Politics"
 PARTS = BASE / "expansion_v2v3_20261017"
 MANIFEST = json.loads((PARTS / "manifest.json").read_text(encoding="utf-8"))
@@ -50,12 +55,13 @@ def assert_rows(rows: list[dict], label: str, start_id: int, n: int) -> None:
 def main() -> None:
     assembled: dict[str, bytes] = {}
     rows_by_language: dict[str, list[dict]] = {}
-    pending: dict[str, Path] = {}
+    pending: dict[str, tuple[Path, bytes, bool]] = {}
 
     for lang in ("english", "bengali"):
+        lang_code = "en" if lang == "english" else "bn"
         spec = MANIFEST["languages"][lang]
         base_path = ROOT / spec["pre_expansion_backup"]
-        source_bytes = base_path.read_bytes()
+        source_bytes = base_path.read_bytes().replace(b"\r\n", b"\n")
         assert git_blob_sha(source_bytes) == spec["pre_expansion_blob_sha"], f"{lang}: baseline blob mismatch"
         original = records(source_bytes)
         assert_rows(original, lang + "/original", 0, 960)
@@ -64,7 +70,7 @@ def main() -> None:
         extras_records: list[dict] = []
         for part in spec["shards"]:
             path = ROOT / part["path"]
-            fragment = path.read_bytes()
+            fragment = path.read_bytes().replace(b"\r\n", b"\n")
             assert git_blob_sha(fragment) == part["blob_sha"], f"{lang}: shard hash mismatch: {path}"
             block = records(fragment)
             assert_rows(block, lang + "/" + path.name, part["first_id"], 480)
@@ -83,12 +89,28 @@ def main() -> None:
             raise ValueError(f"{lang}: duplicate context/question/permutation row")
 
         canonical = BASE / ("banglabbq_politics_" + lang + ".jsonl")
-        current = canonical.read_bytes()
-        if current not in (source_bytes, combined):
-            raise ValueError(f"{lang}: canonical snapshot differs from both pre-expansion baseline and derived 2,880-row expansion; refusing overwrite")
-        pending[lang] = canonical
+        current_bytes = canonical.read_bytes().replace(b"\r\n", b"\n")
+        current_rows = records(current_bytes)
+
+        expected_repaired = []
+        for r in full_rows:
+            row_copy = json.loads(json.dumps(r))
+            patch(row_copy, lang_code)
+            expected_repaired.append(row_copy)
+
+        is_repaired = (current_rows == expected_repaired)
+        is_raw_combined = (current_bytes == combined)
+        is_source = (current_bytes == source_bytes)
+
+        if not (is_repaired or is_raw_combined or is_source):
+            raise ValueError(
+                f"{lang}: canonical snapshot differs from pre-expansion baseline, "
+                f"unpatched 2,880-row expansion, and approved post-repair state; refusing overwrite"
+            )
+
+        pending[lang] = (canonical, combined, is_repaired)
         assembled[lang] = combined
-        rows_by_language[lang] = full_rows
+        rows_by_language[lang] = current_rows if is_repaired else full_rows
 
     same_fields = ("example_id", "question_index", "context_condition", "question_polarity",
                    "type", "label", "answer_info", "additional_metadata", "category", "id")
@@ -96,9 +118,10 @@ def main() -> None:
         if any(en[key] != bn[key] for key in same_fields):
             raise ValueError(f"Bilingual structural or metadata mismatch at example ID {idx}")
 
-    for lang, canonical in pending.items():
-        output = assembled[lang]
-        if canonical.read_bytes() == output:
+    for lang, (canonical, output, is_repaired) in pending.items():
+        if is_repaired:
+            print(f"{lang}: 2,880-record canonical snapshot verified with approved Q5/Q14/Q19 repairs (no overwrite)")
+        elif canonical.read_bytes().replace(b"\r\n", b"\n") == output:
             print(f"{lang}: 2,880-record canonical snapshot already up to date")
         else:
             canonical.write_bytes(output)
@@ -109,3 +132,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

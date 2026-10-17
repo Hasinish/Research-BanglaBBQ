@@ -18,12 +18,14 @@ The researcher explicitly approved correcting the three preliminary Politics QA 
 - After edits: all 432 relevant rows/language were read back for text columns F:J; no unexpected differences were found against the exact authorized transformation.
 - No labels, IDs, answer_info, additional_metadata, category, or record order changed by the sheet updates.
 
-## GitHub synchronization status: INCOMPLETE
-- Branch: `fix/politics-q5-q14-q19-20261017`.
-- English canonical 2,880-record JSONL was successfully edited on that branch (commit `b5ef5d6e2510cc1a2afbdd1b12790fc09d06cbda`).
-- Two attempts to write the entire ~2.7MB Bengali canonical JSONL through the GitHub connector failed with HTTP/2 connection errors; Bengali canonical remains old on that branch. **DO NOT MERGE THE PARTIALLY SYNCHRONIZED BRANCH AS IS.**
-- Idempotent script `scripts/apply_politics_q5_q14_q19_fixes.py` staged on repair branch at commit `7b68f438f887d1404c09633f9ab8f509edd76c9c`. The coding agent should run this locally after pulling, validate it, sync both canonical JSONL files, and resolve legacy-hash and V2/V3 assembler/manifest assumptions before merging safely.
-- The source immutable 960-row pre-expansion backups, versioned shard manifests, and historically preserved legacy datasets must remain untouched. Make provenance explicit in a dated repair log and update memory only after actual synchronized validation.
+## GitHub synchronization status: FULLY SYNCHRONIZED
+- Branch: `fix/politics-q5-q14-q19-20261017` -> merged to `main`.
+- English canonical 2,880-record JSONL synchronized in commit `b5ef5d6e2510cc1a2afbdd1b12790fc09d06cbda`.
+- Bengali canonical 2,880-record JSONL synchronized locally via `scripts/apply_politics_q5_q14_q19_fixes.py` (resolving remote GitHub connector timeout).
+- Dual-hash preservation added to `scripts/validate_politics_dataset.py` (supporting both historical baseline hashes and approved post-repair hashes).
+- CRLF normalization and post-repair recognition added to `scripts/assemble_politics_expansion.py`.
+- 100% bit-for-bit parity confirmed across all 2,880 records (43,200 cells per language) with live Google Sheets.
+- Comprehensive report documented in `research_logs/2026-10-17_politics_q5_q14_q19_fixes.md`.
 
 ## Pending
 Independent native-Bengali review, independent source-relevance verification, and grouped paraphrase evaluation controls remain outstanding. Not publication-ready.
