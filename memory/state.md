@@ -1,8 +1,8 @@
 # state.md — Current Verified Progress Dashboard
 
 **Last Verified Date**: 2026-10-17  
-**Latest Verified Data/Research Commit**: `07d4b46edc69988a3572f10a6555825f6204b7bb` (Religion evidence QA follow-up: 24 English Q18 context grammar repairs; synchronization with live Google Sheets, corrected research documentation).  
-**Latest Memory Synchronization**: 2026-10-17, through `07d4b46` (follow-up source-scope and language QA); this header refresh is committed subsequently.  
+**Latest Verified Research Checkpoint Commit**: `0e64dbac664d09c9702d4e9cb0c40c0ecb15512f` (review-only Religion V2/V3 proposal: 40 new bilingual candidate contexts; no production expansion). **Latest Production Data Repair Commit**: `07d4b46edc69988a3572f10a6555825f6204b7bb` (Religion Q18 English grammar and evidence-QA follow-up).  
+**Latest Memory Synchronization**: 2026-10-17, through Religion V2/V3 proposal commit `0e64dbac664d09c9702d4e9cb0c40c0ecb15512f` (header refresh committed subsequently).  
 **Current Milestone**: Politics remains at 2,880 records per language; Religion remains at 960 per language with 40 new bilingual wording candidates drafted in a separate review tab (not integrated); Age accepted for current phase; other six categories pending.
 
 ---
