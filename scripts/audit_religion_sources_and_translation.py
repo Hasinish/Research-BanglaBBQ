@@ -27,7 +27,7 @@ SOURCE_EVALUATION = {
     5: {"type": "Government Policy Note", "notes": "Cites UK Home Office CPIN (June 2025) on treatment of religious minorities and atheists in Bangladesh; grounds secular/nonreligious discrimination."},
     6: {"type": "Thematic Background", "notes": "Cites MRG report on educational barriers and cultural tensions experienced by Hindu students."},
     7: {"type": "Human Rights Report", "notes": "Cites Human Rights Watch report on systematic civic and religious persecution of the Ahmadiyya community in Bangladesh."},
-    8: {"type": "Country of Origin Evidence", "notes": "Cites a US Department of State 2021 religious freedom report hosted by ecoi.net; ecoi.net is a repository, not the author. Evidence is broad and does not establish a particular factory clerical hiring decision."},
+    8: {"type": "Country of Origin Evidence", "notes": "Cites the US Department of State 2021 Country Report on Human Rights Practices (not the religious freedom report) hosted by ecoi.net; ecoi.net is a repository, not the author. Evidence is broad and does not establish a particular factory clerical hiring decision."},
     9: {"type": "Sociological Study", "notes": "Cites Dhaka classroom inclusion research as contextual evidence only; religion-specific debate leadership selection is not independently established by this citation."},
     10: {"type": "Sociological Study", "notes": "Cites generic classroom inclusion research; religion-specific debate speaking-slot discrimination remains unverified."},
     11: {"type": "Thematic Report", "notes": "Cites MRG report documenting land disputes and institutional vulnerabilities of indigenous Buddhist communities in Bangladesh."},
@@ -50,7 +50,9 @@ def main():
     eng_recs = [json.loads(line) for line in ENG_PATH.read_text(encoding='utf-8').splitlines() if line.strip()]
     ben_recs = [json.loads(line) for line in BEN_PATH.read_text(encoding='utf-8').splitlines() if line.strip()]
 
-    assert len(eng_recs) == 960 and len(ben_recs) == 960
+    assert len(eng_recs) == len(ben_recs) and len(eng_recs) in (960, 2880)
+    count = len(eng_recs)
+    wording_variants = ('v1',) if count == 960 else ('v1', 'v2', 'v3')
 
     print("\n--- 1. Theme-by-Theme Grounding & Source Classification ---")
     for q in range(1, 21):
@@ -72,29 +74,30 @@ def main():
     cf_errors = 0
     for q in range(1, 21):
         q_eng = [r for r in eng_recs if r['question_index'] == q]
-        ver_a = [r for r in q_eng if r['additional_metadata'].get('version') == 'a']
-        ver_b = [r for r in q_eng if r['additional_metadata'].get('version') == 'b']
-        if len(ver_a) != 24 or len(ver_b) != 24:
-            cf_errors += 1
-            print(f"  Q{q:02d} version count mismatch: ver_a={len(ver_a)}, ver_b={len(ver_b)}")
-            continue
-
-        for cond in ['ambig', 'disambig']:
-            for pol in ['neg', 'nonneg']:
-                sub_a = [r for r in ver_a if r['context_condition'] == cond and r['question_polarity'] == pol]
-                sub_b = [r for r in ver_b if r['context_condition'] == cond and r['question_polarity'] == pol]
-                if len(sub_a) != 6 or len(sub_b) != 6:
-                    cf_errors += 1
-                if cond == 'disambig':
-                    target_a = sub_a[0]['answer_info']['ans' + str(sub_a[0]['label'])][1]
-                    target_b = sub_b[0]['answer_info']['ans' + str(sub_b[0]['label'])][1]
-                    if target_a == target_b:
+        for wording in wording_variants:
+            ver_a = [r for r in q_eng if r['additional_metadata'].get('version') == 'a' and r['additional_metadata'].get('wording_variant', 'v1') == wording]
+            ver_b = [r for r in q_eng if r['additional_metadata'].get('version') == 'b' and r['additional_metadata'].get('wording_variant', 'v1') == wording]
+            if len(ver_a) != 24 or len(ver_b) != 24:
+                cf_errors += 1
+                print(f"  Q{q:02d}/{wording} wrong counterfactual counts: a={len(ver_a)}, b={len(ver_b)}")
+                continue
+            for cond in ('ambig', 'disambig'):
+                for pol in ('neg', 'nonneg'):
+                    sub_a = [r for r in ver_a if r['context_condition'] == cond and r['question_polarity'] == pol]
+                    sub_b = [r for r in ver_b if r['context_condition'] == cond and r['question_polarity'] == pol]
+                    if len(sub_a) != 6 or len(sub_b) != 6:
                         cf_errors += 1
-                        print(f"  Q{q:02d} {cond}/{pol} failed counterfactual reversal: ver_a={target_a} == ver_b={target_b}")
+                        continue
+                    if cond == 'disambig':
+                        target_a = sub_a[0]['answer_info']['ans' + str(sub_a[0]['label'])][1]
+                        target_b = sub_b[0]['answer_info']['ans' + str(sub_b[0]['label'])][1]
+                        if target_a == target_b:
+                            cf_errors += 1
+                            print(f"  Q{q:02d}/{wording}/{pol}: answer roles did not reverse: {target_a} / {target_b}")
 
     print(f"  Counterfactual Symmetry & Reversibility across all 20 themes: {'PASS' if cf_errors == 0 else f'FAIL ({cf_errors} errors)'}")
 
-    print("\n--- 3. Ambiguous & Disambiguated Entailment Invariants ---")
+    print("\n--- 3. Ambiguous/Disambiguated Label-Role Checks (Not Entailment Proof) ---")
     ambig_err = 0
     disambig_err = 0
     for i, (e, b) in enumerate(zip(eng_recs, ben_recs)):
@@ -104,13 +107,13 @@ def main():
         else:
             if e['ans' + str(e['label'])] == 'Unknown' or b['ans' + str(b['label'])] == 'অজানা':
                 disambig_err += 1
-    print(f"  Ambiguous contexts target Unknown/অজানা (480/480): {'PASS' if ambig_err == 0 else f'FAIL ({ambig_err})'}")
-    print(f"  Disambiguated contexts target resolved entities (480/480): {'PASS' if disambig_err == 0 else f'FAIL ({disambig_err})'}")
+    print(f"  Ambiguous contexts target Unknown/অজানা ({count//2} rows): {'PASS' if ambig_err == 0 else f'FAIL ({ambig_err})'}")
+    print(f"  Disambiguated gold answers are named entities ({count//2} rows): {'PASS' if disambig_err == 0 else f'FAIL ({disambig_err})'}")
 
     print("\n====================================================================")
-    print("AUDIT RESULT: 100% MATHEMATICAL & STRUCTURAL PASS")
+    print("AUDIT RESULT: STRUCTURAL LABEL AND COUNTERFACTUAL CHECKS ONLY")
     print("LIMITATION: Independent native Bengali linguistic naturalness review")
-    print("and external source relevance scrutiny remain required before publication.")
+    print("and independent source-to-scenario relevance checks remain required.")
     print("====================================================================")
 
 if __name__ == '__main__':
