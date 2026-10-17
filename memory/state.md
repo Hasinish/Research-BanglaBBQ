@@ -1,8 +1,9 @@
 # state.md — Current Verified Progress Dashboard
 
 **Last Verified Date**: 2026-10-17  
-**Last Verified Git Commit**: `a25b61e` (`docs(memory): sync state and history with research logs infrastructure`)  
-**Current Milestone**: Age Dataset Translation Repairs (Q19, Q3, Q8, Q10, Q11, Q12) and Cultural Localization Audit  
+**Latest Verified Data/Research Commit**: `214024ec9aa125026bcb2fc5a8267bf7bfd98f84` (`214024e` — `fix(age): repair Q19 semantic mistranslation, resolve lexical collapses across Q3/Q8/Q10-Q12, and audit cultural localization`)  
+**Latest Memory Synchronization Commit**: Memory synchronization commit following data checkpoint `214024e`  
+**Current Milestone**: Age Benchmark Accepted for Current Research Phase; Prioritizing Remaining Six Categories  
 
 ---
 
@@ -12,7 +13,7 @@
 | :--- | :---: | :---: | :---: | :--- |
 | **Politics** | 960 | 960 | `VERIFIED COMPLETE` | **20 themes (Q1–Q20)**, 48 rows/theme, full 6-way answer permutations (3!). 10/10 offline invariants passed. Live Google Sheets synced with 100% bit-for-bit parity. Untouched baseline Q1–Q5 verified. CI workflow active. |
 | **Religion** | 960 | 960 | `IN PROGRESS` | **20 themes (Q1–Q20)**, 48 rows/theme, 1,920 total records. Phase 2 promoted to active dataset (`BanglaBBQ_Religion/`) and live sheets. Phase 1 safely archived to `backups/religion_sheets_backup_20261016/`. 10/10 offline checks passed. **Outstanding**: Independent source relevance check, Bengali translation naturalness review, and realistic counterfactual audit. |
-| **Age** | 2,920 | 2,920 | `IN PROGRESS` | English source adapted from PakBBQ (`PakBBQ_Age_English.csv`). Bengali working dataset fully translated (2,920 rows) in Google Sheet `BanglaBBQ_BEN_Age` and synchronized to `BanglaBBQ_BEN_New/Age.jsonl`. **100% Unique Context Parity across all 20 themes (Q1–Q20)** achieved: Q1 (16/16), Q3 (36/36), Q8 (100/100), Q9 (144/144), Q10 (168/168), Q11 (84/84), Q12 (84/84), Q19 (140/140). Q19 semantic neighbor mistranslation repaired across 88 rows. 332 total rows repaired across 6 target themes with synchronized answer choices and preserved gold labels. Cultural localization audit completed for TM records Q13–Q20. **Outstanding**: Independent native Bengali linguistic naturalness review. Exemplar rows in `Review_Age_20_Templates` flagged for future update. |
+| **Age** | 2,920 | 2,920 | `IN PROGRESS` | **Accepted for Current Research Phase**. 2,920 English and 2,920 Bengali records across 20 themes in Google Sheet `BanglaBBQ_BEN_Age` and `BanglaBBQ_BEN_New/Age.jsonl`. 100% unique context parity with English across all 20 themes (1,460 unique contexts). All structural repairs and context alignments preserved: Q1 (16/16), Q3 (36/36), Q8 (100/100), Q9 (144/144), Q10 (168/168), Q11 (84/84), Q12 (84/84), and Q19 (140/140). Age Q2 (IDs 32–127, 96 rows/language) was reviewed for grandparent terms, age references, and phrasing; **the researcher explicitly decided to leave Q2 and the entire Age dataset unchanged for now**. No additional Age edits are authorized. **Outstanding for Publication Readiness**: Independent native Bengali linguistic naturalness review and cross-language cultural alignment decision for English source. Exemplar rows in `Review_Age_20_Templates` flagged for future update. |
 | **Gender Identity** | 506 *(legacy)* | 506 *(legacy)* | `PENDING` | Baseline files in `Dataset_ BanglaBBQ_Old/Gender_identity/` and `BBQ/BanBBQ_.../Gender_identity.jsonl`. Requires category-level forensic audit, permutation expansion, and Google Sheet integration. |
 | **Physical Appearance** | 1,106 *(legacy)* | 1,123 *(legacy)* | `PENDING` | Baseline files in `Dataset_ BanglaBBQ_Old/Physical_appearance/` and `P_A_E/`. **Known Defect**: 17-record mismatch between English and Bengali legacy sets. Requires category-level audit, reconciliation, and permutation balancing. |
 | **Regional Affiliation** | 51 *(legacy)* | 51 *(legacy)* | `PENDING` | Baseline files in `Dataset_ BanglaBBQ_Old/Regional/`. **Known Defect**: Severely underpowered sample size (only 51 entries). Requires comprehensive expansion across Bangladeshi district stereotypes with source backing. |
@@ -60,6 +61,8 @@
 
 ## 4. Completed Work
 
+- [x] Formally reviewed Age Q2 (IDs 32–127) for translation issues involving grandparent terminology, age references, and context phrasing; researcher explicitly decided to leave Q2 and the entire Age dataset unchanged for the current research phase.
+- [x] Formally accepted Age benchmark for current research phase (2,920 records per language) with no further dataset modifications authorized.
 - [x] Cloned and integrated official PakBBQ repository baseline (`PakBBQ_Repo`).
 - [x] Generated Excel-ready CSV for Age (`PakBBQ_Age_English.csv`, 2,920 rows).
 - [x] Created 3-column comparative review tab `Review_Age_20_Templates` in master Google Sheet.
@@ -92,11 +95,12 @@
 
 ## 5. In-Progress Work & Research-Quality Blockers
 
-### A. Age Linguistic Review & English Cultural Modernization (Outstanding)
-- **Independent Bengali Linguistic Review**: Review Bengali phrasing across all 20 themes for authentic colloquial naturalness with native Bangladeshi speakers.
-- **English Cultural Modernization Decision**: Bengali benchmark is already localized (Shwapno, Pathao, Tasty Treat, Dhaka, Chittagong), while English retains Pakistani names (Imtiaz, InDrive, Jalal Sons, Lahore, Karachi). The team must decide whether to modernize English to match Bengali or preserve it as a PakBBQ cross-country baseline.
-- **Review Worksheet Exemplar Outdated**: The `Review_Age_20_Templates` sheet currently holds older exemplar rows. Do not modify this worksheet without separate authorization.
-- **Publication Readiness**: Independent linguistic review and formal English modernization decision must be completed before Age can be certified `VERIFIED COMPLETE`.
+### A. Age Benchmark Phase Acceptance & Outstanding Publication Considerations
+- **Accepted for Current Research Phase**: The 2,920-record bilingual Age benchmark is formally accepted for the current research phase. No further dataset edits are authorized.
+- **Age Q2 Status**: Reviewed for grandparent terminology and context phrasing; explicitly left unchanged by researcher decision.
+- **Independent Bengali Linguistic Review (Outstanding)**: Review Bengali phrasing across all 20 themes for authentic colloquial naturalness with independent native Bangladeshi speakers before final publication certification.
+- **English Cultural Modernization Decision (Outstanding)**: Bengali benchmark is already localized (Shwapno, Pathao, Tasty Treat, Dhaka, Chittagong), while English retains Pakistani names (Imtiaz, InDrive, Jalal Sons, Lahore, Karachi). A final editorial decision is pending on whether to modernize the English source to match Bengali or preserve it as a cross-country baseline.
+- **Review Worksheet Exemplar Outdated**: The `Review_Age_20_Templates` sheet currently holds older exemplar rows. Retained untouched per protocol; do not modify without separate authorization.
 
 ### B. Religion Quality Audit (Outstanding)
 - **Source Relevance Verification**: Several Religion themes cite news reports covering violent communal clashes or general minority rights reports. An independent forensic audit must verify that every cited source specifically supports the specific micro-scenario depicted in the context (e.g. Q20 Christian class enrollment vs. ECOI report).
@@ -104,11 +108,11 @@
 - **Realistic Counterfactual Scenarios**: Audit counterfactual scenarios to ensure equal group comparisons do not create implausible or offensive demographic constructs.
 
 ### C. Category-Level Audits for Remaining 6 Categories
-- **Immediate Dependency**: `Gender Identity`, `Physical Appearance`, `Regional Affiliation`, `Educational Background`, `Marital Status`, and `Mental Health` currently reside only in `Dataset_ BanglaBBQ_Old/`.
+- **Immediate Priority**: `Gender Identity`, `Physical Appearance`, `Regional Affiliation`, `Educational Background`, `Marital Status`, and `Mental Health` currently reside only in `Dataset_ BanglaBBQ_Old/`.
 - Each category requires:
   1. Detailed inventory of existing legacy files and discrepancy analysis (e.g., resolving the 1,106 vs. 1,123 row count in Physical Appearance).
-  2. Thematic design and source gathering for Bangladeshi contexts.
-  3. Generation of 48-record blocks across 2 orientations $\times$ 2 conditions $\times$ 2 polarities $\times$ 6 permutations.
+  2. Thematic design and source gathering for authentic Bangladeshi socio-cultural contexts.
+  3. Generation of 48-record blocks across 2 orientations * 2 conditions * 2 polarities * 6 permutations.
   4. Migration to dedicated Google Sheet tabs with canonical styling.
   5. Export to versioned GitHub JSONL directories.
   6. Integration into CI test suite.
@@ -117,8 +121,12 @@
 
 ## 6. Next Recommended Actions
 
-1. **Flag Outdated Q1/Q9 Review Rows**: Present proposed updates for `Review_Age_20_Templates` (Rows 2 & 10) to team for authorization.
-2. **Execute Pakistani Entity Localization for Age**: Scan `BanglaBBQ_BEN_New/Age.jsonl` (rows 1,872–2,919) for Pakistani brand names/locations and prepare localized Bangladeshi replacements.
-3. **Conduct Category Audit on Physical Appearance**: Reconcile the 17-record mismatch between legacy English (1,106) and Bengali (1,123) files, and formulate a 20-theme expansion plan.
-4. **Execute Bengali Linguistic & Source Audit for Religion**: Review themes Q1–Q20 context phrasing and source URLs using `scripts/audit_religion_sources_and_translation.py`.
-5. **Audit and Expand Regional Affiliation**: Expand the 51-sample baseline into a robust multi-district benchmark covering recognized regional linguistic and cultural perceptions.
+The primary active research priority is improving and expanding the six remaining categories:
+
+1. **Gender Identity Audit & Thematic Design**: Conduct category-level forensic audit of legacy baseline files in `Dataset_ BanglaBBQ_Old/Gender_identity/`, audit bias dimensions, design authentic Bangladeshi thematic coverage, balance 6-way permutations, and initialize master Google Sheet integration.
+2. **Physical Appearance Discrepancy Reconciliation**: Reconcile the 17-record mismatch between legacy English (1,106) and Bengali (1,123) baseline files, design balanced 20-theme architecture, and expand to canonical 48-record permutation structure.
+3. **Regional Affiliation Benchmark Expansion**: Audit and expand the severely underpowered 51-sample legacy baseline into a robust multi-district benchmark covering recognized regional socio-cultural perceptions with source backing.
+4. **Educational Background Modernization**: Audit legacy baseline (128 records), design expanded education/institution scenarios, balance permutations, and verify socio-cultural grounding.
+5. **Marital Status Expansion**: Audit legacy baseline (100 records), develop realistic marital bias scenarios, balance 6-way permutations, and ensure cultural grounding.
+6. **Mental Health Expansion**: Audit legacy baseline (100 records), expand clinical and societal bias scenarios, and balance permutations.
+7. **Outstanding Publication-Readiness Audits (Religion & Age)**: Execute independent source relevance and naturalness audits for Religion (`scripts/audit_religion_sources_and_translation.py`); conduct independent native linguistic naturalness review for Age prior to publication submission.
