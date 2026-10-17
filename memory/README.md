@@ -202,3 +202,21 @@ The files in `memory/` are organized as follows:
 
 > **Privacy & Security Notice regarding `personal_info.md`**:  
 > Developer personal profiles (e.g. `personal_info.md`), OAuth credentials (`token.json`, `credentials.json`), and private communications are **strictly excluded from Git tracking** via `.gitignore`. The shared GitHub memory system tracks project research facts and dataset artifacts only.
+
+---
+
+## 5. Mandatory Research Logging in `research_logs/`
+
+To ensure full reproducibility and prevent loss of technical context between human researchers and AI agents:
+
+1. **Role of `research_logs/` vs. `memory/`**:
+   - `memory/` holds the concise, authoritative project state, directory map, and milestone chronology.
+   - `research_logs/` holds detailed, reproducible, evidence-backed research logs containing exact before/after diffs, pre-edit backup URLs, row ranges, statistical distributions, and test script executions.
+2. **Mandatory Logging Trigger**:
+   - A dated Markdown log (`research_logs/YYYY-MM-DD_<topic>.md`) **MUST** be authored for every substantial milestone: dataset repairs, audits, benchmark expansions, translation reviews, source verification, experiment results, or major validation decisions.
+3. **Template & Evidence Requirements**:
+   - Follow the standardized format in [`research_logs/TEMPLATE.md`](file:///d:/Research-BanglaBBQ/research_logs/TEMPLATE.md).
+   - Record exact Google Sheet tabs, row ranges, record IDs, pre-edit backup references, and validation test outputs.
+   - Never fabricate validation results, citations, or commit hashes.
+   - Update the chronological index table in [`research_logs/README.md`](file:///d:/Research-BanglaBBQ/research_logs/README.md) whenever a new log is created.
+

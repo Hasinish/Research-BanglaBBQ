@@ -16,7 +16,8 @@ Research-BanglaBBQ/
 ├── Dataset_ BanglaBBQ_Old/      # Historical baseline from seniors' thesis (T2510616)
 ├── PakBBQ_Repo/                 # Cloned official PakBBQ benchmark repository (EMNLP 2025)
 ├── backups/                     # Timestamped backups of Google Sheets and datasets
-├── scripts/                     # Automation, validation, migration, and audit scripts (82 scripts)
+├── scripts/                     # Automation, validation, migration, and audit scripts (83 scripts)
+├── research_logs/               # Permanent detailed research and audit logs
 ├── memory/                      # Authoritative shared project memory
 ├── PakBBQ_Age_English.csv       # Active English Age benchmark source pool (2,920 rows)
 ├── T2510616.pdf                 # Original undergraduate thesis book (84 pages)
@@ -132,6 +133,7 @@ Contains 82 specialized scripts documented in [`scripts/README.md`](file:///d:/R
 - [`.github/workflows/validate.yml`](file:///d:/Research-BanglaBBQ/.github/workflows/validate.yml): Automated GitHub Actions CI workflow executing offline validators on every push and pull request.
 
 ### Live Google Sheets Sync & Verification
+- [`scripts/sync_and_validate_age.py`](file:///d:/Research-BanglaBBQ/scripts/sync_and_validate_age.py): Synchronizes live Google Sheets updates from `BanglaBBQ_BEN_Age` to `BanglaBBQ_BEN_New/Age.jsonl` and executes 10-invariant benchmark quality assurance tests.
 - [`scripts/verify_politics_960_live.py`](file:///d:/Research-BanglaBBQ/scripts/verify_politics_960_live.py): Fetches live Google Sheets rows 1–961 and verifies 100% bit-for-bit parity with GitHub JSONL files, conditional rules, and row heights.
 - [`scripts/verify_religion_live.py`](file:///d:/Research-BanglaBBQ/scripts/verify_religion_live.py): Fetches live Google Sheets tabs `BanglaBBQ_ENG_Religion` and `BanglaBBQ_BEN_Religion` and verifies complete parity with GitHub JSONL files.
 - [`scripts/list_sheets.py`](file:///d:/Research-BanglaBBQ/scripts/list_sheets.py): Lists all worksheets, sheet IDs, and indices in the master Google Spreadsheet.
@@ -154,7 +156,7 @@ Contains 82 specialized scripts documented in [`scripts/README.md`](file:///d:/R
 
 ## 7. Authoritative Shared Memory System ([`memory/`](file:///d:/Research-BanglaBBQ/memory))
 
-- [`memory/README.md`](file:///d:/Research-BanglaBBQ/memory/README.md): **Mandatory Entry Point**. Research mission declaration, roles of Google Sheets / GitHub / memory, and multi-phase agent synchronization protocol.
+- [`memory/README.md`](file:///d:/Research-BanglaBBQ/memory/README.md): **Mandatory Entry Point**. Research mission declaration, roles of Google Sheets / GitHub / memory, synchronization protocol, and mandatory research logging rules.
 - [`memory/purpose.md`](file:///d:/Research-BanglaBBQ/memory/purpose.md): **Official Research Mission**. Historical thesis context, defects of legacy baseline, BBQ & PakBBQ methodological roles, 9 bias categories, bilingual standards, and publication roadmap.
 - [`memory/state.md`](file:///d:/Research-BanglaBBQ/memory/state.md): **Current Verified Progress Dashboard**. Category-by-category status table, live Google Sheet IDs, active paths, and transparent research-quality blockers.
 - [`memory/history.md`](file:///d:/Research-BanglaBBQ/memory/history.md): **Historical Research Log**. Chronological append-only milestone log documenting dataset transformations and bug fixes.
@@ -163,3 +165,13 @@ Contains 82 specialized scripts documented in [`scripts/README.md`](file:///d:/R
 
 > **Notice on `personal_info.md`**:  
 > Developer personal profiles (e.g. `personal_info.md`), OAuth authentication secrets (`token.json`), and private communications are **intentionally git-ignored via `.gitignore`** to safeguard personal privacy. They are not part of the tracked public GitHub memory.
+
+---
+
+## 8. Permanent Research Logs ([`research_logs/`](file:///d:/Research-BanglaBBQ/research_logs))
+
+- [`research_logs/README.md`](file:///d:/Research-BanglaBBQ/research_logs/README.md): Research logging guidelines, relationship to memory, and chronological index of all milestone logs.
+- [`research_logs/TEMPLATE.md`](file:///d:/Research-BanglaBBQ/research_logs/TEMPLATE.md): Standardized template schema for authoring research and audit logs.
+- [`research_logs/2026-10-17_age_q1_context_alignment.md`](file:///d:/Research-BanglaBBQ/research_logs/2026-10-17_age_q1_context_alignment.md): Retrospective audit and context alignment of Age Q1 expanding unique contexts from 11 to 16.
+- [`research_logs/2026-10-17_age_q9_context_alignment.md`](file:///d:/Research-BanglaBBQ/research_logs/2026-10-17_age_q9_context_alignment.md): Retrospective audit and alignment of Age Q9 expanding unique contexts from 60 to 144 and aligning 272 answer options.
+
