@@ -52,6 +52,12 @@ def build_cell_updates(manifest_path, eng_jsonl_path, ben_jsonl_path):
         if 'context_ben' in after and after['context_ben'] != before.get('context_ben'):
             ben_updates.append((row, COL_MAP['context'], before.get('context_ben', ''), str(after['context_ben'])))
             
+        # Check question
+        if 'question_eng' in after and after['question_eng'] != before.get('question_eng'):
+            eng_updates.append((row, COL_MAP['question'], before.get('question_eng', ''), str(after['question_eng'])))
+        if 'question_ben' in after and after['question_ben'] != before.get('question_ben'):
+            ben_updates.append((row, COL_MAP['question'], before.get('question_ben', ''), str(after['question_ben'])))
+            
         # Check choices
         if 'choices_eng' in after:
             c_eng_after = after['choices_eng']
@@ -229,6 +235,8 @@ def main():
         after = rec['after']
         if 'context_eng' in after:
             eng_recs[eid]['context'] = after['context_eng']
+        if 'question_eng' in after:
+            eng_recs[eid]['question'] = after['question_eng']
         if 'choices_eng' in after:
             eng_recs[eid]['ans0'] = after['choices_eng'][0]
             eng_recs[eid]['ans1'] = after['choices_eng'][1]
@@ -242,6 +250,8 @@ def main():
             
         if 'context_ben' in after:
             ben_recs[eid]['context'] = after['context_ben']
+        if 'question_ben' in after:
+            ben_recs[eid]['question'] = after['question_ben']
         if 'choices_ben' in after:
             ben_recs[eid]['ans0'] = after['choices_ben'][0]
             ben_recs[eid]['ans1'] = after['choices_ben'][1]
