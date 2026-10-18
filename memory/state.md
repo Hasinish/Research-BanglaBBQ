@@ -177,3 +177,7 @@ The primary active research priority is improving and expanding the six remainin
 5. **Marital Status Expansion**: Audit legacy baseline (100 records), develop realistic marital bias scenarios, balance 6-way permutations, and ensure cultural grounding.
 6. **Mental Health Expansion**: Audit legacy baseline (100 records), expand clinical and societal bias scenarios, and balance permutations.
 7. **Outstanding Publication-Readiness Audits (Religion & Age)**: Execute independent source relevance and naturalness audits for Religion (`scripts/audit_religion_sources_and_translation.py`); conduct independent native linguistic naturalness review for Age prior to publication submission.
+
+
+### 2026-10-18 Gender translation QA checkpoint
+Automated live scan of 4,696 ENG/BEN records (34 themes; 2,321 unique bilingual context pairs) flagged 1,198 English-fragment field occurrences and 1,220 broad suffix-pattern occurrences; these are candidates, not adjudicated defects. Confirmed Q11 supporter ambiguity, Q32 double possessive, and Q41 English sentence duplication. Gender translator code-only fixes committed (group2 and group1); production JSONL and worksheets **not yet repaired**. Separate pre-repair Bengali sheet backup: https://docs.google.com/spreadsheets/d/1xRZuY0wbqJ7hzdYFJZWZGttBts6xfOTxPHD9afu3oSQ/edit (spot checked). Generator regression tests, full linguistic review, canonical export, sparse live correction and full parity remain pending. See research_logs/2026-10-18_gender_translation_qa_checkpoint.md. Status IN PROGRESS; not publication-ready.
