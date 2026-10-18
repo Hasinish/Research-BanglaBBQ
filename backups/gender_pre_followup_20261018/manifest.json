@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-10-18T16:30:00+06:00",
+  "starting_commit": "a4602f64f93531edd24521cad735b42f8f910dc8",
+  "eng_sha256": "8058c1d93732c802032c97854a2f4bd6d0ca221e4cf1d8033c4fb109199bc53b",
+  "ben_sha256": "0841592926f57d4ff3a60f9097ae86af821e6bff672152410167b7c5017a9296",
+  "record_count": 4696,
+  "description": "Pre-follow-up canonical snapshot before Checkpoint B-I repairs"
+}
