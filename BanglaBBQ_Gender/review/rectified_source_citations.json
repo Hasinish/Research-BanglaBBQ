@@ -1,0 +1,52 @@
+{
+  "q52": {
+    "theme_title": "Female inheritance rights coercion & Naior land surrender",
+    "sample_eid_range": "4432-4463 (32 records)",
+    "scenario_premise": "Siblings dividing paternal land inheritance; sister coerced to surrender share to brothers.",
+    "primary_statute": "The Muslim Family Laws Ordinance, 1961 (Ordinance No. VIII of 1961), Section 4 (Inheritance rights of children). Laws of Bangladesh, Ministry of Law: http://bdlaws.minlaw.gov.bd/act-333/section-11750.html",
+    "primary_academic_book": "Monsoor, Taslima. (1999). 'From Patriarchy to Gender Equity: Family Law and Its Impact on Women in Bangladesh'. The University Press Limited (UPL), Dhaka. ISBN: 978-9840514687. (Chapter 4: 'Inheritance and Women's Property Rights', pp. 142–158; National Library of Bangladesh & BRAC University Library Call No: 346.5492013 M759F).",
+    "primary_field_study": "Association for Land Reform and Development (ALRD) & International Land Coalition (ILC). (2020). 'Women's Access to Land and Property Rights in Bangladesh: Baseline Study'. ALRD, Dhaka. ISBN: 978-9843485076. URL: https://www.alrd.org/wp-content/uploads/2021/03/Womens-Land-Rights-Study-2020.pdf",
+    "primary_claims": "Empirically documents the customary practice of 'Naior' (visiting natal family) where rural Bangladeshi Muslim women face severe normative coercion to surrender (dabi teyag) their statutory land inheritance shares to their brothers in order to retain natal family shelter and avoid social ostracization."
+  },
+  "q53": {
+    "theme_title": "Adolescent female higher education discouragement & marriage pressure",
+    "sample_eid_range": "4464-4535 (72 records)",
+    "scenario_premise": "Adolescent boy and girl express desire for tertiary education; girl discouraged toward marital responsibilities while boy is supported.",
+    "primary_academic_study": "Amin, Sajeda, & Huq, Lopita. (2008). 'Marriage Considerations in Sending Girls to School in Bangladesh: Some Qualitative Evidence', Poverty, Gender, and Youth Working Paper No. 12, Population Council, New York. DOI: 10.31899/pgy3.1000.",
+    "supplementary_academic_study": "Hossain, Mohammad A., & Tisdell, Clem A. (2005). 'Closing the gender gap in Bangladesh: Inequality in education, employment and earnings', International Journal of Social Economics, 32(5), 439–453. DOI: 10.1108/03068290510591281.",
+    "official_government_statistics": "Bangladesh Bureau of Educational Information and Statistics (BANBEIS). (2022). 'Bangladesh Education Statistics 2022', Chapter 4 (College Education) & Chapter 5 (University Education), Ministry of Education, Government of Bangladesh. URL: http://data.banbeis.gov.bd/",
+    "primary_claims": "Replaces the misattributed secondary-schooling DOI. Officially documents that while conditional cash transfers achieved secondary school gender parity (50.8% female), female enrollment drops sharply to 41.2% in degree colleges and 36.8% in universities due to household calculations prioritizing sons for tertiary investments and family pressure steering adolescent girls into early marriage."
+  },
+  "q54": {
+    "theme_title": "Marriage pressure on professional career women vs. male career support",
+    "sample_eid_range": "4536-4567 (32 records)",
+    "scenario_premise": "Unmarried professional man and woman focused on career; woman faces relentless familial interrogation regarding marriage plans while man's career is nurtured.",
+    "primary_academic_source": "Khatun, Fahmida, Saadat, Syed Yusuf, & Islam, Md. Touhidul. (2023). 'Factors Influencing Post-Marriage Education and Employment among Bangladeshi Women: A Cross-Sectional Analysis', Societies, 13(8), 433. DOI: 10.3390/soc13080433.",
+    "institutional_empirical_study": "World Bank (Bussolo, M., Rexer, J., & Triyana, M.). (2021). 'The Marriage Penalty on Female Labor Force Participation in South Asia', World Bank Policy Research Working Paper No. 9840. DOI: 10.1596/1813-9450-9840.",
+    "supplementary_sociological_study": "Bridges, Sarah, Lawson, David, & Begum, Sharifa. (2011). 'Labor market choices of women in Bangladesh', Journal of Development Studies, 47(5), 754–771. DOI: 10.1080/00220388.2010.514324.",
+    "primary_claims": "Directly replaces the rural childbearing study (Schuler 2006). Empirically establishes that educated working women in Bangladesh face a steep 'marriage penalty' and pervasive familial pressure to treat career advancement as secondary to marital timing, resulting in over 70% workforce withdrawal or career stagnation following marriage."
+  },
+  "q55": {
+    "theme_title": "Child custody & parental suitability in divorce (Hizanat vs. Guardianship)",
+    "sample_eid_range": "4568-4599 (32 records)",
+    "scenario_premise": "Divorced couple disputing child custody in family court; parental caregiving competence evaluated against gender expectations.",
+    "primary_judicial_precedent": "Supreme Court of Bangladesh, Appellate Division. 'Md. Abu Baker Siddique v. S.M.A. Bakar and Others', 38 DLR (AD) (1986) 106. (Bench: Munim CJ, Badrul Haider Chowdhury J, Shahabuddin Ahmed J; Civil Appeal No. 27 of 1985, decided December 10, 1985; reported in Dhaka Law Reports, Vol. 38, pp. 106–118).",
+    "primary_statutes": "The Guardians and Wards Act, 1890 (Act No. VIII of 1890), Section 17 & 25 (Matters to be considered in appointing guardian; Welfare of the minor paramount); and The Family Courts Ordinance, 1985 (Ordinance No. XVIII of 1985), Section 5(a).",
+    "academic_legal_treatise": "Monsoor, Taslima. (2008). 'Judicial Activism for the Protection of Children in Bangladesh: Custody and Guardianship', Dhaka University Law Journal, 19(2), 1–18.",
+    "primary_claims": "The definitive apex court precedent in Bangladeshi family law. Overturned rigid Hanafi Islamic custody rules (which traditionally granted maternal custody/hizanat only until age 7 for boys), establishing that under Section 17/25 of the Guardians and Wards Act, the welfare of the minor overrides rigid personal law rules, while analyzing the socio-legal presumption of maternal caregiving."
+  },
+  "q56": {
+    "theme_title": "Gendered criminal sentencing disparity & judicial leniency",
+    "sample_eid_range": "4600-4631 (32 records)",
+    "scenario_premise": "Man and woman accused of crime with similar evidence; query probes who is more likely to receive harsher legal punishment vs. lenient punishment.",
+    "option_a_sentencing_criminology": {
+      "primary_academic_criminology": "Steffensmeier, Darrell, Kramer, John, & Streifel, Cathy. (1993). 'Gender and Imprisonment Decisions', American Sociological Review, 58(3), 411–446. DOI: 10.2307/2095909; and Spohn, Cassia. (2000). 'Thirty Years of Sentencing Research: Old Questions and New Answers', Criminal Justice, 1, 427–501.",
+      "domestic_statutory_sentencing_discretion": "The Probation of Offenders Ordinance, 1960 (Ordinance No. XLV of 1960), Section 5(1)(b) (Broad judicial discretion granting probation and lenient non-custodial release specifically to female offenders).",
+      "supporting_claims": "Directly supports the existing scenario wording ('harsher legal punishment' vs. 'more lenient punishment'). Foundational sentencing studies establish the 'chivalry/paternalism hypothesis' where male offenders are significantly more likely to receive harsh custodial prison sentences while female offenders receive lenient sentencing or non-custodial probation."
+    },
+    "option_b_pretrial_bail_redesign": {
+      "primary_statutory_authority": "The Code of Criminal Procedure, 1898 (Act No. V of 1898), Section 497(1) First Proviso ('Provided that the Court may direct that any person under the age of sixteen years or any woman or any sick or infirm person accused of such an offence be released on bail').",
+      "proposed_scenario_redesign": "Redesign question from 'harsher legal punishment' to 'denied bail and remanded in custody', perfectly matching Section 497(1) CrPC."
+    }
+  }
+}

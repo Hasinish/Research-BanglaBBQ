@@ -151,8 +151,10 @@ def main():
                     orig_update = updates[i + idx]
                     live_val = vr.get('values', [['']])[0][0] if vr.get('values') else ''
                     exp_val = orig_update[2]
-                    # Strict comparison
-                    if exp_val != '' and str(live_val).strip() != str(exp_val).strip():
+                    # Strict bidirectional comparison (closing empty-value loophole)
+                    exp_clean = '' if exp_val is None else str(exp_val).strip()
+                    live_clean = '' if live_val is None else str(live_val).strip()
+                    if exp_clean != live_clean:
                         conflicts.append((vr.get('range'), exp_val, live_val))
 
         if conflicts:
