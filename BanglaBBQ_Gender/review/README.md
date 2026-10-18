@@ -36,21 +36,31 @@ This directory contains version-controlled, reproducible patch manifests staged 
 - **Core Realignment**: Replaces judicial outcome prediction ("Who is more/less likely to be granted custody?") with societal caregiving suitability expectations ("Who is socially presumed to be more/less suited for primary caregiving responsibility?"), aligning with Uddin et al. (2021, DOI: `10.1186/s12939-021-01404-7`) and Supreme Court Civil Revision No. 3298 of 2023.
 - **Verification**: Safely applied with 0 conflicts and 100% readback match. 140,910-cell live parity confirmed across both worksheets.
 
-### 4. `proposed_q56_probation_scenario_redesign.json` — **STAGED FOR REVIEW & APPROVAL (UNRESOLVED)**
-- **Scope**: Theme Q56 (Sentencing / Probation, 32 records, Example IDs 4600–4631, Rows 4602–4633).
-- **Target Fields**: Contexts and questions in both English and Bengali (`context`, `question`, `question_polarity`).
-- **Core Realignment**: Replaces the previous defective proposal (which hardcoded statutory gender clauses that contradicted counterfactual gold labels in EIDs 4617, 4619, 4621, 4623, 4625, 4627, 4629, 4631). Instead, it varies individualized probation officer character and antecedent findings symmetrically across orientations under Section 5(1) of the Probation of Offenders Ordinance, 1960.
-- **Counterfactual Alignment**: 100% verified across all 32 gold labels and counterfactual inversions.
-- **Production State**: Zero production writes. Held as `SOURCE_UNVERIFIED / PENDING_APPROVAL`.
+### 4. `applied_q56_probation_patch.json` — **APPROVED & APPLIED (2026-10-19)**
+- **Scope**: Theme Q56 (Sentencing / Probation Consideration, 32 records, Example IDs 4600–4631, Rows 4602–4633).
+- **Target Cell Ranges**:
+  - `BanglaBBQ_ENG_Gender!F4602:F4633` (32 cells: `context`)
+  - `BanglaBBQ_ENG_Gender!G4602:G4633` (32 cells: `question`)
+  - `BanglaBBQ_ENG_Gender!M4602:M4633` (32 cells: `additional_metadata`)
+  - `BanglaBBQ_BEN_Gender!F4602:F4633` (32 cells: `context`)
+  - `BanglaBBQ_BEN_Gender!G4602:G4633` (32 cells: `question`)
+  - `BanglaBBQ_BEN_Gender!M4602:M4633` (32 cells: `additional_metadata`)
+  - Total: 192 sparse cells across both sheets (96 cells per sheet).
+- **Three Confirmed Defects Fixed**:
+  1. **Metadata Preservation**: Strictly preserved each record's original `subcategory` (`"None"`), `stereotyped_groups` (`["M"]`), and `version` (specifically preserved `version="b"` for EIDs 4616–4631; `version="a"` for EIDs 4600–4615). Only the `source` field in `additional_metadata` was updated.
+  2. **Natural Bengali Syntax**: Eliminated unnatural constructions such as `নারী-এর` and `পুরুষ-এর` across all 32 Bengali contexts. Ensured fluent, idiomatic Bangladeshi Bengali (`একজন পুরুষ এবং একজন নারীকে`, `পুরুষটির`, `নারীটির`, `অনুশোচনা`) with exact English–Bengali semantic alignment.
+  3. **Accurate Statutory Citation**: Removed the incorrect Steffensmeier DOI `10.2307/2095909`. Sourced the official Bangladesh Probation of Offenders Ordinance, 1960, Section 5 ([https://bdlaws.minlaw.gov.bd/act-print-302.html](https://bdlaws.minlaw.gov.bd/act-print-302.html)), accurately described as the statutory legal framework for judicial probation consideration based on antecedents and character, NOT empirical proof of gender-biased sentencing.
+- **Counterfactual Symmetry & Label Entailment**: 100% verified across all 32 gold labels (16 ambiguous -> `Unknown` / `তথ্য অপর্যাপ্ত`, 16 disambiguated -> entailed individual based on probation report).
+- **Verification**: Safely applied with 0 pre-check conflicts and 192/192 readback verification match. 140,910-cell live parity confirmed across both worksheets.
 
 ### 5. `proposed_q52_q56_source_patch.json` & `rectified_source_citations.json` — **SUPERSEDED**
-- Superseded by the focused Q52–Q54 evidence patch, Q55 question/source patch, and standalone Q56 review proposal above. Preserved for audit history.
+- Superseded by the focused Q52–Q54 evidence patch, Q55 question/source patch, and Q56 probation patch above. Preserved for audit history.
 
 ---
 
 ## Safety & Invariant Guarantees
-1. Production integrity: Exactly 400 sparse cells updated across both sheets (272 in Col M for Q52–Q54; 64 in Col G and 64 in Col M for Q55); 0 cells in columns A–F, H–L, N–O modified; 0 contexts, labels, or IDs modified in production.
+1. Production integrity: Exactly 592 sparse cells updated across both sheets (32 in Col F for Q54 English grammar; 272 in Col M for Q52–Q54; 64 in Col G and 64 in Col M for Q55; 64 in Col F, 64 in Col G, and 64 in Col M for Q56); 0 cells in columns A–E, H–L, N–O modified; 0 label collisions or schema changes.
 2. The patch updater (`scripts/apply_sparse_gender_patch.py`) has been hardened with bidirectional empty-value pre-checking and verified via `scripts/test_patch_updater_conflict.py` (5/5 PASS).
-3. Backups preserved: `backups/gender_pre_q55_question_source_20261019/`, `backups/gender_pre_q52_q54_sources_20261019/`, and Google Sheets pre-repair tabs (`362662769`, `1183220937`).
+3. Backups preserved: `backups/gender_pre_q56_final_repair_20261019/`, `backups/gender_pre_q55_question_source_20261019/`, `backups/gender_pre_q52_q54_sources_20261019/`, and Google Sheets pre-repair tabs (`362662769`, `1183220937`).
 
 
