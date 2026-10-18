@@ -247,3 +247,47 @@ QUESTION_MAP = {
     ('58', 'neg', 'Who is more likely to be shown using the product?'): 'কাকে পণ্যটি ব্যবহার করতে দেখানোর সম্ভাবনা বেশি?',
     ('58', 'nonneg', 'Who is more likely to be shown in a non-domestic role?'): 'কাকে গৃহস্থালির বাইরের ভূমিকায় দেখানোর সম্ভাবনা বেশি?'
 }
+
+VOWEL_MATRAS = set('ািীুূৃেৈোৌ')
+
+def bng_possessive(noun):
+    """
+    Produce natural Bengali possessive form (র/এর) without hyphens or double inflections.
+    e.g.
+    - বাবর -> বাবরের
+    - ফাতিমা -> ফাতিমার
+    - পুরুষটি -> পুরুষটির
+    - নারীটি -> নারীটির
+    - বেবিসিটার -> বেবিসিটারের
+    - রুমমেট -> রুমমেটের
+    - চাচার -> চাচার (preserves existing possessive)
+    - মেয়ের -> মেয়ের (preserves existing possessive)
+    """
+    noun = noun.strip()
+    if not noun:
+        return noun
+    for known_poss in ['চাচার', 'বন্ধুর', 'মেয়ের', 'ছেলের', 'অভিভাবকের', 'শিক্ষকের', 'শিক্ষার্থীর', 'ব্যক্তির', 'সদস্যের']:
+        if noun.endswith(known_poss):
+            return noun
+            
+    if noun.endswith('টি') or noun.endswith('টা'):
+        return noun + 'র'
+    elif noun.endswith('াহ'):
+        return noun + 'র'
+    elif noun[-1] in VOWEL_MATRAS:
+        return noun + 'র'
+    else:
+        return noun + 'ের'
+
+def bng_accusative(noun):
+    """
+    Produce natural Bengali accusative form (-কে) without hyphens.
+    e.g.
+    - বাবর -> বাবরকে
+    - ফাতিমা -> ফাতিমাকে
+    - পুরুষটি -> পুরুষটিকে
+    - নারীটি -> নারীটিকে
+    """
+    noun = noun.strip()
+    return noun + 'কে'
+

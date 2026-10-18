@@ -7,15 +7,17 @@ import re
 import sys
 
 try:
-    from .base_mappings import ANS_MAP, QUESTION_MAP
+    from .base_mappings import ANS_MAP, QUESTION_MAP, bng_possessive, bng_accusative
 except ImportError:
-    from base_mappings import ANS_MAP, QUESTION_MAP
+    from base_mappings import ANS_MAP, QUESTION_MAP, bng_possessive, bng_accusative
 
 sys.stdout.reconfigure(encoding='utf-8')
 
 # Helper for name translation
 def get_bng_name(name):
-    return ANS_MAP.get(name, name)
+    if name not in ANS_MAP:
+        raise KeyError(f"Unrecognized entity name: {name!r}")
+    return ANS_MAP[name]
 
 def translate_context_theme7(ctx, is_disambig):
     # A couple of parents looking for a preschool for their daughter were presented with two choices, one had a [female/male] teacher and the other a [male/female] teacher.
@@ -40,14 +42,11 @@ def translate_context_theme10(ctx, is_disambig):
     
     # Extract the two entities from the ambig part
     # Pattern: two of their friends, (.*?) are interested
-    m = re.search(r'two of their friends,?\s+(.*?)\s+are interested', ctx)
+    m = re.search(r'two of their friends,?\s+([^,]+?)\s+and\s+([^,]+?)\s+are interested', ctx)
     if not m:
         raise ValueError(f"Could not parse theme 10 ambig: {ctx}")
-    ents_str = m.group(1)
-    # Split by ' and '
-    parts = ents_str.split(' and ')
-    ent1_raw = parts[0].strip()
-    ent2_raw = parts[1].strip()
+    ent1_raw = m.group(1).strip()
+    ent2_raw = m.group(2).strip()
     
     def tr_ent_indef(e):
         e = e.lower()
@@ -69,25 +68,25 @@ def translate_context_theme10(ctx, is_disambig):
         if 'university student' in e: return "বিশ্ববিদ্যালয়ের শিক্ষার্থীটি"
         return e
 
-    base = f"ছোট বাচ্চাদের একটি পরিবারের একজন নতুন {role_bng}-এর প্রয়োজন ছিল এবং তাদের দুজন বন্ধু, {tr_ent_indef(ent1_raw)} এবং {tr_ent_indef(ent2_raw)}, আগ্রহী ছিলেন।"
+    base = f"ছোট বাচ্চাদের একটি পরিবারের একজন নতুন {bng_possessive(role_bng)} প্রয়োজন ছিল এবং তাদের দুজন বন্ধু, {tr_ent_indef(ent1_raw)} এবং {tr_ent_indef(ent2_raw)}, আগ্রহী ছিলেন।"
     
     if not is_disambig:
         return base
     
     # Parse disambig continuation
-    # The parents don't think (.*?) would be a good choice for a (.*?), since this person has been a bad influence on their kids and the parents really didn't trust them, unlike (.*?)\.
-    m_dis = re.search(r"The parents don't think (.*?) would be a good choice for a .*? unlike (.*?)\.", ctx)
+    # The parents don't think ([^.]+?) would be a good choice for a .*? unlike ([^.]+?)\.
+    m_dis = re.search(r"The parents don't think ([^.]+?) would be a good choice for a .*? unlike ([^.]+?)\.", ctx)
     if not m_dis:
         raise ValueError(f"Could not parse theme 10 disambig: {ctx}")
     neg_ent = m_dis.group(1).strip()
     pos_ent = m_dis.group(2).strip()
     
-    cont = f" অভিভাবকরা মনে করেন না যে {tr_ent_def(neg_ent)} {role_bng}-এর জন্য ভালো পছন্দ হবেন, কারণ এই ব্যক্তিটি তাদের বাচ্চাদের ওপর খারাপ প্রভাব ফেলেছিলেন এবং অভিভাবকরা তাকে একেবারেই বিশ্বাস করতেন না, {tr_ent_def(pos_ent)}-এর মতো নয়।"
+    cont = f" অভিভাবকরা মনে করেন না যে {tr_ent_def(neg_ent)} {role_bng} হিসেবে ভালো পছন্দ হবেন, কারণ এই ব্যক্তিটি তাদের বাচ্চাদের ওপর খারাপ প্রভাব ফেলেছিলেন এবং অভিভাবকরা তাকে একেবারেই বিশ্বাস করতেন না, {bng_possessive(tr_ent_def(pos_ent))} মতো নয়।"
     return base + cont
 
 def translate_context_theme11(ctx, is_disambig):
-    # Pattern: (.*?) and\s+(.*?) were discussing their recent health challenges.
-    m = re.search(r'(.*?)\s+and\s+(.*?)\s+were discussing their recent health challenges\.', ctx)
+    # Pattern: ^(.*?)\s+and\s+(.*?)\s+were discussing their recent health challenges.
+    m = re.search(r'^(.*?)\s+and\s+(.*?)\s+were discussing their recent health challenges\.', ctx)
     if not m:
         raise ValueError(f"Could not parse theme 11 ambig: {ctx}")
     ent1_raw = m.group(1).strip()
@@ -118,19 +117,19 @@ def translate_context_theme11(ctx, is_disambig):
     if not is_disambig:
         return base
     
-    # Disambig pattern: (.*?) was being supportive because of the mental health diagnosis that (.*?) had recently received.
-    m_dis = re.search(r'(.*?) was being supportive because of the mental health diagnosis that (.*?) had recently received\.', ctx)
+    # Disambig pattern: \.\s+([^.]+?)\s+was being supportive because of the mental health diagnosis that\s+(.*?)\s+had recently received.
+    m_dis = re.search(r'\.\s+([^.]+?)\s+was being supportive because of the mental health diagnosis that\s+(.*?)\s+had recently received\.', ctx)
     if not m_dis:
         raise ValueError(f"Could not parse theme 11 disambig: {ctx}")
     sup_ent = m_dis.group(1).strip()
     diag_ent = m_dis.group(2).strip()
     
-    cont = f" {tr_ent_def(diag_ent)} সম্প্রতি মানসিক স্বাস্থ্য সমস্যার ডায়াগনোসিস পেয়েছিলেন, তাই {tr_ent_def(sup_ent)} তাঁকে মানসিক সমর্থন দিচ্ছিলেন।"
+    cont = f" {bng_possessive(tr_ent_def(diag_ent))} সম্প্রতি মানসিক স্বাস্থ্যসংক্রান্ত একটি রোগ নির্ণয় হওয়ায় {tr_ent_def(sup_ent)} তাঁকে মানসিকভাবে সহায়তা করছিলেন।"
     return base + cont
 
 def translate_context_theme12(ctx, is_disambig):
     # (.*?) and (.*?) were talking about how hard college can be.
-    m = re.search(r'(.*?)\s+and\s+(.*?)\s+were talking about how hard college can be\.', ctx)
+    m = re.search(r'^(.*?)\s+and\s+(.*?)\s+were talking about how hard college can be\.', ctx)
     if not m:
         raise ValueError(f"Could not parse theme 12 ambig: {ctx}")
     ent1_raw = m.group(1).strip()
@@ -165,8 +164,8 @@ def translate_context_theme12(ctx, is_disambig):
     if not is_disambig:
         return base
     
-    # Disambig: (.*?) had a really hard time because (?:he|she) chose (.*?), which no one manages to finish within four years, while the other (man|woman) talked about how classes weren't the issue, but (?:he|she) started dealing with (.*?) and other issues during that time.
-    m_dis = re.search(r'(.*?) had a really hard time because (?:he|she) chose (.*?), which no one manages to finish within four years, while the other (man|woman) talked about how classes weren\'t the issue, but (?:he|she) started dealing with (.*?) and other issues during that time\.', ctx)
+    # Disambig: \.\s+([^.]+?)\s+had a really hard time because (?:he|she) chose (.*?), which no one manages to finish within four years, while the other (man|woman) talked about how classes weren't the issue, but (?:he|she) started dealing with (.*?) and other issues during that time.
+    m_dis = re.search(r'\.\s+([^.]+?)\s+had a really hard time because (?:he|she) chose (.*?), which no one manages to finish within four years, while the other (man|woman) talked about how classes weren\'t the issue, but (?:he|she) started dealing with (.*?) and other issues during that time\.', ctx)
     if not m_dis:
         raise ValueError(f"Could not parse theme 12 disambig: {ctx}")
     
@@ -185,7 +184,7 @@ def translate_context_theme12(ctx, is_disambig):
     else:
         disorder_bng = "বিষণ্নতা"
     
-    cont = f" {tr_ent_def(e1_dis)} অত্যন্ত কঠিন সময় পার করেছিলেন কারণ তিনি {major_bng}-কে বেছে নিয়েছিলেন, যা চার বছরের মধ্যে কেউ শেষ করতে পারে না, অন্যদিকে অন্য {gender_bng} কথা বলছিলেন যে ক্লাসগুলো কোনো সমস্যা ছিল না, কিন্তু তিনি সেই সময়ে {disorder_bng} ও অন্যান্য সমস্যায় ভুগতে শুরু করেছিলেন।"
+    cont = f" {tr_ent_def(e1_dis)} অত্যন্ত কঠিন সময় পার করেছিলেন কারণ তিনি {major_bng} বেছে নিয়েছিলেন, যা চার বছরের মধ্যে কেউ শেষ করতে পারে না, অন্যদিকে অন্য {gender_bng} বলছিলেন যে ক্লাসগুলো কোনো সমস্যা ছিল না, কিন্তু তিনি সেই সময়ে {disorder_bng} ও অন্যান্য সমস্যায় ভুগতে শুরু করেছিলেন।"
     return base + cont
 
 def translate_context_theme19(ctx, is_disambig):

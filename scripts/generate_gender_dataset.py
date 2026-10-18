@@ -13,6 +13,8 @@ Author: Hasin Ishrak / BanglaBBQ Research Project
 import os
 import json
 import sys
+import copy
+import argparse
 
 # Ensure UTF-8 output in Windows shells
 sys.stdout.reconfigure(encoding='utf-8')
@@ -49,28 +51,48 @@ SCHEMA_COLUMNS = [
 ]
 
 SRC_PATH = os.path.join('PakBBQ_Repo', 'PakBBQ', 'PakBBQ_ENG', 'Gender_identity.jsonl')
-OUT_DIR = 'BanglaBBQ_Gender'
-ENG_OUT_PATH = os.path.join(OUT_DIR, 'Gender_identity_eng.jsonl')
-BNG_OUT_PATH = os.path.join(OUT_DIR, 'Gender_identity_bng.jsonl')
+
+def fix_metadata_inconsistencies(r):
+    """
+    Correct verified inherited metadata mismatches where female answers were tagged as male.
+    Affected IDs:
+    Q7: IDs 0, 1, 2, 3 -> ans2 'The female teacher' tagged as ['male', 'M'] -> ['female', 'F']
+    Q51: IDs 4424, 4425, 4426, 4427 -> ans1 'The female' tagged as ['male', 'M'] -> ['female', 'F']
+    Q53: IDs 4496, 4497, 4498, 4499 -> ans1 'The female' tagged as ['male', 'M'] -> ['female', 'F']
+    """
+    eid = r['example_id']
+    r_copy = copy.deepcopy(r)
+    if eid in [0, 1, 2, 3]:
+        if 'answer_info' in r_copy and 'ans2' in r_copy['answer_info']:
+            info = r_copy['answer_info']['ans2']
+            if isinstance(info, list) and len(info) >= 2 and info[0] == 'male' and info[1] == 'M':
+                r_copy['answer_info']['ans2'] = ['female', 'F']
+    elif eid in [4424, 4425, 4426, 4427, 4496, 4497, 4498, 4499]:
+        if 'answer_info' in r_copy and 'ans1' in r_copy['answer_info']:
+            info = r_copy['answer_info']['ans1']
+            if isinstance(info, list) and len(info) >= 2 and info[0] == 'male' and info[1] == 'M':
+                r_copy['answer_info']['ans1'] = ['female', 'F']
+    return r_copy
 
 def reorder_record(r, c_bng=None, q_bng=None, ans0_bng=None, ans1_bng=None, ans2_bng=None):
     """Reorder keys to strictly match the canonical 15-column schema order."""
+    r_fixed = fix_metadata_inconsistencies(r)
     return {
-        'example_id': r['example_id'],
-        'question_index': r['question_index'],
-        'context_condition': r['context_condition'],
-        'question_polarity': r['question_polarity'],
-        'type': r['type'],
-        'context': c_bng if c_bng is not None else r['context'],
-        'question': q_bng if q_bng is not None else r['question'],
-        'ans0': ans0_bng if ans0_bng is not None else r['ans0'],
-        'ans1': ans1_bng if ans1_bng is not None else r['ans1'],
-        'ans2': ans2_bng if ans2_bng is not None else r['ans2'],
-        'label': r['label'],
-        'answer_info': r['answer_info'],
-        'additional_metadata': r['additional_metadata'],
-        'category': r['category'],
-        'id': r['id']
+        'example_id': r_fixed['example_id'],
+        'question_index': r_fixed['question_index'],
+        'context_condition': r_fixed['context_condition'],
+        'question_polarity': r_fixed['question_polarity'],
+        'type': r_fixed['type'],
+        'context': c_bng if c_bng is not None else r_fixed['context'],
+        'question': q_bng if q_bng is not None else r_fixed['question'],
+        'ans0': ans0_bng if ans0_bng is not None else r_fixed['ans0'],
+        'ans1': ans1_bng if ans1_bng is not None else r_fixed['ans1'],
+        'ans2': ans2_bng if ans2_bng is not None else r_fixed['ans2'],
+        'label': r_fixed['label'],
+        'answer_info': r_fixed['answer_info'],
+        'additional_metadata': r_fixed['additional_metadata'],
+        'category': r_fixed['category'],
+        'id': r_fixed['id']
     }
 
 def translate_record(r):
@@ -113,10 +135,17 @@ def translate_record(r):
     return reorder_record(r, c_bng, q_bng, ans0_bng, ans1_bng, ans2_bng)
 
 def main():
+    parser = argparse.ArgumentParser(description="Generate BanglaBBQ Gender Identity datasets.")
+    parser.add_argument('--out-dir', default='BanglaBBQ_Gender', help="Output directory for generated JSONL files")
+    args = parser.parse_args()
+
     if not os.path.exists(SRC_PATH):
         raise FileNotFoundError(f"Source file not found at: {SRC_PATH}")
         
-    os.makedirs(OUT_DIR, exist_ok=True)
+    os.makedirs(args.out_dir, exist_ok=True)
+    eng_out_path = os.path.join(args.out_dir, 'Gender_identity_eng.jsonl')
+    bng_out_path = os.path.join(args.out_dir, 'Gender_identity_bng.jsonl')
+
     with open(SRC_PATH, 'r', encoding='utf-8') as f:
         raw_eng_recs = [json.loads(line) for line in f]
     
@@ -124,17 +153,17 @@ def main():
     
     # 1. Export canonical English
     eng_recs = [reorder_record(r) for r in raw_eng_recs]
-    with open(ENG_OUT_PATH, 'w', encoding='utf-8') as f:
+    with open(eng_out_path, 'w', encoding='utf-8') as f:
         for r in eng_recs:
             f.write(json.dumps(r, ensure_ascii=False) + '\n')
-    print(f"Exported {len(eng_recs)} English records to {ENG_OUT_PATH}")
+    print(f"Exported {len(eng_recs)} English records to {eng_out_path}")
     
     # 2. Export canonical Bengali
     bng_recs = [translate_record(r) for r in raw_eng_recs]
-    with open(BNG_OUT_PATH, 'w', encoding='utf-8') as f:
+    with open(bng_out_path, 'w', encoding='utf-8') as f:
         for r in bng_recs:
             f.write(json.dumps(r, ensure_ascii=False) + '\n')
-    print(f"Exported {len(bng_recs)} Bengali records to {BNG_OUT_PATH}")
+    print(f"Exported {len(bng_recs)} Bengali records to {bng_out_path}")
     print("Generation complete.")
 
 if __name__ == '__main__':

@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-10-18T09:36:04.375211+00:00",
+  "starting_commit_sha": "ef7b7165e7129a00d8ba2b4fdae6ce29a704a831",
+  "master_spreadsheet_id": "1xZhhKZoZuSy-ZXAWWdhCpq9QLh705ScErcnBZacmZnY",
+  "external_backup_spreadsheet_id": "1xRZuY0wbqJ7hzdYFJZWZGttBts6xfOTxPHD9afu3oSQ",
+  "sheets": {
+    "BanglaBBQ_ENG_Gender": {
+      "sheet_id": 1990010101,
+      "rows": 4697,
+      "cols": 15,
+      "canonical_sha256": "83e4a80ed96afec6ee838b860ae56efa1e5f987db400313b1389d6e11c9d426c"
+    },
+    "BanglaBBQ_BEN_Gender": {
+      "sheet_id": 1990010102,
+      "rows": 4697,
+      "cols": 15,
+      "canonical_sha256": "110e395d6431de3c0dc40067fdb82de03e8ec31a60c0a9a9a79599a0ef36eb63"
+    },
+    "Backup_BanglaBBQ_ENG_Gender_preRepair_20261018": {
+      "sheet_id": 362662769,
+      "hidden": true
+    },
+    "Backup_BanglaBBQ_BEN_Gender_preRepair_20261018": {
+      "sheet_id": 1183220937,
+      "hidden": true
+    }
+  }
+}
