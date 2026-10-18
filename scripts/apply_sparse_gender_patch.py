@@ -133,6 +133,7 @@ def main():
         
         # 1. Conflict Pre-check
         print("\n--- Step 1: Pre-checking live cells against manifest baseline ---")
+        conflicts = []
         for sheet_name, updates in [(ENG_SHEET_NAME, eng_updates), (BEN_SHEET_NAME, ben_updates)]:
             if not updates:
                 continue
@@ -150,11 +151,20 @@ def main():
                     orig_update = updates[i + idx]
                     live_val = vr.get('values', [['']])[0][0] if vr.get('values') else ''
                     exp_val = orig_update[2]
-                    # Compare
-                    if exp_val != '' and live_val != exp_val:
-                        print(f"WARNING: Cell conflict at {vr.get('range')}: expected '{exp_val[:40]}', live is '{live_val[:40]}'")
+                    # Strict comparison
+                    if exp_val != '' and str(live_val).strip() != str(exp_val).strip():
+                        conflicts.append((vr.get('range'), exp_val, live_val))
 
-        print("Pre-check complete.")
+        if conflicts:
+            print(f"\nCRITICAL ABORT: Detected {len(conflicts)} live-cell conflict(s) during pre-check!")
+            for rng, exp, act in conflicts[:10]:
+                print(f"  Conflict at {rng}: expected '{exp[:40]}', live is '{act[:40]}'")
+            if len(conflicts) > 10:
+                print(f"  ... and {len(conflicts) - 10} more conflict(s).")
+            print("\nAborting update to protect production sheet integrity. ZERO cells were modified.")
+            sys.exit(1)
+
+        print(f"Pre-check complete: 0 conflicts detected across all {len(eng_updates) + len(ben_updates)} targeted cells. Safe to proceed.")
 
         # 2. Execute sparse batchUpdate
         print("\n--- Step 2: Executing sparse batchUpdate ---")
