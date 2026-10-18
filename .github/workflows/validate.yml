@@ -38,3 +38,4 @@ jobs:
       - name: Run Gender Benchmark Validation
         run: |
           python scripts/validate_gender_dataset.py BanglaBBQ_Gender/Gender_identity_eng.jsonl BanglaBBQ_Gender/Gender_identity_bng.jsonl
+          python scripts/validate_gender_semantics.py BanglaBBQ_Gender/Gender_identity_eng.jsonl BanglaBBQ_Gender/Gender_identity_bng.jsonl
