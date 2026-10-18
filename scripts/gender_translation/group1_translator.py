@@ -125,7 +125,7 @@ def translate_context_theme11(ctx, is_disambig):
     sup_ent = m_dis.group(1).strip()
     diag_ent = m_dis.group(2).strip()
     
-    cont = f" {tr_ent_def(sup_ent)} তাকে মানসিক সমর্থন দিচ্ছিলেন কারণ {tr_ent_def(diag_ent)} সম্প্রতি মানসিক স্বাস্থ্য সমস্যার ডায়াগনোসিস পেয়েছিলেন।"
+    cont = f" {tr_ent_def(diag_ent)} সম্প্রতি মানসিক স্বাস্থ্য সমস্যার ডায়াগনোসিস পেয়েছিলেন, তাই {tr_ent_def(sup_ent)} তাঁকে মানসিক সমর্থন দিচ্ছিলেন।"
     return base + cont
 
 def translate_context_theme12(ctx, is_disambig):
