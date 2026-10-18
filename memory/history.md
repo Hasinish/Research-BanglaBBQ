@@ -176,3 +176,6 @@
   - Uncovered critical flaws in legacy `Dataset_ BanglaBBQ_Old/`: truncated to 799 rows in Bengali Age, 101 broken JSON lines in combined file, literal Google Translate errors ("জুমারটি", "অবিশ্বাস্যযোগ্য").
   - Authenticated Google OAuth token with Google Sheets API (`1xZhhKZoZuSy-ZXAWWdhCpq9QLh705ScErcnBZacmZnY`).
   - Populated `PakBBQ_ENG_Age` (2,920 rows), created `BanglaBBQ_BEN_Age`, and fully translated initial 328 rows (Templates 1–4).
+
+
+- **[2026-10-18] Gender Identity translation QA checkpoint:** Completed live automated scan of 4,696 ENG/BEN pairs across 34 themes (2,321 distinct bilingual context pairs). Flagged 1,198 potential English-leak fields and 1,220 broad suffix-pattern fields, confirmed sample-level Q11/Q32/Q41 defects, patched group1/group2 translator code, made separate pre-repair Bengali worksheet backup (first 2 rows checked), and recorded outstanding regression/production-sync blockers in `research_logs/2026-10-18_gender_translation_qa_checkpoint.md`. No production dataset or live cell updates; independent semantic review and bilingual parity verification remain pending.
