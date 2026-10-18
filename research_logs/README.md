@@ -57,3 +57,5 @@ To maintain clarity and separation of concerns across human researchers, AI codi
 | **2026-10-18** | [`2026-10-18_age_english_localization_semantic_source_audit.md`](2026-10-18_age_english_localization_semantic_source_audit.md) | Age (Q1–Q20) | 868 English context corrections in 8 themes, full 2,920-row bilingual metadata parity, 43,800-cell live checks, 20-theme source audit; Q20 legal confound and Q15/Q18 source mismatches explicitly open | `STRUCTURALLY VALIDATED / SEMANTIC & SOURCE REVIEW PENDING` |
 | **2026-10-18** | [`2026-10-18_age_q20_legal_confound_repair.md`](2026-10-18_age_q20_legal_confound_repair.md) | Age (Q20 & Q1–Q20) | Q20 underage-driver legal confound repair (112 records/lang, 15/17 -> 19/20); 100% 43,800-cell Google Sheets live parity; 10/10 invariant pass; Q6 fatigue vs unwillingness nuance and Q15/Q18 source gaps audited | `STRUCTURAL PASS / SOURCE & LINGUISTIC REVIEW PENDING` |
 
+
+- [2026-10-18 — Gender translation QA checkpoint](2026-10-18_gender_translation_qa_checkpoint.md): Live bilingual screening, confirmed errors, translator-code-only patches, backup, limitations, and outstanding production synchronization.
