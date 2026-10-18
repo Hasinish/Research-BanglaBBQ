@@ -54,6 +54,18 @@ def normalize_json_field(val):
     except:
         return val
 
+def execute_with_retry(req, max_retries=5, initial_wait=2):
+    wait = initial_wait
+    for attempt in range(max_retries):
+        try:
+            return req.execute()
+        except Exception as e:
+            if attempt == max_retries - 1:
+                raise
+            print(f"Warning: Request failed ({e}). Retrying in {wait}s (attempt {attempt + 1}/{max_retries})...")
+            time.sleep(wait)
+            wait *= 2
+
 def compare_sheet_data(service, sheet_name, canonical_path):
     print(f"\n--- Verifying Data Parity for '{sheet_name}' ---")
     with open(canonical_path, 'r', encoding='utf-8') as f:
@@ -72,10 +84,11 @@ def compare_sheet_data(service, sheet_name, canonical_path):
         end_row = min((i + 1) * chunk_size, len(canonical_rows))
         cell_range = f"{sheet_name}!A{start_row}:O{end_row}"
         
-        res = service.spreadsheets().values().get(
+        req = service.spreadsheets().values().get(
             spreadsheetId=SPREADSHEET_ID,
             range=cell_range
-        ).execute()
+        )
+        res = execute_with_retry(req)
         read_rows = res.get('values', [])
         
         expected_chunk = canonical_rows[start_row - 1:end_row]
@@ -105,11 +118,12 @@ def compare_sheet_data(service, sheet_name, canonical_path):
 
 def verify_formatting(service):
     print("\n--- Verifying Formatting, Widths, Frozen Rows & CF Rules ---")
-    meta = service.spreadsheets().get(
+    req = service.spreadsheets().get(
         spreadsheetId=SPREADSHEET_ID,
         ranges=['BanglaBBQ_ENG_Gender', 'BanglaBBQ_BEN_Gender'],
         fields='sheets(properties,data.columnMetadata,conditionalFormats)'
-    ).execute()
+    )
+    meta = execute_with_retry(req)
     
     for s in meta['sheets']:
         p = s['properties']

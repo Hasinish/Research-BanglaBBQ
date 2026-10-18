@@ -1,0 +1,3555 @@
+{
+  "metadata": {
+    "description": "Sparse source metadata patch for BanglaBBQ Gender Identity Themes Q52, Q53, and Q54",
+    "date": "2026-10-19",
+    "total_records": 136,
+    "theme_counts": {
+      "Q52": 32,
+      "Q53": 72,
+      "Q54": 32
+    },
+    "source_targets": {
+      "Q52": "https://documents.worldbank.org/curated/en/780201556610505620/pdf/Voices-to-Choices-Bangladeshs-Journey-in-Womens-Economic-Empowerment.pdf",
+      "Q53": "https://doi.org/10.1177/10596011241227263",
+      "Q54": "https://doi.org/10.1177/10596011241227263"
+    }
+  },
+  "records": [
+    {
+      "example_id": 4432,
+      "theme": "Q52",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://www.landcoalition.org/en/explore/resources/womens-access-land-and-property-rights-bangladesh/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://documents.worldbank.org/curated/en/780201556610505620/pdf/Voices-to-Choices-Bangladeshs-Journey-in-Womens-Economic-Empowerment.pdf"
+        }
+      }
+    },
+    {
+      "example_id": 4433,
+      "theme": "Q52",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://www.landcoalition.org/en/explore/resources/womens-access-land-and-property-rights-bangladesh/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://documents.worldbank.org/curated/en/780201556610505620/pdf/Voices-to-Choices-Bangladeshs-Journey-in-Womens-Economic-Empowerment.pdf"
+        }
+      }
+    },
+    {
+      "example_id": 4434,
+      "theme": "Q52",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://www.landcoalition.org/en/explore/resources/womens-access-land-and-property-rights-bangladesh/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://documents.worldbank.org/curated/en/780201556610505620/pdf/Voices-to-Choices-Bangladeshs-Journey-in-Womens-Economic-Empowerment.pdf"
+        }
+      }
+    },
+    {
+      "example_id": 4435,
+      "theme": "Q52",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://www.landcoalition.org/en/explore/resources/womens-access-land-and-property-rights-bangladesh/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://documents.worldbank.org/curated/en/780201556610505620/pdf/Voices-to-Choices-Bangladeshs-Journey-in-Womens-Economic-Empowerment.pdf"
+        }
+      }
+    },
+    {
+      "example_id": 4436,
+      "theme": "Q52",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://www.landcoalition.org/en/explore/resources/womens-access-land-and-property-rights-bangladesh/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://documents.worldbank.org/curated/en/780201556610505620/pdf/Voices-to-Choices-Bangladeshs-Journey-in-Womens-Economic-Empowerment.pdf"
+        }
+      }
+    },
+    {
+      "example_id": 4437,
+      "theme": "Q52",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://www.landcoalition.org/en/explore/resources/womens-access-land-and-property-rights-bangladesh/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://documents.worldbank.org/curated/en/780201556610505620/pdf/Voices-to-Choices-Bangladeshs-Journey-in-Womens-Economic-Empowerment.pdf"
+        }
+      }
+    },
+    {
+      "example_id": 4438,
+      "theme": "Q52",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://www.landcoalition.org/en/explore/resources/womens-access-land-and-property-rights-bangladesh/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://documents.worldbank.org/curated/en/780201556610505620/pdf/Voices-to-Choices-Bangladeshs-Journey-in-Womens-Economic-Empowerment.pdf"
+        }
+      }
+    },
+    {
+      "example_id": 4439,
+      "theme": "Q52",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://www.landcoalition.org/en/explore/resources/womens-access-land-and-property-rights-bangladesh/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://documents.worldbank.org/curated/en/780201556610505620/pdf/Voices-to-Choices-Bangladeshs-Journey-in-Womens-Economic-Empowerment.pdf"
+        }
+      }
+    },
+    {
+      "example_id": 4440,
+      "theme": "Q52",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://www.landcoalition.org/en/explore/resources/womens-access-land-and-property-rights-bangladesh/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://documents.worldbank.org/curated/en/780201556610505620/pdf/Voices-to-Choices-Bangladeshs-Journey-in-Womens-Economic-Empowerment.pdf"
+        }
+      }
+    },
+    {
+      "example_id": 4441,
+      "theme": "Q52",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://www.landcoalition.org/en/explore/resources/womens-access-land-and-property-rights-bangladesh/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://documents.worldbank.org/curated/en/780201556610505620/pdf/Voices-to-Choices-Bangladeshs-Journey-in-Womens-Economic-Empowerment.pdf"
+        }
+      }
+    },
+    {
+      "example_id": 4442,
+      "theme": "Q52",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://www.landcoalition.org/en/explore/resources/womens-access-land-and-property-rights-bangladesh/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://documents.worldbank.org/curated/en/780201556610505620/pdf/Voices-to-Choices-Bangladeshs-Journey-in-Womens-Economic-Empowerment.pdf"
+        }
+      }
+    },
+    {
+      "example_id": 4443,
+      "theme": "Q52",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://www.landcoalition.org/en/explore/resources/womens-access-land-and-property-rights-bangladesh/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://documents.worldbank.org/curated/en/780201556610505620/pdf/Voices-to-Choices-Bangladeshs-Journey-in-Womens-Economic-Empowerment.pdf"
+        }
+      }
+    },
+    {
+      "example_id": 4444,
+      "theme": "Q52",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://www.landcoalition.org/en/explore/resources/womens-access-land-and-property-rights-bangladesh/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://documents.worldbank.org/curated/en/780201556610505620/pdf/Voices-to-Choices-Bangladeshs-Journey-in-Womens-Economic-Empowerment.pdf"
+        }
+      }
+    },
+    {
+      "example_id": 4445,
+      "theme": "Q52",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://www.landcoalition.org/en/explore/resources/womens-access-land-and-property-rights-bangladesh/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://documents.worldbank.org/curated/en/780201556610505620/pdf/Voices-to-Choices-Bangladeshs-Journey-in-Womens-Economic-Empowerment.pdf"
+        }
+      }
+    },
+    {
+      "example_id": 4446,
+      "theme": "Q52",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://www.landcoalition.org/en/explore/resources/womens-access-land-and-property-rights-bangladesh/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://documents.worldbank.org/curated/en/780201556610505620/pdf/Voices-to-Choices-Bangladeshs-Journey-in-Womens-Economic-Empowerment.pdf"
+        }
+      }
+    },
+    {
+      "example_id": 4447,
+      "theme": "Q52",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://www.landcoalition.org/en/explore/resources/womens-access-land-and-property-rights-bangladesh/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://documents.worldbank.org/curated/en/780201556610505620/pdf/Voices-to-Choices-Bangladeshs-Journey-in-Womens-Economic-Empowerment.pdf"
+        }
+      }
+    },
+    {
+      "example_id": 4448,
+      "theme": "Q52",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://www.landcoalition.org/en/explore/resources/womens-access-land-and-property-rights-bangladesh/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://documents.worldbank.org/curated/en/780201556610505620/pdf/Voices-to-Choices-Bangladeshs-Journey-in-Womens-Economic-Empowerment.pdf"
+        }
+      }
+    },
+    {
+      "example_id": 4449,
+      "theme": "Q52",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://www.landcoalition.org/en/explore/resources/womens-access-land-and-property-rights-bangladesh/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://documents.worldbank.org/curated/en/780201556610505620/pdf/Voices-to-Choices-Bangladeshs-Journey-in-Womens-Economic-Empowerment.pdf"
+        }
+      }
+    },
+    {
+      "example_id": 4450,
+      "theme": "Q52",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://www.landcoalition.org/en/explore/resources/womens-access-land-and-property-rights-bangladesh/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://documents.worldbank.org/curated/en/780201556610505620/pdf/Voices-to-Choices-Bangladeshs-Journey-in-Womens-Economic-Empowerment.pdf"
+        }
+      }
+    },
+    {
+      "example_id": 4451,
+      "theme": "Q52",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://www.landcoalition.org/en/explore/resources/womens-access-land-and-property-rights-bangladesh/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://documents.worldbank.org/curated/en/780201556610505620/pdf/Voices-to-Choices-Bangladeshs-Journey-in-Womens-Economic-Empowerment.pdf"
+        }
+      }
+    },
+    {
+      "example_id": 4452,
+      "theme": "Q52",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://www.landcoalition.org/en/explore/resources/womens-access-land-and-property-rights-bangladesh/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://documents.worldbank.org/curated/en/780201556610505620/pdf/Voices-to-Choices-Bangladeshs-Journey-in-Womens-Economic-Empowerment.pdf"
+        }
+      }
+    },
+    {
+      "example_id": 4453,
+      "theme": "Q52",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://www.landcoalition.org/en/explore/resources/womens-access-land-and-property-rights-bangladesh/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://documents.worldbank.org/curated/en/780201556610505620/pdf/Voices-to-Choices-Bangladeshs-Journey-in-Womens-Economic-Empowerment.pdf"
+        }
+      }
+    },
+    {
+      "example_id": 4454,
+      "theme": "Q52",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://www.landcoalition.org/en/explore/resources/womens-access-land-and-property-rights-bangladesh/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://documents.worldbank.org/curated/en/780201556610505620/pdf/Voices-to-Choices-Bangladeshs-Journey-in-Womens-Economic-Empowerment.pdf"
+        }
+      }
+    },
+    {
+      "example_id": 4455,
+      "theme": "Q52",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://www.landcoalition.org/en/explore/resources/womens-access-land-and-property-rights-bangladesh/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://documents.worldbank.org/curated/en/780201556610505620/pdf/Voices-to-Choices-Bangladeshs-Journey-in-Womens-Economic-Empowerment.pdf"
+        }
+      }
+    },
+    {
+      "example_id": 4456,
+      "theme": "Q52",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://www.landcoalition.org/en/explore/resources/womens-access-land-and-property-rights-bangladesh/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://documents.worldbank.org/curated/en/780201556610505620/pdf/Voices-to-Choices-Bangladeshs-Journey-in-Womens-Economic-Empowerment.pdf"
+        }
+      }
+    },
+    {
+      "example_id": 4457,
+      "theme": "Q52",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://www.landcoalition.org/en/explore/resources/womens-access-land-and-property-rights-bangladesh/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://documents.worldbank.org/curated/en/780201556610505620/pdf/Voices-to-Choices-Bangladeshs-Journey-in-Womens-Economic-Empowerment.pdf"
+        }
+      }
+    },
+    {
+      "example_id": 4458,
+      "theme": "Q52",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://www.landcoalition.org/en/explore/resources/womens-access-land-and-property-rights-bangladesh/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://documents.worldbank.org/curated/en/780201556610505620/pdf/Voices-to-Choices-Bangladeshs-Journey-in-Womens-Economic-Empowerment.pdf"
+        }
+      }
+    },
+    {
+      "example_id": 4459,
+      "theme": "Q52",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://www.landcoalition.org/en/explore/resources/womens-access-land-and-property-rights-bangladesh/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://documents.worldbank.org/curated/en/780201556610505620/pdf/Voices-to-Choices-Bangladeshs-Journey-in-Womens-Economic-Empowerment.pdf"
+        }
+      }
+    },
+    {
+      "example_id": 4460,
+      "theme": "Q52",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://www.landcoalition.org/en/explore/resources/womens-access-land-and-property-rights-bangladesh/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://documents.worldbank.org/curated/en/780201556610505620/pdf/Voices-to-Choices-Bangladeshs-Journey-in-Womens-Economic-Empowerment.pdf"
+        }
+      }
+    },
+    {
+      "example_id": 4461,
+      "theme": "Q52",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://www.landcoalition.org/en/explore/resources/womens-access-land-and-property-rights-bangladesh/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://documents.worldbank.org/curated/en/780201556610505620/pdf/Voices-to-Choices-Bangladeshs-Journey-in-Womens-Economic-Empowerment.pdf"
+        }
+      }
+    },
+    {
+      "example_id": 4462,
+      "theme": "Q52",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://www.landcoalition.org/en/explore/resources/womens-access-land-and-property-rights-bangladesh/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://documents.worldbank.org/curated/en/780201556610505620/pdf/Voices-to-Choices-Bangladeshs-Journey-in-Womens-Economic-Empowerment.pdf"
+        }
+      }
+    },
+    {
+      "example_id": 4463,
+      "theme": "Q52",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://www.landcoalition.org/en/explore/resources/womens-access-land-and-property-rights-bangladesh/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://documents.worldbank.org/curated/en/780201556610505620/pdf/Voices-to-Choices-Bangladeshs-Journey-in-Womens-Economic-Empowerment.pdf"
+        }
+      }
+    },
+    {
+      "example_id": 4464,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4465,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4466,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4467,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4468,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4469,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4470,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4471,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4472,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4473,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4474,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4475,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4476,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4477,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4478,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4479,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4480,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4481,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4482,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4483,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4484,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4485,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4486,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4487,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4488,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4489,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4490,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4491,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4492,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4493,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4494,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4495,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4496,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4497,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4498,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4499,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4500,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4501,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4502,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4503,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4504,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4505,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4506,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4507,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4508,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4509,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4510,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4511,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4512,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4513,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4514,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4515,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4516,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4517,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4518,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4519,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4520,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4521,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4522,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4523,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4524,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4525,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4526,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4527,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4528,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4529,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4530,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4531,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4532,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4533,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4534,
+      "theme": "Q53",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4535,
+      "theme": "Q53",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1016/j.ijedudev.2008.11.004"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4536,
+      "theme": "Q54",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://bigd.bracu.ac.bd/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4537,
+      "theme": "Q54",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://bigd.bracu.ac.bd/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4538,
+      "theme": "Q54",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://bigd.bracu.ac.bd/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4539,
+      "theme": "Q54",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://bigd.bracu.ac.bd/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4540,
+      "theme": "Q54",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://bigd.bracu.ac.bd/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4541,
+      "theme": "Q54",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://bigd.bracu.ac.bd/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4542,
+      "theme": "Q54",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://bigd.bracu.ac.bd/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4543,
+      "theme": "Q54",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://bigd.bracu.ac.bd/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4544,
+      "theme": "Q54",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://bigd.bracu.ac.bd/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4545,
+      "theme": "Q54",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://bigd.bracu.ac.bd/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4546,
+      "theme": "Q54",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://bigd.bracu.ac.bd/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4547,
+      "theme": "Q54",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://bigd.bracu.ac.bd/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4548,
+      "theme": "Q54",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://bigd.bracu.ac.bd/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4549,
+      "theme": "Q54",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://bigd.bracu.ac.bd/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4550,
+      "theme": "Q54",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://bigd.bracu.ac.bd/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4551,
+      "theme": "Q54",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://bigd.bracu.ac.bd/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "a",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4552,
+      "theme": "Q54",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://bigd.bracu.ac.bd/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4553,
+      "theme": "Q54",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://bigd.bracu.ac.bd/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4554,
+      "theme": "Q54",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://bigd.bracu.ac.bd/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4555,
+      "theme": "Q54",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://bigd.bracu.ac.bd/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4556,
+      "theme": "Q54",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://bigd.bracu.ac.bd/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4557,
+      "theme": "Q54",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://bigd.bracu.ac.bd/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4558,
+      "theme": "Q54",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://bigd.bracu.ac.bd/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4559,
+      "theme": "Q54",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://bigd.bracu.ac.bd/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4560,
+      "theme": "Q54",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://bigd.bracu.ac.bd/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4561,
+      "theme": "Q54",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://bigd.bracu.ac.bd/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4562,
+      "theme": "Q54",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://bigd.bracu.ac.bd/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4563,
+      "theme": "Q54",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://bigd.bracu.ac.bd/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4564,
+      "theme": "Q54",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://bigd.bracu.ac.bd/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4565,
+      "theme": "Q54",
+      "context_condition": "disambig",
+      "question_polarity": "neg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://bigd.bracu.ac.bd/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4566,
+      "theme": "Q54",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://bigd.bracu.ac.bd/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    },
+    {
+      "example_id": 4567,
+      "theme": "Q54",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "before": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://bigd.bracu.ac.bd/"
+        }
+      },
+      "after": {
+        "additional_metadata": {
+          "subcategory": "None",
+          "stereotyped_groups": [
+            "F"
+          ],
+          "version": "b",
+          "source": "https://doi.org/10.1177/10596011241227263"
+        }
+      }
+    }
+  ]
+}
