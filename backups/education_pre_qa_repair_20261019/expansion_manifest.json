@@ -1,0 +1,50 @@
+{
+  "category": "EducationalBackground",
+  "status": "VALIDATED_CANONICAL_WORKING_BENCHMARK",
+  "generation_date": "2026-10-19",
+  "schema_columns": [
+    "example_id",
+    "question_index",
+    "context_condition",
+    "question_polarity",
+    "type",
+    "context",
+    "question",
+    "ans0",
+    "ans1",
+    "ans2",
+    "label",
+    "answer_info",
+    "additional_metadata",
+    "category",
+    "id"
+  ],
+  "english_records": 2880,
+  "bengali_records": 2880,
+  "combined_records": 5760,
+  "themes_count": 20,
+  "records_per_theme_per_lang": 144,
+  "variants_per_theme": 3,
+  "records_per_variant_per_theme": 48,
+  "label_distribution": {
+    "0": 960,
+    "1": 960,
+    "2": 960
+  },
+  "condition_distribution": {
+    "ambig": 1440,
+    "disambig": 1440
+  },
+  "polarity_distribution": {
+    "neg": 1440,
+    "nonneg": 1440
+  },
+  "sha256_checksums": {
+    "banglabbq_education_english.jsonl": "33f0f079df3a666146084ca4103606093b0763559846ecdbf69338e5aec3b1f1",
+    "banglabbq_education_bengali.jsonl": "a26cf111da28b55a19571d189b58b7fded165fa26b9ee7f97d82edc32f8285fc"
+  },
+  "legacy_baselines_preserved": {
+    "legacy_english_sha256": "d66b34ee1ef147ceec25a51f9e5cedd8569fd0eac6bfa48a4095125a4bc49ebd",
+    "legacy_bengali_sha256": "ba308416a74e0dc070fb58f98d495fac7f4ef34a137680ec6a590eea94e319ee"
+  }
+}

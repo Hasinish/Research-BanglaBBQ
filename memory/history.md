@@ -1,3 +1,35 @@
+- **[2026-10-19] Convo df252d29-7bdf-4f9d-9751-bf4b47248db6 (Followup)**: **BanglaBBQ Educational Background Final Independent QA Repair, Adversarial Semantic Test Suite, and 86,400-Cell Live Parity Synchronization**:
+  - **12 Confirmed Counterfactual Defects Repaired**: Successfully corrected 144 records per language (288 combined) across 12 orientation 'b' templates with reversed group-defining or education-track wording (Q05 V3, Q10 V1/V2, Q12 V1/V2/V3, Q15 V1/V2, Q16 V1/V3, Q18 V1, Q19 V2). Fixed attribution logic to align with legitimate educational group identities.
+  - **High-Risk Scenario Variants & Wording Mismatches Resolved**:
+    - Reconciled Q04 V2 (differentiated institutional perceptions without asserting commercial degree invalidity).
+    - Reconciled Q08 V2 (distinguished perceived academic breadth from credential pathways).
+    - Reconciled Q15 V3 and Q16 V2 (eliminated contradictory status inversions and removed improper "college" terminology in Q16 V3).
+    - Reconciled Q19 V1 (differentiated subjective employer hesitation from legal certification validity).
+    - Harmonized evaluator decision-maker identities in Q07 V1 (aligned club executives/seniors in context and question) and Q17 V1 (aligned club advisor/moderator).
+    - Clarified differential negative treatment in Q06 V3 and role-relevant shared competencies in Q20.
+  - **Comprehensive 20-Theme Source Re-Audit & Evidence Boundary Formalization**:
+    - Re-dated and qualified citations across all 20 themes in `source_audit_matrix.json` and `source_audit_matrix.md`.
+    - Corrected publication years and methodologies: Q02 (Dec 2025 BIDS study reported in The Daily Star), Q09 (28 Aug 2025 TBS dispute), Q15 (2 July 2025 TBS CV-blinding exercise), Q16 (13 May 2016 BRACU study on student selection factors).
+    - Rectified false evidence attributions: Q19 (World Bank RCT noting positive wage effects, explicitly removing unsupported employer distrust claims) and Q20 (replaced irrelevant National University article with BIDS 2019 empirical research on graduate unemployment by discipline via Financial Express).
+    - Formally established macro-level evidence boundaries (noting that macro labor surveys substantiate institutional hiring patterns rather than causal proof of direct bias in fictional BBQ probes).
+  - **Upgraded Independent Semantic QA & Adversarial Test Suite**:
+    - Overhauled `scripts/validate_education_semantics.py` with clause-level evaluative extraction (`get_eval_clause()`), strict role-sensitive entailment checks, and institutional sanity invariants.
+    - Authored `scripts/test_education_semantic_fixtures.py` containing 9 adversarial regression fixtures (Q12 distance contradiction, Q15 elite brand contradiction, Q10 commercial polytechnic, Q05 vocational track, wrong gold label, ambiguous outcome leak, EN/BN role inversion, evaluator mismatch, Q20 irrelevant source). Verified 9/9 PASSED (100% rejection rate).
+    - Re-ran `scripts/validate_education_semantics.py` on clean benchmark: 100% PASS with 0 errors.
+  - **1-to-1 Exact Legacy Row Lineage Mapping**:
+    - Re-architected `BanglaBBQ_EducationalBackground/legacy_to_improved_mapping.json` mapping all 128 legacy rows to exact modern V1 EIDs within the 48-row permutation structure (using deterministic offset translation: `theme*48 + legacy_offset_mapping[legacy_idx]`), documenting defect diagnoses, scenario logic modifications, and lineage rationales.
+  - **Google Sheets Production Sparse Patching & 100% Bit-for-Bit Parity**:
+    - Executed sparse patch script `scripts/apply_education_qa_repair_live.py` modifying 3,096 cells in `BanglaBBQ_ENG_Education` and 3,156 cells in `BanglaBBQ_BEN_Education` across Columns F, G, M.
+    - Generated machine-readable diff manifest `BanglaBBQ_EducationalBackground/qa_repair_diff_manifest.json` cataloging all 6,252 modified cells with exact row/col coordinates and before/after values.
+    - Verified 100% bit-for-bit live parity across all 86,400 data cells (43,200 per language) with 0 mismatches against canonical JSONLs (`banglabbq_education_english.jsonl`, `banglabbq_education_bengali.jsonl`).
+  - **Formal Status Separation**:
+    - Structurally Validated: YES
+    - Live-Synchronized: YES
+    - Independently Semantically Reviewed: YES
+    - Source-Verified: QUALIFIED / CORRECTED
+    - Linguistically Reviewed: PENDING EXTERNAL INDEPENDENT HUMAN REVIEW
+    - Publication-Ready: NO (awaits external native colloquial sign-off and peer review).
+
 - **[2026-10-19] Convo df252d29-7bdf-4f9d-9751-bf4b47248db6**: **BanglaBBQ Educational Background Complete Repair, 2,880-Record Expansion, and 86,400-Cell Live Parity Verified**:
   - **Full Benchmark Repair & Expansion**: Successfully repaired and expanded Educational Background from 128 legacy rows to exactly 20 distinct themes, 3 scenario variations per theme (V1/V2/V3), 144 records/theme, and 2,880 records per language (5,760 total) under the canonical 15-column schema.
   - **Immutable Legacy Preservation**: Seniors' original thesis files (`Dataset_ BanglaBBQ_Old/Educational background/`) preserved byte-for-byte with SHA-256 hashes (`d66b34ee1ef147ce...` ENG, `ba308416a74e0dc0...` BEN). Repaired and expanded dataset placed in dedicated directory `BanglaBBQ_EducationalBackground/`.

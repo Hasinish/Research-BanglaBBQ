@@ -15,8 +15,10 @@
     },
     "repaired_theme_id": 1,
     "repaired_variant": "v1",
+    "exact_improved_eid": 0,
     "repaired_v1_id_range": "0-47",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 0 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 0."
   },
   {
     "legacy_eid": 1,
@@ -34,8 +36,10 @@
     },
     "repaired_theme_id": 1,
     "repaired_variant": "v1",
+    "exact_improved_eid": 1,
     "repaired_v1_id_range": "0-47",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 1 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 1."
   },
   {
     "legacy_eid": 2,
@@ -53,8 +57,10 @@
     },
     "repaired_theme_id": 1,
     "repaired_variant": "v1",
+    "exact_improved_eid": 2,
     "repaired_v1_id_range": "0-47",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 2 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 2."
   },
   {
     "legacy_eid": 3,
@@ -72,8 +78,10 @@
     },
     "repaired_theme_id": 1,
     "repaired_variant": "v1",
+    "exact_improved_eid": 3,
     "repaired_v1_id_range": "0-47",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 3 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 3."
   },
   {
     "legacy_eid": 4,
@@ -91,8 +99,10 @@
     },
     "repaired_theme_id": 1,
     "repaired_variant": "v1",
+    "exact_improved_eid": 12,
     "repaired_v1_id_range": "0-47",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 4 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 12."
   },
   {
     "legacy_eid": 5,
@@ -110,8 +120,10 @@
     },
     "repaired_theme_id": 1,
     "repaired_variant": "v1",
+    "exact_improved_eid": 13,
     "repaired_v1_id_range": "0-47",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 5 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 13."
   },
   {
     "legacy_eid": 6,
@@ -129,8 +141,10 @@
     },
     "repaired_theme_id": 1,
     "repaired_variant": "v1",
+    "exact_improved_eid": 14,
     "repaired_v1_id_range": "0-47",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 6 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 14."
   },
   {
     "legacy_eid": 7,
@@ -148,8 +162,10 @@
     },
     "repaired_theme_id": 1,
     "repaired_variant": "v1",
+    "exact_improved_eid": 15,
     "repaired_v1_id_range": "0-47",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 7 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 15."
   },
   {
     "legacy_eid": 8,
@@ -170,8 +186,10 @@
     },
     "repaired_theme_id": 1,
     "repaired_variant": "v1",
+    "exact_improved_eid": 16,
     "repaired_v1_id_range": "0-47",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 8 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 16."
   },
   {
     "legacy_eid": 9,
@@ -192,8 +210,10 @@
     },
     "repaired_theme_id": 1,
     "repaired_variant": "v1",
+    "exact_improved_eid": 17,
     "repaired_v1_id_range": "0-47",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 9 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 17."
   },
   {
     "legacy_eid": 10,
@@ -214,8 +234,10 @@
     },
     "repaired_theme_id": 1,
     "repaired_variant": "v1",
+    "exact_improved_eid": 18,
     "repaired_v1_id_range": "0-47",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 10 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 18."
   },
   {
     "legacy_eid": 11,
@@ -236,8 +258,10 @@
     },
     "repaired_theme_id": 1,
     "repaired_variant": "v1",
+    "exact_improved_eid": 19,
     "repaired_v1_id_range": "0-47",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 11 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 19."
   },
   {
     "legacy_eid": 12,
@@ -258,8 +282,10 @@
     },
     "repaired_theme_id": 1,
     "repaired_variant": "v1",
+    "exact_improved_eid": 8,
     "repaired_v1_id_range": "0-47",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 12 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 8."
   },
   {
     "legacy_eid": 13,
@@ -280,8 +306,10 @@
     },
     "repaired_theme_id": 1,
     "repaired_variant": "v1",
+    "exact_improved_eid": 9,
     "repaired_v1_id_range": "0-47",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 13 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 9."
   },
   {
     "legacy_eid": 14,
@@ -302,8 +330,10 @@
     },
     "repaired_theme_id": 1,
     "repaired_variant": "v1",
+    "exact_improved_eid": 10,
     "repaired_v1_id_range": "0-47",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 14 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 10."
   },
   {
     "legacy_eid": 15,
@@ -324,8 +354,10 @@
     },
     "repaired_theme_id": 1,
     "repaired_variant": "v1",
+    "exact_improved_eid": 11,
     "repaired_v1_id_range": "0-47",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 15 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 11."
   },
   {
     "legacy_eid": 16,
@@ -343,8 +375,10 @@
     },
     "repaired_theme_id": 1,
     "repaired_variant": "v1",
+    "exact_improved_eid": 36,
     "repaired_v1_id_range": "0-47",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 16 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 36."
   },
   {
     "legacy_eid": 17,
@@ -362,8 +396,10 @@
     },
     "repaired_theme_id": 1,
     "repaired_variant": "v1",
+    "exact_improved_eid": 37,
     "repaired_v1_id_range": "0-47",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 17 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 37."
   },
   {
     "legacy_eid": 18,
@@ -381,8 +417,10 @@
     },
     "repaired_theme_id": 1,
     "repaired_variant": "v1",
+    "exact_improved_eid": 38,
     "repaired_v1_id_range": "0-47",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 18 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 38."
   },
   {
     "legacy_eid": 19,
@@ -400,8 +438,10 @@
     },
     "repaired_theme_id": 1,
     "repaired_variant": "v1",
+    "exact_improved_eid": 39,
     "repaired_v1_id_range": "0-47",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 19 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 39."
   },
   {
     "legacy_eid": 20,
@@ -419,8 +459,10 @@
     },
     "repaired_theme_id": 1,
     "repaired_variant": "v1",
+    "exact_improved_eid": 40,
     "repaired_v1_id_range": "0-47",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 20 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 40."
   },
   {
     "legacy_eid": 21,
@@ -438,8 +480,10 @@
     },
     "repaired_theme_id": 1,
     "repaired_variant": "v1",
+    "exact_improved_eid": 41,
     "repaired_v1_id_range": "0-47",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 21 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 41."
   },
   {
     "legacy_eid": 22,
@@ -457,8 +501,10 @@
     },
     "repaired_theme_id": 1,
     "repaired_variant": "v1",
+    "exact_improved_eid": 42,
     "repaired_v1_id_range": "0-47",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 22 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 42."
   },
   {
     "legacy_eid": 23,
@@ -476,8 +522,10 @@
     },
     "repaired_theme_id": 1,
     "repaired_variant": "v1",
+    "exact_improved_eid": 43,
     "repaired_v1_id_range": "0-47",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 23 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 43."
   },
   {
     "legacy_eid": 24,
@@ -498,8 +546,10 @@
     },
     "repaired_theme_id": 1,
     "repaired_variant": "v1",
+    "exact_improved_eid": 24,
     "repaired_v1_id_range": "0-47",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 24 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 24."
   },
   {
     "legacy_eid": 25,
@@ -520,8 +570,10 @@
     },
     "repaired_theme_id": 1,
     "repaired_variant": "v1",
+    "exact_improved_eid": 25,
     "repaired_v1_id_range": "0-47",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 25 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 25."
   },
   {
     "legacy_eid": 26,
@@ -542,8 +594,10 @@
     },
     "repaired_theme_id": 1,
     "repaired_variant": "v1",
+    "exact_improved_eid": 26,
     "repaired_v1_id_range": "0-47",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 26 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 26."
   },
   {
     "legacy_eid": 27,
@@ -564,8 +618,10 @@
     },
     "repaired_theme_id": 1,
     "repaired_variant": "v1",
+    "exact_improved_eid": 27,
     "repaired_v1_id_range": "0-47",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 27 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 27."
   },
   {
     "legacy_eid": 28,
@@ -586,8 +642,10 @@
     },
     "repaired_theme_id": 1,
     "repaired_variant": "v1",
+    "exact_improved_eid": 44,
     "repaired_v1_id_range": "0-47",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 28 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 44."
   },
   {
     "legacy_eid": 29,
@@ -608,8 +666,10 @@
     },
     "repaired_theme_id": 1,
     "repaired_variant": "v1",
+    "exact_improved_eid": 45,
     "repaired_v1_id_range": "0-47",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 29 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 45."
   },
   {
     "legacy_eid": 30,
@@ -630,8 +690,10 @@
     },
     "repaired_theme_id": 1,
     "repaired_variant": "v1",
+    "exact_improved_eid": 46,
     "repaired_v1_id_range": "0-47",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 30 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 46."
   },
   {
     "legacy_eid": 31,
@@ -652,8 +714,10 @@
     },
     "repaired_theme_id": 1,
     "repaired_variant": "v1",
+    "exact_improved_eid": 47,
     "repaired_v1_id_range": "0-47",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 31 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 47."
   },
   {
     "legacy_eid": 32,
@@ -671,8 +735,10 @@
     },
     "repaired_theme_id": 2,
     "repaired_variant": "v1",
+    "exact_improved_eid": 48,
     "repaired_v1_id_range": "48-95",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 32 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 48."
   },
   {
     "legacy_eid": 33,
@@ -690,8 +756,10 @@
     },
     "repaired_theme_id": 2,
     "repaired_variant": "v1",
+    "exact_improved_eid": 49,
     "repaired_v1_id_range": "48-95",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 33 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 49."
   },
   {
     "legacy_eid": 34,
@@ -709,8 +777,10 @@
     },
     "repaired_theme_id": 2,
     "repaired_variant": "v1",
+    "exact_improved_eid": 50,
     "repaired_v1_id_range": "48-95",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 34 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 50."
   },
   {
     "legacy_eid": 35,
@@ -728,8 +798,10 @@
     },
     "repaired_theme_id": 2,
     "repaired_variant": "v1",
+    "exact_improved_eid": 51,
     "repaired_v1_id_range": "48-95",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 35 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 51."
   },
   {
     "legacy_eid": 36,
@@ -747,8 +819,10 @@
     },
     "repaired_theme_id": 2,
     "repaired_variant": "v1",
+    "exact_improved_eid": 60,
     "repaired_v1_id_range": "48-95",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 36 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 60."
   },
   {
     "legacy_eid": 37,
@@ -766,8 +840,10 @@
     },
     "repaired_theme_id": 2,
     "repaired_variant": "v1",
+    "exact_improved_eid": 61,
     "repaired_v1_id_range": "48-95",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 37 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 61."
   },
   {
     "legacy_eid": 38,
@@ -785,8 +861,10 @@
     },
     "repaired_theme_id": 2,
     "repaired_variant": "v1",
+    "exact_improved_eid": 62,
     "repaired_v1_id_range": "48-95",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 38 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 62."
   },
   {
     "legacy_eid": 39,
@@ -804,8 +882,10 @@
     },
     "repaired_theme_id": 2,
     "repaired_variant": "v1",
+    "exact_improved_eid": 63,
     "repaired_v1_id_range": "48-95",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 39 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 63."
   },
   {
     "legacy_eid": 40,
@@ -826,8 +906,10 @@
     },
     "repaired_theme_id": 2,
     "repaired_variant": "v1",
+    "exact_improved_eid": 64,
     "repaired_v1_id_range": "48-95",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 40 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 64."
   },
   {
     "legacy_eid": 41,
@@ -848,8 +930,10 @@
     },
     "repaired_theme_id": 2,
     "repaired_variant": "v1",
+    "exact_improved_eid": 65,
     "repaired_v1_id_range": "48-95",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 41 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 65."
   },
   {
     "legacy_eid": 42,
@@ -870,8 +954,10 @@
     },
     "repaired_theme_id": 2,
     "repaired_variant": "v1",
+    "exact_improved_eid": 66,
     "repaired_v1_id_range": "48-95",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 42 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 66."
   },
   {
     "legacy_eid": 43,
@@ -892,8 +978,10 @@
     },
     "repaired_theme_id": 2,
     "repaired_variant": "v1",
+    "exact_improved_eid": 67,
     "repaired_v1_id_range": "48-95",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 43 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 67."
   },
   {
     "legacy_eid": 44,
@@ -914,8 +1002,10 @@
     },
     "repaired_theme_id": 2,
     "repaired_variant": "v1",
+    "exact_improved_eid": 56,
     "repaired_v1_id_range": "48-95",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 44 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 56."
   },
   {
     "legacy_eid": 45,
@@ -936,8 +1026,10 @@
     },
     "repaired_theme_id": 2,
     "repaired_variant": "v1",
+    "exact_improved_eid": 57,
     "repaired_v1_id_range": "48-95",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 45 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 57."
   },
   {
     "legacy_eid": 46,
@@ -958,8 +1050,10 @@
     },
     "repaired_theme_id": 2,
     "repaired_variant": "v1",
+    "exact_improved_eid": 58,
     "repaired_v1_id_range": "48-95",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 46 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 58."
   },
   {
     "legacy_eid": 47,
@@ -980,8 +1074,10 @@
     },
     "repaired_theme_id": 2,
     "repaired_variant": "v1",
+    "exact_improved_eid": 59,
     "repaired_v1_id_range": "48-95",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 47 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 59."
   },
   {
     "legacy_eid": 48,
@@ -999,8 +1095,10 @@
     },
     "repaired_theme_id": 2,
     "repaired_variant": "v1",
+    "exact_improved_eid": 84,
     "repaired_v1_id_range": "48-95",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 48 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 84."
   },
   {
     "legacy_eid": 49,
@@ -1018,8 +1116,10 @@
     },
     "repaired_theme_id": 2,
     "repaired_variant": "v1",
+    "exact_improved_eid": 85,
     "repaired_v1_id_range": "48-95",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 49 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 85."
   },
   {
     "legacy_eid": 50,
@@ -1037,8 +1137,10 @@
     },
     "repaired_theme_id": 2,
     "repaired_variant": "v1",
+    "exact_improved_eid": 86,
     "repaired_v1_id_range": "48-95",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 50 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 86."
   },
   {
     "legacy_eid": 51,
@@ -1056,8 +1158,10 @@
     },
     "repaired_theme_id": 2,
     "repaired_variant": "v1",
+    "exact_improved_eid": 87,
     "repaired_v1_id_range": "48-95",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 51 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 87."
   },
   {
     "legacy_eid": 52,
@@ -1075,8 +1179,10 @@
     },
     "repaired_theme_id": 2,
     "repaired_variant": "v1",
+    "exact_improved_eid": 88,
     "repaired_v1_id_range": "48-95",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 52 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 88."
   },
   {
     "legacy_eid": 53,
@@ -1094,8 +1200,10 @@
     },
     "repaired_theme_id": 2,
     "repaired_variant": "v1",
+    "exact_improved_eid": 89,
     "repaired_v1_id_range": "48-95",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 53 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 89."
   },
   {
     "legacy_eid": 54,
@@ -1113,8 +1221,10 @@
     },
     "repaired_theme_id": 2,
     "repaired_variant": "v1",
+    "exact_improved_eid": 90,
     "repaired_v1_id_range": "48-95",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 54 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 90."
   },
   {
     "legacy_eid": 55,
@@ -1132,8 +1242,10 @@
     },
     "repaired_theme_id": 2,
     "repaired_variant": "v1",
+    "exact_improved_eid": 91,
     "repaired_v1_id_range": "48-95",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 55 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 91."
   },
   {
     "legacy_eid": 56,
@@ -1154,8 +1266,10 @@
     },
     "repaired_theme_id": 2,
     "repaired_variant": "v1",
+    "exact_improved_eid": 72,
     "repaired_v1_id_range": "48-95",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 56 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 72."
   },
   {
     "legacy_eid": 57,
@@ -1176,8 +1290,10 @@
     },
     "repaired_theme_id": 2,
     "repaired_variant": "v1",
+    "exact_improved_eid": 73,
     "repaired_v1_id_range": "48-95",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 57 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 73."
   },
   {
     "legacy_eid": 58,
@@ -1198,8 +1314,10 @@
     },
     "repaired_theme_id": 2,
     "repaired_variant": "v1",
+    "exact_improved_eid": 74,
     "repaired_v1_id_range": "48-95",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 58 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 74."
   },
   {
     "legacy_eid": 59,
@@ -1220,8 +1338,10 @@
     },
     "repaired_theme_id": 2,
     "repaired_variant": "v1",
+    "exact_improved_eid": 75,
     "repaired_v1_id_range": "48-95",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 59 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 75."
   },
   {
     "legacy_eid": 60,
@@ -1242,8 +1362,10 @@
     },
     "repaired_theme_id": 2,
     "repaired_variant": "v1",
+    "exact_improved_eid": 92,
     "repaired_v1_id_range": "48-95",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 60 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 92."
   },
   {
     "legacy_eid": 61,
@@ -1264,8 +1386,10 @@
     },
     "repaired_theme_id": 2,
     "repaired_variant": "v1",
+    "exact_improved_eid": 93,
     "repaired_v1_id_range": "48-95",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 61 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 93."
   },
   {
     "legacy_eid": 62,
@@ -1286,8 +1410,10 @@
     },
     "repaired_theme_id": 2,
     "repaired_variant": "v1",
+    "exact_improved_eid": 94,
     "repaired_v1_id_range": "48-95",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 62 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 94."
   },
   {
     "legacy_eid": 63,
@@ -1308,8 +1434,10 @@
     },
     "repaired_theme_id": 2,
     "repaired_variant": "v1",
+    "exact_improved_eid": 95,
     "repaired_v1_id_range": "48-95",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 63 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 95."
   },
   {
     "legacy_eid": 64,
@@ -1327,8 +1455,10 @@
     },
     "repaired_theme_id": 3,
     "repaired_variant": "v1",
+    "exact_improved_eid": 96,
     "repaired_v1_id_range": "96-143",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 64 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 96."
   },
   {
     "legacy_eid": 65,
@@ -1346,8 +1476,10 @@
     },
     "repaired_theme_id": 3,
     "repaired_variant": "v1",
+    "exact_improved_eid": 97,
     "repaired_v1_id_range": "96-143",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 65 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 97."
   },
   {
     "legacy_eid": 66,
@@ -1365,8 +1497,10 @@
     },
     "repaired_theme_id": 3,
     "repaired_variant": "v1",
+    "exact_improved_eid": 98,
     "repaired_v1_id_range": "96-143",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 66 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 98."
   },
   {
     "legacy_eid": 67,
@@ -1384,8 +1518,10 @@
     },
     "repaired_theme_id": 3,
     "repaired_variant": "v1",
+    "exact_improved_eid": 99,
     "repaired_v1_id_range": "96-143",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 67 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 99."
   },
   {
     "legacy_eid": 68,
@@ -1403,8 +1539,10 @@
     },
     "repaired_theme_id": 3,
     "repaired_variant": "v1",
+    "exact_improved_eid": 108,
     "repaired_v1_id_range": "96-143",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 68 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 108."
   },
   {
     "legacy_eid": 69,
@@ -1422,8 +1560,10 @@
     },
     "repaired_theme_id": 3,
     "repaired_variant": "v1",
+    "exact_improved_eid": 109,
     "repaired_v1_id_range": "96-143",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 69 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 109."
   },
   {
     "legacy_eid": 70,
@@ -1441,8 +1581,10 @@
     },
     "repaired_theme_id": 3,
     "repaired_variant": "v1",
+    "exact_improved_eid": 110,
     "repaired_v1_id_range": "96-143",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 70 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 110."
   },
   {
     "legacy_eid": 71,
@@ -1460,8 +1602,10 @@
     },
     "repaired_theme_id": 3,
     "repaired_variant": "v1",
+    "exact_improved_eid": 111,
     "repaired_v1_id_range": "96-143",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 71 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 111."
   },
   {
     "legacy_eid": 72,
@@ -1482,8 +1626,10 @@
     },
     "repaired_theme_id": 3,
     "repaired_variant": "v1",
+    "exact_improved_eid": 112,
     "repaired_v1_id_range": "96-143",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 72 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 112."
   },
   {
     "legacy_eid": 73,
@@ -1504,8 +1650,10 @@
     },
     "repaired_theme_id": 3,
     "repaired_variant": "v1",
+    "exact_improved_eid": 113,
     "repaired_v1_id_range": "96-143",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 73 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 113."
   },
   {
     "legacy_eid": 74,
@@ -1526,8 +1674,10 @@
     },
     "repaired_theme_id": 3,
     "repaired_variant": "v1",
+    "exact_improved_eid": 114,
     "repaired_v1_id_range": "96-143",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 74 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 114."
   },
   {
     "legacy_eid": 75,
@@ -1548,8 +1698,10 @@
     },
     "repaired_theme_id": 3,
     "repaired_variant": "v1",
+    "exact_improved_eid": 115,
     "repaired_v1_id_range": "96-143",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 75 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 115."
   },
   {
     "legacy_eid": 76,
@@ -1570,8 +1722,10 @@
     },
     "repaired_theme_id": 3,
     "repaired_variant": "v1",
+    "exact_improved_eid": 104,
     "repaired_v1_id_range": "96-143",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 76 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 104."
   },
   {
     "legacy_eid": 77,
@@ -1592,8 +1746,10 @@
     },
     "repaired_theme_id": 3,
     "repaired_variant": "v1",
+    "exact_improved_eid": 105,
     "repaired_v1_id_range": "96-143",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 77 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 105."
   },
   {
     "legacy_eid": 78,
@@ -1614,8 +1770,10 @@
     },
     "repaired_theme_id": 3,
     "repaired_variant": "v1",
+    "exact_improved_eid": 106,
     "repaired_v1_id_range": "96-143",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 78 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 106."
   },
   {
     "legacy_eid": 79,
@@ -1636,8 +1794,10 @@
     },
     "repaired_theme_id": 3,
     "repaired_variant": "v1",
+    "exact_improved_eid": 107,
     "repaired_v1_id_range": "96-143",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 79 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 107."
   },
   {
     "legacy_eid": 80,
@@ -1655,8 +1815,10 @@
     },
     "repaired_theme_id": 3,
     "repaired_variant": "v1",
+    "exact_improved_eid": 132,
     "repaired_v1_id_range": "96-143",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 80 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 132."
   },
   {
     "legacy_eid": 81,
@@ -1674,8 +1836,10 @@
     },
     "repaired_theme_id": 3,
     "repaired_variant": "v1",
+    "exact_improved_eid": 133,
     "repaired_v1_id_range": "96-143",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 81 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 133."
   },
   {
     "legacy_eid": 82,
@@ -1693,8 +1857,10 @@
     },
     "repaired_theme_id": 3,
     "repaired_variant": "v1",
+    "exact_improved_eid": 134,
     "repaired_v1_id_range": "96-143",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 82 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 134."
   },
   {
     "legacy_eid": 83,
@@ -1712,8 +1878,10 @@
     },
     "repaired_theme_id": 3,
     "repaired_variant": "v1",
+    "exact_improved_eid": 135,
     "repaired_v1_id_range": "96-143",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 83 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 135."
   },
   {
     "legacy_eid": 84,
@@ -1731,8 +1899,10 @@
     },
     "repaired_theme_id": 3,
     "repaired_variant": "v1",
+    "exact_improved_eid": 136,
     "repaired_v1_id_range": "96-143",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 84 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 136."
   },
   {
     "legacy_eid": 85,
@@ -1750,8 +1920,10 @@
     },
     "repaired_theme_id": 3,
     "repaired_variant": "v1",
+    "exact_improved_eid": 137,
     "repaired_v1_id_range": "96-143",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 85 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 137."
   },
   {
     "legacy_eid": 86,
@@ -1769,8 +1941,10 @@
     },
     "repaired_theme_id": 3,
     "repaired_variant": "v1",
+    "exact_improved_eid": 138,
     "repaired_v1_id_range": "96-143",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 86 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 138."
   },
   {
     "legacy_eid": 87,
@@ -1788,8 +1962,10 @@
     },
     "repaired_theme_id": 3,
     "repaired_variant": "v1",
+    "exact_improved_eid": 139,
     "repaired_v1_id_range": "96-143",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 87 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 139."
   },
   {
     "legacy_eid": 88,
@@ -1810,8 +1986,10 @@
     },
     "repaired_theme_id": 3,
     "repaired_variant": "v1",
+    "exact_improved_eid": 120,
     "repaired_v1_id_range": "96-143",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 88 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 120."
   },
   {
     "legacy_eid": 89,
@@ -1832,8 +2010,10 @@
     },
     "repaired_theme_id": 3,
     "repaired_variant": "v1",
+    "exact_improved_eid": 121,
     "repaired_v1_id_range": "96-143",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 89 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 121."
   },
   {
     "legacy_eid": 90,
@@ -1854,8 +2034,10 @@
     },
     "repaired_theme_id": 3,
     "repaired_variant": "v1",
+    "exact_improved_eid": 122,
     "repaired_v1_id_range": "96-143",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 90 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 122."
   },
   {
     "legacy_eid": 91,
@@ -1876,8 +2058,10 @@
     },
     "repaired_theme_id": 3,
     "repaired_variant": "v1",
+    "exact_improved_eid": 123,
     "repaired_v1_id_range": "96-143",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 91 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 123."
   },
   {
     "legacy_eid": 92,
@@ -1898,8 +2082,10 @@
     },
     "repaired_theme_id": 3,
     "repaired_variant": "v1",
+    "exact_improved_eid": 140,
     "repaired_v1_id_range": "96-143",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 92 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 140."
   },
   {
     "legacy_eid": 93,
@@ -1920,8 +2106,10 @@
     },
     "repaired_theme_id": 3,
     "repaired_variant": "v1",
+    "exact_improved_eid": 141,
     "repaired_v1_id_range": "96-143",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 93 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 141."
   },
   {
     "legacy_eid": 94,
@@ -1942,8 +2130,10 @@
     },
     "repaired_theme_id": 3,
     "repaired_variant": "v1",
+    "exact_improved_eid": 142,
     "repaired_v1_id_range": "96-143",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 94 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 142."
   },
   {
     "legacy_eid": 95,
@@ -1964,8 +2154,10 @@
     },
     "repaired_theme_id": 3,
     "repaired_variant": "v1",
+    "exact_improved_eid": 143,
     "repaired_v1_id_range": "96-143",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 95 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 143."
   },
   {
     "legacy_eid": 96,
@@ -1983,8 +2175,10 @@
     },
     "repaired_theme_id": 4,
     "repaired_variant": "v1",
+    "exact_improved_eid": 144,
     "repaired_v1_id_range": "144-191",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 96 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 144."
   },
   {
     "legacy_eid": 97,
@@ -2002,8 +2196,10 @@
     },
     "repaired_theme_id": 4,
     "repaired_variant": "v1",
+    "exact_improved_eid": 145,
     "repaired_v1_id_range": "144-191",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 97 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 145."
   },
   {
     "legacy_eid": 98,
@@ -2021,8 +2217,10 @@
     },
     "repaired_theme_id": 4,
     "repaired_variant": "v1",
+    "exact_improved_eid": 146,
     "repaired_v1_id_range": "144-191",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 98 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 146."
   },
   {
     "legacy_eid": 99,
@@ -2040,8 +2238,10 @@
     },
     "repaired_theme_id": 4,
     "repaired_variant": "v1",
+    "exact_improved_eid": 147,
     "repaired_v1_id_range": "144-191",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 99 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 147."
   },
   {
     "legacy_eid": 100,
@@ -2059,8 +2259,10 @@
     },
     "repaired_theme_id": 4,
     "repaired_variant": "v1",
+    "exact_improved_eid": 156,
     "repaired_v1_id_range": "144-191",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 100 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 156."
   },
   {
     "legacy_eid": 101,
@@ -2078,8 +2280,10 @@
     },
     "repaired_theme_id": 4,
     "repaired_variant": "v1",
+    "exact_improved_eid": 157,
     "repaired_v1_id_range": "144-191",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 101 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 157."
   },
   {
     "legacy_eid": 102,
@@ -2097,8 +2301,10 @@
     },
     "repaired_theme_id": 4,
     "repaired_variant": "v1",
+    "exact_improved_eid": 158,
     "repaired_v1_id_range": "144-191",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 102 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 158."
   },
   {
     "legacy_eid": 103,
@@ -2116,8 +2322,10 @@
     },
     "repaired_theme_id": 4,
     "repaired_variant": "v1",
+    "exact_improved_eid": 159,
     "repaired_v1_id_range": "144-191",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 103 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 159."
   },
   {
     "legacy_eid": 104,
@@ -2138,8 +2346,10 @@
     },
     "repaired_theme_id": 4,
     "repaired_variant": "v1",
+    "exact_improved_eid": 160,
     "repaired_v1_id_range": "144-191",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 104 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 160."
   },
   {
     "legacy_eid": 105,
@@ -2160,8 +2370,10 @@
     },
     "repaired_theme_id": 4,
     "repaired_variant": "v1",
+    "exact_improved_eid": 161,
     "repaired_v1_id_range": "144-191",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 105 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 161."
   },
   {
     "legacy_eid": 106,
@@ -2182,8 +2394,10 @@
     },
     "repaired_theme_id": 4,
     "repaired_variant": "v1",
+    "exact_improved_eid": 162,
     "repaired_v1_id_range": "144-191",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 106 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 162."
   },
   {
     "legacy_eid": 107,
@@ -2204,8 +2418,10 @@
     },
     "repaired_theme_id": 4,
     "repaired_variant": "v1",
+    "exact_improved_eid": 163,
     "repaired_v1_id_range": "144-191",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 107 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 163."
   },
   {
     "legacy_eid": 108,
@@ -2226,8 +2442,10 @@
     },
     "repaired_theme_id": 4,
     "repaired_variant": "v1",
+    "exact_improved_eid": 152,
     "repaired_v1_id_range": "144-191",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 108 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 152."
   },
   {
     "legacy_eid": 109,
@@ -2248,8 +2466,10 @@
     },
     "repaired_theme_id": 4,
     "repaired_variant": "v1",
+    "exact_improved_eid": 153,
     "repaired_v1_id_range": "144-191",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 109 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 153."
   },
   {
     "legacy_eid": 110,
@@ -2270,8 +2490,10 @@
     },
     "repaired_theme_id": 4,
     "repaired_variant": "v1",
+    "exact_improved_eid": 154,
     "repaired_v1_id_range": "144-191",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 110 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 154."
   },
   {
     "legacy_eid": 111,
@@ -2292,8 +2514,10 @@
     },
     "repaired_theme_id": 4,
     "repaired_variant": "v1",
+    "exact_improved_eid": 155,
     "repaired_v1_id_range": "144-191",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 111 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 155."
   },
   {
     "legacy_eid": 112,
@@ -2311,8 +2535,10 @@
     },
     "repaired_theme_id": 4,
     "repaired_variant": "v1",
+    "exact_improved_eid": 180,
     "repaired_v1_id_range": "144-191",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 112 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 180."
   },
   {
     "legacy_eid": 113,
@@ -2330,8 +2556,10 @@
     },
     "repaired_theme_id": 4,
     "repaired_variant": "v1",
+    "exact_improved_eid": 181,
     "repaired_v1_id_range": "144-191",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 113 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 181."
   },
   {
     "legacy_eid": 114,
@@ -2349,8 +2577,10 @@
     },
     "repaired_theme_id": 4,
     "repaired_variant": "v1",
+    "exact_improved_eid": 182,
     "repaired_v1_id_range": "144-191",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 114 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 182."
   },
   {
     "legacy_eid": 115,
@@ -2368,8 +2598,10 @@
     },
     "repaired_theme_id": 4,
     "repaired_variant": "v1",
+    "exact_improved_eid": 183,
     "repaired_v1_id_range": "144-191",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 115 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 183."
   },
   {
     "legacy_eid": 116,
@@ -2387,8 +2619,10 @@
     },
     "repaired_theme_id": 4,
     "repaired_variant": "v1",
+    "exact_improved_eid": 184,
     "repaired_v1_id_range": "144-191",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 116 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 184."
   },
   {
     "legacy_eid": 117,
@@ -2406,8 +2640,10 @@
     },
     "repaired_theme_id": 4,
     "repaired_variant": "v1",
+    "exact_improved_eid": 185,
     "repaired_v1_id_range": "144-191",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 117 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 185."
   },
   {
     "legacy_eid": 118,
@@ -2425,8 +2661,10 @@
     },
     "repaired_theme_id": 4,
     "repaired_variant": "v1",
+    "exact_improved_eid": 186,
     "repaired_v1_id_range": "144-191",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 118 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 186."
   },
   {
     "legacy_eid": 119,
@@ -2444,8 +2682,10 @@
     },
     "repaired_theme_id": 4,
     "repaired_variant": "v1",
+    "exact_improved_eid": 187,
     "repaired_v1_id_range": "144-191",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 119 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 187."
   },
   {
     "legacy_eid": 120,
@@ -2466,8 +2706,10 @@
     },
     "repaired_theme_id": 4,
     "repaired_variant": "v1",
+    "exact_improved_eid": 168,
     "repaired_v1_id_range": "144-191",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 120 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 168."
   },
   {
     "legacy_eid": 121,
@@ -2488,8 +2730,10 @@
     },
     "repaired_theme_id": 4,
     "repaired_variant": "v1",
+    "exact_improved_eid": 169,
     "repaired_v1_id_range": "144-191",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 121 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 169."
   },
   {
     "legacy_eid": 122,
@@ -2510,8 +2754,10 @@
     },
     "repaired_theme_id": 4,
     "repaired_variant": "v1",
+    "exact_improved_eid": 170,
     "repaired_v1_id_range": "144-191",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 122 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 170."
   },
   {
     "legacy_eid": 123,
@@ -2532,8 +2778,10 @@
     },
     "repaired_theme_id": 4,
     "repaired_variant": "v1",
+    "exact_improved_eid": 171,
     "repaired_v1_id_range": "144-191",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 123 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 171."
   },
   {
     "legacy_eid": 124,
@@ -2554,8 +2802,10 @@
     },
     "repaired_theme_id": 4,
     "repaired_variant": "v1",
+    "exact_improved_eid": 188,
     "repaired_v1_id_range": "144-191",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 124 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 188."
   },
   {
     "legacy_eid": 125,
@@ -2576,8 +2826,10 @@
     },
     "repaired_theme_id": 4,
     "repaired_variant": "v1",
+    "exact_improved_eid": 189,
     "repaired_v1_id_range": "144-191",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 125 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 189."
   },
   {
     "legacy_eid": 126,
@@ -2598,8 +2850,10 @@
     },
     "repaired_theme_id": 4,
     "repaired_variant": "v1",
+    "exact_improved_eid": 190,
     "repaired_v1_id_range": "144-191",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 126 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 190."
   },
   {
     "legacy_eid": 127,
@@ -2620,7 +2874,9 @@
     },
     "repaired_theme_id": 4,
     "repaired_variant": "v1",
+    "exact_improved_eid": 191,
     "repaired_v1_id_range": "144-191",
-    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+    "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+    "lineage_rationale": "Legacy record EID 127 was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID 191."
   }
 ]

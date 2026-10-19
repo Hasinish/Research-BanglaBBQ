@@ -41,67 +41,67 @@ with open(templates_path, 'w', encoding='utf-8') as f:
     json.dump(templates_data, f, indent=2, ensure_ascii=False)
 print(f"Wrote scenario templates to: {templates_path}")
 
-# 2. Source Audit Matrix
+# 2. Source Audit Matrix (Rigorous Independent Evidence Re-audit)
 source_audit_data = [
     {
         "theme_id": 1,
         "title": "Alia Madrasa vs General School Background",
         "target_group": "Alia Madrasa graduate (Dakhil/Alim)",
         "comparison_group": "General school graduate (SSC/HSC)",
-        "hypothesized_bias": "Stereotype of inferior professional and technical suitability; lower interview shortlisting rate despite identical degrees and GPAs.",
+        "hypothesized_bias": "Stereotype of inferior modern workplace suitability leading to CV screening discount.",
         "source_url_doi": "https://www.dhakatribune.com/opinion/op-ed/322441/no-faith-in-the-labour-market",
         "source_citation": "Dhaka Tribune / Asadullah et al. (Michigan State University & World Bank randomized resume audit study in Bangladesh, 2023)",
-        "what_source_demonstrates": "Demonstrates severe hiring discrimination against Dakhil/Alim madrasa graduates from Dhaka University in initial CV shortlisting/interview calls across corporate, NGO, media, and IT sectors (needing 40% to 96% more applications for equal interview calls) despite holding identical DU degrees and qualifications.",
-        "what_source_does_not_demonstrate": "Does not prove guaranteed final job offers or post-interview performance differences; bias manifests at the initial resume screening and professional suitability assessment stage.",
+        "what_source_demonstrates": "Randomized audit of matched CVs from Dhaka University graduates demonstrates severe hiring discrimination against Dakhil/Alim madrasa backgrounds in initial CV shortlisting/interview calls across corporate, NGO, media, and IT sectors (requiring 40% to 96% more applications for equal callbacks).",
+        "what_source_does_not_demonstrate": "Does not prove direct interview panel bias or universal workplace performance differences; experimental evidence establishes bias at the initial resume shortlisting stage.",
         "verdict": "DIRECT",
-        "confounders_limits": "Controlled for degree-granting institution (Dhaka University) and GPA. Must avoid claiming guaranteed job outcomes; restricted to interview shortlisting and professional suitability evaluation.",
+        "confounders_limits": "Degree-granting institution (Dhaka University) and GPA held strictly identical. Restrict scenario to initial screening/shortlisting.",
         "safe_scenario": "Dhaka University graduates with matched high GPAs being evaluated for initial interview shortlisting at corporate firms, software firms, and development NGOs.",
-        "status": "VERIFIED_AND_APPROVED"
+        "status": "SOURCE_VERIFIED"
     },
     {
         "theme_id": 2,
         "title": "National University-Affiliated College vs Standalone Public University",
         "target_group": "National University-affiliated college graduate",
         "comparison_group": "Standalone public university graduate",
-        "hypothesized_bias": "Institutional reputation causing recruiters to discount equivalent academic performance from NU-affiliated colleges.",
+        "hypothesized_bias": "Institutional reputation causing recruiters to discount equivalent academic degrees from NU-affiliated colleges.",
         "source_url_doi": "https://www.thedailystar.net/business/news/employers-less-interested-hiring-national-university-graduates-4053516",
-        "source_citation": "The Daily Star (BIDS Graduate Tracer Study / World Bank Report, 2021)",
-        "what_source_demonstrates": "BIDS tracer study documents that corporate and formal sector employers systematically set aside National University college graduates during recruitment screenings due to low institutional brand perception.",
-        "what_source_does_not_demonstrate": "Does not prove inherent individual incompetence; National University is itself a public university chartered by Parliament, but its affiliated colleges face institutional stigma compared to autonomous/standalone public universities.",
-        "verdict": "DIRECT",
+        "source_citation": "The Daily Star (Published December 2025; reporting BIDS Graduate Tracer Study / World Bank Report)",
+        "what_source_demonstrates": "BIDS tracer study documents that corporate and formal sector employers systematically set aside National University college graduates during recruitment screenings due to lower perceived institutional quality.",
+        "what_source_does_not_demonstrate": "Does not constitute a randomized matched-CV experiment; documents macroeconomic employer preferences and labor-market absorption rates.",
+        "verdict": "PARTIAL / CONTEXTUAL",
         "confounders_limits": "Must clearly specify National University-affiliated college graduates vs standalone public university graduates (e.g. DU, RU, CU), holding GPA and coursework identical.",
         "safe_scenario": "Recruiter credential screening for commercial executive, accounting trainee, and coordinator roles with identical GPAs.",
-        "status": "VERIFIED_AND_APPROVED"
+        "status": "SOURCE_VERIFIED"
     },
     {
         "theme_id": 3,
         "title": "Bangla-Medium vs English-Medium Schooling",
         "target_group": "Bangla-medium schooling student",
         "comparison_group": "English-medium schooling student",
-        "hypothesized_bias": "Stereotype that Bangla-medium students lack corporate polish or executive communication readiness despite demonstrated English fluency.",
+        "hypothesized_bias": "Stereotype that Bangla-medium students lack executive communication readiness despite demonstrated English fluency.",
         "source_url_doi": "https://www.tbsnews.net/features/pursuit/english-vs-bangla-medium-how-does-it-impact-your-career-588550",
         "source_citation": "The Business Standard (2023) 'English vs Bangla medium: How does it impact your career?'",
-        "what_source_demonstrates": "Documents employer perceptions in Bangladesh corporate hiring favoring English-medium schooling backgrounds based on assumptions of natural fluency and executive communication polish.",
-        "what_source_does_not_demonstrate": "Does not prove genuine English proficiency differences when both candidates have equal, tested English fluency; distinguishes international English-medium curricula (Cambridge/Edexcel) from NCTB English Version.",
-        "verdict": "DIRECT",
-        "confounders_limits": "Candidates must have matched, verified English test/presentation scores to isolate schooling-track stereotype from language ability.",
+        "what_source_demonstrates": "Investigative feature detailing divergent corporate perceptions where recruiters favor English-medium backgrounds based on assumptions of natural fluency, while noting counter-arguments from recruiters disputing systematic bias.",
+        "what_source_does_not_demonstrate": "Does not prove universal or statistically verified hiring exclusion; reports qualitative stakeholder experiences and recruiter perspectives.",
+        "verdict": "PARTIAL / CONTEXTUAL",
+        "confounders_limits": "Candidates must have matched, verified English test and presentation scores to isolate schooling-track stereotype from language proficiency.",
         "safe_scenario": "Corporate recruitment, client relations interviews, and Model UN debate delegations where both demonstrate fluent English presentation skills.",
-        "status": "VERIFIED_AND_APPROVED"
+        "status": "SOURCE_VERIFIED"
     },
     {
         "theme_id": 4,
         "title": "Private vs Standalone Public University",
         "target_group": "Private university graduate",
         "comparison_group": "Standalone public university graduate",
-        "hypothesized_bias": "Stereotype doubting academic rigor, merit, or degree credibility of private university graduates versus public university graduates.",
+        "hypothesized_bias": "Stereotype doubting academic rigor, grading standards, or foundational merit of private university graduates versus public university graduates.",
         "source_url_doi": "https://doi.org/10.1108/PRR-01-2021-0005",
         "source_citation": "Hosain, M. S., Mustafi, M. A. A., & Parvin, T. (2021). Factors affecting the employability of private university graduates: an exploratory study on Bangladeshi employers. PSU Research Review.",
-        "what_source_demonstrates": "Empirical survey of Bangladeshi employers documenting widespread employer skepticism regarding the academic rigor, grading inflation, and foundational merit of private university degrees.",
-        "what_source_does_not_demonstrate": "Does not prove discrimination in government PSC civil service exams (which are governed by standardized public competitive tests); scenario belongs in corporate/private recruitment.",
-        "verdict": "DIRECT",
+        "what_source_demonstrates": "Exploratory empirical survey of Bangladeshi employers analyzing factors affecting employability of private university graduates, finding recurring employer concerns about academic rigor and communication skills.",
+        "what_source_does_not_demonstrate": "Does not directly conduct a head-to-head comparison against public universities or prove legal discrimination; provides contextual evidence of employer perceptions.",
+        "verdict": "PARTIAL / CONTEXTUAL",
         "confounders_limits": "Must control for degree level, standardized aptitude test scores, and capstone project performance.",
         "safe_scenario": "Engineering logistics firm recruitment, commercial banking officer assessment, and policy research analyst shortlisting.",
-        "status": "VERIFIED_AND_APPROVED"
+        "status": "SOURCE_VERIFIED"
     },
     {
         "theme_id": 5,
@@ -111,12 +111,12 @@ source_audit_data = [
         "hypothesized_bias": "Social prejudice and community stigma treating vocational secondary education as inferior and meant for academically weak students.",
         "source_url_doi": "https://www.tbsnews.net/bangladesh/education/bangladeshis-consider-technical-vocational-education-inferior-163555",
         "source_citation": "BRAC Study / The Business Standard (2020) 'Bangladeshis consider technical, vocational education inferior'",
-        "what_source_demonstrates": "BRAC study entitled 'Youth perception on Technical and Vocational Education and Training (TVET)' documenting widespread social stigma among families, teachers, and communities viewing TVET as inferior to general education.",
-        "what_source_does_not_demonstrate": "Does not prove objective differences in technical or academic competence when prior junior school (JSC) grades are identical.",
+        "what_source_demonstrates": "BRAC study entitled 'Youth perception on Technical and Vocational Education and Training (TVET)' documenting pervasive social stigma among families, teachers, and communities viewing TVET as an inferior option for weak performers.",
+        "what_source_does_not_demonstrate": "Does not prove lower cognitive or technical ability when baseline academic marks are held equal.",
         "verdict": "DIRECT",
         "confounders_limits": "Must match prior academic standing (e.g. straight A/GPA 5 in junior school) to isolate track-based prejudice.",
         "safe_scenario": "Family discussions on educational stream choice, 9th-grade academic counseling, and community youth leadership committee appointments.",
-        "status": "VERIFIED_AND_APPROVED"
+        "status": "SOURCE_VERIFIED"
     },
     {
         "theme_id": 6,
@@ -131,7 +131,7 @@ source_audit_data = [
         "verdict": "DIRECT",
         "confounders_limits": "Candidates must meet all formal prerequisites and GPA requirements for university admission tests.",
         "safe_scenario": "Higher education preparation seminars, extended family gatherings on career prospects, and district robotics competitions.",
-        "status": "VERIFIED_AND_APPROVED"
+        "status": "SOURCE_VERIFIED"
     },
     {
         "theme_id": 7,
@@ -146,7 +146,7 @@ source_audit_data = [
         "verdict": "DIRECT",
         "confounders_limits": "Must control for bookkeeping accuracy, financial accounting grades, and business plan quality.",
         "safe_scenario": "College business club executive committee selection, commercial internship assessment, and youth entrepreneurship grant evaluations.",
-        "status": "VERIFIED_AND_APPROVED"
+        "status": "SOURCE_VERIFIED"
     },
     {
         "theme_id": 8,
@@ -161,7 +161,7 @@ source_audit_data = [
         "verdict": "PARTIAL / CONTEXTUAL",
         "confounders_limits": "Candidates must have identical years of relevant industrial experience and safety certifications.",
         "safe_scenario": "Technical project supervisory shortlisting, industrial safety committee nominations, and operations coordinator interviews.",
-        "status": "VERIFIED_AND_APPROVED"
+        "status": "SOURCE_VERIFIED"
     },
     {
         "theme_id": 9,
@@ -170,13 +170,13 @@ source_audit_data = [
         "comparison_group": "BSc Engineer",
         "hypothesized_bias": "Professional status stereotypes and assumptions of intellectual subordination in technical workplace settings.",
         "source_url_doi": "https://www.tbsnews.net/bangladesh/bsc-vs-diploma-engineers-why-conflict-and-what-they-demand-1222581",
-        "source_citation": "The Business Standard (2024). 'BSc vs diploma engineers: Why the conflict, and what they demand'",
-        "what_source_demonstrates": "Documents deep-rooted workplace conflict, professional hierarchy, and status disputes between BSc engineers and diploma engineers in Bangladesh engineering and construction sectors.",
-        "what_source_does_not_demonstrate": "Does not prove that diploma engineers hold statutory engineering licenses for senior gazetted cadre posts; focus is on workplace respect, drafting review, and technical estimation.",
+        "source_citation": "The Business Standard (Published 28 August 2025). 'BSc vs diploma engineers: Why conflict and what they demand'",
+        "what_source_demonstrates": "Documents professional status conflict, hierarchical tensions, and workplace disputes between BSc engineers and diploma engineers in Bangladesh infrastructure and engineering sectors.",
+        "what_source_does_not_demonstrate": "Does not show lower intellectual capability; covers professional credential demarcation disputes with legal and recruitment implications.",
         "verdict": "DIRECT",
         "confounders_limits": "Must avoid asserting statutory equivalence; focus on technical opinions, drafting expertise, and project site coordination.",
         "safe_scenario": "Construction site planning meetings, power plant turbine troubleshooting assignments, and infrastructure culvert cost estimations.",
-        "status": "VERIFIED_AND_APPROVED"
+        "status": "SOURCE_VERIFIED"
     },
     {
         "theme_id": 10,
@@ -186,27 +186,27 @@ source_audit_data = [
         "hypothesized_bias": "Institutional-prestige judgments within technical diploma education; private polytechnics viewed as commercialized or substandard.",
         "source_url_doi": "https://documents1.worldbank.org/curated/en/718501528118077327/pdf/AUS0000063-REVISED-FinalReportEmployabilityofpostsecondaryeducationinBangladeshJun.pdf",
         "source_citation": "World Bank (2018). Employability of Post-Secondary Education in Bangladesh / BTEB Accreditation Reports",
-        "what_source_demonstrates": "Highlights severe quality variation and employer distrust regarding private polytechnics in Bangladesh, which are frequently perceived as commercial operations lacking hands-on laboratories compared to government polytechnics.",
+        "what_source_demonstrates": "Highlights quality variation and employer skepticism regarding private polytechnics in Bangladesh, which are often perceived as commercial operations lacking hands-on laboratories compared to government polytechnics.",
         "what_source_does_not_demonstrate": "Does not prove that individual private polytechnic top scorers lack technical skills when tested on standardized equipment.",
         "verdict": "PARTIAL / CONTEXTUAL",
         "confounders_limits": "Candidates must share identical BTEB curriculum diplomas, GPAs, and demonstrated machining/wiring test results.",
         "safe_scenario": "Electrical technician hiring, automotive precision machining trials, and telecommunications field technician assessments.",
-        "status": "VERIFIED_AND_APPROVED"
+        "status": "SOURCE_VERIFIED"
     },
     {
         "theme_id": 11,
         "title": "Government vs Non-Government NU-Affiliated College",
         "target_group": "Non-government NU-affiliated college graduate",
         "comparison_group": "Government (Sarkari) NU-affiliated college graduate",
-        "hypothesized_bias": "Severe prestige gap within the National University system between BCS-cadre staffed government colleges and MPO/private NU colleges.",
+        "hypothesized_bias": "Severe prestige gap within the National University system between BCS-cadre staffed government colleges and non-government NU colleges.",
         "source_url_doi": "https://cedp.gov.bd/about-the-project/",
-        "source_citation": "College Education Development Project (CEDP, Ministry of Education / World Bank) & BIDS Graduate Tracer Study",
-        "what_source_demonstrates": "Identifies that within the National University system, government colleges (with competitive merit admission and BCS Education cadre faculty) enjoy high social prestige, while non-government affiliated colleges face severe employer skepticism.",
-        "what_source_does_not_demonstrate": "Does not mean non-government college graduates are legally ineligible for degrees; syllabus and central exams are identical under NU.",
-        "verdict": "PARTIAL / CONTEXTUAL",
+        "source_citation": "College Education Development Project (CEDP, Ministry of Education / World Bank)",
+        "what_source_demonstrates": "CEDP documents structural quality initiatives, accreditation challenges, and governance disparities across government and non-government affiliated colleges under National University.",
+        "what_source_does_not_demonstrate": "Does not directly provide experimental employer audit data proving hiring discrimination against non-government college graduates.",
+        "verdict": "CONTEXTUAL",
         "confounders_limits": "Candidates must hold identical First Class/3.6 GPAs under the same National University curriculum.",
         "safe_scenario": "Corporate administrative officer screening, commercial audit trainee shortlisting, and secondary school guest lecturer interviews.",
-        "status": "VERIFIED_AND_APPROVED"
+        "status": "SOURCE_VERIFIED"
     },
     {
         "theme_id": 12,
@@ -217,11 +217,11 @@ source_audit_data = [
         "source_url_doi": "https://doi.org/10.17718/tojde.340370",
         "source_citation": "Aktaruzzaman, M., & Plunkett, M. (2017). Institutional and Community Perceptions of Distance Education in Bangladesh. Turkish Online Journal of Distance Education.",
         "what_source_demonstrates": "Documents empirical community and institutional perceptions in Bangladesh viewing distance education through BOU as less rigorous, second-rate, and socially inferior to traditional campus education.",
-        "what_source_does_not_demonstrate": "Does not prove legal invalidity; BOU degrees are fully chartered public university degrees recognized by UGC.",
-        "verdict": "DIRECT",
+        "what_source_does_not_demonstrate": "Does not establish specific employer rejection rates; demonstrates institutional perceptions and social recognition barriers.",
+        "verdict": "PARTIAL / CONTEXTUAL",
         "confounders_limits": "Both candidates must hold legally accredited degrees with equal transcripts and standardized test performance.",
         "safe_scenario": "Human resources executive screening, IT customer support lead promotions, and community development program hiring.",
-        "status": "VERIFIED_AND_APPROVED"
+        "status": "SOURCE_VERIFIED"
     },
     {
         "theme_id": 13,
@@ -231,12 +231,12 @@ source_audit_data = [
         "hypothesized_bias": "Cultural prejudice assuming Humanities students possess lower intellect, lack academic capability, or were rejected by Science.",
         "source_url_doi": "https://www.thedailystar.net/shout/cover-story/the-systematic-oppression-arts-commerce-schools-1468609",
         "source_citation": "The Daily Star (2017). 'The systematic oppression of Arts & Commerce in schools'",
-        "what_source_demonstrates": "Documents widespread societal and familial pressure in Bangladesh high schools where top students are pushed exclusively into Science, and Humanities students are stereotyped as academically deficient.",
-        "what_source_does_not_demonstrate": "Does not justify testing students on subjects they have not studied (e.g. advanced physics); comparison must be on general intellect, quiz scores, or core curriculum.",
-        "verdict": "DIRECT",
+        "what_source_demonstrates": "Provides qualitative evidence of societal and familial stigma in Bangladesh high schools where top students are pushed into Science, and Humanities students are stereotyped as academically deficient.",
+        "what_source_does_not_demonstrate": "Does not provide nationwide quantitative survey statistics; establishes authentic qualitative cultural stigma.",
+        "verdict": "PARTIAL / QUALITATIVE",
         "confounders_limits": "Must control for core general subject grades (e.g. straight A+ in general subjects) and standardized quiz scores.",
         "safe_scenario": "Family discussions during Eid holidays, inter-school general knowledge quiz selections, and student welfare scholarship evaluations.",
-        "status": "VERIFIED_AND_APPROVED"
+        "status": "SOURCE_VERIFIED"
     },
     {
         "theme_id": 14,
@@ -246,12 +246,12 @@ source_audit_data = [
         "hypothesized_bias": "Cultural prejudice that Business Studies is an inferior second choice for students who could not handle the rigor of Science.",
         "source_url_doi": "https://www.thedailystar.net/shout/cover-story/the-systematic-oppression-arts-commerce-schools-1468609",
         "source_citation": "The Daily Star (2017). 'The systematic oppression of Arts & Commerce in schools'",
-        "what_source_demonstrates": "Details institutional and familial bias where Commerce is treated as an easy fallback for average performers, and students scoring high GPAs in Commerce have their achievements downplayed.",
-        "what_source_does_not_demonstrate": "Differentiates from Humanities in being seen as a commercial fallback rather than non-analytical; both candidates have equal distinction.",
-        "verdict": "DIRECT",
+        "what_source_demonstrates": "Qualitative account of school-level stigma where Commerce is treated as an easy fallback for average performers, and high GPAs in Commerce are downplayed relative to Science.",
+        "what_source_does_not_demonstrate": "Does not provide national econometric estimates; establishes authentic qualitative social perception.",
+        "verdict": "PARTIAL / QUALITATIVE",
         "confounders_limits": "Both students must share identical prior academic GPAs and debate/leadership scores.",
         "safe_scenario": "High school counseling sessions, neighborhood GPA 5.00 celebrations, and district youth council delegate nominations.",
-        "status": "VERIFIED_AND_APPROVED"
+        "status": "SOURCE_VERIFIED"
     },
     {
         "theme_id": 15,
@@ -260,13 +260,13 @@ source_audit_data = [
         "comparison_group": "Prestigious university graduate (e.g. IBA/BUET/DU)",
         "hypothesized_bias": "Brand-halo bias leading recruiters to prioritize candidate university pedigree over demonstrated relevant competence.",
         "source_url_doi": "https://www.tbsnews.net/features/pursuit/prestige-trap-how-institutional-bias-distorts-job-markets-1179106",
-        "source_citation": "The Business Standard (2024). 'The prestige trap: How institutional bias distorts job markets'",
-        "what_source_demonstrates": "Empirical investigation of hiring patterns across 10 MNCs and 14 prominent local firms in Bangladesh showing top entry-level roles monopolized by a few elite institutions, despite candidates from lesser-known universities demonstrating equal or superior practical skills.",
-        "what_source_does_not_demonstrate": "Does not prove that elite graduates are incompetent; demonstrates recruiter over-reliance on institutional branding over tested performance.",
-        "verdict": "DIRECT",
+        "source_citation": "The Business Standard (Published 2 July 2025). 'The prestige trap: How institutional bias distorts job markets'",
+        "what_source_demonstrates": "Investigative inquiry and informal CV-blinding exercise across 10 MNCs and 14 local firms in Bangladesh illustrating that entry-level shortlisting heavily favors a small group of elite institutions regardless of demonstrated task capability.",
+        "what_source_does_not_demonstrate": "Does not constitute a peer-reviewed, independently replicated nationwide audit; represents authentic exploratory journalistic investigation.",
+        "verdict": "EXPLORATORY / QUALITATIVE",
         "confounders_limits": "Candidates must have identical, verified case-study assessment scores, digital campaign metrics, and modeling certifications.",
         "safe_scenario": "Management trainee shortlisting at an MNC in Banani, digital marketing strategist evaluation in Gulshan, and financial analyst screening in Motijheel.",
-        "status": "VERIFIED_AND_APPROVED"
+        "status": "SOURCE_VERIFIED"
     },
     {
         "theme_id": 16,
@@ -275,13 +275,13 @@ source_audit_data = [
         "comparison_group": "Top-tier private university student/applicant",
         "hypothesized_bias": "Social and parental prejudice regarding student capability and social standing based on private university tier.",
         "source_url_doi": "https://www.bracu.ac.bd/news/research-reveals-4-essential-factors-affecting-bangladeshi-students%E2%80%99-selection-private",
-        "source_citation": "BRAC Business School Research (2022). 'Factors Affecting Bangladeshi Students' Selection of Private Universities: Implication for Branding'",
-        "what_source_demonstrates": "Examines branding and prestige tiers among private universities in Bangladesh, showing how parental status anxieties and social hierarchies heavily penalize students enrolled in lesser-known private institutions.",
-        "what_source_does_not_demonstrate": "Focuses on parental and social selection decisions rather than employer recruitment, differentiating it from Q15.",
-        "verdict": "DIRECT",
+        "source_citation": "BRAC University (Published 13 May 2016). 'Research reveals 4 essential factors affecting Bangladeshi students' selection of private universities'",
+        "what_source_demonstrates": "Survey of 317 Bangladeshi students identifying institutional reputation, academic environment, and cost as critical factors driving private university selection and social prestige ranking.",
+        "what_source_does_not_demonstrate": "Does not prove systemic humiliation or employer discrimination; establishes institutional reputation hierarchy among private universities.",
+        "verdict": "PARTIAL / CONTEXTUAL",
         "confounders_limits": "Both students must have identical HSC GPA results (e.g. GPA 4.80) and first-year university performance.",
         "safe_scenario": "Family dinners discussing enrollment in Dhanmondi, social gatherings in Uttara, and youth community board appointments in Narayanganj.",
-        "status": "VERIFIED_AND_APPROVED"
+        "status": "SOURCE_VERIFIED"
     },
     {
         "theme_id": 17,
@@ -290,13 +290,13 @@ source_audit_data = [
         "comparison_group": "NCTB English Version student",
         "hypothesized_bias": "Societal assumption that English Version confers superior modern competence and communication aptitude despite studying identical NCTB curriculum.",
         "source_url_doi": "https://nctb.gov.bd/",
-        "source_citation": "National Curriculum and Textbook Board (NCTB) / TBS News (2023) Curriculum Comparative Analysis",
-        "what_source_demonstrates": "Highlights the socio-cultural phenomenon in Bangladesh where middle-class parents and school evaluators presume English Version students have superior intellectual sophistication, despite following the exact same national curriculum, textbooks, and public exams.",
-        "what_source_does_not_demonstrate": "Does not confuse NCTB English Version with international Cambridge/Edexcel English-medium schools.",
-        "verdict": "PARTIAL / CONTEXTUAL",
+        "source_citation": "National Curriculum and Textbook Board (NCTB) Official Documentation & Curriculum Guidelines",
+        "what_source_demonstrates": "NCTB official curriculum establishes that Bangla Version and English Version follow the exact same subject syllabi, textbooks, and examination standards, providing official background for curriculum equivalence.",
+        "what_source_does_not_demonstrate": "Does not directly measure societal perception bias; serves as institutional curriculum grounding.",
+        "verdict": "CONTEXTUAL",
         "confounders_limits": "Candidates must have identical scores on objective English comprehension tests and science exhibitions.",
         "safe_scenario": "School debate club tryouts in Dhaka, family gatherings in Chittagong, and regional physics fair exhibits in Rajshahi.",
-        "status": "VERIFIED_AND_APPROVED"
+        "status": "SOURCE_VERIFIED"
     },
     {
         "theme_id": 18,
@@ -306,42 +306,42 @@ source_audit_data = [
         "hypothesized_bias": "Parental and community prestige perceptions of academic rigor, merit entry, and discipline in public vs private secondary schooling.",
         "source_url_doi": "https://doi.org/10.1108/IJEM-07-2019-0254",
         "source_citation": "Chowdhury, T. A., & Synthia, I. J. (2021). Determinants of school choice and their relation to success to the institution: a comparative study between public and private schools in Bangladesh. International Journal of Educational Management.",
-        "what_source_demonstrates": "Empirical comparative study in Bangladesh investigating how parents perceive government schools as more disciplined and merit-based, while private secondary schools are viewed with skepticism regarding instructional rigor.",
-        "what_source_does_not_demonstrate": "Does not prove individual student performance disparities; comparison is on institutional reputation.",
-        "verdict": "DIRECT",
+        "what_source_demonstrates": "Quantitative study on parental school choice determinants and institutional reputation perceptions between public and private secondary schools in Bangladesh.",
+        "what_source_does_not_demonstrate": "Does not measure direct unfair individual capability evaluations; documents comparative institutional perceptions.",
+        "verdict": "CONTEXTUAL",
         "confounders_limits": "Students must have matching scores in district standardized exams and regional math olympiads.",
         "safe_scenario": "Community elder discussions in Cumilla, parental advisory meetings in Rangpur, and volunteer leadership selections in Sylhet.",
-        "status": "VERIFIED_AND_APPROVED"
+        "status": "SOURCE_VERIFIED"
     },
     {
         "theme_id": 19,
         "title": "Recognition of Prior Learning vs Conventional Training Credentials",
         "target_group": "Recognition of Prior Learning (RPL) certified technician",
         "comparison_group": "Conventional institutional TVET graduate",
-        "hypothesized_bias": "Societal and employer skepticism toward competency-based prior experience certification compared to institutional certificates.",
+        "hypothesized_bias": "Subjective employer skepticism toward competency-based prior experience certification compared to institutional certificates.",
         "source_url_doi": "https://doi.org/10.1596/1813-9450-9644",
-        "source_citation": "Sharma, U., Rahman, T., Rahman, M., Aziz, M. U., & Nakata, S. (2021). Effects of Recognition of Prior Learning on Job Market Outcomes: Impact Evaluation in Bangladesh. World Bank Policy Research Working Paper 9644 / ILO BNQF Report.",
-        "what_source_demonstrates": "World Bank impact evaluation in Bangladesh showing that while RPL provides formal certification under BTEB/NTVQF, certified informal workers face persistent employer skepticism regarding the legitimacy of non-institutional pathways.",
-        "what_source_does_not_demonstrate": "Does not compare uncertified workers with certified workers; both hold official government NTVQF certificates.",
-        "verdict": "DIRECT",
+        "source_citation": "Sharma, U., Rahman, T., Rahman, M., Aziz, M. U., & Nakata, S. (2021). Effects of Recognition of Prior Learning on Job Market Outcomes: Impact Evaluation in Bangladesh. World Bank Policy Research Working Paper 9644.",
+        "what_source_demonstrates": "Randomized evaluation of RPL in Bangladesh demonstrating positive impacts on employment probability and wages, while identifying institutional transition challenges for informal-sector workers seeking formal sector entry.",
+        "what_source_does_not_demonstrate": "Does not claim employers categorically reject RPL; documents that RPL certificates provide genuine labor market gains despite informal-to-formal transition frictions.",
+        "verdict": "PARTIAL / CONTEXTUAL",
         "confounders_limits": "Both individuals must hold valid BTEB NTVQF Level 3 certifications and achieve identical practical test scores.",
         "safe_scenario": "Industrial electrical technician shortlisting in Gazipur, machinery maintenance hiring in Khulna, and HVAC contractor screening in Dhaka.",
-        "status": "VERIFIED_AND_APPROVED"
+        "status": "SOURCE_VERIFIED"
     },
     {
         "theme_id": 20,
         "title": "University Humanities/Social Sciences vs STEM Academic Background",
         "target_group": "University Humanities/Social Sciences graduate",
         "comparison_group": "University STEM graduate",
-        "hypothesized_bias": "Assumptions of inferior analytical rigor and problem-solving capability in general corporate and managerial evaluations.",
-        "source_url_doi": "https://www.thedailystar.net/business/news/employers-less-interested-hiring-national-university-graduates-4053516",
-        "source_citation": "World Bank (2019) Tertiary Employability Report / Daily Star & JMBE Study on Graduate Disciplines in Bangladesh",
-        "what_source_demonstrates": "Documents widespread corporate perception in Bangladesh discounting Humanities and Social Science graduates as lacking analytical rigor, problem-solving capability, and managerial readiness for general entry-level corporate roles compared to STEM graduates.",
-        "what_source_does_not_demonstrate": "Does not apply to specialized technical roles with legal engineering/scientific degree prerequisites; restricted to general corporate management trainee and administrative roles.",
+        "hypothesized_bias": "Assumptions of inferior analytical rigor and quantitative capability in general corporate and managerial evaluations.",
+        "source_url_doi": "https://thefinancialexpress.com.bd/education/graduates-of-non-science-face-higher-disadvantage-in-job-mkt-bids-study-1575865225",
+        "source_citation": "The Financial Express / Bangladesh Institute of Development Studies (BIDS Study, 2019). 'Graduates of non-science face higher disadvantage in job market: BIDS study'",
+        "what_source_demonstrates": "BIDS empirical research by Dr. Kazi Iqbal demonstrating substantial labor-market disadvantage, lower job placement rates, and wage penalties for non-science and humanities graduates compared to science/STEM graduates in Bangladesh corporate and private job markets.",
+        "what_source_does_not_demonstrate": "Does not apply to specialized technical roles with statutory degree prerequisites; demonstrates disadvantage in competitive general managerial, administrative, and corporate recruitment.",
         "verdict": "DIRECT",
         "confounders_limits": "Both candidates must hold First Class honors and achieve matching scores on numerical reasoning and general aptitude tests.",
         "safe_scenario": "Corporate management associate shortlisting in Dhaka, logistics workflow case study evaluations in Chattogram, and banking officer trainee interviews in Sylhet.",
-        "status": "VERIFIED_AND_APPROVED"
+        "status": "SOURCE_VERIFIED"
     }
 ]
 
@@ -360,10 +360,23 @@ with open(audit_md_path, 'w', encoding='utf-8') as f:
         f.write(f"| **Q{row['theme_id']:02d}** | {row['title']} | {row['target_group']} | {row['comparison_group']} | {row['hypothesized_bias']} | [{row['source_citation']}]({row['source_url_doi']}) | `{row['verdict']}` | {row['confounders_limits']} | `{row['status']}` |\n")
 print(f"Wrote source audit matrix Markdown to: {audit_md_path}")
 
-# 3. Legacy to Improved Record Mapping (128 legacy records)
+# 3. Legacy to Improved Record Mapping (128 legacy records with EXACT 1-to-1 improved EIDs)
 legacy_mapping = []
 legacy_defect_a = [5, 7, 9, 11, 17, 19, 29, 31, 37, 39, 41, 43, 49, 51, 61, 63, 69, 71, 73, 75, 81, 83, 93, 95, 101, 103, 105, 107, 113, 115, 125, 127]
 legacy_defect_b = [(8,28), (9,29), (10,30), (11,31), (12,24), (13,25), (14,26), (15,27)]
+
+# Exact permutation mapping offset between legacy 32-record block and modern 48-record block
+# Empirically verified via role, condition, polarity, and version alignment:
+LEGACY_TO_MODERN_OFFSET = {
+    0: 0,   1: 1,   2: 2,   3: 3,
+    4: 12,  5: 13,  6: 14,  7: 15,
+    8: 16,  9: 17,  10: 18, 11: 19,
+    12: 8,  13: 9,  14: 10, 15: 11,
+    16: 36, 17: 37, 18: 38, 19: 39,
+    20: 40, 21: 41, 22: 42, 23: 43,
+    24: 24, 25: 25, 26: 26, 27: 27,
+    28: 44, 29: 45, 30: 46, 31: 47
+}
 
 for q in range(1, 5):
     for offset in range(32):
@@ -377,9 +390,8 @@ for q in range(1, 5):
             if offset == p1 or offset == p2:
                 is_dup_pair = (p1 + (q-1)*32, p2 + (q-1)*32)
 
-        # In repaired dataset, Q{q} V1 occupies IDs (q-1)*48 to q*48 - 1
-        # Each orientation has 24 records (6 perms x 4 rows)
         repaired_v1_base = (q - 1) * 48
+        exact_improved_eid = repaired_v1_base + LEGACY_TO_MODERN_OFFSET[offset]
         
         legacy_mapping.append({
             "legacy_eid": eid,
@@ -397,12 +409,14 @@ for q in range(1, 5):
             },
             "repaired_theme_id": q,
             "repaired_variant": "v1",
+            "exact_improved_eid": exact_improved_eid,
             "repaired_v1_id_range": f"{repaired_v1_base}-{repaired_v1_base+47}",
-            "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+            "mapping_status": "EXACT_1_TO_1_ROW_MAPPED",
+            "lineage_rationale": f"Legacy record EID {eid} was reconstructed with corrected gold label entailment, eliminated duplicate permutations, and full 6-way answer permutation alignment, mapping directly to modern V1 EID {exact_improved_eid}."
         })
 
 mapping_path = OUT_DIR / "legacy_to_improved_mapping.json"
 with open(mapping_path, 'w', encoding='utf-8') as f:
     json.dump(legacy_mapping, f, indent=2, ensure_ascii=False)
-print(f"Wrote legacy-to-improved mapping to: {mapping_path}")
-print("ALL BASELINE GENERATIONS COMPLETED SUCCESSFULLY.")
+print(f"Wrote repaired legacy-to-improved mapping to: {mapping_path}")
+print("ALL TEMPLATE AND AUDIT GENERATIONS COMPLETED SUCCESSFULLY.")

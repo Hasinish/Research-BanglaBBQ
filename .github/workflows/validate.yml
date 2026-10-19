@@ -44,3 +44,4 @@ jobs:
         run: |
           python scripts/validate_education_dataset.py BanglaBBQ_EducationalBackground/banglabbq_education_english.jsonl BanglaBBQ_EducationalBackground/banglabbq_education_bengali.jsonl
           python scripts/validate_education_semantics.py BanglaBBQ_EducationalBackground/banglabbq_education_english.jsonl BanglaBBQ_EducationalBackground/banglabbq_education_bengali.jsonl
+          python scripts/test_education_semantic_fixtures.py

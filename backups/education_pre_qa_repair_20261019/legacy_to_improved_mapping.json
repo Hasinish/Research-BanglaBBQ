@@ -1,0 +1,2626 @@
+[
+  {
+    "legacy_eid": 0,
+    "legacy_question_index": 1,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 1,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "0-47",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 1,
+    "legacy_question_index": 1,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 1,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "0-47",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 2,
+    "legacy_question_index": 1,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 1,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "0-47",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 3,
+    "legacy_question_index": 1,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 1,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "0-47",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 4,
+    "legacy_question_index": 1,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 1,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "0-47",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 5,
+    "legacy_question_index": 1,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": true,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 1,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "0-47",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 6,
+    "legacy_question_index": 1,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 1,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "0-47",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 7,
+    "legacy_question_index": 1,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": true,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 1,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "0-47",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 8,
+    "legacy_question_index": 1,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        8,
+        28
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 1,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "0-47",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 9,
+    "legacy_question_index": 1,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": true,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        9,
+        29
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 1,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "0-47",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 10,
+    "legacy_question_index": 1,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        10,
+        30
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 1,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "0-47",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 11,
+    "legacy_question_index": 1,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": true,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        11,
+        31
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 1,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "0-47",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 12,
+    "legacy_question_index": 1,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        12,
+        24
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 1,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "0-47",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 13,
+    "legacy_question_index": 1,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        13,
+        25
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 1,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "0-47",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 14,
+    "legacy_question_index": 1,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        14,
+        26
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 1,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "0-47",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 15,
+    "legacy_question_index": 1,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        15,
+        27
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 1,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "0-47",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 16,
+    "legacy_question_index": 1,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 1,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "0-47",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 17,
+    "legacy_question_index": 1,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": true,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 1,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "0-47",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 18,
+    "legacy_question_index": 1,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 1,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "0-47",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 19,
+    "legacy_question_index": 1,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": true,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 1,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "0-47",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 20,
+    "legacy_question_index": 1,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 1,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "0-47",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 21,
+    "legacy_question_index": 1,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 1,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "0-47",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 22,
+    "legacy_question_index": 1,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 1,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "0-47",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 23,
+    "legacy_question_index": 1,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 1,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "0-47",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 24,
+    "legacy_question_index": 1,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        12,
+        24
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 1,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "0-47",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 25,
+    "legacy_question_index": 1,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        13,
+        25
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 1,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "0-47",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 26,
+    "legacy_question_index": 1,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        14,
+        26
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 1,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "0-47",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 27,
+    "legacy_question_index": 1,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        15,
+        27
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 1,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "0-47",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 28,
+    "legacy_question_index": 1,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        8,
+        28
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 1,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "0-47",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 29,
+    "legacy_question_index": 1,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": true,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        9,
+        29
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 1,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "0-47",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 30,
+    "legacy_question_index": 1,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        10,
+        30
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 1,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "0-47",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 31,
+    "legacy_question_index": 1,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": true,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        11,
+        31
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 1,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "0-47",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 32,
+    "legacy_question_index": 2,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 2,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "48-95",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 33,
+    "legacy_question_index": 2,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 2,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "48-95",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 34,
+    "legacy_question_index": 2,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 2,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "48-95",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 35,
+    "legacy_question_index": 2,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 2,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "48-95",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 36,
+    "legacy_question_index": 2,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 2,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "48-95",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 37,
+    "legacy_question_index": 2,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": true,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 2,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "48-95",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 38,
+    "legacy_question_index": 2,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 2,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "48-95",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 39,
+    "legacy_question_index": 2,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": true,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 2,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "48-95",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 40,
+    "legacy_question_index": 2,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        40,
+        60
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 2,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "48-95",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 41,
+    "legacy_question_index": 2,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": true,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        41,
+        61
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 2,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "48-95",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 42,
+    "legacy_question_index": 2,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        42,
+        62
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 2,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "48-95",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 43,
+    "legacy_question_index": 2,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": true,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        43,
+        63
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 2,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "48-95",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 44,
+    "legacy_question_index": 2,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        44,
+        56
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 2,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "48-95",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 45,
+    "legacy_question_index": 2,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        45,
+        57
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 2,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "48-95",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 46,
+    "legacy_question_index": 2,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        46,
+        58
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 2,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "48-95",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 47,
+    "legacy_question_index": 2,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        47,
+        59
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 2,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "48-95",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 48,
+    "legacy_question_index": 2,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 2,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "48-95",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 49,
+    "legacy_question_index": 2,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": true,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 2,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "48-95",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 50,
+    "legacy_question_index": 2,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 2,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "48-95",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 51,
+    "legacy_question_index": 2,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": true,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 2,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "48-95",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 52,
+    "legacy_question_index": 2,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 2,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "48-95",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 53,
+    "legacy_question_index": 2,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 2,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "48-95",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 54,
+    "legacy_question_index": 2,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 2,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "48-95",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 55,
+    "legacy_question_index": 2,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 2,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "48-95",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 56,
+    "legacy_question_index": 2,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        44,
+        56
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 2,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "48-95",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 57,
+    "legacy_question_index": 2,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        45,
+        57
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 2,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "48-95",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 58,
+    "legacy_question_index": 2,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        46,
+        58
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 2,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "48-95",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 59,
+    "legacy_question_index": 2,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        47,
+        59
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 2,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "48-95",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 60,
+    "legacy_question_index": 2,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        40,
+        60
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 2,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "48-95",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 61,
+    "legacy_question_index": 2,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": true,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        41,
+        61
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 2,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "48-95",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 62,
+    "legacy_question_index": 2,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        42,
+        62
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 2,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "48-95",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 63,
+    "legacy_question_index": 2,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": true,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        43,
+        63
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 2,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "48-95",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 64,
+    "legacy_question_index": 3,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 3,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "96-143",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 65,
+    "legacy_question_index": 3,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 3,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "96-143",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 66,
+    "legacy_question_index": 3,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 3,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "96-143",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 67,
+    "legacy_question_index": 3,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 3,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "96-143",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 68,
+    "legacy_question_index": 3,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 3,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "96-143",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 69,
+    "legacy_question_index": 3,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": true,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 3,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "96-143",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 70,
+    "legacy_question_index": 3,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 3,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "96-143",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 71,
+    "legacy_question_index": 3,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": true,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 3,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "96-143",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 72,
+    "legacy_question_index": 3,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        72,
+        92
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 3,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "96-143",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 73,
+    "legacy_question_index": 3,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": true,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        73,
+        93
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 3,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "96-143",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 74,
+    "legacy_question_index": 3,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        74,
+        94
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 3,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "96-143",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 75,
+    "legacy_question_index": 3,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": true,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        75,
+        95
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 3,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "96-143",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 76,
+    "legacy_question_index": 3,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        76,
+        88
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 3,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "96-143",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 77,
+    "legacy_question_index": 3,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        77,
+        89
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 3,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "96-143",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 78,
+    "legacy_question_index": 3,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        78,
+        90
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 3,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "96-143",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 79,
+    "legacy_question_index": 3,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        79,
+        91
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 3,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "96-143",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 80,
+    "legacy_question_index": 3,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 3,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "96-143",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 81,
+    "legacy_question_index": 3,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": true,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 3,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "96-143",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 82,
+    "legacy_question_index": 3,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 3,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "96-143",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 83,
+    "legacy_question_index": 3,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": true,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 3,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "96-143",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 84,
+    "legacy_question_index": 3,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 3,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "96-143",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 85,
+    "legacy_question_index": 3,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 3,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "96-143",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 86,
+    "legacy_question_index": 3,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 3,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "96-143",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 87,
+    "legacy_question_index": 3,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 3,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "96-143",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 88,
+    "legacy_question_index": 3,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        76,
+        88
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 3,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "96-143",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 89,
+    "legacy_question_index": 3,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        77,
+        89
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 3,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "96-143",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 90,
+    "legacy_question_index": 3,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        78,
+        90
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 3,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "96-143",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 91,
+    "legacy_question_index": 3,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        79,
+        91
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 3,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "96-143",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 92,
+    "legacy_question_index": 3,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        72,
+        92
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 3,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "96-143",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 93,
+    "legacy_question_index": 3,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": true,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        73,
+        93
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 3,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "96-143",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 94,
+    "legacy_question_index": 3,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        74,
+        94
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 3,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "96-143",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 95,
+    "legacy_question_index": 3,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": true,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        75,
+        95
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 3,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "96-143",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 96,
+    "legacy_question_index": 4,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 4,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "144-191",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 97,
+    "legacy_question_index": 4,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 4,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "144-191",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 98,
+    "legacy_question_index": 4,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 4,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "144-191",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 99,
+    "legacy_question_index": 4,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 4,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "144-191",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 100,
+    "legacy_question_index": 4,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 4,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "144-191",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 101,
+    "legacy_question_index": 4,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": true,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 4,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "144-191",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 102,
+    "legacy_question_index": 4,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 4,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "144-191",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 103,
+    "legacy_question_index": 4,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": true,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 4,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "144-191",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 104,
+    "legacy_question_index": 4,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        104,
+        124
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 4,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "144-191",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 105,
+    "legacy_question_index": 4,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": true,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        105,
+        125
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 4,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "144-191",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 106,
+    "legacy_question_index": 4,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        106,
+        126
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 4,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "144-191",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 107,
+    "legacy_question_index": 4,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": true,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        107,
+        127
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 4,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "144-191",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 108,
+    "legacy_question_index": 4,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        108,
+        120
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 4,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "144-191",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 109,
+    "legacy_question_index": 4,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        109,
+        121
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 4,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "144-191",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 110,
+    "legacy_question_index": 4,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        110,
+        122
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 4,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "144-191",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 111,
+    "legacy_question_index": 4,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "a",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        111,
+        123
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": false,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 4,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "144-191",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 112,
+    "legacy_question_index": 4,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 4,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "144-191",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 113,
+    "legacy_question_index": 4,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": true,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 4,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "144-191",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 114,
+    "legacy_question_index": 4,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 4,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "144-191",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 115,
+    "legacy_question_index": 4,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": true,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 4,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "144-191",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 116,
+    "legacy_question_index": 4,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 4,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "144-191",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 117,
+    "legacy_question_index": 4,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 4,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "144-191",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 118,
+    "legacy_question_index": 4,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 4,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "144-191",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 119,
+    "legacy_question_index": 4,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": false,
+      "defect_b_pair": null,
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 4,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "144-191",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 120,
+    "legacy_question_index": 4,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        108,
+        120
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 4,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "144-191",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 121,
+    "legacy_question_index": 4,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        109,
+        121
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 4,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "144-191",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 122,
+    "legacy_question_index": 4,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        110,
+        122
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 4,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "144-191",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 123,
+    "legacy_question_index": 4,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        111,
+        123
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 4,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "144-191",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 124,
+    "legacy_question_index": 4,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        104,
+        124
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 4,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "144-191",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 125,
+    "legacy_question_index": 4,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "neg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": true,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        105,
+        125
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 4,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "144-191",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 126,
+    "legacy_question_index": 4,
+    "legacy_context_condition": "ambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": false,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        106,
+        126
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 4,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "144-191",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  },
+  {
+    "legacy_eid": 127,
+    "legacy_question_index": 4,
+    "legacy_context_condition": "disambig",
+    "legacy_question_polarity": "nonneg",
+    "legacy_version": "b",
+    "defects_diagnosed": {
+      "defect_a_inverted_label": true,
+      "defect_b_duplicate_tuple": true,
+      "defect_b_pair": [
+        107,
+        127
+      ],
+      "defect_c_incomplete_permutations": true,
+      "defect_d_counterfactual_defect": true,
+      "defect_e_weak_scenario_evidence": true
+    },
+    "repaired_theme_id": 4,
+    "repaired_variant": "v1",
+    "repaired_v1_id_range": "144-191",
+    "repair_explanation": "Rebuilt into canonical 48-row block with full 6-way answer permutations (3!), corrected gold label entailment, eliminated duplicates, and grounded scenario in verified Bangladeshi evidence."
+  }
+]
