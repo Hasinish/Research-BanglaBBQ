@@ -39,3 +39,8 @@ jobs:
         run: |
           python scripts/validate_gender_dataset.py BanglaBBQ_Gender/Gender_identity_eng.jsonl BanglaBBQ_Gender/Gender_identity_bng.jsonl
           python scripts/validate_gender_semantics.py BanglaBBQ_Gender/Gender_identity_eng.jsonl BanglaBBQ_Gender/Gender_identity_bng.jsonl
+
+      - name: Run Educational Background Benchmark Validation
+        run: |
+          python scripts/validate_education_dataset.py BanglaBBQ_EducationalBackground/banglabbq_education_english.jsonl BanglaBBQ_EducationalBackground/banglabbq_education_bengali.jsonl
+          python scripts/validate_education_semantics.py BanglaBBQ_EducationalBackground/banglabbq_education_english.jsonl BanglaBBQ_EducationalBackground/banglabbq_education_bengali.jsonl

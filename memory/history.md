@@ -1,3 +1,22 @@
+- **[2026-10-19] Convo df252d29-7bdf-4f9d-9751-bf4b47248db6**: **BanglaBBQ Educational Background Complete Repair, 2,880-Record Expansion, and 86,400-Cell Live Parity Verified**:
+  - **Full Benchmark Repair & Expansion**: Successfully repaired and expanded Educational Background from 128 legacy rows to exactly 20 distinct themes, 3 scenario variations per theme (V1/V2/V3), 144 records/theme, and 2,880 records per language (5,760 total) under the canonical 15-column schema.
+  - **Immutable Legacy Preservation**: Seniors' original thesis files (`Dataset_ BanglaBBQ_Old/Educational background/`) preserved byte-for-byte with SHA-256 hashes (`d66b34ee1ef147ce...` ENG, `ba308416a74e0dc0...` BEN). Repaired and expanded dataset placed in dedicated directory `BanglaBBQ_EducationalBackground/`.
+  - **5 Legacy Defects Resolved**:
+    - *Defect A (32 Disambiguated Gold Label Reversals)*: Fixed across all affected legacy rows (Q1: 5, 7, 9, 11, 17, 19, 29, 31; Q2: 37, 39, 41, 43, 49, 51, 61, 63; Q3: 69, 71, 73, 75, 81, 83, 93, 95; Q4: 101, 103, 105, 107, 113, 115, 125, 127) using strict factual entailment from disambiguating clauses.
+    - *Defect B (32 Duplicate QA Tuples)*: Fully resolved across all themes by expanding to full 6-way answer permutations ($3! = 6$).
+    - *Defect C (Incomplete Permutations)*: Engineered full permutation blocks ensuring exact uniform label distribution (960 labels at index 0, 960 at index 1, 960 at index 2).
+    - *Defect D (Counterfactual Symmetry)*: Symmetrical counterfactual inversions between orientations 'a' and 'b' across all 60 scenarios.
+    - *Defect E (Scenario Logic & Grounding)*: Grounded all 20 themes in peer-reviewed literature (Hosain 2021, Rahman 2024, Islam 2017, Alam & Parvin 2020), World Bank (2019, 2021), ILO BNQF reports, and investigative journalism (The Daily Star, TBS News, Dhaka Tribune). Audited in `source_audit_matrix.json` and `source_audit_matrix.md`.
+  - **Automated Structural & Semantic QA (100% PASS)**:
+    - `scripts/validate_education_dataset.py`: All 10 structural invariant checks passed (record counts, schema, theme balance 144/theme, 4-row block sequence, 960/960/960 labels, 6-way permutations, ambiguous Unknown invariant, disambiguated named-entity grounding, bilingual metadata parity, zero duplicate QA tuples).
+    - `scripts/validate_education_semantics.py`: All deep semantic checks passed (ambiguous Unknown entailment, disambiguated explicit grounding, 480/480 sub-block permutation role invariance, 60/60 symmetrical counterfactual inversions).
+    - Integrated both validators into `.github/workflows/validate.yml`.
+  - **Google Sheets Production Synchronization & 100% Live Parity**:
+    - Created dedicated production worksheets `BanglaBBQ_ENG_Education` (sheetId: `1544720708`, tab index 34) and `BanglaBBQ_BEN_Education` (sheetId: `641606675`, tab index 35) in master workbook `1xZhhKZoZuSy-ZXAWWdhCpq9QLh705ScErcnBZacmZnY`.
+    - Uploaded all 2,881 rows (1 header + 2,880 data) per sheet using `scripts/sync_education_sheets.py`. Applied canonical formatting (33px header, 96px data, column widths `[100, 100, 130, 130, 75, 510, 380, 190, 190, 190, 75, 465, 465, 100, 100]`, wrap/clip, frozen row 1, alternating 4-row styling).
+    - Executed `scripts/verify_education_live_parity.py`: confirmed 100% bit-for-bit live parity across all 86,400 data cells (43,200 per language, 0 mismatches).
+  - **Status**: Structurally and semantically validated, synchronized with live sheets; independent colloquial Bengali linguistic review and external peer review remain pending prior to publication.
+
 - **[2026-10-19] Convo 64d07397-9c5a-4e96-b7a9-9125023b8d65**: **BanglaBBQ Gender Identity Q56 Final Repair Applied, 3 Defects Resolved, and 140,910-Cell Live Parity Verified**:
   - **Controlled One-Pass Repair Executed**: Safely applied approved Q56 probation patch across all 32 records (Rows 4602–4633, EIDs 4600–4631) across Columns F (`context`), G (`question`), and M (`additional_metadata`) in both English and Bengali production worksheets (192 cells total) in `BanglaBBQ_ENG_Gender`, `BanglaBBQ_BEN_Gender`, and canonical JSONLs (`Gender_identity_eng.jsonl`, `Gender_identity_bng.jsonl`).
   - **Defect 1 (Metadata Preservation)**: Preserved each record's original `subcategory` (`"None"`), `stereotyped_groups` (`["M"]`), and `version` (strictly preserved `version="b"` for EIDs 4616–4631; `version="a"` for EIDs 4600–4615). Only the `source` field in `additional_metadata` was updated.
