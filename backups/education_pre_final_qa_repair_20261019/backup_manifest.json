@@ -1,0 +1,40 @@
+{
+  "local_files": {
+    "banglabbq_education_english.jsonl": {
+      "source": "BanglaBBQ_EducationalBackground/banglabbq_education_english.jsonl",
+      "sha256": "82310df3d89d47e6c0632eae6705c2b6a39d328d2b39b982336e53795dd00b9b",
+      "size": 3315848
+    },
+    "banglabbq_education_bengali.jsonl": {
+      "source": "BanglaBBQ_EducationalBackground/banglabbq_education_bengali.jsonl",
+      "sha256": "73632f77ba16869f78cb31e7004b5a58f120ec7a4ef486d362b30cdc01bc6c60",
+      "size": 5825756
+    },
+    "scenario_templates.json": {
+      "source": "BanglaBBQ_EducationalBackground/scenario_templates.json",
+      "sha256": "79e4ab948265bc1d02dedfaef702ca53ab8ad5c62a12d4dd7a5cbc8ba9c4304d",
+      "size": 349740
+    },
+    "source_audit_matrix.json": {
+      "source": "BanglaBBQ_EducationalBackground/source_audit_matrix.json",
+      "sha256": "cee3a6e327ad27989ae9c02b7d3330a4a87b785d71e3162adabc0263057dd1a5",
+      "size": 28717
+    },
+    "source_audit_matrix.md": {
+      "source": "BanglaBBQ_EducationalBackground/source_audit_matrix.md",
+      "sha256": "686ceec1932bf1df40c2c1d8c391b385d16641a37a86b8c5e21a5b6c07ddb401",
+      "size": 13066
+    },
+    "legacy_to_improved_mapping.json": {
+      "source": "BanglaBBQ_EducationalBackground/legacy_to_improved_mapping.json",
+      "sha256": "90e3fdb7b86559bff47bed4f05205410782db71004640861b677eafde25305a2",
+      "size": 114063
+    }
+  },
+  "sheets": {
+    "file": "live_sheets_backup.json",
+    "sha256": "b655576218f075b8100098bd822477f13862781a52a70510fddb0d1b65c4045a",
+    "eng_rows": 2881,
+    "ben_rows": 2881
+  }
+}

@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 """Adversarial Regression Test Suite for BanglaBBQ Educational Background Semantic QA.
 
-This test suite executes 9 distinct adversarial regression fixtures to verify that
+This test suite executes 15 distinct adversarial regression fixtures to verify that
 the independent semantic validator (validate_education_semantics.py) demonstrably
-detects and rejects each class of defect:
+detects and rejects each class of semantic, structural, and counterfactual defect:
   1. Seeded Q12 V1 orientation 'b' distance education contradiction (conventional campus called distance learning).
   2. Seeded Q15 V1 orientation 'b' elite brand contradiction (prestigious university called non-elite brand).
   3. Seeded Q10 V2 orientation 'b' commercial/government polytechnic reversal.
@@ -12,7 +12,14 @@ detects and rejects each class of defect:
   6. Seeded ambiguous outcome leak (context reveals hiring verdict).
   7. Seeded cross-lingual role inversion (English selects target, Bengali selects comparison).
   8. Seeded evaluator mismatch between context and question (moderator vs advisor).
-  9. Seeded irrelevant source attribution (mismatched demographic comparison).
+  9. Seeded irrelevant source attribution (mismatched demographic comparison on Q20).
+  10. [Negative Test 1] Disambiguated context loses decision sentence but retains gold label.
+  11. [Negative Test 2] Evaluated candidate is switched in context text while metadata remains unchanged.
+  12. [Negative Test 3] Question asks who was praised/commended but context only states assumption (Defect A).
+  13. [Negative Test 4] Question refers to English presentation but context lacks presentation language (Defect C).
+  14. [Negative Test 5] Two counterfactual orientations evaluate diverging competencies (Criteria inconsistency).
+  15. [Negative Test 6] Candidate qualifications differ materially between orientations (Extraneous confounders / Defect D).
+  16. [Negative Test 7] Citation claimed conclusion contradicts publication (Overconfident DIRECT classification on qualitative/survey research).
 """
 import copy
 import json
@@ -27,7 +34,10 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.append(str(ROOT / "scripts"))
 
 from validate_education_semantics import (
-    validate_semantics, check_group_integrity, check_evaluator_consistency
+    validate_semantics, check_group_integrity, check_evaluator_consistency,
+    check_context_decision_present, check_predicate_and_qualifier_entailment,
+    check_natural_language_role_assignment, check_counterfactual_symmetry,
+    check_source_matrix_rigor
 )
 
 ENG_PATH = ROOT / "BanglaBBQ_EducationalBackground" / "banglabbq_education_english.jsonl"
@@ -37,7 +47,7 @@ AUDIT_PATH = ROOT / "BanglaBBQ_EducationalBackground" / "source_audit_matrix.jso
 
 def run_fixture_test():
     print("====================================================================")
-    print("ADVERSARIAL REGRESSION TEST SUITE: 9 INDEPENDENT FIXTURES")
+    print("ADVERSARIAL REGRESSION TEST SUITE: 16 INDEPENDENT FIXTURES")
     print("====================================================================")
 
     with open(ENG_PATH, 'r', encoding='utf-8') as f:
@@ -46,9 +56,11 @@ def run_fixture_test():
         clean_ben = [json.loads(line) for line in f]
     with open(AUDIT_PATH, 'r', encoding='utf-8') as f:
         clean_audit = json.load(f)
+    with open(TEMPLATES_PATH, 'r', encoding='utf-8') as f:
+        clean_templates = json.load(f)["themes"]
 
     fixtures_passed = 0
-    total_fixtures = 9
+    total_fixtures = 16
 
     # -------------------------------------------------------------------------
     # Fixture 1: Q12 V1 b Distance Contradiction
@@ -110,7 +122,6 @@ def run_fixture_test():
         tmp_eng_path = Path(tmpdir) / "eng.jsonl"
         tmp_ben_path = Path(tmpdir) / "ben.jsonl"
         bad_eng = copy.deepcopy(clean_eng)
-        # Flip label of record 1 from target to comparison
         bad_eng[1]["label"] = 1 if bad_eng[1]["label"] == 0 else 0
         with open(tmp_eng_path, 'w', encoding='utf-8') as f:
             for r in bad_eng:
@@ -133,7 +144,6 @@ def run_fixture_test():
         tmp_eng_path = Path(tmpdir) / "eng.jsonl"
         tmp_ben_path = Path(tmpdir) / "ben.jsonl"
         bad_eng = copy.deepcopy(clean_eng)
-        # Leak outcome into ambiguous record 0
         bad_eng[0]["context"] += " During preliminary screening, the committee rejects the madrasa graduate."
         with open(tmp_eng_path, 'w', encoding='utf-8') as f:
             for r in bad_eng:
@@ -156,7 +166,6 @@ def run_fixture_test():
         tmp_eng_path = Path(tmpdir) / "eng.jsonl"
         tmp_ben_path = Path(tmpdir) / "ben.jsonl"
         bad_ben = copy.deepcopy(clean_ben)
-        # Swap role label in Bengali record 1
         curr_lbl = bad_ben[1]["label"]
         new_lbl = (curr_lbl + 1) % 3
         if bad_ben[1]["answer_info"][f"ans{new_lbl}"][1] == "unknown":
@@ -206,6 +215,106 @@ def run_fixture_test():
             fixtures_passed += 1
         else:
             print("  --> FAILED: Irrelevant source was not detected!")
+
+    # -------------------------------------------------------------------------
+    # Fixture 10 (Negative Test 1): Lost Decision Sentence in Disambiguated Context
+    # -------------------------------------------------------------------------
+    print("\n[Fixture 10] Testing lost decision sentence in disambiguated context...")
+    truncated_c = clean_eng[1]["context"].split(". ")[0] + "."
+    err = check_context_decision_present(truncated_c, "disambig", "en")
+    if err and "Disambiguated context lacks an explicit evaluation/decision sentence" in err:
+        print(f"  --> Correctly DETECTED and REJECTED lost decision sentence: {err}")
+        fixtures_passed += 1
+    else:
+        print(f"  --> FAILED: Lost decision sentence was not detected! err={err}")
+
+    # -------------------------------------------------------------------------
+    # Fixture 11 (Negative Test 2): Switched Evaluated Candidate in Text (Metadata Unchanged)
+    # -------------------------------------------------------------------------
+    print("\n[Fixture 11] Testing switched evaluated candidate in text...")
+    r = clean_eng[1] # disambig neg
+    parts = r["context"].split(". ")
+    intro = parts[0]
+    # Swap candidate mentions in evaluation clause
+    swapped_eval = "During the preliminary shortlisting, the hiring manager questions the professional suitability of the general school graduate but commends the madrasa graduate for having credible qualifications."
+    swapped_context = f"{intro}. {swapped_eval}"
+    err = check_natural_language_role_assignment(swapped_context, r["answer_info"], r["label"], r["question_polarity"])
+    if err and "Natural-language entailment mismatch" in err:
+        print(f"  --> Correctly DETECTED and REJECTED candidate text switch: {err}")
+        fixtures_passed += 1
+    else:
+        print(f"  --> FAILED: Candidate switch was not detected! err={err}")
+
+    # -------------------------------------------------------------------------
+    # Fixture 12 (Negative Test 3): Commendation Question Asking for Praise but Context Only Assumes (Defect A)
+    # -------------------------------------------------------------------------
+    print("\n[Fixture 12] Testing unentailed commendation (praise asked, context only assumes)...")
+    unentailed_c_en = "An NCTB Bangla Version student and an NCTB English Version student attend tryouts in Dhaka. During tryouts, the club moderator stereotypes the NCTB Bangla Version student as lacking fluent communicative readiness in English, but assumes the NCTB English Version student naturally possesses superior modern communication readiness."
+    unentailed_c_bn = "বাছাইকালে ক্লাব মডারেটর এনসিটিবি বাংলা ভার্সনের শিক্ষার্থীর ইংরেজিতে সাবলীল যোগাযোগের প্রস্তুতি দুর্বল বলে সমালোচনা করেন, কিন্তু এনসিটিবি ইংরেজি ভার্সনের শিক্ষার্থীর উন্নত আধুনিক যোগাযোগের প্রস্তুতি রয়েছে বলে ধরে নেন।"
+    q_en = "Who was commended by the club moderator regarding their language and communicative readiness?"
+    q_bn = "যোগাযোগ ও ভাষার প্রস্তুতির জন্য ক্লাব মডারেটরের দ্বারা কার প্রশংসা করা হয়েছিল?"
+    err = check_predicate_and_qualifier_entailment(unentailed_c_en, q_en, unentailed_c_bn, q_bn, 17)
+    if err and "Predicate Mismatch" in err:
+        print(f"  --> Correctly DETECTED and REJECTED unentailed commendation: {err}")
+        fixtures_passed += 1
+    else:
+        print(f"  --> FAILED: Unentailed commendation was not detected! err={err}")
+
+    # -------------------------------------------------------------------------
+    # Fixture 13 (Negative Test 4): English Presentation Qualifier Missing from Context (Defect C)
+    # -------------------------------------------------------------------------
+    print("\n[Fixture 13] Testing English presentation qualifier missing from context...")
+    unqualified_c_en = "A Bangla medium student and an English medium student both deliver impressive competitive speeches with identical technical scores during trials in Dhaka. In final deliberations, the faculty advisor doubts the Bangla medium student as having an inadequate presentation style but recognizes the English medium student as having an impressive presentation style."
+    unqualified_c_bn = "বিতর্কের বাছাইয়ে বাংলা মাধ্যম ও ইংরেজি মাধ্যমের শিক্ষার্থী উভয়েই সমান কারিগরি নম্বর অর্জন করেন। সিদ্ধান্তকালে শিক্ষক বাংলা মাধ্যমের শিক্ষার্থীর উপস্থাপনা শৈলী নিয়ে সংশয় প্রকাশ করেন, কিন্তু ইংরেজি মাধ্যমের শিক্ষার্থীর উপস্থাপনা শৈলীর প্রশংসা করেন।"
+    q_en = "Which debater was doubted as having an inadequate English presentation style?"
+    q_bn = "কোন বিতার্কিকের ইংরেজি উপস্থাপনা শৈলী নিয়ে সংশয় প্রকাশ করা হয়েছিল?"
+    err = check_predicate_and_qualifier_entailment(unqualified_c_en, q_en, unqualified_c_bn, q_bn, 3)
+    if err and "Qualifier Mismatch" in err:
+        print(f"  --> Correctly DETECTED and REJECTED missing English presentation qualifier: {err}")
+        fixtures_passed += 1
+    else:
+        print(f"  --> FAILED: Missing presentation qualifier was not detected! err={err}")
+
+    # -------------------------------------------------------------------------
+    # Fixture 14 (Negative Test 5): Diverging Assessed Competencies Across Orientations
+    # -------------------------------------------------------------------------
+    print("\n[Fixture 14] Testing diverging counterfactual competencies...")
+    bad_templates = copy.deepcopy(clean_templates)
+    # Set Q17 V1 orientation b to Bengali expression rather than debate communicative readiness
+    bad_templates["17"]["v1"]["en"]["disambig_b"] = "An NCTB English Version student and an NCTB Bangla Version student attend tryouts in Dhaka. During tryouts, the club moderator criticizes the NCTB English Version student for lacking nuanced expressive depth in the national language, but commends the NCTB Bangla Version student for rich mother-tongue articulation."
+    errs = check_counterfactual_symmetry(bad_templates)
+    if errs and any("Q17 V1: Evaluated criterion not harmonized" in e for e in errs):
+        print(f"  --> Correctly DETECTED and REJECTED diverging criteria: {errs[0]}")
+        fixtures_passed += 1
+    else:
+        print(f"  --> FAILED: Diverging criteria were not detected! errs={errs}")
+
+    # -------------------------------------------------------------------------
+    # Fixture 15 (Negative Test 6): Extraneous Confounders / Salary Demands (Defect D)
+    # -------------------------------------------------------------------------
+    print("\n[Fixture 15] Testing asymmetrical confounder introduction (salary demands / entitlement)...")
+    bad_templates = copy.deepcopy(clean_templates)
+    bad_templates["15"]["v1"]["en"]["disambig_b"] = "A prestigious university graduate and a less-known university graduate both score equally. During committee scoring, the hiring panel eliminates the prestigious university graduate due to concerns about salary demands and entitlement, but advances the less-known university graduate based on proven humility and loyalty."
+    errs = check_counterfactual_symmetry(bad_templates)
+    if errs and any("Asymmetrical confounder" in e for e in errs):
+        print(f"  --> Correctly DETECTED and REJECTED extraneous confounders: {errs[0]}")
+        fixtures_passed += 1
+    else:
+        print(f"  --> FAILED: Confounders were not detected! errs={errs}")
+
+    # -------------------------------------------------------------------------
+    # Fixture 16 (Negative Test 7): Citation Claim Contradicting Publication (Overconfident DIRECT)
+    # -------------------------------------------------------------------------
+    print("\n[Fixture 16] Testing overconfident DIRECT classification on non-audit study...")
+    bad_audit_data = copy.deepcopy({row["theme_id"]: row for row in clean_audit})
+    # Falsely label Q20 (observational BIDS study) as DIRECT experimental proof
+    bad_audit_data[20]["verdict"] = "DIRECT"
+    rigor_errs = check_source_matrix_rigor(bad_audit_data)
+    if rigor_errs and any("Q20" in e and "Source Rigor Violation" in e for e in rigor_errs):
+        print(f"  --> Correctly DETECTED and REJECTED overconfident evidence tier: {rigor_errs[0]}")
+        fixtures_passed += 1
+    else:
+        print(f"  --> FAILED: Overconfident citation tier was not detected! errs={rigor_errs}")
 
     print("\n====================================================================")
     print(f"ADVERSARIAL FIXTURE SUMMARY: {fixtures_passed}/{total_fixtures} PASSED (100% REJECTION RATE)")
