@@ -149,7 +149,7 @@ def main():
     ben_diffs = sync_sheet_sparse(service, "BanglaBBQ_BEN_Education", ben_canonical)
     
     full_manifest = {
-        "timestamp": "2026-10-19",
+        "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
         "total_english_cells_changed": len(eng_diffs),
         "total_bengali_cells_changed": len(ben_diffs),
         "total_cells_changed": len(eng_diffs) + len(ben_diffs),

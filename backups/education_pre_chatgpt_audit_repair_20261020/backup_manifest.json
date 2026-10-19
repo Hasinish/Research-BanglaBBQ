@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-10-20T00:32:00+06:00",
+  "hashes": {
+    "banglabbq_education_english.jsonl": "d4a1bd9185494a65d1443f45e1ba168e83bd2d3a8da1ffaacde51072877f5453",
+    "banglabbq_education_bengali.jsonl": "2c6bf8623e1803bc6f8d93f7a7e723640da888f4e9fd7d3ea825bd00bc31c6d3",
+    "scenario_templates.json": "f09df4828207a1963756dbba836cd41dd3d5cbf74f19b442e1432736a177b808",
+    "source_audit_matrix.json": "ba3af22203e5a04c8adf17ace6ed350530334f9a3619fd6d6e5f2fc20486ca70",
+    "source_audit_matrix.md": "68f7b5c4fd67fcbf189a532afbe0a0cd9db5cd498d03a4ef7a50c2c39494c9f8",
+    "legacy_to_improved_mapping.json": "90e3fdb7b86559bff47bed4f05205410782db71004640861b677eafde25305a2",
+    "expansion_manifest.json": "b0d4108ac58abadb2a63188c0f424b025ccec9726af3d8224cd6f036755d9790",
+    "qa_repair_diff_manifest.json": "aefd935e56c4caee709f51ea405af3a2be95ad7e01b4e03b4f70d183a845d86d",
+    "live_sheets_backup.json": "7ad0f2570c0fbd0a7398438f45c52bf36051f49100adcbae94f139cecb1d0f36"
+  }
+}

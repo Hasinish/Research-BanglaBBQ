@@ -1,4 +1,21 @@
-	
+- **[2026-10-20] Convo 4cdf8439-1fb8-4ee1-aacb-9838bd670449**: **BanglaBBQ Educational Background Final Semantic QA Repair (ChatGPT Independent Audit Resolution)**:
+  - **All 7 Audit Issues Fully Resolved Upstream**:
+    - *Issue 1 (Q16 V3 Unentailed Commendation, EIDs 2640–2687)*: Rewrote English context to explicit contrasting predicates ("criticizes ... but commends ...") and Bengali context ("সমালোচনা করেন ... কিন্তু ... প্রশংসা করেন") so non-negative questions asking who was commended are directly entailed by explicit evaluator actions across both orientations.
+    - *Issue 2 (Q16 V1 Tuition-Cost Confounder, Orientation b, EIDs 744–767)*: Stripped "exorbitant tuition fees", "financially accessible", "চড়া বেতন", "সাশ্রয়ী" confounders. Both orientations now strictly evaluate institutional prestige vs perceived institutional elitism under matched GPA 4.80 qualifications.
+    - *Issue 3 (Q15 V3 Remaining Behavioral Confounders, Orientation b, EIDs 2616–2639)*: Neutralized ungrounded behavioral assumptions ("demand immediate executive positioning", "deep diligence", "উচ্চপদের প্রত্যাশা", "গভীর মনোযোগ দিয়ে") to pure institutional background bias matching V1/V2.
+    - *Issue 4 (Q20 V1/V2 Different Evaluation Competencies)*: Harmonized evaluated competency across both counterfactual orientations to "structured operational decision-making competence" / "প্রাতিষ্ঠানিক ব্যবস্থাপনা ও কার্যকর সিদ্ধান্ত গ্রহণ" in V1 (EIDs 912–959) and "operational workflow systems optimization" / "অপারেশনাল ওয়ার্কফ্লো সিস্টেম অপটিমাইজেশন" in V2 (EIDs 1872–1919).
+    - *Issue 5 (Q16 V2 English-Bengali Meaning Mismatch, Orientation b, EIDs 1704–1727)*: Eliminated extraneous personality confounder ("বিনয়ী মনোভাব" / humble attitude); restored 1-to-1 bilingual semantic symmetry around institutional prestige vs perceived elitism.
+    - *Issue 6 (Q05/Q09 Evidence Classification)*: Downgraded Q05 (observational TVET youth survey) and Q09 (journalistic report on engineer dispute) from overconfident `DIRECT` to `PARTIAL / CONTEXTUAL` in `source_audit_matrix.json`, `.md`, and generator scripts; enforced strict CI validation rule allowing only Q01 to be `DIRECT`.
+    - *Issue 7 (QA Documentation Inaccuracy)*: Corrected Section 7 of historical repair log `2026-10-19_educational_background_final_targeted_qa_repair.md` to accurately state that the 516 cell changes occurred across Columns F and G (ENG F: 156, G: 96, M: 0; BEN F: 144, G: 120, M: 0).
+  - **Automated Validation & Adversarial Testing**:
+    - 10/10 offline structural checks PASS (`validate_education_dataset.py`).
+    - 8/8 deep semantic and predicate entailment checks PASS (`validate_education_semantics.py`).
+    - 23/23 adversarial regression fixtures PASS with 100% defect rejection rate (`test_education_semantic_fixtures.py`).
+  - **Live Production Parity Synchronized & Verified**:
+    - Applied sparse batch updates to production Google Sheets: 240 cells in `BanglaBBQ_ENG_Education` (1544720708) and 276 cells in `BanglaBBQ_BEN_Education` (641606675) — total 516 cells logged in `qa_repair_diff_manifest.json`.
+    - 100% bit-for-bit live parity verified across all 86,400 data cells (0 mismatches).
+    - Seniors' legacy dataset preserved byte-for-byte in `Dataset_ BanglaBBQ_Old/`.
+  - **Research Status Classification**: Structurally Validated (YES), Semantically Reviewed (YES), Source-Verified (QUALIFIED / CALIBRATED), Linguistically Reviewed (PENDING EXTERNAL HUMAN REVIEW), Publication-Ready (NO).
 
 - **[2026-10-19] Convo f1ad2683-f113-4ce1-b485-79df935d2e66**: **BanglaBBQ Educational Background Final Targeted QA Repair, Criteria Harmonization, Evidence Calibration, and 100% Live Sheets Parity Verified**:
   - **Confirmed Semantic Defects Repaired Upstream**:

@@ -175,12 +175,13 @@ def check_predicate_and_qualifier_entailment(context_en, question_en, context_bn
     eval_bn = get_eval_clause(context_bn, "bn")
     q_en = question_en.lower()
 
-    # Defect A check: Commended / praised question asking about an action must not be met by a mere assumption
+    # Issue 1 & Defect A check: Commended / praised question asking about an action must not be met by a mere assumption or passive judgment
     if "commended" in q_en or "praised" in q_en:
-        if ("assumes" in eval_en or "presumes" in eval_en) and not any(re.search(pat, eval_en) for pat in [r"\bcommends?\b", r"\bpraises?\b", r"\brecognizes?\b"]):
-            return f"Q{qid:02d} Predicate Mismatch: Question asks who was commended/praised, but context only describes an assumption without explicit positive action"
-        if "ধরে নেন" in eval_bn and not any(act in eval_bn for act in ["প্রশংসা", "স্বীকৃতি"]):
-            return f"Q{qid:02d} Predicate Mismatch (BN): Question asks who was praised, but Bengali context only states assumption ('ধরে নেন')"
+        pos_verbs = [r"\bcommends?\b", r"\bpraises?\b", r"\bcongratulat(?:es|ed)?\b", r"\bcelebrat(?:es|ed)?\b"]
+        if ("assumes" in eval_en or "presumes" in eval_en or "judge" in eval_en) and not any(re.search(pat, eval_en) for pat in pos_verbs):
+            return f"Q{qid:02d} Predicate Mismatch: Question asks who was commended/praised, but context lacks explicit commendation/praise action verb"
+        if ("ধরে নেন" in eval_bn or "স্বীকৃতি দেন" in eval_bn) and not any(act in eval_bn for act in ["প্রশংসা", "অভিনন্দন", "উদযাপন"]):
+            return f"Q{qid:02d} Predicate Mismatch (BN): Question asks who was praised, but Bengali context lacks explicit praise/congratulation predicate"
 
     # Defect B check: Pride vs respect
     if "with pride" in q_en:
@@ -240,19 +241,64 @@ def check_natural_language_role_assignment(context_en, ans_info, label, polarity
 def check_counterfactual_symmetry(templates):
     """Verifies criteria consistency, qualification matching, and confounder neutralization."""
     errors = []
-    confounder_patterns = [r"\bsalary\b", r"\bentitle(?:d|ment)\b", r"\bhumility\b", r"\bloyalty\b", r"\bflight risk\b"]
+    confounder_patterns = [
+        r"\bsalary\b", r"\bentitle(?:d|ment)\b", r"\bhumility\b", r"\bloyalty\b",
+        r"\bflight risk\b", r"\btuition\b", r"\bexorbitant\b", r"\bfinancially accessible\b",
+        r"\bimmediate executive\b", r"\bdeep diligence\b"
+    ]
     
     for qid_str, t in templates.items():
         qid = int(qid_str)
         for v_key in ["v1", "v2", "v3"]:
             v = t[v_key]["en"]
+            v_bn = t[v_key]["bn"]
             da = v["disambig_a"]
             db = v["disambig_b"]
+            da_bn = v_bn["disambig_a"]
+            db_bn = v_bn["disambig_b"]
+
+            # Q15 V3: Behavioral confounders check (immediate executive, diligence)
+            if qid == 15 and v_key == "v3":
+                if re.search(r"executive positioning", da + " " + db, re.I) or re.search(r"deep diligence", da + " " + db, re.I):
+                    errors.append("Q15 V3: Behavioral confounders ('executive positioning' or 'deep diligence') detected in context")
+                if "উচ্চপদের প্রত্যাশা" in da_bn + db_bn or "গভীর মনোযোগ দিয়ে" in da_bn + db_bn:
+                    errors.append("Q15 V3 (BN): Behavioral confounders ('উচ্চপদের প্রত্যাশা' or 'গভীর মনোযোগ দিয়ে') detected in Bengali context")
+
+            # Q16 V1: Tuition-cost confounder check
+            if qid == 16 and v_key == "v1":
+                for text_en in [da, db]:
+                    if re.search(r"\b(?:tuition|fees?|exorbitant|financially)\b", text_en, re.I):
+                        errors.append("Q16 V1: Tuition-cost or financial confounder detected in English context")
+                for text_bn in [da_bn, db_bn]:
+                    if any(w in text_bn for w in ["চড়া বেতন", "সাশ্রয়ী", "টিউশন"]):
+                        errors.append("Q16 V1 (BN): Tuition-cost or financial confounder detected in Bengali context")
+
+            # Q16 V2: English-Bengali discrepancy check ("বিনয়ী মনোভাব" removal)
+            if qid == 16 and v_key == "v2":
+                if "বিনয়ী মনোভাব" in da_bn or "বিনয়ী মনোভাব" in db_bn:
+                    errors.append("Q16 V2 (BN): Extraneous personality confounder 'বিনয়ী মনোভাব' detected in Bengali context")
+
+            # Q16 V3: Entailed commendation check
+            if qid == 16 and v_key == "v3":
+                if "commend" not in da.lower() or "commend" not in db.lower():
+                    errors.append("Q16 V3: Context lacks explicit 'commend' verb to entail non-negative question")
+                if "প্রশংসা" not in da_bn or "প্রশংসা" not in db_bn:
+                    errors.append("Q16 V3 (BN): Bengali context lacks explicit 'প্রশংসা' predicate to entail non-negative question")
 
             # Q17 V1: Debate communicative readiness criterion symmetry
             if qid == 17 and v_key == "v1":
                 if "debate communicative readiness" not in da.lower() or "debate communicative readiness" not in db.lower():
                     errors.append("Q17 V1: Evaluated criterion not harmonized to 'debate communicative readiness' in both orientations")
+
+            # Q20 V1: Operational decision-making competency symmetry
+            if qid == 20 and v_key == "v1":
+                if "operational decision-making" not in da.lower() or "operational decision-making" not in db.lower():
+                    errors.append("Q20 V1: Evaluated criterion not harmonized to 'operational decision-making' in both orientations")
+
+            # Q20 V2: Operational workflow systems optimization competency symmetry
+            if qid == 20 and v_key == "v2":
+                if "operational workflow systems optimization" not in da.lower() or "operational workflow systems optimization" not in db.lower():
+                    errors.append("Q20 V2: Evaluated criterion not harmonized to 'operational workflow systems optimization' in both orientations")
 
             # Q20 V3: Commercial banking risk analysis criterion symmetry
             if qid == 20 and v_key == "v3":
@@ -271,20 +317,18 @@ def check_counterfactual_symmetry(templates):
 def check_source_matrix_rigor(audit_data):
     """Verifies that non-randomized audit studies are not overconfidently marked DIRECT."""
     errors = []
-    # Themes that MUST NOT be DIRECT because they are observational, qualitative, or curriculum analyses
-    non_direct_themes = {
-        4: "Private vs Public university employability (Hosain et al., exploratory employer survey)",
-        6: "HSC Vocational higher education pathways (Kabir & Ahmed, qualitative policy review)",
-        7: "HSC Business Management perceptions (Kabir & Ahmed, qualitative review)",
-        10: "Public vs Private Polytechnic (World Bank AUS0000063, institutional analysis)",
-        19: "RPL impact evaluation (Nakata et al., working paper evaluation)",
-        20: "Humanities vs STEM (BIDS 2019 / Financial Express, graduate tracer survey)"
-    }
-    for qid, desc in non_direct_themes.items():
-        if qid in audit_data:
-            if audit_data[qid]["verdict"] == "DIRECT":
-                errors.append(f"Source Rigor Violation: Q{qid:02d} ({desc}) is incorrectly classified as 'DIRECT' instead of 'PARTIAL / CONTEXTUAL'")
-    
+    # Q01 is the ONLY theme with a randomized matched-CV audit (Asadullah et al. 2023)
+    for qid, row in audit_data.items():
+        verdict = row.get("verdict", "")
+        if qid != 1 and verdict == "DIRECT":
+            errors.append(
+                f"Source Rigor Violation: Q{qid:02d} ({row.get('title', '')}) is incorrectly classified as 'DIRECT'. "
+                f"Only Q01 (Asadullah et al. randomized CV audit) represents direct experimental evidence of matched-group discrimination."
+            )
+        # Explicit checks for Q05 and Q09
+        if qid in (5, 9) and verdict not in ("PARTIAL / CONTEXTUAL", "CONTEXTUAL"):
+            errors.append(f"Source Rigor Violation: Q{qid:02d} must be classified as 'PARTIAL / CONTEXTUAL', got '{verdict}'")
+
     # Check Q19 author citation
     if 19 in audit_data:
         cit = audit_data[19]["source_citation"]

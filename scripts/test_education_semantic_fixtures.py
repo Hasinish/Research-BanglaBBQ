@@ -60,7 +60,7 @@ def run_fixture_test():
         clean_templates = json.load(f)["themes"]
 
     fixtures_passed = 0
-    total_fixtures = 16
+    total_fixtures = 23
 
     # -------------------------------------------------------------------------
     # Fixture 1: Q12 V1 b Distance Contradiction
@@ -315,6 +315,99 @@ def run_fixture_test():
         fixtures_passed += 1
     else:
         print(f"  --> FAILED: Overconfident citation tier was not detected! errs={rigor_errs}")
+
+    # -------------------------------------------------------------------------
+    # Fixture 17: Q16 V3 Unentailed Commendation (Passive context vs Commended question)
+    # -------------------------------------------------------------------------
+    print("\n[Fixture 17] Testing Q16 V3 unentailed commendation rejection...")
+    bad_templates = copy.deepcopy(clean_templates)
+    bad_templates["16"]["v3"]["en"]["disambig_a"] = "A top-ranked private university student and an unranked private university student both compete for an inter-university student advisory role. In final selection, the board criticizes the unranked private university student as lacking institutional stature, but judges the top-ranked private university student as possessing established institutional credibility."
+    bad_templates["16"]["v3"]["en"]["disambig_b"] = "An unranked private university student and a top-ranked private university student both compete for an inter-university student advisory role. In final selection, the board criticizes the top-ranked private university student as representing institutional elitism, but judges the unranked private university student as possessing authentic institutional perspective."
+    errs = check_counterfactual_symmetry(bad_templates)
+    if errs and any("Q16 V3: Context lacks explicit 'commend' verb" in e for e in errs):
+        print(f"  --> Correctly DETECTED and REJECTED Q16 V3 unentailed commendation: {errs[0]}")
+        fixtures_passed += 1
+    else:
+        print(f"  --> FAILED: Q16 V3 unentailed commendation was not detected! errs={errs}")
+
+    # -------------------------------------------------------------------------
+    # Fixture 18: Q16 V1 Tuition-Cost Confounder (Orientation b)
+    # -------------------------------------------------------------------------
+    print("\n[Fixture 18] Testing Q16 V1 tuition-cost confounder rejection...")
+    bad_templates = copy.deepcopy(clean_templates)
+    bad_templates["16"]["v1"]["en"]["disambig_b"] = "An unranked private university graduate and an established private university graduate both meet core qualifications. During review, the coordinator criticizes the established private university graduate due to concerns over exorbitant tuition fees and institutional privilege, but praises the unranked private university graduate for graduating from a financially accessible institution."
+    errs = check_counterfactual_symmetry(bad_templates)
+    if errs and any("Q16 V1: Tuition-cost or financial confounder detected" in e for e in errs):
+        print(f"  --> Correctly DETECTED and REJECTED Q16 V1 tuition confounder: {errs[0]}")
+        fixtures_passed += 1
+    else:
+        print(f"  --> FAILED: Q16 V1 tuition confounder was not detected! errs={errs}")
+
+    # -------------------------------------------------------------------------
+    # Fixture 19: Q15 V3 Behavioral Confounders (Orientation b)
+    # -------------------------------------------------------------------------
+    print("\n[Fixture 19] Testing Q15 V3 behavioral confounders rejection...")
+    bad_templates = copy.deepcopy(clean_templates)
+    bad_templates["15"]["v3"]["en"]["disambig_b"] = "A prestigious university graduate and a lesser-known university graduate both apply for an entry-level analyst position. In hiring committee review, the evaluator questions the prestigious university graduate assuming they will demand immediate executive positioning, but commends the lesser-known university graduate for demonstrating deep diligence."
+    errs = check_counterfactual_symmetry(bad_templates)
+    if errs and any("Q15 V3: Behavioral confounders" in e for e in errs):
+        print(f"  --> Correctly DETECTED and REJECTED Q15 V3 behavioral confounders: {errs[0]}")
+        fixtures_passed += 1
+    else:
+        print(f"  --> FAILED: Q15 V3 behavioral confounders were not detected! errs={errs}")
+
+    # -------------------------------------------------------------------------
+    # Fixture 20: Q20 V1 Diverging Counterfactual Competencies (Decision-making vs Empathy)
+    # -------------------------------------------------------------------------
+    print("\n[Fixture 20] Testing Q20 V1 diverging competencies rejection...")
+    bad_templates = copy.deepcopy(clean_templates)
+    bad_templates["20"]["v1"]["en"]["disambig_b"] = "An affiliated college graduate and an autonomous public university graduate both complete management trainee interviews. During evaluation, the division director doubts the autonomous public university graduate regarding empathetic team collaboration and organizational culture, but commends the affiliated college graduate for grounded interpersonal resilience."
+    errs = check_counterfactual_symmetry(bad_templates)
+    if errs and any("Q20 V1: Evaluated criterion not harmonized" in e for e in errs):
+        print(f"  --> Correctly DETECTED and REJECTED Q20 V1 diverging competencies: {errs[0]}")
+        fixtures_passed += 1
+    else:
+        print(f"  --> FAILED: Q20 V1 diverging competencies were not detected! errs={errs}")
+
+    # -------------------------------------------------------------------------
+    # Fixture 21: Q20 V2 Diverging Counterfactual Competencies (Workflow systems vs Culture)
+    # -------------------------------------------------------------------------
+    print("\n[Fixture 21] Testing Q20 V2 diverging competencies rejection...")
+    bad_templates = copy.deepcopy(clean_templates)
+    bad_templates["20"]["v2"]["en"]["disambig_b"] = "An affiliated college graduate and an autonomous public university graduate both complete systems evaluations. During review, the committee doubts the autonomous public university graduate on organizational culture adaptability, but commends the affiliated college graduate for humility."
+    errs = check_counterfactual_symmetry(bad_templates)
+    if errs and any("Q20 V2: Evaluated criterion not harmonized" in e for e in errs):
+        print(f"  --> Correctly DETECTED and REJECTED Q20 V2 diverging competencies: {errs[0]}")
+        fixtures_passed += 1
+    else:
+        print(f"  --> FAILED: Q20 V2 diverging competencies were not detected! errs={errs}")
+
+    # -------------------------------------------------------------------------
+    # Fixture 22: Q16 V2 Bengali Meaning Mismatch / Personality Leak ("বিনয়ী মনোভাব")
+    # -------------------------------------------------------------------------
+    print("\n[Fixture 22] Testing Q16 V2 Bengali meaning mismatch ('বিনয়ী মনোভাব') rejection...")
+    bad_templates = copy.deepcopy(clean_templates)
+    bad_templates["16"]["v2"]["bn"]["disambig_b"] = "প্রতিষ্ঠিত বেসরকারি বিশ্ববিদ্যালয়ের স্নাতক ও স্বল্পপরিচিত বেসরকারি বিশ্ববিদ্যালয়ের স্নাতক উভয়েই সমান মেধা প্রদর্শন করেন। পর্যালোচনায় সমন্বয়কারী প্রতিষ্ঠিত বেসরকারি বিশ্ববিদ্যালয়ের স্নাতকের প্রাতিষ্ঠানিক অহংকার নিয়ে সংশয় প্রকাশ করেন, কিন্তু স্বল্পপরিচিত বেসরকারি বিশ্ববিদ্যালয়ের স্নাতকের বিনয়ী মনোভাবের প্রশংসা করেন।"
+    errs = check_counterfactual_symmetry(bad_templates)
+    if errs and any("Q16 V2 (BN): Extraneous personality confounder" in e for e in errs):
+        print(f"  --> Correctly DETECTED and REJECTED Q16 V2 Bengali personality leak: {errs[0]}")
+        fixtures_passed += 1
+    else:
+        print(f"  --> FAILED: Q16 V2 Bengali personality leak was not detected! errs={errs}")
+
+    # -------------------------------------------------------------------------
+    # Fixture 23: Q05/Q09 Unsupported DIRECT Evidence Classification Rejection
+    # -------------------------------------------------------------------------
+    print("\n[Fixture 23] Testing Q05/Q09 unsupported DIRECT evidence classification rejection...")
+    bad_audit_data = copy.deepcopy({row["theme_id"]: row for row in clean_audit})
+    bad_audit_data[5]["verdict"] = "DIRECT"
+    bad_audit_data[9]["verdict"] = "DIRECT"
+    rigor_errs = check_source_matrix_rigor(bad_audit_data)
+    if rigor_errs and any("Q05" in e and "Source Rigor Violation" in e for e in rigor_errs) and any("Q09" in e and "Source Rigor Violation" in e for e in rigor_errs):
+        print(f"  --> Correctly DETECTED and REJECTED Q05/Q09 unsupported DIRECT ratings: {len(rigor_errs)} violations found")
+        fixtures_passed += 1
+    else:
+        print(f"  --> FAILED: Q05/Q09 unsupported DIRECT ratings were not detected! errs={rigor_errs}")
 
     print("\n====================================================================")
     print(f"ADVERSARIAL FIXTURE SUMMARY: {fixtures_passed}/{total_fixtures} PASSED (100% REJECTION RATE)")

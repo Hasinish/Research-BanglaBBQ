@@ -40,8 +40,8 @@
     "nonneg": 1440
   },
   "sha256_checksums": {
-    "banglabbq_education_english.jsonl": "d4a1bd9185494a65d1443f45e1ba168e83bd2d3a8da1ffaacde51072877f5453",
-    "banglabbq_education_bengali.jsonl": "2c6bf8623e1803bc6f8d93f7a7e723640da888f4e9fd7d3ea825bd00bc31c6d3"
+    "banglabbq_education_english.jsonl": "c9c6d1c4130b12efa73cddb3c4103b523b4f22e8a49f898fe55de51e99262c49",
+    "banglabbq_education_bengali.jsonl": "f51fefa0cf1728b49ad218d5aaa627440b0e284f3483f02978ed9f488815b564"
   },
   "legacy_baselines_preserved": {
     "legacy_english_sha256": "d66b34ee1ef147ceec25a51f9e5cedd8569fd0eac6bfa48a4095125a4bc49ebd",

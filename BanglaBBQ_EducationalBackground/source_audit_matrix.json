@@ -68,8 +68,8 @@
     "source_url_doi": "https://www.tbsnews.net/bangladesh/education/bangladeshis-consider-technical-vocational-education-inferior-163555",
     "source_citation": "BRAC Study / The Business Standard (2020) 'Bangladeshis consider technical, vocational education inferior'",
     "what_source_demonstrates": "BRAC study entitled 'Youth perception on Technical and Vocational Education and Training (TVET)' documenting pervasive social stigma among families, teachers, and communities viewing TVET as an inferior option for weak performers.",
-    "what_source_does_not_demonstrate": "Does not prove lower cognitive or technical ability when baseline academic marks are held equal.",
-    "verdict": "DIRECT",
+    "what_source_does_not_demonstrate": "Does not constitute a randomized matched-CV causal experiment; documents descriptive survey evidence of social stigma, family attitudes, and community perceptions treating vocational secondary education as inferior.",
+    "verdict": "PARTIAL / CONTEXTUAL",
     "confounders_limits": "Must match prior academic standing (e.g. straight A/GPA 5 in junior school) to isolate track-based prejudice.",
     "safe_scenario": "Family discussions on educational stream choice, 9th-grade academic counseling, and community youth leadership committee appointments.",
     "status": "SOURCE_VERIFIED"
@@ -128,8 +128,8 @@
     "source_url_doi": "https://www.tbsnews.net/bangladesh/bsc-vs-diploma-engineers-why-conflict-and-what-they-demand-1222581",
     "source_citation": "The Business Standard (Published 28 August 2025). 'BSc vs diploma engineers: Why conflict and what they demand'",
     "what_source_demonstrates": "Documents professional status conflict, hierarchical tensions, and workplace disputes between BSc engineers and diploma engineers in Bangladesh infrastructure and engineering sectors.",
-    "what_source_does_not_demonstrate": "Does not show lower intellectual capability; covers professional credential demarcation disputes with legal and recruitment implications.",
-    "verdict": "DIRECT",
+    "what_source_does_not_demonstrate": "Does not constitute a randomized experimental audit of matched qualifications; documents descriptive journalistic reporting of professional status conflict, hierarchical tensions, and workplace demarcation disputes between BSc and diploma engineers.",
+    "verdict": "PARTIAL / CONTEXTUAL",
     "confounders_limits": "Must avoid asserting statutory equivalence; focus on technical opinions, drafting expertise, and project site coordination.",
     "safe_scenario": "Construction site planning meetings, power plant turbine troubleshooting assignments, and infrastructure culvert cost estimations.",
     "status": "SOURCE_VERIFIED"

@@ -171,9 +171,9 @@ Expanded from 9 to 16 adversarial regression fixtures to rigorously stress-test 
   - English: `BanglaBBQ_ENG_Education` (sheetId: `1544720708`, tab index 34)
   - Bengali: `BanglaBBQ_BEN_Education` (sheetId: `641606675`, tab index 35)
 - **Sparse Update Application**:
-  - English Sheet: 252 cells updated (Columns F `context`, G `question`, M `additional_metadata`).
-  - Bengali Sheet: 264 cells updated (Columns F `context`, G `question`, M `additional_metadata`).
-  - Total Updated Cells: **516 cells** across both worksheets.
+  - English Sheet: 252 cells updated (Column F `context`: 156, Column G `question`: 96, Column M `additional_metadata`: 0).
+  - Bengali Sheet: 264 cells updated (Column F `context`: 144, Column G `question`: 120, Column M `additional_metadata`: 0).
+  - Total Updated Cells: **516 cells** across Columns F and G (Column M had 0 changes; previous textual mention of Column M was a descriptive inaccuracy, while verified historical counts remain exactly 252 ENG + 264 BEN = 516 cells).
   - Machine-readable diff log: `BanglaBBQ_EducationalBackground/qa_repair_diff_manifest.json`.
 - **Live Cell-by-Cell Readback Parity**:
   - English Sheet (2,881 rows × 15 columns = 43,200 data cells): **0 mismatches (100% parity)**.
