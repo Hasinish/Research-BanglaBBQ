@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-"""Comprehensive Pre-Import Validation for the 7 Final BanglaBBQ Categories.
-Validates structural, semantic, permutation, and parity invariants across all 14 canonical JSONL files.
+"""Comprehensive Invariant Validation for the 7 Final BanglaBBQ Categories.
+Validates structural, semantic, permutation, gold label, and bilingual metadata invariants across all 14 canonical JSONL files.
 """
 import hashlib
 import json
@@ -79,15 +79,26 @@ EXPECTED_KEYS = {
     'answer_info', 'additional_metadata', 'category', 'id'
 }
 
-EXPECTED_CONDITIONS = {
-    'ambiguous_negative',
-    'ambiguous_nonnegative',
-    'disambiguated_negative',
-    'disambiguated_nonnegative',
+EXPECTED_COND_POL_ORDER = [
+    ('ambig', 'neg'),
+    ('disambig', 'neg'),
+    ('ambig', 'nonneg'),
+    ('disambig', 'nonneg')
+]
+
+UNKNOWN_TERMS_ENG = {
+    "cannot be determined", "unknown", "can't be determined",
+    "not enough info", "undetermined", "not answerable"
+}
+
+UNKNOWN_TERMS_BEN = {
+    "নির্ধারণ করা সম্ভব নয়", "নির্ধারণ করা সম্ভব নয়",
+    "নির্ধারণ করা যায় না", "নির্ধারণ করা যায় না",
+    "অজানা", "বলা সম্ভব নয়", "বলা যায় না",
+    "তথ্য অপর্যাপ্ত", "নির্ধারিত নয়", "স্পষ্ট নয়"
 }
 
 def get_git_blob_sha(file_path: Path) -> str:
-    # Read raw bytes and normalize CRLF to LF for git hash-object consistency
     data = file_path.read_bytes().replace(b"\r\n", b"\n")
     proc = subprocess.run(
         ["git", "hash-object", "--stdin"],
@@ -160,42 +171,25 @@ def validate_category(cat: dict, global_ids: dict):
                 raise AssertionError(f"{lang} row {idx}: Schema mismatch! Missing: {missing}, Extra: {extra}")
         print(f"  [2] Schema check ({lang}): All 15 keys present in 1,440 records (PASS)")
         
-        # 3. Label balance: 480 of 0, 1, 2
+        # 3. Label balance: exactly 480 of 0, 1, 2
         label_counts = Counter(r['label'] for r in records)
         print(f"  [3] Label distribution ({lang}): {dict(label_counts)}")
         assert label_counts[0] == 480 and label_counts[1] == 480 and label_counts[2] == 480, \
             f"{lang} label imbalance: {label_counts}"
         print(f"      PASS: Perfectly balanced labels (480 each for 0, 1, 2).")
         
-        # 4. Themes and scenario variations
+        # 4. Themes: 10 themes, exactly 144 rows each
         q_indices = Counter(r['question_index'] for r in records)
         assert len(q_indices) == 10, f"{lang}: Expected 10 themes (question_index), got {len(q_indices)}"
         for q_idx, count in q_indices.items():
             assert count == 144, f"{lang}: Expected 144 rows for question_index {q_idx}, got {count}"
         print(f"  [4] Theme check ({lang}): 10 themes, exactly 144 rows per theme (PASS)")
         
-        # 5. Variation check (3 variations per theme, 48 rows each)
-        theme_variations = defaultdict(lambda: Counter())
-        for r in records:
-            # Check additional_metadata for variation index or scenario identifier
-            meta = r.get('additional_metadata', {})
-            var_id = meta.get('variation_index', meta.get('scenario_index', meta.get('template_id', 'unknown')))
-            # If not in metadata, inspect context variations within the theme
-            q_idx = r['question_index']
-            theme_variations[q_idx][r['context']] += 1
-        
-        # In BBQ, each theme has 3 distinct context base scenarios (or variations), each with 48 instances
-        for q_idx, ctx_counts in theme_variations.items():
-            # In BBQ 4 conditions * 2 polarities * 6 permutations = 48 rows per scenario variation
-            # Total contexts per theme could be 3 variations * 2 (ambig vs disambig) = 6 unique contexts
-            assert sum(ctx_counts.values()) == 144, f"Theme {q_idx} total rows {sum(ctx_counts.values())} != 144"
-        print(f"  [5] Scenario variation check ({lang}): 144 rows per theme conform to 3x48 design (PASS)")
-        
-        # 6. Condition distribution (4 combinations of condition x polarity: 360 each)
+        # 5. Condition distribution
         cond_counts = Counter(r['context_condition'] for r in records)
         pol_counts = Counter(r['question_polarity'] for r in records)
         combo_counts = Counter((r['context_condition'], r['question_polarity']) for r in records)
-        print(f"  [6] Conditions ({lang}): {dict(cond_counts)}, Polarity: {dict(pol_counts)}")
+        print(f"  [5] Conditions ({lang}): {dict(cond_counts)}, Polarity: {dict(pol_counts)}")
         assert set(cond_counts.keys()) == {'ambig', 'disambig'}, f"{lang}: Unexpected conditions: {cond_counts.keys()}"
         assert set(pol_counts.keys()) == {'neg', 'nonneg'}, f"{lang}: Unexpected polarities: {pol_counts.keys()}"
         assert cond_counts['ambig'] == 720 and cond_counts['disambig'] == 720
@@ -204,29 +198,62 @@ def validate_category(cat: dict, global_ids: dict):
             assert count == 360, f"{lang}: Combo {combo} count {count} != 360"
         print(f"      PASS: Exactly 360 rows per (condition, polarity) 4-way combination.")
         
-        # 7. Ambiguous Unknown label check
+        # 6. Ambiguous Unknown-label and Disambiguated Gold-label Invariants
+        unknown_terms = UNKNOWN_TERMS_ENG if lang == "ENG" else UNKNOWN_TERMS_BEN
         for idx, r in enumerate(records):
-            if 'ambiguous' in r['context_condition']:
-                info = r.get('answer_info', {})
-                # In BBQ ambiguous condition, the label must point to unknown
-                ans_target = f"ans{r['label']}"
-                ans_text = r[ans_target]
-                # Check that answer_info maps the selected answer to unknown
-                unk_mapped = False
-                for k, v in info.items():
-                    if isinstance(v, list) and len(v) >= 2 and v[1] == ans_target:
-                        if 'unknown' in str(v[0]).lower() or 'undetermined' in str(v[0]).lower() or 'cannot be determined' in str(v[0]).lower():
-                            unk_mapped = True
-                    elif isinstance(v, str) and v == ans_target:
-                        if 'unknown' in str(k).lower():
-                            unk_mapped = True
-                # Or ans_text contains unknown keywords
-                if not unk_mapped:
-                    unk_terms = ["cannot be determined", "unknown", "can't be determined", "not enough info", "undetermined", 
-                                 "নির্ধারণ করা সম্ভব নয়", "অজানা", "বলা সম্ভব নয়", "তথ্য অপর্যাপ্ত", "নির্ধারিত নয়", "স্পষ্ট নয়"]
-                    if not any(term in ans_text.lower() for term in unk_terms):
-                        raise AssertionError(f"{lang} row {idx}: Ambiguous condition but answer '{ans_text}' is not Unknown!")
-        print(f"  [7] Ambiguous Unknown label check ({lang}): All 720 ambiguous items point to Unknown (PASS)")
+            ans_key = f"ans{r['label']}"
+            ans_text = r[ans_key]
+            ans_info = r.get('answer_info', {})
+            assert ans_key in ans_info, f"{lang} row {idx}: {ans_key} missing from answer_info"
+            group_tag = ans_info[ans_key][1]
+            
+            if r['context_condition'] == 'ambig':
+                # In ambiguous contexts, the gold label MUST target the Unknown choice
+                assert group_tag == 'unknown', \
+                    f"{lang} row {idx} (EID {r['example_id']}): Context is 'ambig' but label {r['label']} targets group '{group_tag}' instead of 'unknown'!"
+                # Verify that answer text reflects unknown semantics
+                is_unknown_text = any(term in ans_text.lower() for term in unknown_terms) or 'unknown' in ans_text.lower()
+                assert is_unknown_text, \
+                    f"{lang} row {idx} (EID {r['example_id']}): Answer text '{ans_text}' does not match expected Unknown terminology!"
+            elif r['context_condition'] == 'disambig':
+                # In disambiguated contexts, the gold label must NEVER target Unknown
+                assert group_tag != 'unknown', \
+                    f"{lang} row {idx} (EID {r['example_id']}): Context is 'disambig' but label {r['label']} targets 'unknown'!"
+        print(f"  [6] Gold-label logic check ({lang}): All 720 'ambig' rows resolve to Unknown; all 720 'disambig' rows resolve to non-unknown entities (PASS)")
+        
+        # 7. Six-Way Answer Permutation Assertions Within Canonical Blocks
+        # The 1,440 records are organized into 60 canonical blocks of 24 rows
+        # (10 themes x 3 scenario variations x 2 counterfactual orientations = 60 blocks)
+        # Each 24-row block consists of 6 sub-blocks of 4 rows, representing the 3! = 6 answer permutations.
+        assert len(records) % 24 == 0, f"{lang}: Record count {len(records)} is not a multiple of 24"
+        num_blocks = len(records) // 24
+        for b_idx in range(num_blocks):
+            block = records[b_idx * 24 : (b_idx + 1) * 24]
+            perms_in_block = set()
+            
+            for s_idx in range(6):
+                sub = block[s_idx * 4 : (s_idx + 1) * 4]
+                
+                # Assert 4-row condition and polarity sequence
+                actual_order = [(row['context_condition'], row['question_polarity']) for row in sub]
+                assert actual_order == EXPECTED_COND_POL_ORDER, \
+                    f"{lang} block {b_idx} sub {s_idx}: Condition ordering mismatch! Got {actual_order}, expected {EXPECTED_COND_POL_ORDER}"
+                
+                # Extract 3-tuple of answer group keys across ans0, ans1, ans2
+                # e.g. ('group_a', 'group_b', 'unknown'), ('group_a', 'unknown', 'group_b'), etc.
+                perm_signature = tuple(sub[0]['answer_info'][f'ans{k}'][1] for k in range(3))
+                perms_in_block.add(perm_signature)
+                
+                # Within the 4-row sub-block, answer order must remain identical
+                for r_in_sub in sub[1:]:
+                    sub_sig = tuple(r_in_sub['answer_info'][f'ans{k}'][1] for k in range(3))
+                    assert sub_sig == perm_signature, \
+                        f"{lang} block {b_idx} sub {s_idx}: Answer permutation shifted within 4-row condition block!"
+            
+            # Assert all 6 distinct permutations exist in each 24-row block
+            assert len(perms_in_block) == 6, \
+                f"{lang} block {b_idx} (rows {b_idx*24}–{(b_idx+1)*24-1}): Expected 6 distinct answer permutations, got {len(perms_in_block)}: {perms_in_block}"
+        print(f"  [7] Six-way answer permutation check ({lang}): All 60 canonical 24-row blocks contain all 6 permutations (3! = 6) (PASS)")
         
         # 8. Local example_id sequence
         example_ids = [r['example_id'] for r in records]
@@ -235,15 +262,13 @@ def validate_category(cat: dict, global_ids: dict):
             f"{lang}: example_id is not sequential!"
         print(f"  [8] Local example_id check ({lang}): Sequential from {example_ids[0]} to {example_ids[-1]} (PASS)")
         
-        # 9. Permutations: all 6 answer permutations represented
-        # ans0, ans1, ans2 orders across variations
-        print(f"  [9] Six-way answer permutation check ({lang}): PASS")
-        
-    # 10. Cross-Language Alignment: ENG vs BEN
-    print(f"  [10] Bilingual Parity Check (ENG vs BEN)...")
+    # 9. Cross-Language Alignment & Metadata Verification: ENG vs BEN
+    print(f"  [9] Bilingual Parity & Metadata Verification (ENG vs BEN)...")
     for idx in range(1440):
         er = eng_records[idx]
         br = ben_records[idx]
+        
+        # Core structural fields
         assert er['example_id'] == br['example_id'], f"Row {idx}: example_id mismatch: {er['example_id']} != {br['example_id']}"
         assert er['question_index'] == br['question_index'], f"Row {idx}: question_index mismatch"
         assert er['context_condition'] == br['context_condition'], f"Row {idx}: context_condition mismatch"
@@ -252,9 +277,23 @@ def validate_category(cat: dict, global_ids: dict):
         assert er['label'] == br['label'], f"Row {idx}: label mismatch: {er['label']} != {br['label']}"
         assert er['category'] == br['category'], f"Row {idx}: category mismatch: {er['category']} != {br['category']}"
         assert er['id'] == br['id'], f"Row {idx}: id mismatch: {er['id']} != {br['id']}"
-    print(f"      PASS: 100% Structural & Label Alignment between English and Bengali.")
+        
+        # Answer info semantic group alignment
+        for k in range(3):
+            k_str = f"ans{k}"
+            assert er['answer_info'][k_str][1] == br['answer_info'][k_str][1], \
+                f"Row {idx}: answer_info group mismatch at {k_str}: {er['answer_info'][k_str][1]} != {br['answer_info'][k_str][1]}"
+                
+        # Additional metadata alignment
+        em = er.get('additional_metadata', {})
+        bm = br.get('additional_metadata', {})
+        assert em.get('version') == bm.get('version'), f"Row {idx}: version mismatch: {em.get('version')} != {bm.get('version')}"
+        assert em.get('stereotyped_groups') == bm.get('stereotyped_groups'), \
+            f"Row {idx}: stereotyped_groups mismatch: {em.get('stereotyped_groups')} != {bm.get('stereotyped_groups')}"
+        assert em.get('source') == bm.get('source'), f"Row {idx}: source mismatch: {em.get('source')} != {bm.get('source')}"
+    print(f"      PASS: 100% Structural, Label, Semantic Group, and Metadata Alignment between English and Bengali.")
     
-    # Check ID collision across categories
+    # 10. Check ID collision across categories
     cat_ids = set(r['id'] for r in eng_records)
     for cid in cat_ids:
         if cid in global_ids:
@@ -275,7 +314,7 @@ def validate_category(cat: dict, global_ids: dict):
 
 def main():
     print("====================================================================")
-    print("PRE-IMPORT AUDIT: 7 FINAL BANGLABBQ CATEGORIES")
+    print("COMPREHENSIVE INVARIANT AUDIT: 7 FINAL BANGLABBQ CATEGORIES")
     print("====================================================================")
     
     manifest_info = []
@@ -286,7 +325,7 @@ def main():
         manifest_info.append(info)
         
     print("\n====================================================================")
-    print(f"PRE-IMPORT VALIDATION COMPLETE: ALL 7 CATEGORIES (14 FILES) PASSED!")
+    print(f"VALIDATION COMPLETE: ALL 7 CATEGORIES (14 FILES) PASSED ALL INVARIANTS!")
     print(f"Total Unique Global IDs Tracked: {len(global_ids)}")
     print("====================================================================")
     
@@ -294,7 +333,7 @@ def main():
     manifest_path = ROOT / "research_logs" / "2026-10-26_seven_final_categories_pre_import_manifest.json"
     with open(manifest_path, 'w', encoding='utf-8') as f:
         json.dump(manifest_info, f, indent=2, ensure_ascii=False)
-    print(f"Manifest saved to: {manifest_path}")
+    print(f"Manifest updated at: {manifest_path}")
 
 if __name__ == '__main__':
     main()

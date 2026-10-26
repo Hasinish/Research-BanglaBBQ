@@ -45,3 +45,8 @@ jobs:
           python scripts/validate_education_dataset.py Dataset_BanglaBBQ_New/BanglaBBQ_EducationalBackground/banglabbq_education_english.jsonl Dataset_BanglaBBQ_New/BanglaBBQ_EducationalBackground/banglabbq_education_bengali.jsonl
           python scripts/validate_education_semantics.py Dataset_BanglaBBQ_New/BanglaBBQ_EducationalBackground/banglabbq_education_english.jsonl Dataset_BanglaBBQ_New/BanglaBBQ_EducationalBackground/banglabbq_education_bengali.jsonl
           python scripts/test_education_semantic_fixtures.py
+
+      - name: Run Seven Final Categories Benchmark Invariant Validation
+        run: |
+          python scripts/validate_seven_final_categories.py
+

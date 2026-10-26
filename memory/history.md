@@ -1,3 +1,15 @@
+- **[2026-10-26] Convo 15378bfe-33ed-4a77-95e2-ed3f94afc52c (Part 4)**: **BanglaBBQ 7-Category Invariant Validator Repair, CI Integration, and 12-Category Lineage Documentation**:
+  - Repaired `scripts/validate_seven_final_categories.py`:
+    - Fixed condition check `context_condition == 'ambig'` (previously checked `'ambiguous' in r['context_condition']` which evaluated to False).
+    - Enforced strict unknown text validation (`UNKNOWN_TERMS_ENG`: 'Cannot be determined', 'Unknown'; `UNKNOWN_TERMS_BEN`: 'অজানা', 'নির্ধারণ করা যায় না', 'নির্ধারণ করা যায় না').
+    - Enforced strict assertions verifying all 6 answer permutations ($3! = 6$) are present across all 60 canonical 24-row blocks in each of the 7 categories.
+    - Enforced strict 4-row condition/polarity ordering assertions: `[('ambig', 'neg'), ('disambig', 'neg'), ('ambig', 'nonneg'), ('disambig', 'nonneg')]`.
+    - Strengthened bilingual parity and metadata assertions: 1-to-1 matching across example_id, question_index, context_condition, question_polarity, type, label, category, id, version, stereotyped_groups, source, and semantic answer_info group tags.
+  - Integrated `scripts/validate_seven_final_categories.py` into `.github/workflows/validate.yml` as a dedicated automated CI step, validating all 14 canonical JSONL files (10,080 rows/lang; 20,160 rows total) on push and PR.
+  - Executed all 10 offline validation suites locally: 100% pass across Politics (Old & New), Religion, Age, Gender (structural & semantic), Education (structural, semantic, and 23/23 adversarial fixtures), and the 7 final categories.
+  - Investigated and documented category lineage: original 9 thesis categories (BRACU Thesis T2510616, June 2025) vs. current 12 working categories, explicitly clarifying the distinction between the 100-record historical psychiatric baseline (`Mental Health`) and the 1,440-record somatic/chronic working benchmark (`Health Status`).
+  - Preserved historical thesis baseline byte-for-byte in `Dataset_ BanglaBBQ_Old/` and preserved all master Google Spreadsheet records with zero modifications.
+  - Updated `memory/state.md`, created research log `research_logs/2026-10-26_validator_repair_and_twelve_category_lineage.md`, and updated `research_logs/README.md`.
 - **[2026-10-26] Convo 15378bfe-33ed-4a77-95e2-ed3f94afc52c (Part 3)**: **BanglaBBQ Master Google Spreadsheet Import of 7 Final Categories (14 Worksheets)**:
   - Validated all 14 canonical JSONL files across 7 final categories (`BanglaBBQ_PhysicalAppearance`, `BanglaBBQ_SocialStatus`, `BanglaBBQ_HealthStatus`, `BanglaBBQ_Regional`, `BanglaBBQ_Ethnicity`, `BanglaBBQ_OccupationalBackground`, `BanglaBBQ_MaritalStatus`) under `Dataset_BanglaBBQ_New/`: 1,440 rows/lang, 15-key schema, balanced labels (480 each), 4-condition ordering (360 each), 10 themes x 3 variations x 48 rows, and cross-language alignment.
   - Refreshed expired Google Sheets OAuth token (`token.json`).
