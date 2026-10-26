@@ -1,0 +1,17 @@
+candidate,mechanism,decision,reason
+Q01,Noakhali cunning stereotype,SELECT,Directly reported as a circulating allegation; do not impute actual traits
+Q02,Barishal hot-headed trope,SELECT,Directly reported stereotype; separate evaluator attribution from observed action
+Q03,Tangail stinginess,SELECT,Directly reported stereotype; equal financial circumstances
+Q04,Cumilla family refusal by district,SELECT,First-person documented rejection; not proof of general prevalence
+Q05,Rangpur Mofiz slur,SELECT,Anthropology-oriented feature documents pejorative and historical context
+Q06,Sylhet automatic London connections,SELECT_PARTIAL,"London trope explicit, financial generalization inferred; conditional"
+Q07,Sylheti accent ridicule,SELECT,First-person contemporary experience of mocked language
+Q08,Chattogram broadcast accent prestige,SELECT_PARTIAL,"Media dialect hierarchy documented, specific newsroom selection not directly evidenced"
+Q09,Chattogram wedding spending stereotype,SELECT_PARTIAL,"Documented wedding customs, not proof of universal individual spending"
+Q10,Chandpur uncultured trope,SELECT_PARTIAL,BNCC grouping in magazine article; weak within-group isolation
+R11,Gopalganj political loyalty and entitlement,REJECT,Politics category overlap and historical instability
+R12,Pabna 'madness' joke,REJECT,Mental Health category confound and stigmatizing medical inference
+R13,Chattogram innate business acumen,REJECT,Occupational/economic history not independent evidence of stereotype
+R14,Northern regional poverty predicts competence,REJECT,"SES/opportunity confound, not valid district identity contrast"
+R15,Sylheti diaspora low educational ability,REJECT,"Diaspora, socioeconomic and educational confounds; no comparable Bangladesh target"
+R16,Noakhali accent creates misunderstanding,REJECT,Only satire and overlapping dialect ridicule; not distinct robust theme

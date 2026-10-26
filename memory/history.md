@@ -1,3 +1,4 @@
+- **[2026-10-26] Convo 621ff8bb-ed87-4983-980d-c05741bf198f**: Pulled remote updates (`98b7b85`), staged and pushed all 7 new benchmark category bundles (Ethnicity, Health Status, Marital Status, Occupational Background, Physical Appearance, Regional, Social Status) with JSONL datasets, generators, manifests, source audits, and QA reports.
 - **[2026-10-20] Convo 4cdf8439-1fb8-4ee1-aacb-9838bd670449**: **BanglaBBQ Educational Background Final Semantic QA Repair (ChatGPT Independent Audit Resolution)**:
   - **All 7 Audit Issues Fully Resolved Upstream**:
     - *Issue 1 (Q16 V3 Unentailed Commendation, EIDs 2640–2687)*: Rewrote English context to explicit contrasting predicates ("criticizes ... but commends ...") and Bengali context ("সমালোচনা করেন ... কিন্তু ... প্রশংসা করেন") so non-negative questions asking who was commended are directly entailed by explicit evaluator actions across both orientations.
