@@ -16,6 +16,13 @@ Research-BanglaBBQ/
 ├── BanglaBBQ_ENG_New/           # Active verified English Age benchmark (2,920 ENG)
 ├── BanglaBBQ_Gender/            # Active verified Gender Identity benchmark (4,696 ENG, 4,696 BEN across 34 themes)
 ├── BanglaBBQ_EducationalBackground/ # Active Educational Background benchmark (2,880 ENG, 2,880 BEN across 20 themes)
+├── BanglaBBQ_Ethnicity/         # Canonical 1,440-record Ethnicity benchmark (FINAL)
+├── BanglaBBQ_HealthStatus/      # Canonical 1,440-record Health Status benchmark (FINAL)
+├── BanglaBBQ_MaritalStatus/     # Canonical 1,440-record Marital Status benchmark (FINAL)
+├── BanglaBBQ_OccupationalBackground/ # Canonical 1,440-record Occupational Background benchmark (FINAL)
+├── BanglaBBQ_PhysicalAppearance/ # Canonical 1,440-record Physical Appearance benchmark (FINAL)
+├── BanglaBBQ_Regional/          # Canonical 1,440-record Regional Affiliation benchmark (FINAL)
+├── BanglaBBQ_SocialStatus/      # Canonical 1,440-record Social Status benchmark (FINAL)
 ├── audits/                      # Independent Forensic QA Complete Packages (7 categories)
 │   ├── Ethnicity_forensic_QA_complete/
 │   ├── health_status_complete_independent_forensic_QA/
@@ -104,6 +111,34 @@ These are the canonical, working datasets currently under active research and ev
 - **Live worksheets**: `BanglaBBQ_ENG_Education` (sheetId: `1544720708`, tab index 34) and `BanglaBBQ_BEN_Education` (sheetId: `641606675`, tab index 35), 2,881 rows (A1:O2881) each. 100% bit-for-bit live parity verified across all 86,400 data cells (43,200/sheet, 0 mismatches). Full production styling verified (33px header, 96px data, column widths `[100, 100, 130, 130, 75, 510, 380, 190, 190, 190, 75, 465, 465, 100, 100]`, wrap/clip, frozen row 1, alternating 4-row styling).
 - **Validation**: `scripts/validate_education_dataset.py` (10/10 PASS), `scripts/validate_education_semantics.py` (deep natural-language predicate and clause entailment validator, 8/8 PASS), and `scripts/test_education_semantic_fixtures.py` (23/23 adversarial regression fixtures demonstrably rejected, 100% defect rejection rate).
 - **Status**: `REPAIRED / CHATGPT AUDIT RESOLVED / ADVERSARIAL QA VERIFIED (23/23) / 100% LIVE PARITY / REVIEW PENDING` (Structurally validated [YES], Live-synchronized [YES], Independently semantically reviewed [YES], Source-verified [QUALIFIED / CALIBRATED], Linguistically reviewed [PENDING EXTERNAL HUMAN], Publication-ready [NO]).
+
+### F. Ethnicity ([`BanglaBBQ_Ethnicity/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Ethnicity))
+- [`BanglaBBQ_Ethnicity_FINAL_english.jsonl`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Ethnicity/BanglaBBQ_Ethnicity_FINAL_english.jsonl): 1,440 final production English records across documented ethnic minority scenarios in Bangladesh.
+- [`BanglaBBQ_Ethnicity_FINAL_bengali.jsonl`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Ethnicity/BanglaBBQ_Ethnicity_FINAL_bengali.jsonl): 1,440 final parallel production Bengali records.
+
+### G. Health Status ([`BanglaBBQ_HealthStatus/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_HealthStatus))
+- [`BanglaBBQ_Health_Status_FINAL_english.jsonl`](file:///d:/Research-BanglaBBQ/BanglaBBQ_HealthStatus/BanglaBBQ_Health_Status_FINAL_english.jsonl): 1,440 final production English records.
+- [`BanglaBBQ_Health_Status_FINAL_bengali.jsonl`](file:///d:/Research-BanglaBBQ/BanglaBBQ_HealthStatus/BanglaBBQ_Health_Status_FINAL_bengali.jsonl): 1,440 final parallel production Bengali records.
+
+### H. Marital Status ([`BanglaBBQ_MaritalStatus/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_MaritalStatus))
+- [`BanglaBBQ_MaritalStatus_FINAL_english.jsonl`](file:///d:/Research-BanglaBBQ/BanglaBBQ_MaritalStatus/BanglaBBQ_MaritalStatus_FINAL_english.jsonl): 1,440 final production English records.
+- [`BanglaBBQ_MaritalStatus_FINAL_bengali.jsonl`](file:///d:/Research-BanglaBBQ/BanglaBBQ_MaritalStatus/BanglaBBQ_MaritalStatus_FINAL_bengali.jsonl): 1,440 final parallel production Bengali records.
+
+### I. Occupational Background ([`BanglaBBQ_OccupationalBackground/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_OccupationalBackground))
+- [`BanglaBBQ_Occupational_Background_FINAL_english.jsonl`](file:///d:/Research-BanglaBBQ/BanglaBBQ_OccupationalBackground/BanglaBBQ_Occupational_Background_FINAL_english.jsonl): 1,440 final production English records.
+- [`BanglaBBQ_Occupational_Background_FINAL_bengali.jsonl`](file:///d:/Research-BanglaBBQ/BanglaBBQ_OccupationalBackground/BanglaBBQ_Occupational_Background_FINAL_bengali.jsonl): 1,440 final parallel production Bengali records.
+
+### J. Physical Appearance ([`BanglaBBQ_PhysicalAppearance/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_PhysicalAppearance))
+- [`BanglaBBQ_Physical_Appearance_FINAL_english.jsonl`](file:///d:/Research-BanglaBBQ/BanglaBBQ_PhysicalAppearance/BanglaBBQ_Physical_Appearance_FINAL_english.jsonl): 1,440 final production English records.
+- [`BanglaBBQ_Physical_Appearance_FINAL_bengali.jsonl`](file:///d:/Research-BanglaBBQ/BanglaBBQ_PhysicalAppearance/BanglaBBQ_Physical_Appearance_FINAL_bengali.jsonl): 1,440 final parallel production Bengali records.
+
+### K. Regional Affiliation ([`BanglaBBQ_Regional/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Regional))
+- [`BanglaBBQ_Regional_FINAL_english.jsonl`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Regional/BanglaBBQ_Regional_FINAL_english.jsonl): 1,440 final production English records covering Bangladeshi regional/district stereotypes.
+- [`BanglaBBQ_Regional_FINAL_bengali.jsonl`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Regional/BanglaBBQ_Regional_FINAL_bengali.jsonl): 1,440 final parallel production Bengali records.
+
+### L. Social Status ([`BanglaBBQ_SocialStatus/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_SocialStatus))
+- [`BanglaBBQ_SocialStatus_FINAL_english.jsonl`](file:///d:/Research-BanglaBBQ/BanglaBBQ_SocialStatus/BanglaBBQ_SocialStatus_FINAL_english.jsonl): 1,440 final production English records.
+- [`BanglaBBQ_SocialStatus_FINAL_bengali.jsonl`](file:///d:/Research-BanglaBBQ/BanglaBBQ_SocialStatus/BanglaBBQ_SocialStatus_FINAL_bengali.jsonl): 1,440 final parallel production Bengali records.
 
 ---
 

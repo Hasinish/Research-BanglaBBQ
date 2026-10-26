@@ -37,6 +37,13 @@ To ensure clean distinction between active production benchmarks, independent au
 ├── BanglaBBQ_EducationalBackground/  # Canonical 2,880-record Educational Background Benchmark (20 themes, V1/V2/V3)
 ├── BanglaBBQ_BEN_New/                # Canonical 2,920-record Bengali Age Benchmark
 ├── BanglaBBQ_ENG_New/                # Canonical 2,920-record English Age Benchmark
+├── BanglaBBQ_Ethnicity/              # Canonical 1,440-record Ethnicity Bias Benchmark (FINAL)
+├── BanglaBBQ_HealthStatus/           # Canonical 1,440-record Health Status Bias Benchmark (FINAL)
+├── BanglaBBQ_MaritalStatus/          # Canonical 1,440-record Marital Status Bias Benchmark (FINAL)
+├── BanglaBBQ_OccupationalBackground/ # Canonical 1,440-record Occupational Background Bias Benchmark (FINAL)
+├── BanglaBBQ_PhysicalAppearance/     # Canonical 1,440-record Physical Appearance Bias Benchmark (FINAL)
+├── BanglaBBQ_Regional/               # Canonical 1,440-record Regional Affiliation Bias Benchmark (FINAL)
+├── BanglaBBQ_SocialStatus/           # Canonical 1,440-record Social Status Bias Benchmark (FINAL)
 ├── audits/                           # Independent Forensic QA Complete Packages (7 categories)
 │   ├── Ethnicity_forensic_QA_complete/
 │   ├── health_status_complete_independent_forensic_QA/
