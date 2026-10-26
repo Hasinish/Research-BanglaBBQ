@@ -3,7 +3,13 @@ import sys
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-with open('politics_correction_report.json', 'r', encoding='utf-8') as f:
+from pathlib import Path
+
+report_path = Path('docs/reports/politics_correction_report.json')
+if not report_path.exists():
+    report_path = Path('politics_correction_report.json')
+
+with open(report_path, 'r', encoding='utf-8') as f:
     d = json.load(f)
 
 print("=== SUMMARY METRICS ===")

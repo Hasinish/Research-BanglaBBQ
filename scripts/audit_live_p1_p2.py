@@ -30,7 +30,8 @@ assert len(eng_data) == 2920
 assert len(ben_data) == 2920
 
 # Load report data to cross-check
-with open("p1_p2_report_data.json", "r", encoding="utf-8") as f:
+report_path = Path("docs/reports/p1_p2_report_data.json") if Path("docs/reports/p1_p2_report_data.json").exists() else Path("p1_p2_report_data.json")
+with open(report_path, "r", encoding="utf-8") as f:
     report_data = json.load(f)
 
 p1_rows = {r['sheet_row']: r for r in report_data['problem1']}

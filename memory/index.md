@@ -13,17 +13,35 @@ Research-BanglaBBQ/
 ├── BanglaBBQ_Politics/          # Active Politics benchmark (2,880 ENG, 2,880 BEN; base + V2/V3)
 ├── BanglaBBQ_Religion/          # Active Religion benchmark (2,880 ENG, 2,880 BEN; V1+V2+V3)
 ├── BanglaBBQ_BEN_New/           # Active verified Bengali Age benchmark (2,920 BEN)
+├── BanglaBBQ_ENG_New/           # Active verified English Age benchmark (2,920 ENG)
 ├── BanglaBBQ_Gender/            # Active verified Gender Identity benchmark (4,696 ENG, 4,696 BEN across 34 themes)
 ├── BanglaBBQ_EducationalBackground/ # Active Educational Background benchmark (2,880 ENG, 2,880 BEN across 20 themes)
+├── audits/                      # Independent Forensic QA Complete Packages (7 categories)
+│   ├── Ethnicity_forensic_QA_complete/
+│   ├── health_status_complete_independent_forensic_QA/
+│   ├── marital_status_independent_forensic_QA_bundle/
+│   ├── occupational_background_forensic_QA_complete/
+│   ├── physical_appearance_independent_forensic_QA_bundle/
+│   ├── Regional_independent_forensic_QA_bundle/
+│   └── banglabbq_social_status_forensic_QA_complete/
+├── candidate_bundles/           # Pre-Audit Candidate Benchmark Bundles & Generators (7 categories)
+│   ├── banglabbq_ethnicity_bundle/
+│   ├── banglabbq_health_status_complete/
+│   ├── banglabbq_marital_status_readonly_research_package/
+│   ├── banglabbq_occupational_background_readonly_bundle/
+│   ├── banglabbq_physical_appearance_readonly_research_bundle/
+│   ├── banglabbq_regional_research_bundle/
+│   └── banglabbq_social_status_complete/
+├── docs/                        # Academic papers and historical audit reports
+│   ├── papers/                  # Undergraduate thesis book & IEEE conference paper
+│   └── reports/                 # Historical expansion and correction JSON reports
 ├── Dataset_ BanglaBBQ_Old/      # Historical baseline from seniors' thesis (T2510616)
 ├── PakBBQ_Repo/                 # Cloned official PakBBQ benchmark repository (EMNLP 2025)
 ├── backups/                     # Timestamped backups of Google Sheets and datasets
-├── scripts/                     # Automation, validation, migration, and audit scripts (including Politics expander)
+├── scripts/                     # Automation, validation, migration, and audit scripts
 ├── research_logs/               # Permanent detailed research and audit logs
 ├── memory/                      # Authoritative shared project memory
 ├── PakBBQ_Age_English.csv       # Active English Age benchmark source pool (2,920 rows)
-├── T2510616.pdf                 # Original undergraduate thesis book (84 pages)
-├── T2510616_IEEE_Paper.pdf      # Original 8-page IEEE conference paper draft
 ├── CITATION.cff                 # Machine-readable academic citation metadata
 ├── README.md                    # Public repository documentation
 └── requirements.txt             # Python dependencies
@@ -225,14 +243,41 @@ Contains specialized scripts documented in [`scripts/README.md`](file:///d:/Rese
 
 ## 6. Academic Artifacts & Methodological Reference Repositories
 
-- [`T2510616.pdf`](file:///d:/Research-BanglaBBQ/T2510616.pdf): Complete 84-page BRAC University undergraduate thesis book (*"A Bilingual Study of Socio-Cultural Bias in Large Language Models through BanglaBBQ and a Post Processing Mitigation Pipeline"*, June 2025).
-- [`T2510616_IEEE_Paper.pdf`](file:///d:/Research-BanglaBBQ/T2510616_IEEE_Paper.pdf): 8-page IEEE conference paper draft. Formulates benchmark metrics, Fleiss' Kappa formulas, paired t-tests, and SafeLLM 3-stage mitigation architecture.
+- [`docs/papers/T2510616.pdf`](file:///d:/Research-BanglaBBQ/docs/papers/T2510616.pdf): Complete 84-page BRAC University undergraduate thesis book (*"A Bilingual Study of Socio-Cultural Bias in Large Language Models through BanglaBBQ and a Post Processing Mitigation Pipeline"*, June 2025).
+- [`docs/papers/T2510616_IEEE_Paper.pdf`](file:///d:/Research-BanglaBBQ/docs/papers/T2510616_IEEE_Paper.pdf): 8-page IEEE conference paper draft. Formulates benchmark metrics, Fleiss' Kappa formulas, paired t-tests, and SafeLLM 3-stage mitigation architecture.
+- [`docs/reports/`](file:///d:/Research-BanglaBBQ/docs/reports): Historical audit and dataset expansion report JSON files (`politics_correction_report.json`, `politics_240_expansion_report.json`, `modified_records_report.json`, `p1_p2_report_data.json`).
 - [`PakBBQ_Repo/`](file:///d:/Research-BanglaBBQ/PakBBQ_Repo): Cloned official repository of PakBBQ (*"PakBBQ: A Culturally Adapted Bias Benchmark for Question Answering in Pakistan"*, EMNLP 2025 / arXiv:2508.10186). Contains 8 benchmark categories in English and Urdu, evaluation scripts, and analysis notebooks.
 - [`CITATION.cff`](file:///d:/Research-BanglaBBQ/CITATION.cff): Formal citation metadata for the BanglaBBQ project and ongoing research.
 
 ---
 
-## 7. Authoritative Shared Memory System ([`memory/`](file:///d:/Research-BanglaBBQ/memory))
+## 7. Independent Forensic QA Packages ([`audits/`](file:///d:/Research-BanglaBBQ/audits))
+
+Contains the seven independent forensic QA audit packages (audited JSONLs, adversarial test suites, issue ledgers, change manifests, and reproducibility logs):
+- [`audits/Ethnicity_forensic_QA_complete/`](file:///d:/Research-BanglaBBQ/audits/Ethnicity_forensic_QA_complete): Audited ethnicity benchmark, adversarial suites, change manifests, and source matrices.
+- [`audits/health_status_complete_independent_forensic_QA/`](file:///d:/Research-BanglaBBQ/audits/health_status_complete_independent_forensic_QA): Health status independent forensic QA suite, reports, and evidence matrices.
+- [`audits/marital_status_independent_forensic_QA_bundle/`](file:///d:/Research-BanglaBBQ/audits/marital_status_independent_forensic_QA_bundle): Marital status audited datasets, adversarial paired suite, and issue ledger.
+- [`audits/occupational_background_forensic_QA_complete/`](file:///d:/Research-BanglaBBQ/audits/occupational_background_forensic_QA_complete): Occupational background audited datasets, fault injection logs, and reports.
+- [`audits/physical_appearance_independent_forensic_QA_bundle/`](file:///d:/Research-BanglaBBQ/audits/physical_appearance_independent_forensic_QA_bundle): Physical appearance audited datasets, quantitative results, and validators.
+- [`audits/Regional_independent_forensic_QA_bundle/`](file:///d:/Research-BanglaBBQ/audits/Regional_independent_forensic_QA_bundle): Regional affiliation audited datasets, candidate screening, and QA reports.
+- [`audits/banglabbq_social_status_forensic_QA_complete/`](file:///d:/Research-BanglaBBQ/audits/banglabbq_social_status_forensic_QA_complete): Social status audited datasets, adversarial testing, and forensic reports.
+
+---
+
+## 8. Candidate Benchmark Bundles ([`candidate_bundles/`](file:///d:/Research-BanglaBBQ/candidate_bundles))
+
+Pre-audit generation packages, raw candidate JSONLs, and generator scripts for 7 categories:
+- [`candidate_bundles/banglabbq_ethnicity_bundle/`](file:///d:/Research-BanglaBBQ/candidate_bundles/banglabbq_ethnicity_bundle)
+- [`candidate_bundles/banglabbq_health_status_complete/`](file:///d:/Research-BanglaBBQ/candidate_bundles/banglabbq_health_status_complete)
+- [`candidate_bundles/banglabbq_marital_status_readonly_research_package/`](file:///d:/Research-BanglaBBQ/candidate_bundles/banglabbq_marital_status_readonly_research_package)
+- [`candidate_bundles/banglabbq_occupational_background_readonly_bundle/`](file:///d:/Research-BanglaBBQ/candidate_bundles/banglabbq_occupational_background_readonly_bundle)
+- [`candidate_bundles/banglabbq_physical_appearance_readonly_research_bundle/`](file:///d:/Research-BanglaBBQ/candidate_bundles/banglabbq_physical_appearance_readonly_research_bundle)
+- [`candidate_bundles/banglabbq_regional_research_bundle/`](file:///d:/Research-BanglaBBQ/candidate_bundles/banglabbq_regional_research_bundle)
+- [`candidate_bundles/banglabbq_social_status_complete/`](file:///d:/Research-BanglaBBQ/candidate_bundles/banglabbq_social_status_complete)
+
+---
+
+## 9. Authoritative Shared Memory System ([`memory/`](file:///d:/Research-BanglaBBQ/memory))
 
 - [`memory/README.md`](file:///d:/Research-BanglaBBQ/memory/README.md): **Mandatory Entry Point**. Research mission declaration, roles of Google Sheets / GitHub / memory, synchronization protocol, and mandatory research logging rules.
 - [`memory/purpose.md`](file:///d:/Research-BanglaBBQ/memory/purpose.md): **Official Research Mission**. Historical thesis context, defects of legacy baseline, BBQ & PakBBQ methodological roles, 9 bias categories, bilingual standards, and publication roadmap.
@@ -246,7 +291,7 @@ Contains specialized scripts documented in [`scripts/README.md`](file:///d:/Rese
 
 ---
 
-## 8. Permanent Research Logs ([`research_logs/`](file:///d:/Research-BanglaBBQ/research_logs))
+## 10. Permanent Research Logs ([`research_logs/`](file:///d:/Research-BanglaBBQ/research_logs))
 
 - [`research_logs/README.md`](file:///d:/Research-BanglaBBQ/research_logs/README.md): Research logging guidelines, relationship to memory, and chronological index of all milestone logs.
 - [`research_logs/2026-10-19_educational_background_independent_qa_repair.md`](file:///d:/Research-BanglaBBQ/research_logs/2026-10-19_educational_background_independent_qa_repair.md): Final independent QA repair across 20 themes (2,880 rows/lang); 12 confirmed orientation 'b' counterfactual defects repaired; high-risk scenarios and evaluator roles reconciled; all 20 theme sources re-audited and qualified; semantic validator upgraded with independent entailment checks; 9/9 passing adversarial regression fixtures; 6,252 sparse cells updated and 86,400 data cells verified 100% bit-for-bit live parity.

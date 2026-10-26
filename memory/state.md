@@ -1,11 +1,12 @@
 # state.md — Current Verified Progress Dashboard
 
-**Last Verified Date**: 2026-10-20  
+**Last Verified Date**: 2026-10-26  
+**Latest Workspace Reorganization**: 2026-10-26: Cleared root directory clutter by moving 14 candidate and forensic QA bundles into dedicated [`audits/`](file:///d:/Research-BanglaBBQ/audits) and [`candidate_bundles/`](file:///d:/Research-BanglaBBQ/candidate_bundles) directories, and moving loose thesis papers and legacy reports into [`docs/papers/`](file:///d:/Research-BanglaBBQ/docs/papers) and [`docs/reports/`](file:///d:/Research-BanglaBBQ/docs/reports). Verified 100% invariant tests and 23/23 adversarial fixtures pass locally without regression.
 **Latest Verified Production Repair Main Commit**: `dc1bc0a` (feat(qa): add independent forensic QA complete bundles for 7 categories); working branch is clean and pushed to origin/main.
 **Latest Memory Synchronization**: 2026-10-20, Educational Background Final Semantic QA Repair applied: Resolved all seven ChatGPT audit defects (Q16 V3 unentailed commendation, Q16 V1 tuition-cost confounder, Q15 V3 behavioral confounders, Q20 V1/V2 evaluation competency harmonization, Q16 V2 English-Bengali meaning mismatch / personality leak, Q05/Q09 source matrix evidence tier downgrade to PARTIAL / CONTEXTUAL with strict CI enforcement, and historical QA reporting accuracy correction); verified 23/23 adversarial regression fixtures in `test_education_semantic_fixtures.py` (100% defect rejection rate); synchronized 516 live cells via sparse updates (240 ENG, 276 BEN); verified 100% bit-for-bit live parity across all 86,400 data cells in `BanglaBBQ_ENG_Education` (1544720708) and `BanglaBBQ_BEN_Education` (641606675). Status: Structurally Validated (YES), Live-Synchronized (YES), Independently Semantically Reviewed (YES), Source-Verified (QUALIFIED / CALIBRATED), Linguistically Reviewed (PENDING EXTERNAL HUMAN), Publication-Ready (NO).
 **Latest Worksheet Structure Update**: 2026-10-19: Dedicated production worksheets `BanglaBBQ_ENG_Education` (sheetId: `1544720708`, index 34) and `BanglaBBQ_BEN_Education` (sheetId: `641606675`, index 35) created, formatted (33px header, 96px data, canonical column widths, wrap/clip, frozen row 1, alternating 4-row styling), and populated with 2,881 rows (1 header + 2,880 data).
 **Latest Age Content QA (2026-10-18)**: English Age localized in 868 contexts (eight themes) + Q20 underage-driver legal confound resolved (112 records/lang: 15/17 -> 19/20 in context, answers, and answer_info; 672 cells persisted in Google Sheets). Both canonical JSONL exports (`BanglaBBQ_ENG_New/Age.jsonl` and `BanglaBBQ_BEN_New/Age.jsonl`) synchronized with live sheets; 0/43,800 live-vs-GitHub cell mismatches per language; 0/43,800 pre-Q20 backup vs baseline differences. 10/10 automated invariant checks PASS; Q6 fatigue vs unwillingness nuance and Q15/Q18 source-mechanism gaps formally documented. Independent native colloquial Bengali and external source certification remain pending.
-**Current Milestone**: Educational Background final semantic QA repair resolving all 7 ChatGPT audit defects, criteria harmonization, evidence calibration, and 100% live parity synchronization complete (2,880/lang); All 34 Gender Identity themes verified and live-synchronized (4,696/lang); Age benchmark verified (2,920/lang); Religion and Politics at 2,880/lang; four other legacy categories pending.
+**Current Milestone**: Root organization complete; Educational Background final semantic QA repair complete (2,880/lang); All 34 Gender Identity themes verified and live-synchronized (4,696/lang); Age benchmark verified (2,920/lang); Religion and Politics at 2,880/lang; 7 independent forensic QA complete packages staged in `audits/`.
 
 ---
 
@@ -72,9 +73,16 @@
 | :--- | :--- | :--- | :---: |
 | **Politics** | [`BanglaBBQ_Politics/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Politics) | `banglabbq_politics_english.jsonl`<br/>`banglabbq_politics_bengali.jsonl` | 2,880 ENG<br/>2,880 BEN |
 | **Religion** | [`BanglaBBQ_Religion/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Religion) | `Religion_eng.jsonl`<br/>`Religion_bng.jsonl` | 2,880 ENG<br/>2,880 BEN |
-| **Age** | [`BanglaBBQ_BEN_New/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_BEN_New)<br/>Root | `Age.jsonl`<br/>`PakBBQ_Age_English.csv` | 2,920 BEN<br/>2,920 ENG |
+| **Age** | [`BanglaBBQ_BEN_New/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_BEN_New)<br/>`BanglaBBQ_ENG_New/` | `Age.jsonl`<br/>`PakBBQ_Age_English.csv` | 2,920 BEN<br/>2,920 ENG |
 | **Gender Identity** | [`BanglaBBQ_Gender/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Gender) | `Gender_identity_eng.jsonl`<br/>`Gender_identity_bng.jsonl` | 4,696 ENG<br/>4,696 BEN |
 | **Educational Background** | [`BanglaBBQ_EducationalBackground/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_EducationalBackground) | `banglabbq_education_english.jsonl`<br/>`banglabbq_education_bengali.jsonl` | 2,880 ENG<br/>2,880 BEN |
+| **Audited Categories (7)** | [`audits/`](file:///d:/Research-BanglaBBQ/audits)<br/>[`candidate_bundles/`](file:///d:/Research-BanglaBBQ/candidate_bundles) | Audited JSONLs, adversarial test suites, issue ledgers (Ethnicity, Health, Marital, Occupational, Appearance, Regional, Social) | 1,440/category<br/>(10,080 total) |
+
+- [x] Workspace Root Organization & Clutter Reduction (2026-10-26):
+  - Moved 14 candidate and forensic QA bundles out of root into dedicated directories: [`audits/`](file:///d:/Research-BanglaBBQ/audits) (7 forensic QA complete packages) and [`candidate_bundles/`](file:///d:/Research-BanglaBBQ/candidate_bundles) (7 raw generation bundles).
+  - Moved loose thesis academic papers into [`docs/papers/`](file:///d:/Research-BanglaBBQ/docs/papers) and legacy JSON execution reports into [`docs/reports/`](file:///d:/Research-BanglaBBQ/docs/reports).
+  - Maintained 100% CI compatibility: offline benchmark validators for Politics, Religion, Age, Gender, and Educational Background all PASS 100% with zero regressions.
+
 
 - [x] BanglaBBQ Educational Background Complete Repair and 2,880-Record Expansion Applied, 5 Defects Resolved, and 86,400-Cell Live Parity Verified (2026-10-19):
   - Completely repaired and expanded category from 128 legacy rows to exactly 20 distinct themes, 3 scenario variations (V1/V2/V3), and 2,880 records per language (5,760 total), strictly following Politics and Religion methodology.

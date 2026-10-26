@@ -28,44 +28,43 @@ This repository hosts the research assets, dataset manifests, validation tooling
 
 ## 📂 Repository Organization & Directory Guide
 
-To ensure clean distinction between active production datasets, canonical exports, reference baselines, and historical archives:
+To ensure clean distinction between active production benchmarks, independent audits, candidate bundles, and historical archives:
 
 ```
-├── BanglaBBQ_Religion/               # Canonical, clean production exports for Religion (Phase 2)
-│   ├── Religion_eng.jsonl                 # 960-record verified English Religion benchmark
-│   └── Religion_bng.jsonl                 # 960-record verified Bengali Religion benchmark
-├── BanglaBBQ_Politics/               # Canonical, clean production exports for Politics
-│   ├── banglabbq_politics_english.jsonl   # 960-record verified English Politics benchmark
-│   └── banglabbq_politics_bengali.jsonl   # 960-record verified Bengali Politics benchmark
-├── BanglaBBQ_BEN_New/                # Canonical, clean production exports for Age
-│   └── Age.jsonl                          # 2,920-record verified Bengali Age benchmark
-├── Dataset_ BanglaBBQ_Old/           # Historical thesis working tree (preserved for script compatibility)
-│   ├── Politics/                          # Backward-compatible active working directory for Politics
-│   │   ├── banglabbq_politics_english.jsonl
-│   │   └── banglabbq_politics_bengali.jsonl
-│   ├── Age/
-│   ├── Educational background/
-│   ├── Gender_identity/
-│   ├── Marital Status/
-│   ├── Mental Health/
-│   ├── Physical_appearance/
-│   ├── Regional/
-│   └── Religion/
+├── BanglaBBQ_Politics/               # Canonical 2,880-record Political Bias Benchmark (20 themes, V1/V2/V3)
+├── BanglaBBQ_Religion/               # Canonical 2,880-record Religious Bias Benchmark (20 themes, V1/V2/V3)
+├── BanglaBBQ_Gender/                 # Canonical 4,696-record Gender Identity Benchmark (34 themes)
+├── BanglaBBQ_EducationalBackground/  # Canonical 2,880-record Educational Background Benchmark (20 themes, V1/V2/V3)
+├── BanglaBBQ_BEN_New/                # Canonical 2,920-record Bengali Age Benchmark
+├── BanglaBBQ_ENG_New/                # Canonical 2,920-record English Age Benchmark
+├── audits/                           # Independent Forensic QA Complete Packages (7 categories)
+│   ├── Ethnicity_forensic_QA_complete/
+│   ├── health_status_complete_independent_forensic_QA/
+│   ├── marital_status_independent_forensic_QA_bundle/
+│   ├── occupational_background_forensic_QA_complete/
+│   ├── physical_appearance_independent_forensic_QA_bundle/
+│   ├── Regional_independent_forensic_QA_bundle/
+│   └── banglabbq_social_status_forensic_QA_complete/
+├── candidate_bundles/                # Pre-Audit Candidate Benchmark Bundles & Generators (7 categories)
+│   ├── banglabbq_ethnicity_bundle/
+│   ├── banglabbq_health_status_complete/
+│   ├── banglabbq_marital_status_readonly_research_package/
+│   ├── banglabbq_occupational_background_readonly_bundle/
+│   ├── banglabbq_physical_appearance_readonly_research_bundle/
+│   ├── banglabbq_regional_research_bundle/
+│   └── banglabbq_social_status_complete/
+├── docs/                             # Academic Papers & Historical Audit Reports
+│   ├── papers/                       # Monograph (T2510616.pdf) & IEEE Draft (T2510616_IEEE_Paper.pdf)
+│   └── reports/                      # Historical expansion and correction JSON reports
+├── research_logs/                    # 30+ empirical investigation, audit, and semantic repair logs
+├── Dataset_ BanglaBBQ_Old/           # Historical thesis working tree (preserved byte-for-byte)
 ├── PakBBQ_Repo/                      # Upstream PakBBQ baseline repository (EMNLP 2025)
-│   ├── PakBBQ/                            # English and Urdu reference benchmarks
-│   ├── Analysis/                          # Evaluation line plots and summary tables
-│   └── GPT_and_DeepSeek_eval.py/          # LLM evaluation pipelines
-├── scripts/                          # 45+ automated research, migration, and audit scripts
-│   ├── README.md                          # Detailed categorized index with relative markdown links
-│   ├── validate_politics_dataset.py       # Offline invariant test suite (no credentials needed)
-│   ├── repair_politics_dataset.py         # Deterministic data repair engine
-│   └── verify_politics_960_live.py        # Live Google Sheets audit suite
-├── backups/                          # Versioned immutable snapshots (pre-repair & audit backups)
+├── scripts/                          # Automated validation, repair, and live sync engines
+├── backups/                          # Versioned immutable pre-repair snapshots
+├── memory/                           # Agent state dashboard, index, and audit trail
 ├── PakBBQ_Age_English.csv            # 2,920-record English Age source dataset
 ├── requirements.txt                  # Portable Python dependencies
-├── CITATION.cff                      # Academic citation metadata
-├── T2510616.pdf                      # BRAC University undergraduate thesis monograph
-└── T2510616_IEEE_Paper.pdf           # 8-page IEEE conference paper draft
+└── CITATION.cff                      # Academic citation metadata
 ```
 
 ---
