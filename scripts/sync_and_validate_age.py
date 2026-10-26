@@ -48,7 +48,8 @@ def sync_and_validate_age():
     print("✓ Headers verified: 15-column canonical schema")
 
     # Read existing local file to detect diffs
-    with open('BanglaBBQ_BEN_New/Age.jsonl', 'r', encoding='utf-8') as f:
+    ben_path = Path('BanglaBBQ_Age/banglabbq_age_bengali.jsonl') if Path('BanglaBBQ_Age/banglabbq_age_bengali.jsonl').exists() else Path('BanglaBBQ_BEN_New/Age.jsonl')
+    with open(ben_path, 'r', encoding='utf-8') as f:
         existing_local = [json.loads(line) for line in f]
     assert len(existing_local) == 2920, f"Expected 2920 local records, got {len(existing_local)}"
 
@@ -86,10 +87,10 @@ def sync_and_validate_age():
         for qi, cnt in sorted(diff_by_qi.items(), key=lambda x: int(x[0])):
             print(f"  Theme Q{qi}: {cnt} modified records")
         print("Synchronizing differences to local file...")
-        with open('BanglaBBQ_BEN_New/Age.jsonl', 'w', encoding='utf-8') as f:
+        with open(ben_path, 'w', encoding='utf-8') as f:
             for rec in parsed_ben_records:
                 f.write(json.dumps(rec, ensure_ascii=False) + '\n')
-        print("✓ Synchronized updated records to BanglaBBQ_BEN_New/Age.jsonl")
+        print(f"✓ Synchronized updated records to {ben_path}")
     else:
         print("✓ Local JSONL is in 100% bit-for-bit synchronization with live Google Sheets!")
 
@@ -98,7 +99,7 @@ def sync_and_validate_age():
     print("=" * 80)
 
     # Reload from disk to verify disk serialization
-    with open('BanglaBBQ_BEN_New/Age.jsonl', 'r', encoding='utf-8') as f:
+    with open(ben_path, 'r', encoding='utf-8') as f:
         verified_ben = [json.loads(line) for line in f]
 
     # Check 1: Record count

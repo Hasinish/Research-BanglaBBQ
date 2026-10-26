@@ -14,8 +14,12 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "PakBBQ_Repo/PakBBQ/PakBBQ_ENG/Age.jsonl"
-ENGLISH = ROOT / "BanglaBBQ_ENG_New/Age.jsonl"
-BENGALI = ROOT / "BanglaBBQ_BEN_New/Age.jsonl"
+ENGLISH = ROOT / "BanglaBBQ_Age/banglabbq_age_english.jsonl"
+if not ENGLISH.exists() and (ROOT / "BanglaBBQ_ENG_New/Age.jsonl").exists():
+    ENGLISH = ROOT / "BanglaBBQ_ENG_New/Age.jsonl"
+BENGALI = ROOT / "BanglaBBQ_Age/banglabbq_age_bengali.jsonl"
+if not BENGALI.exists() and (ROOT / "BanglaBBQ_BEN_New/Age.jsonl").exists():
+    BENGALI = ROOT / "BanglaBBQ_BEN_New/Age.jsonl"
 FIELDS = (
     "example_id", "question_index", "context_condition", "question_polarity",
     "type", "context", "question", "ans0", "ans1", "ans2", "label",

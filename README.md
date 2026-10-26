@@ -31,12 +31,11 @@ This repository hosts the research assets, dataset manifests, validation tooling
 To ensure clean distinction between active production benchmarks, independent audits, candidate bundles, and historical archives:
 
 ```
+├── BanglaBBQ_Age/                    # Canonical 2,920-record Age Bias Benchmark (English & Bengali)
 ├── BanglaBBQ_Politics/               # Canonical 2,880-record Political Bias Benchmark (20 themes, V1/V2/V3)
 ├── BanglaBBQ_Religion/               # Canonical 2,880-record Religious Bias Benchmark (20 themes, V1/V2/V3)
 ├── BanglaBBQ_Gender/                 # Canonical 4,696-record Gender Identity Benchmark (34 themes)
 ├── BanglaBBQ_EducationalBackground/  # Canonical 2,880-record Educational Background Benchmark (20 themes, V1/V2/V3)
-├── BanglaBBQ_BEN_New/                # Canonical 2,920-record Bengali Age Benchmark
-├── BanglaBBQ_ENG_New/                # Canonical 2,920-record English Age Benchmark
 ├── BanglaBBQ_Ethnicity/              # Canonical 1,440-record Ethnicity Bias Benchmark (FINAL)
 ├── BanglaBBQ_HealthStatus/           # Canonical 1,440-record Health Status Bias Benchmark (FINAL)
 ├── BanglaBBQ_MaritalStatus/          # Canonical 1,440-record Marital Status Bias Benchmark (FINAL)
@@ -69,7 +68,6 @@ To ensure clean distinction between active production benchmarks, independent au
 ├── scripts/                          # Automated validation, repair, and live sync engines
 ├── backups/                          # Versioned immutable pre-repair snapshots
 ├── memory/                           # Agent state dashboard, index, and audit trail
-├── PakBBQ_Age_English.csv            # 2,920-record English Age source dataset
 ├── requirements.txt                  # Portable Python dependencies
 └── CITATION.cff                      # Academic citation metadata
 ```

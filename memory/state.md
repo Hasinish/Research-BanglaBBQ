@@ -73,7 +73,7 @@
 | :--- | :--- | :--- | :---: |
 | **Politics** | [`BanglaBBQ_Politics/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Politics) | `banglabbq_politics_english.jsonl`<br/>`banglabbq_politics_bengali.jsonl` | 2,880 ENG<br/>2,880 BEN |
 | **Religion** | [`BanglaBBQ_Religion/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Religion) | `Religion_eng.jsonl`<br/>`Religion_bng.jsonl` | 2,880 ENG<br/>2,880 BEN |
-| **Age** | [`BanglaBBQ_BEN_New/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_BEN_New)<br/>`BanglaBBQ_ENG_New/` | `Age.jsonl`<br/>`PakBBQ_Age_English.csv` | 2,920 BEN<br/>2,920 ENG |
+| **Age** | [`BanglaBBQ_Age/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Age) | `banglabbq_age_english.jsonl`<br/>`banglabbq_age_bengali.jsonl`<br/>`PakBBQ_Age_English.csv` | 2,920 BEN<br/>2,920 ENG |
 | **Gender Identity** | [`BanglaBBQ_Gender/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Gender) | `Gender_identity_eng.jsonl`<br/>`Gender_identity_bng.jsonl` | 4,696 ENG<br/>4,696 BEN |
 | **Educational Background** | [`BanglaBBQ_EducationalBackground/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_EducationalBackground) | `banglabbq_education_english.jsonl`<br/>`banglabbq_education_bengali.jsonl` | 2,880 ENG<br/>2,880 BEN |
 | **Ethnicity** | [`BanglaBBQ_Ethnicity/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Ethnicity) | `BanglaBBQ_Ethnicity_FINAL_english.jsonl`<br/>`BanglaBBQ_Ethnicity_FINAL_bengali.jsonl` | 1,440 ENG<br/>1,440 BEN |
@@ -84,6 +84,10 @@
 | **Regional Affiliation** | [`BanglaBBQ_Regional/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Regional) | `BanglaBBQ_Regional_FINAL_english.jsonl`<br/>`BanglaBBQ_Regional_FINAL_bengali.jsonl` | 1,440 ENG<br/>1,440 BEN |
 | **Social Status** | [`BanglaBBQ_SocialStatus/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_SocialStatus) | `BanglaBBQ_SocialStatus_FINAL_english.jsonl`<br/>`BanglaBBQ_SocialStatus_FINAL_bengali.jsonl` | 1,440 ENG<br/>1,440 BEN |
 
+- [x] Unified Age Benchmark into BanglaBBQ_Age (2026-10-26):
+  - Eradicated legacy fragmented directories `BanglaBBQ_ENG_New` and `BanglaBBQ_BEN_New`.
+  - Consolidated canonical English (`banglabbq_age_english.jsonl`), Bengali (`banglabbq_age_bengali.jsonl`), and upstream PakBBQ reference CSV into [`BanglaBBQ_Age/`](file:///d:/Research-BanglaBBQ/BanglaBBQ_Age).
+  - Updated validation tooling and verified 100% test pass rate in CI.
 - [x] Canonical Final Category Organization (2026-10-26):
   - Created dedicated top-level canonical directories for all 7 newly exported final benchmarks: `BanglaBBQ_Ethnicity`, `BanglaBBQ_HealthStatus`, `BanglaBBQ_MaritalStatus`, `BanglaBBQ_OccupationalBackground`, `BanglaBBQ_PhysicalAppearance`, `BanglaBBQ_Regional`, `BanglaBBQ_SocialStatus`.
   - Moved all 14 `_FINAL_` JSONL exports into their corresponding canonical directories, establishing full category-level parity with Politics, Religion, Gender, and Education.
