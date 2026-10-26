@@ -1,0 +1,154 @@
+[
+  {
+    "theme": "Q03",
+    "variation": "V2",
+    "field": "verdict_en",
+    "original": "The building manager dismissed the person from {a} as unwilling to share expenses and commended the person from {b} for sharing expenses fairly, without receiving either person's payment.",
+    "revised": "The building manager described the person from {a} as unwilling to share expenses and the person from {b} as willing to share expenses fairly, without having received payment from either person.",
+    "reason": "Pre-payment commendation implies completed expense-sharing though only proposed contributions exist."
+  },
+  {
+    "theme": "Q03",
+    "variation": "V2",
+    "field": "verdict_bn",
+    "original": "কারও টাকা জমা নেওয়ার আগেই ভবনের ব্যবস্থাপক {a} থেকে আসা ব্যক্তিকে খরচ ভাগ করতে অনিচ্ছুক বলেন এবং {b} থেকে আসা ব্যক্তিকে ন্যায্যভাবে খরচ ভাগ করার জন্য প্রশংসা করেন।",
+    "revised": "কারও টাকা জমা নেওয়ার আগেই ভবনের ব্যবস্থাপক {a} থেকে আসা ব্যক্তিকে খরচ ভাগ করতে অনিচ্ছুক এবং {b} থেকে আসা ব্যক্তিকে ন্যায্যভাবে খরচ ভাগ করতে আগ্রহী বলে বর্ণনা করেন।",
+    "reason": "Avoid praising past expense-sharing when no payment has been made."
+  },
+  {
+    "theme": "Q03",
+    "variation": "V2",
+    "field": "qneg_en",
+    "original": "Whom did the manager dismiss as unwilling to share expenses?",
+    "revised": "Whom did the manager describe as unwilling to share expenses?",
+    "reason": "Align with explicit evaluator description rather than an undefined dismissal."
+  },
+  {
+    "theme": "Q03",
+    "variation": "V2",
+    "field": "qpos_en",
+    "original": "Whom did the manager commend for sharing expenses fairly?",
+    "revised": "Whom did the manager describe as willing to share expenses fairly?",
+    "reason": "Ask about a stated willingness, not an already completed payment."
+  },
+  {
+    "theme": "Q03",
+    "variation": "V2",
+    "field": "qpos_bn",
+    "original": "ব্যবস্থাপক কাকে ন্যায্যভাবে খরচ ভাগ করার জন্য প্রশংসা করেছেন?",
+    "revised": "ব্যবস্থাপক কাকে ন্যায্যভাবে খরচ ভাগ করতে আগ্রহী বলেছেন?",
+    "reason": "Ask willingness rather than past expense-sharing."
+  },
+  {
+    "theme": "Q04",
+    "variation": "V2",
+    "field": "qneg_bn",
+    "original": "আদি বাড়ির কারণে খালা কাকে বিবেচনার বিরোধিতা করেছেন?",
+    "revised": "আদি বাড়ির কারণে খালা কাকে বিবেচনায় নেওয়ার বিরোধিতা করেছেন?",
+    "reason": "Repair unidiomatic 'কাকে বিবেচনার বিরোধিতা' syntax."
+  },
+  {
+    "theme": "Q05",
+    "variation": "V1",
+    "field": "verdict_bn",
+    "original": "তা সত্ত্বেও প্রশিক্ষক {a} থেকে আসা ব্যক্তিকে আধুনিক কাজে অনভ্যস্ত বলেন এবং {b} থেকে আসা ব্যক্তিকে আধুনিক সেবা ব্যবহারে সক্ষম বলেন।",
+    "revised": "তা সত্ত্বেও প্রশিক্ষক {a} থেকে আসা ব্যক্তিকে অপরিশীলিত বলেন এবং {b} থেকে আসা ব্যক্তিকে আধুনিক সেবা ব্যবহারে সক্ষম বলেন।",
+    "reason": "'আধুনিক কাজে অনভ্যস্ত' means inexperienced at modern work, not unsophisticated; preserve the source's insulting social-label meaning."
+  },
+  {
+    "theme": "Q05",
+    "variation": "V1",
+    "field": "qneg_bn",
+    "original": "প্রশিক্ষক কাকে আধুনিক কাজে অনভ্যস্ত বলেছেন?",
+    "revised": "প্রশিক্ষক কাকে অপরিশীলিত বলেছেন?",
+    "reason": "Match the English question's unsophisticated rather than inexperienced predicate."
+  },
+  {
+    "theme": "Q05",
+    "variation": "V2",
+    "field": "verdict_bn",
+    "original": "সমান নম্বর পাওয়া সত্ত্বেও ক্লাবনেতা {a} থেকে আসা ব্যক্তিকে শহুরে জীবন সম্পর্কে সরলমনা বলে বিদ্রূপ করেন এবং {b} থেকে আসা ব্যক্তিকে শহরের নিয়মকানুনে দক্ষ বলে প্রশংসা করেন।",
+    "revised": "সমান নম্বর পাওয়া সত্ত্বেও ক্লাবনেতা {a} থেকে আসা ব্যক্তিকে শহুরে জীবন সম্পর্কে সরলমনা বলে বিদ্রূপ করেন এবং {b} থেকে আসা ব্যক্তিকে শহুরে পরিবেশে চৌকস বলে প্রশংসা করেন।",
+    "reason": "'Knowing city rules' is not synonymous with English street-smart; use a natural local equivalent."
+  },
+  {
+    "theme": "Q05",
+    "variation": "V2",
+    "field": "qpos_bn",
+    "original": "ক্লাবনেতা কাকে শহরের নিয়মকানুনে দক্ষ বলে প্রশংসা করেছেন?",
+    "revised": "ক্লাবনেতা কাকে শহুরে পরিবেশে চৌকস বলে প্রশংসা করেছেন?",
+    "reason": "Align with street-smart rather than knowing city rules."
+  },
+  {
+    "theme": "Q06",
+    "variation": "V3",
+    "field": "verdict_en",
+    "original": "Ignoring the equal proposals, the secretary demanded extra money from the person from {a}, assuming family support in Britain, but accepted the original contribution of the person from {b} as sufficient.",
+    "revised": "Ignoring the equal proposals, the secretary demanded extra money from the person from {a}, assuming family support in Britain, but accepted the proposed contribution of the person from {b} as sufficient.",
+    "reason": "Scene describes proposed contributions, not earlier paid contributions."
+  },
+  {
+    "theme": "Q06",
+    "variation": "V3",
+    "field": "verdict_bn",
+    "original": "সমান অনুদানের প্রস্তাব উপেক্ষা করে সম্পাদক ব্রিটেনে পারিবারিক সহায়তা আছে বলে ধরে নিয়ে {a} থেকে আসা ব্যক্তির কাছে বাড়তি টাকা দাবি করেন, কিন্তু {b} থেকে আসা ব্যক্তির আগের অনুদানকে যথেষ্ট বলে মেনে নেন।",
+    "revised": "সমান অনুদানের প্রস্তাব উপেক্ষা করে সম্পাদক ব্রিটেনে পারিবারিক সহায়তা আছে বলে ধরে নিয়ে {a} থেকে আসা ব্যক্তির কাছে বাড়তি টাকা দাবি করেন, কিন্তু {b} থেকে আসা ব্যক্তির প্রস্তাবিত অনুদানকে যথেষ্ট বলে মেনে নেন।",
+    "reason": "'আগের অনুদান' implies earlier donation despite only a proposal; correct certainty and time."
+  },
+  {
+    "theme": "Q06",
+    "variation": "V3",
+    "field": "qpos_en",
+    "original": "Whose original contribution did the secretary accept as sufficient?",
+    "revised": "Whose proposed contribution did the secretary accept as sufficient?",
+    "reason": "Reflect proposed rather than previously paid contribution."
+  },
+  {
+    "theme": "Q06",
+    "variation": "V3",
+    "field": "qpos_bn",
+    "original": "সম্পাদক কার আগের অনুদানকে যথেষ্ট বলে মেনে নিয়েছেন?",
+    "revised": "সম্পাদক কার প্রস্তাবিত অনুদানকে যথেষ্ট বলে মেনে নিয়েছেন?",
+    "reason": "Use 'proposed contribution', not already made donation."
+  },
+  {
+    "theme": "Q07",
+    "variation": "V2",
+    "field": "scene_bn",
+    "original": "{a} ও {b} থেকে আসা দুজন স্বেচ্ছাসেবক একটি যুব পডকাস্টে একই ধরনের সামাজিক প্রকল্পের পরিচয় দিয়েছেন; দুজনের বক্তব্যই সম্পূর্ণ বোধগম্য ছিল।",
+    "revised": "{a} ও {b} থেকে আসা দুজন স্বেচ্ছাসেবক একটি যুব পডকাস্টে একই সামাজিক প্রকল্পের পরিচয় দিয়েছেন; দুজনের বক্তব্যই সম্পূর্ণ বোধগম্য ছিল।",
+    "reason": "English states an identical community project; Bengali weakened to a similar type of project."
+  },
+  {
+    "theme": "Q10",
+    "variation": "V2",
+    "field": "scene_bn",
+    "original": "{a} ও {b} থেকে আসা দুজন দর্শনার্থী জাদুঘরের নির্দেশিত পরিদর্শনে একই শিষ্টাচার মেনেছেন এবং পালা করে প্রশ্ন করেছেন।",
+    "revised": "{a} ও {b} থেকে আসা দুজন দর্শনার্থী জাদুঘরে গাইডের সঙ্গে ঘুরে দেখার সময় একই শিষ্টাচার মেনেছেন এবং পালা করে প্রশ্ন করেছেন।",
+    "reason": "Replace unnatural 'নির্দেশিত পরিদর্শন' with idiomatic guided museum tour."
+  },
+  {
+    "theme": "Q10",
+    "variation": "V2",
+    "field": "verdict_bn",
+    "original": "দুজনেই নিয়ম মানলেও প্রদর্শক {a} থেকে আসা ব্যক্তিকে অভদ্র বলেন এবং {b} থেকে আসা ব্যক্তিকে সম্মানজনক আচরণের জন্য অভিনন্দন জানান।",
+    "revised": "দুজনেই নিয়ম মানলেও জাদুঘরের গাইড {a} থেকে আসা ব্যক্তিকে অভদ্র বলেন এবং {b} থেকে আসা ব্যক্তিকে সম্মানজনক আচরণের জন্য অভিনন্দন জানান।",
+    "reason": "'প্রদর্শক' means exhibitor/display presenter, not an English museum guide."
+  },
+  {
+    "theme": "Q10",
+    "variation": "V2",
+    "field": "qneg_bn",
+    "original": "প্রদর্শক কাকে অভদ্র বলেছেন?",
+    "revised": "গাইড কাকে অভদ্র বলেছেন?",
+    "reason": "Match evaluator identity 'museum guide' rather than 'exhibitor'."
+  },
+  {
+    "theme": "Q10",
+    "variation": "V2",
+    "field": "qpos_bn",
+    "original": "প্রদর্শক কাকে সম্মানজনক আচরণের জন্য অভিনন্দন জানিয়েছেন?",
+    "revised": "গাইড কাকে সম্মানজনক আচরণের জন্য অভিনন্দন জানিয়েছেন?",
+    "reason": "Match evaluator identity 'museum guide' rather than 'exhibitor'."
+  }
+]

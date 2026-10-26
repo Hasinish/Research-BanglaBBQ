@@ -1,0 +1,630 @@
+{
+  "category": "Health_status",
+  "fixtures_executed": 26,
+  "injection_count": 26,
+  "author_flagged": 17,
+  "author_crashed": 2,
+  "author_missed": 7,
+  "independent_automatic_detected": 25,
+  "independent_automatic_false_negatives": [
+    "F21"
+  ],
+  "caveat": "No model-based or human semantic adjudication was run as an automated detector. Source-tier and lexical equivalence require expert checks.",
+  "fixtures": [
+    {
+      "fixture": "F01",
+      "injected": true,
+      "type": "gold",
+      "mutation": "Flip ambiguous gold EN row 0",
+      "expected_detection": "AMBIG_GOLD",
+      "author_validator_status": "FLAGGED",
+      "author_failed_checks": [
+        "en_balanced_label_positions",
+        "en_unknown_ambiguous",
+        "en_bn_ids_and_qa_metadata_parity"
+      ],
+      "author_exceptions": [],
+      "independent_detected": true,
+      "independent_expected_check_detected": true,
+      "independent_diagnostic_tests": [
+        "AMBIG_GOLD",
+        "BILINGUAL_label",
+        "COUNTERFACTUAL_LABEL"
+      ],
+      "independent_false_negative": false,
+      "expert_review_required": false,
+      "expert_note": "",
+      "manual_detection_status": "N/A"
+    },
+    {
+      "fixture": "F02",
+      "injected": true,
+      "type": "gold",
+      "mutation": "Flip disambiguated gold EN row 1 to opposite person",
+      "expected_detection": "BLIND_DISAMBIG_GOLD",
+      "author_validator_status": "FLAGGED",
+      "author_failed_checks": [
+        "en_balanced_label_positions",
+        "en_disambig_entailment_by_design",
+        "en_bn_ids_and_qa_metadata_parity"
+      ],
+      "author_exceptions": [],
+      "independent_detected": true,
+      "independent_expected_check_detected": true,
+      "independent_diagnostic_tests": [
+        "BILINGUAL_label",
+        "BLIND_DISAMBIG_GOLD",
+        "COUNTERFACTUAL_LABEL"
+      ],
+      "independent_false_negative": false,
+      "expert_review_required": false,
+      "expert_note": "",
+      "manual_detection_status": "N/A"
+    },
+    {
+      "fixture": "F03",
+      "injected": true,
+      "type": "gold",
+      "mutation": "Make BN disambiguated label point to Unknown",
+      "expected_detection": "DISAMBIG_GOLD",
+      "author_validator_status": "FLAGGED",
+      "author_failed_checks": [
+        "bn_balanced_label_positions",
+        "bn_disambig_entailment_by_design",
+        "en_bn_ids_and_qa_metadata_parity"
+      ],
+      "author_exceptions": [],
+      "independent_detected": true,
+      "independent_expected_check_detected": true,
+      "independent_diagnostic_tests": [
+        "BILINGUAL_label",
+        "BLIND_DISAMBIG_GOLD",
+        "COUNTERFACTUAL_LABEL",
+        "DISAMBIG_GOLD"
+      ],
+      "independent_false_negative": false,
+      "expert_review_required": false,
+      "expert_note": "",
+      "manual_detection_status": "N/A"
+    },
+    {
+      "fixture": "F04",
+      "injected": true,
+      "type": "answer",
+      "mutation": "Swap first two EN options without updating answer_info",
+      "expected_detection": "ANSWER_INFO_TEXT",
+      "author_validator_status": "FLAGGED",
+      "author_failed_checks": [
+        "en_no_duplicate_complete_qa",
+        "en_answer_info_positions",
+        "en_counterfactual_A_B_health_only"
+      ],
+      "author_exceptions": [],
+      "independent_detected": true,
+      "independent_expected_check_detected": true,
+      "independent_diagnostic_tests": [
+        "ANSWER_INFO_TEXT",
+        "COUNTERFACTUAL_ANSWERS",
+        "COUNTERFACTUAL_HEALTH_MIRROR",
+        "DUPLICATE_COMPLETE_TUPLE"
+      ],
+      "independent_false_negative": false,
+      "expert_review_required": false,
+      "expert_note": "",
+      "manual_detection_status": "N/A"
+    },
+    {
+      "fixture": "F05",
+      "injected": true,
+      "type": "answer",
+      "mutation": "Swap two EN answer_info role tags only",
+      "expected_detection": "COUNTERFACTUAL_ROLE_SWAP",
+      "author_validator_status": "FLAGGED",
+      "author_failed_checks": [
+        "en_all_6_permutations_per_orientation_condition",
+        "en_counterfactual_A_B_health_only",
+        "en_bn_ids_and_qa_metadata_parity"
+      ],
+      "author_exceptions": [],
+      "independent_detected": true,
+      "independent_expected_check_detected": true,
+      "independent_diagnostic_tests": [
+        "BILINGUAL_ROLE",
+        "COUNTERFACTUAL_ROLE_SWAP",
+        "MISSING_PERMUTATION"
+      ],
+      "independent_false_negative": false,
+      "expert_review_required": false,
+      "expert_note": "",
+      "manual_detection_status": "N/A"
+    },
+    {
+      "fixture": "F06",
+      "injected": true,
+      "type": "duplicate",
+      "mutation": "Duplicate entire QA tuple of row 0 into row 4 while retaining IDs",
+      "expected_detection": "DUPLICATE_COMPLETE_TUPLE",
+      "author_validator_status": "FLAGGED",
+      "author_failed_checks": [
+        "en_no_duplicate_complete_qa",
+        "en_answer_info_positions",
+        "en_unknown_ambiguous"
+      ],
+      "author_exceptions": [],
+      "independent_detected": true,
+      "independent_expected_check_detected": true,
+      "independent_diagnostic_tests": [
+        "ANSWER_INFO_TEXT",
+        "COUNTERFACTUAL_ANSWERS",
+        "DUPLICATE_COMPLETE_TUPLE"
+      ],
+      "independent_false_negative": false,
+      "expert_review_required": false,
+      "expert_note": "",
+      "manual_detection_status": "N/A"
+    },
+    {
+      "fixture": "F07",
+      "injected": true,
+      "type": "order",
+      "mutation": "Change disambiguated EN row to ambiguous marker",
+      "expected_detection": "CANONICAL_ORDER",
+      "author_validator_status": "FLAGGED",
+      "author_failed_checks": [
+        "en_balanced_conditions",
+        "en_unknown_ambiguous",
+        "en_all_6_permutations_per_orientation_condition",
+        "en_canonical_four_order",
+        "en_bn_ids_and_qa_metadata_parity"
+      ],
+      "author_exceptions": [],
+      "independent_detected": true,
+      "independent_expected_check_detected": true,
+      "independent_diagnostic_tests": [
+        "AMBIG_GOLD",
+        "BILINGUAL_context_condition",
+        "CANONICAL_ORDER"
+      ],
+      "independent_false_negative": false,
+      "expert_review_required": false,
+      "expert_note": "",
+      "manual_detection_status": "N/A"
+    },
+    {
+      "fixture": "F08",
+      "injected": true,
+      "type": "permutation",
+      "mutation": "Repeat EN first permutation in next 4-row permutation block",
+      "expected_detection": "MISSING_PERMUTATION",
+      "author_validator_status": "FLAGGED",
+      "author_failed_checks": [
+        "en_balanced_label_positions",
+        "en_no_duplicate_complete_qa",
+        "en_all_6_permutations_per_orientation_condition",
+        "en_bn_ids_and_qa_metadata_parity"
+      ],
+      "author_exceptions": [],
+      "independent_detected": true,
+      "independent_expected_check_detected": true,
+      "independent_diagnostic_tests": [
+        "BILINGUAL_ROLE",
+        "BILINGUAL_UNKNOWN_POS",
+        "BILINGUAL_label",
+        "COUNTERFACTUAL_ANSWERS",
+        "COUNTERFACTUAL_LABEL",
+        "COUNTERFACTUAL_ROLE_SWAP",
+        "DUPLICATE_COMPLETE_TUPLE",
+        "MISSING_PERMUTATION"
+      ],
+      "independent_false_negative": false,
+      "expert_review_required": false,
+      "expert_note": "",
+      "manual_detection_status": "N/A"
+    },
+    {
+      "fixture": "F09",
+      "injected": true,
+      "type": "id",
+      "mutation": "Duplicate EN provisional id",
+      "expected_detection": "PROVISIONAL_ID_SEQUENCE",
+      "author_validator_status": "FLAGGED",
+      "author_failed_checks": [
+        "en_seq_provisional_ids",
+        "en_bn_ids_and_qa_metadata_parity"
+      ],
+      "author_exceptions": [],
+      "independent_detected": true,
+      "independent_expected_check_detected": true,
+      "independent_diagnostic_tests": [
+        "BILINGUAL_id",
+        "PROVISIONAL_ID_SEQUENCE"
+      ],
+      "independent_false_negative": false,
+      "expert_review_required": false,
+      "expert_note": "",
+      "manual_detection_status": "N/A"
+    },
+    {
+      "fixture": "F10",
+      "injected": true,
+      "type": "id",
+      "mutation": "Shift BN example_id",
+      "expected_detection": "EXAMPLE_ID_SEQUENCE",
+      "author_validator_status": "FLAGGED",
+      "author_failed_checks": [
+        "bn_seq_example_ids",
+        "en_bn_ids_and_qa_metadata_parity"
+      ],
+      "author_exceptions": [],
+      "independent_detected": true,
+      "independent_expected_check_detected": true,
+      "independent_diagnostic_tests": [
+        "BILINGUAL_example_id",
+        "EXAMPLE_ID_SEQUENCE"
+      ],
+      "independent_false_negative": false,
+      "expert_review_required": false,
+      "expert_note": "",
+      "manual_detection_status": "N/A"
+    },
+    {
+      "fixture": "F11",
+      "injected": true,
+      "type": "metadata",
+      "mutation": "Change version b to a in EN row 24",
+      "expected_detection": "ORIENTATION",
+      "author_validator_status": "FLAGGED",
+      "author_failed_checks": [
+        "en_counterfactual_A_B_health_only",
+        "en_bn_ids_and_qa_metadata_parity"
+      ],
+      "author_exceptions": [],
+      "independent_detected": true,
+      "independent_expected_check_detected": true,
+      "independent_diagnostic_tests": [
+        "BILINGUAL_METADATA",
+        "ORIENTATION"
+      ],
+      "independent_false_negative": false,
+      "expert_review_required": false,
+      "expert_note": "",
+      "manual_detection_status": "N/A"
+    },
+    {
+      "fixture": "F12",
+      "injected": true,
+      "type": "category",
+      "mutation": "Change EN Health_status to Physical_appearance",
+      "expected_detection": "CATEGORY_TOKEN",
+      "author_validator_status": "FLAGGED",
+      "author_failed_checks": [
+        "jsonl_schema_and_types",
+        "en_bn_ids_and_qa_metadata_parity"
+      ],
+      "author_exceptions": [],
+      "independent_detected": true,
+      "independent_expected_check_detected": true,
+      "independent_diagnostic_tests": [
+        "BILINGUAL_category",
+        "CATEGORY_TOKEN"
+      ],
+      "independent_false_negative": false,
+      "expert_review_required": false,
+      "expert_note": "",
+      "manual_detection_status": "N/A"
+    },
+    {
+      "fixture": "F13",
+      "injected": true,
+      "type": "source",
+      "mutation": "Clear source URL from EN metadata",
+      "expected_detection": "SOURCE_URL",
+      "author_validator_status": "FLAGGED",
+      "author_failed_checks": [
+        "en_metadata_conventions",
+        "en_bn_ids_and_qa_metadata_parity"
+      ],
+      "author_exceptions": [],
+      "independent_detected": true,
+      "independent_expected_check_detected": true,
+      "independent_diagnostic_tests": [
+        "BILINGUAL_METADATA",
+        "SOURCE_LINEAGE",
+        "SOURCE_URL"
+      ],
+      "independent_false_negative": false,
+      "expert_review_required": false,
+      "expert_note": "",
+      "manual_detection_status": "N/A"
+    },
+    {
+      "fixture": "F14",
+      "injected": true,
+      "type": "bilingual",
+      "mutation": "Change Bengali answer name to another valid Bengali person in option and answer_info only",
+      "expected_detection": "BILINGUAL_ENTITY_NAME",
+      "author_validator_status": "CRASHED",
+      "author_failed_checks": [],
+      "author_exceptions": [
+        "RuntimeError: generator raised StopIteration"
+      ],
+      "independent_detected": true,
+      "independent_expected_check_detected": false,
+      "independent_diagnostic_tests": [
+        "COUNTERFACTUAL_ANSWERS",
+        "COUNTERFACTUAL_HEALTH_MIRROR",
+        "COUNTERFACTUAL_ROLE_SWAP"
+      ],
+      "independent_false_negative": false,
+      "expert_review_required": true,
+      "expert_note": "Requires cross-language semantic name audit, not role-only structural parity",
+      "manual_detection_status": "NOT_EXECUTED"
+    },
+    {
+      "fixture": "F15",
+      "injected": true,
+      "type": "polarity",
+      "mutation": "Remove BN negative event marker from disambiguated sentence",
+      "expected_detection": "DISAMBIG_NEGATIVE_PREDICATE",
+      "author_validator_status": "MISSED",
+      "author_failed_checks": [],
+      "author_exceptions": [],
+      "independent_detected": true,
+      "independent_expected_check_detected": true,
+      "independent_diagnostic_tests": [
+        "COUNTERFACTUAL_OUTCOME",
+        "DISAMBIG_NEGATIVE_PREDICATE",
+        "POLARITY_CONTEXT_MATCH"
+      ],
+      "independent_false_negative": false,
+      "expert_review_required": false,
+      "expert_note": "",
+      "manual_detection_status": "N/A"
+    },
+    {
+      "fixture": "F16",
+      "injected": true,
+      "type": "semantic",
+      "mutation": "Replace factual EN negative question by unentailed praise question",
+      "expected_detection": "QUESTION_LINEAGE",
+      "author_validator_status": "MISSED",
+      "author_failed_checks": [],
+      "author_exceptions": [],
+      "independent_detected": true,
+      "independent_expected_check_detected": true,
+      "independent_diagnostic_tests": [
+        "COUNTERFACTUAL_QUESTION",
+        "QUESTION_LINEAGE"
+      ],
+      "independent_false_negative": false,
+      "expert_review_required": true,
+      "expert_note": "",
+      "manual_detection_status": "N/A"
+    },
+    {
+      "fixture": "F17",
+      "injected": true,
+      "type": "confound",
+      "mutation": "Add unequal work experience to orientation a, all four conditions of first answer block",
+      "expected_detection": "COUNTERFACTUAL_HEALTH_MIRROR",
+      "author_validator_status": "MISSED",
+      "author_failed_checks": [],
+      "author_exceptions": [],
+      "independent_detected": true,
+      "independent_expected_check_detected": true,
+      "independent_diagnostic_tests": [
+        "COUNTERFACTUAL_CONTEXT_PREFIX",
+        "COUNTERFACTUAL_HEALTH_MIRROR",
+        "DECISIVE_NAMES",
+        "DISAMBIG_NEGATIVE_PREDICATE",
+        "MISSING_DECISIVE_SUFFIX"
+      ],
+      "independent_false_negative": false,
+      "expert_review_required": true,
+      "expert_note": "Independent clinical/semantic audit also identifies unequal work experience",
+      "manual_detection_status": "N/A"
+    },
+    {
+      "fixture": "F18",
+      "injected": true,
+      "type": "ambiguity",
+      "mutation": "Leak decision into BN ambiguous context",
+      "expected_detection": "COUNTERFACTUAL_CONTEXT_PREFIX",
+      "author_validator_status": "MISSED",
+      "author_failed_checks": [],
+      "author_exceptions": [],
+      "independent_detected": true,
+      "independent_expected_check_detected": true,
+      "independent_diagnostic_tests": [
+        "COUNTERFACTUAL_CONTEXT_PREFIX",
+        "COUNTERFACTUAL_HEALTH_MIRROR",
+        "DECISIVE_NAMES",
+        "DISAMBIG_NEGATIVE_PREDICATE",
+        "MISSING_DECISIVE_SUFFIX",
+        "POLARITY_CONTEXT_MATCH"
+      ],
+      "independent_false_negative": false,
+      "expert_review_required": true,
+      "expert_note": "",
+      "manual_detection_status": "N/A"
+    },
+    {
+      "fixture": "F19",
+      "injected": true,
+      "type": "role",
+      "mutation": "Conflate both identities into same health role tag",
+      "expected_detection": "ROLES_DISTINCT",
+      "author_validator_status": "FLAGGED",
+      "author_failed_checks": [
+        "en_answer_info_positions",
+        "en_all_6_permutations_per_orientation_condition",
+        "en_bn_ids_and_qa_metadata_parity"
+      ],
+      "author_exceptions": [],
+      "independent_detected": true,
+      "independent_expected_check_detected": true,
+      "independent_diagnostic_tests": [
+        "BILINGUAL_ROLE",
+        "COUNTERFACTUAL_ROLE_SWAP",
+        "ROLES_DISTINCT"
+      ],
+      "independent_false_negative": false,
+      "expert_review_required": false,
+      "expert_note": "",
+      "manual_detection_status": "N/A"
+    },
+    {
+      "fixture": "F20",
+      "injected": true,
+      "type": "geography",
+      "mutation": "Replace Dhaka with Karachi in EN context",
+      "expected_detection": "FOREIGN_GEO_context",
+      "author_validator_status": "MISSED",
+      "author_failed_checks": [],
+      "author_exceptions": [],
+      "independent_detected": true,
+      "independent_expected_check_detected": true,
+      "independent_diagnostic_tests": [
+        "COUNTERFACTUAL_CONTEXT_PREFIX",
+        "DECISIVE_NAMES",
+        "DISAMBIG_NEGATIVE_PREDICATE",
+        "FOREIGN_GEO_context",
+        "MISSING_DECISIVE_SUFFIX",
+        "POLARITY_CONTEXT_MATCH",
+        "SCENARIO_LINEAGE"
+      ],
+      "independent_false_negative": false,
+      "expert_review_required": false,
+      "expert_note": "",
+      "manual_detection_status": "N/A"
+    },
+    {
+      "fixture": "F21",
+      "injected": true,
+      "type": "source_tier",
+      "mutation": "Replace Q04 tier PARTIAL by DIRECT without new evidence",
+      "expected_detection": "SOURCE_TIER_TAMPER",
+      "author_validator_status": "MISSED",
+      "author_failed_checks": [],
+      "author_exceptions": [],
+      "independent_detected": false,
+      "independent_expected_check_detected": false,
+      "independent_diagnostic_tests": [],
+      "independent_false_negative": true,
+      "expert_review_required": true,
+      "expert_note": "Requires reviewed evidence matrix; generator validator does not evaluate this",
+      "manual_detection_status": "NOT_EXECUTED"
+    },
+    {
+      "fixture": "F22",
+      "injected": true,
+      "type": "variation",
+      "mutation": "Replace V3 Q1 scenario contexts with V1 scenario contexts, both orientations",
+      "expected_detection": "SCENARIO_LINEAGE",
+      "author_validator_status": "MISSED",
+      "author_failed_checks": [],
+      "author_exceptions": [],
+      "independent_detected": true,
+      "independent_expected_check_detected": true,
+      "independent_diagnostic_tests": [
+        "SCENARIO_LINEAGE"
+      ],
+      "independent_false_negative": false,
+      "expert_review_required": false,
+      "expert_note": "",
+      "manual_detection_status": "N/A"
+    },
+    {
+      "fixture": "F23",
+      "injected": true,
+      "type": "bilingual",
+      "mutation": "Flip BN question to ask who was accepted instead of rejected",
+      "expected_detection": "QUESTION_LINEAGE",
+      "author_validator_status": "FLAGGED",
+      "author_failed_checks": [
+        "bn_no_duplicate_complete_qa"
+      ],
+      "author_exceptions": [],
+      "independent_detected": true,
+      "independent_expected_check_detected": true,
+      "independent_diagnostic_tests": [
+        "COUNTERFACTUAL_QUESTION",
+        "DUPLICATE_COMPLETE_TUPLE",
+        "QUESTION_LINEAGE"
+      ],
+      "independent_false_negative": false,
+      "expert_review_required": true,
+      "expert_note": "",
+      "manual_detection_status": "NOT_EXECUTED"
+    },
+    {
+      "fixture": "F24",
+      "injected": true,
+      "type": "schema",
+      "mutation": "Remove one answer key from EN row 0",
+      "expected_detection": "SCHEMA_KEY_ORDER",
+      "author_validator_status": "CRASHED",
+      "author_failed_checks": [],
+      "author_exceptions": [
+        "KeyError: 'ans1'"
+      ],
+      "independent_detected": true,
+      "independent_expected_check_detected": true,
+      "independent_diagnostic_tests": [
+        "ANSWER_INFO_TEXT",
+        "COUNTERFACTUAL_ANSWERS",
+        "EMPTY_TEXT_ans1",
+        "OPTIONS_DISTINCT",
+        "SCHEMA_KEY_ORDER"
+      ],
+      "independent_false_negative": false,
+      "expert_review_required": false,
+      "expert_note": "",
+      "manual_detection_status": "N/A"
+    },
+    {
+      "fixture": "F25",
+      "injected": true,
+      "type": "counterfactual",
+      "mutation": "Assign same BN health context to both orientations",
+      "expected_detection": "COUNTERFACTUAL_HEALTH_MIRROR",
+      "author_validator_status": "FLAGGED",
+      "author_failed_checks": [
+        "bn_no_duplicate_complete_qa"
+      ],
+      "author_exceptions": [],
+      "independent_detected": true,
+      "independent_expected_check_detected": true,
+      "independent_diagnostic_tests": [
+        "COUNTERFACTUAL_HEALTH_MIRROR",
+        "DUPLICATE_COMPLETE_TUPLE"
+      ],
+      "independent_false_negative": false,
+      "expert_review_required": false,
+      "expert_note": "",
+      "manual_detection_status": "N/A"
+    },
+    {
+      "fixture": "F26",
+      "injected": true,
+      "type": "evidence",
+      "mutation": "Replace an EN health citation with unrelated astronomy URL",
+      "expected_detection": "SOURCE_LINEAGE",
+      "author_validator_status": "FLAGGED",
+      "author_failed_checks": [
+        "en_bn_ids_and_qa_metadata_parity"
+      ],
+      "author_exceptions": [],
+      "independent_detected": true,
+      "independent_expected_check_detected": true,
+      "independent_diagnostic_tests": [
+        "BILINGUAL_METADATA",
+        "SOURCE_LINEAGE"
+      ],
+      "independent_false_negative": false,
+      "expert_review_required": false,
+      "expert_note": "",
+      "manual_detection_status": "N/A"
+    }
+  ]
+}

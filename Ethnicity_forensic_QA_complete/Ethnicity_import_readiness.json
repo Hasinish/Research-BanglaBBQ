@@ -1,0 +1,92 @@
+{
+  "category": "Ethnicity",
+  "head_commit": "e186b283fa5b184058e2cb395273e9968a893b20",
+  "original_blob_shas": {
+    "en": "b176c2cea39ba618bb4248f9bf131a49ef72e79e",
+    "bn": "fc2c3811fbd2d3bfd2885cda4110822c4ce930eb"
+  },
+  "snapshot_read_only": true,
+  "original_sha256": {
+    "en": "8c783c202fcacdcaddb841873d68e4a6bba1db72e8867ad41ccaa05ee332f81b",
+    "bn": "db801f8274b804c66457f4a4818d2a7e25ae427ebafe51353aecaa3e7fc8d997"
+  },
+  "candidate_sha256": {
+    "en": "dd91720d462f1ee51091cdf19cfd9edeff2843fe9dc01adfac886d6082ec6489",
+    "bn": "49f4a6a131094f6f7366843111c3c3cb5db44084882bb65b2f5911e7a37a031f"
+  },
+  "category_token": "Ethnicity",
+  "original_nine_category_thesis_contains_ethnicity": false,
+  "proposed_extension_needs_taxonomy_approval": true,
+  "expected_google_sheets_headers": [
+    "example_id",
+    "question_index",
+    "context_condition",
+    "question_polarity",
+    "type",
+    "context",
+    "question",
+    "ans0",
+    "ans1",
+    "ans2",
+    "label",
+    "answer_info",
+    "additional_metadata",
+    "category",
+    "id"
+  ],
+  "jsonl_key_order": [
+    "example_id",
+    "question_index",
+    "question_polarity",
+    "context_condition",
+    "category",
+    "answer_info",
+    "additional_metadata",
+    "context",
+    "question",
+    "ans0",
+    "ans1",
+    "ans2",
+    "label",
+    "type",
+    "id"
+  ],
+  "metadata_worksheet_mapping": "JSON stringify answer_info, additional_metadata; keep scalar id/label numeric and theme index as string",
+  "candidate_local_rows_en": 1440,
+  "candidate_local_rows_bn": 1440,
+  "id_range": [
+    8500000,
+    8501439
+  ],
+  "id_status": "PROVISIONAL_NOT_APPROVED",
+  "live_production_worksheets_scanned": 10,
+  "production_id_cells_read": 32512,
+  "found_reserved_id_collisions": 0,
+  "all_other_new_bundle_ids_reverified_on_latest_main": false,
+  "ethnicity_worksheets_in_master": false,
+  "ethnicity_sheet_live_parity": "NOT_APPLICABLE_NOT_IMPORTED",
+  "current_original_jsonls_sha_both_match_committed": true,
+  "source_csv_committed_vs_mounted_hash_mismatch": true,
+  "crosswalk_csv_committed_vs_mounted_hash_mismatch": true,
+  "jsonl_structural_validation": "PASS_2880_2880_LOCAL_CANDIDATE",
+  "local_generator_reproduces_committed_originals": "YES_BYTE_IDENTICAL",
+  "postfix_blind_semantic_gold_anchors": "240_of_240_context_QUESTION_MATCH",
+  "source_verified_fully_for_exact_claim": "NO_PARTIAL_MECHANISM_MISMATCH",
+  "independent_human_linguistic_review": "NOT_PERFORMED",
+  "ai_linguistic_review": "AI_SELF_REVIEW_240_ANCHORS_WITH_STRUCTURAL_PARITY",
+  "culture_and_land_law_validation": "BLOCKED_Q07; ADDITIONAL_Q06_Q08_Q09_Q10_EVIDENCE_REQUIRED",
+  "potential_formula_injection_strings_found": 0,
+  "safe_to_import": false,
+  "recommendation": "DO_NOT_IMPORT. Expert validation of Q06-Q10 and direct documentary evidence needed; source/generator snapshot reconciliation and independent bilingual human review required.",
+  "remote_services_modified": false,
+  "other_six_bundle_manifest_or_generator_ranges_checked_on_current_main": {
+    "Physical Appearance": "8100000..8101439 (GitHub qa report)",
+    "Social Status": "8200000..8201439 (GitHub expansion manifest)",
+    "Health Status": "8300000..8301439 (GitHub generator + manifest)",
+    "Regional": "8400000..8401439 (GitHub generator + manifest)",
+    "Occupational Background": "8600000..8601439 (GitHub generator + manifest)",
+    "Marital Status": "8700000..8701439 (GitHub QA report + generator)"
+  },
+  "other_six_reserved_ranges_disjoint_from_ethnicity": "YES_BY_COMMITTED_MANIFEST_GENERATOR_DECLARATIONS; NO_COMPLETE_RECORD_SCAN",
+  "other_six_new_bundle_record_ids_independently_exhaustive_scanned": false
+}

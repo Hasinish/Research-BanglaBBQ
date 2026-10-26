@@ -1,0 +1,68 @@
+{
+  "report_date": "2026-10-26",
+  "committed_head": "e186b283fa5b184058e2cb395273e9968a893b20",
+  "committed_jsonl_blob_sha": {
+    "en": "b176c2cea39ba618bb4248f9bf131a49ef72e79e",
+    "bn": "fc2c3811fbd2d3bfd2885cda4110822c4ce930eb"
+  },
+  "original_counts": {
+    "en": 1440,
+    "bn": 1440
+  },
+  "candidate_counts": {
+    "en": 1440,
+    "bn": 1440
+  },
+  "original_sha256": {
+    "en": "8c783c202fcacdcaddb841873d68e4a6bba1db72e8867ad41ccaa05ee332f81b",
+    "bn": "db801f8274b804c66457f4a4818d2a7e25ae427ebafe51353aecaa3e7fc8d997"
+  },
+  "candidate_sha256": {
+    "en": "dd91720d462f1ee51091cdf19cfd9edeff2843fe9dc01adfac886d6082ec6489",
+    "bn": "49f4a6a131094f6f7366843111c3c3cb5db44084882bb65b2f5911e7a37a031f"
+  },
+  "original_old_validator": "PASS_EXIT_0",
+  "original_new_independent_validator": {
+    "passes": false,
+    "row_level_issues": 96,
+    "test_types": {
+      "SPEAKING_TIME_CONTRADICTION": 96
+    }
+  },
+  "candidate_new_validator": {
+    "passes": true,
+    "row_level_issues": 0,
+    "en_checked": 1440,
+    "bn_checked": 1440
+  },
+  "blind_anchor_review_count": 240,
+  "original_faulty_semantic_anchors": 8,
+  "candidate_unchallenged_context_question_anchors": 240,
+  "english_bengali_structure_row_pairs_checked": 1440,
+  "counterfactual_record_pairs_per_language": 720,
+  "source_url_reopened_count": 18,
+  "theme_evidence_tier_counts": {
+    "DIRECT": 4,
+    "PARTIAL/CONTEXTUAL": 6
+  },
+  "adversarial": {
+    "fixture_count": 30,
+    "executed_count": 30,
+    "old_validator_detected": 26,
+    "new_validator_detected_expected": 28,
+    "source_expert_oracle_only": 2,
+    "combined_detected": 30
+  },
+  "change_manifest_rows": 672,
+  "issue_ledger_entries_by_severity": {
+    "P0": 96,
+    "P2": 19,
+    "P1": 18
+  },
+  "issue_ledger_entries_total": 133,
+  "ledger_semantic_P0_records_baseline": 96,
+  "source_or_construct_issue_variant_count": 17,
+  "human_review": "NOT_PERFORMED",
+  "audit_responsibility": "AI_SELF_REVIEW",
+  "remote_writes": "NONE"
+}

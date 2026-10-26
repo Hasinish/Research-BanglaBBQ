@@ -1,0 +1,16 @@
+{
+  "field_changes": 1008,
+  "records_modified": 720,
+  "affected_themes": [
+    "Q02",
+    "Q06",
+    "Q08",
+    "Q09",
+    "Q10"
+  ],
+  "english_byte_identical": true,
+  "bengali_different": true,
+  "english_sha256": "851719a3d90c678f1cee6f61d3b23550c32d38bf202f8eeafcbc98e0d8e72e7c",
+  "bengali_sha256": "f120b4149f877a27efd7d94b72e9de76a6c40496b81de61e1d7300f94523a8c9",
+  "question_index_untouched": true
+}

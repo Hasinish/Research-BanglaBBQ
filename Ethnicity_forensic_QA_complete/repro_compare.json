@@ -1,0 +1,42 @@
+[
+  {
+    "file": "banglabbq_ethnicity_english.jsonl",
+    "byte_equal": true,
+    "original_sha256": "8c783c202fcacdcaddb841873d68e4a6bba1db72e8867ad41ccaa05ee332f81b",
+    "regenerated_sha256": "8c783c202fcacdcaddb841873d68e4a6bba1db72e8867ad41ccaa05ee332f81b",
+    "original_bytes": 1507314,
+    "regenerated_bytes": 1507314
+  },
+  {
+    "file": "banglabbq_ethnicity_bengali.jsonl",
+    "byte_equal": true,
+    "original_sha256": "db801f8274b804c66457f4a4818d2a7e25ae427ebafe51353aecaa3e7fc8d997",
+    "regenerated_sha256": "db801f8274b804c66457f4a4818d2a7e25ae427ebafe51353aecaa3e7fc8d997",
+    "original_bytes": 2796618,
+    "regenerated_bytes": 2796618
+  },
+  {
+    "file": "banglabbq_ethnicity_expansion_manifest.json",
+    "byte_equal": true,
+    "original_sha256": "df63d3c868fdb8824ef1124dae49fb343a23bba50928a4d68cec44465ef7261f",
+    "regenerated_sha256": "df63d3c868fdb8824ef1124dae49fb343a23bba50928a4d68cec44465ef7261f",
+    "original_bytes": 66215,
+    "regenerated_bytes": 66215
+  },
+  {
+    "file": "banglabbq_ethnicity_qa_report.md",
+    "byte_equal": true,
+    "original_sha256": "716a9951cacd84dc63ea14fa3110941d386de8e0afcd76ae865cf94938595aad",
+    "regenerated_sha256": "716a9951cacd84dc63ea14fa3110941d386de8e0afcd76ae865cf94938595aad",
+    "original_bytes": 10917,
+    "regenerated_bytes": 10917
+  },
+  {
+    "file": "banglabbq_ethnicity_source_audit.csv",
+    "byte_equal": true,
+    "original_sha256": "59ae31be909c6b9644d3f69446d7b7f98b24ff7c248c64baae9a2aec960d65fe",
+    "regenerated_sha256": "59ae31be909c6b9644d3f69446d7b7f98b24ff7c248c64baae9a2aec960d65fe",
+    "original_bytes": 10303,
+    "regenerated_bytes": 10303
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-26",
+  "spreadsheet_id": "1xZhhKZoZuSy-ZXAWWdhCpq9QLh705ScErcnBZacmZnY",
+  "mode": "READ_ONLY_VALUES",
+  "scan_column": "O",
+  "scanned_tabs": [
+    "BanglaBBQ_ENG_Age", "BanglaBBQ_BEN_Age",
+    "BanglaBBQ_ENG_Politics", "BanglaBBQ_BEN_Politics",
+    "BanglaBBQ_ENG_Religion", "BanglaBBQ_BEN_Religion",
+    "BanglaBBQ_ENG_Gender", "BanglaBBQ_BEN_Gender",
+    "BanglaBBQ_ENG_Education", "BanglaBBQ_BEN_Education"
+  ],
+  "scanned_data_cells": 32512,
+  "regional_reserved_id_start": 8400000,
+  "regional_reserved_id_end": 8401439,
+  "regional_reserved_range_collisions": 0,
+  "checked_production_tabs": 10,
+  "failed_read_tabs": [],
+  "status": "ZERO_COLLISIONS_IN_SCANNED_LIVE_ACTIVE_TABS_ONLY",
+  "limitations": [
+    "Historical hidden backups were not exhaustively scanned",
+    "Other six new GitHub bundle row IDs were not all streamed independently, though their manifest reserved ranges were inspected",
+    "A final global import coordinator collision gate remains required"
+  ]
+}

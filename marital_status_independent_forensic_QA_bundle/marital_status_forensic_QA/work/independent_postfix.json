@@ -1,0 +1,54 @@
+{
+  "passed_tests": [
+    "ALL_INDEPENDENT_MACHINE_ASSERTIONS"
+  ],
+  "failed_tests": [],
+  "row_failures": [],
+  "checks": {
+    "en_count": 1440,
+    "bn_count": 1440,
+    "en_labels": {
+      "2": 480,
+      "0": 480,
+      "1": 480
+    },
+    "bn_labels": {
+      "2": 480,
+      "0": 480,
+      "1": 480
+    },
+    "en_conditions": {
+      "('ambig', 'neg')": 360,
+      "('disambig', 'neg')": 360,
+      "('ambig', 'nonneg')": 360,
+      "('disambig', 'nonneg')": 360
+    },
+    "source_urls": [
+      "https://doi.org/10.1163/27715086-20250002",
+      "https://www.gov.uk/government/publications/bangladesh-country-policy-and-information-notes/country-policy-and-information-note-women-fearing-gender-based-violence-bangladesh-january-2024-accessible",
+      "https://www.nature.com/articles/s41599-025-05988-1",
+      "https://www.tbsnews.net/features/panorama/hurdles-living-alone-single-young-woman-dhaka-1334591"
+    ],
+    "analyzed_anchors_per_language": 240,
+    "blind_label_inference_checks": 0,
+    "unique_qa_en": 1440,
+    "unique_qa_bn": 1440
+  },
+  "file_sha256": {
+    "en": "52e99118b2bc35a4ffbdcd561d5a24ec08dbf9e21b2a582dfa9586532256d356",
+    "bn": "708154702b7b88269fa86726185997a4d66982fd9cf12b3fdd69e76396339c21"
+  },
+  "coverage": {
+    "all_records_per_language": [
+      1440,
+      1440
+    ],
+    "factorial_blocks_per_language": 30,
+    "semantic_bilingual_anchors": 240,
+    "blind_interpretations_per_language": 1440,
+    "bilingual_pairs": 1440
+  },
+  "notes": [
+    "Blind event-clause ordering is an auditable expert-checked corpus assumption (negative clause then positive). The independent script cannot certify subtle meaning, source relevance, or cultural representativeness."
+  ]
+}

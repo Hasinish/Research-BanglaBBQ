@@ -1,0 +1,20 @@
+{
+  "english": 1440,
+  "bengali": 1440,
+  "themes": 10,
+  "variation_blocks": 30,
+  "pakbbq_adjacent_rows": 1380,
+  "pakbbq_adjacent_indices": 33,
+  "tests_passed": 32,
+  "tests_total": 32,
+  "failed": [],
+  "files": [
+    "banglabbq_health_status_english.jsonl",
+    "banglabbq_health_status_bengali.jsonl",
+    "banglabbq_health_status_source_audit.csv",
+    "banglabbq_health_status_expansion_manifest.json",
+    "banglabbq_health_status_pakbbq_theme_crosswalk.csv",
+    "banglabbq_health_status_qa_report.md",
+    "banglabbq_health_status_generate.py"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "metrics": {
+    "english": {
+      "n": 1440,
+      "condition_by_polarity": {
+        "('ambig', 'neg')": 360,
+        "('disambig', 'neg')": 360,
+        "('ambig', 'nonneg')": 360,
+        "('disambig', 'nonneg')": 360
+      },
+      "labels": {
+        "2": 480,
+        "0": 480,
+        "1": 480
+      },
+      "ids_unique": 1440,
+      "complete_qa_unique": 1440
+    },
+    "bengali": {
+      "n": 1440,
+      "condition_by_polarity": {
+        "('ambig', 'neg')": 360,
+        "('disambig', 'neg')": 360,
+        "('ambig', 'nonneg')": 360,
+        "('disambig', 'nonneg')": 360
+      },
+      "labels": {
+        "2": 480,
+        "0": 480,
+        "1": 480
+      },
+      "ids_unique": 1440,
+      "complete_qa_unique": 1440
+    },
+    "name_position_shortcut": {
+      "first_mentioned_adverse_in_disambig_anchors": 60,
+      "second_mentioned_favorable_in_disambig_anchors": 60,
+      "n": 60
+    },
+    "failed_checks_count": 0
+  },
+  "errors_count": 0,
+  "errors": [],
+  "sha256": {
+    "english": "577f693d051d4e4cd9cc4e39f80cea8c6d423867c8fce46914ddc82d0e83fe32",
+    "bengali": "7e595d4d059b70c8f2032c8ceacf74e2496fc68f0dcb9ec9ab6006e7e3a166a1"
+  }
+}

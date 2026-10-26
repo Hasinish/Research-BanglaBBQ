@@ -1,0 +1,25 @@
+HS-P01 english 4 2 context hits 48
+HS-P02 english 9 2 context hits 48
+HS-P03 english 6 3 context hits 48
+HS-P03 english 6 3 context hits 24
+HS-P03 english 6 3 question hits 48
+HS-P04 english 3 3 context hits 48
+HS-P04 english 3 3 question hits 48
+HS-P04 bengali 3 3 context hits 48
+HS-P04 bengali 3 3 question hits 48
+HS-P05 english 6 1 context hits 48
+HS-P06 bengali 5 1 context hits 24
+HS-P06 bengali 5 1 context hits 24
+HS-P06 bengali 5 2 context hits 24
+HS-P06 bengali 5 2 context hits 24
+HS-P06 bengali 5 3 context hits 24
+HS-P06 bengali 5 3 context hits 24
+HS-P07 bengali 8 3 context hits 24
+HS-P07 bengali 8 3 question hits 48
+HS-P07 bengali 10 3 context hits 24
+HS-P08 bengali 9 3 context hits 48
+HS-P09 bengali 8 1 context hits 48
+HS-P09 bengali 8 1 context hits 48
+saved /mnt/data/health_status_audited_english.jsonl SHA256 db0d3daea69d2d088e2aeb7a7c624f039c804478ca3af308a7d7f8191ea93eae
+saved /mnt/data/health_status_audited_bengali.jsonl SHA256 0d506d37dc58b50f663df0a054a502c390324d8e4e04cb4dab7d980ce28b3c90
+applied total field-cell edits 840 unique affected rows 600

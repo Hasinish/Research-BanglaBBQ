@@ -1,0 +1,13 @@
+# Actual local reproducibility and execution log (2026-10-26)
+
+Scope: 2,880 committed Marital Status JSONL objects; GitHub and Sheets strictly read-only. Python standard library, no live writes.
+
+1. Current `main` SHA `e186b283fa5b184058e2cb395273e9968a893b20` and seven dataset Git blob/object IDs obtained with read-only connected GitHub and `git hash-object` over local immutable files. Each hash agreed.
+2. `python marital_status_independent_validator.py --english ORIGINAL/banglabbq_marital_status_english.jsonl --bengali ORIGINAL/banglabbq_marital_status_bengali.jsonl --manifest ORIGINAL/banglabbq_marital_status_expansion_manifest.json --out work/independent_initial.json --row-failures work/automated_row_failures.csv` → **96** row failure checks, **3** semantic detector IDs, 0 structural-only defects.
+3. `python marital_status_apply_local_repairs.py --english ORIGINAL/banglabbq_marital_status_english.jsonl --bengali ORIGINAL/banglabbq_marital_status_bengali.jsonl --outdir .` → **1320** local field updates; source ID/category/gold labels unchanged.
+4. `python marital_status_independent_validator.py --english banglabbq_marital_status_audited_english.jsonl --bengali banglabbq_marital_status_audited_bengali.jsonl --manifest ORIGINAL/banglabbq_marital_status_expansion_manifest.json --out work/independent_postfix.json --row-failures work/automated_row_failures_postfix.csv` → **0** row failures.
+5. `python marital_status_adversarial_suite.py` → 31 actual baseline isolated mutations. `python marital_status_adversarial_paired_suite.py` → 8 further paired/balanced mutations; **39/39** identified by machine and/or specific AI expert probes, **8** independent machine false negatives; `marital_status_adversarial_results.json` records all per-fixture evidence.
+6. `python work/verify_reproducibility.py` → original generator return code 0, original EN/BN byte identity TRUE, patch script return code 0, corrected EN/BN byte identity TRUE, change manifest byte identity TRUE, 60/60 manifest row maps correct.
+7. `python work/build_forensic_artifacts.py`, `python work/augment_issue_ledger.py`, `python work/finalize_auxiliary.py`, `python work/write_final_report.py` → 10-theme evidence matrix; 240-paired-anchor review; 5,473 exact issue-ledger entries; import readiness; repo SHA snapshots; reports. No claimed external human review.
+
+Script-generated low-level outputs are also included under `work/` in the bundle. Original mutable-seed files are kept under `ORIGINAL/`; no independent human reviewer participated. The original generator check passes original and patched files even though the independent semantic audit found the three original semantic defect families.

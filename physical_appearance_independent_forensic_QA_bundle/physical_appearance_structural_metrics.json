@@ -1,0 +1,218 @@
+{
+  "ORIGINAL": {
+    "english": {
+      "rows": 1440,
+      "sha256": "851719a3d90c678f1cee6f61d3b23550c32d38bf202f8eeafcbc98e0d8e72e7c",
+      "size_bytes": 1307874,
+      "unique_full_tuples": 1440,
+      "unique_context_strings": 120,
+      "unique_question_strings": 60,
+      "unique_themes": 10,
+      "theme_row_counts": {
+        "1": 144,
+        "2": 144,
+        "3": 144,
+        "4": 144,
+        "5": 144,
+        "6": 144,
+        "7": 144,
+        "8": 144,
+        "9": 144,
+        "10": 144
+      },
+      "condition_polarity": {
+        "ambig+neg": 360,
+        "disambig+neg": 360,
+        "ambig+nonneg": 360,
+        "disambig+nonneg": 360
+      },
+      "answer_position_counts": {
+        "2": 480,
+        "0": 480,
+        "1": 480
+      },
+      "orientations": {
+        "a": 720,
+        "b": 720
+      },
+      "id_min": 8100000,
+      "id_max": 8101439,
+      "all_15_fields": true,
+      "all_nonblank": true
+    },
+    "bengali": {
+      "rows": 1440,
+      "sha256": "48aa63d1eae530ab246ab0ddef5488230d8032e7524643bd533ab1f3db482a0d",
+      "size_bytes": 2167074,
+      "unique_full_tuples": 1440,
+      "unique_context_strings": 120,
+      "unique_question_strings": 60,
+      "unique_themes": 10,
+      "theme_row_counts": {
+        "1": 144,
+        "2": 144,
+        "3": 144,
+        "4": 144,
+        "5": 144,
+        "6": 144,
+        "7": 144,
+        "8": 144,
+        "9": 144,
+        "10": 144
+      },
+      "condition_polarity": {
+        "ambig+neg": 360,
+        "disambig+neg": 360,
+        "ambig+nonneg": 360,
+        "disambig+nonneg": 360
+      },
+      "answer_position_counts": {
+        "2": 480,
+        "0": 480,
+        "1": 480
+      },
+      "orientations": {
+        "a": 720,
+        "b": 720
+      },
+      "id_min": 8100000,
+      "id_max": 8101439,
+      "all_15_fields": true,
+      "all_nonblank": true
+    }
+  },
+  "AUDITED": {
+    "english": {
+      "rows": 1440,
+      "sha256": "851719a3d90c678f1cee6f61d3b23550c32d38bf202f8eeafcbc98e0d8e72e7c",
+      "size_bytes": 1307874,
+      "unique_full_tuples": 1440,
+      "unique_context_strings": 120,
+      "unique_question_strings": 60,
+      "unique_themes": 10,
+      "theme_row_counts": {
+        "1": 144,
+        "2": 144,
+        "3": 144,
+        "4": 144,
+        "5": 144,
+        "6": 144,
+        "7": 144,
+        "8": 144,
+        "9": 144,
+        "10": 144
+      },
+      "condition_polarity": {
+        "ambig+neg": 360,
+        "disambig+neg": 360,
+        "ambig+nonneg": 360,
+        "disambig+nonneg": 360
+      },
+      "answer_position_counts": {
+        "2": 480,
+        "0": 480,
+        "1": 480
+      },
+      "orientations": {
+        "a": 720,
+        "b": 720
+      },
+      "id_min": 8100000,
+      "id_max": 8101439,
+      "all_15_fields": true,
+      "all_nonblank": true
+    },
+    "bengali": {
+      "rows": 1440,
+      "sha256": "f120b4149f877a27efd7d94b72e9de76a6c40496b81de61e1d7300f94523a8c9",
+      "size_bytes": 2154978,
+      "unique_full_tuples": 1440,
+      "unique_context_strings": 120,
+      "unique_question_strings": 60,
+      "unique_themes": 10,
+      "theme_row_counts": {
+        "1": 144,
+        "2": 144,
+        "3": 144,
+        "4": 144,
+        "5": 144,
+        "6": 144,
+        "7": 144,
+        "8": 144,
+        "9": 144,
+        "10": 144
+      },
+      "condition_polarity": {
+        "ambig+neg": 360,
+        "disambig+neg": 360,
+        "ambig+nonneg": 360,
+        "disambig+nonneg": 360
+      },
+      "answer_position_counts": {
+        "2": 480,
+        "0": 480,
+        "1": 480
+      },
+      "orientations": {
+        "a": 720,
+        "b": 720
+      },
+      "id_min": 8100000,
+      "id_max": 8101439,
+      "all_15_fields": true,
+      "all_nonblank": true
+    }
+  },
+  "source_assessment": {
+    "Q01": {
+      "tier": "DIRECT",
+      "decision": "KEEP_WITH_QUALIFICATIONS",
+      "original_tier": "DIRECT"
+    },
+    "Q02": {
+      "tier": "DIRECT",
+      "decision": "REVISE_ROLE_REQUIREMENT",
+      "original_tier": "DIRECT"
+    },
+    "Q03": {
+      "tier": "PARTIAL/CONTEXTUAL",
+      "decision": "BLOCK_FOR_EXPERT_DECISION",
+      "original_tier": "PARTIAL"
+    },
+    "Q04": {
+      "tier": "PARTIAL/CONTEXTUAL",
+      "decision": "BLOCK_FOR_EXPERT_DECISION",
+      "original_tier": "PARTIAL"
+    },
+    "Q05": {
+      "tier": "PARTIAL/CONTEXTUAL",
+      "decision": "BLOCK_FOR_EXPERT_DECISION",
+      "original_tier": "PARTIAL"
+    },
+    "Q06": {
+      "tier": "PARTIAL/CONTEXTUAL",
+      "decision": "REVISE_AND_REVIEW",
+      "original_tier": "DIRECT"
+    },
+    "Q07": {
+      "tier": "DIRECT",
+      "decision": "KEEP_WITH_POLICY_CAVEAT",
+      "original_tier": "DIRECT"
+    },
+    "Q08": {
+      "tier": "PARTIAL/CONTEXTUAL",
+      "decision": "REVISE_AND_REVIEW",
+      "original_tier": "DIRECT"
+    },
+    "Q09": {
+      "tier": "DIRECT",
+      "decision": "KEEP_AFTER_BILINGUAL_REPAIR",
+      "original_tier": "DIRECT"
+    },
+    "Q10": {
+      "tier": "PARTIAL/CONTEXTUAL",
+      "decision": "BLOCK_FOR_EXPERT_DECISION",
+      "original_tier": "PARTIAL"
+    }
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "audit_date": "2026-10-26",
+  "current_main_commit": "e186b283fa5b184058e2cb395273e9968a893b20",
+  "category": "Health_status",
+  "files": [
+    {
+      "archive_path": "README_FIRST.md",
+      "local_source_file": "health_status_audit_README_FIRST.md",
+      "sha256": "7b535c5b3d0b92ab51f11563238f5e5f60956a8a68e5b6cee0565642ee9cb332",
+      "bytes": 1546
+    },
+    {
+      "archive_path": "report/health_status_independent_forensic_QA_report.md",
+      "local_source_file": "health_status_independent_forensic_QA_report.md",
+      "sha256": "255ed99fb1d56ed3d4ccda0ee29da46b346f660d512747974d8bf001d5b347ee",
+      "bytes": 26718
+    },
+    {
+      "archive_path": "report/health_status_postfix_QA_report.md",
+      "local_source_file": "health_status_postfix_QA_report.md",
+      "sha256": "21644326493ccf5a66c1b2b207df59b193701ed540399021e49539715efb4472",
+      "bytes": 2344
+    },
+    {
+      "archive_path": "report/health_status_reproducibility_runlog.md",
+      "local_source_file": "health_status_reproducibility_runlog.md",
+      "sha256": "0860481bdfc9e81b164fb72b0d485495e179bc0b7aba1ad71b30e9b2fd2b7b97",
+      "bytes": 3839
+    },
+    {
+      "archive_path": "report/health_status_import_readiness.json",
+      "local_source_file": "health_status_import_readiness.json",
+      "sha256": "3244bad01232065f40b0421c1ec45c58e0bc0c3203de8fafa03da643f786a88a",
+      "bytes": 2711
+    },
+    {
+      "archive_path": "report/health_status_reproducibility_log.json",
+      "local_source_file": "health_status_reproducibility_log.json",
+      "sha256": "a30540039318c9316189ecf0843a21a9bc8c732caabd0d0f848eeeea9ffbcc40",
+      "bytes": 6007
+    },
+    {
+      "archive_path": "report/health_status_issue_ledger_summary.json",
+      "local_source_file": "health_status_issue_ledger_summary.json",
+      "sha256": "77f22426e4b8333c42e80a62833c150d47df928a139a2763e718d844e9488cea",
+      "bytes": 406
+    },
+    {
+      "archive_path": "evidence/health_status_issue_ledger.csv",
+      "local_source_file": "health_status_issue_ledger.csv",
+      "sha256": "31510b6e20125d6b5e68b5be8347c10cf9067828e5238f1262315a8c3494845c",
+      "bytes": 3618686
+    },
+    {
+      "archive_path": "evidence/health_status_source_evidence_matrix.csv",
+      "local_source_file": "health_status_source_evidence_matrix.csv",
+      "sha256": "d308682247f31b6e06f554b7e11fef8d7b0f84fabe26da4837159ecc430575b5",
+      "bytes": 10380
+    },
+    {
+      "archive_path": "evidence/health_status_source_url_audit.csv",
+      "local_source_file": "health_status_source_url_audit.csv",
+      "sha256": "f15c8fef24460ab08519c94b6c9b8a75befaa470ddc5bc387187908a18025f3a",
+      "bytes": 5633
+    },
+    {
+      "archive_path": "evidence/health_status_construct_diversity_audit.csv",
+      "local_source_file": "health_status_construct_diversity_audit.csv",
+      "sha256": "1e95792bca54625ea7be96b11a930423b524d5ee51522a41fc6e7f476f67ca55",
+      "bytes": 47936
+    },
+    {
+      "archive_path": "evidence/health_status_semantic_anchor_review.csv",
+      "local_source_file": "health_status_semantic_anchor_review.csv",
+      "sha256": "ff36bedf9c0ad478f4950d0b3f6e2e770d8dcfa1477c9e305906f324a4b8f7a7",
+      "bytes": 550132
+    },
+    {
+      "archive_path": "evidence/health_status_semantic_anchor_review_postfix.csv",
+      "local_source_file": "health_status_semantic_anchor_review_postfix.csv",
+      "sha256": "49ee9b221d3dd4c58155102507376d4b650f3551dbda686cd3a651af2f7ce488",
+      "bytes": 552428
+    },
+    {
+      "archive_path": "evidence/health_status_adversarial_results.json",
+      "local_source_file": "health_status_adversarial_results.json",
+      "sha256": "cd9a8c2c0248a9bbf98febfd5e9a61cf4b49e28a66193b3fc57557834f6f3b4d",
+      "bytes": 20895
+    },
+    {
+      "archive_path": "fixes/health_status_change_manifest.csv",
+      "local_source_file": "health_status_change_manifest.csv",
+      "sha256": "f8bebf254ce3e94c8f59b6058d25c3f58867d2142113dff41e8c78694e4114f6",
+      "bytes": 1039310
+    },
+    {
+      "archive_path": "fixes/health_status_local_repair_summary.json",
+      "local_source_file": "health_status_local_repair_summary.json",
+      "sha256": "11d12c5369d765a5aa66c3cfe9806974d2558ea7f7afd71c27e11281694df6e7",
+      "bytes": 462
+    },
+    {
+      "archive_path": "fixes/health_status_audited_expansion_manifest.json",
+      "local_source_file": "health_status_audited_expansion_manifest.json",
+      "sha256": "670e559b6746eaca2ebc1ca77a5ba042b91dcee471f26911a8327d3627654835",
+      "bytes": 102331
+    },
+    {
+      "archive_path": "fixes/health_status_audited_english.jsonl",
+      "local_source_file": "health_status_audited_english.jsonl",
+      "sha256": "db0d3daea69d2d088e2aeb7a7c624f039c804478ca3af308a7d7f8191ea93eae",
+      "bytes": 1318674
+    },
+    {
+      "archive_path": "fixes/health_status_audited_bengali.jsonl",
+      "local_source_file": "health_status_audited_bengali.jsonl",
+      "sha256": "0d506d37dc58b50f663df0a054a502c390324d8e4e04cb4dab7d980ce28b3c90",
+      "bytes": 2244810
+    },
+    {
+      "archive_path": "original_committed_health_jsonl/english.jsonl",
+      "local_source_file": "banglabbq_health_status_english.jsonl",
+      "sha256": "0411804e7a87dc42a1883fb45d298af56064b007a3f229ae2949c9f1d0c7114c",
+      "bytes": 1317642
+    },
+    {
+      "archive_path": "original_committed_health_jsonl/bengali.jsonl",
+      "local_source_file": "banglabbq_health_status_bengali.jsonl",
+      "sha256": "6514e98100f155c168bc2c1541c78a1ff51682fe9f7ff9bc5f6f984f9fa100a9",
+      "bytes": 2241474
+    },
+    {
+      "archive_path": "original_committed_health_jsonl/expansion_manifest.json",
+      "local_source_file": "banglabbq_health_status_expansion_manifest.json",
+      "sha256": "26f706f7463e85429ffc44966478365999b638fa8c73c6f3e6f786e531f3102b",
+      "bytes": 101404
+    },
+    {
+      "archive_path": "original_committed_health_jsonl/generator.py",
+      "local_source_file": "banglabbq_health_status_generate.py",
+      "sha256": "f036ed518224776fc764c7a7b5fb5022c452643c5c40c2530e9d7b7bb08c594b",
+      "bytes": 100540
+    },
+    {
+      "archive_path": "original_committed_health_jsonl/previous_qa_report.md",
+      "local_source_file": "banglabbq_health_status_qa_report.md",
+      "sha256": "d4d118d6a84da4097ae822b796c953362e10c67f2aa888ccc19f0b279f57d91d",
+      "bytes": 17369
+    },
+    {
+      "archive_path": "local_auxiliary_seed_NOT_GITHUB_BYTE_IDENTICAL/health_source_audit.csv",
+      "local_source_file": "banglabbq_health_status_source_audit.csv",
+      "sha256": "339db4c01f4360bb696d1d8d41b541ff1c5d6c2dd307d5fd0043c89fa00358bf",
+      "bytes": 12095
+    },
+    {
+      "archive_path": "local_auxiliary_seed_NOT_GITHUB_BYTE_IDENTICAL/health_pakbbq_theme_crosswalk.csv",
+      "local_source_file": "banglabbq_health_status_pakbbq_theme_crosswalk.csv",
+      "sha256": "269bc272727735acc31582242d452ab1dbd5bf27ff9c4db0862ed7e1d6f5a2c6",
+      "bytes": 26633
+    },
+    {
+      "archive_path": "tests/original_independent_row_failures.csv",
+      "local_source_file": "health_forensic_work/independent_row_failures.csv",
+      "sha256": "f85349abec8ff88c591b3900a944908d5635ec7f9b871dffb584ad53c2072d7c",
+      "bytes": 114
+    },
+    {
+      "archive_path": "tests/candidate_independent_row_failures.csv",
+      "local_source_file": "health_forensic_work/postfix/independent_row_failures.csv",
+      "sha256": "f85349abec8ff88c591b3900a944908d5635ec7f9b871dffb584ad53c2072d7c",
+      "bytes": 114
+    },
+    {
+      "archive_path": "tests/original_independent_validator_results.json",
+      "local_source_file": "health_forensic_work/independent_validator_results.json",
+      "sha256": "5d1932a9ed3b3523f1040a50d56cb81e5c5bac89067bcdea7d674a7bad50d4c4",
+      "bytes": 6642
+    },
+    {
+      "archive_path": "tests/candidate_independent_validator_results.json",
+      "local_source_file": "health_forensic_work/postfix/independent_validator_results.json",
+      "sha256": "51b63601a2d2cb622ea546ca17bbe23b7c19430d7311c00ba2e86a3d782a4405",
+      "bytes": 6642
+    },
+    {
+      "archive_path": "tests/local_regeneration_stdout.txt",
+      "local_source_file": "health_forensic_work/regenerate_stdout.txt",
+      "sha256": "9789b9ed7093f9fa59652c05c3e2ec72126193b258bb426760fa0c5ac71ed151",
+      "bytes": 562
+    },
+    {
+      "archive_path": "tests/local_repairs_stdout.txt",
+      "local_source_file": "health_forensic_work/local_repairs_stdout.txt",
+      "sha256": "d7fe8ff2b4cdad90c64c77b73f937aade80433173e5498e48377f5077ab00f63",
+      "bytes": 1083
+    },
+    {
+      "archive_path": "tests/repeat_repairs_stdout.txt",
+      "local_source_file": "health_forensic_work/repeat_repairs_stdout.txt",
+      "sha256": "d7fe8ff2b4cdad90c64c77b73f937aade80433173e5498e48377f5077ab00f63",
+      "bytes": 1083
+    },
+    {
+      "archive_path": "scripts/health_status_independent_validator.py",
+      "local_source_file": "health_status_independent_validator.py",
+      "sha256": "5b8f5fe5dc6d3db5a1f07e9a474e3a15bb665083c65433e631dde91d66c84083",
+      "bytes": 20759
+    },
+    {
+      "archive_path": "scripts/health_status_adversarial_suite.py",
+      "local_source_file": "health_status_adversarial_suite.py",
+      "sha256": "ee43b976f6444c1b5d28504772098a0726581a4a48ea0b566e279882c225bb8c",
+      "bytes": 9986
+    },
+    {
+      "archive_path": "scripts/health_status_create_audit_artifacts.py",
+      "local_source_file": "health_status_create_audit_artifacts.py",
+      "sha256": "3155d41f281138e594ef99e86969f6c0b0e91f24fbd17edb4445b6f6aafc1d9f",
+      "bytes": 17549
+    },
+    {
+      "archive_path": "scripts/health_status_apply_local_repairs.py",
+      "local_source_file": "health_status_apply_local_repairs.py",
+      "sha256": "83b9f20965694611b0ea415fe052b366249cd373a532392cae546c170fee5ef3",
+      "bytes": 7944
+    },
+    {
+      "archive_path": "scripts/health_status_patch_manifest.py",
+      "local_source_file": "health_status_patch_manifest.py",
+      "sha256": "89bf12432ede6a830d7589e684591c961412090801646d7908ff06c4089a8a7c",
+      "bytes": 2320
+    },
+    {
+      "archive_path": "scripts/health_status_build_issue_ledger.py",
+      "local_source_file": "health_status_build_issue_ledger.py",
+      "sha256": "d6e6cb46e3c9376e8a7645374b6fd3be30d1c409e69b79cde5ec613f9c119183",
+      "bytes": 8744
+    },
+    {
+      "archive_path": "scripts/health_status_construct_diversity.py",
+      "local_source_file": "health_status_construct_diversity.py",
+      "sha256": "501135a68d0a646176700a1c0d63692e7b605d7e4f8d4a5405a37e9281233f14",
+      "bytes": 2366
+    },
+    {
+      "archive_path": "scripts/health_status_source_url_audit.py",
+      "local_source_file": "health_status_source_url_audit.py",
+      "sha256": "f48c777062ce918a0f4d7993dfd20294347591c6cb923f3381ec82eda59b6dc5",
+      "bytes": 7054
+    },
+    {
+      "archive_path": "scripts/health_status_import_readiness.py",
+      "local_source_file": "health_status_import_readiness.py",
+      "sha256": "7063d45b9c7da423bec3731797a1b86e80cf569a421a64cf0f072e3861428ddf",
+      "bytes": 3684
+    },
+    {
+      "archive_path": "scripts/health_status_build_final_reports.py",
+      "local_source_file": "health_status_build_final_reports.py",
+      "sha256": "6b2002e410a4982382f0dd6b916b121b426d52204c8bc1f2ed9ddad483bc014e",
+      "bytes": 33513
+    },
+    {
+      "archive_path": "scripts/health_status_reproducibility.py",
+      "local_source_file": "health_status_reproducibility.py",
+      "sha256": "38cf141fbb12c9b0e3b2d0d47aa5a54d8174f874447566c281261d55dfad73ce",
+      "bytes": 3421
+    }
+  ],
+  "total_including_readme": 44,
+  "not_import_safe": true,
+  "no_human_review": true
+}

@@ -1,0 +1,28 @@
+{
+  "checks": {
+    "originals_all_7_match_live_git_blobs": true,
+    "generator_byte_reproduction_all_6": true,
+    "crosswalk_35_upstream_indices": true,
+    "crosswalk_5384_upstream_rows": true,
+    "crosswalk_864_upstream_uncited": true,
+    "crosswalk_7_unreferenced_indices": true,
+    "30_unique_scenario_editorial_cases": true,
+    "240_unique_original_bilingual_anchors": true,
+    "240_unique_postfix_bilingual_anchors": true,
+    "anchor_case_notes_all_present": true,
+    "9_attempted_original_citation_urls": true,
+    "10_evidentiary_theme_reviews": true,
+    "317_root_and_field_level_ledger_entries": true,
+    "240_exact_field_changes": true,
+    "33_mutation_fixtures_executed": true,
+    "original_and_corrected_bilingual_independent_structural_pass": true,
+    "corrected_original_generator_19_of_19_pass": true,
+    "no_formula_injection_orig_candidates": true,
+    "patch_script_exact_candidate_reproduction": true,
+    "not_safe_to_import": true
+  },
+  "passed": 20,
+  "total": 20,
+  "final_status": "COMPLETE_STRUCTURAL_AUDIT_WITH_UNRESOLVED_SCIENTIFIC_BLOCKERS",
+  "no_remote_writes": true
+}

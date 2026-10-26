@@ -1,0 +1,97 @@
+test_id,severity,language,line_number,example_id,id,question_index,variation,orientation,context_condition,polarity,expected,observed
+Q01_V3_NO_RENTAL_OFFER_ENTAILMENT,P0,en,964,963,8700963,1,V3,a,disambig,nonneg,explicit offer,reservation only
+Q01_V3_NO_RENTAL_OFFER_ENTAILMENT,P0,en,968,967,8700967,1,V3,a,disambig,nonneg,explicit offer,reservation only
+Q01_V3_NO_RENTAL_OFFER_ENTAILMENT,P0,en,972,971,8700971,1,V3,a,disambig,nonneg,explicit offer,reservation only
+Q01_V3_NO_RENTAL_OFFER_ENTAILMENT,P0,en,976,975,8700975,1,V3,a,disambig,nonneg,explicit offer,reservation only
+Q01_V3_NO_RENTAL_OFFER_ENTAILMENT,P0,en,980,979,8700979,1,V3,a,disambig,nonneg,explicit offer,reservation only
+Q01_V3_NO_RENTAL_OFFER_ENTAILMENT,P0,en,984,983,8700983,1,V3,a,disambig,nonneg,explicit offer,reservation only
+Q01_V3_NO_RENTAL_OFFER_ENTAILMENT,P0,en,988,987,8700987,1,V3,b,disambig,nonneg,explicit offer,reservation only
+Q01_V3_NO_RENTAL_OFFER_ENTAILMENT,P0,en,992,991,8700991,1,V3,b,disambig,nonneg,explicit offer,reservation only
+Q01_V3_NO_RENTAL_OFFER_ENTAILMENT,P0,en,996,995,8700995,1,V3,b,disambig,nonneg,explicit offer,reservation only
+Q01_V3_NO_RENTAL_OFFER_ENTAILMENT,P0,en,1000,999,8700999,1,V3,b,disambig,nonneg,explicit offer,reservation only
+Q01_V3_NO_RENTAL_OFFER_ENTAILMENT,P0,en,1004,1003,8701003,1,V3,b,disambig,nonneg,explicit offer,reservation only
+Q01_V3_NO_RENTAL_OFFER_ENTAILMENT,P0,en,1008,1007,8701007,1,V3,b,disambig,nonneg,explicit offer,reservation only
+Q03_V3_EVALUATOR_MISMATCH,P0,en,1060,1059,8701059,3,V3,a,disambig,nonneg,staff speaker,committee member speaker
+Q03_V3_EVALUATOR_MISMATCH,P0,en,1064,1063,8701063,3,V3,a,disambig,nonneg,staff speaker,committee member speaker
+Q03_V3_EVALUATOR_MISMATCH,P0,en,1068,1067,8701067,3,V3,a,disambig,nonneg,staff speaker,committee member speaker
+Q03_V3_EVALUATOR_MISMATCH,P0,en,1072,1071,8701071,3,V3,a,disambig,nonneg,staff speaker,committee member speaker
+Q03_V3_EVALUATOR_MISMATCH,P0,en,1076,1075,8701075,3,V3,a,disambig,nonneg,staff speaker,committee member speaker
+Q03_V3_EVALUATOR_MISMATCH,P0,en,1080,1079,8701079,3,V3,a,disambig,nonneg,staff speaker,committee member speaker
+Q03_V3_EVALUATOR_MISMATCH,P0,en,1084,1083,8701083,3,V3,b,disambig,nonneg,staff speaker,committee member speaker
+Q03_V3_EVALUATOR_MISMATCH,P0,en,1088,1087,8701087,3,V3,b,disambig,nonneg,staff speaker,committee member speaker
+Q03_V3_EVALUATOR_MISMATCH,P0,en,1092,1091,8701091,3,V3,b,disambig,nonneg,staff speaker,committee member speaker
+Q03_V3_EVALUATOR_MISMATCH,P0,en,1096,1095,8701095,3,V3,b,disambig,nonneg,staff speaker,committee member speaker
+Q03_V3_EVALUATOR_MISMATCH,P0,en,1100,1099,8701099,3,V3,b,disambig,nonneg,staff speaker,committee member speaker
+Q03_V3_EVALUATOR_MISMATCH,P0,en,1104,1103,8701103,3,V3,b,disambig,nonneg,staff speaker,committee member speaker
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,en,1201,1200,8701200,6,V3,a,ambig,neg,during evaluation appointment request,at work without work premise
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,en,1202,1201,8701201,6,V3,a,disambig,neg,during evaluation appointment request,at work without work premise
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,en,1205,1204,8701204,6,V3,a,ambig,neg,during evaluation appointment request,at work without work premise
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,en,1206,1205,8701205,6,V3,a,disambig,neg,during evaluation appointment request,at work without work premise
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,en,1209,1208,8701208,6,V3,a,ambig,neg,during evaluation appointment request,at work without work premise
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,en,1210,1209,8701209,6,V3,a,disambig,neg,during evaluation appointment request,at work without work premise
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,en,1213,1212,8701212,6,V3,a,ambig,neg,during evaluation appointment request,at work without work premise
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,en,1214,1213,8701213,6,V3,a,disambig,neg,during evaluation appointment request,at work without work premise
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,en,1217,1216,8701216,6,V3,a,ambig,neg,during evaluation appointment request,at work without work premise
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,en,1218,1217,8701217,6,V3,a,disambig,neg,during evaluation appointment request,at work without work premise
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,en,1221,1220,8701220,6,V3,a,ambig,neg,during evaluation appointment request,at work without work premise
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,en,1222,1221,8701221,6,V3,a,disambig,neg,during evaluation appointment request,at work without work premise
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,en,1225,1224,8701224,6,V3,b,ambig,neg,during evaluation appointment request,at work without work premise
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,en,1226,1225,8701225,6,V3,b,disambig,neg,during evaluation appointment request,at work without work premise
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,en,1229,1228,8701228,6,V3,b,ambig,neg,during evaluation appointment request,at work without work premise
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,en,1230,1229,8701229,6,V3,b,disambig,neg,during evaluation appointment request,at work without work premise
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,en,1233,1232,8701232,6,V3,b,ambig,neg,during evaluation appointment request,at work without work premise
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,en,1234,1233,8701233,6,V3,b,disambig,neg,during evaluation appointment request,at work without work premise
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,en,1237,1236,8701236,6,V3,b,ambig,neg,during evaluation appointment request,at work without work premise
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,en,1238,1237,8701237,6,V3,b,disambig,neg,during evaluation appointment request,at work without work premise
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,en,1241,1240,8701240,6,V3,b,ambig,neg,during evaluation appointment request,at work without work premise
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,en,1242,1241,8701241,6,V3,b,disambig,neg,during evaluation appointment request,at work without work premise
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,en,1245,1244,8701244,6,V3,b,ambig,neg,during evaluation appointment request,at work without work premise
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,en,1246,1245,8701245,6,V3,b,disambig,neg,during evaluation appointment request,at work without work premise
+Q01_V3_NO_RENTAL_OFFER_ENTAILMENT,P0,bn,964,963,8700963,1,V3,a,disambig,nonneg,ভাড়া দেওয়ার প্রস্তাব,বরাদ্দ only
+Q01_V3_NO_RENTAL_OFFER_ENTAILMENT,P0,bn,968,967,8700967,1,V3,a,disambig,nonneg,ভাড়া দেওয়ার প্রস্তাব,বরাদ্দ only
+Q01_V3_NO_RENTAL_OFFER_ENTAILMENT,P0,bn,972,971,8700971,1,V3,a,disambig,nonneg,ভাড়া দেওয়ার প্রস্তাব,বরাদ্দ only
+Q01_V3_NO_RENTAL_OFFER_ENTAILMENT,P0,bn,976,975,8700975,1,V3,a,disambig,nonneg,ভাড়া দেওয়ার প্রস্তাব,বরাদ্দ only
+Q01_V3_NO_RENTAL_OFFER_ENTAILMENT,P0,bn,980,979,8700979,1,V3,a,disambig,nonneg,ভাড়া দেওয়ার প্রস্তাব,বরাদ্দ only
+Q01_V3_NO_RENTAL_OFFER_ENTAILMENT,P0,bn,984,983,8700983,1,V3,a,disambig,nonneg,ভাড়া দেওয়ার প্রস্তাব,বরাদ্দ only
+Q01_V3_NO_RENTAL_OFFER_ENTAILMENT,P0,bn,988,987,8700987,1,V3,b,disambig,nonneg,ভাড়া দেওয়ার প্রস্তাব,বরাদ্দ only
+Q01_V3_NO_RENTAL_OFFER_ENTAILMENT,P0,bn,992,991,8700991,1,V3,b,disambig,nonneg,ভাড়া দেওয়ার প্রস্তাব,বরাদ্দ only
+Q01_V3_NO_RENTAL_OFFER_ENTAILMENT,P0,bn,996,995,8700995,1,V3,b,disambig,nonneg,ভাড়া দেওয়ার প্রস্তাব,বরাদ্দ only
+Q01_V3_NO_RENTAL_OFFER_ENTAILMENT,P0,bn,1000,999,8700999,1,V3,b,disambig,nonneg,ভাড়া দেওয়ার প্রস্তাব,বরাদ্দ only
+Q01_V3_NO_RENTAL_OFFER_ENTAILMENT,P0,bn,1004,1003,8701003,1,V3,b,disambig,nonneg,ভাড়া দেওয়ার প্রস্তাব,বরাদ্দ only
+Q01_V3_NO_RENTAL_OFFER_ENTAILMENT,P0,bn,1008,1007,8701007,1,V3,b,disambig,nonneg,ভাড়া দেওয়ার প্রস্তাব,বরাদ্দ only
+Q03_V3_EVALUATOR_MISMATCH,P0,bn,1060,1059,8701059,3,V3,a,disambig,nonneg,ভবনের কর্মী,কমিটির সদস্য
+Q03_V3_EVALUATOR_MISMATCH,P0,bn,1064,1063,8701063,3,V3,a,disambig,nonneg,ভবনের কর্মী,কমিটির সদস্য
+Q03_V3_EVALUATOR_MISMATCH,P0,bn,1068,1067,8701067,3,V3,a,disambig,nonneg,ভবনের কর্মী,কমিটির সদস্য
+Q03_V3_EVALUATOR_MISMATCH,P0,bn,1072,1071,8701071,3,V3,a,disambig,nonneg,ভবনের কর্মী,কমিটির সদস্য
+Q03_V3_EVALUATOR_MISMATCH,P0,bn,1076,1075,8701075,3,V3,a,disambig,nonneg,ভবনের কর্মী,কমিটির সদস্য
+Q03_V3_EVALUATOR_MISMATCH,P0,bn,1080,1079,8701079,3,V3,a,disambig,nonneg,ভবনের কর্মী,কমিটির সদস্য
+Q03_V3_EVALUATOR_MISMATCH,P0,bn,1084,1083,8701083,3,V3,b,disambig,nonneg,ভবনের কর্মী,কমিটির সদস্য
+Q03_V3_EVALUATOR_MISMATCH,P0,bn,1088,1087,8701087,3,V3,b,disambig,nonneg,ভবনের কর্মী,কমিটির সদস্য
+Q03_V3_EVALUATOR_MISMATCH,P0,bn,1092,1091,8701091,3,V3,b,disambig,nonneg,ভবনের কর্মী,কমিটির সদস্য
+Q03_V3_EVALUATOR_MISMATCH,P0,bn,1096,1095,8701095,3,V3,b,disambig,nonneg,ভবনের কর্মী,কমিটির সদস্য
+Q03_V3_EVALUATOR_MISMATCH,P0,bn,1100,1099,8701099,3,V3,b,disambig,nonneg,ভবনের কর্মী,কমিটির সদস্য
+Q03_V3_EVALUATOR_MISMATCH,P0,bn,1104,1103,8701103,3,V3,b,disambig,nonneg,ভবনের কর্মী,কমিটির সদস্য
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,bn,1201,1200,8701200,6,V3,a,ambig,neg,মূল্যায়নের সময় চাওয়া,কর্মস্থলে unsupported
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,bn,1202,1201,8701201,6,V3,a,disambig,neg,মূল্যায়নের সময় চাওয়া,কর্মস্থলে unsupported
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,bn,1205,1204,8701204,6,V3,a,ambig,neg,মূল্যায়নের সময় চাওয়া,কর্মস্থলে unsupported
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,bn,1206,1205,8701205,6,V3,a,disambig,neg,মূল্যায়নের সময় চাওয়া,কর্মস্থলে unsupported
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,bn,1209,1208,8701208,6,V3,a,ambig,neg,মূল্যায়নের সময় চাওয়া,কর্মস্থলে unsupported
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,bn,1210,1209,8701209,6,V3,a,disambig,neg,মূল্যায়নের সময় চাওয়া,কর্মস্থলে unsupported
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,bn,1213,1212,8701212,6,V3,a,ambig,neg,মূল্যায়নের সময় চাওয়া,কর্মস্থলে unsupported
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,bn,1214,1213,8701213,6,V3,a,disambig,neg,মূল্যায়নের সময় চাওয়া,কর্মস্থলে unsupported
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,bn,1217,1216,8701216,6,V3,a,ambig,neg,মূল্যায়নের সময় চাওয়া,কর্মস্থলে unsupported
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,bn,1218,1217,8701217,6,V3,a,disambig,neg,মূল্যায়নের সময় চাওয়া,কর্মস্থলে unsupported
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,bn,1221,1220,8701220,6,V3,a,ambig,neg,মূল্যায়নের সময় চাওয়া,কর্মস্থলে unsupported
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,bn,1222,1221,8701221,6,V3,a,disambig,neg,মূল্যায়নের সময় চাওয়া,কর্মস্থলে unsupported
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,bn,1225,1224,8701224,6,V3,b,ambig,neg,মূল্যায়নের সময় চাওয়া,কর্মস্থলে unsupported
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,bn,1226,1225,8701225,6,V3,b,disambig,neg,মূল্যায়নের সময় চাওয়া,কর্মস্থলে unsupported
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,bn,1229,1228,8701228,6,V3,b,ambig,neg,মূল্যায়নের সময় চাওয়া,কর্মস্থলে unsupported
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,bn,1230,1229,8701229,6,V3,b,disambig,neg,মূল্যায়নের সময় চাওয়া,কর্মস্থলে unsupported
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,bn,1233,1232,8701232,6,V3,b,ambig,neg,মূল্যায়নের সময় চাওয়া,কর্মস্থলে unsupported
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,bn,1234,1233,8701233,6,V3,b,disambig,neg,মূল্যায়নের সময় চাওয়া,কর্মস্থলে unsupported
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,bn,1237,1236,8701236,6,V3,b,ambig,neg,মূল্যায়নের সময় চাওয়া,কর্মস্থলে unsupported
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,bn,1238,1237,8701237,6,V3,b,disambig,neg,মূল্যায়নের সময় চাওয়া,কর্মস্থলে unsupported
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,bn,1241,1240,8701240,6,V3,b,ambig,neg,মূল্যায়নের সময় চাওয়া,কর্মস্থলে unsupported
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,bn,1242,1241,8701241,6,V3,b,disambig,neg,মূল্যায়নের সময় চাওয়া,কর্মস্থলে unsupported
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,bn,1245,1244,8701244,6,V3,b,ambig,neg,মূল্যায়নের সময় চাওয়া,কর্মস্থলে unsupported
+Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK,P0,bn,1246,1245,8701245,6,V3,b,disambig,neg,মূল্যায়নের সময় চাওয়া,কর্মস্থলে unsupported

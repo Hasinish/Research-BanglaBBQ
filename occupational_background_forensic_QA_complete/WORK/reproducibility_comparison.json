@@ -1,0 +1,44 @@
+{
+  "banglabbq_occupational_background_qa_report.md": {
+    "exact_bytes_match_local": true,
+    "generated_sha256": "9d568a3167448a6e94e30aa129f928426d78c4e08644e0af7ca2532197fbc672",
+    "local_reference_sha256": "9d568a3167448a6e94e30aa129f928426d78c4e08644e0af7ca2532197fbc672",
+    "generated_size": 9721,
+    "reference_size": 9721
+  },
+  "banglabbq_occupational_background_pakbbq_theme_crosswalk.csv": {
+    "exact_bytes_match_local": true,
+    "generated_sha256": "6f0fe0783ddadb24d7d0e90401ae283a3725640d953695ec3ca09f2870373625",
+    "local_reference_sha256": "6f0fe0783ddadb24d7d0e90401ae283a3725640d953695ec3ca09f2870373625",
+    "generated_size": 9527,
+    "reference_size": 9527
+  },
+  "banglabbq_occupational_background_english.jsonl": {
+    "exact_bytes_match_local": true,
+    "generated_sha256": "fb68c17da34f67ed886e1a854e62eb7d40479667d75cf8a91d4c907d4c602615",
+    "local_reference_sha256": "fb68c17da34f67ed886e1a854e62eb7d40479667d75cf8a91d4c907d4c602615",
+    "generated_size": 1303530,
+    "reference_size": 1303530
+  },
+  "banglabbq_occupational_background_source_audit.csv": {
+    "exact_bytes_match_local": true,
+    "generated_sha256": "37f301092c66eff025b406d5320a209bcf69be4afc4a7265f282b148675c7bc8",
+    "local_reference_sha256": "37f301092c66eff025b406d5320a209bcf69be4afc4a7265f282b148675c7bc8",
+    "generated_size": 9700,
+    "reference_size": 9700
+  },
+  "banglabbq_occupational_background_bengali.jsonl": {
+    "exact_bytes_match_local": true,
+    "generated_sha256": "bb00d7b4c241d984bb609c36fbfe507b9942dc6a0defc49752b2af628ccf68f5",
+    "local_reference_sha256": "bb00d7b4c241d984bb609c36fbfe507b9942dc6a0defc49752b2af628ccf68f5",
+    "generated_size": 2125338,
+    "reference_size": 2125338
+  },
+  "banglabbq_occupational_background_expansion_manifest.json": {
+    "exact_bytes_match_local": true,
+    "generated_sha256": "e0ae832137539dbfeff4fc3e6bf02335bd7338e039e1c83b5041b0449e5cd298",
+    "local_reference_sha256": "e0ae832137539dbfeff4fc3e6bf02335bd7338e039e1c83b5041b0449e5cd298",
+    "generated_size": 61434,
+    "reference_size": 61434
+  }
+}

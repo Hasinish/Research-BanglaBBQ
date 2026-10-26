@@ -1,0 +1,116 @@
+{
+  "category": "Occupational_background",
+  "repository": "Hasinish/Research-BanglaBBQ",
+  "latest_main_commit_sha": "e186b283fa5b184058e2cb395273e9968a893b20",
+  "bundle_push_commit": "214795f628a34ece8deb23a65c6bf35ac0ce7157",
+  "source_Git_blob_sha": {
+    "english": "5980485457379e3e91d1cd667b9c1b8004aa8e44",
+    "bengali": "d257262a9d2a4dd9df8ed100fe4694e611835145"
+  },
+  "source_paths": {
+    "english": "banglabbq_occupational_background_readonly_bundle/banglabbq_occupational_background_english.jsonl",
+    "bengali": "banglabbq_occupational_background_readonly_bundle/banglabbq_occupational_background_bengali.jsonl"
+  },
+  "audit_execution_date_utc": "2026-10-26",
+  "read_only_remote": true,
+  "originals_immutable": true,
+  "human_review": "NOT_PERFORMED",
+  "ai_editorial": "AI_SELF_REVIEW",
+  "source_audit_status": "PARTIAL / CONTEXTUAL for 7 themes; three direct limited mechanisms",
+  "status": "NOT_IMPORTED",
+  "safe_to_import": false,
+  "import_approval": "DENIED_PENDING_RESEARCH_DECISIONS",
+  "reason": "Local P0 repairs do not resolve first-name answer shortcut (60/60), Q07 ancestry/ethnicity construct confound, Q10 unsupported source mechanism, or missing independent human review.",
+  "headers_in_sheets_A_to_O": [
+    "example_id",
+    "question_index",
+    "context_condition",
+    "question_polarity",
+    "type",
+    "context",
+    "question",
+    "ans0",
+    "ans1",
+    "ans2",
+    "label",
+    "answer_info",
+    "additional_metadata",
+    "category",
+    "id"
+  ],
+  "jsonl_key_order": [
+    "example_id",
+    "question_index",
+    "question_polarity",
+    "context_condition",
+    "category",
+    "answer_info",
+    "additional_metadata",
+    "context",
+    "question",
+    "ans0",
+    "ans1",
+    "ans2",
+    "label",
+    "type",
+    "id"
+  ],
+  "serialized_sheet_columns": [
+    "example_id",
+    "question_index",
+    "context_condition",
+    "question_polarity",
+    "type",
+    "context",
+    "question",
+    "ans0",
+    "ans1",
+    "ans2",
+    "label",
+    "JSON.stringify(answer_info)",
+    "JSON.stringify(additional_metadata)",
+    "category",
+    "id"
+  ],
+  "planned_workbook_url": "https://docs.google.com/spreadsheets/d/1xZhhKZoZuSy-ZXAWWdhCpq9QLh705ScErcnBZacmZnY/edit",
+  "occupational_worksheets_exist": false,
+  "occupational_worksheets_imported": false,
+  "provisional_id_range_inclusive": [
+    8600000,
+    8601439
+  ],
+  "active_production_worksheets_read_only_checked": 10,
+  "active_production_id_cells_checked": 32512,
+  "other_six_new_category_jsonls_read_only_checked": 12,
+  "other_six_new_category_id_cells_checked": 17280,
+  "collisions_in_checked_active_and_new": 0,
+  "hidden_sheet_and_legacy_complete_global_inventory": "NOT_EXHAUSTIVELY_SCANNED",
+  "current_own_category_id_unique": true,
+  "bilingual_record_parity": true,
+  "source_provenance_comparison": "local auxiliary source audit and crosswalk differ from committed byte SHAs; use committed GitHub metadata and independent findings",
+  "formula_injection_scan": "PASS automated negative-leading-cell tests 2880 JSONL records; Sheets import not tested",
+  "json_columns_ready_for_explicit_serialization": true,
+  "postfix_structural_errors": 0,
+  "semantic_review": {
+    "original_paired_anchors_enumerated": 240,
+    "original_anchor_verdicts": {
+      "PASS": 226,
+      "AMBIGUOUS": 4,
+      "UNENTAILED": 10
+    },
+    "postfix_paired_anchors_enumerated": 240,
+    "postfix_anchor_verdicts": {
+      "PASS": 240
+    },
+    "independent_human_review": false
+  },
+  "unresolved_gate_failures": [
+    "P1 systematic adverse-first-person leakage",
+    "P1 Q07 ethnicity/ancestry confounding",
+    "P1 Q10 digital incompetence insufficient direct evidence",
+    "P1 partial-source transfer across several themes",
+    "Independent Bangladeshi Bengali and impacted community review absent",
+    "Project-level schema/taxonomy decision on proposed Occupational_background extension",
+    "Master import/approval not performed"
+  ]
+}

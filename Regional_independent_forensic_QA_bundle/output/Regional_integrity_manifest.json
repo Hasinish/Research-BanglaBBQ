@@ -1,0 +1,173 @@
+{
+  "scope": "Regional only",
+  "audited_main_head": "e186b283fa5b184058e2cb395273e9968a893b20",
+  "remote_writes": false,
+  "human_review": "NOT_PERFORMED",
+  "file_count": 41,
+  "files": {
+    "original/banglabbq_regional_expansion_manifest.json": {
+      "bytes": 53357,
+      "sha256": "fee87582f384489138622a7083c415d8aa18ec918a94328cc5b767f14cd055c7"
+    },
+    "original/banglabbq_regional_source_audit.csv": {
+      "bytes": 10543,
+      "sha256": "14127897a86fcf9a7aa8c51d9ffb757324c922e7f7fc26e69c890bf92a589879"
+    },
+    "original/banglabbq_regional_bengali.jsonl": {
+      "bytes": 2290938,
+      "sha256": "5c97a1919d3e8afaca4603edf473a4a82d1dc0eefb34fb27e011362e838b7d1b"
+    },
+    "original/banglabbq_regional_pakbbq_theme_crosswalk.csv": {
+      "bytes": 11348,
+      "sha256": "c74d82999e311fb61aad1ad9064a709847b9e57ed93ed8f6ec61ca7334af7864"
+    },
+    "original/banglabbq_regional_independent_qa.py": {
+      "bytes": 6185,
+      "sha256": "d96a13e1bac67fec5b97c27de08115e13d69c24d0084c9f7c9ce8815f4df35d0"
+    },
+    "original/banglabbq_regional_generator.py": {
+      "bytes": 84889,
+      "sha256": "5c29a31302d6f6fd16c889f81d43b91e4ba2f65b462fdcab61c70a552c84b89c"
+    },
+    "original/banglabbq_regional_scenario_templates.json": {
+      "bytes": 52739,
+      "sha256": "210159d5beed94636f462e63d001a9be0d8be9e5dd6721e567b8871da55979de"
+    },
+    "original/banglabbq_regional_english.jsonl": {
+      "bytes": 1330338,
+      "sha256": "b6caf58f388b02c1af86e0dae139a0d116ac0ede72645e7bcff19a4491d1f677"
+    },
+    "output/Regional_audit_metrics.json": {
+      "bytes": 2109,
+      "sha256": "cce59b0f136f1e19c732e3622336a00988feed2c4be2ffddd9e4a46f38241e57"
+    },
+    "output/Regional_independent_validator.py": {
+      "bytes": 25741,
+      "sha256": "eb7331f2222d93dd34532ff47a5c9b016b6c8e34ab839e4ee320c12f430b32d8"
+    },
+    "output/Regional_postfix_QA_report.md": {
+      "bytes": 5050,
+      "sha256": "5e624ae612a8778886249791d844ccb8cb934fefc77456386ab2b29ed0361b26"
+    },
+    "output/banglabbq_regional_audited_english.jsonl": {
+      "bytes": 1330746,
+      "sha256": "a526b1c1014a03333cbdcb9c86d48f94ebdf9723d2d92d95492fb72efc2b0bb9"
+    },
+    "output/Regional_START_HERE.md": {
+      "bytes": 1760,
+      "sha256": "3d5e5b038cae885105065521e290e54ad7ea93d8b128fc994c6be3b824165c26"
+    },
+    "output/Regional_change_manifest.csv": {
+      "bytes": 487327,
+      "sha256": "0976b32357127cd44e3abfef4ff3f6cc7d9e486f8ae0b401d3f2b093ebf81376"
+    },
+    "output/Regional_record_level_statistics.json": {
+      "bytes": 5156,
+      "sha256": "221eebf7b697d17cfd17f1388890704dc2cbd0db5966da2ad798728391ce4ec9"
+    },
+    "output/Regional_pakbbq_crosswalk_verification.csv": {
+      "bytes": 4373,
+      "sha256": "01d5bcffbede2c8f433de3f12cfa0e9b636918e4c047eedf52ef76eba30ed81a"
+    },
+    "output/Regional_template_edit_manifest.json": {
+      "bytes": 12536,
+      "sha256": "6e1bc70a73ed703a5851b6ae1656f2272b58f85369168e53f67e2ce2b98c3534"
+    },
+    "output/banglabbq_regional_audited_bengali.jsonl": {
+      "bytes": 2289882,
+      "sha256": "c15f1ca46f63e7541c761b68ecdc96ec3388607c427caa18879985c128218608"
+    },
+    "output/Regional_pakbbq_crosswalk_verification.json": {
+      "bytes": 9809,
+      "sha256": "dbbff3f8b9cb52a940bc2a123169068f774092bc25e11ad75a135b831b7ed3de"
+    },
+    "output/Regional_semantic_anchor_review.csv": {
+      "bytes": 771857,
+      "sha256": "f1be8de55cfcd2268c678ecb663c16c6be7d163ffbb0702a991cfc0ff7d1a29a"
+    },
+    "output/Regional_verify_crosswalk.py": {
+      "bytes": 2331,
+      "sha256": "4057feeea8e26d917f1320fa2723d3a38ef779a46909e5944114536cd5f7e693"
+    },
+    "output/Regional_QA_machine_summary.json": {
+      "bytes": 1142,
+      "sha256": "e0a57d54cf54ba4d49bcb7bdbb41e300de7d0a393a721ce77d60be6a15c08573"
+    },
+    "output/Regional_local_patch.py": {
+      "bytes": 10710,
+      "sha256": "b6e25e6b3f86f841818849be698a739a3965e5c38fe0e738c26d76f294535d4c"
+    },
+    "output/Regional_audited_independent_check_results.json": {
+      "bytes": 189730,
+      "sha256": "e32cbcaa0cdb132a22c704ae12e762d93b3b4e6ee1a7bd28b10f7cc867be85e9"
+    },
+    "output/Regional_issue_ledger.csv": {
+      "bytes": 1510745,
+      "sha256": "4881b14f9b1f627f543d54dd063839f00c9dcd2833a1145901224b895b713b3c"
+    },
+    "output/Regional_source_access_log.csv": {
+      "bytes": 5384,
+      "sha256": "0363192acebaac8da2be55352372634f11d7f3760f9140b8e5af82bfc7295842"
+    },
+    "output/Regional_original_independent_check_results.json": {
+      "bytes": 189742,
+      "sha256": "f65d1d17223364cd97073d465a5457e864e56cedba5cd72caebeeea131a383ae"
+    },
+    "output/Regional_adversarial_results.json": {
+      "bytes": 32166,
+      "sha256": "cab760ecba21d89bcf354d946749274dd9f33683c033db040a357f81506526da"
+    },
+    "output/Regional_build_forensic_artifacts.py": {
+      "bytes": 28220,
+      "sha256": "3f53af4ac500abb8cdea08f73535dd2707b6f917c5fe17fcd9b273c1832f5168"
+    },
+    "output/Regional_adversarial_suite_on_audited.py": {
+      "bytes": 13143,
+      "sha256": "15c2bfe301eb8e54228ff74831d7bc1e902c30d549403664d855380a89ccab4a"
+    },
+    "output/Regional_adversarial_suite.py": {
+      "bytes": 12979,
+      "sha256": "92282347cdcb47d3de7a5041f3532d63e37ff0f60e53090391f3754aa4c3cafe"
+    },
+    "output/Regional_adversarial_results_preimprovement.json": {
+      "bytes": 31978,
+      "sha256": "473207e7d24ec431b4ea1e33408aba6a40075aaabcfbdaad0b0e35de821f1336"
+    },
+    "output/Regional_source_evidence_matrix.csv": {
+      "bytes": 9703,
+      "sha256": "56d16926335261ba263e50bd25240269da1a83a038203489ad815a6e3536e3e8"
+    },
+    "output/Regional_independent_forensic_QA_report.md": {
+      "bytes": 21280,
+      "sha256": "f782b18f1e963f65ae4be3c4fbef6a97223a257e30eb7146d781b4a2bba1585d"
+    },
+    "output/Regional_active_sheet_collision_scan.json": {
+      "bytes": 1008,
+      "sha256": "309bcdba0863456d79d2f43ffd835c298874c88086c4188a79659156d1fbbd66"
+    },
+    "output/Regional_reproducibility_runlog.md": {
+      "bytes": 5197,
+      "sha256": "ba3ae0390d9bb1af220e3ec91f7e1b59c1a3a47b8dc143616f1a4c53df34cb91"
+    },
+    "output/Regional_audited_scenario_templates.json": {
+      "bytes": 52710,
+      "sha256": "8e84a011d46b0e798da36da3e370cfa374a546ed74f601e3aa3bbb0d4e6f8e77"
+    },
+    "output/Regional_adversarial_results_on_corrected.json": {
+      "bytes": 25480,
+      "sha256": "9da07017b102435f19f782155230d181bb2bcc79c969063fcdf3359411b3fb03"
+    },
+    "output/Regional_record_level_stats.py": {
+      "bytes": 3277,
+      "sha256": "8cd5c7d58325afc0dd953330c2b419318aab24f822695a539341b439edb29df4"
+    },
+    "output/Regional_independent_validator_v1.py": {
+      "bytes": 24075,
+      "sha256": "b4847851f6dff3d86bdbe96fabfb83e23970e7477feb96465ffe85908ec09766"
+    },
+    "output/Regional_import_readiness.json": {
+      "bytes": 3684,
+      "sha256": "4603f3d97861023fb2249d9d8842effe0c2393ee8e3d366ca00e267e97cdab84"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "physical_appearance_independent_forensic_QA_report.md": {
+    "sha256": "34a1ceabebbc172a0c08a202451743afd2b956cce021c75bda4dc7990d7bebc6",
+    "bytes": 31018
+  },
+  "physical_appearance_issue_ledger.csv": {
+    "sha256": "b1ad7397109fd00fd2ec75b5ba59877a7f78c2442f00cdd52854464f0e0ca028",
+    "bytes": 1565789
+  },
+  "physical_appearance_source_evidence_matrix.csv": {
+    "sha256": "a07c5293e15efeffa3f4574c63fffcab766343156ec5c79ff2944aa7f39f0b9f",
+    "bytes": 11062
+  },
+  "physical_appearance_semantic_anchor_review.csv": {
+    "sha256": "dba4d0af393d346417c5bc6ee612ee5a701a63b540b729281cf1576569c6c5cc",
+    "bytes": 891427
+  },
+  "physical_appearance_adversarial_results.json": {
+    "sha256": "6e43c8f323b679dedfac2a421d0a772d58c54242cfb951da7371dd3e6013b8af",
+    "bytes": 18129
+  },
+  "physical_appearance_adversarial_postfix_results.json": {
+    "sha256": "0aae54d018ca3cbd5c445c965e647868487af8feebe4be78ab7509d7999d32e5",
+    "bytes": 18128
+  },
+  "physical_appearance_independent_validator.py": {
+    "sha256": "c85e9c010fbdc41271478cff694800fa204c75fd1356a59e7ac3e5fdc82c3c78",
+    "bytes": 27858
+  },
+  "physical_appearance_import_readiness.json": {
+    "sha256": "2fb92a2b9cfc55c326375aadc6f8dd797b0879fee1613917daf50f679bc491da",
+    "bytes": 2982
+  },
+  "physical_appearance_reproducibility_run_log.json": {
+    "sha256": "17fb35f04303496fc072adf653fb1b312904943b5c8ccbe782a454563967c1bb",
+    "bytes": 4827
+  },
+  "banglabbq_physical_appearance_audited_english.jsonl": {
+    "sha256": "851719a3d90c678f1cee6f61d3b23550c32d38bf202f8eeafcbc98e0d8e72e7c",
+    "bytes": 1307874
+  },
+  "banglabbq_physical_appearance_audited_bengali.jsonl": {
+    "sha256": "f120b4149f877a27efd7d94b72e9de76a6c40496b81de61e1d7300f94523a8c9",
+    "bytes": 2154978
+  },
+  "physical_appearance_change_manifest.csv": {
+    "sha256": "9f51af855e6e5e3f3113b85c758b0559c1b6239def2877ad122dfeb38a13808c",
+    "bytes": 1050069
+  },
+  "physical_appearance_postfix_QA_report.md": {
+    "sha256": "7d135411823f1a41498315b009ed7f0d695e982cdfd25d578a211d1e06b8d9f6",
+    "bytes": 1531
+  },
+  "physical_appearance_local_repair.py": {
+    "sha256": "05e854ee55af948282fe031b04ad25ba3a55dcfe3cc554961a7eb59cdaefd46d",
+    "bytes": 4636
+  },
+  "physical_appearance_adversarial_runner.py": {
+    "sha256": "6402533a6235bbb90d3f5e889f978249489d3caaf9084ddaf946ff6be9e43fb1",
+    "bytes": 12388
+  },
+  "original_validation.json": {
+    "sha256": "25a3d8e439eaa11cfdda9bced1734ee8558f0ff76ebebdb99832107409b1019e",
+    "bytes": 142699
+  },
+  "postfix_validation.json": {
+    "sha256": "c886561f63f0d884a551a729d87069eb8b39471b736fa8007586d4c90a79144b",
+    "bytes": 766
+  },
+  "physical_appearance_structural_metrics.json": {
+    "sha256": "954ddf6b4eb1ced825ed7dc7ee07283ea0469e92ad31c8ff7c14895de4367a2a",
+    "bytes": 5090
+  },
+  "physical_appearance_quantitative_results.json": {
+    "sha256": "ae514321e209fec16f225a41e2e4ddab6b977ae9439663843d9516d9fa496220",
+    "bytes": 1570
+  },
+  "generator_reproducibility.json": {
+    "sha256": "83ce5709068d6b2e6f4ea25f6f986101e0bd3eda38dbfbcd553b6c4227ab7516",
+    "bytes": 1453
+  },
+  "local_repair_summary.json": {
+    "sha256": "769642c61201a0891da55554e2dc936a27f38785f232b20c5c81311832f6e339",
+    "bytes": 412
+  },
+  "existing_validator_postfix.json": {
+    "sha256": "6557c5d1eb4f5a3232cd076ca84d612d69c458a0450c0108e0e7cf364b3e73cd",
+    "bytes": 45
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "counts": {
+    "english": 1440,
+    "bengali": 1440,
+    "anchors": 240
+  },
+  "checked": {
+    "row_schema_English": 1440,
+    "blind_gold_all_rows_English": 1440,
+    "permutation_block_English": 360,
+    "row_schema_Bengali": 1440,
+    "blind_gold_all_rows_Bengali": 1440,
+    "permutation_block_Bengali": 360,
+    "bilingual_pairs": 1440,
+    "semantic_anchor_pairs": 240
+  },
+  "finding_total": 0,
+  "finding_by_rule": {},
+  "sha256_english": "851719a3d90c678f1cee6f61d3b23550c32d38bf202f8eeafcbc98e0d8e72e7c",
+  "sha256_bengali": "f120b4149f877a27efd7d94b72e9de76a6c40496b81de61e1d7300f94523a8c9",
+  "github_blob_english": "f765b998a90b0abb02526615f01fe023d0e39242",
+  "github_blob_bengali": "37ae84734a1cd77292301f222a2407a5c538fe20"
+}

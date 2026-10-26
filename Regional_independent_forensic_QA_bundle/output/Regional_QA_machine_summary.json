@@ -1,0 +1,44 @@
+{
+  "audit_mode": "GITHUB_SHEETS_READ_ONLY_LOCAL_OUTPUTS",
+  "commit": "e186b283fa5b184058e2cb395273e9968a893b20",
+  "record_counts": {
+    "english": 1440,
+    "bengali": 1440
+  },
+  "baseline_independent_issues": 0,
+  "audited_independent_issues": 0,
+  "anchors_baseline": 240,
+  "anchors_audited": 240,
+  "reported_editorial_issue_families": {
+    "P2": 4,
+    "P1": 10,
+    "P3": 2
+  },
+  "issue_entries": 1637,
+  "adversarial_v1": {
+    "fixtures_executed": 28,
+    "independent_specific_detected": 26,
+    "independent_specific_missed": 2
+  },
+  "adversarial_v2": {
+    "fixtures_executed": 28,
+    "independent_specific_detected": 28,
+    "independent_specific_missed": 0,
+    "existing_specific_detected": 21,
+    "existing_generic_checksum_only_detected": 6
+  },
+  "adversarial_audited": {
+    "fixtures_executed": 28,
+    "independent_specific_detected": 28,
+    "independent_specific_missed": 0
+  },
+  "source_tiers": {
+    "DIRECT": 6,
+    "PARTIAL": 4
+  },
+  "source_urls_opened": 9,
+  "regional_active_ids_scanned": 32512,
+  "regional_active_id_collisions": 0,
+  "native_human_review": "NOT_PERFORMED",
+  "import_safe": false
+}

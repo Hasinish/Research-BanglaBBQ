@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "stats": {
+    "english": {
+      "records": 1440,
+      "labels": {
+        "0": 480,
+        "1": 480,
+        "2": 480
+      },
+      "context_counts": {
+        "ambig": 720,
+        "disambig": 720
+      },
+      "polarity_counts": {
+        "neg": 720,
+        "nonneg": 720
+      },
+      "orientations": {
+        "a": 720,
+        "b": 720
+      },
+      "variation_orientation_groups": 60,
+      "four_condition_permutation_blocks": 360,
+      "accidental_complete_QA_duplicates": 0
+    },
+    "bengali": {
+      "records": 1440,
+      "labels": {
+        "0": 480,
+        "1": 480,
+        "2": 480
+      },
+      "context_counts": {
+        "ambig": 720,
+        "disambig": 720
+      },
+      "polarity_counts": {
+        "neg": 720,
+        "nonneg": 720
+      },
+      "orientations": {
+        "a": 720,
+        "b": 720
+      },
+      "variation_orientation_groups": 60,
+      "four_condition_permutation_blocks": 360,
+      "accidental_complete_QA_duplicates": 0
+    }
+  },
+  "failures": []
+}

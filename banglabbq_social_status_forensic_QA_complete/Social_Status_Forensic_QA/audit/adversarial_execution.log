@@ -1,0 +1,52 @@
+{
+  "executed_at_utc": "2026-10-26 (local run; wall-clock omitted)",
+  "category": "Social_status",
+  "source": "immutable committed originals",
+  "total_fixtures": 33,
+  "actually_injected": 33,
+  "original_validator_detected": 23,
+  "independent_validator_detected": 28,
+  "neither_validator_detected": 5,
+  "validator_exceptions": 2,
+  "expert_required_not_auto_detected": [
+    "FX26",
+    "FX30",
+    "FX31",
+    "FX32",
+    "FX33"
+  ],
+  "important_caveat": "Expert reviewer expected-detection labels are a specified verification procedure, NOT execution of a human review; no manual expert was hired."
+}
+FX01 ambiguous_gold_flipped old=True new=True exception=False
+FX02 disambiguated_gold_flipped old=True new=True exception=False
+FX03 options_swapped_without_label old=True new=True exception=False
+FX04 answer_role_collision old=True new=True exception=False
+FX05 complete_QA_duplicate old=True new=True exception=False
+FX06 missing_sixth_answer_permutation old=True new=True exception=False
+FX07 broken_four_condition_cycle old=True new=True exception=False
+FX08 duplicate_provisional_id old=True new=True exception=False
+FX09 duplicate_example_id old=True new=True exception=False
+FX10 illegal_category_token old=True new=True exception=False
+FX11 illegal_orientation_version old=True new=True exception=False
+FX12 blank_source_citation old=True new=True exception=False
+FX13 wrong_theme_index old=True new=True exception=False
+FX14 missing_answer_info_pair old=False new=True exception=True
+FX15 answer_text_collision old=True new=True exception=False
+FX16 missing_question_text old=True new=True exception=False
+FX17 invisible_unicode_marker old=True new=True exception=False
+FX18 Pakistani_place_leak old=True new=True exception=False
+FX19 Bengali_name_actor_drift old=True new=True exception=False
+FX20 Bengali_option_reference_mismatch old=False new=True exception=False
+FX21 bool_as_gold_label old=False new=True exception=True
+FX22 question_unentailed_new_predicate old=False new=True exception=False
+FX23 ambiguous_context_reveals_answer old=True new=True exception=False
+FX24 counterfactual_work_experience_confound old=True new=True exception=False
+FX25 role_stereotyped_group_reversal old=True new=True exception=False
+FX26 irrelevant_but_syntactically_valid_citation old=False new=False exception=False
+FX27 variation_3_copied_from_variation_1 old=True new=True exception=False
+FX28 Latin_English_leak_into_Bengali old=True new=True exception=False
+FX29 medical_unfounded_trait_into_social_probe old=False new=True exception=False
+FX30 systematic_unentailed_negative_question old=False new=False exception=False
+FX31 full_block_ambiguous_answer_leak old=False new=False exception=False
+FX32 symmetric_counterfactual_but_biased_qualifications old=False new=False exception=False
+FX33 entire_Bengali_variant_meaning_drift old=False new=False exception=False

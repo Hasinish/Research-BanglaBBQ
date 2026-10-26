@@ -1,0 +1,954 @@
+{
+  "executed_fixture_count": 39,
+  "mutations_executed_on_temporary_copies": true,
+  "original_untouched": true,
+  "baseline_legacy_generator_passed": true,
+  "baseline_independent_validator_passed": true,
+  "false_positives_on_unmutated_baseline": 0,
+  "aggregate_detection": {
+    "legacy_generator_detected": 25,
+    "independent_validator_detected": 31,
+    "AI_expert_probe_detected": 10,
+    "combined_detected": 39
+  },
+  "legacy_false_negatives": 14,
+  "independent_automated_false_negatives": 8,
+  "combined_undetected": 0,
+  "fixtures": [
+    {
+      "fixture_id": "FX01",
+      "mutation": "flip ambiguous gold label away from Unknown",
+      "category": "Marital_status",
+      "inj_target": "candidate local copy",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": true,
+      "legacy_generator_failure_count": 3,
+      "legacy_generator_failure_examples": [
+        "en: labels not 480/480/480",
+        "en:0: ambiguous non-Unknown gold",
+        "0: bilingual mismatch label"
+      ],
+      "independent_validator_detected": true,
+      "independent_validator_failure_count": 4,
+      "independent_validator_codes": [
+        "AMBIG_GOLD",
+        "BILINGUAL_METADATA_label",
+        "BLIND_GOLD_MISMATCH",
+        "LABEL_BALANCE"
+      ],
+      "AI_expert_probe_detected": false,
+      "AI_expert_probe_explanation": "",
+      "combined_detected": true,
+      "validator_loophole": false,
+      "verdict": "INDEPENDENT_CODE_DETECTED"
+    },
+    {
+      "fixture_id": "FX02",
+      "mutation": "flip disambiguated gold to another named entity",
+      "category": "Marital_status",
+      "inj_target": "candidate local copy",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": true,
+      "legacy_generator_failure_count": 2,
+      "legacy_generator_failure_examples": [
+        "en: labels not 480/480/480",
+        "1: bilingual mismatch label"
+      ],
+      "independent_validator_detected": true,
+      "independent_validator_failure_count": 3,
+      "independent_validator_codes": [
+        "BILINGUAL_METADATA_label",
+        "BLIND_GOLD_MISMATCH",
+        "LABEL_BALANCE"
+      ],
+      "AI_expert_probe_detected": false,
+      "AI_expert_probe_explanation": "",
+      "combined_detected": true,
+      "validator_loophole": false,
+      "verdict": "INDEPENDENT_CODE_DETECTED"
+    },
+    {
+      "fixture_id": "FX03",
+      "mutation": "swap answer entries and role mapping without updating label",
+      "category": "Marital_status",
+      "inj_target": "candidate local copy",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": true,
+      "legacy_generator_failure_count": 4,
+      "legacy_generator_failure_examples": [
+        "en: duplicate complete QA tuples",
+        "145: bilingual mismatch answer_info",
+        "145: Bengali answer-name mapping mismatch (ans0)",
+        "145: Bengali answer-name mapping mismatch (ans1)"
+      ],
+      "independent_validator_detected": true,
+      "independent_validator_failure_count": 7,
+      "independent_validator_codes": [
+        "BILINGUAL_METADATA_answer_info",
+        "BILINGUAL_OPTION_MAPPING",
+        "BLIND_GOLD_MISMATCH",
+        "DUPLICATE_FULL_QA",
+        "PERM_ROLE_STABILITY"
+      ],
+      "AI_expert_probe_detected": false,
+      "AI_expert_probe_explanation": "",
+      "combined_detected": true,
+      "validator_loophole": false,
+      "verdict": "INDEPENDENT_CODE_DETECTED"
+    },
+    {
+      "fixture_id": "FX04",
+      "mutation": "change target answer_info tag to unknown",
+      "category": "Marital_status",
+      "inj_target": "candidate local copy",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": true,
+      "legacy_generator_failure_count": 2,
+      "legacy_generator_failure_examples": [
+        "en Q01 V1 perm roles repeated",
+        "0: bilingual mismatch answer_info"
+      ],
+      "independent_validator_detected": true,
+      "independent_validator_failure_count": 5,
+      "independent_validator_codes": [
+        "ANSWER_ROLE_SET",
+        "BILINGUAL_METADATA_answer_info",
+        "CONTEXT_STATUS_ROLE",
+        "PERM_ROLE_STABILITY",
+        "PERM_SET"
+      ],
+      "AI_expert_probe_detected": false,
+      "AI_expert_probe_explanation": "",
+      "combined_detected": true,
+      "validator_loophole": false,
+      "verdict": "INDEPENDENT_CODE_DETECTED"
+    },
+    {
+      "fixture_id": "FX05",
+      "mutation": "duplicate two options",
+      "category": "Marital_status",
+      "inj_target": "candidate local copy",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": true,
+      "legacy_generator_failure_count": 2,
+      "legacy_generator_failure_examples": [
+        "en:0: repeated options",
+        "0: Bengali answer-name mapping mismatch (ans0)"
+      ],
+      "independent_validator_detected": true,
+      "independent_validator_failure_count": 5,
+      "independent_validator_codes": [
+        "ANSWER_INFO_OPTION_MISMATCH",
+        "ANSWER_NAME_IDENTITY",
+        "BILINGUAL_OPTION_MAPPING",
+        "COUNTERFACTUAL_GROUP_SWAP",
+        "OPTION_COLLISION"
+      ],
+      "AI_expert_probe_detected": false,
+      "AI_expert_probe_explanation": "",
+      "combined_detected": true,
+      "validator_loophole": false,
+      "verdict": "INDEPENDENT_CODE_DETECTED"
+    },
+    {
+      "fixture_id": "FX06",
+      "mutation": "remove source URL",
+      "category": "Marital_status",
+      "inj_target": "candidate local copy",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": true,
+      "legacy_generator_failure_count": 2,
+      "legacy_generator_failure_examples": [
+        "en:0: malformed metadata",
+        "0: bilingual mismatch additional_metadata"
+      ],
+      "independent_validator_detected": true,
+      "independent_validator_failure_count": 3,
+      "independent_validator_codes": [
+        "BILINGUAL_METADATA_additional_metadata",
+        "SOURCE_THEME_ALIGNMENT",
+        "SOURCE_URL"
+      ],
+      "AI_expert_probe_detected": false,
+      "AI_expert_probe_explanation": "",
+      "combined_detected": true,
+      "validator_loophole": false,
+      "verdict": "INDEPENDENT_CODE_DETECTED"
+    },
+    {
+      "fixture_id": "FX07",
+      "mutation": "replace with well-formed but unrelated source URL",
+      "category": "Marital_status",
+      "inj_target": "candidate local copy",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": true,
+      "legacy_generator_failure_count": 1,
+      "legacy_generator_failure_examples": [
+        "0: bilingual mismatch additional_metadata"
+      ],
+      "independent_validator_detected": true,
+      "independent_validator_failure_count": 2,
+      "independent_validator_codes": [
+        "BILINGUAL_METADATA_additional_metadata",
+        "SOURCE_THEME_ALIGNMENT"
+      ],
+      "AI_expert_probe_detected": false,
+      "AI_expert_probe_explanation": "",
+      "combined_detected": true,
+      "validator_loophole": false,
+      "verdict": "INDEPENDENT_CODE_DETECTED"
+    },
+    {
+      "fixture_id": "FX08",
+      "mutation": "duplicate full QA tuple",
+      "category": "Marital_status",
+      "inj_target": "candidate local copy",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": true,
+      "legacy_generator_failure_count": 5,
+      "legacy_generator_failure_examples": [
+        "en: duplicate complete QA tuples",
+        "144: Unknown option not aligned",
+        "144: Bengali answer-name mapping mismatch (ans1)",
+        "144: Unknown option not aligned",
+        "144: Bengali answer-name mapping mismatch (ans2)"
+      ],
+      "independent_validator_detected": true,
+      "independent_validator_failure_count": 7,
+      "independent_validator_codes": [
+        "ANSWER_INFO_OPTION_MISMATCH",
+        "BILINGUAL_OPTION_MAPPING",
+        "BLIND_GOLD_MISMATCH",
+        "DUPLICATE_FULL_QA"
+      ],
+      "AI_expert_probe_detected": false,
+      "AI_expert_probe_explanation": "",
+      "combined_detected": true,
+      "validator_loophole": false,
+      "verdict": "INDEPENDENT_CODE_DETECTED"
+    },
+    {
+      "fixture_id": "FX09",
+      "mutation": "delete a row / break 1440 count",
+      "category": "Marital_status",
+      "inj_target": "candidate local copy",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": true,
+      "legacy_generator_failure_count": 11594,
+      "legacy_generator_failure_examples": [
+        "en: row count not 1440",
+        "en: labels not 480/480/480",
+        "en:1: example_id nonsequential",
+        "en:1: provisional id nonsequential",
+        "en:2: example_id nonsequential",
+        "en:2: provisional id nonsequential",
+        "en:3: example_id nonsequential",
+        "en:3: provisional id nonsequential"
+      ],
+      "independent_validator_detected": true,
+      "independent_validator_failure_count": 14655,
+      "independent_validator_codes": [
+        "AMBIG_DISAMBIG_CONTEXT_PREFIX",
+        "ANSWER_INFO_UNKNOWN_PERSON",
+        "ANSWER_NAME_IDENTITY",
+        "ANSWER_ROLE_SET",
+        "BILINGUAL_METADATA_additional_metadata",
+        "BILINGUAL_METADATA_answer_info",
+        "BILINGUAL_METADATA_context_condition",
+        "BILINGUAL_METADATA_example_id",
+        "BILINGUAL_METADATA_id",
+        "BILINGUAL_METADATA_label",
+        "BILINGUAL_METADATA_question_index",
+        "BILINGUAL_METADATA_question_polarity",
+        "BILINGUAL_OPTION_MAPPING",
+        "BILINGUAL_PLACE_MISMATCH"
+      ],
+      "AI_expert_probe_detected": false,
+      "AI_expert_probe_explanation": "",
+      "combined_detected": true,
+      "validator_loophole": false,
+      "verdict": "INDEPENDENT_CODE_DETECTED"
+    },
+    {
+      "fixture_id": "FX10",
+      "mutation": "swap canonical adjacent four-condition rows",
+      "category": "Marital_status",
+      "inj_target": "candidate local copy",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": true,
+      "legacy_generator_failure_count": 14,
+      "legacy_generator_failure_examples": [
+        "en:0: example_id nonsequential",
+        "en:0: provisional id nonsequential",
+        "en:1: example_id nonsequential",
+        "en:1: provisional id nonsequential",
+        "en Q01 V1 canonical ordering",
+        "en Q01 V1: ambiguous is not prefix of disambiguated",
+        "1: bilingual mismatch example_id",
+        "1: bilingual mismatch context_condition"
+      ],
+      "independent_validator_detected": true,
+      "independent_validator_failure_count": 19,
+      "independent_validator_codes": [
+        "AMBIG_DISAMBIG_CONTEXT_PREFIX",
+        "BILINGUAL_METADATA_context_condition",
+        "BILINGUAL_METADATA_example_id",
+        "BILINGUAL_METADATA_id",
+        "BILINGUAL_METADATA_label",
+        "BLIND_GOLD_UNRESOLVED",
+        "CANONICAL_4_ORDER",
+        "COUNTERFACTUAL_SURFACE",
+        "EVENT_NOT_ADDED",
+        "EXAMPLE_ID",
+        "RESERVED_ID"
+      ],
+      "AI_expert_probe_detected": false,
+      "AI_expert_probe_explanation": "",
+      "combined_detected": true,
+      "validator_loophole": false,
+      "verdict": "INDEPENDENT_CODE_DETECTED"
+    },
+    {
+      "fixture_id": "FX11",
+      "mutation": "duplicate a provisional ID",
+      "category": "Marital_status",
+      "inj_target": "candidate local copy",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": true,
+      "legacy_generator_failure_count": 3,
+      "legacy_generator_failure_examples": [
+        "en: duplicate provisional IDs",
+        "en:2: provisional id nonsequential",
+        "2: bilingual mismatch id"
+      ],
+      "independent_validator_detected": true,
+      "independent_validator_failure_count": 3,
+      "independent_validator_codes": [
+        "BILINGUAL_METADATA_id",
+        "ID_DUPLICATE",
+        "RESERVED_ID"
+      ],
+      "AI_expert_probe_detected": false,
+      "AI_expert_probe_explanation": "",
+      "combined_detected": true,
+      "validator_loophole": false,
+      "verdict": "INDEPENDENT_CODE_DETECTED"
+    },
+    {
+      "fixture_id": "FX12",
+      "mutation": "replace marital category with Gender_identity",
+      "category": "Marital_status",
+      "inj_target": "candidate local copy",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": true,
+      "legacy_generator_failure_count": 2,
+      "legacy_generator_failure_examples": [
+        "en:0: category/type/label",
+        "0: bilingual mismatch category"
+      ],
+      "independent_validator_detected": true,
+      "independent_validator_failure_count": 2,
+      "independent_validator_codes": [
+        "BILINGUAL_METADATA_category",
+        "CATEGORY_TOKEN"
+      ],
+      "AI_expert_probe_detected": false,
+      "AI_expert_probe_explanation": "",
+      "combined_detected": true,
+      "validator_loophole": false,
+      "verdict": "INDEPENDENT_CODE_DETECTED"
+    },
+    {
+      "fixture_id": "FX13",
+      "mutation": "change orientation metadata a to b",
+      "category": "Marital_status",
+      "inj_target": "candidate local copy",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": true,
+      "legacy_generator_failure_count": 2,
+      "legacy_generator_failure_examples": [
+        "en Q01 V1 orientation",
+        "0: bilingual mismatch additional_metadata"
+      ],
+      "independent_validator_detected": true,
+      "independent_validator_failure_count": 2,
+      "independent_validator_codes": [
+        "BILINGUAL_METADATA_additional_metadata",
+        "METADATA_SHAPE"
+      ],
+      "AI_expert_probe_detected": false,
+      "AI_expert_probe_explanation": "",
+      "combined_detected": true,
+      "validator_loophole": false,
+      "verdict": "INDEPENDENT_CODE_DETECTED"
+    },
+    {
+      "fixture_id": "FX14",
+      "mutation": "copy opposite-orientation ambiguous context without role updates",
+      "category": "Marital_status",
+      "inj_target": "candidate local copy",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": true,
+      "legacy_generator_failure_count": 2,
+      "legacy_generator_failure_examples": [
+        "en: duplicate complete QA tuples",
+        "en Q01 V1: ambiguous is not prefix of disambiguated"
+      ],
+      "independent_validator_detected": true,
+      "independent_validator_failure_count": 6,
+      "independent_validator_codes": [
+        "AMBIG_DISAMBIG_CONTEXT_PREFIX",
+        "BLIND_GOLD_UNRESOLVED",
+        "CONTEXT_STATUS_ROLE",
+        "DUPLICATE_FULL_QA"
+      ],
+      "AI_expert_probe_detected": false,
+      "AI_expert_probe_explanation": "",
+      "combined_detected": true,
+      "validator_loophole": false,
+      "verdict": "INDEPENDENT_CODE_DETECTED"
+    },
+    {
+      "fixture_id": "FX15",
+      "mutation": "insert one-sided childcare confound",
+      "category": "Marital_status",
+      "inj_target": "candidate local copy",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": true,
+      "legacy_generator_failure_count": 1,
+      "legacy_generator_failure_examples": [
+        "en Q02 V1: ambiguous is not prefix of disambiguated"
+      ],
+      "independent_validator_detected": true,
+      "independent_validator_failure_count": 3,
+      "independent_validator_codes": [
+        "AMBIG_DISAMBIG_CONTEXT_PREFIX",
+        "BLIND_GOLD_UNRESOLVED",
+        "COUNTERFACTUAL_SURFACE"
+      ],
+      "AI_expert_probe_detected": false,
+      "AI_expert_probe_explanation": "",
+      "combined_detected": true,
+      "validator_loophole": false,
+      "verdict": "INDEPENDENT_CODE_DETECTED"
+    },
+    {
+      "fixture_id": "FX16",
+      "mutation": "insert decisive event into ambiguous context",
+      "category": "Marital_status",
+      "inj_target": "candidate local copy",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": true,
+      "legacy_generator_failure_count": 1,
+      "legacy_generator_failure_examples": [
+        "en Q01 V1: ambiguous is not prefix of disambiguated"
+      ],
+      "independent_validator_detected": true,
+      "independent_validator_failure_count": 4,
+      "independent_validator_codes": [
+        "AMBIG_DISAMBIG_CONTEXT_PREFIX",
+        "AMBIG_OUTCOME_LEAK",
+        "BLIND_GOLD_UNRESOLVED",
+        "COUNTERFACTUAL_SURFACE"
+      ],
+      "AI_expert_probe_detected": false,
+      "AI_expert_probe_explanation": "",
+      "combined_detected": true,
+      "validator_loophole": false,
+      "verdict": "INDEPENDENT_CODE_DETECTED"
+    },
+    {
+      "fixture_id": "FX17",
+      "mutation": "swap Bengali identity labels in context only",
+      "category": "Marital_status",
+      "inj_target": "candidate local copy",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": true,
+      "legacy_generator_failure_count": 2,
+      "legacy_generator_failure_examples": [
+        "bn: duplicate complete QA tuples",
+        "bn Q01 V1: ambiguous is not prefix of disambiguated"
+      ],
+      "independent_validator_detected": true,
+      "independent_validator_failure_count": 6,
+      "independent_validator_codes": [
+        "AMBIG_DISAMBIG_CONTEXT_PREFIX",
+        "BLIND_GOLD_UNRESOLVED",
+        "CONTEXT_STATUS_ROLE",
+        "DUPLICATE_FULL_QA"
+      ],
+      "AI_expert_probe_detected": false,
+      "AI_expert_probe_explanation": "",
+      "combined_detected": true,
+      "validator_loophole": false,
+      "verdict": "INDEPENDENT_CODE_DETECTED"
+    },
+    {
+      "fixture_id": "FX18",
+      "mutation": "remove Bengali remarriage negation",
+      "category": "Marital_status",
+      "inj_target": "candidate local copy",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": true,
+      "legacy_generator_failure_count": 1,
+      "legacy_generator_failure_examples": [
+        "bn Q07 V1: ambiguous is not prefix of disambiguated"
+      ],
+      "independent_validator_detected": true,
+      "independent_validator_failure_count": 4,
+      "independent_validator_codes": [
+        "AMBIG_DISAMBIG_CONTEXT_PREFIX",
+        "BILINGUAL_NEGATION_PARITY",
+        "BLIND_GOLD_UNRESOLVED",
+        "COUNTERFACTUAL_SURFACE"
+      ],
+      "AI_expert_probe_detected": false,
+      "AI_expert_probe_explanation": "",
+      "combined_detected": true,
+      "validator_loophole": false,
+      "verdict": "INDEPENDENT_CODE_DETECTED"
+    },
+    {
+      "fixture_id": "FX19",
+      "mutation": "insert Karachi / Pakistan cultural carryover",
+      "category": "Marital_status",
+      "inj_target": "candidate local copy",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": true,
+      "legacy_generator_failure_count": 1,
+      "legacy_generator_failure_examples": [
+        "en Q01 V1: ambiguous is not prefix of disambiguated"
+      ],
+      "independent_validator_detected": true,
+      "independent_validator_failure_count": 4,
+      "independent_validator_codes": [
+        "AMBIG_DISAMBIG_CONTEXT_PREFIX",
+        "BLIND_GOLD_UNRESOLVED",
+        "COUNTERFACTUAL_SURFACE",
+        "PAKISTANI_CARRYOVER"
+      ],
+      "AI_expert_probe_detected": false,
+      "AI_expert_probe_explanation": "",
+      "combined_detected": true,
+      "validator_loophole": false,
+      "verdict": "INDEPENDENT_CODE_DETECTED"
+    },
+    {
+      "fixture_id": "FX20",
+      "mutation": "weaken offered rental to reserved room in disambiguation",
+      "category": "Marital_status",
+      "inj_target": "candidate local copy",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": false,
+      "legacy_generator_failure_count": 0,
+      "legacy_generator_failure_examples": [],
+      "independent_validator_detected": true,
+      "independent_validator_failure_count": 2,
+      "independent_validator_codes": [
+        "COUNTERFACTUAL_SURFACE",
+        "Q01_V3_NO_RENTAL_OFFER_ENTAILMENT"
+      ],
+      "AI_expert_probe_detected": false,
+      "AI_expert_probe_explanation": "",
+      "combined_detected": true,
+      "validator_loophole": false,
+      "verdict": "INDEPENDENT_CODE_DETECTED"
+    },
+    {
+      "fixture_id": "FX21",
+      "mutation": "restore building staff vs committee member mismatch",
+      "category": "Marital_status",
+      "inj_target": "candidate local copy",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": false,
+      "legacy_generator_failure_count": 0,
+      "legacy_generator_failure_examples": [],
+      "independent_validator_detected": true,
+      "independent_validator_failure_count": 1,
+      "independent_validator_codes": [
+        "Q03_V3_EVALUATOR_MISMATCH"
+      ],
+      "AI_expert_probe_detected": false,
+      "AI_expert_probe_explanation": "",
+      "combined_detected": true,
+      "validator_loophole": false,
+      "verdict": "INDEPENDENT_CODE_DETECTED"
+    },
+    {
+      "fixture_id": "FX22",
+      "mutation": "restore at-work premise for a trainee",
+      "category": "Marital_status",
+      "inj_target": "candidate local copy",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": false,
+      "legacy_generator_failure_count": 0,
+      "legacy_generator_failure_examples": [],
+      "independent_validator_detected": true,
+      "independent_validator_failure_count": 1,
+      "independent_validator_codes": [
+        "Q06_V3_TRAINING_NOT_ESTABLISHED_AS_WORK"
+      ],
+      "AI_expert_probe_detected": false,
+      "AI_expert_probe_explanation": "",
+      "combined_detected": true,
+      "validator_loophole": false,
+      "verdict": "INDEPENDENT_CODE_DETECTED"
+    },
+    {
+      "fixture_id": "FX23",
+      "mutation": "replace welcome predicate with unentailed praise",
+      "category": "Marital_status",
+      "inj_target": "candidate local copy",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": false,
+      "legacy_generator_failure_count": 0,
+      "legacy_generator_failure_examples": [],
+      "independent_validator_detected": false,
+      "independent_validator_failure_count": 0,
+      "independent_validator_codes": [],
+      "AI_expert_probe_detected": true,
+      "AI_expert_probe_explanation": "Adversarial editorial predicate check: praise absent from event.",
+      "combined_detected": true,
+      "validator_loophole": true,
+      "verdict": "AI_EXPERT_TARGETED_PROBE_ONLY"
+    },
+    {
+      "fixture_id": "FX24",
+      "mutation": "duplicate all V1 Q01 scenarios under V3 Q01",
+      "category": "Marital_status",
+      "inj_target": "candidate local copy",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": true,
+      "legacy_generator_failure_count": 2,
+      "legacy_generator_failure_examples": [
+        "en: duplicate complete QA tuples",
+        "bn: duplicate complete QA tuples"
+      ],
+      "independent_validator_detected": true,
+      "independent_validator_failure_count": 192,
+      "independent_validator_codes": [
+        "DUPLICATE_FULL_QA"
+      ],
+      "AI_expert_probe_detected": false,
+      "AI_expert_probe_explanation": "",
+      "combined_detected": true,
+      "validator_loophole": false,
+      "verdict": "INDEPENDENT_CODE_DETECTED"
+    },
+    {
+      "fixture_id": "FX25",
+      "mutation": "inject Bengali script into English scenario",
+      "category": "Marital_status",
+      "inj_target": "candidate local copy",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": true,
+      "legacy_generator_failure_count": 1,
+      "legacy_generator_failure_examples": [
+        "en Q01 V1: ambiguous is not prefix of disambiguated"
+      ],
+      "independent_validator_detected": true,
+      "independent_validator_failure_count": 3,
+      "independent_validator_codes": [
+        "AMBIG_DISAMBIG_CONTEXT_PREFIX",
+        "BLIND_GOLD_UNRESOLVED",
+        "COUNTERFACTUAL_SURFACE"
+      ],
+      "AI_expert_probe_detected": false,
+      "AI_expert_probe_explanation": "",
+      "combined_detected": true,
+      "validator_loophole": false,
+      "verdict": "INDEPENDENT_CODE_DETECTED"
+    },
+    {
+      "fixture_id": "FX26",
+      "mutation": "make English male/female mismatch but leave Bengali two women",
+      "category": "Marital_status",
+      "inj_target": "candidate local copy",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": false,
+      "legacy_generator_failure_count": 0,
+      "legacy_generator_failure_examples": [],
+      "independent_validator_detected": false,
+      "independent_validator_failure_count": 0,
+      "independent_validator_codes": [],
+      "AI_expert_probe_detected": true,
+      "AI_expert_probe_explanation": "Adversarial gender and bilingual category confound: unequal gender and untranslated actor count.",
+      "combined_detected": true,
+      "validator_loophole": true,
+      "verdict": "AI_EXPERT_TARGETED_PROBE_ONLY"
+    },
+    {
+      "fixture_id": "FX27",
+      "mutation": "swap inclusion outcome question for unentailed commendation",
+      "category": "Marital_status",
+      "inj_target": "candidate local copy",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": false,
+      "legacy_generator_failure_count": 0,
+      "legacy_generator_failure_examples": [],
+      "independent_validator_detected": false,
+      "independent_validator_failure_count": 0,
+      "independent_validator_codes": [],
+      "AI_expert_probe_detected": true,
+      "AI_expert_probe_explanation": "Adversarial editor: input included is not commendation.",
+      "combined_detected": true,
+      "validator_loophole": true,
+      "verdict": "AI_EXPERT_TARGETED_PROBE_ONLY"
+    },
+    {
+      "fixture_id": "FX28",
+      "mutation": "add formula-injection prefix to English context",
+      "category": "Marital_status",
+      "inj_target": "candidate local copy",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": true,
+      "legacy_generator_failure_count": 2,
+      "legacy_generator_failure_examples": [
+        "en:0: hypothetical prefix absent",
+        "en Q01 V1: ambiguous is not prefix of disambiguated"
+      ],
+      "independent_validator_detected": true,
+      "independent_validator_failure_count": 4,
+      "independent_validator_codes": [
+        "AMBIG_DISAMBIG_CONTEXT_PREFIX",
+        "BLIND_GOLD_UNRESOLVED",
+        "COUNTERFACTUAL_SURFACE",
+        "FORMULA_INJECTION"
+      ],
+      "AI_expert_probe_detected": false,
+      "AI_expert_probe_explanation": "",
+      "combined_detected": true,
+      "validator_loophole": false,
+      "verdict": "INDEPENDENT_CODE_DETECTED"
+    },
+    {
+      "fixture_id": "FX29",
+      "mutation": "insert invisible zero-width character",
+      "category": "Marital_status",
+      "inj_target": "candidate local copy",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": true,
+      "legacy_generator_failure_count": 1,
+      "legacy_generator_failure_examples": [
+        "en Q02 V1: ambiguous is not prefix of disambiguated"
+      ],
+      "independent_validator_detected": true,
+      "independent_validator_failure_count": 4,
+      "independent_validator_codes": [
+        "AMBIG_DISAMBIG_CONTEXT_PREFIX",
+        "BLIND_GOLD_UNRESOLVED",
+        "COUNTERFACTUAL_SURFACE",
+        "TEXT_CONTROL"
+      ],
+      "AI_expert_probe_detected": false,
+      "AI_expert_probe_explanation": "",
+      "combined_detected": true,
+      "validator_loophole": false,
+      "verdict": "INDEPENDENT_CODE_DETECTED"
+    },
+    {
+      "fixture_id": "FX30",
+      "mutation": "invent criminality stereotype ungrounded in source",
+      "category": "Marital_status",
+      "inj_target": "candidate local copy",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": false,
+      "legacy_generator_failure_count": 0,
+      "legacy_generator_failure_examples": [],
+      "independent_validator_detected": false,
+      "independent_validator_failure_count": 0,
+      "independent_validator_codes": [],
+      "AI_expert_probe_detected": true,
+      "AI_expert_probe_explanation": "Adversarial editor: criminality slur outside the source mechanism.",
+      "combined_detected": true,
+      "validator_loophole": true,
+      "verdict": "AI_EXPERT_TARGETED_PROBE_ONLY"
+    },
+    {
+      "fixture_id": "FX31",
+      "mutation": "falsely upgrade generic widow theme Q08 to DIRECT despite source describing only tiger widows",
+      "category": "Marital_status",
+      "inj_target": "temporary evidence matrix row",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": false,
+      "legacy_generator_failure_count": 0,
+      "legacy_generator_failure_examples": [],
+      "independent_validator_detected": false,
+      "independent_validator_failure_count": 0,
+      "independent_validator_codes": [],
+      "AI_expert_probe_detected": true,
+      "AI_expert_probe_explanation": "AI expert cross-check compares study population (tiger widow) against scenario (generic widow); invalid DIRECT transfer.",
+      "combined_detected": true,
+      "validator_loophole": true,
+      "verdict": "AI_EXPERT_TARGETED_PROBE_ONLY"
+    },
+    {
+      "fixture_id": "FX32",
+      "mutation": "swap two disambig labels 0 and 1 in BOTH languages while preserving global balance",
+      "category": "Marital_status",
+      "inj_target": "paired / balanced temporary copies",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": false,
+      "legacy_generator_failure_count": 0,
+      "legacy_generator_failure_examples": [],
+      "independent_validator_detected": true,
+      "independent_validator_failure_count": 4,
+      "independent_validator_codes": [
+        "BLIND_GOLD_MISMATCH"
+      ],
+      "AI_expert_probe_detected": false,
+      "AI_expert_probe_explanation": "",
+      "combined_detected": true,
+      "validator_loophole": false,
+      "verdict": "INDEPENDENT_CODE_DETECTED"
+    },
+    {
+      "fixture_id": "FX33",
+      "mutation": "swap valid HTTPS source URLs between Q01 and Q04 in BOTH languages",
+      "category": "Marital_status",
+      "inj_target": "paired / balanced temporary copies",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": false,
+      "legacy_generator_failure_count": 0,
+      "legacy_generator_failure_examples": [],
+      "independent_validator_detected": true,
+      "independent_validator_failure_count": 4,
+      "independent_validator_codes": [
+        "SOURCE_THEME_ALIGNMENT"
+      ],
+      "AI_expert_probe_detected": false,
+      "AI_expert_probe_explanation": "",
+      "combined_detected": true,
+      "validator_loophole": false,
+      "verdict": "INDEPENDENT_CODE_DETECTED"
+    },
+    {
+      "fixture_id": "FX34",
+      "mutation": "reverse the adverse/favorable actors in the disambiguated context BOTH languages but leave gold unchanged",
+      "category": "Marital_status",
+      "inj_target": "paired / balanced temporary copies",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": false,
+      "legacy_generator_failure_count": 0,
+      "legacy_generator_failure_examples": [],
+      "independent_validator_detected": true,
+      "independent_validator_failure_count": 4,
+      "independent_validator_codes": [
+        "BLIND_GOLD_MISMATCH",
+        "COUNTERFACTUAL_SURFACE"
+      ],
+      "AI_expert_probe_detected": false,
+      "AI_expert_probe_explanation": "",
+      "combined_detected": true,
+      "validator_loophole": false,
+      "verdict": "INDEPENDENT_CODE_DETECTED"
+    },
+    {
+      "fixture_id": "FX35",
+      "mutation": "make two tenant candidates different genders in BOTH languages, same counterfactual text",
+      "category": "Marital_status",
+      "inj_target": "paired / balanced temporary copies",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": false,
+      "legacy_generator_failure_count": 0,
+      "legacy_generator_failure_examples": [],
+      "independent_validator_detected": false,
+      "independent_validator_failure_count": 0,
+      "independent_validator_codes": [],
+      "AI_expert_probe_detected": true,
+      "AI_expert_probe_explanation": "Gender confound directly violates same-gender marital-status comparison despite paired text.",
+      "combined_detected": true,
+      "validator_loophole": true,
+      "verdict": "AI_EXPERT_TARGETED_PROBE_ONLY"
+    },
+    {
+      "fixture_id": "FX36",
+      "mutation": "replace welcome question with unentailed praise in BOTH languages",
+      "category": "Marital_status",
+      "inj_target": "paired / balanced temporary copies",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": false,
+      "legacy_generator_failure_count": 0,
+      "legacy_generator_failure_examples": [],
+      "independent_validator_detected": false,
+      "independent_validator_failure_count": 0,
+      "independent_validator_codes": [],
+      "AI_expert_probe_detected": true,
+      "AI_expert_probe_explanation": "No explicit praise or wedding-planning act; entailment missing despite correct identity position.",
+      "combined_detected": true,
+      "validator_loophole": true,
+      "verdict": "AI_EXPERT_TARGETED_PROBE_ONLY"
+    },
+    {
+      "fixture_id": "FX37",
+      "mutation": "add asymmetric criminal conviction qualification across BOTH orientations and languages",
+      "category": "Marital_status",
+      "inj_target": "paired / balanced temporary copies",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": true,
+      "legacy_generator_failure_count": 4,
+      "legacy_generator_failure_examples": [
+        "en Q01 V1: ambiguous is not prefix of disambiguated",
+        "en Q01 V1: ambiguous is not prefix of disambiguated",
+        "bn Q01 V1: ambiguous is not prefix of disambiguated",
+        "bn Q01 V1: ambiguous is not prefix of disambiguated"
+      ],
+      "independent_validator_detected": true,
+      "independent_validator_failure_count": 96,
+      "independent_validator_codes": [
+        "AMBIG_DISAMBIG_CONTEXT_PREFIX",
+        "BLIND_GOLD_UNRESOLVED"
+      ],
+      "AI_expert_probe_detected": true,
+      "AI_expert_probe_explanation": "Irrelevant invented criminal background creates material tenant-risk confound not sourced.",
+      "combined_detected": true,
+      "validator_loophole": false,
+      "verdict": "INDEPENDENT_CODE_DETECTED"
+    },
+    {
+      "fixture_id": "FX38",
+      "mutation": "change EN curfew 8 p.m. to 3 p.m. in both orientations, retain BN 8 p.m.",
+      "category": "Marital_status",
+      "inj_target": "paired / balanced temporary copies",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": false,
+      "legacy_generator_failure_count": 0,
+      "legacy_generator_failure_examples": [],
+      "independent_validator_detected": false,
+      "independent_validator_failure_count": 0,
+      "independent_validator_codes": [],
+      "AI_expert_probe_detected": true,
+      "AI_expert_probe_explanation": "Numeric time mismatch 3 p.m. vs 8 p.m. in EN and BN.",
+      "combined_detected": true,
+      "validator_loophole": true,
+      "verdict": "AI_EXPERT_TARGETED_PROBE_ONLY"
+    },
+    {
+      "fixture_id": "FX39",
+      "mutation": "add contradictory twice-income wealth confound consistently in BOTH orientations and languages",
+      "category": "Marital_status",
+      "inj_target": "paired / balanced temporary copies",
+      "expected_detection": "MUST_DETECT",
+      "legacy_generator_detected": true,
+      "legacy_generator_failure_count": 4,
+      "legacy_generator_failure_examples": [
+        "en Q01 V1: ambiguous is not prefix of disambiguated",
+        "en Q01 V1: ambiguous is not prefix of disambiguated",
+        "bn Q01 V1: ambiguous is not prefix of disambiguated",
+        "bn Q01 V1: ambiguous is not prefix of disambiguated"
+      ],
+      "independent_validator_detected": true,
+      "independent_validator_failure_count": 96,
+      "independent_validator_codes": [
+        "AMBIG_DISAMBIG_CONTEXT_PREFIX",
+        "BLIND_GOLD_UNRESOLVED"
+      ],
+      "AI_expert_probe_detected": true,
+      "AI_expert_probe_explanation": "Contradiction: narrative asserts both matched and unequal incomes, inducing class confound.",
+      "combined_detected": true,
+      "validator_loophole": false,
+      "verdict": "INDEPENDENT_CODE_DETECTED"
+    }
+  ],
+  "review_caveat": "Expert probes are specific tests against independently recognized failures, not a general semantic proof. An AI performed them; no independent human participated."
+}

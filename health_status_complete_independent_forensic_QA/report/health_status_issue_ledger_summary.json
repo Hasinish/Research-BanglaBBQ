@@ -1,0 +1,23 @@
+{
+  "ledger_rows": 2762,
+  "unique_issues": 18,
+  "counts_by_severity_unique_issue_id": {
+    "P1": 10,
+    "P2": 8
+  },
+  "counts_by_status_rows": {
+    "APPLIED_LOCAL_ONLY": 840,
+    "BLOCKED_FOR_EXPERT_DECISION": 1440,
+    "UNRESOLVED": 481,
+    "ADDITIONAL_TEST_REQUIRED": 1
+  },
+  "fixes": 9,
+  "unresolved": 9,
+  "source_theme_blockers": [
+    "Q02",
+    "Q04",
+    "Q07",
+    "Q08",
+    "Q09"
+  ]
+}

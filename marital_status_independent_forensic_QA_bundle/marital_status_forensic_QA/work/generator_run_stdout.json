@@ -1,0 +1,32 @@
+{
+  "failures": [],
+  "rows": {
+    "en": 1440,
+    "bn": 1440
+  },
+  "labels": {
+    "en": {
+      "2": 480,
+      "0": 480,
+      "1": 480
+    },
+    "bn": {
+      "2": 480,
+      "0": 480,
+      "1": 480
+    }
+  },
+  "unique_qa": {
+    "en": 1440,
+    "bn": 1440
+  },
+  "ambig_unknown": {
+    "en": 720,
+    "bn": 720
+  },
+  "disambig_person": {
+    "en": 720,
+    "bn": 720
+  },
+  "bilingual_metadata_mismatches": 0
+}

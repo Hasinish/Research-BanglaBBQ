@@ -1,0 +1,15 @@
+{
+  "template_edits": 11,
+  "modified_cells": 672,
+  "modified_rows_by_language": {
+    "en": 276,
+    "bn": 324
+  },
+  "modified_cells_by_field": {
+    "('en', 'question')": 72,
+    "('en', 'context')": 240,
+    "('bn', 'question')": 72,
+    "('bn', 'context')": 288
+  },
+  "generator_returncode": 0
+}

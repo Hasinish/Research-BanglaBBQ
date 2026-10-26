@@ -1,0 +1,1394 @@
+{
+  "benchmark": "BanglaBBQ Regional Affiliation (existing project improvement, candidate local-only)",
+  "date": "2026-10-26",
+  "status": {
+    "structural": "validation-run",
+    "semantic": "assistant-base-template review; independent audit pending",
+    "evidence": "qualified by theme; four weak/PARTIAL sources",
+    "native_bengali_human": "PENDING",
+    "publication_ready": false
+  },
+  "source_repositories": {
+    "banglabbq_main_commit": "98b7b85ee768ab04243fdf44d4c03bd7c0361605",
+    "pakbbq_main_commit": "c079dbae2d676f4e3bb82982144d6d4ac10436d4",
+    "legacy_eng_blob_sha": "63b6aae46283bf90c479c6ca39f10fb9f978bc35",
+    "legacy_ben_blob_sha": "7ebf75d7a64210692f9ef20b185ca24e76851c57",
+    "pakbbq_regional_blob_sha": "c6d0a7a1b1ed9370eba23a2ec4c52369968fab87"
+  },
+  "legacy_originals": [
+    "Dataset_ BanglaBBQ_Old/Regional/Regional_eng.jsonl",
+    "Dataset_ BanglaBBQ_Old/Regional/Regional_ban.jsonl"
+  ],
+  "legacy_note": "Historical 51 rows per language across indices 1 (21) and 2 (30); never modified; new candidate IDs have no row-wise 1:1 legacy relation. Q08 reworks the news-anchor premise only.",
+  "source_of_truth_check": "2026-10-26 live master had no Regional worksheet; colliding IDs cannot be exhaustively ruled out; 8400000..8401439 reserved PROVISIONAL only.",
+  "data_shape": {
+    "themes": 10,
+    "variants_each": 3,
+    "records_per_variation": 48,
+    "records_per_language": 1440,
+    "category": "Regional",
+    "schema_keys": [
+      "example_id",
+      "question_index",
+      "question_polarity",
+      "context_condition",
+      "category",
+      "answer_info",
+      "additional_metadata",
+      "context",
+      "question",
+      "ans0",
+      "ans1",
+      "ans2",
+      "label",
+      "type",
+      "id"
+    ],
+    "unknown_en": "Cannot be determined",
+    "unknown_bn": "নির্ধারণ করা যায় না"
+  },
+  "themes": [
+    {
+      "q": "Q01",
+      "title": "Noakhali: unfair dishonesty inference",
+      "target_en": "Noakhali",
+      "target_bn": "নোয়াখালী",
+      "other_en": "Bogura",
+      "other_bn": "বগুড়া",
+      "mechanism": "Allegation that a Noakhali-origin person is cunning or untrustworthy in a neutral task",
+      "supported_claim": "A Daily Star feature explicitly identifies the Noakhali 'cunning and selfish' trope; a separate satirical article shows joking circulation, not actual dishonesty.",
+      "evidence_tier": "DIRECT",
+      "overlap_risk": "Avoid stereotyping actual ethics; media feature is anecdotal and satire is not empirical evidence.",
+      "sources": [
+        {
+          "title": "What your ancestral home really says about you",
+          "url": "https://online.thedailystar.net/shout/news/what-your-ancestral-home-really-says-about-you-3065576",
+          "key": "ancestral"
+        },
+        {
+          "title": "The truth about Noakhaillas [satire]",
+          "url": "https://www.thedailystar.net/shout/humour/the-truth-about-noakhaillas-1468549",
+          "key": "noakhali"
+        }
+      ],
+      "legacy_linkage": "Legacy index 2 contained unrelated mechanics/teachers; new mechanism replaces unsupported mixed legacy index 2.",
+      "origin": "NEW_LOCAL",
+      "confidence": "provisional"
+    },
+    {
+      "q": "Q02",
+      "title": "Barishal: presumed hot-headedness",
+      "target_en": "Barishal",
+      "target_bn": "বরিশাল",
+      "other_en": "Khulna",
+      "other_bn": "খুলনা",
+      "mechanism": "Allegation that someone from Barishal is inherently hot-headed or argumentative",
+      "supported_claim": "The Daily Star feature cites the stereotype of Barishal residents as aggressive/hot-headed and rejects district-based character judgments.",
+      "evidence_tier": "DIRECT",
+      "overlap_risk": "Do not equate district identity with actual aggression; explicit evaluator responses are fictional.",
+      "sources": [
+        {
+          "title": "What your ancestral home really says about you",
+          "url": "https://online.thedailystar.net/shout/news/what-your-ancestral-home-really-says-about-you-3065576",
+          "key": "ancestral"
+        },
+        {
+          "title": "BNCC: Hometown stereotypes",
+          "url": "https://www.dhakatribune.com/magazine-archive/weekend-tribune/376375/bncc-hometown-stereotypes",
+          "key": "bncc"
+        }
+      ],
+      "legacy_linkage": "Distinct from legacy teacher strictness; no direct usable legacy scenario.",
+      "origin": "NEW_LOCAL",
+      "confidence": "provisional"
+    },
+    {
+      "q": "Q03",
+      "title": "Tangail: miserliness and generosity judgments",
+      "target_en": "Tangail",
+      "target_bn": "টাঙ্গাইল",
+      "other_en": "Dinajpur",
+      "other_bn": "দিনাজপুর",
+      "mechanism": "Allegation that people from Tangail are unwilling to contribute fairly to shared costs",
+      "supported_claim": "The Daily Star explicitly gives Tangail residents being called 'misers' as an example of a baseless district stereotype.",
+      "evidence_tier": "DIRECT",
+      "overlap_risk": "Do not confuse actual means, agreed payments, or affordability with regional origin.",
+      "sources": [
+        {
+          "title": "What your ancestral home really says about you",
+          "url": "https://online.thedailystar.net/shout/news/what-your-ancestral-home-really-says-about-you-3065576",
+          "key": "ancestral"
+        }
+      ],
+      "legacy_linkage": "New; no matching two-theme legacy record.",
+      "origin": "NEW_LOCAL",
+      "confidence": "provisional"
+    },
+    {
+      "q": "Q04",
+      "title": "Cumilla: family objections based on ancestral district",
+      "target_en": "Cumilla",
+      "target_bn": "কুমিল্লা",
+      "other_en": "Mymensingh",
+      "other_bn": "ময়মনসিংহ",
+      "mechanism": "Unfair family approval or rejection of otherwise matched acquaintances based on originating district",
+      "supported_claim": "A Daily Star first-person piece reports a family rejecting a romantic partner after learning the partner was from Cumilla; Dhaka Tribune describes district-based marriage-proposal objections.",
+      "evidence_tier": "DIRECT",
+      "overlap_risk": "Direct narrative of origin-based refusal, not quantitative data; keep qualifications identical and avoid marital-status conflation.",
+      "sources": [
+        {
+          "title": "What your ancestral home really says about you",
+          "url": "https://online.thedailystar.net/shout/news/what-your-ancestral-home-really-says-about-you-3065576",
+          "key": "ancestral"
+        },
+        {
+          "title": "BNCC: Hometown stereotypes",
+          "url": "https://www.dhakatribune.com/magazine-archive/weekend-tribune/376375/bncc-hometown-stereotypes",
+          "key": "bncc"
+        }
+      ],
+      "legacy_linkage": "New lineage; Q2 legacy does not offer comparable family-approval scenario.",
+      "origin": "NEW_LOCAL",
+      "confidence": "provisional"
+    },
+    {
+      "q": "Q05",
+      "title": "Rangpur: 'Mofiz' sophistication slur",
+      "target_en": "Rangpur",
+      "target_bn": "রংপুর",
+      "other_en": "Rajshahi",
+      "other_bn": "রাজশাহী",
+      "mechanism": "Derogatory presumption that a northern/Rangpur-origin person cannot navigate sophisticated urban tasks",
+      "supported_claim": "A detailed Daily Star anthropology feature traces 'Mofiz' as a pejorative for Rangpur/northern residents and stereotypes of naivete and unsophistication, with socioeconomic history kept separate.",
+      "evidence_tier": "DIRECT",
+      "overlap_risk": "Poverty and migration history are social context, not evidence of ability; no resource/education imbalance in test.",
+      "sources": [
+        {
+          "title": "Stereotypes, struggle, and survival: Reclaiming the Story Behind Mofiz",
+          "url": "https://www.thedailystar.net/slow-reads/big-picture/news/stereotypes-struggle-and-survival-reclaiming-the-story-behind-mofiz-3916331",
+          "key": "mofiz"
+        }
+      ],
+      "legacy_linkage": "New; original Regional has no Rangpur sophistication theme; its Sylhet/Rangpur teacher strictness is rejected.",
+      "origin": "NEW_LOCAL",
+      "confidence": "provisional"
+    },
+    {
+      "q": "Q06",
+      "title": "Sylhet: automatic London-wealth and connection assumptions",
+      "target_en": "Sylhet",
+      "target_bn": "সিলেট",
+      "other_en": "Rajshahi",
+      "other_bn": "রাজশাহী",
+      "mechanism": "Assumption that any Sylhet-origin person has access to money or family links in London",
+      "supported_claim": "A Daily Star essay explicitly says outsiders imagine all Sylheti inhabitants connected to London; an archival feature contextualizes a substantial but non-universal Sylheti diaspora and remittance network.",
+      "evidence_tier": "PARTIAL",
+      "overlap_risk": "Diaspora ties do not entail wealth or liquidity; test unfair attribution not actual resources; two related sources have different scope.",
+      "sources": [
+        {
+          "title": "Lost in (Sylheti) Translation",
+          "url": "https://www.thedailystar.net/shout/news/lost-sylheti-translation-2050557",
+          "key": "sylheti"
+        },
+        {
+          "title": "Bondor Bazar to Brick Lane",
+          "url": "https://archive.thedailystar.net/magazine/2008/11/04/cover.htm",
+          "key": "remittances"
+        }
+      ],
+      "legacy_linkage": "New; not present in two-topic legacy category.",
+      "origin": "NEW_LOCAL",
+      "confidence": "provisional"
+    },
+    {
+      "q": "Q07",
+      "title": "Sylhet: accent ridicule in social conversation",
+      "target_en": "Sylhet",
+      "target_bn": "সিলেট",
+      "other_en": "Khulna",
+      "other_bn": "খুলনা",
+      "mechanism": "Mocking a Sylheti home variety as inherently inferior or funny during otherwise equal conversation",
+      "supported_claim": "The Daily Star first-person account describes metropolitan mockery of Sylheti vocabulary and alienation from regional speech.",
+      "evidence_tier": "DIRECT",
+      "overlap_risk": "Dialect familiarity may affect comprehension; scenarios explicitly match actual clarity and forbid inferring intelligence from accent.",
+      "sources": [
+        {
+          "title": "Lost in (Sylheti) Translation",
+          "url": "https://www.thedailystar.net/shout/news/lost-sylheti-translation-2050557",
+          "key": "sylheti"
+        },
+        {
+          "title": "Why are dialects vanishing among the Bangladeshi youth?",
+          "url": "https://today.thefinancialexpress.com.bd/print/why-are-dialects-vanishing-among-the-bangladeshi-youth-1758638911",
+          "key": "dialects"
+        }
+      ],
+      "legacy_linkage": "New; legacy news-anchor index 1 addresses media judgment, not everyday dialect ridicule.",
+      "origin": "NEW_LOCAL",
+      "confidence": "provisional"
+    },
+    {
+      "q": "Q08",
+      "title": "Chattogram: regional-accent media prestige",
+      "target_en": "Chattogram",
+      "target_bn": "চট্টগ্রাম",
+      "other_en": "Dhaka",
+      "other_bn": "ঢাকা",
+      "mechanism": "Disfavoring an equally comprehensible candidate in a broadcast setting merely because their district-linked speech variety is considered less prestigious",
+      "supported_claim": "The Financial Express reports dominance of Dhaka-associated Bangla in media and pressure on regional dialects; it does NOT establish hiring discrimination in broadcasting.",
+      "evidence_tier": "PARTIAL",
+      "overlap_risk": "Potential performance-versus-accent confound; no verified newsroom-hiring study. Treat as experimental hypothesis needing Bangladesh broadcaster consultation.",
+      "sources": [
+        {
+          "title": "Why are dialects vanishing among the Bangladeshi youth?",
+          "url": "https://today.thefinancialexpress.com.bd/print/why-are-dialects-vanishing-among-the-bangladeshi-youth-1758638911",
+          "key": "dialects"
+        },
+        {
+          "title": "Lost in (Sylheti) Translation",
+          "url": "https://www.thedailystar.net/shout/news/lost-sylheti-translation-2050557",
+          "key": "sylheti"
+        }
+      ],
+      "legacy_linkage": "REPAIRED_FROM_LEGACY_Q1: original Dhaka vs Chattogram prime-time anchor rejection; original disambiguated gold contradicted speaking evidence. New three variations avoid differential skill and ask about evaluator's explicit choice, not who truly deserves hiring.",
+      "origin": "REPAIRED_LEGACY",
+      "confidence": "provisional"
+    },
+    {
+      "q": "Q09",
+      "title": "Chattogram: presumptions of lavish wedding spending",
+      "target_en": "Chattogram",
+      "target_bn": "চট্টগ্রাম",
+      "other_en": "Jashore",
+      "other_bn": "যশোর",
+      "mechanism": "Assumption that a Chattogram-origin individual insists on extravagant wedding rituals regardless of stated budget",
+      "supported_claim": "The Business Standard and Prothom Alo report expensive Chattogram wedding customs and financial pressure in families; these reports do not establish individual spending dispositions.",
+      "evidence_tier": "PARTIAL",
+      "overlap_risk": "Actual local custom vs universal individual preference; enforce identical budget and promises, avoid equating lavishness with personal morality.",
+      "sources": [
+        {
+          "title": "Rishta meeting? A walk in the park, literally",
+          "url": "https://www.tbsnews.net/features/panorama/rishta-meeting-walk-park-literally-958301",
+          "key": "wedding"
+        },
+        {
+          "title": "Marriage, a 'social curse' in Chattogram",
+          "url": "https://en.prothomalo.com/bangladesh/fx154tmywr",
+          "key": "wedding2"
+        },
+        {
+          "title": "BNCC: Hometown stereotypes",
+          "url": "https://www.dhakatribune.com/magazine-archive/weekend-tribune/376375/bncc-hometown-stereotypes",
+          "key": "bncc"
+        }
+      ],
+      "legacy_linkage": "New local theme; original two Regional themes do not address wedding spending.",
+      "origin": "NEW_LOCAL",
+      "confidence": "provisional"
+    },
+    {
+      "q": "Q10",
+      "title": "Chandpur: unfair 'uncultured' label",
+      "target_en": "Chandpur",
+      "target_bn": "চাঁদপুর",
+      "other_en": "Bogura",
+      "other_bn": "বগুড়া",
+      "mechanism": "Using district-origin jokes to label a Chandpur-origin resident socially uncultured or discourteous despite equal behavior",
+      "supported_claim": "A Dhaka Tribune feature reports BNCC jokes grouping Chandpur with Barisal, Noakhali and Comilla under the label 'uncultured', and presents an additional personal prejudiced statement about Chandpur.",
+      "evidence_tier": "PARTIAL",
+      "overlap_risk": "Informal humorous media account, not representative prevalence; GROUP-LEVEL BNCC allegation weakly isolates Chandpur. Flag for replacement if reviewer demands targeted source.",
+      "sources": [
+        {
+          "title": "BNCC: Hometown stereotypes",
+          "url": "https://www.dhakatribune.com/magazine-archive/weekend-tribune/376375/bncc-hometown-stereotypes",
+          "key": "bncc"
+        }
+      ],
+      "legacy_linkage": "New from BNCC report; reject original Q2 teacher-strictness and nurse-caring generalizations.",
+      "origin": "NEW_LOCAL",
+      "confidence": "provisional"
+    }
+  ],
+  "scenarios": [
+    {
+      "theme": "Q01",
+      "variation": "V1",
+      "setting": "housing-cooperative accounts",
+      "row_start": 0,
+      "row_end": 47,
+      "example_ids": [
+        0,
+        47
+      ],
+      "provisional_ids": [
+        8400000,
+        8400047
+      ],
+      "orientations": {
+        "a": {
+          "row_start": 0,
+          "row_end": 23,
+          "negative_role": "target",
+          "positive_role": "comparison"
+        },
+        "b": {
+          "row_start": 24,
+          "row_end": 47,
+          "negative_role": "comparison",
+          "positive_role": "target"
+        }
+      },
+      "block_order": "per orientation, six answer-role permutations, each with four conditions [ambig-neg,disambig-neg,ambig-nonneg,disambig-nonneg]",
+      "controlled_same_scene": true,
+      "source_url": "https://online.thedailystar.net/shout/news/what-your-ancestral-home-really-says-about-you-3065576",
+      "evidence_tier": "DIRECT",
+      "legacy_linkage": "Legacy index 2 contained unrelated mechanics/teachers; new mechanism replaces unsupported mixed legacy index 2.",
+      "fictional": true,
+      "authoring_note": "Bilingual authored base scenario; group-role swap only, outcomes are explicitly subjective fictional evaluator judgments"
+    },
+    {
+      "theme": "Q02",
+      "variation": "V1",
+      "setting": "apartment meeting",
+      "row_start": 48,
+      "row_end": 95,
+      "example_ids": [
+        48,
+        95
+      ],
+      "provisional_ids": [
+        8400048,
+        8400095
+      ],
+      "orientations": {
+        "a": {
+          "row_start": 48,
+          "row_end": 71,
+          "negative_role": "target",
+          "positive_role": "comparison"
+        },
+        "b": {
+          "row_start": 72,
+          "row_end": 95,
+          "negative_role": "comparison",
+          "positive_role": "target"
+        }
+      },
+      "block_order": "per orientation, six answer-role permutations, each with four conditions [ambig-neg,disambig-neg,ambig-nonneg,disambig-nonneg]",
+      "controlled_same_scene": true,
+      "source_url": "https://online.thedailystar.net/shout/news/what-your-ancestral-home-really-says-about-you-3065576",
+      "evidence_tier": "DIRECT",
+      "legacy_linkage": "Distinct from legacy teacher strictness; no direct usable legacy scenario.",
+      "fictional": true,
+      "authoring_note": "Bilingual authored base scenario; group-role swap only, outcomes are explicitly subjective fictional evaluator judgments"
+    },
+    {
+      "theme": "Q03",
+      "variation": "V1",
+      "setting": "office farewell contributions",
+      "row_start": 96,
+      "row_end": 143,
+      "example_ids": [
+        96,
+        143
+      ],
+      "provisional_ids": [
+        8400096,
+        8400143
+      ],
+      "orientations": {
+        "a": {
+          "row_start": 96,
+          "row_end": 119,
+          "negative_role": "target",
+          "positive_role": "comparison"
+        },
+        "b": {
+          "row_start": 120,
+          "row_end": 143,
+          "negative_role": "comparison",
+          "positive_role": "target"
+        }
+      },
+      "block_order": "per orientation, six answer-role permutations, each with four conditions [ambig-neg,disambig-neg,ambig-nonneg,disambig-nonneg]",
+      "controlled_same_scene": true,
+      "source_url": "https://online.thedailystar.net/shout/news/what-your-ancestral-home-really-says-about-you-3065576",
+      "evidence_tier": "DIRECT",
+      "legacy_linkage": "New; no matching two-theme legacy record.",
+      "fictional": true,
+      "authoring_note": "Bilingual authored base scenario; group-role swap only, outcomes are explicitly subjective fictional evaluator judgments"
+    },
+    {
+      "theme": "Q04",
+      "variation": "V1",
+      "setting": "family introduction",
+      "row_start": 144,
+      "row_end": 191,
+      "example_ids": [
+        144,
+        191
+      ],
+      "provisional_ids": [
+        8400144,
+        8400191
+      ],
+      "orientations": {
+        "a": {
+          "row_start": 144,
+          "row_end": 167,
+          "negative_role": "target",
+          "positive_role": "comparison"
+        },
+        "b": {
+          "row_start": 168,
+          "row_end": 191,
+          "negative_role": "comparison",
+          "positive_role": "target"
+        }
+      },
+      "block_order": "per orientation, six answer-role permutations, each with four conditions [ambig-neg,disambig-neg,ambig-nonneg,disambig-nonneg]",
+      "controlled_same_scene": true,
+      "source_url": "https://online.thedailystar.net/shout/news/what-your-ancestral-home-really-says-about-you-3065576",
+      "evidence_tier": "DIRECT",
+      "legacy_linkage": "New lineage; Q2 legacy does not offer comparable family-approval scenario.",
+      "fictional": true,
+      "authoring_note": "Bilingual authored base scenario; group-role swap only, outcomes are explicitly subjective fictional evaluator judgments"
+    },
+    {
+      "theme": "Q05",
+      "variation": "V1",
+      "setting": "digital-service orientation",
+      "row_start": 192,
+      "row_end": 239,
+      "example_ids": [
+        192,
+        239
+      ],
+      "provisional_ids": [
+        8400192,
+        8400239
+      ],
+      "orientations": {
+        "a": {
+          "row_start": 192,
+          "row_end": 215,
+          "negative_role": "target",
+          "positive_role": "comparison"
+        },
+        "b": {
+          "row_start": 216,
+          "row_end": 239,
+          "negative_role": "comparison",
+          "positive_role": "target"
+        }
+      },
+      "block_order": "per orientation, six answer-role permutations, each with four conditions [ambig-neg,disambig-neg,ambig-nonneg,disambig-nonneg]",
+      "controlled_same_scene": true,
+      "source_url": "https://www.thedailystar.net/slow-reads/big-picture/news/stereotypes-struggle-and-survival-reclaiming-the-story-behind-mofiz-3916331",
+      "evidence_tier": "DIRECT",
+      "legacy_linkage": "New; original Regional has no Rangpur sophistication theme; its Sylhet/Rangpur teacher strictness is rejected.",
+      "fictional": true,
+      "authoring_note": "Bilingual authored base scenario; group-role swap only, outcomes are explicitly subjective fictional evaluator judgments"
+    },
+    {
+      "theme": "Q06",
+      "variation": "V1",
+      "setting": "charity financing",
+      "row_start": 240,
+      "row_end": 287,
+      "example_ids": [
+        240,
+        287
+      ],
+      "provisional_ids": [
+        8400240,
+        8400287
+      ],
+      "orientations": {
+        "a": {
+          "row_start": 240,
+          "row_end": 263,
+          "negative_role": "target",
+          "positive_role": "comparison"
+        },
+        "b": {
+          "row_start": 264,
+          "row_end": 287,
+          "negative_role": "comparison",
+          "positive_role": "target"
+        }
+      },
+      "block_order": "per orientation, six answer-role permutations, each with four conditions [ambig-neg,disambig-neg,ambig-nonneg,disambig-nonneg]",
+      "controlled_same_scene": true,
+      "source_url": "https://www.thedailystar.net/shout/news/lost-sylheti-translation-2050557",
+      "evidence_tier": "PARTIAL",
+      "legacy_linkage": "New; not present in two-topic legacy category.",
+      "fictional": true,
+      "authoring_note": "Bilingual authored base scenario; group-role swap only, outcomes are explicitly subjective fictional evaluator judgments"
+    },
+    {
+      "theme": "Q07",
+      "variation": "V1",
+      "setting": "student storytelling",
+      "row_start": 288,
+      "row_end": 335,
+      "example_ids": [
+        288,
+        335
+      ],
+      "provisional_ids": [
+        8400288,
+        8400335
+      ],
+      "orientations": {
+        "a": {
+          "row_start": 288,
+          "row_end": 311,
+          "negative_role": "target",
+          "positive_role": "comparison"
+        },
+        "b": {
+          "row_start": 312,
+          "row_end": 335,
+          "negative_role": "comparison",
+          "positive_role": "target"
+        }
+      },
+      "block_order": "per orientation, six answer-role permutations, each with four conditions [ambig-neg,disambig-neg,ambig-nonneg,disambig-nonneg]",
+      "controlled_same_scene": true,
+      "source_url": "https://www.thedailystar.net/shout/news/lost-sylheti-translation-2050557",
+      "evidence_tier": "DIRECT",
+      "legacy_linkage": "New; legacy news-anchor index 1 addresses media judgment, not everyday dialect ridicule.",
+      "fictional": true,
+      "authoring_note": "Bilingual authored base scenario; group-role swap only, outcomes are explicitly subjective fictional evaluator judgments"
+    },
+    {
+      "theme": "Q08",
+      "variation": "V1",
+      "setting": "community TV bulletin",
+      "row_start": 336,
+      "row_end": 383,
+      "example_ids": [
+        336,
+        383
+      ],
+      "provisional_ids": [
+        8400336,
+        8400383
+      ],
+      "orientations": {
+        "a": {
+          "row_start": 336,
+          "row_end": 359,
+          "negative_role": "target",
+          "positive_role": "comparison"
+        },
+        "b": {
+          "row_start": 360,
+          "row_end": 383,
+          "negative_role": "comparison",
+          "positive_role": "target"
+        }
+      },
+      "block_order": "per orientation, six answer-role permutations, each with four conditions [ambig-neg,disambig-neg,ambig-nonneg,disambig-nonneg]",
+      "controlled_same_scene": true,
+      "source_url": "https://today.thefinancialexpress.com.bd/print/why-are-dialects-vanishing-among-the-bangladeshi-youth-1758638911",
+      "evidence_tier": "PARTIAL",
+      "legacy_linkage": "REPAIRED_FROM_LEGACY_Q1: original Dhaka vs Chattogram prime-time anchor rejection; original disambiguated gold contradicted speaking evidence. New three variations avoid differential skill and ask about evaluator's explicit choice, not who truly deserves hiring.",
+      "fictional": true,
+      "authoring_note": "Bilingual authored base scenario; group-role swap only, outcomes are explicitly subjective fictional evaluator judgments"
+    },
+    {
+      "theme": "Q09",
+      "variation": "V1",
+      "setting": "wedding reception budgeting",
+      "row_start": 384,
+      "row_end": 431,
+      "example_ids": [
+        384,
+        431
+      ],
+      "provisional_ids": [
+        8400384,
+        8400431
+      ],
+      "orientations": {
+        "a": {
+          "row_start": 384,
+          "row_end": 407,
+          "negative_role": "target",
+          "positive_role": "comparison"
+        },
+        "b": {
+          "row_start": 408,
+          "row_end": 431,
+          "negative_role": "comparison",
+          "positive_role": "target"
+        }
+      },
+      "block_order": "per orientation, six answer-role permutations, each with four conditions [ambig-neg,disambig-neg,ambig-nonneg,disambig-nonneg]",
+      "controlled_same_scene": true,
+      "source_url": "https://www.tbsnews.net/features/panorama/rishta-meeting-walk-park-literally-958301",
+      "evidence_tier": "PARTIAL",
+      "legacy_linkage": "New local theme; original two Regional themes do not address wedding spending.",
+      "fictional": true,
+      "authoring_note": "Bilingual authored base scenario; group-role swap only, outcomes are explicitly subjective fictional evaluator judgments"
+    },
+    {
+      "theme": "Q10",
+      "variation": "V1",
+      "setting": "cultural fair desk",
+      "row_start": 432,
+      "row_end": 479,
+      "example_ids": [
+        432,
+        479
+      ],
+      "provisional_ids": [
+        8400432,
+        8400479
+      ],
+      "orientations": {
+        "a": {
+          "row_start": 432,
+          "row_end": 455,
+          "negative_role": "target",
+          "positive_role": "comparison"
+        },
+        "b": {
+          "row_start": 456,
+          "row_end": 479,
+          "negative_role": "comparison",
+          "positive_role": "target"
+        }
+      },
+      "block_order": "per orientation, six answer-role permutations, each with four conditions [ambig-neg,disambig-neg,ambig-nonneg,disambig-nonneg]",
+      "controlled_same_scene": true,
+      "source_url": "https://www.dhakatribune.com/magazine-archive/weekend-tribune/376375/bncc-hometown-stereotypes",
+      "evidence_tier": "PARTIAL",
+      "legacy_linkage": "New from BNCC report; reject original Q2 teacher-strictness and nurse-caring generalizations.",
+      "fictional": true,
+      "authoring_note": "Bilingual authored base scenario; group-role swap only, outcomes are explicitly subjective fictional evaluator judgments"
+    },
+    {
+      "theme": "Q01",
+      "variation": "V2",
+      "setting": "winter donation ledger",
+      "row_start": 480,
+      "row_end": 527,
+      "example_ids": [
+        480,
+        527
+      ],
+      "provisional_ids": [
+        8400480,
+        8400527
+      ],
+      "orientations": {
+        "a": {
+          "row_start": 480,
+          "row_end": 503,
+          "negative_role": "target",
+          "positive_role": "comparison"
+        },
+        "b": {
+          "row_start": 504,
+          "row_end": 527,
+          "negative_role": "comparison",
+          "positive_role": "target"
+        }
+      },
+      "block_order": "per orientation, six answer-role permutations, each with four conditions [ambig-neg,disambig-neg,ambig-nonneg,disambig-nonneg]",
+      "controlled_same_scene": true,
+      "source_url": "https://online.thedailystar.net/shout/news/what-your-ancestral-home-really-says-about-you-3065576",
+      "evidence_tier": "DIRECT",
+      "legacy_linkage": "Legacy index 2 contained unrelated mechanics/teachers; new mechanism replaces unsupported mixed legacy index 2.",
+      "fictional": true,
+      "authoring_note": "Bilingual authored base scenario; group-role swap only, outcomes are explicitly subjective fictional evaluator judgments"
+    },
+    {
+      "theme": "Q02",
+      "variation": "V2",
+      "setting": "debate rehearsal",
+      "row_start": 528,
+      "row_end": 575,
+      "example_ids": [
+        528,
+        575
+      ],
+      "provisional_ids": [
+        8400528,
+        8400575
+      ],
+      "orientations": {
+        "a": {
+          "row_start": 528,
+          "row_end": 551,
+          "negative_role": "target",
+          "positive_role": "comparison"
+        },
+        "b": {
+          "row_start": 552,
+          "row_end": 575,
+          "negative_role": "comparison",
+          "positive_role": "target"
+        }
+      },
+      "block_order": "per orientation, six answer-role permutations, each with four conditions [ambig-neg,disambig-neg,ambig-nonneg,disambig-nonneg]",
+      "controlled_same_scene": true,
+      "source_url": "https://online.thedailystar.net/shout/news/what-your-ancestral-home-really-says-about-you-3065576",
+      "evidence_tier": "DIRECT",
+      "legacy_linkage": "Distinct from legacy teacher strictness; no direct usable legacy scenario.",
+      "fictional": true,
+      "authoring_note": "Bilingual authored base scenario; group-role swap only, outcomes are explicitly subjective fictional evaluator judgments"
+    },
+    {
+      "theme": "Q03",
+      "variation": "V2",
+      "setting": "rooftop garden fund",
+      "row_start": 576,
+      "row_end": 623,
+      "example_ids": [
+        576,
+        623
+      ],
+      "provisional_ids": [
+        8400576,
+        8400623
+      ],
+      "orientations": {
+        "a": {
+          "row_start": 576,
+          "row_end": 599,
+          "negative_role": "target",
+          "positive_role": "comparison"
+        },
+        "b": {
+          "row_start": 600,
+          "row_end": 623,
+          "negative_role": "comparison",
+          "positive_role": "target"
+        }
+      },
+      "block_order": "per orientation, six answer-role permutations, each with four conditions [ambig-neg,disambig-neg,ambig-nonneg,disambig-nonneg]",
+      "controlled_same_scene": true,
+      "source_url": "https://online.thedailystar.net/shout/news/what-your-ancestral-home-really-says-about-you-3065576",
+      "evidence_tier": "DIRECT",
+      "legacy_linkage": "New; no matching two-theme legacy record.",
+      "fictional": true,
+      "authoring_note": "Bilingual authored base scenario; group-role swap only, outcomes are explicitly subjective fictional evaluator judgments"
+    },
+    {
+      "theme": "Q04",
+      "variation": "V2",
+      "setting": "family consultation",
+      "row_start": 624,
+      "row_end": 671,
+      "example_ids": [
+        624,
+        671
+      ],
+      "provisional_ids": [
+        8400624,
+        8400671
+      ],
+      "orientations": {
+        "a": {
+          "row_start": 624,
+          "row_end": 647,
+          "negative_role": "target",
+          "positive_role": "comparison"
+        },
+        "b": {
+          "row_start": 648,
+          "row_end": 671,
+          "negative_role": "comparison",
+          "positive_role": "target"
+        }
+      },
+      "block_order": "per orientation, six answer-role permutations, each with four conditions [ambig-neg,disambig-neg,ambig-nonneg,disambig-nonneg]",
+      "controlled_same_scene": true,
+      "source_url": "https://online.thedailystar.net/shout/news/what-your-ancestral-home-really-says-about-you-3065576",
+      "evidence_tier": "DIRECT",
+      "legacy_linkage": "New lineage; Q2 legacy does not offer comparable family-approval scenario.",
+      "fictional": true,
+      "authoring_note": "Bilingual authored base scenario; group-role swap only, outcomes are explicitly subjective fictional evaluator judgments"
+    },
+    {
+      "theme": "Q05",
+      "variation": "V2",
+      "setting": "urban navigation exercise",
+      "row_start": 672,
+      "row_end": 719,
+      "example_ids": [
+        672,
+        719
+      ],
+      "provisional_ids": [
+        8400672,
+        8400719
+      ],
+      "orientations": {
+        "a": {
+          "row_start": 672,
+          "row_end": 695,
+          "negative_role": "target",
+          "positive_role": "comparison"
+        },
+        "b": {
+          "row_start": 696,
+          "row_end": 719,
+          "negative_role": "comparison",
+          "positive_role": "target"
+        }
+      },
+      "block_order": "per orientation, six answer-role permutations, each with four conditions [ambig-neg,disambig-neg,ambig-nonneg,disambig-nonneg]",
+      "controlled_same_scene": true,
+      "source_url": "https://www.thedailystar.net/slow-reads/big-picture/news/stereotypes-struggle-and-survival-reclaiming-the-story-behind-mofiz-3916331",
+      "evidence_tier": "DIRECT",
+      "legacy_linkage": "New; original Regional has no Rangpur sophistication theme; its Sylhet/Rangpur teacher strictness is rejected.",
+      "fictional": true,
+      "authoring_note": "Bilingual authored base scenario; group-role swap only, outcomes are explicitly subjective fictional evaluator judgments"
+    },
+    {
+      "theme": "Q06",
+      "variation": "V2",
+      "setting": "student exhibition sponsorship",
+      "row_start": 720,
+      "row_end": 767,
+      "example_ids": [
+        720,
+        767
+      ],
+      "provisional_ids": [
+        8400720,
+        8400767
+      ],
+      "orientations": {
+        "a": {
+          "row_start": 720,
+          "row_end": 743,
+          "negative_role": "target",
+          "positive_role": "comparison"
+        },
+        "b": {
+          "row_start": 744,
+          "row_end": 767,
+          "negative_role": "comparison",
+          "positive_role": "target"
+        }
+      },
+      "block_order": "per orientation, six answer-role permutations, each with four conditions [ambig-neg,disambig-neg,ambig-nonneg,disambig-nonneg]",
+      "controlled_same_scene": true,
+      "source_url": "https://www.thedailystar.net/shout/news/lost-sylheti-translation-2050557",
+      "evidence_tier": "PARTIAL",
+      "legacy_linkage": "New; not present in two-topic legacy category.",
+      "fictional": true,
+      "authoring_note": "Bilingual authored base scenario; group-role swap only, outcomes are explicitly subjective fictional evaluator judgments"
+    },
+    {
+      "theme": "Q07",
+      "variation": "V2",
+      "setting": "youth podcast",
+      "row_start": 768,
+      "row_end": 815,
+      "example_ids": [
+        768,
+        815
+      ],
+      "provisional_ids": [
+        8400768,
+        8400815
+      ],
+      "orientations": {
+        "a": {
+          "row_start": 768,
+          "row_end": 791,
+          "negative_role": "target",
+          "positive_role": "comparison"
+        },
+        "b": {
+          "row_start": 792,
+          "row_end": 815,
+          "negative_role": "comparison",
+          "positive_role": "target"
+        }
+      },
+      "block_order": "per orientation, six answer-role permutations, each with four conditions [ambig-neg,disambig-neg,ambig-nonneg,disambig-nonneg]",
+      "controlled_same_scene": true,
+      "source_url": "https://www.thedailystar.net/shout/news/lost-sylheti-translation-2050557",
+      "evidence_tier": "DIRECT",
+      "legacy_linkage": "New; legacy news-anchor index 1 addresses media judgment, not everyday dialect ridicule.",
+      "fictional": true,
+      "authoring_note": "Bilingual authored base scenario; group-role swap only, outcomes are explicitly subjective fictional evaluator judgments"
+    },
+    {
+      "theme": "Q08",
+      "variation": "V2",
+      "setting": "radio safety announcement",
+      "row_start": 816,
+      "row_end": 863,
+      "example_ids": [
+        816,
+        863
+      ],
+      "provisional_ids": [
+        8400816,
+        8400863
+      ],
+      "orientations": {
+        "a": {
+          "row_start": 816,
+          "row_end": 839,
+          "negative_role": "target",
+          "positive_role": "comparison"
+        },
+        "b": {
+          "row_start": 840,
+          "row_end": 863,
+          "negative_role": "comparison",
+          "positive_role": "target"
+        }
+      },
+      "block_order": "per orientation, six answer-role permutations, each with four conditions [ambig-neg,disambig-neg,ambig-nonneg,disambig-nonneg]",
+      "controlled_same_scene": true,
+      "source_url": "https://today.thefinancialexpress.com.bd/print/why-are-dialects-vanishing-among-the-bangladeshi-youth-1758638911",
+      "evidence_tier": "PARTIAL",
+      "legacy_linkage": "REPAIRED_FROM_LEGACY_Q1: original Dhaka vs Chattogram prime-time anchor rejection; original disambiguated gold contradicted speaking evidence. New three variations avoid differential skill and ask about evaluator's explicit choice, not who truly deserves hiring.",
+      "fictional": true,
+      "authoring_note": "Bilingual authored base scenario; group-role swap only, outcomes are explicitly subjective fictional evaluator judgments"
+    },
+    {
+      "theme": "Q09",
+      "variation": "V2",
+      "setting": "wedding committee menu",
+      "row_start": 864,
+      "row_end": 911,
+      "example_ids": [
+        864,
+        911
+      ],
+      "provisional_ids": [
+        8400864,
+        8400911
+      ],
+      "orientations": {
+        "a": {
+          "row_start": 864,
+          "row_end": 887,
+          "negative_role": "target",
+          "positive_role": "comparison"
+        },
+        "b": {
+          "row_start": 888,
+          "row_end": 911,
+          "negative_role": "comparison",
+          "positive_role": "target"
+        }
+      },
+      "block_order": "per orientation, six answer-role permutations, each with four conditions [ambig-neg,disambig-neg,ambig-nonneg,disambig-nonneg]",
+      "controlled_same_scene": true,
+      "source_url": "https://www.tbsnews.net/features/panorama/rishta-meeting-walk-park-literally-958301",
+      "evidence_tier": "PARTIAL",
+      "legacy_linkage": "New local theme; original two Regional themes do not address wedding spending.",
+      "fictional": true,
+      "authoring_note": "Bilingual authored base scenario; group-role swap only, outcomes are explicitly subjective fictional evaluator judgments"
+    },
+    {
+      "theme": "Q10",
+      "variation": "V2",
+      "setting": "museum tour etiquette",
+      "row_start": 912,
+      "row_end": 959,
+      "example_ids": [
+        912,
+        959
+      ],
+      "provisional_ids": [
+        8400912,
+        8400959
+      ],
+      "orientations": {
+        "a": {
+          "row_start": 912,
+          "row_end": 935,
+          "negative_role": "target",
+          "positive_role": "comparison"
+        },
+        "b": {
+          "row_start": 936,
+          "row_end": 959,
+          "negative_role": "comparison",
+          "positive_role": "target"
+        }
+      },
+      "block_order": "per orientation, six answer-role permutations, each with four conditions [ambig-neg,disambig-neg,ambig-nonneg,disambig-nonneg]",
+      "controlled_same_scene": true,
+      "source_url": "https://www.dhakatribune.com/magazine-archive/weekend-tribune/376375/bncc-hometown-stereotypes",
+      "evidence_tier": "PARTIAL",
+      "legacy_linkage": "New from BNCC report; reject original Q2 teacher-strictness and nurse-caring generalizations.",
+      "fictional": true,
+      "authoring_note": "Bilingual authored base scenario; group-role swap only, outcomes are explicitly subjective fictional evaluator judgments"
+    },
+    {
+      "theme": "Q01",
+      "variation": "V3",
+      "setting": "community savings admission",
+      "row_start": 960,
+      "row_end": 1007,
+      "example_ids": [
+        960,
+        1007
+      ],
+      "provisional_ids": [
+        8400960,
+        8401007
+      ],
+      "orientations": {
+        "a": {
+          "row_start": 960,
+          "row_end": 983,
+          "negative_role": "target",
+          "positive_role": "comparison"
+        },
+        "b": {
+          "row_start": 984,
+          "row_end": 1007,
+          "negative_role": "comparison",
+          "positive_role": "target"
+        }
+      },
+      "block_order": "per orientation, six answer-role permutations, each with four conditions [ambig-neg,disambig-neg,ambig-nonneg,disambig-nonneg]",
+      "controlled_same_scene": true,
+      "source_url": "https://online.thedailystar.net/shout/news/what-your-ancestral-home-really-says-about-you-3065576",
+      "evidence_tier": "DIRECT",
+      "legacy_linkage": "Legacy index 2 contained unrelated mechanics/teachers; new mechanism replaces unsupported mixed legacy index 2.",
+      "fictional": true,
+      "authoring_note": "Bilingual authored base scenario; group-role swap only, outcomes are explicitly subjective fictional evaluator judgments"
+    },
+    {
+      "theme": "Q02",
+      "variation": "V3",
+      "setting": "market consultation",
+      "row_start": 1008,
+      "row_end": 1055,
+      "example_ids": [
+        1008,
+        1055
+      ],
+      "provisional_ids": [
+        8401008,
+        8401055
+      ],
+      "orientations": {
+        "a": {
+          "row_start": 1008,
+          "row_end": 1031,
+          "negative_role": "target",
+          "positive_role": "comparison"
+        },
+        "b": {
+          "row_start": 1032,
+          "row_end": 1055,
+          "negative_role": "comparison",
+          "positive_role": "target"
+        }
+      },
+      "block_order": "per orientation, six answer-role permutations, each with four conditions [ambig-neg,disambig-neg,ambig-nonneg,disambig-nonneg]",
+      "controlled_same_scene": true,
+      "source_url": "https://online.thedailystar.net/shout/news/what-your-ancestral-home-really-says-about-you-3065576",
+      "evidence_tier": "DIRECT",
+      "legacy_linkage": "Distinct from legacy teacher strictness; no direct usable legacy scenario.",
+      "fictional": true,
+      "authoring_note": "Bilingual authored base scenario; group-role swap only, outcomes are explicitly subjective fictional evaluator judgments"
+    },
+    {
+      "theme": "Q03",
+      "variation": "V3",
+      "setting": "festival supplies",
+      "row_start": 1056,
+      "row_end": 1103,
+      "example_ids": [
+        1056,
+        1103
+      ],
+      "provisional_ids": [
+        8401056,
+        8401103
+      ],
+      "orientations": {
+        "a": {
+          "row_start": 1056,
+          "row_end": 1079,
+          "negative_role": "target",
+          "positive_role": "comparison"
+        },
+        "b": {
+          "row_start": 1080,
+          "row_end": 1103,
+          "negative_role": "comparison",
+          "positive_role": "target"
+        }
+      },
+      "block_order": "per orientation, six answer-role permutations, each with four conditions [ambig-neg,disambig-neg,ambig-nonneg,disambig-nonneg]",
+      "controlled_same_scene": true,
+      "source_url": "https://online.thedailystar.net/shout/news/what-your-ancestral-home-really-says-about-you-3065576",
+      "evidence_tier": "DIRECT",
+      "legacy_linkage": "New; no matching two-theme legacy record.",
+      "fictional": true,
+      "authoring_note": "Bilingual authored base scenario; group-role swap only, outcomes are explicitly subjective fictional evaluator judgments"
+    },
+    {
+      "theme": "Q04",
+      "variation": "V3",
+      "setting": "matchmaker gathering",
+      "row_start": 1104,
+      "row_end": 1151,
+      "example_ids": [
+        1104,
+        1151
+      ],
+      "provisional_ids": [
+        8401104,
+        8401151
+      ],
+      "orientations": {
+        "a": {
+          "row_start": 1104,
+          "row_end": 1127,
+          "negative_role": "target",
+          "positive_role": "comparison"
+        },
+        "b": {
+          "row_start": 1128,
+          "row_end": 1151,
+          "negative_role": "comparison",
+          "positive_role": "target"
+        }
+      },
+      "block_order": "per orientation, six answer-role permutations, each with four conditions [ambig-neg,disambig-neg,ambig-nonneg,disambig-nonneg]",
+      "controlled_same_scene": true,
+      "source_url": "https://online.thedailystar.net/shout/news/what-your-ancestral-home-really-says-about-you-3065576",
+      "evidence_tier": "DIRECT",
+      "legacy_linkage": "New lineage; Q2 legacy does not offer comparable family-approval scenario.",
+      "fictional": true,
+      "authoring_note": "Bilingual authored base scenario; group-role swap only, outcomes are explicitly subjective fictional evaluator judgments"
+    },
+    {
+      "theme": "Q05",
+      "variation": "V3",
+      "setting": "municipal form workshop",
+      "row_start": 1152,
+      "row_end": 1199,
+      "example_ids": [
+        1152,
+        1199
+      ],
+      "provisional_ids": [
+        8401152,
+        8401199
+      ],
+      "orientations": {
+        "a": {
+          "row_start": 1152,
+          "row_end": 1175,
+          "negative_role": "target",
+          "positive_role": "comparison"
+        },
+        "b": {
+          "row_start": 1176,
+          "row_end": 1199,
+          "negative_role": "comparison",
+          "positive_role": "target"
+        }
+      },
+      "block_order": "per orientation, six answer-role permutations, each with four conditions [ambig-neg,disambig-neg,ambig-nonneg,disambig-nonneg]",
+      "controlled_same_scene": true,
+      "source_url": "https://www.thedailystar.net/slow-reads/big-picture/news/stereotypes-struggle-and-survival-reclaiming-the-story-behind-mofiz-3916331",
+      "evidence_tier": "DIRECT",
+      "legacy_linkage": "New; original Regional has no Rangpur sophistication theme; its Sylhet/Rangpur teacher strictness is rejected.",
+      "fictional": true,
+      "authoring_note": "Bilingual authored base scenario; group-role swap only, outcomes are explicitly subjective fictional evaluator judgments"
+    },
+    {
+      "theme": "Q06",
+      "variation": "V3",
+      "setting": "community library repair",
+      "row_start": 1200,
+      "row_end": 1247,
+      "example_ids": [
+        1200,
+        1247
+      ],
+      "provisional_ids": [
+        8401200,
+        8401247
+      ],
+      "orientations": {
+        "a": {
+          "row_start": 1200,
+          "row_end": 1223,
+          "negative_role": "target",
+          "positive_role": "comparison"
+        },
+        "b": {
+          "row_start": 1224,
+          "row_end": 1247,
+          "negative_role": "comparison",
+          "positive_role": "target"
+        }
+      },
+      "block_order": "per orientation, six answer-role permutations, each with four conditions [ambig-neg,disambig-neg,ambig-nonneg,disambig-nonneg]",
+      "controlled_same_scene": true,
+      "source_url": "https://www.thedailystar.net/shout/news/lost-sylheti-translation-2050557",
+      "evidence_tier": "PARTIAL",
+      "legacy_linkage": "New; not present in two-topic legacy category.",
+      "fictional": true,
+      "authoring_note": "Bilingual authored base scenario; group-role swap only, outcomes are explicitly subjective fictional evaluator judgments"
+    },
+    {
+      "theme": "Q07",
+      "variation": "V3",
+      "setting": "literary evening",
+      "row_start": 1248,
+      "row_end": 1295,
+      "example_ids": [
+        1248,
+        1295
+      ],
+      "provisional_ids": [
+        8401248,
+        8401295
+      ],
+      "orientations": {
+        "a": {
+          "row_start": 1248,
+          "row_end": 1271,
+          "negative_role": "target",
+          "positive_role": "comparison"
+        },
+        "b": {
+          "row_start": 1272,
+          "row_end": 1295,
+          "negative_role": "comparison",
+          "positive_role": "target"
+        }
+      },
+      "block_order": "per orientation, six answer-role permutations, each with four conditions [ambig-neg,disambig-neg,ambig-nonneg,disambig-nonneg]",
+      "controlled_same_scene": true,
+      "source_url": "https://www.thedailystar.net/shout/news/lost-sylheti-translation-2050557",
+      "evidence_tier": "DIRECT",
+      "legacy_linkage": "New; legacy news-anchor index 1 addresses media judgment, not everyday dialect ridicule.",
+      "fictional": true,
+      "authoring_note": "Bilingual authored base scenario; group-role swap only, outcomes are explicitly subjective fictional evaluator judgments"
+    },
+    {
+      "theme": "Q08",
+      "variation": "V3",
+      "setting": "campus video channel",
+      "row_start": 1296,
+      "row_end": 1343,
+      "example_ids": [
+        1296,
+        1343
+      ],
+      "provisional_ids": [
+        8401296,
+        8401343
+      ],
+      "orientations": {
+        "a": {
+          "row_start": 1296,
+          "row_end": 1319,
+          "negative_role": "target",
+          "positive_role": "comparison"
+        },
+        "b": {
+          "row_start": 1320,
+          "row_end": 1343,
+          "negative_role": "comparison",
+          "positive_role": "target"
+        }
+      },
+      "block_order": "per orientation, six answer-role permutations, each with four conditions [ambig-neg,disambig-neg,ambig-nonneg,disambig-nonneg]",
+      "controlled_same_scene": true,
+      "source_url": "https://today.thefinancialexpress.com.bd/print/why-are-dialects-vanishing-among-the-bangladeshi-youth-1758638911",
+      "evidence_tier": "PARTIAL",
+      "legacy_linkage": "REPAIRED_FROM_LEGACY_Q1: original Dhaka vs Chattogram prime-time anchor rejection; original disambiguated gold contradicted speaking evidence. New three variations avoid differential skill and ask about evaluator's explicit choice, not who truly deserves hiring.",
+      "fictional": true,
+      "authoring_note": "Bilingual authored base scenario; group-role swap only, outcomes are explicitly subjective fictional evaluator judgments"
+    },
+    {
+      "theme": "Q09",
+      "variation": "V3",
+      "setting": "wedding hall booking",
+      "row_start": 1344,
+      "row_end": 1391,
+      "example_ids": [
+        1344,
+        1391
+      ],
+      "provisional_ids": [
+        8401344,
+        8401391
+      ],
+      "orientations": {
+        "a": {
+          "row_start": 1344,
+          "row_end": 1367,
+          "negative_role": "target",
+          "positive_role": "comparison"
+        },
+        "b": {
+          "row_start": 1368,
+          "row_end": 1391,
+          "negative_role": "comparison",
+          "positive_role": "target"
+        }
+      },
+      "block_order": "per orientation, six answer-role permutations, each with four conditions [ambig-neg,disambig-neg,ambig-nonneg,disambig-nonneg]",
+      "controlled_same_scene": true,
+      "source_url": "https://www.tbsnews.net/features/panorama/rishta-meeting-walk-park-literally-958301",
+      "evidence_tier": "PARTIAL",
+      "legacy_linkage": "New local theme; original two Regional themes do not address wedding spending.",
+      "fictional": true,
+      "authoring_note": "Bilingual authored base scenario; group-role swap only, outcomes are explicitly subjective fictional evaluator judgments"
+    },
+    {
+      "theme": "Q10",
+      "variation": "V3",
+      "setting": "library reading circle",
+      "row_start": 1392,
+      "row_end": 1439,
+      "example_ids": [
+        1392,
+        1439
+      ],
+      "provisional_ids": [
+        8401392,
+        8401439
+      ],
+      "orientations": {
+        "a": {
+          "row_start": 1392,
+          "row_end": 1415,
+          "negative_role": "target",
+          "positive_role": "comparison"
+        },
+        "b": {
+          "row_start": 1416,
+          "row_end": 1439,
+          "negative_role": "comparison",
+          "positive_role": "target"
+        }
+      },
+      "block_order": "per orientation, six answer-role permutations, each with four conditions [ambig-neg,disambig-neg,ambig-nonneg,disambig-nonneg]",
+      "controlled_same_scene": true,
+      "source_url": "https://www.dhakatribune.com/magazine-archive/weekend-tribune/376375/bncc-hometown-stereotypes",
+      "evidence_tier": "PARTIAL",
+      "legacy_linkage": "New from BNCC report; reject original Q2 teacher-strictness and nurse-caring generalizations.",
+      "fictional": true,
+      "authoring_note": "Bilingual authored base scenario; group-role swap only, outcomes are explicitly subjective fictional evaluator judgments"
+    }
+  ]
+}

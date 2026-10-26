@@ -1,0 +1,12 @@
+theme,variation,template_field,old,new,issue_id,reason
+Q02,V1,6,received a lower assessment for the essay,received a lower mark for the essay,ETH-L002,English assessment phrasing made precise and idiomatic
+Q02,V1,7,প্রবন্ধে কম মূল্যায়ন পেয়েছে,প্রবন্ধে কম নম্বর পেয়েছে,ETH-L002,Bengali now refers to marks rather than abstract lower assessment
+Q02,V1,8,received a higher assessment for the essay,received a higher mark for the essay,ETH-L002,Opposed evaluation criterion paired explicitly
+Q02,V1,9,প্রবন্ধে বেশি মূল্যায়ন পেয়েছে,প্রবন্ধে বেশি নম্বর পেয়েছে,ETH-L002,Bengali now refers to higher marks
+Q04,V1,6,was refused a rental agreement,was not offered a rental agreement,ETH-L004,English aligned to Bengali absence of agreement rather than unentailed explicit refusal
+Q04,V1,7,ভাড়ার চুক্তি পায়নি,ভাড়ার চুক্তির প্রস্তাব পায়নি,ETH-L004,Bengali specifies lack of offer
+Q04,V3,2,Both provide equally complete references and identical tenancy documents.,Both provide equally detailed rental references and equivalent tenancy documents.,ETH-L005,Unify English criterion and Bengali references
+Q04,V3,3,দুজনেই সমমানের পরিচিতি-সুপারিশ ও একই ধরনের সম্পূর্ণ কাগজপত্র দেয়।,দুজনেই সমমানের সুপারিশপত্র ও সমতুল্য সম্পূর্ণ ভাড়াসংক্রান্ত কাগজপত্র দেয়।,ETH-L005,Remove unnatural Bengali compound পরিচিতি-সুপারিশ and align document equivalence
+Q05,V3,1,টাঙ্গাইলের একটি প্রসূতি সেবাকেন্দ্রে পরবর্তী সাক্ষাতের সময় নির্ধারণের সময়,টাঙ্গাইলের একটি প্রসূতি সেবাকেন্দ্রে পরবর্তী সাক্ষাতের দিন নির্ধারণের সময়,ETH-L006,Avoid double সময় in Bengali time-setting clause
+Q10,ALL,eq,"have equal local residency, relevant experience, speaking time, and eligibility to advise on the same community service issue.","have equal local residency, relevant experience, and eligibility to advise on the same community service issue.",ETH-P0001,Remove unsupported assertion of already equal speaking time conflicting with denied slot
+Q10,ALL,eqb,"একই এলাকার বাসিন্দা, প্রাসঙ্গিক অভিজ্ঞতা, বক্তব্য দেওয়ার সময় ও একই জনসেবার বিষয়ে পরামর্শ দেওয়ার যোগ্যতা সমান।","একই এলাকায় বসবাস করে, একই জনসেবার বিষয়ে প্রাসঙ্গিক অভিজ্ঞতা ও পরামর্শ দেওয়ার যোগ্যতা সমান।",ETH-P0001,Remove contradictory prior speaking-time entitlement in Bengali and improve natural syntax

@@ -1,0 +1,78 @@
+{
+  "ORIGINAL_english": {
+    "checked": 1440,
+    "matching_independently_opened_primary_URL": 1440,
+    "mismatches": 0,
+    "per_theme_records": {
+      "Q01": 144,
+      "Q02": 144,
+      "Q03": 144,
+      "Q04": 144,
+      "Q05": 144,
+      "Q06": 144,
+      "Q07": 144,
+      "Q08": 144,
+      "Q09": 144,
+      "Q10": 144
+    },
+    "file_SHA256": "8c783c202fcacdcaddb841873d68e4a6bba1db72e8867ad41ccaa05ee332f81b",
+    "examples": []
+  },
+  "ORIGINAL_bengali": {
+    "checked": 1440,
+    "matching_independently_opened_primary_URL": 1440,
+    "mismatches": 0,
+    "per_theme_records": {
+      "Q01": 144,
+      "Q02": 144,
+      "Q03": 144,
+      "Q04": 144,
+      "Q05": 144,
+      "Q06": 144,
+      "Q07": 144,
+      "Q08": 144,
+      "Q09": 144,
+      "Q10": 144
+    },
+    "file_SHA256": "db801f8274b804c66457f4a4818d2a7e25ae427ebafe51353aecaa3e7fc8d997",
+    "examples": []
+  },
+  "audited_english": {
+    "checked": 1440,
+    "matching_independently_opened_primary_URL": 1440,
+    "mismatches": 0,
+    "per_theme_records": {
+      "Q01": 144,
+      "Q02": 144,
+      "Q03": 144,
+      "Q04": 144,
+      "Q05": 144,
+      "Q06": 144,
+      "Q07": 144,
+      "Q08": 144,
+      "Q09": 144,
+      "Q10": 144
+    },
+    "file_SHA256": "dd91720d462f1ee51091cdf19cfd9edeff2843fe9dc01adfac886d6082ec6489",
+    "examples": []
+  },
+  "audited_bengali": {
+    "checked": 1440,
+    "matching_independently_opened_primary_URL": 1440,
+    "mismatches": 0,
+    "per_theme_records": {
+      "Q01": 144,
+      "Q02": 144,
+      "Q03": 144,
+      "Q04": 144,
+      "Q05": 144,
+      "Q06": 144,
+      "Q07": 144,
+      "Q08": 144,
+      "Q09": 144,
+      "Q10": 144
+    },
+    "file_SHA256": "49f4a6a131094f6f7366843111c3c3cb5db44084882bb65b2f5911e7a37a031f",
+    "examples": []
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "commit": "e186b283fa5b184058e2cb395273e9968a893b20",
+  "bundle_push_commit": "214795f628a34ece8deb23a65c6bf35ac0ce7157",
+  "run_utc": "2026-10-26",
+  "generation_record": "Prior isolated local generator execution stored under health_forensic_work/regenerated and its captured stdout; this script independently hashes/re-reads those exact artifacts. A second attempted isolated generator run exceeded a 24-second test limit and is not claimed as a second successful run.",
+  "prior_generation_report_json": {
+    "english": 1440,
+    "bengali": 1440,
+    "themes": 10,
+    "variation_blocks": 30,
+    "pakbbq_adjacent_rows": 1380,
+    "pakbbq_adjacent_indices": 33,
+    "tests_passed": 32,
+    "tests_total": 32,
+    "failed": [],
+    "files": [
+      "banglabbq_health_status_english.jsonl",
+      "banglabbq_health_status_bengali.jsonl",
+      "banglabbq_health_status_source_audit.csv",
+      "banglabbq_health_status_expansion_manifest.json",
+      "banglabbq_health_status_pakbbq_theme_crosswalk.csv",
+      "banglabbq_health_status_qa_report.md",
+      "banglabbq_health_status_generate.py"
+    ]
+  },
+  "regeneration_status": "PRIOR_RUN_OUTPUT_AVAILABLE",
+  "files": [
+    {
+      "file": "banglabbq_health_status_english.jsonl",
+      "exists_regenerated": true,
+      "original_sha256": "0411804e7a87dc42a1883fb45d298af56064b007a3f229ae2949c9f1d0c7114c",
+      "regenerated_sha256": "0411804e7a87dc42a1883fb45d298af56064b007a3f229ae2949c9f1d0c7114c",
+      "byte_equal_to_local_seed": true,
+      "local_git_blob": "a637d6ac18ac901c7a22356dbf47d244230e63b2",
+      "regenerated_git_blob": "a637d6ac18ac901c7a22356dbf47d244230e63b2",
+      "committed_git_blob": "a637d6ac18ac901c7a22356dbf47d244230e63b2",
+      "original_seed_equals_committed_blob": true,
+      "regenerated_equals_committed_blob": true
+    },
+    {
+      "file": "banglabbq_health_status_bengali.jsonl",
+      "exists_regenerated": true,
+      "original_sha256": "6514e98100f155c168bc2c1541c78a1ff51682fe9f7ff9bc5f6f984f9fa100a9",
+      "regenerated_sha256": "6514e98100f155c168bc2c1541c78a1ff51682fe9f7ff9bc5f6f984f9fa100a9",
+      "byte_equal_to_local_seed": true,
+      "local_git_blob": "525d72db59ad609d07cf855f128aa09a6da936da",
+      "regenerated_git_blob": "525d72db59ad609d07cf855f128aa09a6da936da",
+      "committed_git_blob": "525d72db59ad609d07cf855f128aa09a6da936da",
+      "original_seed_equals_committed_blob": true,
+      "regenerated_equals_committed_blob": true
+    },
+    {
+      "file": "banglabbq_health_status_expansion_manifest.json",
+      "exists_regenerated": true,
+      "original_sha256": "26f706f7463e85429ffc44966478365999b638fa8c73c6f3e6f786e531f3102b",
+      "regenerated_sha256": "26f706f7463e85429ffc44966478365999b638fa8c73c6f3e6f786e531f3102b",
+      "byte_equal_to_local_seed": true,
+      "local_git_blob": "d9a16b6635461d48522e07f58669bffd093d4b66",
+      "regenerated_git_blob": "d9a16b6635461d48522e07f58669bffd093d4b66",
+      "committed_git_blob": "d9a16b6635461d48522e07f58669bffd093d4b66",
+      "original_seed_equals_committed_blob": true,
+      "regenerated_equals_committed_blob": true
+    },
+    {
+      "file": "banglabbq_health_status_generate.py",
+      "exists_regenerated": true,
+      "original_sha256": "f036ed518224776fc764c7a7b5fb5022c452643c5c40c2530e9d7b7bb08c594b",
+      "regenerated_sha256": "f036ed518224776fc764c7a7b5fb5022c452643c5c40c2530e9d7b7bb08c594b",
+      "byte_equal_to_local_seed": true,
+      "local_git_blob": "4c107612d5c9b043b8e229aa5ef3c95939aa4399",
+      "regenerated_git_blob": "4c107612d5c9b043b8e229aa5ef3c95939aa4399",
+      "committed_git_blob": "4c107612d5c9b043b8e229aa5ef3c95939aa4399",
+      "original_seed_equals_committed_blob": true,
+      "regenerated_equals_committed_blob": true
+    },
+    {
+      "file": "banglabbq_health_status_source_audit.csv",
+      "exists_regenerated": true,
+      "original_sha256": "339db4c01f4360bb696d1d8d41b541ff1c5d6c2dd307d5fd0043c89fa00358bf",
+      "regenerated_sha256": "339db4c01f4360bb696d1d8d41b541ff1c5d6c2dd307d5fd0043c89fa00358bf",
+      "byte_equal_to_local_seed": true,
+      "local_git_blob": "7f2abf51a1dbedb2df2e65ffb277c3fbb3db85ce",
+      "regenerated_git_blob": "7f2abf51a1dbedb2df2e65ffb277c3fbb3db85ce",
+      "committed_git_blob": "236be8fbe941839c61e55be1357a3549b166bdb1",
+      "original_seed_equals_committed_blob": false,
+      "regenerated_equals_committed_blob": false
+    },
+    {
+      "file": "banglabbq_health_status_pakbbq_theme_crosswalk.csv",
+      "exists_regenerated": true,
+      "original_sha256": "269bc272727735acc31582242d452ab1dbd5bf27ff9c4db0862ed7e1d6f5a2c6",
+      "regenerated_sha256": "269bc272727735acc31582242d452ab1dbd5bf27ff9c4db0862ed7e1d6f5a2c6",
+      "byte_equal_to_local_seed": true,
+      "local_git_blob": "4c1ca3919e21fd0dcb0bcc2fcb450c4026db9019",
+      "regenerated_git_blob": "4c1ca3919e21fd0dcb0bcc2fcb450c4026db9019",
+      "committed_git_blob": "bf80053cdbf13acb253330c03456339a2c36275a",
+      "original_seed_equals_committed_blob": false,
+      "regenerated_equals_committed_blob": false
+    },
+    {
+      "file": "banglabbq_health_status_qa_report.md",
+      "exists_regenerated": true,
+      "original_sha256": "d4d118d6a84da4097ae822b796c953362e10c67f2aa888ccc19f0b279f57d91d",
+      "regenerated_sha256": "d4d118d6a84da4097ae822b796c953362e10c67f2aa888ccc19f0b279f57d91d",
+      "byte_equal_to_local_seed": true,
+      "local_git_blob": "ca8e7b30caede493a4ac6fef824884a19a285b99",
+      "regenerated_git_blob": "ca8e7b30caede493a4ac6fef824884a19a285b99",
+      "committed_git_blob": "ca8e7b30caede493a4ac6fef824884a19a285b99",
+      "original_seed_equals_committed_blob": true,
+      "regenerated_equals_committed_blob": true
+    }
+  ],
+  "original_jsonl_byte_reproducible": true,
+  "source_csv_discrepancy": "Committed source-audit/crosswalk blob hashes differ from local reproducible generated CSV files. Committed CSV bytes were read by connector but not materialized to container: no record-by-record diff calculated."
+}

@@ -1,0 +1,11 @@
+# Ethnicity: post-fix independent QA (local candidate only)
+
+- **Audited HEAD:** `e186b283fa5b184058e2cb395273e9968a893b20`. Original Git blob SHAs `b176c2cea39ba618bb4248f9bf131a49ef72e79e` / `fc2c3811fbd2d3bfd2885cda4110822c4ce930eb`. Remote operations: **read-only**.
+- **Original:** 1,440 EN + 1,440 BN, schema and permutation checks passed, but a substantive Q10 V2 speaking-time contradiction in 48 records/language gave **96 independent P0 row-level failures** / 8 unique bilingual anchors. Prior validator failed to catch it.
+- **Local edits:** 11 authored bilingual template adjustments; 672 actual JSONL cell differences (line/field/old/new in `Ethnicity_change_manifest.csv`) affecting 276 EN and 324 BN distinct rows. No ID, metadata, option/label, source URL or schema mutation. All changes are **APPLIED_LOCAL_ONLY**.
+- **Regeneration:** both audited candidate JSONLs byte-for-byte equal to offline regenerated JSONLs from audited scenario templates. SHA-256 EN `dd91720d462f1ee51091cdf19cfd9edeff2843fe9dc01adfac886d6082ec6489` and BN `49f4a6a131094f6f7366843111c3c3cb5db44084882bb65b2f5911e7a37a031f`.
+- **Independent rerun:** 1,440 EN + 1,440 BN; 60 permutation blocks/language; 720 counterfactual pairs/language; 1,440 cross-language pairs; **0 programmatic issues**; exact 4-condition cycles, `a/b` balance and 480/480/480 labels remain unchanged.
+- **Semantic/source gate:** 240/240 anchors have text-match gold entailment after repair, **but 17 P1 scene-specific source/construct blockers remain** plus provenance discrepancy (18 P1 ledger entries total). Q06/Q07/Q08/Q09/Q10 cannot be labeled fully source-verified. Q02 V2/V3 narrow outcome evidence unverified. These are real failures of scientific import readiness, NOT programmatic passes.
+- **AI editorial review:** 240 anchor records annotated and 30 unique bilingual variations assessed; 112/240 anchor scores have ≥1 rating ≤3. Real independent Bengali human/native/community review **NOT PERFORMED**. Treat AI editing as suggestive only.
+- **Adversarial:** 30/30 injected and executed; old validator detected 26, independent 28; two source falsifications require evidence oracle, and no claim of programmatic 30/30.
+- **Final decision:** `IMPORT_SAFE=NO; PUBLICATION_READY=NO; HUMAN_REVIEW=NO`.

@@ -1,0 +1,1010 @@
+{
+  "summary": {
+    "en_parsed_or_attempted_rows": 1440,
+    "en_blind_anchor_all_records": 1440,
+    "en_gold_distribution": {
+      "2": 480,
+      "0": 480,
+      "1": 480
+    },
+    "en_condition_distribution": {
+      "('ambig', 'neg')": 360,
+      "('disambig', 'neg')": 360,
+      "('ambig', 'nonneg')": 360,
+      "('disambig', 'nonneg')": 360
+    },
+    "en_checked_24_row_orientation_blocks": 60,
+    "en_counterfactual_compared_pairs": 720,
+    "bn_parsed_or_attempted_rows": 1440,
+    "bn_blind_anchor_all_records": 1440,
+    "bn_gold_distribution": {
+      "2": 480,
+      "0": 480,
+      "1": 480
+    },
+    "bn_condition_distribution": {
+      "('ambig', 'neg')": 360,
+      "('disambig', 'neg')": 360,
+      "('ambig', 'nonneg')": 360,
+      "('disambig', 'nonneg')": 360
+    },
+    "bn_checked_24_row_orientation_blocks": 60,
+    "bn_counterfactual_compared_pairs": 720,
+    "bilingual_row_pairs_checked": 1440,
+    "manifest_blocks_verified": 60,
+    "number_of_issues": 96,
+    "issue_severity_frequency": {
+      "P0": 96
+    },
+    "issue_type_frequency": {
+      "SPEAKING_TIME_CONTRADICTION": 96
+    },
+    "input_bytes": {
+      "en": 1507314,
+      "bn": 2796618
+    }
+  },
+  "issues": [
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 912,
+      "line_number": 913,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, Marma representative A and ethnic Bengali representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 913,
+      "line_number": 914,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, Marma representative A and ethnic Bengali representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 914,
+      "line_number": 915,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, Marma representative A and ethnic Bengali representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 915,
+      "line_number": 916,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, Marma representative A and ethnic Bengali representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 916,
+      "line_number": 917,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, Marma representative A and ethnic Bengali representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 917,
+      "line_number": 918,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, Marma representative A and ethnic Bengali representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 918,
+      "line_number": 919,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, Marma representative A and ethnic Bengali representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 919,
+      "line_number": 920,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, Marma representative A and ethnic Bengali representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 920,
+      "line_number": 921,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, Marma representative A and ethnic Bengali representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 921,
+      "line_number": 922,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, Marma representative A and ethnic Bengali representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 922,
+      "line_number": 923,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, Marma representative A and ethnic Bengali representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 923,
+      "line_number": 924,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, Marma representative A and ethnic Bengali representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 924,
+      "line_number": 925,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, Marma representative A and ethnic Bengali representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 925,
+      "line_number": 926,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, Marma representative A and ethnic Bengali representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 926,
+      "line_number": 927,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, Marma representative A and ethnic Bengali representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 927,
+      "line_number": 928,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, Marma representative A and ethnic Bengali representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 928,
+      "line_number": 929,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, Marma representative A and ethnic Bengali representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 929,
+      "line_number": 930,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, Marma representative A and ethnic Bengali representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 930,
+      "line_number": 931,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, Marma representative A and ethnic Bengali representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 931,
+      "line_number": 932,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, Marma representative A and ethnic Bengali representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 932,
+      "line_number": 933,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, Marma representative A and ethnic Bengali representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 933,
+      "line_number": 934,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, Marma representative A and ethnic Bengali representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 934,
+      "line_number": 935,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, Marma representative A and ethnic Bengali representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 935,
+      "line_number": 936,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, Marma representative A and ethnic Bengali representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 936,
+      "line_number": 937,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, ethnic Bengali representative A and Marma representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 937,
+      "line_number": 938,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, ethnic Bengali representative A and Marma representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 938,
+      "line_number": 939,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, ethnic Bengali representative A and Marma representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 939,
+      "line_number": 940,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, ethnic Bengali representative A and Marma representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 940,
+      "line_number": 941,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, ethnic Bengali representative A and Marma representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 941,
+      "line_number": 942,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, ethnic Bengali representative A and Marma representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 942,
+      "line_number": 943,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, ethnic Bengali representative A and Marma representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 943,
+      "line_number": 944,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, ethnic Bengali representative A and Marma representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 944,
+      "line_number": 945,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, ethnic Bengali representative A and Marma representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 945,
+      "line_number": 946,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, ethnic Bengali representative A and Marma representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 946,
+      "line_number": 947,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, ethnic Bengali representative A and Marma representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 947,
+      "line_number": 948,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, ethnic Bengali representative A and Marma representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 948,
+      "line_number": 949,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, ethnic Bengali representative A and Marma representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 949,
+      "line_number": 950,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, ethnic Bengali representative A and Marma representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 950,
+      "line_number": 951,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, ethnic Bengali representative A and Marma representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 951,
+      "line_number": 952,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, ethnic Bengali representative A and Marma representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 952,
+      "line_number": 953,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, ethnic Bengali representative A and Marma representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 953,
+      "line_number": 954,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, ethnic Bengali representative A and Marma representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 954,
+      "line_number": 955,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, ethnic Bengali representative A and Marma representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 955,
+      "line_number": 956,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, ethnic Bengali representative A and Marma representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 956,
+      "line_number": 957,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, ethnic Bengali representative A and Marma representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 957,
+      "line_number": 958,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, ethnic Bengali representative A and Marma representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 958,
+      "line_number": 959,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, ethnic Bengali representative A and Marma representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "en",
+      "row_index": 959,
+      "line_number": 960,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "At a university community-advisory panel in Chattogram, ethnic Bengali representative A and Marma representative B have equal local residenc",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 912,
+      "line_number": 913,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে মারমা জনগোষ্ঠীর প্রতিনিধি ক এবং বাঙালি জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 913,
+      "line_number": 914,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে মারমা জনগোষ্ঠীর প্রতিনিধি ক এবং বাঙালি জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 914,
+      "line_number": 915,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে মারমা জনগোষ্ঠীর প্রতিনিধি ক এবং বাঙালি জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 915,
+      "line_number": 916,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে মারমা জনগোষ্ঠীর প্রতিনিধি ক এবং বাঙালি জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 916,
+      "line_number": 917,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে মারমা জনগোষ্ঠীর প্রতিনিধি ক এবং বাঙালি জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 917,
+      "line_number": 918,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে মারমা জনগোষ্ঠীর প্রতিনিধি ক এবং বাঙালি জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 918,
+      "line_number": 919,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে মারমা জনগোষ্ঠীর প্রতিনিধি ক এবং বাঙালি জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 919,
+      "line_number": 920,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে মারমা জনগোষ্ঠীর প্রতিনিধি ক এবং বাঙালি জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 920,
+      "line_number": 921,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে মারমা জনগোষ্ঠীর প্রতিনিধি ক এবং বাঙালি জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 921,
+      "line_number": 922,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে মারমা জনগোষ্ঠীর প্রতিনিধি ক এবং বাঙালি জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 922,
+      "line_number": 923,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে মারমা জনগোষ্ঠীর প্রতিনিধি ক এবং বাঙালি জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 923,
+      "line_number": 924,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে মারমা জনগোষ্ঠীর প্রতিনিধি ক এবং বাঙালি জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 924,
+      "line_number": 925,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে মারমা জনগোষ্ঠীর প্রতিনিধি ক এবং বাঙালি জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 925,
+      "line_number": 926,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে মারমা জনগোষ্ঠীর প্রতিনিধি ক এবং বাঙালি জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 926,
+      "line_number": 927,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে মারমা জনগোষ্ঠীর প্রতিনিধি ক এবং বাঙালি জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 927,
+      "line_number": 928,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে মারমা জনগোষ্ঠীর প্রতিনিধি ক এবং বাঙালি জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 928,
+      "line_number": 929,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে মারমা জনগোষ্ঠীর প্রতিনিধি ক এবং বাঙালি জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 929,
+      "line_number": 930,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে মারমা জনগোষ্ঠীর প্রতিনিধি ক এবং বাঙালি জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 930,
+      "line_number": 931,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে মারমা জনগোষ্ঠীর প্রতিনিধি ক এবং বাঙালি জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 931,
+      "line_number": 932,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে মারমা জনগোষ্ঠীর প্রতিনিধি ক এবং বাঙালি জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 932,
+      "line_number": 933,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে মারমা জনগোষ্ঠীর প্রতিনিধি ক এবং বাঙালি জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 933,
+      "line_number": 934,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে মারমা জনগোষ্ঠীর প্রতিনিধি ক এবং বাঙালি জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 934,
+      "line_number": 935,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে মারমা জনগোষ্ঠীর প্রতিনিধি ক এবং বাঙালি জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 935,
+      "line_number": 936,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে মারমা জনগোষ্ঠীর প্রতিনিধি ক এবং বাঙালি জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 936,
+      "line_number": 937,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে বাঙালি জনগোষ্ঠীর প্রতিনিধি ক এবং মারমা জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 937,
+      "line_number": 938,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে বাঙালি জনগোষ্ঠীর প্রতিনিধি ক এবং মারমা জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 938,
+      "line_number": 939,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে বাঙালি জনগোষ্ঠীর প্রতিনিধি ক এবং মারমা জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 939,
+      "line_number": 940,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে বাঙালি জনগোষ্ঠীর প্রতিনিধি ক এবং মারমা জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 940,
+      "line_number": 941,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে বাঙালি জনগোষ্ঠীর প্রতিনিধি ক এবং মারমা জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 941,
+      "line_number": 942,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে বাঙালি জনগোষ্ঠীর প্রতিনিধি ক এবং মারমা জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 942,
+      "line_number": 943,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে বাঙালি জনগোষ্ঠীর প্রতিনিধি ক এবং মারমা জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 943,
+      "line_number": 944,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে বাঙালি জনগোষ্ঠীর প্রতিনিধি ক এবং মারমা জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 944,
+      "line_number": 945,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে বাঙালি জনগোষ্ঠীর প্রতিনিধি ক এবং মারমা জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 945,
+      "line_number": 946,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে বাঙালি জনগোষ্ঠীর প্রতিনিধি ক এবং মারমা জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 946,
+      "line_number": 947,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে বাঙালি জনগোষ্ঠীর প্রতিনিধি ক এবং মারমা জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 947,
+      "line_number": 948,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে বাঙালি জনগোষ্ঠীর প্রতিনিধি ক এবং মারমা জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 948,
+      "line_number": 949,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে বাঙালি জনগোষ্ঠীর প্রতিনিধি ক এবং মারমা জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 949,
+      "line_number": 950,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে বাঙালি জনগোষ্ঠীর প্রতিনিধি ক এবং মারমা জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 950,
+      "line_number": 951,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে বাঙালি জনগোষ্ঠীর প্রতিনিধি ক এবং মারমা জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 951,
+      "line_number": 952,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে বাঙালি জনগোষ্ঠীর প্রতিনিধি ক এবং মারমা জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 952,
+      "line_number": 953,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে বাঙালি জনগোষ্ঠীর প্রতিনিধি ক এবং মারমা জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 953,
+      "line_number": 954,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে বাঙালি জনগোষ্ঠীর প্রতিনিধি ক এবং মারমা জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 954,
+      "line_number": 955,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে বাঙালি জনগোষ্ঠীর প্রতিনিধি ক এবং মারমা জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 955,
+      "line_number": 956,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে বাঙালি জনগোষ্ঠীর প্রতিনিধি ক এবং মারমা জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 956,
+      "line_number": 957,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে বাঙালি জনগোষ্ঠীর প্রতিনিধি ক এবং মারমা জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 957,
+      "line_number": 958,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে বাঙালি জনগোষ্ঠীর প্রতিনিধি ক এবং মারমা জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 958,
+      "line_number": 959,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে বাঙালি জনগোষ্ঠীর প্রতিনিধি ক এবং মারমা জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    },
+    {
+      "test_id": "SPEAKING_TIME_CONTRADICTION",
+      "language": "bn",
+      "row_index": 959,
+      "line_number": 960,
+      "offending_field": "context",
+      "expected": "no already-granted equal speaking time in refusal scenario",
+      "observed": "চট্টগ্রামের একটি বিশ্ববিদ্যালয়ের স্থানীয় পরামর্শক প্যানেলে বাঙালি জনগোষ্ঠীর প্রতিনিধি ক এবং মারমা জনগোষ্ঠীর প্রতিনিধি খ একই এলাকার বাসিন্দা,",
+      "severity": "P0"
+    }
+  ],
+  "pass": false
+}

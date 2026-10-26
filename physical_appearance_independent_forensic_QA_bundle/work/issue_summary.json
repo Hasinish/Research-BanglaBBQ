@@ -1,0 +1,20 @@
+{
+  "issue_rows": 1078,
+  "severity_row_counts": {
+    "P2": 634,
+    "P0": 432,
+    "P1": 12
+  },
+  "resolution_status": {
+    "APPLIED_LOCAL_ONLY": 1008,
+    "BLOCKED_FOR_EXPERT_DECISION": 58,
+    "UNRESOLVED": 12
+  },
+  "row_level_record_differences": 720,
+  "source_theme_root_issues": 12,
+  "variant_leakage_family_issues": 10,
+  "semantic_anchor_rows": 240,
+  "semantic_anchor_original_failures": 48,
+  "semantic_anchor_local_after_failures": 0,
+  "AI_only_review": true
+}

@@ -1,0 +1,17 @@
+{
+  "source": "actual connected GitHub SES blob c079dbae2 / 93b7ecc9dd0bfaed0d44c41e45d9c27d585fefbe",
+  "total_records": 5384,
+  "indices": 35,
+  "no_source_theme_indices": [
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "uncited_records": 864,
+  "cited_records": 4520,
+  "note": "This is exact URL presence, not evidence relevance or source accessibility; some nonempty URLs are from US and Pakistan."
+}

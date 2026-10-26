@@ -1,0 +1,12 @@
+{
+  "baseline_existing_returncode": 0,
+  "baseline_independent_issues": 96,
+  "fixture_count": 1,
+  "executed_count": 1,
+  "existing_validator_detected_count": 1,
+  "independent_expected_detection_count": 1,
+  "combined_detected_count": 1,
+  "undetected_fixture_ids": [],
+  "false_positive_baseline_qa": false
+}
+F13 True {'COUNTERFACTUAL_CONTEXT_NONETHNIC_CHANGE': 1, 'CROSS_LANGUAGE_ETHNIC_NAME': 1} True

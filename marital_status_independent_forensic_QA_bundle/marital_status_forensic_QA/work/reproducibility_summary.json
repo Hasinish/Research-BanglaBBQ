@@ -1,0 +1,28 @@
+{
+  "git_main_commit": "e186b283fa5b184058e2cb395273e9968a893b20",
+  "local_original_sha256": {
+    "english": "45dc27f6383fb2bc8a9a2df4eca22f7559e8861162bfbe4bd0b5776cf34559e1",
+    "bengali": "75eb0ebdb5a3052859d181a28d629eef872ebf0cc41f29bbc168e81047d778fe"
+  },
+  "candidate_sha256": {
+    "english": "52e99118b2bc35a4ffbdcd561d5a24ec08dbf9e21b2a582dfa9586532256d356",
+    "bengali": "708154702b7b88269fa86726185997a4d66982fd9cf12b3fdd69e76396339c21"
+  },
+  "original_generator_return_code": 0,
+  "original_generator_byte_parity": {
+    "english": true,
+    "bengali": true
+  },
+  "candidate_patch_return_code": 0,
+  "candidate_byte_parity": {
+    "english": true,
+    "bengali": true
+  },
+  "change_manifest_byte_parity": true,
+  "original_generator_check_failures": 0,
+  "candidate_original_generator_check_failures": 0,
+  "manifest_row_map_checked": 60,
+  "manifest_map_failures": 0,
+  "upstream_generator_does_not_natively_recreate_patches": true,
+  "external_writes": 0
+}

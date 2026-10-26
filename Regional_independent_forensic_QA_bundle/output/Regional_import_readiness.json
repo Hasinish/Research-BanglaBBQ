@@ -1,0 +1,116 @@
+{
+  "category": "Regional",
+  "audited_commit": "e186b283fa5b184058e2cb395273e9968a893b20",
+  "bundle_intro_commit": "214795f628a34ece8deb23a65c6bf35ac0ce7157",
+  "remote_change_performed": false,
+  "source_files": {
+    "en": {
+      "committed_git_blob_sha": "081ad561c9671e7eb3b68bdf706bc95e1aef1a5e",
+      "original_sha256": "b6caf58f388b02c1af86e0dae139a0d116ac0ede72645e7bcff19a4491d1f677",
+      "original_bytes": 1330338,
+      "audited_candidate_sha256": "a526b1c1014a03333cbdcb9c86d48f94ebdf9723d2d92d95492fb72efc2b0bb9",
+      "audited_candidate_bytes": 1330746
+    },
+    "bn": {
+      "committed_git_blob_sha": "6c8ca8a8e4a511fb1315e96dc3e5395825cf6035",
+      "original_sha256": "5c97a1919d3e8afaca4603edf473a4a82d1dc0eefb34fb27e011362e838b7d1b",
+      "original_bytes": 2290938,
+      "audited_candidate_sha256": "c15f1ca46f63e7541c761b68ecdc96ec3388607c427caa18879985c128218608",
+      "audited_candidate_bytes": 2289882
+    }
+  },
+  "record_count_english": 1440,
+  "record_count_bengali": 1440,
+  "provisional_id_min": 8400000,
+  "provisional_id_max": 8401439,
+  "other_six_provisional_ranges": {
+    "physical_appearance": [
+      8100000,
+      8101439
+    ],
+    "social_status": [
+      8200000,
+      8201439
+    ],
+    "health_status": [
+      8300000,
+      8301439
+    ],
+    "ethnicity": [
+      8500000,
+      8501439
+    ],
+    "occupational_background": [
+      8600000,
+      8605920
+    ],
+    "marital_status": [
+      8700000,
+      8701439
+    ]
+  },
+  "cross_category_ranges_disjoint_derived_from_manifest_checks": true,
+  "live_active_ID_scan_count": 32512,
+  "live_active_production_spreadsheet_count": 10,
+  "regional_ID_hits": 0,
+  "global_collision_check": "ACTIVE_PRODUCTION_VERIFIED_32512_VALUES_ZERO_COLLISIONS; hidden/backup tabs and complete cross-category historic JSONL archives not exhaustively scanned",
+  "current_master_spreadsheet": "https://docs.google.com/spreadsheets/d/1xZhhKZoZuSy-ZXAWWdhCpq9QLh705ScErcnBZacmZnY/edit",
+  "current_regional_worksheet": "ABSENT_2026_10_26",
+  "canonical_jsonl_key_order": [
+    "example_id",
+    "question_index",
+    "question_polarity",
+    "context_condition",
+    "category",
+    "answer_info",
+    "additional_metadata",
+    "context",
+    "question",
+    "ans0",
+    "ans1",
+    "ans2",
+    "label",
+    "type",
+    "id"
+  ],
+  "google_sheets_A_to_O": [
+    "example_id",
+    "question_index",
+    "context_condition",
+    "question_polarity",
+    "type",
+    "context",
+    "question",
+    "ans0",
+    "ans1",
+    "ans2",
+    "label",
+    "answer_info",
+    "additional_metadata",
+    "category",
+    "id"
+  ],
+  "json_metadata_for_sheet": "json.dumps(record[\"answer_info\"],ensure_ascii=False); json.dumps(record[\"additional_metadata\"],ensure_ascii=False)",
+  "import_safety": "NO",
+  "ready_for_import": false,
+  "source_critical_theme_ids": [
+    "Q06",
+    "Q08",
+    "Q09",
+    "Q10"
+  ],
+  "AI_linguistic_review_status": "AI_SELF_REVIEW_TEMPLATE_LEVEL_30_PLUS_240_ANCHOR_RULE_CHECKS",
+  "independent_human_bengali_review": "NOT_PERFORMED",
+  "publication_ready": false,
+  "live_parity_status": "NOT_IMPORTED",
+  "known_open_gates": [
+    "P1 evidence critical Q06/Q08/Q09/Q10",
+    "Independent Bengali human review absent",
+    "Independent sociolinguistic/regional reviewer approval absent",
+    "Provisional IDs need exhaustive global collision scan",
+    "Model evaluation split leakage between V1/V2/V3 requires grouped split",
+    "Master workbook has no Regional sheets",
+    "Repo memory state/index not synchronized to bundle push"
+  ],
+  "safety_caution": "The fact that all permutation rows parse does not imply stereotype-source relevance or natural translation."
+}

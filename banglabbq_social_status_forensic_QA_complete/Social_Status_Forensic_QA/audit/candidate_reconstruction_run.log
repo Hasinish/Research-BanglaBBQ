@@ -1,0 +1,17 @@
+{
+  "status": "REPRODUCED_LOCAL_CANDIDATES",
+  "outputs": {
+    "english": {
+      "path": "/mnt/data/social_status_forensic/repatched/banglabbq_social_status_audited_english.jsonl",
+      "sha256": "cf37a71ed4c0ef4f81c12fac9d2b83993d3a34a09609d2b50c2ecb9fd7959cea",
+      "rows": 1440,
+      "edits": 120
+    },
+    "bengali": {
+      "path": "/mnt/data/social_status_forensic/repatched/banglabbq_social_status_audited_bengali.jsonl",
+      "sha256": "a65466ea984220951ae393d48b5d7c1cd413089f937cfe66a245e2dc100fc3f2",
+      "rows": 1440,
+      "edits": 120
+    }
+  }
+}

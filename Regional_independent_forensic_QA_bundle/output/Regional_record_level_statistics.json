@@ -1,0 +1,249 @@
+{
+  "category": "Regional",
+  "script": "Regional_record_level_stats.py",
+  "languages": {
+    "english": {
+      "count": 1440,
+      "themes": {
+        "Q01": 144,
+        "Q02": 144,
+        "Q03": 144,
+        "Q04": 144,
+        "Q05": 144,
+        "Q06": 144,
+        "Q07": 144,
+        "Q08": 144,
+        "Q09": 144,
+        "Q10": 144
+      },
+      "conditions": {
+        "ambig_neg": 360,
+        "disambig_neg": 360,
+        "ambig_nonneg": 360,
+        "disambig_nonneg": 360
+      },
+      "orientations": {
+        "a": 720,
+        "b": 720
+      },
+      "labels": {
+        "0": 480,
+        "1": 480,
+        "2": 480
+      },
+      "answer_tag_sets": [
+        {
+          "roles": [
+            "origin_bogura",
+            "origin_noakhali",
+            "unknown"
+          ],
+          "count": 144
+        },
+        {
+          "roles": [
+            "origin_barishal",
+            "origin_khulna",
+            "unknown"
+          ],
+          "count": 144
+        },
+        {
+          "roles": [
+            "origin_dinajpur",
+            "origin_tangail",
+            "unknown"
+          ],
+          "count": 144
+        },
+        {
+          "roles": [
+            "origin_cumilla",
+            "origin_mymensingh",
+            "unknown"
+          ],
+          "count": 144
+        },
+        {
+          "roles": [
+            "origin_rajshahi",
+            "origin_rangpur",
+            "unknown"
+          ],
+          "count": 144
+        },
+        {
+          "roles": [
+            "origin_rajshahi",
+            "origin_sylhet",
+            "unknown"
+          ],
+          "count": 144
+        },
+        {
+          "roles": [
+            "origin_khulna",
+            "origin_sylhet",
+            "unknown"
+          ],
+          "count": 144
+        },
+        {
+          "roles": [
+            "origin_chattogram",
+            "origin_dhaka",
+            "unknown"
+          ],
+          "count": 144
+        },
+        {
+          "roles": [
+            "origin_chattogram",
+            "origin_jashore",
+            "unknown"
+          ],
+          "count": 144
+        },
+        {
+          "roles": [
+            "origin_bogura",
+            "origin_chandpur",
+            "unknown"
+          ],
+          "count": 144
+        }
+      ],
+      "id_min": 8400000,
+      "id_max": 8401439,
+      "formula_injection_prefix_count": 0,
+      "zero_width_or_BOM_rows": 0,
+      "nonempty_valid_urls": 1440,
+      "permutation_subblock_errors": 0,
+      "other_fields_changed": 0,
+      "text_fields_changed": 120,
+      "full_qa_duplicates": 0
+    },
+    "bengali": {
+      "count": 1440,
+      "themes": {
+        "Q01": 144,
+        "Q02": 144,
+        "Q03": 144,
+        "Q04": 144,
+        "Q05": 144,
+        "Q06": 144,
+        "Q07": 144,
+        "Q08": 144,
+        "Q09": 144,
+        "Q10": 144
+      },
+      "conditions": {
+        "ambig_neg": 360,
+        "disambig_neg": 360,
+        "ambig_nonneg": 360,
+        "disambig_nonneg": 360
+      },
+      "orientations": {
+        "a": 720,
+        "b": 720
+      },
+      "labels": {
+        "0": 480,
+        "1": 480,
+        "2": 480
+      },
+      "answer_tag_sets": [
+        {
+          "roles": [
+            "origin_bogura",
+            "origin_noakhali",
+            "unknown"
+          ],
+          "count": 144
+        },
+        {
+          "roles": [
+            "origin_barishal",
+            "origin_khulna",
+            "unknown"
+          ],
+          "count": 144
+        },
+        {
+          "roles": [
+            "origin_dinajpur",
+            "origin_tangail",
+            "unknown"
+          ],
+          "count": 144
+        },
+        {
+          "roles": [
+            "origin_cumilla",
+            "origin_mymensingh",
+            "unknown"
+          ],
+          "count": 144
+        },
+        {
+          "roles": [
+            "origin_rajshahi",
+            "origin_rangpur",
+            "unknown"
+          ],
+          "count": 144
+        },
+        {
+          "roles": [
+            "origin_rajshahi",
+            "origin_sylhet",
+            "unknown"
+          ],
+          "count": 144
+        },
+        {
+          "roles": [
+            "origin_khulna",
+            "origin_sylhet",
+            "unknown"
+          ],
+          "count": 144
+        },
+        {
+          "roles": [
+            "origin_chattogram",
+            "origin_dhaka",
+            "unknown"
+          ],
+          "count": 144
+        },
+        {
+          "roles": [
+            "origin_chattogram",
+            "origin_jashore",
+            "unknown"
+          ],
+          "count": 144
+        },
+        {
+          "roles": [
+            "origin_bogura",
+            "origin_chandpur",
+            "unknown"
+          ],
+          "count": 144
+        }
+      ],
+      "id_min": 8400000,
+      "id_max": 8401439,
+      "formula_injection_prefix_count": 0,
+      "zero_width_or_BOM_rows": 0,
+      "nonempty_valid_urls": 1440,
+      "permutation_subblock_errors": 0,
+      "other_fields_changed": 0,
+      "text_fields_changed": 360,
+      "full_qa_duplicates": 0
+    }
+  },
+  "original_vs_audited_non_text_changes": []
+}

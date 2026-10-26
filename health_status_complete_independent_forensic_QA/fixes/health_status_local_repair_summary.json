@@ -1,0 +1,21 @@
+{
+  "change_count": 840,
+  "distinct_changed_language_rows": 600,
+  "english_changes": 360,
+  "bengali_changes": 480,
+  "unique_issue_ids": [
+    "HS-P01",
+    "HS-P02",
+    "HS-P03",
+    "HS-P04",
+    "HS-P05",
+    "HS-P06",
+    "HS-P07",
+    "HS-P08",
+    "HS-P09"
+  ],
+  "file_sha256": {
+    "english": "db0d3daea69d2d088e2aeb7a7c624f039c804478ca3af308a7d7f8191ea93eae",
+    "bengali": "0d506d37dc58b50f663df0a054a502c390324d8e4e04cb4dab7d980ce28b3c90"
+  }
+}

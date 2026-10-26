@@ -1,0 +1,45 @@
+{
+  "summary": {
+    "en_parsed_or_attempted_rows": 1440,
+    "en_blind_anchor_all_records": 1440,
+    "en_gold_distribution": {
+      "2": 480,
+      "0": 480,
+      "1": 480
+    },
+    "en_condition_distribution": {
+      "('ambig', 'neg')": 360,
+      "('disambig', 'neg')": 360,
+      "('ambig', 'nonneg')": 360,
+      "('disambig', 'nonneg')": 360
+    },
+    "en_checked_24_row_orientation_blocks": 60,
+    "en_counterfactual_compared_pairs": 720,
+    "bn_parsed_or_attempted_rows": 1440,
+    "bn_blind_anchor_all_records": 1440,
+    "bn_gold_distribution": {
+      "2": 480,
+      "0": 480,
+      "1": 480
+    },
+    "bn_condition_distribution": {
+      "('ambig', 'neg')": 360,
+      "('disambig', 'neg')": 360,
+      "('ambig', 'nonneg')": 360,
+      "('disambig', 'nonneg')": 360
+    },
+    "bn_checked_24_row_orientation_blocks": 60,
+    "bn_counterfactual_compared_pairs": 720,
+    "bilingual_row_pairs_checked": 1440,
+    "manifest_blocks_verified": 60,
+    "number_of_issues": 0,
+    "issue_severity_frequency": {},
+    "issue_type_frequency": {},
+    "input_bytes": {
+      "en": 1505154,
+      "bn": 2791002
+    }
+  },
+  "issues": [],
+  "pass": true
+}

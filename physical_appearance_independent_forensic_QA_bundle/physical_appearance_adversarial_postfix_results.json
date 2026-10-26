@@ -1,0 +1,486 @@
+{
+  "summary": {
+    "dataset_stage": "POSTFIX",
+    "fixtures_executed": 26,
+    "original_validator_detected_any": 21,
+    "independent_expected_detection_success": 26,
+    "independent_false_negatives": [],
+    "original_false_negatives": [
+      "F17",
+      "F20",
+      "F24",
+      "F25",
+      "F26"
+    ],
+    "classification": "Tests run in memory; no remote changes. Source audit tier fixture validated against explicitly recorded AI-reviewed source evidence."
+  },
+  "fixtures": [
+    {
+      "fixture": "F01",
+      "mutation": "ambig_label",
+      "description": "flip ambiguous English label",
+      "sample_example_id": 0,
+      "expected_detection": "AMBIG_LABEL_NOT_UNKNOWN",
+      "original_validator_detected_any": true,
+      "original_validator_observation": "['English: label counts Counter({0: 481, 1: 480, 2: 479})', 'English: gold semantic role error', 'bilingual metadata mismatch at EID 0 key label']",
+      "independent_validator_detected_expected": true,
+      "independent_new_rules": [
+        "AMBIG_LABEL_NOT_UNKNOWN",
+        "ALLROWS_GOLD_MISMATCH",
+        "LABEL_BALANCE",
+        "BILINGUAL_META_PARITY",
+        "SEMANTIC_LABEL_EN"
+      ],
+      "independent_false_negative": false,
+      "diagnostic_notes": ""
+    },
+    {
+      "fixture": "F02",
+      "mutation": "disamb_label",
+      "description": "flip disambiguated English label",
+      "sample_example_id": 1,
+      "expected_detection": "SEMANTIC_LABEL_EN",
+      "original_validator_detected_any": true,
+      "original_validator_observation": "['English: label counts Counter({2: 481, 1: 480, 0: 479})', 'English: gold semantic role error', 'bilingual metadata mismatch at EID 1 key label']",
+      "independent_validator_detected_expected": true,
+      "independent_new_rules": [
+        "ALLROWS_GOLD_MISMATCH",
+        "LABEL_BALANCE",
+        "BILINGUAL_META_PARITY",
+        "SEMANTIC_LABEL_EN"
+      ],
+      "independent_false_negative": false,
+      "diagnostic_notes": ""
+    },
+    {
+      "fixture": "F03",
+      "mutation": "swap_options",
+      "description": "swap answers without answer_info",
+      "sample_example_id": 0,
+      "expected_detection": "ANSWER_INFO_TEXT_MISMATCH",
+      "original_validator_detected_any": true,
+      "original_validator_observation": "['English: duplicate complete QA tuples 1', 'English: option string/answer_info mismatch']",
+      "independent_validator_detected_expected": true,
+      "independent_new_rules": [
+        "APPEARANCE_ROLE_CONTEXT",
+        "ANSWER_INFO_TEXT_MISMATCH",
+        "DUPLICATE_FULL_QA"
+      ],
+      "independent_false_negative": false,
+      "diagnostic_notes": ""
+    },
+    {
+      "fixture": "F04",
+      "mutation": "swap_role_tags",
+      "description": "invalid Bengali group role",
+      "sample_example_id": 0,
+      "expected_detection": "ANSWER_ROLE_SET",
+      "original_validator_detected_any": true,
+      "original_validator_observation": "['Bengali: permutation mixed group', 'bilingual answer role mismatch 0']",
+      "independent_validator_detected_expected": true,
+      "independent_new_rules": [
+        "APPEARANCE_ROLE_CONTEXT",
+        "ANSWER_ROLE_SET",
+        "PERMUTATION_MIXED",
+        "BILINGUAL_ROLE_PARITY"
+      ],
+      "independent_false_negative": false,
+      "diagnostic_notes": ""
+    },
+    {
+      "fixture": "F05",
+      "mutation": "duplicate_tuple",
+      "description": "copy entire QA tuple from an existing permutation",
+      "sample_example_id": 0,
+      "expected_detection": "DUPLICATE_FULL_QA",
+      "original_validator_detected_any": true,
+      "original_validator_observation": "['English: duplicate complete QA tuples 1', 'English: permutation mixed group', 'English: gold semantic role error']",
+      "independent_validator_detected_expected": true,
+      "independent_new_rules": [
+        "AMBIG_LABEL_NOT_UNKNOWN",
+        "ALLROWS_GOLD_MISMATCH",
+        "DUPLICATE_FULL_QA",
+        "PERMUTATION_MIXED",
+        "PERMUTATION_COVERAGE",
+        "BILINGUAL_ROLE_PARITY",
+        "SEMANTIC_LABEL_EN"
+      ],
+      "independent_false_negative": false,
+      "diagnostic_notes": ""
+    },
+    {
+      "fixture": "F06",
+      "mutation": "remove_row",
+      "description": "drop one English record",
+      "sample_example_id": 0,
+      "expected_detection": "COUNT_EN",
+      "original_validator_detected_any": true,
+      "original_validator_observation": "['EXCEPTION:IndexError:list index out of range']",
+      "independent_validator_detected_expected": true,
+      "independent_new_rules": [
+        "COUNT_EN",
+        "SEQUENCE",
+        "ORDER",
+        "ORIENTATION_VERSION",
+        "THEME_INDEX",
+        "SOURCE_MISMATCH",
+        "APPEARANCE_ROLE_CONTEXT",
+        "ANSWER_ROLE_SET",
+        "LABEL_BALANCE",
+        "PERMUTATION_MIXED",
+        "POLARITY_CONTEXT_ASYMMETRY",
+        "PERMUTATION_COVERAGE",
+        "COUNTERFACTUAL_BASE",
+        "COUNTERFACTUAL_EVALUATOR",
+        "BILINGUAL_META_PARITY",
+        "BILINGUAL_ROLE_PARITY",
+        "MANIFEST_SCENE_PARITY",
+        "POLARITY_QUESTION_EN"
+      ],
+      "independent_false_negative": false,
+      "diagnostic_notes": ""
+    },
+    {
+      "fixture": "F07",
+      "mutation": "order_rows",
+      "description": "switch adjacent records and indexing",
+      "sample_example_id": 0,
+      "expected_detection": "SEQUENCE",
+      "original_validator_detected_any": true,
+      "original_validator_observation": "['English: IDs not sequential', 'English: condition order Q01/a/0', 'English: polarity mismatched contexts']",
+      "independent_validator_detected_expected": true,
+      "independent_new_rules": [
+        "SEQUENCE",
+        "ORDER",
+        "POLARITY_CONTEXT_ASYMMETRY",
+        "COUNTERFACTUAL_BASE",
+        "COUNTERFACTUAL_EVALUATOR",
+        "BILINGUAL_META_PARITY"
+      ],
+      "independent_false_negative": false,
+      "diagnostic_notes": ""
+    },
+    {
+      "fixture": "F08",
+      "mutation": "duplicate_id",
+      "description": "duplicate global ID",
+      "sample_example_id": 0,
+      "expected_detection": "SEQUENCE",
+      "original_validator_detected_any": true,
+      "original_validator_observation": "['English: IDs not sequential', 'bilingual metadata mismatch at EID 0 key id']",
+      "independent_validator_detected_expected": true,
+      "independent_new_rules": [
+        "SEQUENCE",
+        "DUPLICATE_IDS",
+        "BILINGUAL_META_PARITY"
+      ],
+      "independent_false_negative": false,
+      "diagnostic_notes": ""
+    },
+    {
+      "fixture": "F09",
+      "mutation": "wrong_version",
+      "description": "incorrect counterfactual version in Bengali",
+      "sample_example_id": 0,
+      "expected_detection": "ORIENTATION_VERSION",
+      "original_validator_detected_any": true,
+      "original_validator_observation": "['Bengali: orientation Q01/a', 'bilingual metadata mismatch at EID 0 key additional_metadata']",
+      "independent_validator_detected_expected": true,
+      "independent_new_rules": [
+        "ORIENTATION_VERSION",
+        "BILINGUAL_META_PARITY"
+      ],
+      "independent_false_negative": false,
+      "diagnostic_notes": ""
+    },
+    {
+      "fixture": "F10",
+      "mutation": "wrong_category",
+      "description": "replace Physical_appearance token",
+      "sample_example_id": 0,
+      "expected_detection": "CATEGORY",
+      "original_validator_detected_any": true,
+      "original_validator_observation": "['English: category/type', 'bilingual metadata mismatch at EID 0 key category']",
+      "independent_validator_detected_expected": true,
+      "independent_new_rules": [
+        "CATEGORY",
+        "BILINGUAL_META_PARITY"
+      ],
+      "independent_false_negative": false,
+      "diagnostic_notes": ""
+    },
+    {
+      "fixture": "F11",
+      "mutation": "bogus_https_source",
+      "description": "replace credible URL with unrelated HTTPS",
+      "sample_example_id": 0,
+      "expected_detection": "SOURCE_MISMATCH",
+      "original_validator_detected_any": true,
+      "original_validator_observation": "['bilingual metadata mismatch at EID 0 key additional_metadata']",
+      "independent_validator_detected_expected": true,
+      "independent_new_rules": [
+        "SOURCE_MISMATCH",
+        "BILINGUAL_META_PARITY",
+        "MANIFEST_SOURCE"
+      ],
+      "independent_false_negative": false,
+      "diagnostic_notes": ""
+    },
+    {
+      "fixture": "F12",
+      "mutation": "bengali_wrong_person",
+      "description": "swap disambiguating praise onto same Bengali person",
+      "sample_example_id": 1,
+      "expected_detection": "SEMANTIC_AMBIGUOUS_BN_ACTOR",
+      "original_validator_detected_any": true,
+      "original_validator_observation": "['Bengali: polarity mismatched contexts']",
+      "independent_validator_detected_expected": true,
+      "independent_new_rules": [
+        "ALLROWS_SEMANTIC_AMBIGUOUS_BN_ACTOR",
+        "POLARITY_CONTEXT_ASYMMETRY",
+        "COUNTERFACTUAL_EVALUATOR",
+        "SEMANTIC_AMBIGUOUS_BN_ACTOR"
+      ],
+      "independent_false_negative": false,
+      "diagnostic_notes": ""
+    },
+    {
+      "fixture": "F13",
+      "mutation": "remove_bn_negative",
+      "description": "remove negative predicate in Bengali",
+      "sample_example_id": 1,
+      "expected_detection": "SEMANTIC_UNENTAILED_BN",
+      "original_validator_detected_any": true,
+      "original_validator_observation": "['Bengali: polarity mismatched contexts']",
+      "independent_validator_detected_expected": true,
+      "independent_new_rules": [
+        "ALLROWS_SEMANTIC_UNENTAILED_BN",
+        "POLARITY_CONTEXT_ASYMMETRY",
+        "COUNTERFACTUAL_EVALUATOR",
+        "SEMANTIC_UNENTAILED_BN"
+      ],
+      "independent_false_negative": false,
+      "diagnostic_notes": ""
+    },
+    {
+      "fixture": "F14",
+      "mutation": "unentailed_en_predicate",
+      "description": "remove explicit question/criticism predicate from English",
+      "sample_example_id": 1,
+      "expected_detection": "SEMANTIC_UNENTAILED_EN",
+      "original_validator_detected_any": true,
+      "original_validator_observation": "['English: polarity mismatched contexts']",
+      "independent_validator_detected_expected": true,
+      "independent_new_rules": [
+        "ALLROWS_SEMANTIC_UNENTAILED_EN",
+        "POLARITY_CONTEXT_ASYMMETRY",
+        "COUNTERFACTUAL_EVALUATOR",
+        "SEMANTIC_UNENTAILED_EN"
+      ],
+      "independent_false_negative": false,
+      "diagnostic_notes": ""
+    },
+    {
+      "fixture": "F15",
+      "mutation": "asymmetric_work_experience",
+      "description": "add unequal work experience only orientation b",
+      "sample_example_id": 24,
+      "expected_detection": "COUNTERFACTUAL_BASE",
+      "original_validator_detected_any": true,
+      "original_validator_observation": "['English: polarity mismatched contexts']",
+      "independent_validator_detected_expected": true,
+      "independent_new_rules": [
+        "POLARITY_CONTEXT_ASYMMETRY",
+        "COUNTERFACTUAL_BASE",
+        "MANIFEST_SCENE_PARITY"
+      ],
+      "independent_false_negative": false,
+      "diagnostic_notes": ""
+    },
+    {
+      "fixture": "F16",
+      "mutation": "ambig_outcome_leak",
+      "description": "introduce disclosed evaluator outcome into ambiguous context",
+      "sample_example_id": 0,
+      "expected_detection": "SEMANTIC_AMBIG_OUTCOME_LEAK",
+      "original_validator_detected_any": true,
+      "original_validator_observation": "['English: duplicate complete QA tuples 2', 'English: disambig not stronger']",
+      "independent_validator_detected_expected": true,
+      "independent_new_rules": [
+        "APPEARANCE_ROLE_CONTEXT",
+        "ALLROWS_SEMANTIC_AMBIG_OUTCOME_LEAK",
+        "DUPLICATE_FULL_QA",
+        "COUNTERFACTUAL_BASE",
+        "SEMANTIC_AMBIG_OUTCOME_LEAK"
+      ],
+      "independent_false_negative": false,
+      "diagnostic_notes": ""
+    },
+    {
+      "fixture": "F17",
+      "mutation": "identity_option_collision",
+      "description": "make Unknown answer equal to first name while role tag stays unknown",
+      "sample_example_id": 0,
+      "expected_detection": "DUPLICATE_ANSWERS",
+      "original_validator_detected_any": false,
+      "original_validator_observation": "[]",
+      "independent_validator_detected_expected": true,
+      "independent_new_rules": [
+        "DUPLICATE_ANSWERS",
+        "ALLROWS_GOLD_MISMATCH",
+        "SEMANTIC_LABEL_EN"
+      ],
+      "independent_false_negative": false,
+      "diagnostic_notes": ""
+    },
+    {
+      "fixture": "F18",
+      "mutation": "pakistani_geography",
+      "description": "replace Dhaka with Lahore",
+      "sample_example_id": 0,
+      "expected_detection": "NON_BANGLADESH_GEOGRAPHY",
+      "original_validator_detected_any": true,
+      "original_validator_observation": "['English: polarity mismatched contexts']",
+      "independent_validator_detected_expected": true,
+      "independent_new_rules": [
+        "NON_BANGLADESH_GEOGRAPHY",
+        "POLARITY_CONTEXT_ASYMMETRY",
+        "COUNTERFACTUAL_BASE",
+        "MANIFEST_SCENE_PARITY"
+      ],
+      "independent_false_negative": false,
+      "diagnostic_notes": ""
+    },
+    {
+      "fixture": "F19",
+      "mutation": "repeat_v1_in_v3",
+      "description": "copy first entire variation textual entries into third wave",
+      "sample_example_id": 960,
+      "expected_detection": "DUPLICATE_FULL_QA",
+      "original_validator_detected_any": true,
+      "original_validator_observation": "['English: duplicate complete QA tuples 48']",
+      "independent_validator_detected_expected": true,
+      "independent_new_rules": [
+        "DUPLICATE_FULL_QA",
+        "MANIFEST_NAME",
+        "MANIFEST_SCENE_PARITY"
+      ],
+      "independent_false_negative": false,
+      "diagnostic_notes": ""
+    },
+    {
+      "fixture": "F20",
+      "mutation": "swap_bn_identity_and_tags",
+      "description": "replace one Bengali name with another in both option and text metadata",
+      "sample_example_id": 0,
+      "expected_detection": "DUPLICATE_ANSWERS",
+      "original_validator_detected_any": false,
+      "original_validator_observation": "[]",
+      "independent_validator_detected_expected": true,
+      "independent_new_rules": [
+        "APPEARANCE_ROLE_CONTEXT",
+        "DUPLICATE_ANSWERS",
+        "SEMANTIC_AMBIGUOUS_BN_ACTOR"
+      ],
+      "independent_false_negative": false,
+      "diagnostic_notes": ""
+    },
+    {
+      "fixture": "F21",
+      "mutation": "bn_question_polarity",
+      "description": "replace negative question with praise but keep neg tag",
+      "sample_example_id": 0,
+      "expected_detection": "POLARITY_QUESTION_BN",
+      "original_validator_detected_any": true,
+      "original_validator_observation": "['Q01/V1: question orientation changed']",
+      "independent_validator_detected_expected": true,
+      "independent_new_rules": [
+        "COUNTERFACTUAL_QUESTION",
+        "POLARITY_QUESTION_BN"
+      ],
+      "independent_false_negative": false,
+      "diagnostic_notes": ""
+    },
+    {
+      "fixture": "F22",
+      "mutation": "bn_context_mistranslation",
+      "description": "reverse equal outcome scores in only one Bengali context",
+      "sample_example_id": 0,
+      "expected_detection": "MANIFEST_SCENE_PARITY",
+      "original_validator_detected_any": true,
+      "original_validator_observation": "['Bengali: polarity mismatched contexts']",
+      "independent_validator_detected_expected": true,
+      "independent_new_rules": [
+        "POLARITY_CONTEXT_ASYMMETRY",
+        "COUNTERFACTUAL_BASE",
+        "MANIFEST_SCENE_PARITY"
+      ],
+      "independent_false_negative": false,
+      "diagnostic_notes": ""
+    },
+    {
+      "fixture": "F23",
+      "mutation": "counterfactual_attribute_swap_only_bn",
+      "description": "swap only Bengali skin-tone attributes despite unchanged role tags",
+      "sample_example_id": 0,
+      "expected_detection": "APPEARANCE_ROLE_CONTEXT",
+      "original_validator_detected_any": true,
+      "original_validator_observation": "['Bengali: duplicate complete QA tuples 1', 'Bengali: polarity mismatched contexts', 'Q01/V1: orientation context not changed']",
+      "independent_validator_detected_expected": true,
+      "independent_new_rules": [
+        "APPEARANCE_ROLE_CONTEXT",
+        "DUPLICATE_FULL_QA",
+        "POLARITY_CONTEXT_ASYMMETRY"
+      ],
+      "independent_false_negative": false,
+      "diagnostic_notes": ""
+    },
+    {
+      "fixture": "F24",
+      "mutation": "formula_injection",
+      "description": "CSV/Sheets formula injection into answer and answer_info",
+      "sample_example_id": 0,
+      "expected_detection": "SHEET_FORMULA_INJECTION",
+      "original_validator_detected_any": false,
+      "original_validator_observation": "[]",
+      "independent_validator_detected_expected": true,
+      "independent_new_rules": [
+        "SHEET_FORMULA_INJECTION",
+        "APPEARANCE_ROLE_CONTEXT",
+        "MANIFEST_NAME"
+      ],
+      "independent_false_negative": false,
+      "diagnostic_notes": ""
+    },
+    {
+      "fixture": "F25",
+      "mutation": "source_audit_overclaim",
+      "description": "mark Q03 as DIRECT with no new evidence",
+      "sample_example_id": 0,
+      "expected_detection": "SOURCE_TIER_OVERCLAIM",
+      "original_validator_detected_any": false,
+      "original_validator_observation": "[]",
+      "independent_validator_detected_expected": true,
+      "independent_new_rules": [
+        "SOURCE_TIER_OVERCLAIM"
+      ],
+      "independent_false_negative": false,
+      "diagnostic_notes": "Original cannot test source audit files"
+    },
+    {
+      "fixture": "F26",
+      "mutation": "bengali_added_negligence",
+      "description": "change all Q01 V1 Bengali situations from the same assessment to different assessments without changing English",
+      "sample_example_id": 0,
+      "expected_detection": "MANIFEST_SCENE_PARITY",
+      "original_validator_detected_any": false,
+      "original_validator_observation": "[]",
+      "independent_validator_detected_expected": true,
+      "independent_new_rules": [
+        "MANIFEST_SCENE_PARITY"
+      ],
+      "independent_false_negative": false,
+      "diagnostic_notes": ""
+    }
+  ]
+}

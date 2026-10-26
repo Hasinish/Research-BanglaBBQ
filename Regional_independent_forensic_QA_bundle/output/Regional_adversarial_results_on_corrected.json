@@ -1,0 +1,721 @@
+{
+  "category": "Regional",
+  "audited_base_blob_sha_en": "LOCAL_CANDIDATE_SHA256_a526b1c1014a03333cbdcb9c86d48f94ebdf9723d2d92d95492fb72efc2b0bb9",
+  "audited_base_blob_sha_bn": "LOCAL_CANDIDATE_SHA256_c15f1ca46f63e7541c761b68ecdc96ec3388607c427caa18879985c128218608",
+  "suite": "LOCAL_MUTATION_ONLY",
+  "mutated_snapshots_preserved": false,
+  "original_snapshots_unchanged": true,
+  "fixtures_executed": 28,
+  "independent_specific_detected": 28,
+  "independent_specific_missed": 0,
+  "existing_specific_detected": 0,
+  "existing_generic_checksum_only_detected": 0,
+  "results": [
+    {
+      "fixture_id": "F01",
+      "mutation": "Make English ambiguous gold select a person",
+      "oracle_reason_based_on_injection": "No evaluator stated a conclusion; Unknown must be gold",
+      "expected_specific_tests": [
+        "AMBIG_LABEL",
+        "BLIND_GOLD_MISMATCH"
+      ],
+      "independent_error_ids": [
+        "AMBIG_LABEL",
+        "BILINGUAL_METADATA",
+        "BLIND_GOLD_MISMATCH",
+        "LABEL_BALANCE"
+      ],
+      "independent_specific_tests_detected": [
+        "AMBIG_LABEL",
+        "BLIND_GOLD_MISMATCH"
+      ],
+      "independent_specific_detected": true,
+      "independent_status": "DETECTED",
+      "existing_validator_exit": 0,
+      "existing_validator_failures": [],
+      "existing_specific_failures_excluding_checksum": [],
+      "existing_specific_detected": false,
+      "existing_checksum_only_detected": false,
+      "did_fault_file_change": true
+    },
+    {
+      "fixture_id": "F02",
+      "mutation": "Reverse an English disambiguated gold label",
+      "oracle_reason_based_on_injection": "Explicit accusation identifies first location, not second",
+      "expected_specific_tests": [
+        "BLIND_GOLD_MISMATCH"
+      ],
+      "independent_error_ids": [
+        "BILINGUAL_METADATA",
+        "BLIND_GOLD_MISMATCH",
+        "LABEL_BALANCE"
+      ],
+      "independent_specific_tests_detected": [
+        "BLIND_GOLD_MISMATCH"
+      ],
+      "independent_specific_detected": true,
+      "independent_status": "DETECTED",
+      "existing_validator_exit": 0,
+      "existing_validator_failures": [],
+      "existing_specific_failures_excluding_checksum": [],
+      "existing_specific_detected": false,
+      "existing_checksum_only_detected": false,
+      "did_fault_file_change": true
+    },
+    {
+      "fixture_id": "F03",
+      "mutation": "Swap two displayed answers without changing label/roles",
+      "oracle_reason_based_on_injection": "Displayed option no longer agrees with answer_info",
+      "expected_specific_tests": [
+        "ANSWER_INFO_TEXT",
+        "BLIND_GOLD_MISMATCH"
+      ],
+      "independent_error_ids": [
+        "ANSWER_INFO_TEXT",
+        "BILINGUAL_REGION",
+        "BLIND_GOLD_MISMATCH",
+        "DUPLICATE_QA",
+        "ROLE_TAG"
+      ],
+      "independent_specific_tests_detected": [
+        "ANSWER_INFO_TEXT",
+        "BLIND_GOLD_MISMATCH"
+      ],
+      "independent_specific_detected": true,
+      "independent_status": "DETECTED",
+      "existing_validator_exit": 0,
+      "existing_validator_failures": [],
+      "existing_specific_failures_excluding_checksum": [],
+      "existing_specific_detected": false,
+      "existing_checksum_only_detected": false,
+      "did_fault_file_change": true
+    },
+    {
+      "fixture_id": "F04",
+      "mutation": "Swap first two role tags while leaving displayed options intact",
+      "oracle_reason_based_on_injection": "Origin role tags misidentify person",
+      "expected_specific_tests": [
+        "ROLE_TAG",
+        "BILINGUAL_ROLE_TAG"
+      ],
+      "independent_error_ids": [
+        "BILINGUAL_ROLE_TAG",
+        "PERMUTATION_COVERAGE",
+        "ROLE_TAG"
+      ],
+      "independent_specific_tests_detected": [
+        "ROLE_TAG",
+        "BILINGUAL_ROLE_TAG"
+      ],
+      "independent_specific_detected": true,
+      "independent_status": "DETECTED",
+      "existing_validator_exit": 0,
+      "existing_validator_failures": [],
+      "existing_specific_failures_excluding_checksum": [],
+      "existing_specific_detected": false,
+      "existing_checksum_only_detected": false,
+      "did_fault_file_change": true
+    },
+    {
+      "fixture_id": "F05",
+      "mutation": "Clone an English complete QA tuple at a new ID",
+      "oracle_reason_based_on_injection": "Same context, question, answers must not repeat",
+      "expected_specific_tests": [
+        "DUPLICATE_QA",
+        "PERMUTATION_COVERAGE"
+      ],
+      "independent_error_ids": [
+        "BILINGUAL_METADATA",
+        "BILINGUAL_REGION",
+        "BILINGUAL_ROLE_TAG",
+        "DUPLICATE_QA",
+        "LABEL_BALANCE",
+        "PERMUTATION_COVERAGE"
+      ],
+      "independent_specific_tests_detected": [
+        "DUPLICATE_QA",
+        "PERMUTATION_COVERAGE"
+      ],
+      "independent_specific_detected": true,
+      "independent_status": "DETECTED",
+      "existing_validator_exit": 0,
+      "existing_validator_failures": [],
+      "existing_specific_failures_excluding_checksum": [],
+      "existing_specific_detected": false,
+      "existing_checksum_only_detected": false,
+      "did_fault_file_change": true
+    },
+    {
+      "fixture_id": "F06",
+      "mutation": "Remove one English JSONL row",
+      "oracle_reason_based_on_injection": "Incomplete English dataset and ID shift",
+      "expected_specific_tests": [
+        "COUNT",
+        "EXAMPLE_ID",
+        "CANONICAL_ORDER"
+      ],
+      "independent_error_ids": [
+        "BILINGUAL_METADATA",
+        "BILINGUAL_NEGATION",
+        "BILINGUAL_REGION",
+        "BILINGUAL_ROLE_TAG",
+        "BILINGUAL_SEMANTIC_MEANING",
+        "BLIND_GOLD_MISMATCH",
+        "BLIND_INFERENCE_UNDETERMINED",
+        "BLOCK_SIZE",
+        "CANONICAL_ORDER",
+        "COUNT",
+        "EXAMPLE_ID",
+        "FOUR_STATE_BALANCE",
+        "LABEL_BALANCE",
+        "ORIENTATION",
+        "ORIENTATION_BALANCE",
+        "PERMUTATION_COVERAGE",
+        "PROVISIONAL_ID",
+        "SOURCE_PROVENANCE",
+        "THEME_INDEX",
+        "UNENTAILED_PRAISE",
+        "UNENTAILED_THANKS"
+      ],
+      "independent_specific_tests_detected": [
+        "COUNT",
+        "EXAMPLE_ID",
+        "CANONICAL_ORDER"
+      ],
+      "independent_specific_detected": true,
+      "independent_status": "DETECTED",
+      "existing_validator_exit": 0,
+      "existing_validator_failures": [],
+      "existing_specific_failures_excluding_checksum": [],
+      "existing_specific_detected": false,
+      "existing_checksum_only_detected": false,
+      "did_fault_file_change": true
+    },
+    {
+      "fixture_id": "F07",
+      "mutation": "Break canonical disambiguated/ambiguous quartet order",
+      "oracle_reason_based_on_injection": "Expected order ambig-neg/disambig-neg/ambig-nonneg/disambig-nonneg",
+      "expected_specific_tests": [
+        "CANONICAL_ORDER"
+      ],
+      "independent_error_ids": [
+        "BILINGUAL_METADATA",
+        "BLIND_GOLD_MISMATCH",
+        "BLIND_INFERENCE_UNDETERMINED",
+        "CANONICAL_ORDER",
+        "EXAMPLE_ID",
+        "OPPOSED_QUESTION",
+        "PROVISIONAL_ID"
+      ],
+      "independent_specific_tests_detected": [
+        "CANONICAL_ORDER"
+      ],
+      "independent_specific_detected": true,
+      "independent_status": "DETECTED",
+      "existing_validator_exit": 0,
+      "existing_validator_failures": [],
+      "existing_specific_failures_excluding_checksum": [],
+      "existing_specific_detected": false,
+      "existing_checksum_only_detected": false,
+      "did_fault_file_change": true
+    },
+    {
+      "fixture_id": "F08",
+      "mutation": "Duplicate a unique per-category ID",
+      "oracle_reason_based_on_injection": "Global provisional ID uniqueness is violated",
+      "expected_specific_tests": [
+        "DUPLICATE_ID",
+        "PROVISIONAL_ID"
+      ],
+      "independent_error_ids": [
+        "BILINGUAL_METADATA",
+        "DUPLICATE_ID",
+        "PROVISIONAL_ID"
+      ],
+      "independent_specific_tests_detected": [
+        "DUPLICATE_ID",
+        "PROVISIONAL_ID"
+      ],
+      "independent_specific_detected": true,
+      "independent_status": "DETECTED",
+      "existing_validator_exit": 0,
+      "existing_validator_failures": [],
+      "existing_specific_failures_excluding_checksum": [],
+      "existing_specific_detected": false,
+      "existing_checksum_only_detected": false,
+      "did_fault_file_change": true
+    },
+    {
+      "fixture_id": "F09",
+      "mutation": "Set illegal counterfactual version c",
+      "oracle_reason_based_on_injection": "Only orientations a and b permitted",
+      "expected_specific_tests": [
+        "ORIENTATION",
+        "BILINGUAL_METADATA"
+      ],
+      "independent_error_ids": [
+        "BILINGUAL_METADATA",
+        "ORIENTATION",
+        "ORIENTATION_BALANCE"
+      ],
+      "independent_specific_tests_detected": [
+        "ORIENTATION",
+        "BILINGUAL_METADATA"
+      ],
+      "independent_specific_detected": true,
+      "independent_status": "DETECTED",
+      "existing_validator_exit": 0,
+      "existing_validator_failures": [],
+      "existing_specific_failures_excluding_checksum": [],
+      "existing_specific_detected": false,
+      "existing_checksum_only_detected": false,
+      "did_fault_file_change": true
+    },
+    {
+      "fixture_id": "F10",
+      "mutation": "Change category token away from Regional",
+      "oracle_reason_based_on_injection": "JSONL category token violates canonical schema",
+      "expected_specific_tests": [
+        "CATEGORY_OR_TYPE",
+        "BILINGUAL_METADATA"
+      ],
+      "independent_error_ids": [
+        "BILINGUAL_METADATA",
+        "CATEGORY_OR_TYPE"
+      ],
+      "independent_specific_tests_detected": [
+        "CATEGORY_OR_TYPE",
+        "BILINGUAL_METADATA"
+      ],
+      "independent_specific_detected": true,
+      "independent_status": "DETECTED",
+      "existing_validator_exit": 0,
+      "existing_validator_failures": [],
+      "existing_specific_failures_excluding_checksum": [],
+      "existing_specific_detected": false,
+      "existing_checksum_only_detected": false,
+      "did_fault_file_change": true
+    },
+    {
+      "fixture_id": "F11",
+      "mutation": "Remove required source URL from row",
+      "oracle_reason_based_on_injection": "Evidence provenance must be nonempty valid HTTPS",
+      "expected_specific_tests": [
+        "SOURCE_URL",
+        "BILINGUAL_METADATA"
+      ],
+      "independent_error_ids": [
+        "BILINGUAL_METADATA",
+        "SOURCE_PROVENANCE",
+        "SOURCE_URL"
+      ],
+      "independent_specific_tests_detected": [
+        "SOURCE_URL",
+        "BILINGUAL_METADATA"
+      ],
+      "independent_specific_detected": true,
+      "independent_status": "DETECTED",
+      "existing_validator_exit": 0,
+      "existing_validator_failures": [],
+      "existing_specific_failures_excluding_checksum": [],
+      "existing_specific_detected": false,
+      "existing_checksum_only_detected": false,
+      "did_fault_file_change": true
+    },
+    {
+      "fixture_id": "F12",
+      "mutation": "Replace Bengali Noakhali answer with Chandpur",
+      "oracle_reason_based_on_injection": "English/Bengali group identity diverges",
+      "expected_specific_tests": [
+        "BILINGUAL_REGION",
+        "BILINGUAL_ROLE_TAG"
+      ],
+      "independent_error_ids": [
+        "BILINGUAL_REGION",
+        "BILINGUAL_ROLE_TAG",
+        "CONTEXT_ENTITY_MISSING",
+        "SWAP_GROUP_SET"
+      ],
+      "independent_specific_tests_detected": [
+        "BILINGUAL_REGION",
+        "BILINGUAL_ROLE_TAG"
+      ],
+      "independent_specific_detected": true,
+      "independent_status": "DETECTED",
+      "existing_validator_exit": 0,
+      "existing_validator_failures": [],
+      "existing_specific_failures_excluding_checksum": [],
+      "existing_specific_detected": false,
+      "existing_checksum_only_detected": false,
+      "did_fault_file_change": true
+    },
+    {
+      "fixture_id": "F13",
+      "mutation": "Make Bengali negative question identical to positive question",
+      "oracle_reason_based_on_injection": "Semantic opposition collapses",
+      "expected_specific_tests": [
+        "OPPOSED_QUESTION"
+      ],
+      "independent_error_ids": [
+        "DUPLICATE_QA",
+        "OPPOSED_QUESTION"
+      ],
+      "independent_specific_tests_detected": [
+        "OPPOSED_QUESTION"
+      ],
+      "independent_specific_detected": true,
+      "independent_status": "DETECTED",
+      "existing_validator_exit": 0,
+      "existing_validator_failures": [],
+      "existing_specific_failures_excluding_checksum": [],
+      "existing_specific_detected": false,
+      "existing_checksum_only_detected": false,
+      "did_fault_file_change": true
+    },
+    {
+      "fixture_id": "F14",
+      "mutation": "Replace question with praise predicate not present in verdict",
+      "oracle_reason_based_on_injection": "Described as trustworthy is not the same act as praising",
+      "expected_specific_tests": [
+        "UNENTAILED_PRAISE"
+      ],
+      "independent_error_ids": [
+        "UNENTAILED_PRAISE"
+      ],
+      "independent_specific_tests_detected": [
+        "UNENTAILED_PRAISE"
+      ],
+      "independent_specific_detected": true,
+      "independent_status": "DETECTED",
+      "existing_validator_exit": 0,
+      "existing_validator_failures": [],
+      "existing_specific_failures_excluding_checksum": [],
+      "existing_specific_detected": false,
+      "existing_checksum_only_detected": false,
+      "did_fault_file_change": true
+    },
+    {
+      "fixture_id": "F15",
+      "mutation": "Add unequal work experience to one counterfactual orientation",
+      "oracle_reason_based_on_injection": "Experience is a confound absent from other orientation and language",
+      "expected_specific_tests": [
+        "COUNTERFACTUAL_ASYMMETRY"
+      ],
+      "independent_error_ids": [
+        "COUNTERFACTUAL_ASYMMETRY"
+      ],
+      "independent_specific_tests_detected": [
+        "COUNTERFACTUAL_ASYMMETRY"
+      ],
+      "independent_specific_detected": true,
+      "independent_status": "DETECTED",
+      "existing_validator_exit": 0,
+      "existing_validator_failures": [],
+      "existing_specific_failures_excluding_checksum": [],
+      "existing_specific_detected": false,
+      "existing_checksum_only_detected": false,
+      "did_fault_file_change": true
+    },
+    {
+      "fixture_id": "F16",
+      "mutation": "Leak an evaluator outcome into ambiguous context",
+      "oracle_reason_based_on_injection": "Ambiguous contexts must not report a decision",
+      "expected_specific_tests": [
+        "AMBIGUITY_LEAK"
+      ],
+      "independent_error_ids": [
+        "AMBIGUITY_LEAK",
+        "COUNTERFACTUAL_ASYMMETRY"
+      ],
+      "independent_specific_tests_detected": [
+        "AMBIGUITY_LEAK"
+      ],
+      "independent_specific_detected": true,
+      "independent_status": "DETECTED",
+      "existing_validator_exit": 0,
+      "existing_validator_failures": [],
+      "existing_specific_failures_excluding_checksum": [],
+      "existing_specific_detected": false,
+      "existing_checksum_only_detected": false,
+      "did_fault_file_change": true
+    },
+    {
+      "fixture_id": "F17",
+      "mutation": "Make two Bengali options identical",
+      "oracle_reason_based_on_injection": "Two persons no longer distinguishable",
+      "expected_specific_tests": [
+        "DUPLICATE_OPTION"
+      ],
+      "independent_error_ids": [
+        "BILINGUAL_REGION",
+        "DUPLICATE_OPTION"
+      ],
+      "independent_specific_tests_detected": [
+        "DUPLICATE_OPTION"
+      ],
+      "independent_specific_detected": true,
+      "independent_status": "DETECTED",
+      "existing_validator_exit": 0,
+      "existing_validator_failures": [],
+      "existing_specific_failures_excluding_checksum": [],
+      "existing_specific_detected": false,
+      "existing_checksum_only_detected": false,
+      "did_fault_file_change": true
+    },
+    {
+      "fixture_id": "F18",
+      "mutation": "Import Pakistani geography into Bangladesh-specific scenario",
+      "oracle_reason_based_on_injection": "Karachi is not a Bangladesh setting and not part of scene",
+      "expected_specific_tests": [
+        "FOREIGN_GEO"
+      ],
+      "independent_error_ids": [
+        "COUNTERFACTUAL_ASYMMETRY",
+        "FOREIGN_GEO"
+      ],
+      "independent_specific_tests_detected": [
+        "FOREIGN_GEO"
+      ],
+      "independent_specific_detected": true,
+      "independent_status": "DETECTED",
+      "existing_validator_exit": 0,
+      "existing_validator_failures": [],
+      "existing_specific_failures_excluding_checksum": [],
+      "existing_specific_detected": false,
+      "existing_checksum_only_detected": false,
+      "did_fault_file_change": true
+    },
+    {
+      "fixture_id": "F19",
+      "mutation": "Replace Q01 cited article with unrelated Wikipedia Canada",
+      "oracle_reason_based_on_injection": "Article is neither Bangladesh-based nor about district prejudice",
+      "expected_specific_tests": [
+        "SOURCE_PROVENANCE"
+      ],
+      "independent_error_ids": [
+        "SOURCE_PROVENANCE"
+      ],
+      "independent_specific_tests_detected": [
+        "SOURCE_PROVENANCE"
+      ],
+      "independent_specific_detected": true,
+      "independent_status": "DETECTED",
+      "existing_validator_exit": 0,
+      "existing_validator_failures": [],
+      "existing_specific_failures_excluding_checksum": [],
+      "existing_specific_detected": false,
+      "existing_checksum_only_detected": false,
+      "did_fault_file_change": true
+    },
+    {
+      "fixture_id": "F20",
+      "mutation": "Replace Q01 V3 ambiguous base scene with V1 scene while retaining V3 different judgments",
+      "oracle_reason_based_on_injection": "Near-identical scenario masquerades as a distinct variation",
+      "expected_specific_tests": [
+        "V_VARIATION_DUPLICATE"
+      ],
+      "independent_error_ids": [
+        "V_VARIATION_DUPLICATE"
+      ],
+      "independent_specific_tests_detected": [
+        "V_VARIATION_DUPLICATE"
+      ],
+      "independent_specific_detected": true,
+      "independent_status": "DETECTED",
+      "existing_validator_exit": 0,
+      "existing_validator_failures": [],
+      "existing_specific_failures_excluding_checksum": [],
+      "existing_specific_detected": false,
+      "existing_checksum_only_detected": false,
+      "did_fault_file_change": true
+    },
+    {
+      "fixture_id": "F21",
+      "mutation": "Upgrade weak Q08 source evidence to DIRECT without stronger source",
+      "oracle_reason_based_on_injection": "Source establishes media language dominance, not Chattogram broadcaster rejection",
+      "expected_specific_tests": [
+        "SOURCE_TIER_DISCREPANCY"
+      ],
+      "independent_error_ids": [
+        "SOURCE_TIER_DISCREPANCY"
+      ],
+      "independent_specific_tests_detected": [
+        "SOURCE_TIER_DISCREPANCY"
+      ],
+      "independent_specific_detected": true,
+      "independent_status": "DETECTED",
+      "existing_validator_exit": 0,
+      "existing_validator_failures": [],
+      "existing_specific_failures_excluding_checksum": [],
+      "existing_specific_detected": false,
+      "existing_checksum_only_detected": false,
+      "did_fault_file_change": true
+    },
+    {
+      "fixture_id": "F22",
+      "mutation": "Delete crucial Bengali negation in Q08 V3 only",
+      "oracle_reason_based_on_injection": "Changes no-performance-difference into presence-of-performance-difference",
+      "expected_specific_tests": [
+        "BILINGUAL_NEGATION"
+      ],
+      "independent_error_ids": [
+        "BILINGUAL_NEGATION"
+      ],
+      "independent_specific_tests_detected": [
+        "BILINGUAL_NEGATION"
+      ],
+      "independent_specific_detected": true,
+      "independent_status": "DETECTED",
+      "existing_validator_exit": 0,
+      "existing_validator_failures": [],
+      "existing_specific_failures_excluding_checksum": [],
+      "existing_specific_detected": false,
+      "existing_checksum_only_detected": false,
+      "did_fault_file_change": true
+    },
+    {
+      "fixture_id": "F23",
+      "mutation": "Introduce unresolved template marker",
+      "oracle_reason_based_on_injection": "A literal code placeholder has leaked into published QA text",
+      "expected_specific_tests": [
+        "UNRESOLVED_PLACEHOLDER"
+      ],
+      "independent_error_ids": [
+        "COUNTERFACTUAL_ASYMMETRY",
+        "UNRESOLVED_PLACEHOLDER"
+      ],
+      "independent_specific_tests_detected": [
+        "UNRESOLVED_PLACEHOLDER"
+      ],
+      "independent_specific_detected": true,
+      "independent_status": "DETECTED",
+      "existing_validator_exit": 0,
+      "existing_validator_failures": [],
+      "existing_specific_failures_excluding_checksum": [],
+      "existing_specific_detected": false,
+      "existing_checksum_only_detected": false,
+      "did_fault_file_change": true
+    },
+    {
+      "fixture_id": "F24",
+      "mutation": "Bengali-only content changes equally complete records to incomplete records",
+      "oracle_reason_based_on_injection": "Bengali changes the quality of performance while English holds equal results; independent semantic reading needed",
+      "expected_specific_tests": [
+        "BILINGUAL_SEMANTIC_MEANING"
+      ],
+      "independent_error_ids": [
+        "BILINGUAL_SEMANTIC_MEANING",
+        "COUNTERFACTUAL_ASYMMETRY"
+      ],
+      "independent_specific_tests_detected": [
+        "BILINGUAL_SEMANTIC_MEANING"
+      ],
+      "independent_specific_detected": true,
+      "independent_status": "DETECTED",
+      "existing_validator_exit": 0,
+      "existing_validator_failures": [],
+      "existing_specific_failures_excluding_checksum": [],
+      "existing_specific_detected": false,
+      "existing_checksum_only_detected": false,
+      "did_fault_file_change": true
+    },
+    {
+      "fixture_id": "F25",
+      "mutation": "Inject subtle education confound in all English ambiguous records of a theme",
+      "oracle_reason_based_on_injection": "The new sentence introduces a hidden degree difference but not a group-identified answer; expert review must decide bias axis",
+      "expected_specific_tests": [
+        "CATEGORY_CONFOUNDED"
+      ],
+      "independent_error_ids": [
+        "BILINGUAL_EDUCATION_CONFOUNDER",
+        "CATEGORY_CONFOUNDED"
+      ],
+      "independent_specific_tests_detected": [
+        "CATEGORY_CONFOUNDED"
+      ],
+      "independent_specific_detected": true,
+      "independent_status": "DETECTED",
+      "existing_validator_exit": 0,
+      "existing_validator_failures": [],
+      "existing_specific_failures_excluding_checksum": [],
+      "existing_specific_detected": false,
+      "existing_checksum_only_detected": false,
+      "did_fault_file_change": true
+    },
+    {
+      "fixture_id": "F26",
+      "mutation": "Replace row source with syntactically valid but unsupportive external URL",
+      "oracle_reason_based_on_injection": "HTTPS syntax alone never guarantees source relevance",
+      "expected_specific_tests": [
+        "SOURCE_PROVENANCE",
+        "BILINGUAL_METADATA"
+      ],
+      "independent_error_ids": [
+        "BILINGUAL_METADATA",
+        "SOURCE_PROVENANCE"
+      ],
+      "independent_specific_tests_detected": [
+        "SOURCE_PROVENANCE",
+        "BILINGUAL_METADATA"
+      ],
+      "independent_specific_detected": true,
+      "independent_status": "DETECTED",
+      "existing_validator_exit": 0,
+      "existing_validator_failures": [],
+      "existing_specific_failures_excluding_checksum": [],
+      "existing_specific_detected": false,
+      "existing_checksum_only_detected": false,
+      "did_fault_file_change": true
+    },
+    {
+      "fixture_id": "F27",
+      "mutation": "Replace negative question with positive question while preserving label",
+      "oracle_reason_based_on_injection": "Now inferred positive actor conflicts with negative gold",
+      "expected_specific_tests": [
+        "BLIND_GOLD_MISMATCH",
+        "OPPOSED_QUESTION"
+      ],
+      "independent_error_ids": [
+        "BLIND_GOLD_MISMATCH",
+        "DUPLICATE_QA",
+        "OPPOSED_QUESTION"
+      ],
+      "independent_specific_tests_detected": [
+        "BLIND_GOLD_MISMATCH",
+        "OPPOSED_QUESTION"
+      ],
+      "independent_specific_detected": true,
+      "independent_status": "DETECTED",
+      "existing_validator_exit": 0,
+      "existing_validator_failures": [],
+      "existing_specific_failures_excluding_checksum": [],
+      "existing_specific_detected": false,
+      "existing_checksum_only_detected": false,
+      "did_fault_file_change": true
+    },
+    {
+      "fixture_id": "F28",
+      "mutation": "Misrepresent newly added Regional type as direct translation",
+      "oracle_reason_based_on_injection": "Regional category is NA, not a directly translated BBQ case",
+      "expected_specific_tests": [
+        "CATEGORY_OR_TYPE"
+      ],
+      "independent_error_ids": [
+        "BILINGUAL_METADATA",
+        "CATEGORY_OR_TYPE"
+      ],
+      "independent_specific_tests_detected": [
+        "CATEGORY_OR_TYPE"
+      ],
+      "independent_specific_detected": true,
+      "independent_status": "DETECTED",
+      "existing_validator_exit": 0,
+      "existing_validator_failures": [],
+      "existing_specific_failures_excluding_checksum": [],
+      "existing_specific_detected": false,
+      "existing_checksum_only_detected": false,
+      "did_fault_file_change": true
+    }
+  ],
+  "interpretation": "An old check that catches only a SHA mismatch is not evidence of semantic fault detection. Oracle reason states deliberate injection, not independent expert validation."
+}

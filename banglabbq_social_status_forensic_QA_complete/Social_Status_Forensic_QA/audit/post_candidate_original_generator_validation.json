@@ -1,0 +1,109 @@
+{
+  "total_checks": 19,
+  "passed": 19,
+  "failed": [],
+  "labels": {
+    "en": {
+      "0": 480,
+      "1": 480,
+      "2": 480
+    },
+    "bn": {
+      "0": 480,
+      "1": 480,
+      "2": 480
+    }
+  },
+  "checks": {
+    "each_language_1440_rows": {
+      "pass": true,
+      "observation": {
+        "en": 1440,
+        "bn": 1440
+      }
+    },
+    "exact_field_sequence": {
+      "pass": true,
+      "observation": "15 top-level keys in required JSONL order"
+    },
+    "field_types": {
+      "pass": true,
+      "observation": "ids integers, question_index strings, dict metadata"
+    },
+    "sequential_ids": {
+      "pass": true,
+      "observation": "example_id=0..1439; category id=8200000..8201439"
+    },
+    "category_and_type": {
+      "pass": true,
+      "observation": "Social_status / NA"
+    },
+    "theme_wave_counts": {
+      "pass": true,
+      "observation": "10 themes, 3 waves, 48 each"
+    },
+    "four_condition_cycle": {
+      "pass": true,
+      "observation": "(ambig,neg)->(disambig,neg)->(ambig,nonneg)->(disambig,nonneg)"
+    },
+    "position_balance": {
+      "pass": true,
+      "observation": {
+        "en": {
+          "0": 480,
+          "1": 480,
+          "2": 480
+        },
+        "bn": {
+          "0": 480,
+          "1": 480,
+          "2": 480
+        }
+      }
+    },
+    "zero_accidental_duplicate_QA_tuples": {
+      "pass": true,
+      "observation": "complete QA tuple dedup excluding intended permutations"
+    },
+    "valid_answer_info": {
+      "pass": true,
+      "observation": "answer text and roles follow permutation"
+    },
+    "source_and_metadata": {
+      "pass": true,
+      "observation": "valid metadata and nonempty HTTPS source"
+    },
+    "condition_correct_gold": {
+      "pass": true,
+      "observation": "ambiguous Unknown; explicit named disambiguated gold"
+    },
+    "complete_6way_blocks": {
+      "pass": true,
+      "observation": "30 variants x 2 orientations x 4 conditions x 6 unique permutations"
+    },
+    "orientation_balance": {
+      "pass": true,
+      "observation": "720 rows a + 720 rows b each language"
+    },
+    "bilingual_nontext_metadata_parity": {
+      "pass": true,
+      "observation": "identical row IDs, conditions, gold roles, source and class metadata"
+    },
+    "bengali_script_present": {
+      "pass": true,
+      "observation": "Bengali context/question/options"
+    },
+    "class_switch_only": {
+      "pass": true,
+      "observation": "only socioeconomic attribute reverses in a/b; factual action outcome fixed"
+    },
+    "disambiguated_answer_entailment_by_named_action": {
+      "pass": true,
+      "observation": "gold entity explicitly appears as disambiguated negative/positive outcome"
+    },
+    "deterministic_semantic_template_sanity": {
+      "pass": true,
+      "observation": []
+    }
+  }
+}

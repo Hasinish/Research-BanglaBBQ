@@ -1,0 +1,47 @@
+{
+  "category": "Physical_appearance",
+  "audited_commit": "e186b283fa5b184058e2cb395273e9968a893b20",
+  "audited_commit_utc": "2026-10-26T06:18:04Z",
+  "english_original_git_blob": "f765b998a90b0abb02526615f01fe023d0e39242",
+  "bengali_original_git_blob": "a39f9156da45a8b3b8bda021d3d839eeddfef879",
+  "per_language_rows": 1440,
+  "source_theme_counts": {
+    "DIRECT": 4,
+    "PARTIAL/CONTEXTUAL": 6
+  },
+  "source_theme_decisions": {
+    "KEEP_WITH_QUALIFICATIONS": 1,
+    "REVISE_ROLE_REQUIREMENT": 1,
+    "BLOCK_FOR_EXPERT_DECISION": 4,
+    "REVISE_AND_REVIEW": 2,
+    "KEEP_WITH_POLICY_CAVEAT": 1,
+    "KEEP_AFTER_BILINGUAL_REPAIR": 1
+  },
+  "original_automated_findings": 288,
+  "postfix_automated_findings": 0,
+  "original_per_row_semantic_anchors_reviewed": 240,
+  "original_semantic_anchor_bilingual_failures": 48,
+  "postfix_semantic_anchor_bilingual_failures": 0,
+  "original_validator_adversarial_detection": 21,
+  "independent_validator_adversarial_detection": 26,
+  "adversarial_fixtures": 26,
+  "postfix_adversarial_detection": 26,
+  "issue_ledger_row_counts_by_severity": {
+    "P2": 634,
+    "P0": 432,
+    "P1": 12
+  },
+  "issue_ledger_row_counts_by_status": {
+    "APPLIED_LOCAL_ONLY": 1008,
+    "BLOCKED_FOR_EXPERT_DECISION": 58,
+    "UNRESOLVED": 12
+  },
+  "local_modified_BN_records": 720,
+  "local_changed_BN_fields": 1008,
+  "local_modified_EN_records": 0,
+  "original_blind_gold_rows_tested": 2880,
+  "postfix_blind_gold_rows_tested": 2880,
+  "independent_human_review": "NOT_PERFORMED",
+  "import_safe": false,
+  "github_or_sheet_writes": 0
+}

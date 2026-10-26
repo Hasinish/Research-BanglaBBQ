@@ -1,0 +1,29 @@
+{
+  "files": {
+    "en": "/mnt/data/social_status_forensic/regenerated/banglabbq_social_status_english.jsonl",
+    "bn": "/mnt/data/social_status_forensic/regenerated/banglabbq_social_status_bengali.jsonl",
+    "audit": "/mnt/data/social_status_forensic/regenerated/banglabbq_social_status_source_audit.csv",
+    "crosswalk": "/mnt/data/social_status_forensic/regenerated/banglabbq_social_status_pakbbq_theme_crosswalk.csv",
+    "manifest": "/mnt/data/social_status_forensic/regenerated/banglabbq_social_status_expansion_manifest.json",
+    "qa": "/mnt/data/social_status_forensic/regenerated/banglabbq_social_status_qa_report.md"
+  },
+  "counts": {
+    "en": 1440,
+    "bn": 1440
+  },
+  "gold_label_positions": {
+    "en": {
+      "0": 480,
+      "1": 480,
+      "2": 480
+    },
+    "bn": {
+      "0": 480,
+      "1": 480,
+      "2": 480
+    }
+  },
+  "checks_passed": 19,
+  "checks_total": 19,
+  "failures": []
+}

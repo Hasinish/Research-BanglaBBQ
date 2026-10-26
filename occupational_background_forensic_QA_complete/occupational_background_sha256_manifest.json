@@ -1,0 +1,153 @@
+{
+  "audit_commit": "e186b283fa5b184058e2cb395273e9968a893b20",
+  "artifacts": {
+    "occupational_background_independent_forensic_QA_report.md": {
+      "sha256": "aa2154984dfb881a2ca62a6d4c3b9d1125f12f617da65d901969da5711c96073",
+      "bytes": 20480
+    },
+    "occupational_background_issue_ledger.csv": {
+      "sha256": "3e9d7c2d327343f8e326c6704fa9219909ac00a531012056339f4d1103f7eb03",
+      "bytes": 181105
+    },
+    "occupational_background_source_evidence_matrix.csv": {
+      "sha256": "68b97d886ac33a72334c836036f4b4c7144c6c9de53eec566a463c066cf9efc2",
+      "bytes": 12370
+    },
+    "occupational_background_source_url_access_log.csv": {
+      "sha256": "f93805429fc0c6686220527d2c28ba304716636af5847a48da5472d9710201f5",
+      "bytes": 9249
+    },
+    "occupational_background_semantic_anchor_review.csv": {
+      "sha256": "9d539b33d2365dc92339ca683784f37ea7aaab3a348e9890043d9005809564a7",
+      "bytes": 480617
+    },
+    "occupational_background_postfix_semantic_anchor_review.csv": {
+      "sha256": "8726a80efc8cb97c110961114f07220635d996aa72820d68033cc7ca87e6b1e3",
+      "bytes": 488671
+    },
+    "occupational_background_30_case_construct_review.csv": {
+      "sha256": "7aef43e59a10d53bdc0e8c75af5a17ca537e244e1675d2d13c062b7389b2e8f3",
+      "bytes": 46512
+    },
+    "occupational_background_variation_leakage.csv": {
+      "sha256": "dc0cd069c40ef8be6352dbf019ef6be25cb36f9882e0577f00ea21ae4ce1540b",
+      "bytes": 990
+    },
+    "occupational_background_adversarial_results.json": {
+      "sha256": "d6d9367a10df8bca8ef159f9d7f9f6d0e954a1746f9ac0b0be8b0036eeefdb67",
+      "bytes": 69965
+    },
+    "occupational_background_postfix_adversarial_results.json": {
+      "sha256": "aae8df230fa9a4d69e16a1e3e619e9b1c51d58ea83eb6364bc1dfe365cc56968",
+      "bytes": 69847
+    },
+    "occupational_background_independent_validator.py": {
+      "sha256": "8014e02b9eff13966ec982a21e77174a14b12d59dd0c47b45b6c1ae8a48a3815",
+      "bytes": 20081
+    },
+    "occupational_background_import_readiness.json": {
+      "sha256": "ea55945920bb3bb6ac7084d170f1a8a405cfae2d5abfe06ccea427bc4153f7ae",
+      "bytes": 3961
+    },
+    "occupational_background_audited_english.jsonl": {
+      "sha256": "577f693d051d4e4cd9cc4e39f80cea8c6d423867c8fce46914ddc82d0e83fe32",
+      "bytes": 1305042
+    },
+    "occupational_background_audited_bengali.jsonl": {
+      "sha256": "7e595d4d059b70c8f2032c8ceacf74e2496fc68f0dcb9ec9ab6006e7e3a166a1",
+      "bytes": 2127018
+    },
+    "occupational_background_change_manifest.csv": {
+      "sha256": "5d5e30c561235bdc4ac5a858732fb0a8e0e01a2b8499c7c9008c49d08e7e4c3e",
+      "bytes": 244369
+    },
+    "occupational_background_postfix_QA_report.md": {
+      "sha256": "ab734b5f9e643c0e2eab0210871f29bae892d5d0c09f993abbfb712b57847366",
+      "bytes": 2465
+    },
+    "occupational_background_revised_pakbbq_crosswalk.csv": {
+      "sha256": "dfc5d62e75b341100e4a924ab92a9c8cbc1d12df769a733ff85a2a28d2d1a97f",
+      "bytes": 23830
+    },
+    "occupational_background_review_provenance.json": {
+      "sha256": "5ad985a230414e3283af8e779dc30e9e59a1f672b2ee4a73eefe75570d3aadc7",
+      "bytes": 337
+    },
+    "occupational_background_local_reproducibility_log.md": {
+      "sha256": "1e0ee4df09f29f56e86f440c7c889d4583341a4932ad7069121c103cfba9c828",
+      "bytes": 4985
+    },
+    "ORIGINAL/banglabbq_occupational_background_english.jsonl": {
+      "sha256": "fb68c17da34f67ed886e1a854e62eb7d40479667d75cf8a91d4c907d4c602615",
+      "bytes": 1303530
+    },
+    "ORIGINAL/banglabbq_occupational_background_bengali.jsonl": {
+      "sha256": "bb00d7b4c241d984bb609c36fbfe507b9942dc6a0defc49752b2af628ccf68f5",
+      "bytes": 2125338
+    },
+    "WORK/run_fault_injection.py": {
+      "sha256": "160febbc2b584d18b3ba88ce3729b683c0f620432e4a245f376bf2998421e427",
+      "bytes": 9751
+    },
+    "WORK/patch_semantics_and_fix.py": {
+      "sha256": "2366259ab1b3e4225ae4aa98b73fbaaada0eb53cf29eeedc49858ce58e700eea",
+      "bytes": 7284
+    },
+    "WORK/build_review_artifacts.py": {
+      "sha256": "f7a3354c8f3b39ceff783638cfd92908138ad2c5cbfc76b60866354862eb8348",
+      "bytes": 23263
+    },
+    "WORK/rebuild_pakbbq_crosswalk.py": {
+      "sha256": "4ceb13833a45261b10177c921ce11df42d94a3550d70346c49153205742de8d4",
+      "bytes": 4678
+    },
+    "WORK/assemble_issue_ledger_and_post_review.py": {
+      "sha256": "4366e2ab8686a07471092c902d89e360d4f72433ea80a6226ddbb6697328d808",
+      "bytes": 13082
+    },
+    "WORK/patch_validator.py": {
+      "sha256": "447d7473b38850ed05ea194cd6f59c5aaddf42c4831e4d79b19b8a146546ce0b",
+      "bytes": 3721
+    },
+    "WORK/original_independent_validation_sources.json": {
+      "sha256": "c2f648c3a90772f64ce12bb3867c0c19cb17f3a6efb04b2c91549cbfa137f05d",
+      "bytes": 64824
+    },
+    "WORK/postfix_independent_validation_sources.json": {
+      "sha256": "9fe2e48ad2f95fe4c922164ad7f4b3c4b16ae5c30e28df36029a832ddd853dcc",
+      "bytes": 1173
+    },
+    "WORK/reproducibility_comparison.json": {
+      "sha256": "fac39a599f07653741a141d5da5141c1a07281f04cf4b418fdcd192397d3ab7a",
+      "bytes": 2093
+    },
+    "WORK/generator_stdout.json": {
+      "sha256": "da07bc1928975bd742546cb2930fce0304399b819975ebe4c40bb151ab7367c8",
+      "bytes": 1036
+    },
+    "WORK/fault_injection_execution.log": {
+      "sha256": "3e55841f06cc93f16cb12d36b443da9068ac58d1bc5b1048004c8492f1b938a9",
+      "bytes": 3291
+    },
+    "WORK/postfix_fault_injection_execution.log": {
+      "sha256": "c27fb3a88bfe51c4bf6750255f76e7db761008993755f6b7ecc8eb3d76164dba",
+      "bytes": 3183
+    },
+    "WORK/finalize_audit_package.py": {
+      "sha256": "68a7b4664300b8e82bfe6b3d076b2469603994450307c379abeb5df59cc00194",
+      "bytes": 10916
+    },
+    "WORK/make_reports.py": {
+      "sha256": "8d595299cbf5c7e59e0350dbf519d4c0992a28492d593b028cfee82357e52ba9",
+      "bytes": 23652
+    },
+    "ORIGINAL/banglabbq_occupational_background_generator.py": {
+      "sha256": "3ef60a69aa32e6c6018c1149559b2896e4ebde13ea13b216320b62eda9a4f93f",
+      "bytes": 81523
+    },
+    "ORIGINAL/banglabbq_occupational_background_expansion_manifest.json": {
+      "sha256": "e0ae832137539dbfeff4fc3e6bf02335bd7338e039e1c83b5041b0449e5cd298",
+      "bytes": 61434
+    }
+  }
+}

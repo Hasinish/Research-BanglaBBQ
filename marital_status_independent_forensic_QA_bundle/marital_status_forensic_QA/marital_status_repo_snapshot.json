@@ -1,0 +1,36 @@
+{
+  "repo": "Hasinish/Research-BanglaBBQ",
+  "main_sha": "e186b283fa5b184058e2cb395273e9968a893b20",
+  "main_commit_time_utc": "2026-10-26T06:18:04Z",
+  "seven_bundle_commit_sha": "214795f628a34ece8deb23a65c6bf35ac0ce7157",
+  "committed_marital_status_directory": "banglabbq_marital_status_readonly_research_package/",
+  "git_blob_sha": {
+    "english": "5c902dd9956dc6104126a306317e98ed269d8059",
+    "bengali": "f9f6ac2f87d3f53995e7d5db2bc4faca5df7ede0",
+    "expansion_manifest": "3ee1e9ab0f40c232503bf1d270f3c392b0d87430",
+    "generator": "bcf58722cc718e99bf12021f7a24e66a14fe16c6",
+    "source_audit": "cd7e5dced6ce4b5d68339b7a31b9796a8d74502b",
+    "pakbbq_crosswalk": "ab233bb1a1f2747e63e0cc63597f6b0474a183be",
+    "prior_qa_report": "b811c012e28cdaf21cbb9182659bcd3dd94a2045"
+  },
+  "legacy_git_blob_sha": {
+    "english": "e150dfbc18469721f12903f1f4d1e52c62a4f4e5",
+    "bengali": "f986177961fcbd4d898207706af108ec91b6fbac"
+  },
+  "upstream_pakbbq_tree_sha": "c079dbae2d676f4e3bb82982144d6d4ac10436d4",
+  "original_files_hashed": {
+    "banglabbq_marital_status_bengali.jsonl": "75eb0ebdb5a3052859d181a28d629eef872ebf0cc41f29bbc168e81047d778fe",
+    "banglabbq_marital_status_english.jsonl": "45dc27f6383fb2bc8a9a2df4eca22f7559e8861162bfbe4bd0b5776cf34559e1",
+    "banglabbq_marital_status_expansion_manifest.json": "fe174c72dd45a7271ec8056c1c35e75b354ad86ce18264a747183d32ddfdb426",
+    "banglabbq_marital_status_generate.py": "9ad8b915864232410aeffc863a46d06264ea37c24b5576ef639940eb95afc14d",
+    "banglabbq_marital_status_pakbbq_theme_crosswalk.csv": "5bcc9c85a604efa64b13438f649cd9dd9f2b317095089723239cca368e8e2813",
+    "banglabbq_marital_status_source_audit.csv": "56c61e711abeeb3ad3eb30be3c4a6e0081d8d547df3dc72debf5322df96b7c6d"
+  },
+  "local_corrected_files_hashed": {
+    "banglabbq_marital_status_audited_bengali.jsonl": "708154702b7b88269fa86726185997a4d66982fd9cf12b3fdd69e76396339c21",
+    "banglabbq_marital_status_audited_english.jsonl": "52e99118b2bc35a4ffbdcd561d5a24ec08dbf9e21b2a582dfa9586532256d356"
+  },
+  "remote_writes": 0,
+  "dates": "2026-10-26 Asia/Dhaka",
+  "memory_synchronization_note": "Project memory/state.md latest main post-push references seven bundle SHA but Last Verified Date Oct 20 and PENDING Marital; memory/index.md does not list seven bundles."
+}

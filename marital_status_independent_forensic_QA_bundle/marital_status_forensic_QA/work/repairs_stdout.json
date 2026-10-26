@@ -1,0 +1,12 @@
+{
+  "changes_total": 120,
+  "issues": {
+    "M-BN-Q02V3": 24,
+    "M-SEM-Q01V3": 48,
+    "M-SEM-Q03V3": 48
+  },
+  "candidate_files": [
+    "/mnt/data/marital_forensic_qa/banglabbq_marital_status_audited_english.jsonl",
+    "/mnt/data/marital_forensic_qa/banglabbq_marital_status_audited_bengali.jsonl"
+  ]
+}

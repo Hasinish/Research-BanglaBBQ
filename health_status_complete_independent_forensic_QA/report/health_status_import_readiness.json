@@ -1,0 +1,71 @@
+{
+  "original_main_commit": "e186b283fa5b184058e2cb395273e9968a893b20",
+  "evaluated_candidate_sha256": {
+    "english": "db0d3daea69d2d088e2aeb7a7c624f039c804478ca3af308a7d7f8191ea93eae",
+    "bengali": "0d506d37dc58b50f663df0a054a502c390324d8e4e04cb4dab7d980ce28b3c90"
+  },
+  "category": "Health_status",
+  "current_workbook": "https://docs.google.com/spreadsheets/d/1xZhhKZoZuSy-ZXAWWdhCpq9QLh705ScErcnBZacmZnY/edit",
+  "audited_date": "2026-10-26",
+  "spreadsheet_existing_health_tabs": "NONE; all 10 active original production tabs checked by read-only metadata",
+  "import_status": "NOT_IMPORTED",
+  "import_safe": "NO",
+  "reason": "Q04 unsupported health-only theme, Q02/Q07/Q08/Q09 partial evidence/clinical or appearance confounds, no actual independent human review, unapproved provisional IDs, duplicated scenario family, no active Health tabs.",
+  "provisional_id_range": "8300000..8301439",
+  "id_collision_check": "All six other new English JSONLs exact IDs nonoverlapping; 10 active ENG/BEN production Sheet O columns searched for 8300, only unrelated Gender 8300, zero current detected collision. Not a final exhaustive global row-by-row collision proof.",
+  "rows_per_language": {
+    "english": 1440,
+    "bengali": 1440
+  },
+  "prospective_data_rows": 2880,
+  "prospective_cells": 43200,
+  "expected_tabs": 2,
+  "expected_sheet_range_if_approved": "A1:O1441 per language including header",
+  "sheet_header_order": [
+    "example_id",
+    "question_index",
+    "context_condition",
+    "question_polarity",
+    "type",
+    "context",
+    "question",
+    "ans0",
+    "ans1",
+    "ans2",
+    "label",
+    "answer_info",
+    "additional_metadata",
+    "category",
+    "id"
+  ],
+  "jsonl_key_order": [
+    "example_id",
+    "question_index",
+    "question_polarity",
+    "context_condition",
+    "category",
+    "answer_info",
+    "additional_metadata",
+    "context",
+    "question",
+    "ans0",
+    "ans1",
+    "ans2",
+    "label",
+    "type",
+    "id"
+  ],
+  "json_metadata_cells_stringified": true,
+  "formula_injection_cell_count": 0,
+  "formula_injection_examples": [],
+  "pending_checks": [
+    "Independent Bangladeshi Bengali human clinical/cultural editorial signoff",
+    "Q04 source replacement or theme removal and reviewed downstream row count",
+    "Q02/Q07/Q08/Q09 source scenario alignment",
+    "Escalated clinician confirmation of no legitimately necessary contact precautions",
+    "Final global id-collision recheck immediately before any approved import",
+    "Design-family holdout split and cross-category duplicate review",
+    "New live Health tabs creation and post-import row-level verification only after explicit authorization"
+  ],
+  "write_access_invoked": "NO"
+}

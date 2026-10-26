@@ -1,0 +1,71 @@
+{
+  "category": "Social_status",
+  "checked_main_head": "e186b283fa5b184058e2cb395273e9968a893b20",
+  "bundle_push_commit": "214795f628a34ece8deb23a65c6bf35ac0ce7157",
+  "committed_paths_root": "banglabbq_social_status_complete/",
+  "source_originals": {
+    "banglabbq_social_status_english.jsonl": {
+      "size_bytes": 1302258,
+      "sha256": "40d7a9aae0a51285ceaa6cad83a317fdd70e0fcb4b8c47cbdadf3e3432ed3705",
+      "git_blob_sha1": "64d2c01a06d0e216666abb7f3ee6757bd2f2e4c1",
+      "sha_verified_vs_latest_main": true,
+      "committed_blob_sha1": "64d2c01a06d0e216666abb7f3ee6757bd2f2e4c1"
+    },
+    "banglabbq_social_status_bengali.jsonl": {
+      "size_bytes": 2087178,
+      "sha256": "ebbf776c88d35593610241eda7913d0ec7fe8522d68c5eec236f080a8a783589",
+      "git_blob_sha1": "af0bc36a35eb8b7244d9d62124f1700e894e1f4b",
+      "sha_verified_vs_latest_main": true,
+      "committed_blob_sha1": "af0bc36a35eb8b7244d9d62124f1700e894e1f4b"
+    },
+    "banglabbq_social_status_expansion_manifest.json": {
+      "size_bytes": 91933,
+      "sha256": "791be0f90ee30db25fc7421db10b2792c4884041348c9fe2f2fb8d926f74cb12",
+      "git_blob_sha1": "b53f33a9c76668ec91f854ce7f30f716b511bc84",
+      "sha_verified_vs_latest_main": true,
+      "committed_blob_sha1": "b53f33a9c76668ec91f854ce7f30f716b511bc84"
+    },
+    "banglabbq_social_status_generate.py": {
+      "size_bytes": 81885,
+      "sha256": "ca9b13a742b6e421dda8ca8e72c3d0ad290f374a8a2e0173db90f88e6d5c30d2",
+      "git_blob_sha1": "118b6c679607bab7f68623d7f4480bb42f3f3bf6",
+      "sha_verified_vs_latest_main": true,
+      "committed_blob_sha1": "118b6c679607bab7f68623d7f4480bb42f3f3bf6"
+    },
+    "banglabbq_social_status_pakbbq_theme_crosswalk.csv": {
+      "size_bytes": 6883,
+      "sha256": "009e72bc2d44cf8e00f9897c0b339d28df65ce837c877b86af7e25a0d4df39f3",
+      "git_blob_sha1": "92729f2261871034a8549652a49cdb8ec512fe09",
+      "sha_verified_vs_latest_main": true,
+      "committed_blob_sha1": "92729f2261871034a8549652a49cdb8ec512fe09"
+    },
+    "banglabbq_social_status_qa_report.md": {
+      "size_bytes": 9288,
+      "sha256": "f0fdaf3e40077c142c668e82c4cc4d1819ec17fa4aa94c5124d77ae28bb2682d",
+      "git_blob_sha1": "817484ba02b4bb6b5f5362ecbbf793e0dd210c86",
+      "sha_verified_vs_latest_main": true,
+      "committed_blob_sha1": "817484ba02b4bb6b5f5362ecbbf793e0dd210c86"
+    },
+    "banglabbq_social_status_source_audit.csv": {
+      "size_bytes": 10130,
+      "sha256": "f8af8b4da5d3656c13e9e2391afc38f04c1689492843f79c159cda5487ef885f",
+      "git_blob_sha1": "ee2a28ad51ce0781d0a27e710b9ae44743d07076",
+      "sha_verified_vs_latest_main": true,
+      "committed_blob_sha1": "ee2a28ad51ce0781d0a27e710b9ae44743d07076"
+    }
+  },
+  "generator_byte_reproduction": {
+    "banglabbq_social_status_english.jsonl": true,
+    "banglabbq_social_status_bengali.jsonl": true,
+    "banglabbq_social_status_expansion_manifest.json": true,
+    "banglabbq_social_status_pakbbq_theme_crosswalk.csv": true,
+    "banglabbq_social_status_qa_report.md": true,
+    "banglabbq_social_status_source_audit.csv": true
+  },
+  "candidate_sha256": {
+    "english": "cf37a71ed4c0ef4f81c12fac9d2b83993d3a34a09609d2b50c2ecb9fd7959cea",
+    "bengali": "a65466ea984220951ae393d48b5d7c1cd413089f937cfe66a245e2dc100fc3f2"
+  },
+  "source_commit_versions": "main introduced bundle 214795f; later e186 only memory/state.md",
+  "remote_writes": 0
+}

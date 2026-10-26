@@ -1,0 +1,53 @@
+{
+  "audit_date": "2026-10-26",
+  "method": "Executable comparison against independently reopened and documented source URLs/evidence tiers, not self-reported QA labels.",
+  "F26": {
+    "injected_url": "https://example.org/unrelated-study",
+    "grounded_url": "https://spcommreports.ohchr.org/TmSearch/SummaryPrint?id=30362",
+    "affected_records": 288,
+    "distinct_languages": 2,
+    "source_audit_mismatch": true,
+    "detected": true,
+    "example_mismatches": [
+      {
+        "lang": "en",
+        "line": 289,
+        "expected_grounded_source": "https://spcommreports.ohchr.org/TmSearch/SummaryPrint?id=30362",
+        "observed": "https://example.org/unrelated-study"
+      },
+      {
+        "lang": "en",
+        "line": 290,
+        "expected_grounded_source": "https://spcommreports.ohchr.org/TmSearch/SummaryPrint?id=30362",
+        "observed": "https://example.org/unrelated-study"
+      },
+      {
+        "lang": "en",
+        "line": 291,
+        "expected_grounded_source": "https://spcommreports.ohchr.org/TmSearch/SummaryPrint?id=30362",
+        "observed": "https://example.org/unrelated-study"
+      }
+    ]
+  },
+  "F27": {
+    "injected_Q07": "DIRECT",
+    "expected_Q07": "PARTIAL",
+    "injected_Q05": "PARTIAL",
+    "expected_Q05": "DIRECT",
+    "violations": [
+      {
+        "Q": "Q05",
+        "expected": "DIRECT",
+        "observed": "PARTIAL"
+      },
+      {
+        "Q": "Q07",
+        "expected": "PARTIAL",
+        "observed": "DIRECT"
+      }
+    ],
+    "detected": true
+  },
+  "source_retrieval": "Ground truth manually corroborated on actual sites: OHCHR Mro ancestral dispossession ALLEGATIONS, and PLOS Garo qualitative patient discrimination.",
+  "limitations": "This executable oracle tests explicit known example source/tier falsifications. It is not a live general source-relevance classifier; new claims require actual document examination."
+}

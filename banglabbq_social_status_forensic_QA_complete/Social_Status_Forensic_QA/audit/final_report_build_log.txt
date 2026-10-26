@@ -1,0 +1,37 @@
+{
+  "root_counts": {
+    "P1": 8,
+    "P2": 6,
+    "P3": 1
+  },
+  "issues": 317,
+  "changes_en": 120,
+  "changes_bn": 120,
+  "changes_total": 240,
+  "adv": {
+    "executed_at_utc": "2026-10-26 (local run; wall-clock omitted)",
+    "category": "Social_status",
+    "source": "immutable committed originals",
+    "total_fixtures": 33,
+    "actually_injected": 33,
+    "original_validator_detected": 23,
+    "independent_validator_detected": 28,
+    "neither_validator_detected": 5,
+    "validator_exceptions": 2,
+    "expert_required_not_auto_detected": [
+      "FX26",
+      "FX30",
+      "FX31",
+      "FX32",
+      "FX33"
+    ],
+    "important_caveat": "Expert reviewer expected-detection labels are a specified verification procedure, NOT execution of a human review; no manual expert was hired."
+  },
+  "anchors_pre": 240,
+  "anchors_post": 240,
+  "sources": 9,
+  "themes": 10,
+  "pak_indices": 35,
+  "candidate_pre_issues": 0,
+  "candidate_post_issues": 0
+}

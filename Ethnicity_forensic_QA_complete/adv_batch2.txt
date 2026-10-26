@@ -1,0 +1,23 @@
+{
+  "baseline_existing_returncode": 0,
+  "baseline_independent_issues": 96,
+  "fixture_count": 10,
+  "executed_count": 10,
+  "existing_validator_detected_count": 7,
+  "independent_expected_detection_count": 7,
+  "combined_detected_count": 9,
+  "undetected_fixture_ids": [
+    "F28"
+  ],
+  "false_positive_baseline_qa": false
+}
+F21 True {'EXACT_QA_DUPLICATE': 48} True
+F22 True {'PERMUTATION_TEXT_INVARIANCE': 1, 'COUNTERFACTUAL_CONTEXT_NONETHNIC_CHANGE': 1} True
+F23 True {'BLIND_CONTEXT_ENTAILMENT': 1, 'PERMUTATION_TEXT_INVARIANCE': 1, 'COUNTERFACTUAL_CONTEXT_NONETHNIC_CHANGE': 1, 'CROSS_LANGUAGE_INFERRED_MEANING': 1} True
+F24 True {'CONTROL_CHAR': 1, 'TEXT_CONTROL': 1, 'PERMUTATION_TEXT_INVARIANCE': 1, 'COUNTERFACTUAL_NONETHNIC_ATTRIBUTE': 1} True
+F25 True {'SCHEMA_TYPE': 1, 'BLIND_GOLD_LABEL': 1, 'GLOBAL_DISTRIBUTION': 1, 'CROSS_LANGUAGE_METADATA': 1} True
+F26 False {} True
+F27 False {} True
+F28 True {'BLIND_GOLD_LABEL': 1, 'EXACT_QA_DUPLICATE': 1, 'PERMUTATION_TEXT_INVARIANCE': 1, 'COUNTERFACTUAL_NONETHNIC_ATTRIBUTE': 1, 'CROSS_LANGUAGE_INFERRED_MEANING': 1} False
+F29 False {'MANIFEST_RANGE': 1} True
+F30 True {'PERMUTATION_TEXT_INVARIANCE': 1, 'COUNTERFACTUAL_CONTEXT_NONETHNIC_CHANGE': 1} True

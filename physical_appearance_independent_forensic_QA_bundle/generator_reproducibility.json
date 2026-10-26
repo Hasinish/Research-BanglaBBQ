@@ -1,0 +1,30 @@
+{
+  "old_validator_baseline_failures": [],
+  "local_reproduction": [
+    {
+      "round": 1,
+      "exitcode": 0,
+      "matches_to_mounted": {
+        "banglabbq_physical_appearance_english.jsonl": true,
+        "banglabbq_physical_appearance_bengali.jsonl": true,
+        "banglabbq_physical_appearance_expansion_manifest.json": true,
+        "banglabbq_physical_appearance_source_audit.csv": true,
+        "banglabbq_physical_appearance_pakbbq_theme_crosswalk.csv": true
+      },
+      "last_stdout": "_verification\": \"DIRECT_AND_PARTIAL_NOT_ALL_CAUSAL\",\n    \"native_Bengali_independent_review\": \"PENDING\",\n    \"publication_ready\": false,\n    \"remote_services_written\": false\n  }\n}\n"
+    },
+    {
+      "round": 2,
+      "exitcode": 0,
+      "matches_to_mounted": {
+        "banglabbq_physical_appearance_english.jsonl": true,
+        "banglabbq_physical_appearance_bengali.jsonl": true,
+        "banglabbq_physical_appearance_expansion_manifest.json": true,
+        "banglabbq_physical_appearance_source_audit.csv": true,
+        "banglabbq_physical_appearance_pakbbq_theme_crosswalk.csv": true
+      },
+      "last_stdout": "_verification\": \"DIRECT_AND_PARTIAL_NOT_ALL_CAUSAL\",\n    \"native_Bengali_independent_review\": \"PENDING\",\n    \"publication_ready\": false,\n    \"remote_services_written\": false\n  }\n}\n"
+    }
+  ],
+  "input_generator_sha256": "3da90784391aa4035800ad2c3ee7bfd21f0497de5ede184ebba856212d47dcc4"
+}

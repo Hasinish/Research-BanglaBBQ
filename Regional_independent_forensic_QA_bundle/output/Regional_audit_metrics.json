@@ -1,0 +1,76 @@
+{
+  "source_head": "e186b283fa5b184058e2cb395273e9968a893b20",
+  "bundle_commit": "214795f628a34ece8deb23a65c6bf35ac0ce7157",
+  "original_blobs": {
+    "en": "081ad561c9671e7eb3b68bdf706bc95e1aef1a5e",
+    "bn": "6c8ca8a8e4a511fb1315e96dc3e5395825cf6035"
+  },
+  "filehashes": {
+    "en": {
+      "committed_git_blob_sha": "081ad561c9671e7eb3b68bdf706bc95e1aef1a5e",
+      "original_sha256": "b6caf58f388b02c1af86e0dae139a0d116ac0ede72645e7bcff19a4491d1f677",
+      "original_bytes": 1330338,
+      "audited_candidate_sha256": "a526b1c1014a03333cbdcb9c86d48f94ebdf9723d2d92d95492fb72efc2b0bb9",
+      "audited_candidate_bytes": 1330746
+    },
+    "bn": {
+      "committed_git_blob_sha": "6c8ca8a8e4a511fb1315e96dc3e5395825cf6035",
+      "original_sha256": "5c97a1919d3e8afaca4603edf473a4a82d1dc0eefb34fb27e011362e838b7d1b",
+      "original_bytes": 2290938,
+      "audited_candidate_sha256": "c15f1ca46f63e7541c761b68ecdc96ec3388607c427caa18879985c128218608",
+      "audited_candidate_bytes": 2289882
+    }
+  },
+  "counts": {
+    "english": 1440,
+    "bengali": 1440,
+    "themes": 10,
+    "variants": 30,
+    "anchors": 240,
+    "changed_cells": 480,
+    "changed_language_specific_rows": 348,
+    "source_evidence_direct": 6,
+    "source_evidence_partial": 4,
+    "source_unique_urls_verified": 9,
+    "issue_ledger_rows": 1637
+  },
+  "issue_rows_by_severity": {
+    "P1": 1608,
+    "P2": 27,
+    "P3": 2
+  },
+  "issue_unique_families_by_severity": {
+    "P2": 4,
+    "P1": 10,
+    "P3": 2
+  },
+  "issues_unique_families": [
+    "R-ED-Q03-V2",
+    "R-ED-Q04-V2",
+    "R-ED-Q05-V1",
+    "R-ED-Q05-V2",
+    "R-ED-Q06-V3",
+    "R-ED-Q07-V2",
+    "R-ED-Q10-V2",
+    "R-LEAK-Q08",
+    "R-LEAK-Q09",
+    "R-MEMORY-STALE",
+    "R-SRC-Q06",
+    "R-SRC-Q08",
+    "R-SRC-Q09",
+    "R-SRC-Q10",
+    "R-STYLE-Q04-V3",
+    "R-STYLE-Q07-V1"
+  ],
+  "baseline_structural_independent_issues": 0,
+  "audited_structural_independent_issues": 0,
+  "anchors_blind_match_en": 240,
+  "anchors_blind_match_bn": 240,
+  "source_block_themes": [
+    "Q06",
+    "Q08",
+    "Q09",
+    "Q10"
+  ],
+  "human_native_review": "NOT_PERFORMED"
+}

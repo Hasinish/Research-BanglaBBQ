@@ -1,0 +1,183 @@
+{
+  "root_issues": [
+    {
+      "issue_id": "SS-POL-001",
+      "severity": "P1",
+      "theme": "Q07",
+      "variation": "V3",
+      "field": "Semantic polarity",
+      "diagnosis": "Negative asks alleged aid abuse, positive asks thanks for routine certificate; distinct evaluator criteria.",
+      "proposed_fix": "Replace with negative accusation and positive affirmation of eligibility, both explicitly entailed.",
+      "status": "APPLIED_LOCAL_ONLY",
+      "confidence": "HIGH"
+    },
+    {
+      "issue_id": "SS-EVID-001",
+      "severity": "P1",
+      "theme": "Q07",
+      "variation": "V1-V3",
+      "field": "Source evidentiary overclaim",
+      "diagnosis": "Original DIRECT classification asserts source establishes matched aid-worker shaming; study documents aid stigma, not this counterfactual act.",
+      "proposed_fix": "Downgrade to PARTIAL/CONTEXTUAL in local matrix and manifest; seek targeted evidence.",
+      "status": "BLOCKED_FOR_EXPERT_DECISION",
+      "confidence": "HIGH"
+    },
+    {
+      "issue_id": "SS-EVID-002",
+      "severity": "P1",
+      "theme": "Q02",
+      "variation": "V1-V3",
+      "field": "Source underfit",
+      "diagnosis": "Study of NGO access barriers cannot establish identical-token class-priority delay.",
+      "proposed_fix": "Find matched-class Bangladesh queue evidence or redesign with defensible mechanisms.",
+      "status": "BLOCKED_FOR_EXPERT_DECISION",
+      "confidence": "HIGH"
+    },
+    {
+      "issue_id": "SS-EVID-003",
+      "severity": "P1",
+      "theme": "Q04",
+      "variation": "V1-V3",
+      "field": "School access class-location confound",
+      "diagnosis": "Source documents slum-address-related admission exclusion, not pure family-wealth effect independent of address.",
+      "proposed_fix": "Field audit or record known source limitation; avoid causal claim.",
+      "status": "BLOCKED_FOR_EXPERT_DECISION",
+      "confidence": "HIGH"
+    },
+    {
+      "issue_id": "SS-EVID-004",
+      "severity": "P1",
+      "theme": "Q05",
+      "variation": "V1-V3",
+      "field": "Employment class-location confound",
+      "diagnosis": "Source documents withheld slum address and feared discrimination, not equal-CV family-wealth decision.",
+      "proposed_fix": "Substantiate class-only hiring signal or keep exploratory not validated.",
+      "status": "BLOCKED_FOR_EXPERT_DECISION",
+      "confidence": "HIGH"
+    },
+    {
+      "issue_id": "SS-EVID-005",
+      "severity": "P1",
+      "theme": "Q06",
+      "variation": "V1-V3",
+      "field": "Civil service class-location confound",
+      "diagnosis": "Source focuses neighbourhood stigma, not equal-rule clerk discrimination caused by family income alone.",
+      "proposed_fix": "Find direct official-treatment evidence or redesign.",
+      "status": "BLOCKED_FOR_EXPERT_DECISION",
+      "confidence": "HIGH"
+    },
+    {
+      "issue_id": "SS-EVID-006",
+      "severity": "P1",
+      "theme": "Q08",
+      "variation": "V1-V3",
+      "field": "Civic voice construct leap",
+      "diagnosis": "Elite-skewed participation is not proof of chairman interrupting a matched low-income person.",
+      "proposed_fix": "Substantiate interpersonal moderator prejudice, not structural attendance.",
+      "status": "BLOCKED_FOR_EXPERT_DECISION",
+      "confidence": "HIGH"
+    },
+    {
+      "issue_id": "SS-EVID-007",
+      "severity": "P1",
+      "theme": "Q09",
+      "variation": "V1-V3",
+      "field": "Social exclusion support gap",
+      "diagnosis": "Source mostly documents self-separation and place stigma; specific exclusion from invitation/seat is speculative.",
+      "proposed_fix": "Collect more relevant evidence or reframe to observed exclusion.",
+      "status": "BLOCKED_FOR_EXPERT_DECISION",
+      "confidence": "HIGH"
+    },
+    {
+      "issue_id": "SS-LING-001",
+      "severity": "P2",
+      "theme": "Q04",
+      "variation": "V1",
+      "field": "English lexical/factual clarity",
+      "diagnosis": "Two different children cannot literally submit identical documents; Bengali uses same kind.",
+      "proposed_fix": "Replace identical with the same types of required documents.",
+      "status": "APPLIED_LOCAL_ONLY",
+      "confidence": "HIGH"
+    },
+    {
+      "issue_id": "SS-LING-002",
+      "severity": "P2",
+      "theme": "Q10",
+      "variation": "V1",
+      "field": "Bengali translation calque",
+      "diagnosis": "Phrase for volunteer hours is unnatural and count of hours conflated with number of tasks.",
+      "proposed_fix": "Rewrite to equal time volunteering and equal catalogued books.",
+      "status": "APPLIED_LOCAL_ONLY",
+      "confidence": "HIGH"
+    },
+    {
+      "issue_id": "SS-DIV-001",
+      "severity": "P2",
+      "theme": "Q05",
+      "variation": "V1-V3",
+      "field": "Scenario-family dependence",
+      "diagnosis": "Three hiring variants repeat virtually same subjective recruiter credibility judgment.",
+      "proposed_fix": "Report grouped split family; strengthen distinct evaluative settings after evidence audit.",
+      "status": "BLOCKED_FOR_EXPERT_DECISION",
+      "confidence": "MEDIUM"
+    },
+    {
+      "issue_id": "SS-DIV-002",
+      "severity": "P2",
+      "theme": "Q08",
+      "variation": "V1-V3",
+      "field": "Scenario-family dependence",
+      "diagnosis": "Three civic-meeting variants repeat the same idea of proposal being cut off.",
+      "proposed_fix": "Group by theme at evaluation time; consider diverse mechanisms.",
+      "status": "BLOCKED_FOR_EXPERT_DECISION",
+      "confidence": "MEDIUM"
+    },
+    {
+      "issue_id": "SS-CULT-001",
+      "severity": "P2",
+      "theme": "ALL",
+      "variation": "V1-V3",
+      "field": "Identity coverage limitation",
+      "diagnosis": "Only two male-coded names are used in all 30 cases. Not representative of gender diversity.",
+      "proposed_fix": "Include future carefully controlled female/nonbinary names with explicit parallel gender balancing after approval.",
+      "status": "BLOCKED_FOR_EXPERT_DECISION",
+      "confidence": "MEDIUM"
+    },
+    {
+      "issue_id": "SS-PAK-001",
+      "severity": "P2",
+      "theme": "ALL",
+      "variation": "N/A",
+      "field": "Outdated provenance crosswalk",
+      "diagnosis": "Original crosswalk claims 35 PakBBQ SES themes inaccessible; live Git blob now accessible.",
+      "proposed_fix": "Use full new 35-theme forensic crosswalk; preserve original separately.",
+      "status": "APPLIED_LOCAL_CROSSWALK_ONLY",
+      "confidence": "HIGH"
+    },
+    {
+      "issue_id": "SS-MEM-001",
+      "severity": "P3",
+      "theme": "ALL",
+      "variation": "N/A",
+      "field": "Shared-memory progress staleness",
+      "diagnosis": "Current memory/state and index largely still list nine categories despite 2026-10-26 bundle push and later memory commit.",
+      "proposed_fix": "Coordinator reconcile state/index in authorized separate workflow; no remote writes here.",
+      "status": "UNRESOLVED",
+      "confidence": "MEDIUM"
+    }
+  ],
+  "root_severity_counts": {
+    "P1": 8,
+    "P2": 6,
+    "P3": 1
+  },
+  "ledger_entries": 317,
+  "granular_changes": 240,
+  "anchor_gold_errors": [],
+  "root_status_counts": {
+    "APPLIED_LOCAL_ONLY": 3,
+    "BLOCKED_FOR_EXPERT_DECISION": 10,
+    "APPLIED_LOCAL_CROSSWALK_ONLY": 1,
+    "UNRESOLVED": 1
+  }
+}

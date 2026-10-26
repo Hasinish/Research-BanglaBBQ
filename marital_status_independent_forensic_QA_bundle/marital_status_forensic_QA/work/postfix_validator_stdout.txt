@@ -1,0 +1,38 @@
+{
+  "counts": {
+    "en_count": 1440,
+    "bn_count": 1440,
+    "en_labels": {
+      "2": 480,
+      "0": 480,
+      "1": 480
+    },
+    "bn_labels": {
+      "2": 480,
+      "0": 480,
+      "1": 480
+    },
+    "en_conditions": {
+      "('ambig', 'neg')": 360,
+      "('disambig', 'neg')": 360,
+      "('ambig', 'nonneg')": 360,
+      "('disambig', 'nonneg')": 360
+    },
+    "source_urls": [
+      "https://link.springer.com/article/10.1186/s12905-022-02088-z",
+      "https://www.gov.uk/government/publications/bangladesh-country-policy-and-information-notes/country-policy-and-information-note-women-fearing-gender-based-violence-bangladesh-january-2024-accessible",
+      "https://www.nature.com/articles/s41599-025-05988-1",
+      "https://www.tbsnews.net/features/panorama/hurdles-living-alone-single-young-woman-dhaka-1334591"
+    ],
+    "analyzed_anchors_per_language": 240,
+    "blind_label_inference_checks": 0,
+    "unique_qa_en": 1440,
+    "unique_qa_bn": 1440
+  },
+  "failure_records": 0,
+  "failed_tests": [],
+  "sha256": {
+    "en": "04486ce3c8080c2edad9436eb234e02b7399bc557a07640a27c4499cb048eac5",
+    "bn": "768d9eb7fe5fe30b571091891a979264ffcf7004aed138e94f779b404e774019"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "run_date_utc": "2026-10-26",
+  "project_commit": "e186b283fa5b184058e2cb395273e9968a893b20",
+  "commands_executed": [
+    "python physical_appearance_independent_validator.py --english ORIGINAL/..english.jsonl --bengali ORIGINAL/..bengali.jsonl --manifest ORIGINAL/..manifest.json --result original_validation.json --anchors work/anchor_baseline.csv",
+    "python physical_appearance_adversarial_runner.py [ORIGINAL]",
+    "python physical_appearance_local_repair.py [local candidates, only Bengali]",
+    "python physical_appearance_independent_validator.py --english banglabbq_physical_appearance_audited_english.jsonl --bengali banglabbq_physical_appearance_audited_bengali.jsonl --manifest ORIGINAL/..manifest.json --result postfix_validation.json --anchors work/anchor_postfix.csv",
+    "PA_AUDIT_POSTFIX=1 python physical_appearance_adversarial_runner.py",
+    "Original generator validation called using importlib on both baseline and local candidates (0 original-generator errors both times)",
+    "Original generator CLI executed twice in isolated temporary directories (both exited 0; generated EN,BN,manifest,source_audit,crosswalk byte-identical with downloaded prior chat copies)",
+    "Local repair executed twice; candidate EN/BN and diff manifest SHA-256 identical between local reruns"
+  ],
+  "source_blobs_confirmed": {
+    "en": "f765b998a90b0abb02526615f01fe023d0e39242",
+    "bn": "a39f9156da45a8b3b8bda021d3d839eeddfef879"
+  },
+  "original_generator_reproduction": [
+    {
+      "round": 1,
+      "exitcode": 0,
+      "matches_to_mounted": {
+        "banglabbq_physical_appearance_english.jsonl": true,
+        "banglabbq_physical_appearance_bengali.jsonl": true,
+        "banglabbq_physical_appearance_expansion_manifest.json": true,
+        "banglabbq_physical_appearance_source_audit.csv": true,
+        "banglabbq_physical_appearance_pakbbq_theme_crosswalk.csv": true
+      },
+      "last_stdout": "_verification\": \"DIRECT_AND_PARTIAL_NOT_ALL_CAUSAL\",\n    \"native_Bengali_independent_review\": \"PENDING\",\n    \"publication_ready\": false,\n    \"remote_services_written\": false\n  }\n}\n"
+    },
+    {
+      "round": 2,
+      "exitcode": 0,
+      "matches_to_mounted": {
+        "banglabbq_physical_appearance_english.jsonl": true,
+        "banglabbq_physical_appearance_bengali.jsonl": true,
+        "banglabbq_physical_appearance_expansion_manifest.json": true,
+        "banglabbq_physical_appearance_source_audit.csv": true,
+        "banglabbq_physical_appearance_pakbbq_theme_crosswalk.csv": true
+      },
+      "last_stdout": "_verification\": \"DIRECT_AND_PARTIAL_NOT_ALL_CAUSAL\",\n    \"native_Bengali_independent_review\": \"PENDING\",\n    \"publication_ready\": false,\n    \"remote_services_written\": false\n  }\n}\n"
+    }
+  ],
+  "local_repair_sha256_runs": [
+    {
+      "banglabbq_physical_appearance_audited_english.jsonl": "851719a3d90c678f1cee6f61d3b23550c32d38bf202f8eeafcbc98e0d8e72e7c",
+      "banglabbq_physical_appearance_audited_bengali.jsonl": "f120b4149f877a27efd7d94b72e9de76a6c40496b81de61e1d7300f94523a8c9",
+      "physical_appearance_change_manifest.csv": "9f51af855e6e5e3f3113b85c758b0559c1b6239def2877ad122dfeb38a13808c"
+    },
+    {
+      "banglabbq_physical_appearance_audited_english.jsonl": "851719a3d90c678f1cee6f61d3b23550c32d38bf202f8eeafcbc98e0d8e72e7c",
+      "banglabbq_physical_appearance_audited_bengali.jsonl": "f120b4149f877a27efd7d94b72e9de76a6c40496b81de61e1d7300f94523a8c9",
+      "physical_appearance_change_manifest.csv": "9f51af855e6e5e3f3113b85c758b0559c1b6239def2877ad122dfeb38a13808c"
+    }
+  ],
+  "candidate_exact_changes": {
+    "eng_rows_changed": 0,
+    "bn_rows_changed": 720,
+    "bn_fields_changed": 1008,
+    "modified_fields": [
+      "context",
+      "question"
+    ]
+  },
+  "independent_validator_result_files": [
+    "original_validation.json",
+    "postfix_validation.json"
+  ],
+  "fault_injection_result_files": [
+    "physical_appearance_adversarial_results.json",
+    "physical_appearance_adversarial_postfix_results.json"
+  ],
+  "original_vs_patched_script_validator_differences": [
+    "Original validator missed 288 baseline row-level BN meaning deviations",
+    "Independent validator found them; both pass patched candidates at structural layer",
+    "Original validator misses five deliberate adversarial cases; independent expected-check detector flagged 26/26"
+  ],
+  "not_performed": [
+    "Actual external human evaluation",
+    "Full text access to Q02 PMC/PubMed pages beyond indexed abstract",
+    "Full global ID crosswalk with every hidden Sheet and all historical snapshots",
+    "Raw entire GitHub source/crosswalk CSV files re-downloaded into runtime; current source audit values checked via connected GitHub, previous local copies have slightly differing byte hashes"
+  ],
+  "remote_writes": 0
+}

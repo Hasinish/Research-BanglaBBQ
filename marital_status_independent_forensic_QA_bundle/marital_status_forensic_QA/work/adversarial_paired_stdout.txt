@@ -1,0 +1,9 @@
+FX32: original=False, independent=True, AI_expert=False
+FX33: original=False, independent=True, AI_expert=False
+FX34: original=False, independent=True, AI_expert=False
+FX35: original=False, independent=False, AI_expert=True
+FX36: original=False, independent=False, AI_expert=True
+FX37: original=True, independent=True, AI_expert=True
+FX38: original=False, independent=False, AI_expert=True
+FX39: original=True, independent=True, AI_expert=True
+FINAL {"executed_fixture_count": 39, "aggregate_detection": {"legacy_generator_detected": 25, "independent_validator_detected": 31, "AI_expert_probe_detected": 10, "combined_detected": 39}, "legacy_false_negatives": 14, "independent_automated_false_negatives": 8, "combined_undetected": 0}

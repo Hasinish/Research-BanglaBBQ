@@ -1,0 +1,41 @@
+{
+  "dataset_stage": "ORIGINAL",
+  "fixtures_executed": 26,
+  "original_validator_detected_any": 21,
+  "independent_expected_detection_success": 26,
+  "independent_false_negatives": [],
+  "original_false_negatives": [
+    "F17",
+    "F20",
+    "F24",
+    "F25",
+    "F26"
+  ],
+  "classification": "Tests run in memory; no remote changes. Source audit tier fixture validated against explicitly recorded AI-reviewed source evidence."
+}
+F01 ambig_label original True independent True new AMBIG_LABEL_NOT_UNKNOWN,ALLROWS_GOLD_MISMATCH,LABEL_BALANCE,BILINGUAL_META_PARITY
+F02 disamb_label original True independent True new ALLROWS_GOLD_MISMATCH,LABEL_BALANCE,BILINGUAL_META_PARITY,SEMANTIC_LABEL_EN
+F03 swap_options original True independent True new APPEARANCE_ROLE_CONTEXT,ANSWER_INFO_TEXT_MISMATCH,DUPLICATE_FULL_QA
+F04 swap_role_tags original True independent True new APPEARANCE_ROLE_CONTEXT,ANSWER_ROLE_SET,PERMUTATION_MIXED,BILINGUAL_ROLE_PARITY
+F05 duplicate_tuple original True independent True new AMBIG_LABEL_NOT_UNKNOWN,ALLROWS_GOLD_MISMATCH,DUPLICATE_FULL_QA,PERMUTATION_MIXED
+F06 remove_row original True independent True new COUNT_EN,SEQUENCE,ORDER,ORIENTATION_VERSION
+F07 order_rows original True independent True new SEQUENCE,ORDER,POLARITY_CONTEXT_ASYMMETRY,COUNTERFACTUAL_BASE
+F08 duplicate_id original True independent True new SEQUENCE,DUPLICATE_IDS,BILINGUAL_META_PARITY
+F09 wrong_version original True independent True new ORIENTATION_VERSION,BILINGUAL_META_PARITY
+F10 wrong_category original True independent True new CATEGORY,BILINGUAL_META_PARITY
+F11 bogus_https_source original True independent True new SOURCE_MISMATCH,BILINGUAL_META_PARITY,MANIFEST_SOURCE
+F12 bengali_wrong_person original True independent True new ALLROWS_SEMANTIC_AMBIGUOUS_BN_ACTOR,POLARITY_CONTEXT_ASYMMETRY,COUNTERFACTUAL_EVALUATOR,SEMANTIC_AMBIGUOUS_BN_ACTOR
+F13 remove_bn_negative original True independent True new ALLROWS_SEMANTIC_UNENTAILED_BN,POLARITY_CONTEXT_ASYMMETRY,COUNTERFACTUAL_EVALUATOR,SEMANTIC_UNENTAILED_BN
+F14 unentailed_en_predicate original True independent True new ALLROWS_SEMANTIC_UNENTAILED_EN,POLARITY_CONTEXT_ASYMMETRY,COUNTERFACTUAL_EVALUATOR,SEMANTIC_UNENTAILED_EN
+F15 asymmetric_work_experience original True independent True new POLARITY_CONTEXT_ASYMMETRY,COUNTERFACTUAL_BASE,MANIFEST_SCENE_PARITY
+F16 ambig_outcome_leak original True independent True new APPEARANCE_ROLE_CONTEXT,ALLROWS_SEMANTIC_AMBIG_OUTCOME_LEAK,DUPLICATE_FULL_QA,COUNTERFACTUAL_BASE
+F17 identity_option_collision original False independent True new DUPLICATE_ANSWERS,ALLROWS_GOLD_MISMATCH,SEMANTIC_LABEL_EN
+F18 pakistani_geography original True independent True new NON_BANGLADESH_GEOGRAPHY,POLARITY_CONTEXT_ASYMMETRY,COUNTERFACTUAL_BASE,MANIFEST_SCENE_PARITY
+F19 repeat_v1_in_v3 original True independent True new DUPLICATE_FULL_QA,MANIFEST_NAME,MANIFEST_SCENE_PARITY
+F20 swap_bn_identity_and_tags original False independent True new APPEARANCE_ROLE_CONTEXT,DUPLICATE_ANSWERS,SEMANTIC_AMBIGUOUS_BN_ACTOR
+F21 bn_question_polarity original True independent True new COUNTERFACTUAL_QUESTION,POLARITY_QUESTION_BN
+F22 bn_context_mistranslation original True independent True new POLARITY_CONTEXT_ASYMMETRY,COUNTERFACTUAL_BASE,MANIFEST_SCENE_PARITY
+F23 counterfactual_attribute_swap_only_bn original True independent True new APPEARANCE_ROLE_CONTEXT,DUPLICATE_FULL_QA,POLARITY_CONTEXT_ASYMMETRY
+F24 formula_injection original False independent True new SHEET_FORMULA_INJECTION,APPEARANCE_ROLE_CONTEXT,MANIFEST_NAME
+F25 source_audit_overclaim original False independent True new SOURCE_TIER_OVERCLAIM
+F26 bengali_added_negligence original False independent True new MANIFEST_SCENE_PARITY

@@ -1,0 +1,14 @@
+{
+  "access_date": "2026-10-26",
+  "editorial_status": "AI_SELF_REVIEW",
+  "human_status": "NOT_PERFORMED",
+  "source_count": 14,
+  "bilingual_anchors": 240,
+  "cases": 30,
+  "construct_warning": "Names and first mention are perfectly outcome-confounded",
+  "source_tiers": {
+    "PARTIAL": 6,
+    "DIRECT": 3,
+    "CONTEXTUAL": 1
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "category": "Social_status",
+  "audited_commit": "e186b283fa5b184058e2cb395273e9968a893b20",
+  "status": "NOT_IMPORT_SAFE",
+  "safe_to_import": false,
+  "imported": false,
+  "current_master_social_sheet_present": false,
+  "category_taxonomy_approved": false,
+  "master_url": "https://docs.google.com/spreadsheets/d/1xZhhKZoZuSy-ZXAWWdhCpq9QLh705ScErcnBZacmZnY/edit",
+  "exact_sheet_A_to_O_mapping": [
+    "example_id",
+    "question_index",
+    "context_condition",
+    "question_polarity",
+    "type",
+    "context",
+    "question",
+    "ans0",
+    "ans1",
+    "ans2",
+    "label",
+    "answer_info",
+    "additional_metadata",
+    "category",
+    "id"
+  ],
+  "exact_jsonl_key_order": [
+    "example_id",
+    "question_index",
+    "question_polarity",
+    "context_condition",
+    "category",
+    "answer_info",
+    "additional_metadata",
+    "context",
+    "question",
+    "ans0",
+    "ans1",
+    "ans2",
+    "label",
+    "type",
+    "id"
+  ],
+  "stringify_json_for_sheets_fields": [
+    "answer_info",
+    "additional_metadata"
+  ],
+  "formula_injection_scan": "EXPLICIT TEST RUN: scanned context/question/3 answer fields for formula-like leading = + - @ in 2880 original rows and 2880 candidate rows: 0 hits; future import handling not tested",
+  "candidate_jsonl_count": {
+    "en": 1440,
+    "bn": 1440
+  },
+  "provisional_ids": [
+    8200000,
+    8201439
+  ],
+  "collisions_verification": {
+    "active_sheet_tabs_scanned": 10,
+    "active_sheet_numeric_id_cells_scanned": 32512,
+    "active_sheet_social_range_collisions": 0,
+    "other_new_bundles_readonly_scanned_english": 6,
+    "other_new_bundles_english_ids_scanned": 8640,
+    "other_new_bundles_social_range_collisions": 0,
+    "unscanned_archive_and_hidden_backups": true,
+    "full_global_collision_cleared": false
+  },
+  "direct_theme_source_support_count": 3,
+  "partial_or_contextual_theme_source_count": 7,
+  "blocking_root_defects": [
+    "SS-EVID-001",
+    "SS-EVID-002",
+    "SS-EVID-003",
+    "SS-EVID-004",
+    "SS-EVID-005",
+    "SS-EVID-006",
+    "SS-EVID-007"
+  ],
+  "ai_self_review_anchors": 240,
+  "independent_human_review": "NOT_PERFORMED",
+  "pre_structural_issues": 0,
+  "post_structural_issues": 0,
+  "original_generator_post_checks_passed": 19,
+  "notes": [
+    "Current bundle is a proposed tenth category, not in original 9-category senior thesis.",
+    "A structural PASS cannot override unsupported interpersonal class-bias inferences.",
+    "Theme family split must keep 48-row permutation and all three variations in one evaluation partition.",
+    "This read-only forensic QA performed no external writes."
+  ]
+}

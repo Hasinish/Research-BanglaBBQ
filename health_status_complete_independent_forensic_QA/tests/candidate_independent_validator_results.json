@@ -1,0 +1,255 @@
+{
+  "checks": {
+    "FILE_COUNT_EN": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "1440"
+    },
+    "FILE_COUNT_BN": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "1440"
+    },
+    "ENGLISH_LABEL_BALANCE": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "Counter({2: 480, 0: 480, 1: 480})"
+    },
+    "ENGLISH_CONDITION_BALANCE": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "Counter({('ambig', 'neg'): 360, ('disambig', 'neg'): 360, ('ambig', 'nonneg'): 360, ('disambig', 'nonneg'): 360})"
+    },
+    "ENGLISH_ORIENTATION_BALANCE": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "Counter({'a': 720, 'b': 720})"
+    },
+    "ENGLISH_THEME_BALANCE": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "Counter({1: 144, 2: 144, 3: 144, 4: 144, 5: 144, 6: 144, 7: 144, 8: 144, 9: 144, 10: 144})"
+    },
+    "ENGLISH_MANIFEST_SCENARIO_LINEAGE": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "checks against versioned, authored manifest; not independent social proof"
+    },
+    "ENGLISH_SCHEMA_KEY_ORDER": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "0 findings"
+    },
+    "ENGLISH_EXAMPLE_ID_SEQUENCE": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "0 findings"
+    },
+    "ENGLISH_PROVISIONAL_ID_SEQUENCE": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "0 findings"
+    },
+    "ENGLISH_CANONICAL_ORDER": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "0 findings"
+    },
+    "ENGLISH_ANSWER_INFO_TEXT": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "0 findings"
+    },
+    "ENGLISH_AMBlG_GOLD": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "0 findings"
+    },
+    "ENGLISH_AMBIG_GOLD": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "0 findings"
+    },
+    "ENGLISH_DISAMBIG_GOLD": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "0 findings"
+    },
+    "ENGLISH_MISSING_PERMUTATION": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "0 findings"
+    },
+    "ENGLISH_DUPLICATE_COMPLETE_TUPLE": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "0 findings"
+    },
+    "ENGLISH_COUNTERFACTUAL_ROLE_SWAP": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "0 findings"
+    },
+    "ENGLISH_COUNTERFACTUAL_OUTCOME": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "0 findings"
+    },
+    "ENGLISH_POLARITY_CONTEXT_MATCH": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "0 findings"
+    },
+    "ENGLISH_SOURCE_URL": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "0 findings"
+    },
+    "ENGLISH_CATEGORY_TOKEN": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "0 findings"
+    },
+    "ENGLISH_METADATA_SCHEMA": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "0 findings"
+    },
+    "BENGALI_LABEL_BALANCE": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "Counter({2: 480, 0: 480, 1: 480})"
+    },
+    "BENGALI_CONDITION_BALANCE": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "Counter({('ambig', 'neg'): 360, ('disambig', 'neg'): 360, ('ambig', 'nonneg'): 360, ('disambig', 'nonneg'): 360})"
+    },
+    "BENGALI_ORIENTATION_BALANCE": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "Counter({'a': 720, 'b': 720})"
+    },
+    "BENGALI_THEME_BALANCE": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "Counter({1: 144, 2: 144, 3: 144, 4: 144, 5: 144, 6: 144, 7: 144, 8: 144, 9: 144, 10: 144})"
+    },
+    "BENGALI_MANIFEST_SCENARIO_LINEAGE": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "checks against versioned, authored manifest; not independent social proof"
+    },
+    "BENGALI_SCHEMA_KEY_ORDER": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "0 findings"
+    },
+    "BENGALI_EXAMPLE_ID_SEQUENCE": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "0 findings"
+    },
+    "BENGALI_PROVISIONAL_ID_SEQUENCE": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "0 findings"
+    },
+    "BENGALI_CANONICAL_ORDER": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "0 findings"
+    },
+    "BENGALI_ANSWER_INFO_TEXT": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "0 findings"
+    },
+    "BENGALI_AMBlG_GOLD": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "0 findings"
+    },
+    "BENGALI_AMBIG_GOLD": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "0 findings"
+    },
+    "BENGALI_DISAMBIG_GOLD": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "0 findings"
+    },
+    "BENGALI_MISSING_PERMUTATION": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "0 findings"
+    },
+    "BENGALI_DUPLICATE_COMPLETE_TUPLE": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "0 findings"
+    },
+    "BENGALI_COUNTERFACTUAL_ROLE_SWAP": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "0 findings"
+    },
+    "BENGALI_COUNTERFACTUAL_OUTCOME": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "0 findings"
+    },
+    "BENGALI_POLARITY_CONTEXT_MATCH": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "0 findings"
+    },
+    "BENGALI_SOURCE_URL": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "0 findings"
+    },
+    "BENGALI_CATEGORY_TOKEN": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "0 findings"
+    },
+    "BENGALI_METADATA_SCHEMA": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "0 findings"
+    },
+    "BILINGUAL_ROW_PARITY": {
+      "status": "PASS",
+      "tested": 1440,
+      "detail": "metadata/roles/labels; lexical semantics require separate review"
+    },
+    "MANIFEST_60_BLOCKS": {
+      "status": "PASS",
+      "tested": 60,
+      "detail": "60 oriented blocks"
+    },
+    "MANIFEST_30_VARIATIONS": {
+      "status": "PASS",
+      "tested": 30,
+      "detail": "30 48-row families"
+    }
+  },
+  "summary": {
+    "counts_by_test": {},
+    "num_row_findings": 0,
+    "rows_english": 1440,
+    "rows_bengali": 1440,
+    "source_caveat": "URL presence is not independent citation verification",
+    "bilingual_caveat": "role/metadata check is not editorial review"
+  },
+  "original_file_errors": {
+    "english": [],
+    "bengali": []
+  },
+  "sha256": {
+    "english": "db0d3daea69d2d088e2aeb7a7c624f039c804478ca3af308a7d7f8191ea93eae",
+    "bengali": "0d506d37dc58b50f663df0a054a502c390324d8e4e04cb4dab7d980ce28b3c90"
+  }
+}

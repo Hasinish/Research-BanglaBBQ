@@ -1,0 +1,967 @@
+{
+  "summary": {
+    "executed_at_utc": "2026-10-26 (local run; wall-clock omitted)",
+    "category": "Social_status",
+    "source": "immutable committed originals",
+    "total_fixtures": 33,
+    "actually_injected": 33,
+    "original_validator_detected": 23,
+    "independent_validator_detected": 28,
+    "neither_validator_detected": 5,
+    "validator_exceptions": 2,
+    "expert_required_not_auto_detected": [
+      "FX26",
+      "FX30",
+      "FX31",
+      "FX32",
+      "FX33"
+    ],
+    "important_caveat": "Expert reviewer expected-detection labels are a specified verification procedure, NOT execution of a human review; no manual expert was hired."
+  },
+  "fixtures": [
+    {
+      "fixture_id": "FX01",
+      "injection": "ambiguous_gold_flipped",
+      "domain": "gold",
+      "injected_change": "Flip gold choice on EID 0 in both languages",
+      "expected_detection": "GOLD_ROLE + distribution",
+      "injection_executed": true,
+      "modified_rows": 2,
+      "modified_record_refs": [
+        "en:0",
+        "bn:0"
+      ],
+      "existing_validator_detected": true,
+      "existing_validator_failed_checks": [
+        "position_balance",
+        "condition_correct_gold"
+      ],
+      "existing_validator_exception": null,
+      "independent_validator_detected": true,
+      "independent_validator_failed_tests": [
+        "COUNTERFACTUAL_GOLD",
+        "GOLD_DISTRIBUTION",
+        "GOLD_ROLE"
+      ],
+      "independent_validator_exception": null,
+      "semantic_or_source_oversight": false,
+      "expert_review_required": false,
+      "notes": "At least one validator flags mutant; expert review may still be required"
+    },
+    {
+      "fixture_id": "FX02",
+      "injection": "disambiguated_gold_flipped",
+      "domain": "gold",
+      "injected_change": "Flip gold on EID 1 (explicit named answer)",
+      "expected_detection": "BLIND_GOLD_ENTAILMENT",
+      "injection_executed": true,
+      "modified_rows": 2,
+      "modified_record_refs": [
+        "en:1",
+        "bn:1"
+      ],
+      "existing_validator_detected": true,
+      "existing_validator_failed_checks": [
+        "position_balance",
+        "disambiguated_answer_entailment_by_named_action"
+      ],
+      "existing_validator_exception": null,
+      "independent_validator_detected": true,
+      "independent_validator_failed_tests": [
+        "BLIND_GOLD_ENTAILMENT",
+        "COUNTERFACTUAL_GOLD",
+        "GOLD_DISTRIBUTION"
+      ],
+      "independent_validator_exception": null,
+      "semantic_or_source_oversight": false,
+      "expert_review_required": false,
+      "notes": "At least one validator flags mutant; expert review may still be required"
+    },
+    {
+      "fixture_id": "FX03",
+      "injection": "options_swapped_without_label",
+      "domain": "gold",
+      "injected_change": "Swap A/B text+role pair, leave gold unchanged",
+      "expected_detection": "GOLD_ROLE + POSITION_BALANCE",
+      "injection_executed": true,
+      "modified_rows": 2,
+      "modified_record_refs": [
+        "en:0",
+        "bn:0"
+      ],
+      "existing_validator_detected": true,
+      "existing_validator_failed_checks": [
+        "zero_accidental_duplicate_QA_tuples",
+        "complete_6way_blocks"
+      ],
+      "existing_validator_exception": null,
+      "independent_validator_detected": true,
+      "independent_validator_failed_tests": [
+        "DUPLICATE_FULL_QA",
+        "OPTION_STABILITY",
+        "PERMUTATION",
+        "ROLE_PERMUTATION"
+      ],
+      "independent_validator_exception": null,
+      "semantic_or_source_oversight": false,
+      "expert_review_required": false,
+      "notes": "At least one validator flags mutant; expert review may still be required"
+    },
+    {
+      "fixture_id": "FX04",
+      "injection": "answer_role_collision",
+      "domain": "structure",
+      "injected_change": "Assign unknown role to a named answer",
+      "expected_detection": "ANSWER_ROLES + NAME_ROLE_MISMATCH",
+      "injection_executed": true,
+      "modified_rows": 2,
+      "modified_record_refs": [
+        "en:0",
+        "bn:0"
+      ],
+      "existing_validator_detected": true,
+      "existing_validator_failed_checks": [
+        "valid_answer_info"
+      ],
+      "existing_validator_exception": null,
+      "independent_validator_detected": true,
+      "independent_validator_failed_tests": [
+        "ANSWER_ROLES",
+        "NAME_ROLE_MISMATCH"
+      ],
+      "independent_validator_exception": null,
+      "semantic_or_source_oversight": false,
+      "expert_review_required": false,
+      "notes": "At least one validator flags mutant; expert review may still be required"
+    },
+    {
+      "fixture_id": "FX05",
+      "injection": "complete_QA_duplicate",
+      "domain": "duplicate",
+      "injected_change": "Copy complete 5-field QA tuple from EID 0 to EID 4",
+      "expected_detection": "DUPLICATE_FULL_QA",
+      "injection_executed": true,
+      "modified_rows": 2,
+      "modified_record_refs": [
+        "en:4",
+        "bn:4"
+      ],
+      "existing_validator_detected": true,
+      "existing_validator_failed_checks": [
+        "position_balance",
+        "zero_accidental_duplicate_QA_tuples",
+        "complete_6way_blocks"
+      ],
+      "existing_validator_exception": null,
+      "independent_validator_detected": true,
+      "independent_validator_failed_tests": [
+        "COUNTERFACTUAL_GOLD",
+        "DUPLICATE_FULL_QA",
+        "GOLD_DISTRIBUTION",
+        "OPTION_STABILITY",
+        "PERMUTATION",
+        "ROLE_PERMUTATION"
+      ],
+      "independent_validator_exception": null,
+      "semantic_or_source_oversight": false,
+      "expert_review_required": false,
+      "notes": "At least one validator flags mutant; expert review may still be required"
+    },
+    {
+      "fixture_id": "FX06",
+      "injection": "missing_sixth_answer_permutation",
+      "domain": "combinatorial",
+      "injected_change": "Duplicate one 4-row answer permutation within 48 block",
+      "expected_detection": "PERMUTATION + ROLE_PERMUTATION",
+      "injection_executed": true,
+      "modified_rows": 2,
+      "modified_record_refs": [
+        "en:4",
+        "bn:4"
+      ],
+      "existing_validator_detected": true,
+      "existing_validator_failed_checks": [
+        "position_balance",
+        "zero_accidental_duplicate_QA_tuples",
+        "complete_6way_blocks"
+      ],
+      "existing_validator_exception": null,
+      "independent_validator_detected": true,
+      "independent_validator_failed_tests": [
+        "COUNTERFACTUAL_GOLD",
+        "DUPLICATE_FULL_QA",
+        "GOLD_DISTRIBUTION",
+        "OPTION_STABILITY",
+        "PERMUTATION",
+        "ROLE_PERMUTATION"
+      ],
+      "independent_validator_exception": null,
+      "semantic_or_source_oversight": false,
+      "expert_review_required": false,
+      "notes": "At least one validator flags mutant; expert review may still be required"
+    },
+    {
+      "fixture_id": "FX07",
+      "injection": "broken_four_condition_cycle",
+      "domain": "combinatorial",
+      "injected_change": "Swap EID 0 and 1 objects",
+      "expected_detection": "CONDITION_ORDER",
+      "injection_executed": true,
+      "modified_rows": 4,
+      "modified_record_refs": [
+        "en:0",
+        "en:1",
+        "bn:0",
+        "bn:1"
+      ],
+      "existing_validator_detected": true,
+      "existing_validator_failed_checks": [
+        "sequential_ids",
+        "four_condition_cycle",
+        "class_switch_only"
+      ],
+      "existing_validator_exception": null,
+      "independent_validator_detected": true,
+      "independent_validator_failed_tests": [
+        "AMBIG_POLARITY",
+        "CONDITION_ORDER",
+        "COUNTERFACTUAL",
+        "COUNTERFACTUAL_GOLD",
+        "DISAMBIG_POLARITY",
+        "DISAMBIG_PREFIX",
+        "EXAMPLE_ID",
+        "ID"
+      ],
+      "independent_validator_exception": null,
+      "semantic_or_source_oversight": false,
+      "expert_review_required": false,
+      "notes": "At least one validator flags mutant; expert review may still be required"
+    },
+    {
+      "fixture_id": "FX08",
+      "injection": "duplicate_provisional_id",
+      "domain": "ids",
+      "injected_change": "Copy ID on EID 0 to EID 1",
+      "expected_detection": "DUPLICATE_ID",
+      "injection_executed": true,
+      "modified_rows": 2,
+      "modified_record_refs": [
+        "en:1",
+        "bn:1"
+      ],
+      "existing_validator_detected": true,
+      "existing_validator_failed_checks": [
+        "sequential_ids"
+      ],
+      "existing_validator_exception": null,
+      "independent_validator_detected": true,
+      "independent_validator_failed_tests": [
+        "DUPLICATE_ID",
+        "ID"
+      ],
+      "independent_validator_exception": null,
+      "semantic_or_source_oversight": false,
+      "expert_review_required": false,
+      "notes": "At least one validator flags mutant; expert review may still be required"
+    },
+    {
+      "fixture_id": "FX09",
+      "injection": "duplicate_example_id",
+      "domain": "ids",
+      "injected_change": "Duplicate example_id 0 at position 1",
+      "expected_detection": "DUPLICATE_EXAMPLE_ID",
+      "injection_executed": true,
+      "modified_rows": 2,
+      "modified_record_refs": [
+        "en:1",
+        "bn:1"
+      ],
+      "existing_validator_detected": true,
+      "existing_validator_failed_checks": [
+        "sequential_ids"
+      ],
+      "existing_validator_exception": null,
+      "independent_validator_detected": true,
+      "independent_validator_failed_tests": [
+        "DUPLICATE_EXAMPLE_ID",
+        "EXAMPLE_ID"
+      ],
+      "independent_validator_exception": null,
+      "semantic_or_source_oversight": false,
+      "expert_review_required": false,
+      "notes": "At least one validator flags mutant; expert review may still be required"
+    },
+    {
+      "fixture_id": "FX10",
+      "injection": "illegal_category_token",
+      "domain": "schema",
+      "injected_change": "Set Social_status->Occupational_background",
+      "expected_detection": "CATEGORY",
+      "injection_executed": true,
+      "modified_rows": 2,
+      "modified_record_refs": [
+        "en:0",
+        "bn:0"
+      ],
+      "existing_validator_detected": true,
+      "existing_validator_failed_checks": [
+        "category_and_type"
+      ],
+      "existing_validator_exception": null,
+      "independent_validator_detected": true,
+      "independent_validator_failed_tests": [
+        "CATEGORY"
+      ],
+      "independent_validator_exception": null,
+      "semantic_or_source_oversight": false,
+      "expert_review_required": false,
+      "notes": "At least one validator flags mutant; expert review may still be required"
+    },
+    {
+      "fixture_id": "FX11",
+      "injection": "illegal_orientation_version",
+      "domain": "schema",
+      "injected_change": "Set a->b for EID 0",
+      "expected_detection": "ORIENTATION",
+      "injection_executed": true,
+      "modified_rows": 2,
+      "modified_record_refs": [
+        "en:0",
+        "bn:0"
+      ],
+      "existing_validator_detected": true,
+      "existing_validator_failed_checks": [
+        "orientation_balance"
+      ],
+      "existing_validator_exception": null,
+      "independent_validator_detected": true,
+      "independent_validator_failed_tests": [
+        "ORIENTATION"
+      ],
+      "independent_validator_exception": null,
+      "semantic_or_source_oversight": false,
+      "expert_review_required": false,
+      "notes": "At least one validator flags mutant; expert review may still be required"
+    },
+    {
+      "fixture_id": "FX12",
+      "injection": "blank_source_citation",
+      "domain": "provenance",
+      "injected_change": "Remove HTTPS source on EID 0",
+      "expected_detection": "SOURCE_URL",
+      "injection_executed": true,
+      "modified_rows": 2,
+      "modified_record_refs": [
+        "en:0",
+        "bn:0"
+      ],
+      "existing_validator_detected": true,
+      "existing_validator_failed_checks": [
+        "source_and_metadata"
+      ],
+      "existing_validator_exception": null,
+      "independent_validator_detected": true,
+      "independent_validator_failed_tests": [
+        "SOURCE_URL"
+      ],
+      "independent_validator_exception": null,
+      "semantic_or_source_oversight": false,
+      "expert_review_required": false,
+      "notes": "At least one validator flags mutant; expert review may still be required"
+    },
+    {
+      "fixture_id": "FX13",
+      "injection": "wrong_theme_index",
+      "domain": "schema",
+      "injected_change": "Reassign Q01->Q02 on EID 0",
+      "expected_detection": "INDEX",
+      "injection_executed": true,
+      "modified_rows": 2,
+      "modified_record_refs": [
+        "en:0",
+        "bn:0"
+      ],
+      "existing_validator_detected": true,
+      "existing_validator_failed_checks": [
+        "theme_wave_counts"
+      ],
+      "existing_validator_exception": null,
+      "independent_validator_detected": true,
+      "independent_validator_failed_tests": [
+        "INDEX",
+        "THEME_COUNT"
+      ],
+      "independent_validator_exception": null,
+      "semantic_or_source_oversight": false,
+      "expert_review_required": false,
+      "notes": "At least one validator flags mutant; expert review may still be required"
+    },
+    {
+      "fixture_id": "FX14",
+      "injection": "missing_answer_info_pair",
+      "domain": "schema",
+      "injected_change": "Remove answer_info.ans2",
+      "expected_detection": "ANSWER_INFO_KEYS",
+      "injection_executed": true,
+      "modified_rows": 2,
+      "modified_record_refs": [
+        "en:0",
+        "bn:0"
+      ],
+      "existing_validator_detected": false,
+      "existing_validator_failed_checks": [],
+      "existing_validator_exception": "KeyError('ans2')",
+      "independent_validator_detected": true,
+      "independent_validator_failed_tests": [
+        "ANSWER_INFO_KEYS",
+        "ANSWER_INFO_SHAPE",
+        "ANSWER_ROLES"
+      ],
+      "independent_validator_exception": null,
+      "semantic_or_source_oversight": false,
+      "expert_review_required": false,
+      "notes": "At least one validator flags mutant; expert review may still be required"
+    },
+    {
+      "fixture_id": "FX15",
+      "injection": "answer_text_collision",
+      "domain": "schema",
+      "injected_change": "Set ans0 equal ans1",
+      "expected_detection": "OPTION_COLLISION",
+      "injection_executed": true,
+      "modified_rows": 2,
+      "modified_record_refs": [
+        "en:0",
+        "bn:0"
+      ],
+      "existing_validator_detected": true,
+      "existing_validator_failed_checks": [
+        "valid_answer_info"
+      ],
+      "existing_validator_exception": null,
+      "independent_validator_detected": true,
+      "independent_validator_failed_tests": [
+        "ANSWER_INFO_VALUE",
+        "OPTION_COLLISION",
+        "OPTION_STABILITY"
+      ],
+      "independent_validator_exception": null,
+      "semantic_or_source_oversight": false,
+      "expert_review_required": false,
+      "notes": "At least one validator flags mutant; expert review may still be required"
+    },
+    {
+      "fixture_id": "FX16",
+      "injection": "missing_question_text",
+      "domain": "schema",
+      "injected_change": "Blank question field on EID 0",
+      "expected_detection": "EMPTY_TEXT",
+      "injection_executed": true,
+      "modified_rows": 2,
+      "modified_record_refs": [
+        "en:0",
+        "bn:0"
+      ],
+      "existing_validator_detected": true,
+      "existing_validator_failed_checks": [
+        "bengali_script_present"
+      ],
+      "existing_validator_exception": null,
+      "independent_validator_detected": true,
+      "independent_validator_failed_tests": [
+        "COUNTERFACTUAL_QUESTION",
+        "EMPTY_TEXT"
+      ],
+      "independent_validator_exception": null,
+      "semantic_or_source_oversight": false,
+      "expert_review_required": false,
+      "notes": "At least one validator flags mutant; expert review may still be required"
+    },
+    {
+      "fixture_id": "FX17",
+      "injection": "invisible_unicode_marker",
+      "domain": "unicode",
+      "injected_change": "Inject U+200B zero-width marker into context",
+      "expected_detection": "UNICODE_ARTIFACT",
+      "injection_executed": true,
+      "modified_rows": 2,
+      "modified_record_refs": [
+        "en:0",
+        "bn:0"
+      ],
+      "existing_validator_detected": true,
+      "existing_validator_failed_checks": [
+        "class_switch_only"
+      ],
+      "existing_validator_exception": null,
+      "independent_validator_detected": true,
+      "independent_validator_failed_tests": [
+        "AMBIG_POLARITY",
+        "COUNTERFACTUAL",
+        "DISAMBIG_PREFIX",
+        "UNICODE_ARTIFACT"
+      ],
+      "independent_validator_exception": null,
+      "semantic_or_source_oversight": false,
+      "expert_review_required": false,
+      "notes": "At least one validator flags mutant; expert review may still be required"
+    },
+    {
+      "fixture_id": "FX18",
+      "injection": "Pakistani_place_leak",
+      "domain": "cultural",
+      "injected_change": "Replace Dhaka with Lahore in same context",
+      "expected_detection": "FOREIGN_PLACE",
+      "injection_executed": true,
+      "modified_rows": 2,
+      "modified_record_refs": [
+        "en:0",
+        "bn:0"
+      ],
+      "existing_validator_detected": true,
+      "existing_validator_failed_checks": [
+        "class_switch_only"
+      ],
+      "existing_validator_exception": null,
+      "independent_validator_detected": true,
+      "independent_validator_failed_tests": [
+        "AMBIG_POLARITY",
+        "COUNTERFACTUAL",
+        "DISAMBIG_PREFIX",
+        "FOREIGN_PLACE"
+      ],
+      "independent_validator_exception": null,
+      "semantic_or_source_oversight": false,
+      "expert_review_required": true,
+      "notes": "At least one validator flags mutant; expert review may still be required"
+    },
+    {
+      "fixture_id": "FX19",
+      "injection": "Bengali_name_actor_drift",
+      "domain": "bilingual",
+      "injected_change": "BN Rafi->Rafik only in EID 0 context",
+      "expected_detection": "BILINGUAL_NAMED_ENTITIES",
+      "injection_executed": true,
+      "modified_rows": 1,
+      "modified_record_refs": [
+        "bn:0"
+      ],
+      "existing_validator_detected": true,
+      "existing_validator_failed_checks": [
+        "class_switch_only"
+      ],
+      "existing_validator_exception": null,
+      "independent_validator_detected": true,
+      "independent_validator_failed_tests": [
+        "AMBIG_POLARITY",
+        "CLASS_ATTR",
+        "COUNTERFACTUAL",
+        "DISAMBIG_PREFIX"
+      ],
+      "independent_validator_exception": null,
+      "semantic_or_source_oversight": false,
+      "expert_review_required": false,
+      "notes": "At least one validator flags mutant; expert review may still be required"
+    },
+    {
+      "fixture_id": "FX20",
+      "injection": "Bengali_option_reference_mismatch",
+      "domain": "bilingual",
+      "injected_change": "BN answer entity replaced but metadata role remains",
+      "expected_detection": "BILINGUAL_NAME",
+      "injection_executed": true,
+      "modified_rows": 1,
+      "modified_record_refs": [
+        "bn:0"
+      ],
+      "existing_validator_detected": false,
+      "existing_validator_failed_checks": [],
+      "existing_validator_exception": null,
+      "independent_validator_detected": true,
+      "independent_validator_failed_tests": [
+        "BILINGUAL_NAME",
+        "OPTION_STABILITY"
+      ],
+      "independent_validator_exception": null,
+      "semantic_or_source_oversight": false,
+      "expert_review_required": false,
+      "notes": "At least one validator flags mutant; expert review may still be required"
+    },
+    {
+      "fixture_id": "FX21",
+      "injection": "bool_as_gold_label",
+      "domain": "typing",
+      "injected_change": "Python bool true disguised as 1 (int subclass)",
+      "expected_detection": "TYPE_EXACT",
+      "injection_executed": true,
+      "modified_rows": 2,
+      "modified_record_refs": [
+        "en:0",
+        "bn:0"
+      ],
+      "existing_validator_detected": false,
+      "existing_validator_failed_checks": [],
+      "existing_validator_exception": "KeyError('ansTrue')",
+      "independent_validator_detected": true,
+      "independent_validator_failed_tests": [
+        "COUNTERFACTUAL_GOLD",
+        "GOLD_DISTRIBUTION",
+        "TYPE"
+      ],
+      "independent_validator_exception": null,
+      "semantic_or_source_oversight": false,
+      "expert_review_required": false,
+      "notes": "At least one validator flags mutant; expert review may still be required"
+    },
+    {
+      "fixture_id": "FX22",
+      "injection": "question_unentailed_new_predicate",
+      "domain": "semantic",
+      "injected_change": "Disambig question now asks an arrest never described",
+      "expected_detection": "EXPERT_SEMANTIC_PREDICATE_AUDIT",
+      "injection_executed": true,
+      "modified_rows": 2,
+      "modified_record_refs": [
+        "en:1",
+        "bn:1"
+      ],
+      "existing_validator_detected": false,
+      "existing_validator_failed_checks": [],
+      "existing_validator_exception": null,
+      "independent_validator_detected": true,
+      "independent_validator_failed_tests": [
+        "COUNTERFACTUAL_QUESTION"
+      ],
+      "independent_validator_exception": null,
+      "semantic_or_source_oversight": false,
+      "expert_review_required": true,
+      "notes": "At least one validator flags mutant; expert review may still be required"
+    },
+    {
+      "fixture_id": "FX23",
+      "injection": "ambiguous_context_reveals_answer",
+      "domain": "semantic",
+      "injected_change": "Add explicitly decisive fact to both ambig polarities, leave Unknown gold",
+      "expected_detection": "EXPERT_AMBIGUITY_AUDIT",
+      "injection_executed": true,
+      "modified_rows": 4,
+      "modified_record_refs": [
+        "en:0",
+        "en:2",
+        "bn:0",
+        "bn:2"
+      ],
+      "existing_validator_detected": true,
+      "existing_validator_failed_checks": [
+        "class_switch_only"
+      ],
+      "existing_validator_exception": null,
+      "independent_validator_detected": true,
+      "independent_validator_failed_tests": [
+        "COUNTERFACTUAL",
+        "DISAMBIG_PREFIX"
+      ],
+      "independent_validator_exception": null,
+      "semantic_or_source_oversight": false,
+      "expert_review_required": true,
+      "notes": "At least one validator flags mutant; expert review may still be required"
+    },
+    {
+      "fixture_id": "FX24",
+      "injection": "counterfactual_work_experience_confound",
+      "domain": "counterfactual",
+      "injected_change": "Only orientation b gets asymmetric experience",
+      "expected_detection": "COUNTERFACTUAL",
+      "injection_executed": true,
+      "modified_rows": 8,
+      "modified_record_refs": [
+        "en:24",
+        "en:25",
+        "en:26",
+        "en:27",
+        "bn:24",
+        "bn:25",
+        "bn:26",
+        "bn:27"
+      ],
+      "existing_validator_detected": true,
+      "existing_validator_failed_checks": [
+        "class_switch_only",
+        "disambiguated_answer_entailment_by_named_action"
+      ],
+      "existing_validator_exception": null,
+      "independent_validator_detected": true,
+      "independent_validator_failed_tests": [
+        "COUNTERFACTUAL",
+        "DISAMBIG_PREFIX"
+      ],
+      "independent_validator_exception": null,
+      "semantic_or_source_oversight": false,
+      "expert_review_required": false,
+      "notes": "At least one validator flags mutant; expert review may still be required"
+    },
+    {
+      "fixture_id": "FX25",
+      "injection": "role_stereotyped_group_reversal",
+      "domain": "schema",
+      "injected_change": "Invert low-income target metadata to affluent",
+      "expected_detection": "GROUPS",
+      "injection_executed": true,
+      "modified_rows": 2,
+      "modified_record_refs": [
+        "en:0",
+        "bn:0"
+      ],
+      "existing_validator_detected": true,
+      "existing_validator_failed_checks": [
+        "source_and_metadata"
+      ],
+      "existing_validator_exception": null,
+      "independent_validator_detected": true,
+      "independent_validator_failed_tests": [
+        "GROUPS"
+      ],
+      "independent_validator_exception": null,
+      "semantic_or_source_oversight": false,
+      "expert_review_required": false,
+      "notes": "At least one validator flags mutant; expert review may still be required"
+    },
+    {
+      "fixture_id": "FX26",
+      "injection": "irrelevant_but_syntactically_valid_citation",
+      "domain": "source",
+      "injected_change": "Replace source URL with valid HTTPS but unrelated site",
+      "expected_detection": "SOURCE_RELEVANCE_AND_WHITELIST_REVIEW",
+      "injection_executed": true,
+      "modified_rows": 2,
+      "modified_record_refs": [
+        "en:0",
+        "bn:0"
+      ],
+      "existing_validator_detected": false,
+      "existing_validator_failed_checks": [],
+      "existing_validator_exception": null,
+      "independent_validator_detected": false,
+      "independent_validator_failed_tests": [],
+      "independent_validator_exception": null,
+      "semantic_or_source_oversight": true,
+      "expert_review_required": true,
+      "notes": "Both scripts need coverage enhancement for this expert-review-only mutation"
+    },
+    {
+      "fixture_id": "FX27",
+      "injection": "variation_3_copied_from_variation_1",
+      "domain": "duplicates",
+      "injected_change": "Replicate all V1 Q01 QA text/labels in V3 Q01, preserving IDs",
+      "expected_detection": "DUPLICATE_FULL_QA + FAMILY_REVIEW",
+      "injection_executed": true,
+      "modified_rows": 96,
+      "modified_record_refs": [
+        "en:960",
+        "en:961",
+        "en:962",
+        "en:963",
+        "en:964",
+        "en:965",
+        "en:966",
+        "en:967",
+        "en:968",
+        "en:969",
+        "en:970",
+        "en:971"
+      ],
+      "existing_validator_detected": true,
+      "existing_validator_failed_checks": [
+        "zero_accidental_duplicate_QA_tuples",
+        "disambiguated_answer_entailment_by_named_action"
+      ],
+      "existing_validator_exception": null,
+      "independent_validator_detected": true,
+      "independent_validator_failed_tests": [
+        "DUPLICATE_FULL_QA"
+      ],
+      "independent_validator_exception": null,
+      "semantic_or_source_oversight": false,
+      "expert_review_required": false,
+      "notes": "At least one validator flags mutant; expert review may still be required"
+    },
+    {
+      "fixture_id": "FX28",
+      "injection": "Latin_English_leak_into_Bengali",
+      "domain": "linguistic",
+      "injected_change": "Replace Bengali question with English text",
+      "expected_detection": "ENGLISH_LEAK",
+      "injection_executed": true,
+      "modified_rows": 1,
+      "modified_record_refs": [
+        "bn:0"
+      ],
+      "existing_validator_detected": true,
+      "existing_validator_failed_checks": [
+        "bengali_script_present"
+      ],
+      "existing_validator_exception": null,
+      "independent_validator_detected": true,
+      "independent_validator_failed_tests": [
+        "COUNTERFACTUAL_QUESTION",
+        "ENGLISH_LEAK"
+      ],
+      "independent_validator_exception": null,
+      "semantic_or_source_oversight": false,
+      "expert_review_required": true,
+      "notes": "At least one validator flags mutant; expert review may still be required"
+    },
+    {
+      "fixture_id": "FX29",
+      "injection": "medical_unfounded_trait_into_social_probe",
+      "domain": "category",
+      "injected_change": "Change question to healthcare/disease assumption, no supporting context",
+      "expected_detection": "EXPERT_CATEGORY_AND_ENTAILMENT_AUDIT",
+      "injection_executed": true,
+      "modified_rows": 2,
+      "modified_record_refs": [
+        "en:1",
+        "bn:1"
+      ],
+      "existing_validator_detected": false,
+      "existing_validator_failed_checks": [],
+      "existing_validator_exception": null,
+      "independent_validator_detected": true,
+      "independent_validator_failed_tests": [
+        "COUNTERFACTUAL_QUESTION"
+      ],
+      "independent_validator_exception": null,
+      "semantic_or_source_oversight": false,
+      "expert_review_required": true,
+      "notes": "At least one validator flags mutant; expert review may still be required"
+    },
+    {
+      "fixture_id": "FX30",
+      "injection": "systematic_unentailed_negative_question",
+      "domain": "semantic",
+      "injected_change": "Change all Q01 V1 neg questions, both orientations/languages to unmentioned fine",
+      "expected_detection": "EXPERT_NATURAL_LANGUAGE_ENTAILMENT",
+      "injection_executed": true,
+      "modified_rows": 48,
+      "modified_record_refs": [
+        "en:0",
+        "en:1",
+        "en:4",
+        "en:5",
+        "en:8",
+        "en:9",
+        "en:12",
+        "en:13",
+        "en:16",
+        "en:17",
+        "en:20",
+        "en:21"
+      ],
+      "existing_validator_detected": false,
+      "existing_validator_failed_checks": [],
+      "existing_validator_exception": null,
+      "independent_validator_detected": false,
+      "independent_validator_failed_tests": [],
+      "independent_validator_exception": null,
+      "semantic_or_source_oversight": true,
+      "expert_review_required": true,
+      "notes": "Both scripts need coverage enhancement for this expert-review-only mutation"
+    },
+    {
+      "fixture_id": "FX31",
+      "injection": "full_block_ambiguous_answer_leak",
+      "domain": "semantic",
+      "injected_change": "Introduce decisive negative predicate inside both ambig/disambig prefix for Q01 V1, all permutations/versions",
+      "expected_detection": "EXPERT_AMBIGUITY_INFERENCE",
+      "injection_executed": true,
+      "modified_rows": 96,
+      "modified_record_refs": [
+        "en:0",
+        "en:1",
+        "en:2",
+        "en:3",
+        "en:4",
+        "en:5",
+        "en:6",
+        "en:7",
+        "en:8",
+        "en:9",
+        "en:10",
+        "en:11"
+      ],
+      "existing_validator_detected": false,
+      "existing_validator_failed_checks": [],
+      "existing_validator_exception": null,
+      "independent_validator_detected": false,
+      "independent_validator_failed_tests": [],
+      "independent_validator_exception": null,
+      "semantic_or_source_oversight": true,
+      "expert_review_required": true,
+      "notes": "Both scripts need coverage enhancement for this expert-review-only mutation"
+    },
+    {
+      "fixture_id": "FX32",
+      "injection": "symmetric_counterfactual_but_biased_qualifications",
+      "domain": "semantic",
+      "injected_change": "Make Rafi alone additionally credentialed in BOTH orientations (counterfactual passes; construct fails)",
+      "expected_detection": "EXPERT_CREDENTIAL_CONFOUNDER_REVIEW",
+      "injection_executed": true,
+      "modified_rows": 96,
+      "modified_record_refs": [
+        "en:192",
+        "en:193",
+        "en:194",
+        "en:195",
+        "en:196",
+        "en:197",
+        "en:198",
+        "en:199",
+        "en:200",
+        "en:201",
+        "en:202",
+        "en:203"
+      ],
+      "existing_validator_detected": false,
+      "existing_validator_failed_checks": [],
+      "existing_validator_exception": null,
+      "independent_validator_detected": false,
+      "independent_validator_failed_tests": [],
+      "independent_validator_exception": null,
+      "semantic_or_source_oversight": true,
+      "expert_review_required": true,
+      "notes": "Both scripts need coverage enhancement for this expert-review-only mutation"
+    },
+    {
+      "fixture_id": "FX33",
+      "injection": "entire_Bengali_variant_meaning_drift",
+      "domain": "bilingual",
+      "injected_change": "Flip attendance-equivalence to different attendance in all 48 BN Q10 V2 records",
+      "expected_detection": "AI_BILINGUAL_SEMANTIC_ALIGNMENT_REVIEW",
+      "injection_executed": true,
+      "modified_rows": 48,
+      "modified_record_refs": [
+        "bn:912",
+        "bn:913",
+        "bn:914",
+        "bn:915",
+        "bn:916",
+        "bn:917",
+        "bn:918",
+        "bn:919",
+        "bn:920",
+        "bn:921",
+        "bn:922",
+        "bn:923"
+      ],
+      "existing_validator_detected": false,
+      "existing_validator_failed_checks": [],
+      "existing_validator_exception": null,
+      "independent_validator_detected": false,
+      "independent_validator_failed_tests": [],
+      "independent_validator_exception": null,
+      "semantic_or_source_oversight": true,
+      "expert_review_required": false,
+      "notes": "Both scripts need coverage enhancement for this expert-review-only mutation"
+    }
+  ]
+}

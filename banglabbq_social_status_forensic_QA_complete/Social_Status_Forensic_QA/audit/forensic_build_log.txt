@@ -1,0 +1,15 @@
+{
+  "unique_source_urls": 9,
+  "themes": 10,
+  "upstream_indices": 35,
+  "upstream_rows": 5384,
+  "anchors": 240,
+  "blind_gold_disagreements": 0,
+  "changes": 240,
+  "ledger_rows": 317,
+  "root_severity_counts": {
+    "P1": 8,
+    "P2": 6,
+    "P3": 1
+  }
+}
