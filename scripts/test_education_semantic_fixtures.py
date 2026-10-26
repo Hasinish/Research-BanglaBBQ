@@ -40,10 +40,13 @@ from validate_education_semantics import (
     check_source_matrix_rigor
 )
 
-ENG_PATH = ROOT / "BanglaBBQ_EducationalBackground" / "banglabbq_education_english.jsonl"
-BEN_PATH = ROOT / "BanglaBBQ_EducationalBackground" / "banglabbq_education_bengali.jsonl"
-TEMPLATES_PATH = ROOT / "BanglaBBQ_EducationalBackground" / "scenario_templates.json"
-AUDIT_PATH = ROOT / "BanglaBBQ_EducationalBackground" / "source_audit_matrix.json"
+BASE = ROOT / "Dataset_BanglaBBQ_New/BanglaBBQ_EducationalBackground"
+if not BASE.exists():
+    BASE = ROOT / "BanglaBBQ_EducationalBackground"
+ENG_PATH = BASE / "banglabbq_education_english.jsonl"
+BEN_PATH = BASE / "banglabbq_education_bengali.jsonl"
+TEMPLATES_PATH = BASE / "scenario_templates.json"
+AUDIT_PATH = BASE / "source_audit_matrix.json"
 
 def run_fixture_test():
     print("====================================================================")

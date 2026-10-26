@@ -170,13 +170,14 @@ with open('Dataset_ BanglaBBQ_Old/Politics/banglabbq_politics_bengali.jsonl', 'w
     for r in ben_recs:
         f.write(json.dumps(r, ensure_ascii=False) + '\n')
 
-# Also write to a new clean canonical directory `BanglaBBQ_Politics/` for non-destructive clarity
+# Also write to a new clean canonical directory `Dataset_BanglaBBQ_New/BanglaBBQ_Politics/`
 import os
-os.makedirs('BanglaBBQ_Politics', exist_ok=True)
-with open('BanglaBBQ_Politics/banglabbq_politics_english.jsonl', 'w', encoding='utf-8') as f:
+pol_out_dir = 'Dataset_BanglaBBQ_New/BanglaBBQ_Politics' if os.path.exists('Dataset_BanglaBBQ_New/BanglaBBQ_Politics') else 'BanglaBBQ_Politics'
+os.makedirs(pol_out_dir, exist_ok=True)
+with open(f'{pol_out_dir}/banglabbq_politics_english.jsonl', 'w', encoding='utf-8') as f:
     for r in eng_recs:
         f.write(json.dumps(r, ensure_ascii=False) + '\n')
-with open('BanglaBBQ_Politics/banglabbq_politics_bengali.jsonl', 'w', encoding='utf-8') as f:
+with open(f'{pol_out_dir}/banglabbq_politics_bengali.jsonl', 'w', encoding='utf-8') as f:
     for r in ben_recs:
         f.write(json.dumps(r, ensure_ascii=False) + '\n')
 

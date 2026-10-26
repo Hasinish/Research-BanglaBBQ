@@ -51,8 +51,8 @@ def main():
     service = build('sheets', 'v4', credentials=creds)
     
     # 1. Update English answer_info cells
-    print("\n[Step 1] Updating 12 answer_info cells in BanglaBBQ_ENG_Gender...")
-    with open('BanglaBBQ_Gender/Gender_identity_eng.jsonl', 'r', encoding='utf-8') as f:
+    eng_path = 'Dataset_BanglaBBQ_New/BanglaBBQ_Gender/Gender_identity_eng.jsonl' if os.path.exists('Dataset_BanglaBBQ_New/BanglaBBQ_Gender/Gender_identity_eng.jsonl') else 'BanglaBBQ_Gender/Gender_identity_eng.jsonl'
+    with open(eng_path, 'r', encoding='utf-8') as f:
         eng_recs = [json.loads(l) for l in f]
         
     eng_target_eids = [0, 1, 2, 3, 4424, 4425, 4426, 4427, 4496, 4497, 4498, 4499]
@@ -89,7 +89,8 @@ def main():
     
     # 2. Update Bengali worksheet
     print(f"\n[Step 2] Uploading canonical Bengali records to {BEN_SHEET_NAME}...")
-    with open('BanglaBBQ_Gender/Gender_identity_bng.jsonl', 'r', encoding='utf-8') as f:
+    ben_path = 'Dataset_BanglaBBQ_New/BanglaBBQ_Gender/Gender_identity_bng.jsonl' if os.path.exists('Dataset_BanglaBBQ_New/BanglaBBQ_Gender/Gender_identity_bng.jsonl') else 'BanglaBBQ_Gender/Gender_identity_bng.jsonl'
+    with open(ben_path, 'r', encoding='utf-8') as f:
         ben_recs = [json.loads(l) for l in f]
         
     all_ben_rows = [HEADER] + [format_row(r) for r in ben_recs]

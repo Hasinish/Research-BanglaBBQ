@@ -31,18 +31,19 @@ This repository hosts the research assets, dataset manifests, validation tooling
 To ensure clean distinction between active production benchmarks, independent audits, candidate bundles, and historical archives:
 
 ```
-├── BanglaBBQ_Age/                    # Canonical 2,920-record Age Bias Benchmark (English & Bengali)
-├── BanglaBBQ_Politics/               # Canonical 2,880-record Political Bias Benchmark (20 themes, V1/V2/V3)
-├── BanglaBBQ_Religion/               # Canonical 2,880-record Religious Bias Benchmark (20 themes, V1/V2/V3)
-├── BanglaBBQ_Gender/                 # Canonical 4,696-record Gender Identity Benchmark (34 themes)
-├── BanglaBBQ_EducationalBackground/  # Canonical 2,880-record Educational Background Benchmark (20 themes, V1/V2/V3)
-├── BanglaBBQ_Ethnicity/              # Canonical 1,440-record Ethnicity Bias Benchmark (FINAL)
-├── BanglaBBQ_HealthStatus/           # Canonical 1,440-record Health Status Bias Benchmark (FINAL)
-├── BanglaBBQ_MaritalStatus/          # Canonical 1,440-record Marital Status Bias Benchmark (FINAL)
-├── BanglaBBQ_OccupationalBackground/ # Canonical 1,440-record Occupational Background Bias Benchmark (FINAL)
-├── BanglaBBQ_PhysicalAppearance/     # Canonical 1,440-record Physical Appearance Bias Benchmark (FINAL)
-├── BanglaBBQ_Regional/               # Canonical 1,440-record Regional Affiliation Bias Benchmark (FINAL)
-├── BanglaBBQ_SocialStatus/           # Canonical 1,440-record Social Status Bias Benchmark (FINAL)
+├── Dataset_BanglaBBQ_New/            # Canonical Improved & Expanded BanglaBBQ Benchmark (12 Categories)
+│   ├── BanglaBBQ_Age/                    # Canonical 2,920-record Age Bias Benchmark (English & Bengali)
+│   ├── BanglaBBQ_EducationalBackground/  # Canonical 2,880-record Educational Background Benchmark (20 themes, V1/V2/V3)
+│   ├── BanglaBBQ_Ethnicity/              # Canonical 1,440-record Ethnicity Bias Benchmark (FINAL)
+│   ├── BanglaBBQ_Gender/                 # Canonical 4,696-record Gender Identity Benchmark (34 themes)
+│   ├── BanglaBBQ_HealthStatus/           # Canonical 1,440-record Health Status Bias Benchmark (FINAL)
+│   ├── BanglaBBQ_MaritalStatus/          # Canonical 1,440-record Marital Status Bias Benchmark (FINAL)
+│   ├── BanglaBBQ_OccupationalBackground/ # Canonical 1,440-record Occupational Background Bias Benchmark (FINAL)
+│   ├── BanglaBBQ_PhysicalAppearance/     # Canonical 1,440-record Physical Appearance Bias Benchmark (FINAL)
+│   ├── BanglaBBQ_Politics/               # Canonical 2,880-record Political Bias Benchmark (20 themes, V1/V2/V3)
+│   ├── BanglaBBQ_Regional/               # Canonical 1,440-record Regional Affiliation Bias Benchmark (FINAL)
+│   ├── BanglaBBQ_Religion/               # Canonical 2,880-record Religious Bias Benchmark (20 themes, V1/V2/V3)
+│   └── BanglaBBQ_SocialStatus/           # Canonical 1,440-record Social Status Bias Benchmark (FINAL)
 ├── audits/                           # Independent Forensic QA Complete Packages (7 categories)
 │   ├── Ethnicity_forensic_QA_complete/
 │   ├── health_status_complete_independent_forensic_QA/

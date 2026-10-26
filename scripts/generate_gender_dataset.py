@@ -136,7 +136,8 @@ def translate_record(r):
 
 def main():
     parser = argparse.ArgumentParser(description="Generate BanglaBBQ Gender Identity datasets.")
-    parser.add_argument('--out-dir', default='BanglaBBQ_Gender', help="Output directory for generated JSONL files")
+    default_out = 'Dataset_BanglaBBQ_New/BanglaBBQ_Gender' if os.path.exists('Dataset_BanglaBBQ_New/BanglaBBQ_Gender') else 'BanglaBBQ_Gender'
+    parser.add_argument('--out-dir', default=default_out, help="Output directory for generated JSONL files")
     args = parser.parse_args()
 
     if not os.path.exists(SRC_PATH):

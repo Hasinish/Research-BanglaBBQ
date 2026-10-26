@@ -29,10 +29,13 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding='utf-8')
 
 ROOT = Path(__file__).resolve().parents[1]
-ENG_PATH = ROOT / "BanglaBBQ_EducationalBackground" / "banglabbq_education_english.jsonl"
-BEN_PATH = ROOT / "BanglaBBQ_EducationalBackground" / "banglabbq_education_bengali.jsonl"
-TEMPLATES_PATH = ROOT / "BanglaBBQ_EducationalBackground" / "scenario_templates.json"
-AUDIT_PATH = ROOT / "BanglaBBQ_EducationalBackground" / "source_audit_matrix.json"
+BASE = ROOT / "Dataset_BanglaBBQ_New/BanglaBBQ_EducationalBackground"
+if not BASE.exists():
+    BASE = ROOT / "BanglaBBQ_EducationalBackground"
+ENG_PATH = BASE / "banglabbq_education_english.jsonl"
+BEN_PATH = BASE / "banglabbq_education_bengali.jsonl"
+TEMPLATES_PATH = BASE / "scenario_templates.json"
+AUDIT_PATH = BASE / "source_audit_matrix.json"
 
 AMBIG_LEAK_WORDS_EN = [
     r"\brejects?\b", r"\baccepts?\b", r"\beliminates?\b", r"\badvances?\b",
@@ -528,5 +531,7 @@ def validate_semantics(eng_path=ENG_PATH, ben_path=BEN_PATH, templates_path=TEMP
         return True
 
 if __name__ == "__main__":
-    success = validate_semantics()
+    eng_arg = Path(sys.argv[1]) if len(sys.argv) > 1 else ENG_PATH
+    ben_arg = Path(sys.argv[2]) if len(sys.argv) > 2 else BEN_PATH
+    success = validate_semantics(eng_path=eng_arg, ben_path=ben_arg)
     sys.exit(0 if success else 1)

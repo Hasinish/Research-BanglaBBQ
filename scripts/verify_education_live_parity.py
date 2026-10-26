@@ -13,8 +13,11 @@ sys.stdout.reconfigure(encoding='utf-8')
 ROOT = Path(__file__).resolve().parents[1]
 SPREADSHEET_ID = '1xZhhKZoZuSy-ZXAWWdhCpq9QLh705ScErcnBZacmZnY'
 
-ENG_JSONL = ROOT / "BanglaBBQ_EducationalBackground" / "banglabbq_education_english.jsonl"
-BEN_JSONL = ROOT / "BanglaBBQ_EducationalBackground" / "banglabbq_education_bengali.jsonl"
+BASE = ROOT / "Dataset_BanglaBBQ_New/BanglaBBQ_EducationalBackground"
+if not BASE.exists():
+    BASE = ROOT / "BanglaBBQ_EducationalBackground"
+ENG_JSONL = BASE / "banglabbq_education_english.jsonl"
+BEN_JSONL = BASE / "banglabbq_education_bengali.jsonl"
 
 HEADER = [
     'example_id', 'question_index', 'context_condition', 'question_polarity',

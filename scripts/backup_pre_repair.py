@@ -27,13 +27,14 @@ def sha256_file(path):
     return h.hexdigest()
 
 # 1. Backup local canonical files
+base_dir = "Dataset_BanglaBBQ_New/BanglaBBQ_EducationalBackground" if os.path.exists("Dataset_BanglaBBQ_New/BanglaBBQ_EducationalBackground") else "BanglaBBQ_EducationalBackground"
 files_to_copy = [
-    "BanglaBBQ_EducationalBackground/banglabbq_education_english.jsonl",
-    "BanglaBBQ_EducationalBackground/banglabbq_education_bengali.jsonl",
-    "BanglaBBQ_EducationalBackground/scenario_templates.json",
-    "BanglaBBQ_EducationalBackground/source_audit_matrix.json",
-    "BanglaBBQ_EducationalBackground/source_audit_matrix.md",
-    "BanglaBBQ_EducationalBackground/legacy_to_improved_mapping.json"
+    f"{base_dir}/banglabbq_education_english.jsonl",
+    f"{base_dir}/banglabbq_education_bengali.jsonl",
+    f"{base_dir}/scenario_templates.json",
+    f"{base_dir}/source_audit_matrix.json",
+    f"{base_dir}/source_audit_matrix.md",
+    f"{base_dir}/legacy_to_improved_mapping.json"
 ]
 
 manifest = {"local_files": {}, "sheets": {}}

@@ -16,7 +16,9 @@ from themes_data.part2_themes_6_to_10 import THEMES_6_TO_10
 from themes_data.part3_themes_11_to_15 import THEMES_11_TO_15
 from themes_data.part4_themes_16_to_20 import THEMES_16_TO_20
 
-OUT_DIR = ROOT / "BanglaBBQ_EducationalBackground"
+OUT_DIR = ROOT / "Dataset_BanglaBBQ_New/BanglaBBQ_EducationalBackground"
+if not OUT_DIR.exists():
+    OUT_DIR = ROOT / "BanglaBBQ_EducationalBackground"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 all_themes = {}

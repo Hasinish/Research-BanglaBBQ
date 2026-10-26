@@ -9,8 +9,8 @@ from googleapiclient.discovery import build
 sys.stdout.reconfigure(encoding='utf-8')
 
 SPREADSHEET_ID = '1xZhhKZoZuSy-ZXAWWdhCpq9QLh705ScErcnBZacmZnY'
-ACTIVE_ENG_JSONL = 'BanglaBBQ_Religion/Religion_eng.jsonl'
-ACTIVE_BEN_JSONL = 'BanglaBBQ_Religion/Religion_bng.jsonl'
+ACTIVE_ENG_JSONL = 'Dataset_BanglaBBQ_New/BanglaBBQ_Religion/Religion_eng.jsonl' if os.path.exists('Dataset_BanglaBBQ_New/BanglaBBQ_Religion/Religion_eng.jsonl') else 'BanglaBBQ_Religion/Religion_eng.jsonl'
+ACTIVE_BEN_JSONL = 'Dataset_BanglaBBQ_New/BanglaBBQ_Religion/Religion_bng.jsonl' if os.path.exists('Dataset_BanglaBBQ_New/BanglaBBQ_Religion/Religion_bng.jsonl') else 'BanglaBBQ_Religion/Religion_bng.jsonl'
 
 def row_to_rec(row):
     return {

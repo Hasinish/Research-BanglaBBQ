@@ -347,8 +347,13 @@ def validate_gender_semantics(eng_path, ben_path, proposal_manifest_path=None):
 
 
 def main():
-    eng_path = sys.argv[1] if len(sys.argv) > 1 else 'BanglaBBQ_Gender/Gender_identity_eng.jsonl'
-    ben_path = sys.argv[2] if len(sys.argv) > 2 else 'BanglaBBQ_Gender/Gender_identity_bng.jsonl'
+    default_eng = 'Dataset_BanglaBBQ_New/BanglaBBQ_Gender/Gender_identity_eng.jsonl'
+    default_ben = 'Dataset_BanglaBBQ_New/BanglaBBQ_Gender/Gender_identity_bng.jsonl'
+    if not os.path.exists(default_eng):
+        default_eng = 'BanglaBBQ_Gender/Gender_identity_eng.jsonl'
+        default_ben = 'BanglaBBQ_Gender/Gender_identity_bng.jsonl'
+    eng_path = sys.argv[1] if len(sys.argv) > 1 else default_eng
+    ben_path = sys.argv[2] if len(sys.argv) > 2 else default_ben
     manifest_path = sys.argv[3] if len(sys.argv) > 3 else None
     
     ok = validate_gender_semantics(eng_path, ben_path, manifest_path)

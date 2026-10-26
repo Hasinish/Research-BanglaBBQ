@@ -10,7 +10,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 
 SPREADSHEET_ID = '1xZhhKZoZuSy-ZXAWWdhCpq9QLh705ScErcnBZacmZnY'
 BACKUP_DIR = 'backups/religion_sheets_backup_20261016'
-ACTIVE_DIR = 'BanglaBBQ_Religion'
+ACTIVE_DIR = 'Dataset_BanglaBBQ_New/BanglaBBQ_Religion' if os.path.exists('Dataset_BanglaBBQ_New/BanglaBBQ_Religion') else 'BanglaBBQ_Religion'
 OLD_RELIGION_DIR = 'Dataset_ BanglaBBQ_Old/Religion'
 
 TABS_TO_BACKUP = [

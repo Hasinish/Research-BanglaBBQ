@@ -48,7 +48,9 @@ def sync_and_validate_age():
     print("✓ Headers verified: 15-column canonical schema")
 
     # Read existing local file to detect diffs
-    ben_path = Path('BanglaBBQ_Age/banglabbq_age_bengali.jsonl') if Path('BanglaBBQ_Age/banglabbq_age_bengali.jsonl').exists() else Path('BanglaBBQ_BEN_New/Age.jsonl')
+    ben_path = Path('Dataset_BanglaBBQ_New/BanglaBBQ_Age/banglabbq_age_bengali.jsonl')
+    if not ben_path.exists():
+        ben_path = Path('BanglaBBQ_Age/banglabbq_age_bengali.jsonl') if Path('BanglaBBQ_Age/banglabbq_age_bengali.jsonl').exists() else Path('BanglaBBQ_BEN_New/Age.jsonl')
     with open(ben_path, 'r', encoding='utf-8') as f:
         existing_local = [json.loads(line) for line in f]
     assert len(existing_local) == 2920, f"Expected 2920 local records, got {len(existing_local)}"

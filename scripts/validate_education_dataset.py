@@ -211,7 +211,12 @@ def validate_education_dataset(eng_path, ben_path):
         return True
 
 if __name__ == '__main__':
-    eng_p = sys.argv[1] if len(sys.argv) > 1 else 'BanglaBBQ_EducationalBackground/banglabbq_education_english.jsonl'
-    ben_p = sys.argv[2] if len(sys.argv) > 2 else 'BanglaBBQ_EducationalBackground/banglabbq_education_bengali.jsonl'
+    default_eng = 'Dataset_BanglaBBQ_New/BanglaBBQ_EducationalBackground/banglabbq_education_english.jsonl'
+    default_ben = 'Dataset_BanglaBBQ_New/BanglaBBQ_EducationalBackground/banglabbq_education_bengali.jsonl'
+    if not os.path.exists(default_eng):
+        default_eng = 'BanglaBBQ_EducationalBackground/banglabbq_education_english.jsonl'
+        default_ben = 'BanglaBBQ_EducationalBackground/banglabbq_education_bengali.jsonl'
+    eng_p = sys.argv[1] if len(sys.argv) > 1 else default_eng
+    ben_p = sys.argv[2] if len(sys.argv) > 2 else default_ben
     success = validate_education_dataset(eng_p, ben_p)
     sys.exit(0 if success else 1)

@@ -17,9 +17,12 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-PATCH = ROOT / "BanglaBBQ_Religion/evidence_revisions_20261017.json"
-FILES = {"english": ROOT / "BanglaBBQ_Religion/Religion_eng.jsonl",
-         "bengali": ROOT / "BanglaBBQ_Religion/Religion_bng.jsonl"}
+BASE = ROOT / "Dataset_BanglaBBQ_New/BanglaBBQ_Religion"
+if not BASE.exists():
+    BASE = ROOT / "BanglaBBQ_Religion"
+PATCH = BASE / "evidence_revisions_20261017.json"
+FILES = {"english": BASE / "Religion_eng.jsonl",
+         "bengali": BASE / "Religion_bng.jsonl"}
 
 def load_patch(path: Path = PATCH) -> dict:
     p = json.loads(path.read_text(encoding="utf-8"))

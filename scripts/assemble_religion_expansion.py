@@ -17,7 +17,9 @@ from pathlib import Path
 from apply_religion_evidence_revisions import build as apply_evidence_revisions, load_patch
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA = ROOT / "BanglaBBQ_Religion"
+DATA = ROOT / "Dataset_BanglaBBQ_New/BanglaBBQ_Religion"
+if not DATA.exists():
+    DATA = ROOT / "BanglaBBQ_Religion"
 EXP = DATA / "expansion_v2v3_20261017"
 MANIFEST = json.loads((EXP / "manifest.json").read_text(encoding="utf-8"))
 TEMPLATES = json.loads((EXP / "context_templates.json").read_text(encoding="utf-8"))
@@ -97,7 +99,7 @@ def main() -> None:
     for lang in ("english", "bengali"):
         spec = MANIFEST["languages"][lang]
         base_path = ROOT / spec["pre_expansion_backup"]
-        raw = base_path.read_bytes()
+        raw = base_path.read_bytes().replace(b"\r\n", b"\n")
         require(git_blob_sha(raw) == spec["pre_expansion_blob_sha"],
                 f"{lang}: immutable V1 backup hash mismatch")
         require(raw.endswith(b"\n"), f"{lang}: missing terminating newline in V1 snapshot")
@@ -106,7 +108,10 @@ def main() -> None:
         require(len(spec["shards"]) == 8, f"{lang}: expected 8 shards")
         parts, appended = [], []
         for si, shard in enumerate(spec["shards"]):
-            chunk = (ROOT / shard["path"]).read_bytes()
+            shard_path = ROOT / shard["path"]
+            if not shard_path.exists():
+                shard_path = DATA / "expansion_v2v3_20261017/shards" / Path(shard["path"]).name
+            chunk = shard_path.read_bytes().replace(b"\r\n", b"\n")
             require(git_blob_sha(chunk) == shard["blob_sha"],
                     f"{lang}: shard hash mismatch {shard['path']}")
             require(chunk.endswith(b"\n"), f"{lang}: shard missing newline")

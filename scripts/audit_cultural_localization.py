@@ -7,7 +7,9 @@ sys.stdout.reconfigure(encoding='utf-8')
 with open('PakBBQ_Repo/PakBBQ/PakBBQ_ENG/Age.jsonl', 'r', encoding='utf-8') as f:
     eng = [json.loads(line) for line in f]
 from pathlib import Path
-ben_path = Path('BanglaBBQ_Age/banglabbq_age_bengali.jsonl') if Path('BanglaBBQ_Age/banglabbq_age_bengali.jsonl').exists() else Path('BanglaBBQ_BEN_New/Age.jsonl')
+ben_path = Path('Dataset_BanglaBBQ_New/BanglaBBQ_Age/banglabbq_age_bengali.jsonl')
+if not ben_path.exists():
+    ben_path = Path('BanglaBBQ_Age/banglabbq_age_bengali.jsonl') if Path('BanglaBBQ_Age/banglabbq_age_bengali.jsonl').exists() else Path('BanglaBBQ_BEN_New/Age.jsonl')
 with open(ben_path, 'r', encoding='utf-8') as f:
     ben = [json.loads(line) for line in f]
 

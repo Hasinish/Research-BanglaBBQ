@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - 'BanglaBBQ_Politics/expansion_v2v3_20261017/**'
+      - 'Dataset_BanglaBBQ_New/BanglaBBQ_Politics/expansion_v2v3_20261017/**'
       - 'scripts/assemble_politics_expansion.py'
       - '.github/workflows/assemble_politics_expansion.yml'
   workflow_dispatch:
@@ -35,17 +35,17 @@ jobs:
         run: python scripts/assemble_politics_expansion.py
 
       - name: Validate all expanded Politics invariants
-        run: python scripts/validate_politics_dataset.py BanglaBBQ_Politics/banglabbq_politics_english.jsonl BanglaBBQ_Politics/banglabbq_politics_bengali.jsonl
+        run: python scripts/validate_politics_dataset.py Dataset_BanglaBBQ_New/BanglaBBQ_Politics/banglabbq_politics_english.jsonl Dataset_BanglaBBQ_New/BanglaBBQ_Politics/banglabbq_politics_bengali.jsonl
 
       - name: Commit regenerated canonical snapshots (append-only, no force push)
         shell: bash
         run: |
-          if git diff --quiet -- BanglaBBQ_Politics/banglabbq_politics_english.jsonl BanglaBBQ_Politics/banglabbq_politics_bengali.jsonl; then
+          if git diff --quiet -- Dataset_BanglaBBQ_New/BanglaBBQ_Politics/banglabbq_politics_english.jsonl Dataset_BanglaBBQ_New/BanglaBBQ_Politics/banglabbq_politics_bengali.jsonl; then
             echo "Canonical snapshots already match validated expansion."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add BanglaBBQ_Politics/banglabbq_politics_english.jsonl BanglaBBQ_Politics/banglabbq_politics_bengali.jsonl
+          git add Dataset_BanglaBBQ_New/BanglaBBQ_Politics/banglabbq_politics_english.jsonl Dataset_BanglaBBQ_New/BanglaBBQ_Politics/banglabbq_politics_bengali.jsonl
           git commit -m "feat(politics): materialize 2,880 bilingual records from reviewed wording shards"
           git push origin HEAD:main

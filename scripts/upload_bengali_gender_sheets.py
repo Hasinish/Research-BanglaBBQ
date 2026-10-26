@@ -14,7 +14,7 @@ from googleapiclient.discovery import build
 sys.stdout.reconfigure(encoding='utf-8')
 
 SPREADSHEET_ID = '1xZhhKZoZuSy-ZXAWWdhCpq9QLh705ScErcnBZacmZnY'
-BEN_JSONL_PATH = 'BanglaBBQ_Gender/Gender_identity_bng.jsonl'
+BEN_JSONL_PATH = 'Dataset_BanglaBBQ_New/BanglaBBQ_Gender/Gender_identity_bng.jsonl' if os.path.exists('Dataset_BanglaBBQ_New/BanglaBBQ_Gender/Gender_identity_bng.jsonl') else 'BanglaBBQ_Gender/Gender_identity_bng.jsonl'
 SHEET_NAME = 'BanglaBBQ_BEN_Gender'
 
 HEADER = [

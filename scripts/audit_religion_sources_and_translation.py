@@ -16,8 +16,11 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding='utf-8')
 
 ROOT = Path(__file__).resolve().parents[1]
-ENG_PATH = ROOT / "BanglaBBQ_Religion/Religion_eng.jsonl"
-BEN_PATH = ROOT / "BanglaBBQ_Religion/Religion_bng.jsonl"
+BASE = ROOT / "Dataset_BanglaBBQ_New/BanglaBBQ_Religion"
+if not BASE.exists():
+    BASE = ROOT / "BanglaBBQ_Religion"
+ENG_PATH = BASE / "Religion_eng.jsonl"
+BEN_PATH = BASE / "Religion_bng.jsonl"
 
 SOURCE_EVALUATION = {
     1: {"type": "Incident Context", "notes": "Cites Daily Star reporting on widespread attacks on minority households/businesses following August 5, 2024 political transition."},

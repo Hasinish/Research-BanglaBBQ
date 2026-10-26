@@ -161,11 +161,14 @@ def main():
     # 1. Format verification
     verify_formatting(service)
     
+    eng_jsonl = 'Dataset_BanglaBBQ_New/BanglaBBQ_Gender/Gender_identity_eng.jsonl' if os.path.exists('Dataset_BanglaBBQ_New/BanglaBBQ_Gender/Gender_identity_eng.jsonl') else 'BanglaBBQ_Gender/Gender_identity_eng.jsonl'
+    ben_jsonl = 'Dataset_BanglaBBQ_New/BanglaBBQ_Gender/Gender_identity_bng.jsonl' if os.path.exists('Dataset_BanglaBBQ_New/BanglaBBQ_Gender/Gender_identity_bng.jsonl') else 'BanglaBBQ_Gender/Gender_identity_bng.jsonl'
+
     # 2. English Sheet verification
     eng_cells, eng_mismatches = compare_sheet_data(
         service,
         'BanglaBBQ_ENG_Gender',
-        'BanglaBBQ_Gender/Gender_identity_eng.jsonl'
+        eng_jsonl
     )
     assert eng_mismatches == 0, f"English verification failed with {eng_mismatches} mismatches"
     
@@ -173,7 +176,7 @@ def main():
     ben_cells, ben_mismatches = compare_sheet_data(
         service,
         'BanglaBBQ_BEN_Gender',
-        'BanglaBBQ_Gender/Gender_identity_bng.jsonl'
+        ben_jsonl
     )
     assert ben_mismatches == 0, f"Bengali verification failed with {ben_mismatches} mismatches"
     

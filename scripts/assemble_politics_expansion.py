@@ -17,7 +17,9 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from scripts.apply_politics_q5_q14_q19_fixes import patch
 
-BASE = ROOT / "BanglaBBQ_Politics"
+BASE = ROOT / "Dataset_BanglaBBQ_New/BanglaBBQ_Politics"
+if not BASE.exists():
+    BASE = ROOT / "BanglaBBQ_Politics"
 PARTS = BASE / "expansion_v2v3_20261017"
 MANIFEST = json.loads((PARTS / "manifest.json").read_text(encoding="utf-8"))
 HEADERS = [
@@ -70,6 +72,8 @@ def main() -> None:
         extras_records: list[dict] = []
         for part in spec["shards"]:
             path = ROOT / part["path"]
+            if not path.exists():
+                path = BASE / "expansion_v2v3_20261017" / Path(part["path"]).name
             fragment = path.read_bytes().replace(b"\r\n", b"\n")
             assert git_blob_sha(fragment) == part["blob_sha"], f"{lang}: shard hash mismatch: {path}"
             block = records(fragment)
