@@ -3,6 +3,7 @@ token.json
 token.pickle
 credentials.json
 client_secret*.json
+auth_url.txt
 *.env
 .env
 

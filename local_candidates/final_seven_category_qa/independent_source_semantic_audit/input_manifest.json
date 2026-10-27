@@ -1,0 +1,145 @@
+{
+  "timestamp": "2026-10-28T01:53:00+06:00",
+  "baseline_commit_sha": "b4069d9cb9b20bf9466eb825ce7feacfb01d6fca",
+  "files": {
+    "positional_candidates": [
+      {
+        "exists": true,
+        "path": "local_candidates/final_seven_category_qa/candidates/BanglaBBQ_Health_Status_FINAL_english.jsonl",
+        "size_bytes": 1433202,
+        "line_count": 1440,
+        "sha256": "eacb118018cebf02492955b2e0b6ada05e96fa1e72bc23291c8f55156e377f11"
+      },
+      {
+        "exists": true,
+        "path": "local_candidates/final_seven_category_qa/candidates/BanglaBBQ_Health_Status_FINAL_bengali.jsonl",
+        "size_bytes": 2404218,
+        "line_count": 1440,
+        "sha256": "16996de2013f4a45bae46b99c3b6e8b4f5e99bfd2955247c079b507871350f60"
+      },
+      {
+        "exists": true,
+        "path": "local_candidates/final_seven_category_qa/candidates/BanglaBBQ_Regional_FINAL_english.jsonl",
+        "size_bytes": 1431378,
+        "line_count": 1440,
+        "sha256": "fcf4414af7ba9c88bbdf3112302e6976b7de8ba6e1e370f52ecab312677bbb49"
+      },
+      {
+        "exists": true,
+        "path": "local_candidates/final_seven_category_qa/candidates/BanglaBBQ_Regional_FINAL_bengali.jsonl",
+        "size_bytes": 2467146,
+        "line_count": 1440,
+        "sha256": "5846999cf4b4aab40fb3b8ab45d8a83cc81a2f82bc42413174a9c2acfe99a6bf"
+      },
+      {
+        "exists": true,
+        "path": "local_candidates/final_seven_category_qa/candidates/BanglaBBQ_Ethnicity_FINAL_english.jsonl",
+        "size_bytes": 1639674,
+        "line_count": 1440,
+        "sha256": "29a0849436ce630a035a60bb75d2bccba3acfcbf2bce747bd8cfcdb57a3ef86a"
+      },
+      {
+        "exists": true,
+        "path": "local_candidates/final_seven_category_qa/candidates/BanglaBBQ_Ethnicity_FINAL_bengali.jsonl",
+        "size_bytes": 3041106,
+        "line_count": 1440,
+        "sha256": "1635587e621c5af4e008c40b0753a7e9f2d922d72703d6b4242b37676319d089"
+      }
+    ],
+    "content_prototypes": [
+      {
+        "exists": true,
+        "path": "local_candidates/final_seven_category_qa/prototypes/Health_Status_Q02_Q04_Q05_Q07_prototype_english.jsonl",
+        "size_bytes": 591768,
+        "line_count": 576,
+        "sha256": "e23ecdc8de415cac046072b12b4727e363d5ce9fc65713ca6ed095504f9313fe"
+      },
+      {
+        "exists": true,
+        "path": "local_candidates/final_seven_category_qa/prototypes/Health_Status_Q02_Q04_Q05_Q07_prototype_bengali.jsonl",
+        "size_bytes": 985176,
+        "line_count": 576,
+        "sha256": "93275d67e38b4808c8ad382d2febc9f3865cfa2c77fc53013a39cbc1973d3b29"
+      },
+      {
+        "exists": true,
+        "path": "local_candidates/final_seven_category_qa/prototypes/Physical_Appearance_Q02_prototype_english.jsonl",
+        "size_bytes": 166800,
+        "line_count": 144,
+        "sha256": "57bf71414512fbf3fd68dee955b3d07bab57f051891226e98ca7f589185039d5"
+      },
+      {
+        "exists": true,
+        "path": "local_candidates/final_seven_category_qa/prototypes/Physical_Appearance_Q02_prototype_bengali.jsonl",
+        "size_bytes": 274896,
+        "line_count": 144,
+        "sha256": "fe93e23ef8e477a4909177f47abf5b84fc16d3cb4227c90c72aa7120dd7f3e5c"
+      },
+      {
+        "exists": true,
+        "path": "local_candidates/final_seven_category_qa/prototypes/Social_Status_Q07_V3_prototype_english.jsonl",
+        "size_bytes": 59112,
+        "line_count": 48,
+        "sha256": "e5e0f670538bde78d3d6dae66f83f942eb10eaceb30f2c0147f85ae4fe614b27"
+      },
+      {
+        "exists": true,
+        "path": "local_candidates/final_seven_category_qa/prototypes/Social_Status_Q07_V3_prototype_bengali.jsonl",
+        "size_bytes": 102624,
+        "line_count": 48,
+        "sha256": "6a9cb5c6de20aff8bb22a79991280f29192f1e97078e2a9035c34c61f199e41c"
+      }
+    ],
+    "research_documentation": [
+      {
+        "exists": true,
+        "path": "local_candidates/final_seven_category_qa/source_audit.csv",
+        "size_bytes": 36293,
+        "line_count": 71,
+        "sha256": "cca4f1dff523794ac800acb33ca139f19cf8b7fffcc2602451d4a6e6a29af275"
+      },
+      {
+        "exists": true,
+        "path": "local_candidates/final_seven_category_qa/linguistic_review_queue.csv",
+        "size_bytes": 47452,
+        "line_count": 32,
+        "sha256": "aee978b5aa4a15ccf86058c05b516f15a7fca4a17730d5dc6cc507fb909ed137"
+      },
+      {
+        "exists": true,
+        "path": "local_candidates/final_seven_category_qa/master_qa_summary.md",
+        "size_bytes": 12132,
+        "line_count": 140,
+        "sha256": "d9101e1516d2f81d56a253182d62c636616ab4b3dcf43b4ac21a9c34aa5f87ae"
+      },
+      {
+        "exists": true,
+        "path": "local_candidates/final_seven_category_qa/human_validation_protocol.md",
+        "size_bytes": 7453,
+        "line_count": 93,
+        "sha256": "4ea80b71b957355430896e15b7549b5d2c85a807bcce37e65544dfef142a5ec0"
+      },
+      {
+        "exists": true,
+        "path": "local_candidates/final_seven_category_qa/mental_health_coverage_plan.md",
+        "size_bytes": 7695,
+        "line_count": 84,
+        "sha256": "c4d51cbaf4eea068f59fef2735e6af3c15ca368bf42b7c1cdd917222a773bca3"
+      },
+      {
+        "exists": true,
+        "path": "local_candidates/final_seven_category_qa/reports/independent_review_remediation_report.md",
+        "size_bytes": 14460,
+        "line_count": 133,
+        "sha256": "e762bbd411f6b4a47da9a4145f67a12142983fa3b0ce26ff3046e488f674ba5c"
+      },
+      {
+        "exists": true,
+        "path": "local_candidates/final_seven_category_qa/reports/source_and_semantic_repair_report.md",
+        "size_bytes": 13867,
+        "line_count": 133,
+        "sha256": "68703ee95dd80c92f4fe05aa8dd6da9374f55140f3df98d95ea65cb0aa7c0dda"
+      }
+    ]
+  }
+}

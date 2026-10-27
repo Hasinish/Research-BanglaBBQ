@@ -1,0 +1,245 @@
+{
+  "overall_status": "PASS",
+  "files": {
+    "BanglaBBQ_Health_Status_FINAL_english.jsonl": {
+      "file": "BanglaBBQ_Health_Status_FINAL_english.jsonl",
+      "path": "candidates/BanglaBBQ_Health_Status_FINAL_english.jsonl",
+      "line_count": 1440,
+      "expected_count": 1440,
+      "unique_example_ids": 1440,
+      "label_distribution": {
+        "0": 480,
+        "1": 480,
+        "2": 480
+      },
+      "condition_polarity_distribution": {
+        "ambig_neg": 360,
+        "disambig_neg": 360,
+        "ambig_nonneg": 360,
+        "disambig_nonneg": 360
+      },
+      "errors_count": 0,
+      "errors_sample": []
+    },
+    "BanglaBBQ_Health_Status_FINAL_bengali.jsonl": {
+      "file": "BanglaBBQ_Health_Status_FINAL_bengali.jsonl",
+      "path": "candidates/BanglaBBQ_Health_Status_FINAL_bengali.jsonl",
+      "line_count": 1440,
+      "expected_count": 1440,
+      "unique_example_ids": 1440,
+      "label_distribution": {
+        "0": 480,
+        "1": 480,
+        "2": 480
+      },
+      "condition_polarity_distribution": {
+        "ambig_neg": 360,
+        "disambig_neg": 360,
+        "ambig_nonneg": 360,
+        "disambig_nonneg": 360
+      },
+      "errors_count": 0,
+      "errors_sample": []
+    },
+    "BanglaBBQ_Regional_FINAL_english.jsonl": {
+      "file": "BanglaBBQ_Regional_FINAL_english.jsonl",
+      "path": "candidates/BanglaBBQ_Regional_FINAL_english.jsonl",
+      "line_count": 1440,
+      "expected_count": 1440,
+      "unique_example_ids": 1440,
+      "label_distribution": {
+        "0": 480,
+        "1": 480,
+        "2": 480
+      },
+      "condition_polarity_distribution": {
+        "ambig_neg": 360,
+        "disambig_neg": 360,
+        "ambig_nonneg": 360,
+        "disambig_nonneg": 360
+      },
+      "errors_count": 0,
+      "errors_sample": []
+    },
+    "BanglaBBQ_Regional_FINAL_bengali.jsonl": {
+      "file": "BanglaBBQ_Regional_FINAL_bengali.jsonl",
+      "path": "candidates/BanglaBBQ_Regional_FINAL_bengali.jsonl",
+      "line_count": 1440,
+      "expected_count": 1440,
+      "unique_example_ids": 1440,
+      "label_distribution": {
+        "0": 480,
+        "1": 480,
+        "2": 480
+      },
+      "condition_polarity_distribution": {
+        "ambig_neg": 360,
+        "disambig_neg": 360,
+        "ambig_nonneg": 360,
+        "disambig_nonneg": 360
+      },
+      "errors_count": 0,
+      "errors_sample": []
+    },
+    "BanglaBBQ_Ethnicity_FINAL_english.jsonl": {
+      "file": "BanglaBBQ_Ethnicity_FINAL_english.jsonl",
+      "path": "candidates/BanglaBBQ_Ethnicity_FINAL_english.jsonl",
+      "line_count": 1440,
+      "expected_count": 1440,
+      "unique_example_ids": 1440,
+      "label_distribution": {
+        "0": 480,
+        "1": 480,
+        "2": 480
+      },
+      "condition_polarity_distribution": {
+        "ambig_neg": 360,
+        "disambig_neg": 360,
+        "ambig_nonneg": 360,
+        "disambig_nonneg": 360
+      },
+      "errors_count": 0,
+      "errors_sample": []
+    },
+    "BanglaBBQ_Ethnicity_FINAL_bengali.jsonl": {
+      "file": "BanglaBBQ_Ethnicity_FINAL_bengali.jsonl",
+      "path": "candidates/BanglaBBQ_Ethnicity_FINAL_bengali.jsonl",
+      "line_count": 1440,
+      "expected_count": 1440,
+      "unique_example_ids": 1440,
+      "label_distribution": {
+        "0": 480,
+        "1": 480,
+        "2": 480
+      },
+      "condition_polarity_distribution": {
+        "ambig_neg": 360,
+        "disambig_neg": 360,
+        "ambig_nonneg": 360,
+        "disambig_nonneg": 360
+      },
+      "errors_count": 0,
+      "errors_sample": []
+    },
+    "Health_Status_Q02_Q04_Q05_Q07_prototype_english.jsonl": {
+      "file": "Health_Status_Q02_Q04_Q05_Q07_prototype_english.jsonl",
+      "path": "prototypes/Health_Status_Q02_Q04_Q05_Q07_prototype_english.jsonl",
+      "line_count": 576,
+      "expected_count": 576,
+      "unique_example_ids": 576,
+      "label_distribution": {
+        "0": 192,
+        "1": 192,
+        "2": 192
+      },
+      "condition_polarity_distribution": {
+        "ambig_neg": 144,
+        "disambig_neg": 144,
+        "ambig_nonneg": 144,
+        "disambig_nonneg": 144
+      },
+      "errors_count": 0,
+      "errors_sample": []
+    },
+    "Health_Status_Q02_Q04_Q05_Q07_prototype_bengali.jsonl": {
+      "file": "Health_Status_Q02_Q04_Q05_Q07_prototype_bengali.jsonl",
+      "path": "prototypes/Health_Status_Q02_Q04_Q05_Q07_prototype_bengali.jsonl",
+      "line_count": 576,
+      "expected_count": 576,
+      "unique_example_ids": 576,
+      "label_distribution": {
+        "0": 192,
+        "1": 192,
+        "2": 192
+      },
+      "condition_polarity_distribution": {
+        "ambig_neg": 144,
+        "disambig_neg": 144,
+        "ambig_nonneg": 144,
+        "disambig_nonneg": 144
+      },
+      "errors_count": 0,
+      "errors_sample": []
+    },
+    "Physical_Appearance_Q02_prototype_english.jsonl": {
+      "file": "Physical_Appearance_Q02_prototype_english.jsonl",
+      "path": "prototypes/Physical_Appearance_Q02_prototype_english.jsonl",
+      "line_count": 144,
+      "expected_count": 144,
+      "unique_example_ids": 144,
+      "label_distribution": {
+        "0": 48,
+        "1": 48,
+        "2": 48
+      },
+      "condition_polarity_distribution": {
+        "ambig_neg": 36,
+        "disambig_neg": 36,
+        "ambig_nonneg": 36,
+        "disambig_nonneg": 36
+      },
+      "errors_count": 0,
+      "errors_sample": []
+    },
+    "Physical_Appearance_Q02_prototype_bengali.jsonl": {
+      "file": "Physical_Appearance_Q02_prototype_bengali.jsonl",
+      "path": "prototypes/Physical_Appearance_Q02_prototype_bengali.jsonl",
+      "line_count": 144,
+      "expected_count": 144,
+      "unique_example_ids": 144,
+      "label_distribution": {
+        "0": 48,
+        "1": 48,
+        "2": 48
+      },
+      "condition_polarity_distribution": {
+        "ambig_neg": 36,
+        "disambig_neg": 36,
+        "ambig_nonneg": 36,
+        "disambig_nonneg": 36
+      },
+      "errors_count": 0,
+      "errors_sample": []
+    },
+    "Social_Status_Q07_V3_prototype_english.jsonl": {
+      "file": "Social_Status_Q07_V3_prototype_english.jsonl",
+      "path": "prototypes/Social_Status_Q07_V3_prototype_english.jsonl",
+      "line_count": 48,
+      "expected_count": 48,
+      "unique_example_ids": 48,
+      "label_distribution": {
+        "0": 16,
+        "1": 16,
+        "2": 16
+      },
+      "condition_polarity_distribution": {
+        "ambig_neg": 12,
+        "disambig_neg": 12,
+        "ambig_nonneg": 12,
+        "disambig_nonneg": 12
+      },
+      "errors_count": 0,
+      "errors_sample": []
+    },
+    "Social_Status_Q07_V3_prototype_bengali.jsonl": {
+      "file": "Social_Status_Q07_V3_prototype_bengali.jsonl",
+      "path": "prototypes/Social_Status_Q07_V3_prototype_bengali.jsonl",
+      "line_count": 48,
+      "expected_count": 48,
+      "unique_example_ids": 48,
+      "label_distribution": {
+        "0": 16,
+        "1": 16,
+        "2": 16
+      },
+      "condition_polarity_distribution": {
+        "ambig_neg": 12,
+        "disambig_neg": 12,
+        "ambig_nonneg": 12,
+        "disambig_nonneg": 12
+      },
+      "errors_count": 0,
+      "errors_sample": []
+    }
+  }
+}
