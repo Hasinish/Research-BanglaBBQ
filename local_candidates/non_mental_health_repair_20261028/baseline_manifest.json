@@ -1,0 +1,185 @@
+{
+  "metadata": {
+    "title": "BanglaBBQ Non-Mental-Health Baseline Manifest",
+    "generation_timestamp": "2026-10-27T20:47:50.320679+00:00",
+    "source_git_commit": "6967700fcb34dd83a0ba2af78bad2d4fcfd0ed65",
+    "active_review_branch": "review/non-mental-health-repair-20261028",
+    "google_spreadsheet_id": "1xZhhKZoZuSy-ZXAWWdhCpq9QLh705ScErcnBZacmZnY",
+    "google_spreadsheet_import_date": "2026-10-26",
+    "total_categories": 7,
+    "expected_records_per_language": 10080,
+    "expected_total_records": 20160,
+    "policy": "NON-DESTRUCTIVE - ZERO MUTATIONS TO Dataset_BanglaBBQ_New OR LIVE SPREADSHEETS"
+  },
+  "protected_boundaries": {
+    "historical_thesis_dataset": {
+      "path": "Dataset_ BanglaBBQ_Old/",
+      "protection": "READ-ONLY IMMUTABLE (Preserve byte-for-byte lineage)"
+    },
+    "canonical_production_dataset": {
+      "path": "Dataset_BanglaBBQ_New/",
+      "protection": "PROTECTED - No direct writes authorized in this task"
+    },
+    "master_google_spreadsheet": {
+      "spreadsheet_id": "1xZhhKZoZuSy-ZXAWWdhCpq9QLh705ScErcnBZacmZnY",
+      "protection": "PROTECTED - No live cell edits authorized in this task"
+    },
+    "mental_health_expansion": {
+      "reserved_category": "Health Status Themes Q11-Q20 (IDs 1440-2879)",
+      "protection": "STRICT EXCLUSION - Managed in separate designated research chat"
+    },
+    "marital_status_male_expansion": {
+      "reserved_category": "Marital Status Themes Q11-Q20",
+      "protection": "STRICT EXCLUSION - Managed in separate designated research chat"
+    },
+    "occupational_background_expansion": {
+      "reserved_category": "Occupational Background Themes Q11-Q20",
+      "protection": "STRICT EXCLUSION - Managed in separate designated research chat"
+    },
+    "completed_categories_regression_only": {
+      "categories": [
+        "Age",
+        "Gender Identity",
+        "Educational Background",
+        "Religion",
+        "Politics"
+      ],
+      "protection": "READ-ONLY REGRESSION MONITORING - No unnecessary rewrites"
+    }
+  },
+  "baseline_files": {
+    "Physical Appearance": {
+      "folder": "BanglaBBQ_PhysicalAppearance",
+      "english": {
+        "filename": "BanglaBBQ_Physical_Appearance_FINAL_english.jsonl",
+        "relative_path": "Dataset_BanglaBBQ_New/BanglaBBQ_PhysicalAppearance/BanglaBBQ_Physical_Appearance_FINAL_english.jsonl",
+        "sha256": "d627f5faebefe71fa7dd88c74f9f061eac88ad03dd26e4487f0b63e50874172e",
+        "row_count": 1440,
+        "google_sheet_tab_id": "984262367",
+        "schema_valid": true
+      },
+      "bengali": {
+        "filename": "BanglaBBQ_Physical_Appearance_FINAL_bengali.jsonl",
+        "relative_path": "Dataset_BanglaBBQ_New/BanglaBBQ_PhysicalAppearance/BanglaBBQ_Physical_Appearance_FINAL_bengali.jsonl",
+        "sha256": "b52529fec733cb6a6ec4a298949128ca271797a4e7bcf9996373dc0acdab8596",
+        "row_count": 1440,
+        "google_sheet_tab_id": "934839633",
+        "schema_valid": true
+      }
+    },
+    "Social Status": {
+      "folder": "BanglaBBQ_SocialStatus",
+      "english": {
+        "filename": "BanglaBBQ_SocialStatus_FINAL_english.jsonl",
+        "relative_path": "Dataset_BanglaBBQ_New/BanglaBBQ_SocialStatus/BanglaBBQ_SocialStatus_FINAL_english.jsonl",
+        "sha256": "ab73bed7cd10c5d0075b770f62f4669aa9d79714b2c3b4b4491a4255238a9c83",
+        "row_count": 1440,
+        "google_sheet_tab_id": "1061280109",
+        "schema_valid": true
+      },
+      "bengali": {
+        "filename": "BanglaBBQ_SocialStatus_FINAL_bengali.jsonl",
+        "relative_path": "Dataset_BanglaBBQ_New/BanglaBBQ_SocialStatus/BanglaBBQ_SocialStatus_FINAL_bengali.jsonl",
+        "sha256": "e7a084880cd3800a65b2e7dbe25261aea36fc4ae84a84160f536c291aca47fa8",
+        "row_count": 1440,
+        "google_sheet_tab_id": "1761692098",
+        "schema_valid": true
+      }
+    },
+    "Health Status": {
+      "folder": "BanglaBBQ_HealthStatus",
+      "english": {
+        "filename": "BanglaBBQ_Health_Status_FINAL_english.jsonl",
+        "relative_path": "Dataset_BanglaBBQ_New/BanglaBBQ_HealthStatus/BanglaBBQ_Health_Status_FINAL_english.jsonl",
+        "sha256": "89c2a814f389373109f9e2a7054357c7c47167caaaf16d051615137f7284865b",
+        "row_count": 1440,
+        "google_sheet_tab_id": "577820949",
+        "schema_valid": true
+      },
+      "bengali": {
+        "filename": "BanglaBBQ_Health_Status_FINAL_bengali.jsonl",
+        "relative_path": "Dataset_BanglaBBQ_New/BanglaBBQ_HealthStatus/BanglaBBQ_Health_Status_FINAL_bengali.jsonl",
+        "sha256": "7a18f485010038bc1b3902dc5cb37530ba03fd4e15104dc225b37d9cb9adb23f",
+        "row_count": 1440,
+        "google_sheet_tab_id": "1261981579",
+        "schema_valid": true
+      }
+    },
+    "Regional Affiliation": {
+      "folder": "BanglaBBQ_Regional",
+      "english": {
+        "filename": "BanglaBBQ_Regional_FINAL_english.jsonl",
+        "relative_path": "Dataset_BanglaBBQ_New/BanglaBBQ_Regional/BanglaBBQ_Regional_FINAL_english.jsonl",
+        "sha256": "939a6fea261c0a71a34cac9514231aa315aac040b6ce1fb944912adffc469a68",
+        "row_count": 1440,
+        "google_sheet_tab_id": "1321419120",
+        "schema_valid": true
+      },
+      "bengali": {
+        "filename": "BanglaBBQ_Regional_FINAL_bengali.jsonl",
+        "relative_path": "Dataset_BanglaBBQ_New/BanglaBBQ_Regional/BanglaBBQ_Regional_FINAL_bengali.jsonl",
+        "sha256": "024d8f36bbb53a57ba0cda73572ecd235836349dbf55ebc5f6926189551c1e45",
+        "row_count": 1440,
+        "google_sheet_tab_id": "786932138",
+        "schema_valid": true
+      }
+    },
+    "Ethnicity": {
+      "folder": "BanglaBBQ_Ethnicity",
+      "english": {
+        "filename": "BanglaBBQ_Ethnicity_FINAL_english.jsonl",
+        "relative_path": "Dataset_BanglaBBQ_New/BanglaBBQ_Ethnicity/BanglaBBQ_Ethnicity_FINAL_english.jsonl",
+        "sha256": "7aeb145ff24dc91a9359275ae60fb56a795321012c004c777910b9838cf8cff9",
+        "row_count": 1440,
+        "google_sheet_tab_id": "210887456",
+        "schema_valid": true
+      },
+      "bengali": {
+        "filename": "BanglaBBQ_Ethnicity_FINAL_bengali.jsonl",
+        "relative_path": "Dataset_BanglaBBQ_New/BanglaBBQ_Ethnicity/BanglaBBQ_Ethnicity_FINAL_bengali.jsonl",
+        "sha256": "dbca31740838e7608adcacac3b0961073cd3fd81a02d9cd6758450c5254a1d97",
+        "row_count": 1440,
+        "google_sheet_tab_id": "1845601757",
+        "schema_valid": true
+      }
+    },
+    "Occupational Background": {
+      "folder": "BanglaBBQ_OccupationalBackground",
+      "english": {
+        "filename": "BanglaBBQ_Occupational_Background_FINAL_english.jsonl",
+        "relative_path": "Dataset_BanglaBBQ_New/BanglaBBQ_OccupationalBackground/BanglaBBQ_Occupational_Background_FINAL_english.jsonl",
+        "sha256": "c3c7542dec09163c959e0b19d92f3e363eaf99a998fa146b5202fffc341b72a5",
+        "row_count": 1440,
+        "google_sheet_tab_id": "1499154542",
+        "schema_valid": true
+      },
+      "bengali": {
+        "filename": "BanglaBBQ_Occupational_Background_FINAL_bengali.jsonl",
+        "relative_path": "Dataset_BanglaBBQ_New/BanglaBBQ_OccupationalBackground/BanglaBBQ_Occupational_Background_FINAL_bengali.jsonl",
+        "sha256": "4f3976f8d5183e0b617bca3b45031f6b71ddc2122e15c14bb9c1618894cd3f23",
+        "row_count": 1440,
+        "google_sheet_tab_id": "934780717",
+        "schema_valid": true
+      }
+    },
+    "Marital Status": {
+      "folder": "BanglaBBQ_MaritalStatus",
+      "english": {
+        "filename": "BanglaBBQ_MaritalStatus_FINAL_english.jsonl",
+        "relative_path": "Dataset_BanglaBBQ_New/BanglaBBQ_MaritalStatus/BanglaBBQ_MaritalStatus_FINAL_english.jsonl",
+        "sha256": "8c723789d477538ac9c7b14c976cb97950fd44e219c7c007e8d46ef28fcb95cf",
+        "row_count": 1440,
+        "google_sheet_tab_id": "2049623557",
+        "schema_valid": true
+      },
+      "bengali": {
+        "filename": "BanglaBBQ_MaritalStatus_FINAL_bengali.jsonl",
+        "relative_path": "Dataset_BanglaBBQ_New/BanglaBBQ_MaritalStatus/BanglaBBQ_MaritalStatus_FINAL_bengali.jsonl",
+        "sha256": "96aa85ce20392677d8c192f7494d0762796ab26ddfb33854aefcdfb73a46c588",
+        "row_count": 1440,
+        "google_sheet_tab_id": "1929463163",
+        "schema_valid": true
+      }
+    }
+  }
+}

@@ -1,3 +1,16 @@
+- **[2026-10-28] Convo 85bdccd4-8ce6-4d6e-9150-5272d1f141b0**: **Comprehensive Non-Mental-Health Dataset Repair, Semantic Validation, Source Verification, and Bilingual QA**:
+  - Initialized dedicated review branch `review/non-mental-health-repair-20261028` from verified main commit `6967700`.
+  - Reconstructed cryptographic baseline manifest across all 7 modernized categories (10,080 records per language; 20,160 total rows) and locked production immutability.
+  - Eliminated severe positional shortcut (100% first-person) across Health Status, Regional Affiliation, Ethnicity, and Social Status candidates, achieving exact **180 First / 180 Second (50.0% / 50.0%)** negative disambiguated gold position parity in both English and Bengali, dropping first-mention heuristic accuracy from 100% to 50% random chance.
+  - Mathematically proved theme-level residual skew (24:12 or 12:24) as a combinatorial necessity of 6-way permutation closure within 48-record variations.
+  - Completely eradicated artificial participant placeholders (`student A/B`, `শিক্ষার্থী ক/খ`) across all 10 Ethnicity themes, replacing them with authentic, culturally vetted Bangladeshi Indigenous and Bengali names (0 bad rows remaining).
+  - Integrated 576 non-contagion somatic prototypes for Health Status Q02/04/05/07 and procedural compliance prototype for Social Status Q07 V3.
+  - Reinspected Physical Appearance Q02 production records; verified they already use non-visual audition roles ("behind-the-camera script editing", "voice-only work", "subtitle editing"); correctly rejected bank-auditing replacement.
+  - Audited all 70 source themes: classified into strict 5-tier evidence hierarchy (32 directly supported, 31 contextually supported, 2 historical only, 5 unsupported); blocked 5 unsupported/satirical citations from production release.
+  - Designed and executed independent gold-blind semantic validator (`independent_semantic_validator.py`); verified **13/13 (100.0%) rejections on adversarial suite**; achieved **822/960 (85.6%) independent validation** across distinct semantic cases.
+  - Rebuilt complete bilingual review queue (`bilingual_review_queue.csv`) with 53 full-text items (0 placeholder strings, 0 truncated variation IDs).
+  - Generated full review package under `local_candidates/non_mental_health_repair_20261028/`: baseline manifest, change ledger (16,200 modifications), issue register, position audit, QA dashboard, unresolved blockers, and production integration plan.
+  - Strictly respected concurrency: 0 production mutations, 0 Google Sheets writes, Mental Health expansion (Q11–Q20) untouched.
 - **[2026-10-28] Convo 6d384304-905b-431b-9ba6-ca96aa8f3cec**: **Zero-Assumption Independent Source & Semantic Forensic Audit of Seven Modernized Categories**:
   - Executed a rigorous, read-only forensic audit across 6 positional candidate JSONLs (Health Status, Regional Affiliation, Ethnicity), 6 content prototype JSONLs (Health Status Q02/04/05/07, Physical Appearance Q02, Social Status Q07 V3), and all 70 source-evidence themes under `local_candidates/final_seven_category_qa/independent_source_semantic_audit/`.
   - Verified 100% cryptographic input hash invariance pre- and post-audit (19/19 files verified bit-for-bit identical; 0 production writes; 0 candidate mutations).

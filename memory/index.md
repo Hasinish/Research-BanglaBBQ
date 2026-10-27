@@ -39,6 +39,8 @@ Research-BanglaBBQ/
 │   ├── banglabbq_physical_appearance_readonly_research_bundle/
 │   ├── banglabbq_regional_research_bundle/
 │   └── banglabbq_social_status_complete/
+├── local_candidates/            # Review package candidates and audit reports
+│   └── non_mental_health_repair_20261028/ # 2026-10-28 Candidate repairs, reports, and manifests
 ├── docs/                        # Academic papers and historical audit reports
 │   ├── papers/                  # Undergraduate thesis book & IEEE conference paper
 │   └── reports/                 # Historical expansion and correction JSON reports
