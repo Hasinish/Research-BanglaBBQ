@@ -1,0 +1,41 @@
+name: Continuous Google Drive Synchronization on Main
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'Dataset_BanglaBBQ_New/**'
+      - 'scripts/sync_drive_dataset.py'
+
+jobs:
+  sync-drive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib
+
+      - name: Pre-Flight Invariant Validation
+        run: |
+          python scripts/sync_drive_dataset.py --validate-only
+
+      - name: Synchronize Google Drive (if token secret available)
+        env:
+          GDRIVE_TOKEN: ${{ secrets.GDRIVE_TOKEN }}
+        run: |
+          if [ -n "$GDRIVE_TOKEN" ]; then
+            echo "$GDRIVE_TOKEN" > token.json
+            python scripts/sync_drive_dataset.py
+          else
+            echo "::notice ::Google Drive OAuth secret GDRIVE_TOKEN not configured in GitHub repository secrets. Continuous local synchronization is enforced via .githooks/post-merge and .githooks/post-commit."
+          fi

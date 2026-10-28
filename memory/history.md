@@ -15,6 +15,9 @@
   - Merged PR #1 into main via GitHub API; merge commit SHA: c0e55820d8f04469ae11787cbab02fdb70e2c353.
   - Synchronized local main with origin/main at c0e5582; verified exact line counts across all 24 canonical JSONLs (Health Status: 2,880, Marital Status: 2,880, Occupational Background: 2,880).
   - Documented explicit scientific limitations: inherited somatic Q01-Q10 positional shortcut in Health Status preserved and explicitly documented; clinical, sociological, and native Bengali linguistic peer reviews pending.
+  - Upgraded Google Drive synchronizer scripts/sync_drive_dataset.py with 5 enterprise safety gates: (1) Pre-flight invariant validation (schema, 15 fields, sequential IDs, exact row counts), (2) SHA-256 and MD5 dual-hash verification against Drive native checksums and custom properties, (3) Anomaly detection for missing, outdated, and unexpected files, (4) In-place safe updates preserving Drive IDs, (5) Post-sync verification gate auditing all 24 remote files (100% PASS).
+  - Implemented automated syncing lifecycle: created .githooks/post-merge, .githooks/post-commit (configured via core.hooksPath), and GitHub Actions workflow .github/workflows/sync_drive_on_main.yml.
+  - Added unit test suite 	ests/test_drive_sync_safety.py certifying that invalid datasets, corrupted schemas, and wrong line counts are rejected before remote operations.
 
 - **[2026-10-28] Convo 6d384304-905b-431b-9ba6-ca96aa8f3cec**: **Zero-Assumption Independent Source & Semantic Forensic Audit of Seven Modernized Categories**:
   - Executed a rigorous, read-only forensic audit across 6 positional candidate JSONLs (Health Status, Regional Affiliation, Ethnicity), 6 content prototype JSONLs (Health Status Q02/04/05/07, Physical Appearance Q02, Social Status Q07 V3), and all 70 source-evidence themes under `local_candidates/final_seven_category_qa/independent_source_semantic_audit/`.

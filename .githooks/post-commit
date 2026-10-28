@@ -1,0 +1,23 @@
+#!/bin/sh
+# .githooks/post-commit
+# Automatically syncs Google Drive when changes in Dataset_BanglaBBQ_New are committed to main.
+
+BRANCH=$(git rev-parse --abbrev-ref HEAD)
+if [ "$BRANCH" = "main" ]; then
+    CHANGED=$(git diff-tree -r --name-only --no-commit-id HEAD 2>/dev/null | grep -E '^Dataset_BanglaBBQ_New/')
+    if [ -n "$CHANGED" ]; then
+        echo ""
+        echo "======================================================================"
+        echo "[GIT HOOK] Production dataset commit detected on main."
+        echo "[GIT HOOK] Triggering Google Drive synchronization..."
+        echo "======================================================================"
+        python scripts/sync_drive_dataset.py
+        HOOK_EXIT=$?
+        if [ $HOOK_EXIT -ne 0 ]; then
+            echo "[GIT HOOK WARNING] Google Drive synchronization failed with exit code $HOOK_EXIT."
+        else
+            echo "[GIT HOOK SUCCESS] Google Drive mirror updated and verified."
+        fi
+        echo "======================================================================"
+    fi
+fi

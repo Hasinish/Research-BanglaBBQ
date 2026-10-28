@@ -71,10 +71,13 @@
 **Master Google Drive Link**: [https://drive.google.com/drive/folders/1_Ui3wfvYvEF9b8HWsMZc7QUB2iID8Ibe](https://drive.google.com/drive/folders/1_Ui3wfvYvEF9b8HWsMZc7QUB2iID8Ibe)  
 **Synchronization Script**: scripts/sync_drive_dataset.py
 
-> **Continuous Synchronization Rule**:
-> Dataset_BanglaBBQ_New on Google Drive must ALWAYS contain the exact, latest production JSONL files.
-> Whenever any JSONL file in Dataset_BanglaBBQ_New/ is modified, expanded, or repaired, python scripts/sync_drive_dataset.py MUST be executed immediately.
-> The sync script updates remote files in-place using the Google Drive API without creating duplicate files or changing folder IDs.
+> **Continuous Synchronization Rule & Safety Architecture**:
+> Dataset_BanglaBBQ_New on Google Drive must ALWAYS mirror GitHub main bit-for-bit.
+> 1. **Dual-Hash Auditing**: SHA-256 (custom properties.sha256) and MD5 (native md5Checksum) compared against local files.
+> 2. **Pre-Flight Invariant Validation**: Before remote transmission, local files must pass 15-field schema, sequential ID, valid label (0/1/2), and exact row count checks (2,880 for expanded, 2,920 for Age, 4,696 for Gender, 1,440 for unexpanded). Never overwrites approved remote data with unvalidated files.
+> 3. **Anomaly Detection**: Flags missing, outdated, and unexpected files across all 12 category folders.
+> 4. **Automated Lifecycle Sync**: Triggered automatically via local git hooks (.githooks/post-merge, .githooks/post-commit) and CI (.github/workflows/sync_drive_on_main.yml) whenever changes reach main.
+> 5. **Exhaustive Post-Sync Gate**: All 24 canonical files are read back and audited against expected hashes and line counts, requiring 100% PASS.
 
 ---
 
