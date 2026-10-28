@@ -1,0 +1,101 @@
+{
+  "project": "BanglaBBQ existing Marital_status append-only male-themed expansion Q11-Q20",
+  "status": "CANDIDATE_OFFLINE_STRUCTURAL_QA; NOT PUBLICATION_READY",
+  "source_github_repository": "https://github.com/Hasinish/Research-BanglaBBQ",
+  "source_github_commit_sha": "6967700fcb34dd83a0ba2af78bad2d4fcfd0ed65",
+  "source_english_repo_path": "Dataset_BanglaBBQ_New/BanglaBBQ_MaritalStatus/BanglaBBQ_MaritalStatus_FINAL_english.jsonl",
+  "source_bengali_repo_path": "Dataset_BanglaBBQ_New/BanglaBBQ_MaritalStatus/BanglaBBQ_MaritalStatus_FINAL_bengali.jsonl",
+  "append_only": true,
+  "explicit_do_not_overwrite_original_1440_records": true,
+  "no_external_writes_performed": true,
+  "existing_example_id_range": [
+    0,
+    1439
+  ],
+  "existing_id_range": [
+    8700000,
+    8701439
+  ],
+  "new_example_id_range": [
+    1440,
+    2879
+  ],
+  "new_id_range": [
+    8701440,
+    8702879
+  ],
+  "question_indices_as_strings": [
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20"
+  ],
+  "category": "Marital_status",
+  "schema_fields": [
+    "example_id",
+    "question_index",
+    "question_polarity",
+    "context_condition",
+    "category",
+    "answer_info",
+    "additional_metadata",
+    "context",
+    "question",
+    "ans0",
+    "ans1",
+    "ans2",
+    "label",
+    "type",
+    "id"
+  ],
+  "records_to_append_per_language": 1440,
+  "expected_post_import_total_per_language": 2880,
+  "variation_order": "V1 all Q11-Q20, V2 all Q11-Q20, V3 all Q11-Q20",
+  "orientation_records_per_variation": {
+    "a": 24,
+    "b": 24
+  },
+  "source_evidence_tiers_by_theme": {
+    "Q11": "DIRECT",
+    "Q12": "CONTEXTUAL",
+    "Q13": "DIRECT_GENERAL",
+    "Q14": "DIRECT_GENERAL",
+    "Q15": "DIRECT_GENERAL",
+    "Q16": "CONTEXTUAL",
+    "Q17": "DIRECT_GENERAL",
+    "Q18": "CONTEXTUAL",
+    "Q19": "DIRECT_GENERAL",
+    "Q20": "DIRECT_GENERAL"
+  },
+  "human_language_review": "NOT PERFORMED",
+  "human_source_relevance_adjudication": "NOT PERFORMED",
+  "import_instruction": "Append JSONL rows only after human approval; do not alter original IDs 0-1439 or any Google Sheets rows without new authorization.",
+  "files": {
+    "BanglaBBQ_Marital_Male_Q11_Q20_english.jsonl": {
+      "records": 1440,
+      "size_bytes": 1362576,
+      "sha256": "981bf2a86be627273691cc7289ccf46852b421313cf5bfa889b3afe306f10bd9"
+    },
+    "BanglaBBQ_Marital_Male_Q11_Q20_bengali.jsonl": {
+      "records": 1440,
+      "size_bytes": 2324208,
+      "sha256": "41e41fc146dcc5c0f54c5ec621dc97dd062bd327835482956fa6ea17220f54c6"
+    },
+    "marital_male_theme_manifest.csv": {
+      "records": 30,
+      "size_bytes": 34545,
+      "sha256": "c6be47605430c9ab5c16789595b6c4a24fb2db608a16133d07ad0392645fc56a"
+    },
+    "marital_male_sources.csv": {
+      "records": 10,
+      "size_bytes": 7709,
+      "sha256": "cbd9c920dd1690affd9aac8d89d7d668afd0d8400dc96ec89b44a1b7c6362fca"
+    }
+  }
+}
