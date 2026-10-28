@@ -1,0 +1,151 @@
+{
+  "kind": "CANDIDATE_APPEND_ONLY_NOT_APPROVED",
+  "created_utc_date": "2026-10-28",
+  "repository": "https://github.com/Hasinish/Research-BanglaBBQ",
+  "github_baseline_branch": "main",
+  "github_baseline_commit_sha": "b4069d9cb9b20bf9466eb825ce7feacfb01d6fca",
+  "baseline_english_path": "Dataset_BanglaBBQ_New/BanglaBBQ_OccupationalBackground/BanglaBBQ_Occupational_Background_FINAL_english.jsonl",
+  "baseline_bengali_path": "Dataset_BanglaBBQ_New/BanglaBBQ_OccupationalBackground/BanglaBBQ_Occupational_Background_FINAL_bengali.jsonl",
+  "verified_baseline_git_blob_sha_english": "927914815b0e2737ee87a6165f4bd8fd415a170a",
+  "verified_baseline_git_blob_sha_bengali": "a104e171e91dac8377fbec3eb028922449e24753",
+  "baseline_record_count_per_language": 1440,
+  "extension_record_count_per_language": 1440,
+  "expected_final_record_count_after_approved_append_per_language": 2880,
+  "expected_example_id_range": [
+    1440,
+    2879
+  ],
+  "expected_id_range": [
+    8601440,
+    8602879
+  ],
+  "id_rule": "id = 8600000 + example_id",
+  "question_index_type": "string",
+  "question_index_allowed_values": [
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20"
+  ],
+  "schema_columns": [
+    "example_id",
+    "question_index",
+    "question_polarity",
+    "context_condition",
+    "category",
+    "answer_info",
+    "additional_metadata",
+    "context",
+    "question",
+    "ans0",
+    "ans1",
+    "ans2",
+    "label",
+    "type",
+    "id"
+  ],
+  "category_value": "Occupational_background",
+  "type_value": "NA",
+  "source_identifiers": {
+    "Q11": {
+      "source_id": "SRC-Q11",
+      "url": "https://www.nature.com/articles/s41598-024-68327-5",
+      "evidence_status": "EVIDENCE_QUALIFIED"
+    },
+    "Q12": {
+      "source_id": "SRC-Q12",
+      "url": "https://journals.sagepub.com/doi/full/10.1177/03063070221081578",
+      "evidence_status": "BLOCKED_SOURCE_EXTRAPOLATION"
+    },
+    "Q13": {
+      "source_id": "SRC-Q13",
+      "url": "https://www.thedailystar.net/news/bangladesh/news/66-people-think-civil-servants-behave-rulers-3820281",
+      "evidence_status": "EVIDENCE_QUALIFIED"
+    },
+    "Q14": {
+      "source_id": "SRC-Q14",
+      "url": "https://journal.bup-jibs.org/index.php/bup/article/view/89",
+      "evidence_status": "BLOCKED_SOURCE_EXTRAPOLATION"
+    },
+    "Q15": {
+      "source_id": "SRC-Q15",
+      "url": "https://doi.org/10.1163/27715086-20250001",
+      "evidence_status": "BLOCKED_SOURCE_EXTRAPOLATION"
+    },
+    "Q16": {
+      "source_id": "SRC-Q16",
+      "url": "https://doi.org/10.1163/27715086-20250001",
+      "evidence_status": "EVIDENCE_QUALIFIED"
+    },
+    "Q17": {
+      "source_id": "SRC-Q17",
+      "url": "https://doi.org/10.1080/09614520220127694",
+      "evidence_status": "EVIDENCE_QUALIFIED"
+    },
+    "Q18": {
+      "source_id": "SRC-Q18",
+      "url": "https://www.gov.uk/research-for-development-outputs/the-problem-with-teachers-the-political-settlement-and-education-quality-reforms-in-bangladesh",
+      "evidence_status": "EVIDENCE_QUALIFIED"
+    },
+    "Q19": {
+      "source_id": "SRC-Q19",
+      "url": "https://en.prothomalo.com/opinion/productivity-during-work-from-home",
+      "evidence_status": "EVIDENCE_QUALIFIED"
+    },
+    "Q20": {
+      "source_id": "SRC-Q20",
+      "url": "https://link.springer.com/article/10.1007/s44282-025-00256-8",
+      "evidence_status": "EVIDENCE_QUALIFIED"
+    }
+  },
+  "intro_order_design": "15 of 30 target-first, 15 comparison-first; five of each per wave; initial person mention reversed across versions while careers swap, outcomes stay tied to the same name.",
+  "remote_work_category_note": "Q19 tests a work arrangement, not a standalone profession. Interpret separately in occupational-background reporting.",
+  "blocked_themes_not_ready_for_import": [
+    "Q12",
+    "Q14",
+    "Q15"
+  ],
+  "readiness": "NOT_READY_FOR_IMPORT: source relevance and independent Bengali linguistic review pending; themes Q12/Q14/Q15 BLOCKED.",
+  "mandatory_warning": "APPEND ONLY after independent approval; NEVER overwrite or reorder existing Q01-Q10 or other categories. Do NOT import while any theme is BLOCKED.",
+  "files": {
+    "BanglaBBQ_Occupational_Professional_Q11_Q20_english.jsonl": {
+      "sha256": "d74754a97c5b70510dfbaa5cd722fd26598555b251728b16da969f75b7dc4ae0",
+      "bytes": 2019336
+    },
+    "BanglaBBQ_Occupational_Professional_Q11_Q20_bengali.jsonl": {
+      "sha256": "a66e33e1f69d1b64c6044502b85eb186b8412c41c30e32885f620a2a52dcd293",
+      "bytes": 4037976
+    },
+    "occupational_professional_theme_manifest.csv": {
+      "sha256": "15eb22769ccc9bb41ccea70d679baf8cf8a03a787b3eebcda76a13c823b9e4e3",
+      "bytes": 23772
+    },
+    "occupational_professional_sources.csv": {
+      "sha256": "f588de51e6d2f94f9050c1e6ff1d8bc835212b49ee4931dd2ef517b96a3a0ab5",
+      "bytes": 8435
+    }
+  },
+  "package_content_hashes_version": "SHA-256 hashes cover both JSONL payloads and both CSV imports; the manifest cannot self-hash without a circular dependency.",
+  "required_deliverable_filenames": [
+    "BanglaBBQ_Occupational_Professional_Q11_Q20_english.jsonl",
+    "BanglaBBQ_Occupational_Professional_Q11_Q20_bengali.jsonl",
+    "occupational_professional_theme_manifest.csv",
+    "occupational_professional_sources.csv",
+    "occupational_professional_validation.py",
+    "occupational_professional_QA_report.md",
+    "occupational_professional_import_manifest.json"
+  ],
+  "reproducibility_support_filenames": [
+    "occupational_professional_generate.py",
+    "validation_results.json"
+  ],
+  "official_dataset_modified": false,
+  "github_modified": false,
+  "google_sheets_modified": false
+}
