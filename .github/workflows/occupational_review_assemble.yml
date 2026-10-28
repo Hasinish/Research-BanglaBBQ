@@ -1,0 +1,36 @@
+name: Assemble occupational Q11-Q20 review artifact
+on:
+  push:
+    branches:
+      - review/occupational-professional-q11-q20-20261028
+    paths:
+      - .github/workflows/occupational_review_assemble.yml
+permissions:
+  contents: write
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Concatenate byte-identical Bengali shards and verify both language files
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd review_submissions/occupational_professional_q11_q20_2026-10-28
+          cat staging/BanglaBBQ_Occupational_Professional_Q11_Q20_bengali.part01.jsonl staging/BanglaBBQ_Occupational_Professional_Q11_Q20_bengali.part02.jsonl staging/BanglaBBQ_Occupational_Professional_Q11_Q20_bengali.part03.jsonl > BanglaBBQ_Occupational_Professional_Q11_Q20_bengali.jsonl
+          printf '%s  %s\n' ad8ccc27bd5c120eecca1a051bddd22444093a8b8fede3c4cfb2b467dae67fd7 BanglaBBQ_Occupational_Professional_Q11_Q20_bengali.jsonl | sha256sum -c -
+          printf '%s  %s\n' eaa30f1eeb515f503f1c795dc34e779873b7c63a38ca4b769065ec637983e452 BanglaBBQ_Occupational_Professional_Q11_Q20_english.jsonl | sha256sum -c -
+          test "$(wc -l < BanglaBBQ_Occupational_Professional_Q11_Q20_bengali.jsonl)" -eq 1440
+          test "$(wc -l < BanglaBBQ_Occupational_Professional_Q11_Q20_english.jsonl)" -eq 1440
+      - name: Commit verified bilingual review artifact to review branch only
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add review_submissions/occupational_professional_q11_q20_2026-10-28/BanglaBBQ_Occupational_Professional_Q11_Q20_bengali.jsonl
+          git diff --cached --quiet && exit 0
+          git commit -m "review(occupational): assemble exact Bengali JSONL from verified chunks"
+          git push origin HEAD:review/occupational-professional-q11-q20-20261028
