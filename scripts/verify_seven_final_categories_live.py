@@ -130,6 +130,9 @@ def verify_single_worksheet(service, title: str, exp_rows: list):
     print(f"QA AUDIT: '{title}'")
     print(f"====================================================================")
     
+    exp_count = len(exp_rows) - 1
+    exp_grid_rows = exp_count + 1
+
     # 1. Fetch metadata and formatting
     res_meta = service.spreadsheets().get(
         spreadsheetId=SPREADSHEET_ID,
@@ -143,10 +146,10 @@ def verify_single_worksheet(service, title: str, exp_rows: list):
     gp = props['gridProperties']
     
     print(f"  [1] Grid Invariants (sheetId: {sheet_id}):")
-    print(f"      Rows: {gp['rowCount']} (Expected: 1441)")
+    print(f"      Rows: {gp['rowCount']} (Expected: {exp_grid_rows})")
     print(f"      Cols: {gp['columnCount']} (Expected: 15)")
     print(f"      Frozen Rows: {gp['frozenRowCount']} (Expected: 1)")
-    assert gp['rowCount'] == 1441, f"rowCount={gp['rowCount']} != 1441"
+    assert gp['rowCount'] == exp_grid_rows, f"rowCount={gp['rowCount']} != {exp_grid_rows}"
     assert gp['columnCount'] == 15, f"columnCount={gp['columnCount']} != 15"
     assert gp['frozenRowCount'] == 1, f"frozenRowCount={gp['frozenRowCount']} != 1"
     print("      PASS: Grid dimensions and frozen header verified.")
@@ -174,18 +177,18 @@ def verify_single_worksheet(service, title: str, exp_rows: list):
     # 4. Data Cell Readback
     res_val = service.spreadsheets().values().get(
         spreadsheetId=SPREADSHEET_ID,
-        range=f"'{title}'!A1:O1441",
+        range=f"'{title}'!A1:O{exp_grid_rows}",
         valueRenderOption='UNFORMATTED_VALUE'
     ).execute()
     
     live = res_val.get('values', [])
-    assert len(live) == 1441, f"Row count: {len(live)} != 1441"
+    assert len(live) == exp_grid_rows, f"Row count: {len(live)} != {exp_grid_rows}"
     assert live[0] == HEADER, f"Header mismatch: {live[0]}"
     print("  [3] Header Row: 15 columns exact match (PASS)")
     
     mismatches = 0
-    total_data_cells = 1440 * 15
-    for r in range(1, 1441):
+    total_data_cells = exp_count * 15
+    for r in range(1, exp_grid_rows):
         lr = live[r]
         er = exp_rows[r]
         for c in range(15):
@@ -216,7 +219,10 @@ def verify_single_worksheet(service, title: str, exp_rows: list):
     
     # 5. Boundary row inspection
     print(f"  [5] Boundary Checks:")
-    for b_idx in (1, 720, 1440):
+    boundary_indices = [1, exp_count // 2, exp_count]
+    if exp_count == 2880:
+        boundary_indices = [1, 1440, 1441, 2880]
+    for b_idx in boundary_indices:
         row_val = live[b_idx]
         print(f"      Row {b_idx:4d} | ID: {row_val[14]} | Local ID: {row_val[0]} | Q_Idx: {row_val[1]} | Cond: {row_val[2]} | Pol: {row_val[3]} | Label: {row_val[10]}")
         

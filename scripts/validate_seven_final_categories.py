@@ -14,6 +14,8 @@ sys.stdout.reconfigure(encoding='utf-8')
 ROOT = Path(__file__).resolve().parents[1]
 DATASET_ROOT = ROOT / "Dataset_BanglaBBQ_New"
 
+EXPANDED_CATEGORIES = {"Health Status", "Marital Status", "Occupational Background"}
+
 CATEGORIES = [
     {
         "name": "Physical Appearance",
@@ -141,6 +143,14 @@ def validate_category(cat: dict, global_ids: dict):
     print(f"    Git Blob SHA: {ben_blob}")
     print(f"    SHA-256:      {ben_sha256}")
     
+    is_expanded = cat['name'] in EXPANDED_CATEGORIES
+    expected_rows = 2880 if is_expanded else 1440
+    expected_themes = 20 if is_expanded else 10
+    expected_labels = 960 if is_expanded else 480
+    expected_cond_totals = 1440 if is_expanded else 720
+    expected_combos = 720 if is_expanded else 360
+    expected_blocks = 120 if is_expanded else 60
+
     eng_records = []
     with open(eng_path, 'r', encoding='utf-8') as f:
         for line in f:
@@ -157,9 +167,9 @@ def validate_category(cat: dict, global_ids: dict):
                 
     # 1. Row counts
     print(f"  [1] Row count check: ENG={len(eng_records)}, BEN={len(ben_records)}")
-    assert len(eng_records) == 1440, f"Expected 1440 ENG records, got {len(eng_records)}"
-    assert len(ben_records) == 1440, f"Expected 1440 BEN records, got {len(ben_records)}"
-    print("      PASS: Exactly 1,440 rows in both files.")
+    assert len(eng_records) == expected_rows, f"Expected {expected_rows} ENG records, got {len(eng_records)}"
+    assert len(ben_records) == expected_rows, f"Expected {expected_rows} BEN records, got {len(ben_records)}"
+    print(f"      PASS: Exactly {expected_rows:,} rows in both files.")
     
     for lang, records, path in [("ENG", eng_records, eng_path), ("BEN", ben_records, ben_path)]:
         # 2. Schema check
@@ -169,21 +179,21 @@ def validate_category(cat: dict, global_ids: dict):
                 missing = EXPECTED_KEYS - keys
                 extra = keys - EXPECTED_KEYS
                 raise AssertionError(f"{lang} row {idx}: Schema mismatch! Missing: {missing}, Extra: {extra}")
-        print(f"  [2] Schema check ({lang}): All 15 keys present in 1,440 records (PASS)")
+        print(f"  [2] Schema check ({lang}): All 15 keys present in {len(records):,} records (PASS)")
         
         # 3. Label balance: exactly 480 of 0, 1, 2
         label_counts = Counter(r['label'] for r in records)
         print(f"  [3] Label distribution ({lang}): {dict(label_counts)}")
-        assert label_counts[0] == 480 and label_counts[1] == 480 and label_counts[2] == 480, \
+        assert label_counts[0] == expected_labels and label_counts[1] == expected_labels and label_counts[2] == expected_labels, \
             f"{lang} label imbalance: {label_counts}"
-        print(f"      PASS: Perfectly balanced labels (480 each for 0, 1, 2).")
+        print(f"      PASS: Perfectly balanced labels ({expected_labels} each for 0, 1, 2).")
         
         # 4. Themes: 10 themes, exactly 144 rows each
         q_indices = Counter(r['question_index'] for r in records)
-        assert len(q_indices) == 10, f"{lang}: Expected 10 themes (question_index), got {len(q_indices)}"
+        assert len(q_indices) == expected_themes, f"{lang}: Expected {expected_themes} themes (question_index), got {len(q_indices)}"
         for q_idx, count in q_indices.items():
             assert count == 144, f"{lang}: Expected 144 rows for question_index {q_idx}, got {count}"
-        print(f"  [4] Theme check ({lang}): 10 themes, exactly 144 rows per theme (PASS)")
+        print(f"  [4] Theme check ({lang}): {expected_themes} themes, exactly 144 rows per theme (PASS)")
         
         # 5. Condition distribution
         cond_counts = Counter(r['context_condition'] for r in records)
@@ -192,11 +202,11 @@ def validate_category(cat: dict, global_ids: dict):
         print(f"  [5] Conditions ({lang}): {dict(cond_counts)}, Polarity: {dict(pol_counts)}")
         assert set(cond_counts.keys()) == {'ambig', 'disambig'}, f"{lang}: Unexpected conditions: {cond_counts.keys()}"
         assert set(pol_counts.keys()) == {'neg', 'nonneg'}, f"{lang}: Unexpected polarities: {pol_counts.keys()}"
-        assert cond_counts['ambig'] == 720 and cond_counts['disambig'] == 720
-        assert pol_counts['neg'] == 720 and pol_counts['nonneg'] == 720
+        assert cond_counts['ambig'] == expected_cond_totals and cond_counts['disambig'] == expected_cond_totals
+        assert pol_counts['neg'] == expected_cond_totals and pol_counts['nonneg'] == expected_cond_totals
         for combo, count in combo_counts.items():
-            assert count == 360, f"{lang}: Combo {combo} count {count} != 360"
-        print(f"      PASS: Exactly 360 rows per (condition, polarity) 4-way combination.")
+            assert count == expected_combos, f"{lang}: Combo {combo} count {count} != {expected_combos}"
+        print(f"      PASS: Exactly {expected_combos} rows per (condition, polarity) 4-way combination.")
         
         # 6. Ambiguous Unknown-label and Disambiguated Gold-label Invariants
         unknown_terms = UNKNOWN_TERMS_ENG if lang == "ENG" else UNKNOWN_TERMS_BEN
@@ -219,7 +229,7 @@ def validate_category(cat: dict, global_ids: dict):
                 # In disambiguated contexts, the gold label must NEVER target Unknown
                 assert group_tag != 'unknown', \
                     f"{lang} row {idx} (EID {r['example_id']}): Context is 'disambig' but label {r['label']} targets 'unknown'!"
-        print(f"  [6] Gold-label logic check ({lang}): All 720 'ambig' rows resolve to Unknown; all 720 'disambig' rows resolve to non-unknown entities (PASS)")
+        print(f"  [6] Gold-label logic check ({lang}): All {expected_cond_totals} 'ambig' rows resolve to Unknown; all {expected_cond_totals} 'disambig' rows resolve to non-unknown entities (PASS)")
         
         # 7. Six-Way Answer Permutation Assertions Within Canonical Blocks
         # The 1,440 records are organized into 60 canonical blocks of 24 rows
@@ -253,7 +263,7 @@ def validate_category(cat: dict, global_ids: dict):
             # Assert all 6 distinct permutations exist in each 24-row block
             assert len(perms_in_block) == 6, \
                 f"{lang} block {b_idx} (rows {b_idx*24}–{(b_idx+1)*24-1}): Expected 6 distinct answer permutations, got {len(perms_in_block)}: {perms_in_block}"
-        print(f"  [7] Six-way answer permutation check ({lang}): All 60 canonical 24-row blocks contain all 6 permutations (3! = 6) (PASS)")
+        print(f"  [7] Six-way answer permutation check ({lang}): All {num_blocks} canonical 24-row blocks contain all 6 permutations (3! = 6) (PASS)")
         
         # 8. Local example_id sequence
         example_ids = [r['example_id'] for r in records]
@@ -264,7 +274,7 @@ def validate_category(cat: dict, global_ids: dict):
         
     # 9. Cross-Language Alignment & Metadata Verification: ENG vs BEN
     print(f"  [9] Bilingual Parity & Metadata Verification (ENG vs BEN)...")
-    for idx in range(1440):
+    for idx in range(expected_rows):
         er = eng_records[idx]
         br = ben_records[idx]
         
@@ -308,7 +318,7 @@ def validate_category(cat: dict, global_ids: dict):
         "eng_sha256": eng_sha256,
         "ben_blob": ben_blob,
         "ben_sha256": ben_sha256,
-        "records_per_lang": 1440,
+        "records_per_lang": len(eng_records),
         "category_field": eng_records[0]['category']
     }
 
