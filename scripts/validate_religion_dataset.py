@@ -202,11 +202,11 @@ def validate_religion_dataset(eng_path, ben_path):
         return True
 
 if __name__ == '__main__':
-    default_eng = 'Dataset_BanglaBBQ_New/BanglaBBQ_Religion/Religion_eng.jsonl'
-    default_ben = 'Dataset_BanglaBBQ_New/BanglaBBQ_Religion/Religion_bng.jsonl'
+    default_eng = 'Dataset_BanglaBBQ_New/BanglaBBQ_Religion/BanglaBBQ_ENG_Religion.jsonl'
+    default_ben = 'Dataset_BanglaBBQ_New/BanglaBBQ_Religion/BanglaBBQ_BEN_Religion.jsonl'
     if not os.path.exists(default_eng):
-        default_eng = 'BanglaBBQ_Religion/Religion_eng.jsonl'
-        default_ben = 'BanglaBBQ_Religion/Religion_bng.jsonl'
+        default_eng = 'BanglaBBQ_Religion/BanglaBBQ_ENG_Religion.jsonl'
+        default_ben = 'BanglaBBQ_Religion/BanglaBBQ_BEN_Religion.jsonl'
     eng_p = sys.argv[1] if len(sys.argv) > 1 else default_eng
     ben_p = sys.argv[2] if len(sys.argv) > 2 else default_ben
     success = validate_religion_dataset(eng_p, ben_p)

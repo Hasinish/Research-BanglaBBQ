@@ -383,11 +383,11 @@ def main():
         eng_path = sys.argv[1]
         ben_path = sys.argv[2]
     else:
-        eng_path = 'Dataset_BanglaBBQ_New/BanglaBBQ_Gender/Gender_identity_eng.jsonl'
-        ben_path = 'Dataset_BanglaBBQ_New/BanglaBBQ_Gender/Gender_identity_bng.jsonl'
+        eng_path = 'Dataset_BanglaBBQ_New/BanglaBBQ_Gender/BanglaBBQ_ENG_Gender.jsonl'
+        ben_path = 'Dataset_BanglaBBQ_New/BanglaBBQ_Gender/BanglaBBQ_BEN_Gender.jsonl'
         if not os.path.exists(eng_path):
-            eng_path = 'BanglaBBQ_Gender/Gender_identity_eng.jsonl'
-            ben_path = 'BanglaBBQ_Gender/Gender_identity_bng.jsonl'
+            eng_path = 'BanglaBBQ_Gender/BanglaBBQ_ENG_Gender.jsonl'
+            ben_path = 'BanglaBBQ_Gender/BanglaBBQ_BEN_Gender.jsonl'
         
     ok = validate_gender_dataset(eng_path, ben_path)
     sys.exit(0 if ok else 1)

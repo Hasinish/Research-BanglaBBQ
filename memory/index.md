@@ -10,19 +10,25 @@
 ```
 Research-BanglaBBQ/
 ├── .github/workflows/           # Automated CI workflows (invariant validation)
-├── Dataset_BanglaBBQ_New/       # Canonical Improved & Expanded BanglaBBQ Benchmark (12 Categories)
-│   ├── BanglaBBQ_Age/               # Active verified Age benchmark (2,920 ENG, 2,920 BEN)
-│   ├── BanglaBBQ_EducationalBackground/ # Active Educational Background benchmark (2,880 ENG, 2,880 BEN across 20 themes)
-│   ├── BanglaBBQ_Ethnicity/         # Canonical 1,440-record Ethnicity benchmark (FINAL)
-│   ├── BanglaBBQ_Gender/            # Active verified Gender Identity benchmark (4,696 ENG, 4,696 BEN across 34 themes)
-│   ├── BanglaBBQ_HealthStatus/      # Canonical 1,440-record Health Status benchmark (FINAL)
-│   ├── BanglaBBQ_MaritalStatus/     # Canonical 1,440-record Marital Status benchmark (FINAL)
-│   ├── BanglaBBQ_OccupationalBackground/ # Canonical 1,440-record Occupational Background benchmark (FINAL)
-│   ├── BanglaBBQ_PhysicalAppearance/ # Canonical 1,440-record Physical Appearance benchmark (FINAL)
-│   ├── BanglaBBQ_Politics/          # Active Politics benchmark (2,880 ENG, 2,880 BEN; base + V2/V3)
-│   ├── BanglaBBQ_Regional/          # Canonical 1,440-record Regional Affiliation benchmark (FINAL)
-│   ├── BanglaBBQ_Religion/          # Active Religion benchmark (2,880 ENG, 2,880 BEN; V1+V2+V3)
-│   └── BanglaBBQ_SocialStatus/      # Canonical 1,440-record Social Status benchmark (FINAL)
+├── Dataset_BanglaBBQ_New/       # Canonical Improved & Expanded BanglaBBQ Benchmark (ONLY JSONL, 24 files named after sheets)
+│   ├── BanglaBBQ_Age/               # BanglaBBQ_ENG_Age.jsonl, BanglaBBQ_BEN_Age.jsonl (2,920 records/lang)
+│   ├── BanglaBBQ_EducationalBackground/ # BanglaBBQ_ENG_Education.jsonl, BanglaBBQ_BEN_Education.jsonl (2,880 records/lang)
+│   ├── BanglaBBQ_Ethnicity/         # BanglaBBQ_ENG_Ethnicity.jsonl, BanglaBBQ_BEN_Ethnicity.jsonl (1,440 records/lang)
+│   ├── BanglaBBQ_Gender/            # BanglaBBQ_ENG_Gender.jsonl, BanglaBBQ_BEN_Gender.jsonl (4,696 records/lang)
+│   ├── BanglaBBQ_HealthStatus/      # BanglaBBQ_ENG_HealthStatus.jsonl, BanglaBBQ_BEN_HealthStatus.jsonl (2,880 records/lang)
+│   ├── BanglaBBQ_MaritalStatus/     # BanglaBBQ_ENG_MaritalStatus.jsonl, BanglaBBQ_BEN_MaritalStatus.jsonl (2,880 records/lang)
+│   ├── BanglaBBQ_OccupationalBackground/ # BanglaBBQ_ENG_OccupationalBackground.jsonl, BanglaBBQ_BEN_OccupationalBackground.jsonl (2,880 records/lang)
+│   ├── BanglaBBQ_PhysicalAppearance/ # BanglaBBQ_ENG_PhysicalAppearance.jsonl, BanglaBBQ_BEN_PhysicalAppearance.jsonl (1,440 records/lang)
+│   ├── BanglaBBQ_Politics/          # BanglaBBQ_ENG_Politics.jsonl, BanglaBBQ_BEN_Politics.jsonl (2,880 records/lang)
+│   ├── BanglaBBQ_Regional/          # BanglaBBQ_ENG_Regional.jsonl, BanglaBBQ_BEN_Regional.jsonl (1,440 records/lang)
+│   ├── BanglaBBQ_Religion/          # BanglaBBQ_ENG_Religion.jsonl, BanglaBBQ_BEN_Religion.jsonl (2,880 records/lang)
+│   └── BanglaBBQ_SocialStatus/      # BanglaBBQ_ENG_SocialStatus.jsonl, BanglaBBQ_BEN_SocialStatus.jsonl (1,440 records/lang)
+├── metadata/                    # All non-dataset artifacts moved outside (audit matrices, templates, CSVs, reviews)
+│   ├── BanglaBBQ_Age/
+│   ├── BanglaBBQ_EducationalBackground/
+│   ├── BanglaBBQ_Gender/
+│   ├── BanglaBBQ_Politics/
+│   └── BanglaBBQ_Religion/
 ├── audits/                      # Independent Forensic QA Complete Packages (7 categories)
 │   ├── Ethnicity_forensic_QA_complete/
 │   ├── health_status_complete_independent_forensic_QA/

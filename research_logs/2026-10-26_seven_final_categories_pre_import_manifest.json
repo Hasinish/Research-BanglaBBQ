@@ -1,8 +1,8 @@
 [
   {
     "category": "Physical Appearance",
-    "eng_path": "D:\\Research-BanglaBBQ\\Dataset_BanglaBBQ_New\\BanglaBBQ_PhysicalAppearance\\BanglaBBQ_Physical_Appearance_FINAL_english.jsonl",
-    "ben_path": "D:\\Research-BanglaBBQ\\Dataset_BanglaBBQ_New\\BanglaBBQ_PhysicalAppearance\\BanglaBBQ_Physical_Appearance_FINAL_bengali.jsonl",
+    "eng_path": "D:\\Research-BanglaBBQ\\Dataset_BanglaBBQ_New\\BanglaBBQ_PhysicalAppearance\\BanglaBBQ_ENG_PhysicalAppearance.jsonl",
+    "ben_path": "D:\\Research-BanglaBBQ\\Dataset_BanglaBBQ_New\\BanglaBBQ_PhysicalAppearance\\BanglaBBQ_BEN_PhysicalAppearance.jsonl",
     "eng_blob": "0f4470520cae17b90f4ab40b06ca4370c1979e75",
     "eng_sha256": "d627f5faebefe71fa7dd88c74f9f061eac88ad03dd26e4487f0b63e50874172e",
     "ben_blob": "407b8f97cf88a0267d5137a4fe5d725b51bc1fb0",
@@ -12,8 +12,8 @@
   },
   {
     "category": "Social Status",
-    "eng_path": "D:\\Research-BanglaBBQ\\Dataset_BanglaBBQ_New\\BanglaBBQ_SocialStatus\\BanglaBBQ_SocialStatus_FINAL_english.jsonl",
-    "ben_path": "D:\\Research-BanglaBBQ\\Dataset_BanglaBBQ_New\\BanglaBBQ_SocialStatus\\BanglaBBQ_SocialStatus_FINAL_bengali.jsonl",
+    "eng_path": "D:\\Research-BanglaBBQ\\Dataset_BanglaBBQ_New\\BanglaBBQ_SocialStatus\\BanglaBBQ_ENG_SocialStatus.jsonl",
+    "ben_path": "D:\\Research-BanglaBBQ\\Dataset_BanglaBBQ_New\\BanglaBBQ_SocialStatus\\BanglaBBQ_BEN_SocialStatus.jsonl",
     "eng_blob": "00168b7a9f85cbda32564f769bc0a07c43a23c20",
     "eng_sha256": "ab73bed7cd10c5d0075b770f62f4669aa9d79714b2c3b4b4491a4255238a9c83",
     "ben_blob": "f7c26961b84f67b412654860712961defd39117c",
@@ -23,8 +23,8 @@
   },
   {
     "category": "Health Status",
-    "eng_path": "D:\\Research-BanglaBBQ\\Dataset_BanglaBBQ_New\\BanglaBBQ_HealthStatus\\BanglaBBQ_Health_Status_FINAL_english.jsonl",
-    "ben_path": "D:\\Research-BanglaBBQ\\Dataset_BanglaBBQ_New\\BanglaBBQ_HealthStatus\\BanglaBBQ_Health_Status_FINAL_bengali.jsonl",
+    "eng_path": "D:\\Research-BanglaBBQ\\Dataset_BanglaBBQ_New\\BanglaBBQ_HealthStatus\\BanglaBBQ_ENG_HealthStatus.jsonl",
+    "ben_path": "D:\\Research-BanglaBBQ\\Dataset_BanglaBBQ_New\\BanglaBBQ_HealthStatus\\BanglaBBQ_BEN_HealthStatus.jsonl",
     "eng_blob": "4df4668ce8acbbd48305ab46823a52b007cad562",
     "eng_sha256": "6815dbeda82730d8a71d676f527bb2494d5af7b483bbf24c7021d3eea714854d",
     "ben_blob": "1954aa5c7dbc80a8942c07b10a21747ef12e2b7c",
@@ -34,8 +34,8 @@
   },
   {
     "category": "Regional Affiliation",
-    "eng_path": "D:\\Research-BanglaBBQ\\Dataset_BanglaBBQ_New\\BanglaBBQ_Regional\\BanglaBBQ_Regional_FINAL_english.jsonl",
-    "ben_path": "D:\\Research-BanglaBBQ\\Dataset_BanglaBBQ_New\\BanglaBBQ_Regional\\BanglaBBQ_Regional_FINAL_bengali.jsonl",
+    "eng_path": "D:\\Research-BanglaBBQ\\Dataset_BanglaBBQ_New\\BanglaBBQ_Regional\\BanglaBBQ_ENG_Regional.jsonl",
+    "ben_path": "D:\\Research-BanglaBBQ\\Dataset_BanglaBBQ_New\\BanglaBBQ_Regional\\BanglaBBQ_BEN_Regional.jsonl",
     "eng_blob": "2aa006846b06e1b94604f7cdffa19e9e0501a4b3",
     "eng_sha256": "939a6fea261c0a71a34cac9514231aa315aac040b6ce1fb944912adffc469a68",
     "ben_blob": "1cb3cbb5ffb1aaf76a424f4243333bda75196070",
@@ -45,8 +45,8 @@
   },
   {
     "category": "Ethnicity",
-    "eng_path": "D:\\Research-BanglaBBQ\\Dataset_BanglaBBQ_New\\BanglaBBQ_Ethnicity\\BanglaBBQ_Ethnicity_FINAL_english.jsonl",
-    "ben_path": "D:\\Research-BanglaBBQ\\Dataset_BanglaBBQ_New\\BanglaBBQ_Ethnicity\\BanglaBBQ_Ethnicity_FINAL_bengali.jsonl",
+    "eng_path": "D:\\Research-BanglaBBQ\\Dataset_BanglaBBQ_New\\BanglaBBQ_Ethnicity\\BanglaBBQ_ENG_Ethnicity.jsonl",
+    "ben_path": "D:\\Research-BanglaBBQ\\Dataset_BanglaBBQ_New\\BanglaBBQ_Ethnicity\\BanglaBBQ_BEN_Ethnicity.jsonl",
     "eng_blob": "0a1d0eab9be02ce69dcb54e2f9cadcb11a47c5fe",
     "eng_sha256": "7aeb145ff24dc91a9359275ae60fb56a795321012c004c777910b9838cf8cff9",
     "ben_blob": "d59cd584d1977f8da52aed234f72d672cad3b138",
@@ -56,8 +56,8 @@
   },
   {
     "category": "Occupational Background",
-    "eng_path": "D:\\Research-BanglaBBQ\\Dataset_BanglaBBQ_New\\BanglaBBQ_OccupationalBackground\\BanglaBBQ_Occupational_Background_FINAL_english.jsonl",
-    "ben_path": "D:\\Research-BanglaBBQ\\Dataset_BanglaBBQ_New\\BanglaBBQ_OccupationalBackground\\BanglaBBQ_Occupational_Background_FINAL_bengali.jsonl",
+    "eng_path": "D:\\Research-BanglaBBQ\\Dataset_BanglaBBQ_New\\BanglaBBQ_OccupationalBackground\\BanglaBBQ_ENG_OccupationalBackground.jsonl",
+    "ben_path": "D:\\Research-BanglaBBQ\\Dataset_BanglaBBQ_New\\BanglaBBQ_OccupationalBackground\\BanglaBBQ_BEN_OccupationalBackground.jsonl",
     "eng_blob": "7fc499784386a9d13327a7a3d08a24f19d84d819",
     "eng_sha256": "a150ce63a5f7ac1adfa5815d6c32ddf9805c4844bd0a80520793925f34026c2a",
     "ben_blob": "26df6903e78d9d3728787f117e92593ec4316e22",
@@ -67,8 +67,8 @@
   },
   {
     "category": "Marital Status",
-    "eng_path": "D:\\Research-BanglaBBQ\\Dataset_BanglaBBQ_New\\BanglaBBQ_MaritalStatus\\BanglaBBQ_MaritalStatus_FINAL_english.jsonl",
-    "ben_path": "D:\\Research-BanglaBBQ\\Dataset_BanglaBBQ_New\\BanglaBBQ_MaritalStatus\\BanglaBBQ_MaritalStatus_FINAL_bengali.jsonl",
+    "eng_path": "D:\\Research-BanglaBBQ\\Dataset_BanglaBBQ_New\\BanglaBBQ_MaritalStatus\\BanglaBBQ_ENG_MaritalStatus.jsonl",
+    "ben_path": "D:\\Research-BanglaBBQ\\Dataset_BanglaBBQ_New\\BanglaBBQ_MaritalStatus\\BanglaBBQ_BEN_MaritalStatus.jsonl",
     "eng_blob": "628a101f51df254aa1ef5ba78337e9c787db9d70",
     "eng_sha256": "fcdca1459da2fbdfc8e6ecf7228556c10d4eba74add8534bd4be14e97dd2d774",
     "ben_blob": "ce81f93b618b57cffd57711b6ebe541db2ac9d1a",
