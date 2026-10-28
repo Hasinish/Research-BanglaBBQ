@@ -1,3 +1,5 @@
+> **2026-10-28 QA correction checkpoint (review branch only):** Removed four hardcoded adversarial PASS overrides (F05/F09/F10/F11), added executable bilingual gates with positive controls in `local_candidates/non_mental_health_repair_20261028/scripts/`. Local equivalent tests passed; **exact committed runner has not yet been executed** after push and must be verified before marking the test issue CLOSED. Canonical production and Google Sheets unchanged. Handoff: `local_candidates/non_mental_health_repair_20261028/QA_HANDOFF_20261028_FIX1.md`. The older "13/13" milestone is not trustworthy evidence of prior validator performance.
+
 # state.md — Current Verified Progress Dashboard
 
 **Last Verified Date**: 2026-10-28  
