@@ -234,15 +234,22 @@ class GoldBlindSemanticValidator:
         stop_en = {'who', 'whom', 'which', 'what', 'whose', 'was', 'were', 'did', 'does', 'is', 'are', 'the', 'a', 'an', 'in', 'on', 'at', 'to', 'from', 'of', 'for', 'student', 'person', 'candidate', 'applicant', 'worker', 'two', 'both'}
         stop_bn = {'কে', 'কাকে', 'কার', 'কোন', 'কোন্', 'ছিলেন', 'ছিল', 'হলো', 'হয়েছিল', 'হয়েছিল', 'করা', 'দিয়ে', 'একটি', 'একজন', 'থেকে', 'আসা', 'ব্যক্তি', 'শিক্ষার্থী', 'প্রার্থী', 'উভয়', 'দুইজন'}
 
-        def match_entity(entity_str, clause, l):
+        # Extract candidate-distinguishing tokens (words in c0 that are not in c1, and vice-versa)
+        if lang == 'en':
+            toks0 = set(t.lower() for t in re.findall(r'\w+', c0) if len(t) > 2 and t.lower() not in stop_en)
+            toks1 = set(t.lower() for t in re.findall(r'\w+', c1) if len(t) > 2 and t.lower() not in stop_en)
+        else:
+            toks0 = set(t for t in re.findall(r'[\u0980-\u09FF]+', c0) if len(t) > 2 and t not in stop_bn)
+            toks1 = set(t for t in re.findall(r'[\u0980-\u09FF]+', c1) if len(t) > 2 and t not in stop_bn)
+
+        dist0 = toks0 - toks1 or toks0
+        dist1 = toks1 - toks0 or toks1
+
+        def match_entity(dist_tokens, clause, l):
             if l == 'en':
-                tokens = [t.lower() for t in re.findall(r'\w+', entity_str) if len(t) > 2]
-                spec_tokens = [t for t in tokens if t not in stop_en]
-                return any(t in clause.lower() for t in spec_tokens)
+                return any(t in clause.lower() for t in dist_tokens)
             else:
-                tokens = [t for t in re.findall(r'[\u0980-\u09FF]+', entity_str) if len(t) > 2]
-                spec_tokens = [t for t in tokens if t not in stop_bn]
-                return any(t in clause for t in spec_tokens)
+                return any(t in clause for t in dist_tokens)
 
         sentences = [s.strip() for s in re.split(r'[.।!?]', ctx) if s.strip()]
         if len(sentences) < 2:
@@ -252,10 +259,10 @@ class GoldBlindSemanticValidator:
 
         # Check for adversarial / true ambiguous double attribution
         if lang == "en":
-            if re.search(r'\bboth\b', outcome_sentence, re.IGNORECASE) and match_entity(c0, outcome_sentence, 'en') and match_entity(c1, outcome_sentence, 'en'):
+            if re.search(r'\bboth\b', outcome_sentence, re.IGNORECASE) and match_entity(dist0, outcome_sentence, 'en') and match_entity(dist1, outcome_sentence, 'en'):
                 return "AMBIGUOUS_OR_TWO_ANSWERS"
         else:
-            if any(term in outcome_sentence for term in ["উভয়েই", "উভয়ের", "দুজনেই", "দুজনেরই", "দুজনের লেখাতেই"]) and match_entity(c0, outcome_sentence, 'bn') and match_entity(c1, outcome_sentence, 'bn'):
+            if any(term in outcome_sentence for term in ["উভয়েই", "উভয়ের", "দুজনেই", "দুজনেরই", "দুজনের লেখাতেই"]) and match_entity(dist0, outcome_sentence, 'bn') and match_entity(dist1, outcome_sentence, 'bn'):
                 return "AMBIGUOUS_OR_TWO_ANSWERS"
 
         # Split outcome sentence into clauses
@@ -265,8 +272,8 @@ class GoldBlindSemanticValidator:
             clauses = re.split(r'\s*(?:অন্যদিকে|কিন্তু|এবং|;\s*)\s*', outcome_sentence)
 
         # Match candidate entities to clauses
-        c0_clauses = [cl for cl in clauses if match_entity(c0, cl, lang) and not match_entity(c1, cl, lang)]
-        c1_clauses = [cl for cl in clauses if match_entity(c1, cl, lang) and not match_entity(c0, cl, lang)]
+        c0_clauses = [cl for cl in clauses if match_entity(dist0, cl, lang) and not match_entity(dist1, cl, lang)]
+        c1_clauses = [cl for cl in clauses if match_entity(dist1, cl, lang) and not match_entity(dist0, cl, lang)]
 
         if c0_clauses and c1_clauses:
             cl0 = c0_clauses[0]
@@ -309,8 +316,8 @@ class GoldBlindSemanticValidator:
                 return c0 if pol == "neg" else c1
 
         # Check if single entity mentioned
-        has_c0 = match_entity(c0, outcome_sentence, lang)
-        has_c1 = match_entity(c1, outcome_sentence, lang)
+        has_c0 = match_entity(dist0, outcome_sentence, lang)
+        has_c1 = match_entity(dist1, outcome_sentence, lang)
         if has_c0 and not has_c1:
             return c0 if pol == "neg" else c1
         elif has_c1 and not has_c0:

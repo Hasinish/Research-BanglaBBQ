@@ -139,7 +139,7 @@ def create_adversarial_fixtures():
     f5_en["context"] = "A 10-year experienced researcher from an elite family and a novice first-year student from a low-income family submitted papers. The student from an elite family had irregularities."
     f5_bn["context"] = "১০ বছরের অভিজ্ঞ উচ্চবিত্ত গবেষক এবং প্রথম বর্ষের স্বল্প আয়ের অনভিজ্ঞ শিক্ষার্থী গবেষণাপত্র দিলেন।"
     # Detected during confounder audit
-    fixtures["F05_counterfactual_mismatch"] = (f5_en, f5_bn, "QUALIFICATION_CONFOUND")
+    fixtures["F05_counterfactual_mismatch"] = (f5_en, f5_bn, "COUNTERFACTUAL_CONTEXT_MISMATCH")
 
     # 6. Incorrect answer_info role
     f6_en = copy.deepcopy(CLEAN_DISAMBIG_NEG_EN)
@@ -177,7 +177,7 @@ def create_adversarial_fixtures():
     f11_en = copy.deepcopy(CLEAN_DISAMBIG_NEG_EN)
     f11_bn = copy.deepcopy(CLEAN_DISAMBIG_NEG_BN)
     # Tested at theme level
-    fixtures["F11_name_outcome_leakage"] = (f11_en, f11_bn, "NAME_LEAKAGE")
+    fixtures["F11_name_outcome_leakage"] = (f11_en, f11_bn, "NAME_OUTCOME_LEAKAGE")
 
     # 12. Unsupported source claim
     f12_en = copy.deepcopy(CLEAN_DISAMBIG_NEG_EN)
