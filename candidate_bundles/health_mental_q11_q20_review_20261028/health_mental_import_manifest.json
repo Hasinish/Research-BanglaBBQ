@@ -1,0 +1,134 @@
+{
+  "manifest_version": "2.0",
+  "research_project": "BanglaBBQ",
+  "date": "2026-10-28",
+  "base_repository": "Hasinish/Research-BanglaBBQ",
+  "latest_verified_main_commit": "6967700fcb34dd83a0ba2af78bad2d4fcfd0ed65",
+  "base_canonical_git_blob_sha": {
+    "english": "346ce363daa4af9f345f2b0de8eb0e6d1aac66e7",
+    "bengali": "d4af261fe14be3753a645518074743fe76c3f108"
+  },
+  "artifact_type": "LOCAL_APPEND_ONLY_RESEARCH_CANDIDATE",
+  "protected_original_records_per_language": 1440,
+  "original_example_id_range": [
+    0,
+    1439
+  ],
+  "original_global_id_range": [
+    8300000,
+    8301439
+  ],
+  "new_records_per_language": 1440,
+  "new_question_indices": [
+    11,
+    20
+  ],
+  "new_example_id_range": [
+    1440,
+    2879
+  ],
+  "new_global_id_range": [
+    8301440,
+    8302879
+  ],
+  "category": "Health_status",
+  "type": "NA",
+  "new_variations": 30,
+  "expected_category_rows_after_append_per_language": 2880,
+  "jsonl_object_key_order": [
+    "example_id",
+    "question_index",
+    "question_polarity",
+    "context_condition",
+    "category",
+    "answer_info",
+    "additional_metadata",
+    "context",
+    "question",
+    "ans0",
+    "ans1",
+    "ans2",
+    "label",
+    "type",
+    "id"
+  ],
+  "google_sheet_column_order": [
+    "example_id",
+    "question_index",
+    "context_condition",
+    "question_polarity",
+    "type",
+    "context",
+    "question",
+    "ans0",
+    "ans1",
+    "ans2",
+    "label",
+    "answer_info",
+    "additional_metadata",
+    "category",
+    "id"
+  ],
+  "google_sheet_first_new_data_row": 1442,
+  "google_sheet_last_new_data_row": 2881,
+  "google_sheet_tabs": {
+    "english": {
+      "name": "BanglaBBQ_ENG_HealthStatus",
+      "sheet_id": 577820949,
+      "read_only_verified_grid_rows": 1441,
+      "last_data_example_id": 1439
+    },
+    "bengali": {
+      "name": "BanglaBBQ_BEN_HealthStatus",
+      "sheet_id": 1261981579,
+      "read_only_verified_grid_rows": 1441,
+      "last_data_example_id": 1439
+    }
+  },
+  "nested_json_cell_fields": [
+    "answer_info",
+    "additional_metadata"
+  ],
+  "sheet_writes_performed": false,
+  "github_writes_performed": false,
+  "pre_import_backup_required": true,
+  "do_not_overwrite_originals": true,
+  "verification": {
+    "structural_status": "PASS",
+    "bilingual_role_and_gold_parity": "PASS_AUTOMATED",
+    "blind_text_outcome_parser": "PASS_720_DISAMBIGUATED_PER_LANGUAGE",
+    "independent_audit_errors": 0,
+    "negative_fixtures_detected": 6,
+    "negative_fixtures_total": 6,
+    "reproducibility": "BYTE_IDENTICAL_ALL_REGENERATED_ARTIFACTS",
+    "clinical_expert_review": "NOT_PERFORMED",
+    "independent_native_language_human_review": "NOT_PERFORMED",
+    "source_evidence_classification": {
+      "CONTEXTUAL": 9,
+      "DIRECT": 1
+    },
+    "publication_ready": false,
+    "import_requires_approval": true
+  },
+  "inherited_base_risk": "Q01-Q10 360/360 first-mentioned negative gold; combined after append 540/720 first and 180/720 second.",
+  "files_sha256": {
+    "BanglaBBQ_Health_Mental_Q11_Q20_english.jsonl": "347dc325b98ca1c1a27edf28f3842c0aa3e63ec615bc51079247a67d3e49ec75",
+    "BanglaBBQ_Health_Mental_Q11_Q20_bengali.jsonl": "ae903eb56ccb39eaff1d6bdac97db7ba31fd5ab474a35c72dc05d5ba140d40cb",
+    "health_mental_sources.csv": "637d593b1d4bb1839f0f1896cf4f86dbd24f2a0b2cf2e22281f43ca0e160e074",
+    "health_mental_theme_manifest.csv": "4797aa4028717cf97618055c93ae40ff3ed310687ac3bb368b35a6e9ba4e0b67",
+    "health_mental_semantic_cases.csv": "3b7a6379bf2cb099ddcebc0b9d3f5f621ce7fb9909e0a222f93446f0040b0feb",
+    "health_mental_scenarios.json": "43917eb91623bc88528d6de9662db68e60a5b272495166966c07ec67a8601ea1",
+    "health_mental_generate.py": "61e7c3360036270fbbfbfe7365e98f39644be820b434000e0148ed856028dfe9",
+    "health_mental_validation.py": "480f2d52fad843b40e668a797a8c829d35ea8fdd1cfa469ed814e1c2389a9541",
+    "health_mental_independent_audit.py": "92303dc069711d621197570f4ba5afd5a66f127e69bf7321a812cac3987f18d4",
+    "health_mental_independent_audit.json": "2ea0bfe5c986eb9c1a95431257758c5f528912218bc979bb7f2c1305bd06b6e3",
+    "health_mental_change_summary.json": "e9313b8c9c9dd93017de32aadf3e2865bc870ead90b566cffa9d5053355c0ccd",
+    "health_mental_QA_report.md": "0788ac738ae6bc988bbd9eae943d45e0039d5681b6bbe686eb3cb88a098a377e",
+    "README_SUBMISSION_FIRST.md": "476f8d362acb738d93f67e494f0ccea03ec092a48a62d6cde46355ab90b9136f"
+  },
+  "reproduction_commands": [
+    "python health_mental_generate.py",
+    "python health_mental_validation.py --negative-tests",
+    "python health_mental_independent_audit.py"
+  ]
+}
