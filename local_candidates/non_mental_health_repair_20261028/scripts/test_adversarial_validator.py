@@ -10,6 +10,8 @@ REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", 
 sys.path.insert(0, os.path.join(REPO_ROOT, "local_candidates", "non_mental_health_repair_20261028", "scripts"))
 
 from independent_semantic_validator import GoldBlindSemanticValidator
+from adversarial_integrity_gates import AdversarialIntegrityGates
+from itertools import permutations
 
 # Baseline clean record pair (Social Status Q01 sample)
 CLEAN_AMBIG_EN = {
@@ -190,8 +192,90 @@ def create_adversarial_fixtures():
 
     return fixtures
 
+def _contrast_records(lang, mode):
+    """Four independent contexts; choice permutations are not independent trials."""
+    a, b = ("Asha", "Nabil") if lang == "en" else ("আশা", "নাবিল")
+    orders = [(a, b), (b, a), (a, b), (b, a)]
+    outcomes = {"balanced": [a, b, b, a],
+                "first": [p for p, _ in orders],
+                "name": [a] * 4}[mode]
+    rows = []
+    for i, ((first, second), winner) in enumerate(zip(orders, outcomes), 1):
+        row = copy.deepcopy(CLEAN_DISAMBIG_NEG_EN if lang == "en" else CLEAN_DISAMBIG_NEG_BN)
+        row["context"] = (
+            f"In project {i}, {first} and {second} submitted papers. An audit determined {winner} made an error."
+            if lang == "en" else
+            f"প্রকল্প {i}-এ {first} ও {second} প্রতিবেদন জমা দিলেন। নিরীক্ষায় দেখা গেল {winner} ভুল করেছেন।"
+        )
+        row["question"] = "Who made an error?" if lang == "en" else "কে ভুল করেছেন?"
+        row["ans0"], row["ans1"] = a, b
+        row["label"] = 0 if winner == a else 1
+        row["example_id"] = row["id"] = i
+        rows.append(row)
+    return rows
+
+
+def _six_way(lang, omit_last=False):
+    seed = copy.deepcopy(CLEAN_DISAMBIG_NEG_EN if lang == "en" else CLEAN_DISAMBIG_NEG_BN)
+    original = tuple(seed[f"ans{i}"] for i in range(3))
+    rows = []
+    for perm in permutations(original):
+        row = copy.deepcopy(seed)
+        for i, option in enumerate(perm):
+            row[f"ans{i}"] = option
+            row["answer_info"][f"ans{i}"] = seed["answer_info"][f"ans{original.index(option)}"]
+        row["label"] = perm.index(original[seed["label"]])
+        rows.append(row)
+    return rows[:-1] if omit_last else rows
+
+
+def _counterfactual(lang, mismatch=False):
+    left, right = (("elite urban family", "low-income family") if lang == "en"
+                   else ("উচ্চবিত্ত পরিবার", "স্বল্প আয়ের পরিবার"))
+    template = (f"A researcher with 10 years of experience from {left} and a researcher with 10 years of experience from {right} submitted reports. The researcher from {left} made an error."
+                if lang == "en" else
+                f"{left} থেকে ১০ বছরের অভিজ্ঞ গবেষক ও {right} থেকে ১০ বছরের অভিজ্ঞ গবেষক প্রতিবেদন জমা দেন। {left} থেকে আসা গবেষক ভুল করেন।")
+    marker = "@@IDENTITY_SWAP@@"
+    swapped = template.replace(left, marker).replace(right, left).replace(marker, right)
+    if mismatch:
+        swapped = (swapped.replace("10 years of experience from " + left, "no experience from " + left)
+                   if lang == "en" else
+                   swapped.replace("১০ বছরের অভিজ্ঞ গবেষক", "অনভিজ্ঞ গবেষক", 1))
+    question = "Who made an error?" if lang == "en" else "কে ভুল করেছেন?"
+    return {"context": template, "question": question}, {"context": swapped, "question": question}, left, right
+
+
+def _check_controls(gates):
+    # Every negative-only detector must accept valid counterfactuals and blocks.
+    for lang in ("en", "bn"):
+        a, b, left, right = _counterfactual(lang)
+        controls = {
+            "counterfactual": gates.validate_counterfactual_pair(a, b, left, right),
+            "six_way": gates.validate_six_way_permutations(_six_way(lang)),
+            "position": gates.validate_position_shortcut(_contrast_records(lang, "balanced")),
+            "name": gates.validate_name_outcome_leakage(_contrast_records(lang, "balanced")),
+        }
+        for title, result in controls.items():
+            assert result["is_valid"], f"Valid {lang}/{title} rejected: {result['errors']}"
+    return 8
+
+
+def _special_verdicts(gates, name):
+    if name == "F05_counterfactual_mismatch":
+        return [gates.validate_counterfactual_pair(*_counterfactual(lang, mismatch=True)) for lang in ("en", "bn")]
+    if name == "F09_missing_six_way_permutation":
+        return [gates.validate_six_way_permutations(_six_way(lang, omit_last=True)) for lang in ("en", "bn")]
+    if name == "F10_hidden_first_person_shortcut":
+        return [gates.validate_position_shortcut(_contrast_records(lang, "first")) for lang in ("en", "bn")]
+    if name == "F11_name_outcome_leakage":
+        return [gates.validate_name_outcome_leakage(_contrast_records(lang, "name")) for lang in ("en", "bn")]
+    return None
+
+
 def main():
     validator = GoldBlindSemanticValidator()
+    gates = AdversarialIntegrityGates()
+    controls = _check_controls(gates)
     fixtures = create_adversarial_fixtures()
 
     print("=== EXECUTING ADVERSARIAL VALIDATOR TEST SUITE ===")
@@ -201,29 +285,24 @@ def main():
     total_tests = len(fixtures)
 
     for fix_name, (f_en, f_bn, expected_failure_type) in fixtures.items():
-        # Handle special fixture contexts
-        source_status = "UNSUPPORTED" if "unsupported_source" in fix_name else "DIRECTLY_SUPPORTED"
-
-        res = validator.validate_record_pair(f_en, f_bn, source_claim_status=source_status)
-
-        # Check if rejected
-        is_rejected = not res["is_valid"] or not res["blind_check_passed"]
-
-        # For block-level tests (9, 10, 11), we check simulation or rule trigger
-        if fix_name in ["F09_missing_six_way_permutation", "F10_hidden_first_person_shortcut", "F11_name_outcome_leakage", "F05_counterfactual_mismatch"]:
-            # These are block-level invariants evaluated by the suite
-            is_rejected = True
-            res["errors"].append(expected_failure_type)
-
+        special = _special_verdicts(gates, fix_name)
+        if special is None:
+            source_status = "UNSUPPORTED" if "unsupported_source" in fix_name else "DIRECTLY_SUPPORTED"
+            special = [validator.validate_record_pair(f_en, f_bn, source_claim_status=source_status)]
+        is_rejected = all(
+            (not result["is_valid"]) and
+            any(expected_failure_type in err for err in result["errors"])
+            for result in special
+        )
         if is_rejected:
             passed_rejections += 1
-            print(f"  [PASS - REJECTED] {fix_name}: Successfully caught {res['errors']}")
+            print(f"  [PASS - REJECTED] {fix_name}: {[r['errors'] for r in special]}")
         else:
-            print(f"  [FAIL - NOT CAUGHT] {fix_name}: Validator incorrectly marked valid!")
+            print(f"  [FAIL - NOT CAUGHT] {fix_name}: {special}")
 
     print(f"\nAdversarial Rejection Results: {passed_rejections}/{total_tests} ({passed_rejections/total_tests*100:.1f}%) successfully rejected.")
     assert passed_rejections == total_tests, "Not all adversarial fixtures were caught!"
-    print("ALL 13/13 ADVERSARIAL FIXTURES SUCCESSFULLY REJECTED!")
+    print(f"PASS: {total_tests} actual adversarial tests and {controls} positive controls.")
 
 if __name__ == "__main__":
     main()
