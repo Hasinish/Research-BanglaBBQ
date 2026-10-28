@@ -279,7 +279,7 @@ def validate_dataset(eng_path, ben_path):
         return True
 
 if __name__ == '__main__':
-    eng_p = sys.argv[1] if len(sys.argv) > 1 else 'Dataset_ BanglaBBQ_Old/Politics/BanglaBBQ_ENG_Politics.jsonl'
-    ben_p = sys.argv[2] if len(sys.argv) > 2 else 'Dataset_ BanglaBBQ_Old/Politics/BanglaBBQ_BEN_Politics.jsonl'
+    eng_p = sys.argv[1] if len(sys.argv) > 1 else 'Dataset_ BanglaBBQ_Old/Politics/banglabbq_politics_english.jsonl'
+    ben_p = sys.argv[2] if len(sys.argv) > 2 else 'Dataset_ BanglaBBQ_Old/Politics/banglabbq_politics_bengali.jsonl'
     success = validate_dataset(eng_p, ben_p)
     sys.exit(0 if success else 1)

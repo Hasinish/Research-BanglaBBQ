@@ -20,7 +20,7 @@ jobs:
 
       - name: Run Comprehensive Offline Politics Validation
         run: |
-          python scripts/validate_politics_dataset.py Dataset_\ BanglaBBQ_Old/Politics/BanglaBBQ_ENG_Politics.jsonl Dataset_\ BanglaBBQ_Old/Politics/BanglaBBQ_BEN_Politics.jsonl
+          python scripts/validate_politics_dataset.py Dataset_\ BanglaBBQ_Old/Politics/banglabbq_politics_english.jsonl Dataset_\ BanglaBBQ_Old/Politics/banglabbq_politics_bengali.jsonl
 
       - name: Run Canonical Directory Validation
         run: |
