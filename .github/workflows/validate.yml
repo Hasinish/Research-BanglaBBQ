@@ -24,11 +24,11 @@ jobs:
 
       - name: Run Canonical Directory Validation
         run: |
-          python scripts/validate_politics_dataset.py Dataset_BanglaBBQ_New/BanglaBBQ_Politics/banglabbq_politics_english.jsonl Dataset_BanglaBBQ_New/BanglaBBQ_Politics/banglabbq_politics_bengali.jsonl
+          python scripts/validate_politics_dataset.py Dataset_BanglaBBQ_New/BanglaBBQ_Politics/BanglaBBQ_ENG_Politics.jsonl Dataset_BanglaBBQ_New/BanglaBBQ_Politics/BanglaBBQ_BEN_Politics.jsonl
 
       - name: Run Religion Benchmark Validation
         run: |
-          python scripts/validate_religion_dataset.py Dataset_BanglaBBQ_New/BanglaBBQ_Religion/Religion_eng.jsonl Dataset_BanglaBBQ_New/BanglaBBQ_Religion/Religion_bng.jsonl
+          python scripts/validate_religion_dataset.py Dataset_BanglaBBQ_New/BanglaBBQ_Religion/BanglaBBQ_ENG_Religion.jsonl Dataset_BanglaBBQ_New/BanglaBBQ_Religion/BanglaBBQ_BEN_Religion.jsonl
 
 
       - name: Run Age English Reproduction and Bilingual Structural QA
@@ -37,13 +37,13 @@ jobs:
 
       - name: Run Gender Benchmark Validation
         run: |
-          python scripts/validate_gender_dataset.py Dataset_BanglaBBQ_New/BanglaBBQ_Gender/Gender_identity_eng.jsonl Dataset_BanglaBBQ_New/BanglaBBQ_Gender/Gender_identity_bng.jsonl
-          python scripts/validate_gender_semantics.py Dataset_BanglaBBQ_New/BanglaBBQ_Gender/Gender_identity_eng.jsonl Dataset_BanglaBBQ_New/BanglaBBQ_Gender/Gender_identity_bng.jsonl
+          python scripts/validate_gender_dataset.py Dataset_BanglaBBQ_New/BanglaBBQ_Gender/BanglaBBQ_ENG_Gender.jsonl Dataset_BanglaBBQ_New/BanglaBBQ_Gender/BanglaBBQ_BEN_Gender.jsonl
+          python scripts/validate_gender_semantics.py Dataset_BanglaBBQ_New/BanglaBBQ_Gender/BanglaBBQ_ENG_Gender.jsonl Dataset_BanglaBBQ_New/BanglaBBQ_Gender/BanglaBBQ_BEN_Gender.jsonl
 
       - name: Run Educational Background Benchmark Validation
         run: |
-          python scripts/validate_education_dataset.py Dataset_BanglaBBQ_New/BanglaBBQ_EducationalBackground/banglabbq_education_english.jsonl Dataset_BanglaBBQ_New/BanglaBBQ_EducationalBackground/banglabbq_education_bengali.jsonl
-          python scripts/validate_education_semantics.py Dataset_BanglaBBQ_New/BanglaBBQ_EducationalBackground/banglabbq_education_english.jsonl Dataset_BanglaBBQ_New/BanglaBBQ_EducationalBackground/banglabbq_education_bengali.jsonl
+          python scripts/validate_education_dataset.py Dataset_BanglaBBQ_New/BanglaBBQ_EducationalBackground/BanglaBBQ_ENG_Education.jsonl Dataset_BanglaBBQ_New/BanglaBBQ_EducationalBackground/BanglaBBQ_BEN_Education.jsonl
+          python scripts/validate_education_semantics.py Dataset_BanglaBBQ_New/BanglaBBQ_EducationalBackground/BanglaBBQ_ENG_Education.jsonl Dataset_BanglaBBQ_New/BanglaBBQ_EducationalBackground/BanglaBBQ_BEN_Education.jsonl
           python scripts/test_education_semantic_fixtures.py
 
       - name: Run Seven Final Categories Benchmark Invariant Validation

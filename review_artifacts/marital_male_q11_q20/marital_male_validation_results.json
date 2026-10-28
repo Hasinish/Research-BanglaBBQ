@@ -1,0 +1,166 @@
+{
+  "rows_english": 1440,
+  "rows_bengali": 1440,
+  "schema_fields": 15,
+  "unique_semantic_cases_per_language": 240,
+  "mutation_tests": {
+    "broken_example_id": {
+      "rejected": true,
+      "detected_diagnostics": [
+        "en: example_id sequence must be 1440..2879",
+        "en: semantic case (11, 1, 'a', 'ambig', 'neg') has 5 answer permutations instead of 6",
+        "en: semantic case (11, 1, 'a', 'ambig', 'neg') missing complete answer permutations"
+      ]
+    },
+    "omitted_answer_permutation": {
+      "rejected": true,
+      "detected_diagnostics": [
+        "en: wrong record count 1436",
+        "en: example_id sequence must be 1440..2879",
+        "en: numeric id sequence wrong"
+      ]
+    },
+    "incorrect_marital_status": {
+      "rejected": true,
+      "detected_diagnostics": [
+        "en:row=1:example_id=1440: context mismatch, bilingual text, swapped marital status, decision recipient, or ambig leakage",
+        "en: semantic case (11, 1, 'a', 'ambig', 'neg') not context-consistent"
+      ]
+    },
+    "swapped_disambiguated_gold_label": {
+      "rejected": true,
+      "detected_diagnostics": [
+        "en:row=2:example_id=1441: wrong gold label, expected 0",
+        "en: expected 480/480/480 balanced labels, got {2: 480, 1: 481, 0: 479}",
+        "en: Q11V1 neg introduction position (5, 7) not 6/6"
+      ]
+    },
+    "bengali_negation_corruption": {
+      "rejected": true,
+      "detected_diagnostics": [
+        "bn:row=1:example_id=1440: context mismatch, bilingual text, swapped marital status, decision recipient, or ambig leakage",
+        "bn: semantic case (11, 1, 'a', 'ambig', 'neg') not context-consistent"
+      ]
+    },
+    "ambiguous_context_outcome_leakage": {
+      "rejected": true,
+      "detected_diagnostics": [
+        "en:row=1:example_id=1440: context mismatch, bilingual text, swapped marital status, decision recipient, or ambig leakage",
+        "en: semantic case (11, 1, 'a', 'ambig', 'neg') not context-consistent",
+        "en: unintended duplicate QA tuples"
+      ]
+    },
+    "incorrect_disambig_outcome_recipient": {
+      "rejected": true,
+      "detected_diagnostics": [
+        "en:row=2:example_id=1441: context mismatch, bilingual text, swapped marital status, decision recipient, or ambig leakage",
+        "en: semantic case (11, 1, 'a', 'disambig', 'neg') not context-consistent"
+      ]
+    }
+  },
+  "evidence_tiers": {
+    "DIRECT": 1,
+    "CONTEXTUAL": 3,
+    "DIRECT_GENERAL": 6
+  },
+  "per_language": [
+    {
+      "lang": "en",
+      "counts": {
+        "questions": {
+          "11": 144,
+          "12": 144,
+          "13": 144,
+          "14": 144,
+          "15": 144,
+          "16": 144,
+          "17": 144,
+          "18": 144,
+          "19": 144,
+          "20": 144
+        },
+        "labels": {
+          "2": 480,
+          "0": 480,
+          "1": 480
+        },
+        "disambig_intro_positions": {
+          "neg": {
+            "first": 180,
+            "second": 180
+          },
+          "nonneg": {
+            "first": 180,
+            "second": 180
+          }
+        },
+        "disambig_gold_groups": {
+          "neg": {
+            "target": 180,
+            "comparator": 180
+          },
+          "nonneg": {
+            "target": 180,
+            "comparator": 180
+          }
+        }
+      }
+    },
+    {
+      "lang": "bn",
+      "counts": {
+        "questions": {
+          "11": 144,
+          "12": 144,
+          "13": 144,
+          "14": 144,
+          "15": 144,
+          "16": 144,
+          "17": 144,
+          "18": 144,
+          "19": 144,
+          "20": 144
+        },
+        "labels": {
+          "2": 480,
+          "0": 480,
+          "1": 480
+        },
+        "disambig_intro_positions": {
+          "neg": {
+            "first": 180,
+            "second": 180
+          },
+          "nonneg": {
+            "first": 180,
+            "second": 180
+          }
+        },
+        "disambig_gold_groups": {
+          "neg": {
+            "target": 180,
+            "comparator": 180
+          },
+          "nonneg": {
+            "target": 180,
+            "comparator": 180
+          }
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "passed": true,
+  "git_source_sha": "6967700fcb34dd83a0ba2af78bad2d4fcfd0ed65",
+  "file_sha256": {
+    "BanglaBBQ_Marital_Male_Q11_Q20_english.jsonl": "981bf2a86be627273691cc7289ccf46852b421313cf5bfa889b3afe306f10bd9",
+    "BanglaBBQ_Marital_Male_Q11_Q20_bengali.jsonl": "41e41fc146dcc5c0f54c5ec621dc97dd062bd327835482956fa6ea17220f54c6"
+  },
+  "source_tier_counts": {
+    "DIRECT_GENERAL": 6,
+    "DIRECT": 1,
+    "CONTEXTUAL": 3
+  },
+  "mutation_tests_all_rejected": true,
+  "deterministic_regeneration_byte_identical": true
+}

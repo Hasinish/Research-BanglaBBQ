@@ -10,19 +10,25 @@
 ```
 Research-BanglaBBQ/
 ├── .github/workflows/           # Automated CI workflows (invariant validation)
-├── Dataset_BanglaBBQ_New/       # Canonical Improved & Expanded BanglaBBQ Benchmark (12 Categories)
-│   ├── BanglaBBQ_Age/               # Active verified Age benchmark (2,920 ENG, 2,920 BEN)
-│   ├── BanglaBBQ_EducationalBackground/ # Active Educational Background benchmark (2,880 ENG, 2,880 BEN across 20 themes)
-│   ├── BanglaBBQ_Ethnicity/         # Canonical 1,440-record Ethnicity benchmark (FINAL)
-│   ├── BanglaBBQ_Gender/            # Active verified Gender Identity benchmark (4,696 ENG, 4,696 BEN across 34 themes)
-│   ├── BanglaBBQ_HealthStatus/      # Canonical 1,440-record Health Status benchmark (FINAL)
-│   ├── BanglaBBQ_MaritalStatus/     # Canonical 1,440-record Marital Status benchmark (FINAL)
-│   ├── BanglaBBQ_OccupationalBackground/ # Canonical 1,440-record Occupational Background benchmark (FINAL)
-│   ├── BanglaBBQ_PhysicalAppearance/ # Canonical 1,440-record Physical Appearance benchmark (FINAL)
-│   ├── BanglaBBQ_Politics/          # Active Politics benchmark (2,880 ENG, 2,880 BEN; base + V2/V3)
-│   ├── BanglaBBQ_Regional/          # Canonical 1,440-record Regional Affiliation benchmark (FINAL)
-│   ├── BanglaBBQ_Religion/          # Active Religion benchmark (2,880 ENG, 2,880 BEN; V1+V2+V3)
-│   └── BanglaBBQ_SocialStatus/      # Canonical 1,440-record Social Status benchmark (FINAL)
+├── Dataset_BanglaBBQ_New/       # Canonical Improved & Expanded BanglaBBQ Benchmark (ONLY JSONL, 24 files named after sheets)
+│   ├── BanglaBBQ_Age/               # BanglaBBQ_ENG_Age.jsonl, BanglaBBQ_BEN_Age.jsonl (2,920 records/lang)
+│   ├── BanglaBBQ_EducationalBackground/ # BanglaBBQ_ENG_Education.jsonl, BanglaBBQ_BEN_Education.jsonl (2,880 records/lang)
+│   ├── BanglaBBQ_Ethnicity/         # BanglaBBQ_ENG_Ethnicity.jsonl, BanglaBBQ_BEN_Ethnicity.jsonl (1,440 records/lang)
+│   ├── BanglaBBQ_Gender/            # BanglaBBQ_ENG_Gender.jsonl, BanglaBBQ_BEN_Gender.jsonl (4,696 records/lang)
+│   ├── BanglaBBQ_HealthStatus/      # BanglaBBQ_ENG_HealthStatus.jsonl, BanglaBBQ_BEN_HealthStatus.jsonl (2,880 records/lang)
+│   ├── BanglaBBQ_MaritalStatus/     # BanglaBBQ_ENG_MaritalStatus.jsonl, BanglaBBQ_BEN_MaritalStatus.jsonl (2,880 records/lang)
+│   ├── BanglaBBQ_OccupationalBackground/ # BanglaBBQ_ENG_OccupationalBackground.jsonl, BanglaBBQ_BEN_OccupationalBackground.jsonl (2,880 records/lang)
+│   ├── BanglaBBQ_PhysicalAppearance/ # BanglaBBQ_ENG_PhysicalAppearance.jsonl, BanglaBBQ_BEN_PhysicalAppearance.jsonl (1,440 records/lang)
+│   ├── BanglaBBQ_Politics/          # BanglaBBQ_ENG_Politics.jsonl, BanglaBBQ_BEN_Politics.jsonl (2,880 records/lang)
+│   ├── BanglaBBQ_Regional/          # BanglaBBQ_ENG_Regional.jsonl, BanglaBBQ_BEN_Regional.jsonl (1,440 records/lang)
+│   ├── BanglaBBQ_Religion/          # BanglaBBQ_ENG_Religion.jsonl, BanglaBBQ_BEN_Religion.jsonl (2,880 records/lang)
+│   └── BanglaBBQ_SocialStatus/      # BanglaBBQ_ENG_SocialStatus.jsonl, BanglaBBQ_BEN_SocialStatus.jsonl (1,440 records/lang)
+├── metadata/                    # All non-dataset artifacts moved outside (audit matrices, templates, CSVs, reviews)
+│   ├── BanglaBBQ_Age/
+│   ├── BanglaBBQ_EducationalBackground/
+│   ├── BanglaBBQ_Gender/
+│   ├── BanglaBBQ_Politics/
+│   └── BanglaBBQ_Religion/
 ├── audits/                      # Independent Forensic QA Complete Packages (7 categories)
 │   ├── Ethnicity_forensic_QA_complete/
 │   ├── health_status_complete_independent_forensic_QA/
@@ -123,18 +129,18 @@ These are the canonical, working datasets currently under active research and ev
 
 ### G. Health Status ([`BanglaBBQ_HealthStatus/`](file:///d:/Research-BanglaBBQ/Dataset_BanglaBBQ_New/BanglaBBQ_HealthStatus))
 
-- [`BanglaBBQ_Health_Status_FINAL_english.jsonl`](file:///d:/Research-BanglaBBQ/Dataset_BanglaBBQ_New/BanglaBBQ_HealthStatus/BanglaBBQ_Health_Status_FINAL_english.jsonl): 1,440 final production English records.
-- [`BanglaBBQ_Health_Status_FINAL_bengali.jsonl`](file:///d:/Research-BanglaBBQ/Dataset_BanglaBBQ_New/BanglaBBQ_HealthStatus/BanglaBBQ_Health_Status_FINAL_bengali.jsonl): 1,440 final parallel production Bengali records.
+- [`BanglaBBQ_Health_Status_FINAL_english.jsonl`](file:///d:/Research-BanglaBBQ/Dataset_BanglaBBQ_New/BanglaBBQ_HealthStatus/BanglaBBQ_Health_Status_FINAL_english.jsonl): **2,880** final production English records across 20 themes (Q01–Q10 somatic/chronic conditions + Q11–Q20 psychiatric/mental health expansion). Full 6-way answer permutations, 960/960/960 balanced labels, sequential IDs 8300000..8302879.
+- [`BanglaBBQ_Health_Status_FINAL_bengali.jsonl`](file:///d:/Research-BanglaBBQ/Dataset_BanglaBBQ_New/BanglaBBQ_HealthStatus/BanglaBBQ_Health_Status_FINAL_bengali.jsonl): **2,880** final parallel production Bengali records with 100% metadata and label parity. Original 1,440 prefix preserved bit-for-bit.
 
 ### H. Marital Status ([`BanglaBBQ_MaritalStatus/`](file:///d:/Research-BanglaBBQ/Dataset_BanglaBBQ_New/BanglaBBQ_MaritalStatus))
 
-- [`BanglaBBQ_MaritalStatus_FINAL_english.jsonl`](file:///d:/Research-BanglaBBQ/Dataset_BanglaBBQ_New/BanglaBBQ_MaritalStatus/BanglaBBQ_MaritalStatus_FINAL_english.jsonl): 1,440 final production English records.
-- [`BanglaBBQ_MaritalStatus_FINAL_bengali.jsonl`](file:///d:/Research-BanglaBBQ/Dataset_BanglaBBQ_New/BanglaBBQ_MaritalStatus/BanglaBBQ_MaritalStatus_FINAL_bengali.jsonl): 1,440 final parallel production Bengali records.
+- [`BanglaBBQ_MaritalStatus_FINAL_english.jsonl`](file:///d:/Research-BanglaBBQ/Dataset_BanglaBBQ_New/BanglaBBQ_MaritalStatus/BanglaBBQ_MaritalStatus_FINAL_english.jsonl): **2,880** final production English records across 20 themes (Q01–Q10 female-focused themes + Q11–Q20 male bachelor/divorce/widow themes). Full 6-way answer permutations, 960/960/960 balanced labels, sequential IDs 8700000..8702879.
+- [`BanglaBBQ_MaritalStatus_FINAL_bengali.jsonl`](file:///d:/Research-BanglaBBQ/Dataset_BanglaBBQ_New/BanglaBBQ_MaritalStatus/BanglaBBQ_MaritalStatus_FINAL_bengali.jsonl): **2,880** final parallel production Bengali records with 100% metadata and label parity. Original 1,440 prefix preserved bit-for-bit.
 
 ### I. Occupational Background ([`BanglaBBQ_OccupationalBackground/`](file:///d:/Research-BanglaBBQ/Dataset_BanglaBBQ_New/BanglaBBQ_OccupationalBackground))
 
-- [`BanglaBBQ_Occupational_Background_FINAL_english.jsonl`](file:///d:/Research-BanglaBBQ/Dataset_BanglaBBQ_New/BanglaBBQ_OccupationalBackground/BanglaBBQ_Occupational_Background_FINAL_english.jsonl): 1,440 final production English records.
-- [`BanglaBBQ_Occupational_Background_FINAL_bengali.jsonl`](file:///d:/Research-BanglaBBQ/Dataset_BanglaBBQ_New/BanglaBBQ_OccupationalBackground/BanglaBBQ_Occupational_Background_FINAL_bengali.jsonl): 1,440 final parallel production Bengali records.
+- [`BanglaBBQ_Occupational_Background_FINAL_english.jsonl`](file:///d:/Research-BanglaBBQ/Dataset_BanglaBBQ_New/BanglaBBQ_OccupationalBackground/BanglaBBQ_Occupational_Background_FINAL_english.jsonl): **2,880** final production English records across 20 themes (Q01–Q10 blue-collar/informal laborer themes + Q11–Q20 professional/corporate prestige themes). Full 6-way answer permutations, 960/960/960 balanced labels, sequential IDs 8600000..8602879.
+- [`BanglaBBQ_Occupational_Background_FINAL_bengali.jsonl`](file:///d:/Research-BanglaBBQ/Dataset_BanglaBBQ_New/BanglaBBQ_OccupationalBackground/BanglaBBQ_Occupational_Background_FINAL_bengali.jsonl): **2,880** final parallel production Bengali records with 100% metadata and label parity. Original 1,440 prefix preserved bit-for-bit.
 
 ### J. Physical Appearance ([`BanglaBBQ_PhysicalAppearance/`](file:///d:/Research-BanglaBBQ/Dataset_BanglaBBQ_New/BanglaBBQ_PhysicalAppearance))
 
@@ -263,6 +269,15 @@ These are the canonical, working datasets currently under active research and ev
 Contains specialized scripts documented in [`scripts/README.md`](file:///d:/Research-BanglaBBQ/scripts/README.md). Key active tools include:
 
 ### Benchmark Invariant Validators & CI
+
+### Production Expansion & 7-Category Validators
+
+- [`scripts/validate_seven_final_categories.py`](file:///d:/Research-BanglaBBQ/scripts/validate_seven_final_categories.py): Generalized invariant validator for all 7 modernized categories supporting category-aware row counts (2,880 rows for Health Status, Marital Status, and Occupational Background; 1,440 rows for Physical Appearance, Social Status, Regional Affiliation, and Ethnicity). Validates schema, 6-way permutations, balanced labels, ambiguous Unknown entailment, and 14,400 tracked unique global IDs without collisions.
+- [`scripts/verify_seven_final_categories_live.py`](file:///d:/Research-BanglaBBQ/scripts/verify_seven_final_categories_live.py): Full live readback audit verifying all 14 worksheets across the master Google Spreadsheet (432,000 data cells total) against canonical exports, confirming 100.0000% parity, 0 cell mismatches, correct grid dimensions (2,881 rows for HS/MS/OB, 1,441 rows for PA/SS/RA/ETH), and 5 conditional formatting rules.
+- [`scripts/validate_expansion_append_files.py`](file:///d:/Research-BanglaBBQ/scripts/validate_expansion_append_files.py): Multi-gate standalone validator for the six candidate append files (Health Status, Marital Status, Occupational Background Q11–Q20; 8,640 records total) testing schema, permutations, 180:180 positional balance, and running a 9-fixture adversarial suite with 100% rejection rate.
+- [`scripts/backup_pre_expansion_state.py`](file:///d:/Research-BanglaBBQ/scripts/backup_pre_expansion_state.py): Pre-expansion snapshot utility creating bit-for-bit backups of all 6 local production files and exporting live rows 1..1441 for all 6 target worksheets into `backups/pre_expansion_20261028/`.
+- [`scripts/append_expansion_to_production.py`](file:///d:/Research-BanglaBBQ/scripts/append_expansion_to_production.py): Deterministic append script integrating Q11–Q20 rows to canonical JSONLs with strict prefix verification (zero Q01–Q10 byte drift).
+- [`scripts/append_expansion_to_google_sheets.py`](file:///d:/Research-BanglaBBQ/scripts/append_expansion_to_google_sheets.py): Batch uploader appending rows 1442..2881 to Google Sheets, setting 2,881 grid row count, applying 96px row height, and verifying full readback.
 
 - [`scripts/apply_politics_q5_q14_q19_fixes.py`](file:///d:/Research-BanglaBBQ/scripts/apply_politics_q5_q14_q19_fixes.py): Idempotent content correction script applying approved Q5 historical date, Q14 entailment, and Q19 Bengali critic terminology fixes.
 - [`scripts/validate_politics_dataset.py`](file:///d:/Research-BanglaBBQ/scripts/validate_politics_dataset.py): Expanded 960/2,880-aware validator with dual-hash verification (preserving historical baseline hashes as evidence while supporting approved post-repair hashes for active benchmark), V2/V3 lineage, permutations, bilingual alignment, and 0 duplicates.

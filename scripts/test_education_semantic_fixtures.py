@@ -43,10 +43,11 @@ from validate_education_semantics import (
 BASE = ROOT / "Dataset_BanglaBBQ_New/BanglaBBQ_EducationalBackground"
 if not BASE.exists():
     BASE = ROOT / "BanglaBBQ_EducationalBackground"
-ENG_PATH = BASE / "banglabbq_education_english.jsonl"
-BEN_PATH = BASE / "banglabbq_education_bengali.jsonl"
-TEMPLATES_PATH = BASE / "scenario_templates.json"
-AUDIT_PATH = BASE / "source_audit_matrix.json"
+ENG_PATH = BASE / "BanglaBBQ_ENG_Education.jsonl"
+BEN_PATH = BASE / "BanglaBBQ_BEN_Education.jsonl"
+META_BASE = ROOT / "metadata/BanglaBBQ_EducationalBackground"
+TEMPLATES_PATH = META_BASE / "scenario_templates.json" if (META_BASE / "scenario_templates.json").exists() else BASE / "scenario_templates.json"
+AUDIT_PATH = META_BASE / "source_audit_matrix.json" if (META_BASE / "source_audit_matrix.json").exists() else BASE / "source_audit_matrix.json"
 
 def run_fixture_test():
     print("====================================================================")

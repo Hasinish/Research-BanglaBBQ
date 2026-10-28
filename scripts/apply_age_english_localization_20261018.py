@@ -14,14 +14,14 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "PakBBQ_Repo/PakBBQ/PakBBQ_ENG/Age.jsonl"
-ENGLISH = ROOT / "Dataset_BanglaBBQ_New/BanglaBBQ_Age/banglabbq_age_english.jsonl"
-if not ENGLISH.exists() and (ROOT / "BanglaBBQ_Age/banglabbq_age_english.jsonl").exists():
-    ENGLISH = ROOT / "BanglaBBQ_Age/banglabbq_age_english.jsonl"
+ENGLISH = ROOT / "Dataset_BanglaBBQ_New/BanglaBBQ_Age/BanglaBBQ_ENG_Age.jsonl"
+if not ENGLISH.exists() and (ROOT / "BanglaBBQ_Age/BanglaBBQ_ENG_Age.jsonl").exists():
+    ENGLISH = ROOT / "BanglaBBQ_Age/BanglaBBQ_ENG_Age.jsonl"
 elif not ENGLISH.exists() and (ROOT / "BanglaBBQ_ENG_New/Age.jsonl").exists():
     ENGLISH = ROOT / "BanglaBBQ_ENG_New/Age.jsonl"
-BENGALI = ROOT / "Dataset_BanglaBBQ_New/BanglaBBQ_Age/banglabbq_age_bengali.jsonl"
-if not BENGALI.exists() and (ROOT / "BanglaBBQ_Age/banglabbq_age_bengali.jsonl").exists():
-    BENGALI = ROOT / "BanglaBBQ_Age/banglabbq_age_bengali.jsonl"
+BENGALI = ROOT / "Dataset_BanglaBBQ_New/BanglaBBQ_Age/BanglaBBQ_BEN_Age.jsonl"
+if not BENGALI.exists() and (ROOT / "BanglaBBQ_Age/BanglaBBQ_BEN_Age.jsonl").exists():
+    BENGALI = ROOT / "BanglaBBQ_Age/BanglaBBQ_BEN_Age.jsonl"
 elif not BENGALI.exists() and (ROOT / "BanglaBBQ_BEN_New/Age.jsonl").exists():
     BENGALI = ROOT / "BanglaBBQ_BEN_New/Age.jsonl"
 FIELDS = (

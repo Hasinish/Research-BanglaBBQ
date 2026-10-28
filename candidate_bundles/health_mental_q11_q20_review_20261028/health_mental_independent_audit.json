@@ -1,0 +1,49 @@
+{
+  "audit_name": "blind_saved_file_parser_plus_crossfactual_and_bilingual_checks",
+  "uses_generator_truth_spec": false,
+  "exceptions": 0,
+  "first_20_errors": [],
+  "rows_per_language": {
+    "english": 1440,
+    "bengali": 1440
+  },
+  "outcome_parser_rows": {
+    "english:neg": 360,
+    "english:nonneg": 360,
+    "bengali:neg": 360,
+    "bengali:nonneg": 360
+  },
+  "label_distribution": {
+    "english": {
+      "2": 480,
+      "0": 480,
+      "1": 480
+    },
+    "bengali": {
+      "2": 480,
+      "0": 480,
+      "1": 480
+    }
+  },
+  "intro_balance": {
+    "english:intro:neg:first": 180,
+    "english:intro:nonneg:second": 180,
+    "english:intro:neg:second": 180,
+    "english:intro:nonneg:first": 180,
+    "bengali:intro:neg:first": 180,
+    "bengali:intro:nonneg:second": 180,
+    "bengali:intro:neg:second": 180,
+    "bengali:intro:nonneg:first": 180
+  },
+  "source_urls": [
+    "https://bmjpublichealth.bmj.com/content/4/1/e002670",
+    "https://doi.org/10.1016/j.geopsy.2025.100037",
+    "https://doi.org/10.1017/gmh.2023.56",
+    "https://doi.org/10.1017/gmh.2024.107",
+    "https://doi.org/10.1186/s12888-022-04359-3"
+  ],
+  "sha256": {
+    "english": "0c38c394b275f1e0cabfbafbf9f06f01076d4393e08e9dacfc8db6e58b5f2691",
+    "bengali": "397b941b7e594a229a9aa707d32b71bd00a8c544fd6983c8af2349b12c2c1357"
+  }
+}

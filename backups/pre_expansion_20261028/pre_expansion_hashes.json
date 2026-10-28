@@ -1,0 +1,79 @@
+{
+  "timestamp_utc": "2026-10-28T11:11:03Z",
+  "files": {
+    "BanglaBBQ_Health_Status_FINAL_english.jsonl": {
+      "source": "Dataset_BanglaBBQ_New\\BanglaBBQ_HealthStatus\\BanglaBBQ_Health_Status_FINAL_english.jsonl",
+      "backup": "backups\\pre_expansion_20261028\\local_jsonl\\BanglaBBQ_Health_Status_FINAL_english.jsonl",
+      "records": 1440,
+      "bytes": 1369842,
+      "sha256": "89c2a814f389373109f9e2a7054357c7c47167caaaf16d051615137f7284865b"
+    },
+    "BanglaBBQ_Health_Status_FINAL_bengali.jsonl": {
+      "source": "Dataset_BanglaBBQ_New\\BanglaBBQ_HealthStatus\\BanglaBBQ_Health_Status_FINAL_bengali.jsonl",
+      "backup": "backups\\pre_expansion_20261028\\local_jsonl\\BanglaBBQ_Health_Status_FINAL_bengali.jsonl",
+      "records": 1440,
+      "bytes": 2340858,
+      "sha256": "7a18f485010038bc1b3902dc5cb37530ba03fd4e15104dc225b37d9cb9adb23f"
+    },
+    "BanglaBBQ_MaritalStatus_FINAL_english.jsonl": {
+      "source": "Dataset_BanglaBBQ_New\\BanglaBBQ_MaritalStatus\\BanglaBBQ_MaritalStatus_FINAL_english.jsonl",
+      "backup": "backups\\pre_expansion_20261028\\local_jsonl\\BanglaBBQ_MaritalStatus_FINAL_english.jsonl",
+      "records": 1440,
+      "bytes": 1382610,
+      "sha256": "8c723789d477538ac9c7b14c976cb97950fd44e219c7c007e8d46ef28fcb95cf"
+    },
+    "BanglaBBQ_MaritalStatus_FINAL_bengali.jsonl": {
+      "source": "Dataset_BanglaBBQ_New\\BanglaBBQ_MaritalStatus\\BanglaBBQ_MaritalStatus_FINAL_bengali.jsonl",
+      "backup": "backups\\pre_expansion_20261028\\local_jsonl\\BanglaBBQ_MaritalStatus_FINAL_bengali.jsonl",
+      "records": 1440,
+      "bytes": 2212578,
+      "sha256": "96aa85ce20392677d8c192f7494d0762796ab26ddfb33854aefcdfb73a46c588"
+    },
+    "BanglaBBQ_Occupational_Background_FINAL_english.jsonl": {
+      "source": "Dataset_BanglaBBQ_New\\BanglaBBQ_OccupationalBackground\\BanglaBBQ_Occupational_Background_FINAL_english.jsonl",
+      "backup": "backups\\pre_expansion_20261028\\local_jsonl\\BanglaBBQ_Occupational_Background_FINAL_english.jsonl",
+      "records": 1440,
+      "bytes": 1477458,
+      "sha256": "c3c7542dec09163c959e0b19d92f3e363eaf99a998fa146b5202fffc341b72a5"
+    },
+    "BanglaBBQ_Occupational_Background_FINAL_bengali.jsonl": {
+      "source": "Dataset_BanglaBBQ_New\\BanglaBBQ_OccupationalBackground\\BanglaBBQ_Occupational_Background_FINAL_bengali.jsonl",
+      "backup": "backups\\pre_expansion_20261028\\local_jsonl\\BanglaBBQ_Occupational_Background_FINAL_bengali.jsonl",
+      "records": 1440,
+      "bytes": 2571042,
+      "sha256": "4f3976f8d5183e0b617bca3b45031f6b71ddc2122e15c14bb9c1618894cd3f23"
+    }
+  },
+  "sheets": {
+    "BanglaBBQ_ENG_HealthStatus": {
+      "rows_exported": 1441,
+      "columns": 15,
+      "backup_path": "backups\\pre_expansion_20261028\\google_sheets\\BanglaBBQ_ENG_HealthStatus.json"
+    },
+    "BanglaBBQ_BEN_HealthStatus": {
+      "rows_exported": 1441,
+      "columns": 15,
+      "backup_path": "backups\\pre_expansion_20261028\\google_sheets\\BanglaBBQ_BEN_HealthStatus.json"
+    },
+    "BanglaBBQ_ENG_MaritalStatus": {
+      "rows_exported": 1441,
+      "columns": 15,
+      "backup_path": "backups\\pre_expansion_20261028\\google_sheets\\BanglaBBQ_ENG_MaritalStatus.json"
+    },
+    "BanglaBBQ_BEN_MaritalStatus": {
+      "rows_exported": 1441,
+      "columns": 15,
+      "backup_path": "backups\\pre_expansion_20261028\\google_sheets\\BanglaBBQ_BEN_MaritalStatus.json"
+    },
+    "BanglaBBQ_ENG_OccupationalBackground": {
+      "rows_exported": 1441,
+      "columns": 15,
+      "backup_path": "backups\\pre_expansion_20261028\\google_sheets\\BanglaBBQ_ENG_OccupationalBackground.json"
+    },
+    "BanglaBBQ_BEN_OccupationalBackground": {
+      "rows_exported": 1441,
+      "columns": 15,
+      "backup_path": "backups\\pre_expansion_20261028\\google_sheets\\BanglaBBQ_BEN_OccupationalBackground.json"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "input_package": "BanglaBBQ_Health_Mental_Q11_Q20_PACKAGE.zip",
+  "output_package": "BanglaBBQ_Health_Mental_Q11_Q20_SUBMISSION_REVISED.zip",
+  "field_change_counts": {
+    "english": {
+      "context": 1440,
+      "question": 48
+    },
+    "bengali": {
+      "context": 1440,
+      "question": 1368,
+      "answer_info": 480,
+      "ans0": 192,
+      "ans1": 192,
+      "ans2": 192
+    }
+  },
+  "unchanged_on_every_record": [
+    "example_id",
+    "id",
+    "question_index",
+    "question_polarity",
+    "context_condition",
+    "category",
+    "additional_metadata",
+    "label",
+    "type",
+    "answer_info semantic group tags"
+  ],
+  "change_reasons": [
+    "explicit finalization of selections before past-tense questions",
+    "natural Bengali clinical diagnosis/history phrasing",
+    "Unicode NFC normalization of Bengali text including answer_info",
+    "corrected context/action and bilingual semantics in selected variations",
+    "eliminated two duplicated Bengali question phrasings across themes"
+  ],
+  "not_a_human_clinical_or_native_language_certificate": true
+}
