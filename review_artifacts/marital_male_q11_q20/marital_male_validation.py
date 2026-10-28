@@ -50,7 +50,7 @@ def context_gold_oracle(s,lang,orientation,cond,pol):
     names={'A':s['A'] if lang=='en' else s['AB'],'B':s['B'] if lang=='en' else s['BB']}
     tail=full[len(base)+1:]
     decision=s['decision_'+lang].format(bad=names[adverse],good=names[favorable])
-    if lang=='bn':decision=decision.replace('-কে','কে').replace('-এর','এর')
+    if lang=='bn':decision=decision.replace('-কে','কে').replace('-এর','ের')
     assert tail==decision
     assert names[adverse] in tail and names[favorable] in tail
     return adverse if pol=='neg' else favorable
