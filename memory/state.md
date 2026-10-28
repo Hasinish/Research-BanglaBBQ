@@ -65,7 +65,20 @@
 
 ---
 
-## 2. Google Spreadsheet Working Tabs
+## 2. Google Drive Benchmark Directory & Continuous Synchronization Policy
+
+**Master Google Drive Folder ID**: 1_Ui3wfvYvEF9b8HWsMZc7QUB2iID8Ibe  
+**Master Google Drive Link**: [https://drive.google.com/drive/folders/1_Ui3wfvYvEF9b8HWsMZc7QUB2iID8Ibe](https://drive.google.com/drive/folders/1_Ui3wfvYvEF9b8HWsMZc7QUB2iID8Ibe)  
+**Synchronization Script**: scripts/sync_drive_dataset.py
+
+> **Continuous Synchronization Rule**:
+> Dataset_BanglaBBQ_New on Google Drive must ALWAYS contain the exact, latest production JSONL files.
+> Whenever any JSONL file in Dataset_BanglaBBQ_New/ is modified, expanded, or repaired, python scripts/sync_drive_dataset.py MUST be executed immediately.
+> The sync script updates remote files in-place using the Google Drive API without creating duplicate files or changing folder IDs.
+
+---
+
+## 3. Google Spreadsheet Working Tabs
 
 **Master Spreadsheet ID**: `1xZhhKZoZuSy-ZXAWWdhCpq9QLh705ScErcnBZacmZnY`  
 **Master Spreadsheet Link**: [https://docs.google.com/spreadsheets/d/1xZhhKZoZuSy-ZXAWWdhCpq9QLh705ScErcnBZacmZnY/edit](https://docs.google.com/spreadsheets/d/1xZhhKZoZuSy-ZXAWWdhCpq9QLh705ScErcnBZacmZnY/edit)
