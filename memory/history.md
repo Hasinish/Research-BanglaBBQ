@@ -1,3 +1,12 @@
+- **[2026-10-29] Convo 8bd72675-0f72-467d-8937-c55615ed3391 (Part 2)**: **Bengali LLM Ecosystem Audit, Closed-API Pricing Analysis, and 61K Benchmark Provisioning for Titulm 3B & BanglaLLM Qwen 3B**:
+  - Investigated closed model API evaluation costs for 61,312 queries: computed input/output token volumes (~9.2M in / ~0.18M out); compared Gemini 2.0 Flash (~.74, 1500 RPD free tier limit = 41 days), Groq (free tier rate-limited to 6,000 TPM = impossible for 61k), and OpenRouter (~.49 on GPT-4o-mini).
+  - Surveyed the open-source Bengali LLM landscape: identified top 10 models and established the empirical supremacy of google/gemma-2-9b-it (86.92% Bengali acc) and mistralai/Mistral-Nemo-Instruct-2407 (82.44% acc, -0.0222 delta).
+  - Conducted forensic Hugging Face Hub audit of teammate-proposed model strings (hishab/bn-llama-3-8b-instruct, hishab/titumir-llama-3-8b, iamshakil/Llama-3-8B-Instruct-Bangla): certified 100% 404 HTTP errors / non-existent repositories.
+  - Identified genuine active community models: hishab/titulm-llama-3.2-3b-v2.0-Instruct-v1.0 (LLaMA 3.2 3B base) and BanglaLLM/Bangla-s1k-qwen-2.5-3B-Instruct (Qwen 2.5 3B base).
+  - Authored lightweight zero-GPU Modal downloaders conforming to Modal cost optimization rules: scripts/modal_download_titulm_3b.py (titulm-3b-volume) and scripts/modal_download_banglallm_qwen_3b.py (banglallm-qwen-3b-volume).
+  - Authored full 61,312-query benchmark evaluators on NVIDIA L40S GPU via vLLM with continuous batching and Parrish BBQ metrics: scripts/modal_eval_titulm_3b_full_60k_l40s.py and scripts/modal_eval_banglallm_qwen_3b_full_60k_l40s.py.
+  - Authored comprehensive research log research_logs/2026-10-29_bengali_finetuned_llm_pipeline_and_audit.md and updated research_logs/README.md.
+
 - **[2026-10-29] Convo 8bd72675-0f72-467d-8937-c55615ed3391**: **Model Selection & Full Canonical 61,312-Query Evaluations across Ministral 8B, Mistral-Nemo 12B, Qwen 2.5 3B, and Qwen 2.5 7B**:
   - Commenced architecture inquiry evaluating Mistral/Ministral and Qwen model families under 10B parameters for local/Modal execution and research benchmarking.
   - Implemented decoupled downloaders and persistent volumes for mistralai/Ministral-3-3B-Instruct-2512, mistralai/Ministral-8B-Instruct-2410, mistralai/Mistral-Nemo-Instruct-2407, Qwen/Qwen2.5-3B-Instruct, and Qwen/Qwen2.5-7B-Instruct.
