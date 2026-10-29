@@ -39,3 +39,4 @@ jobs:
           else
             echo "::notice ::Google Drive OAuth secret GDRIVE_TOKEN not configured in GitHub repository secrets. Continuous local synchronization is enforced via .githooks/post-merge and .githooks/post-commit."
           fi
+
