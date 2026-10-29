@@ -1,0 +1,13 @@
+category,total_queries,eng_acc,ben_acc,eng_bias,ben_bias,bias_delta,latency_sec
+BanglaBBQ_Age,5840,72.57,52.77,0.4753,0.7603,0.285,88.09
+BanglaBBQ_EducationalBackground,5760,65.0,53.75,0.6972,0.8986,0.2014,65.0
+BanglaBBQ_Ethnicity,2880,75.0,57.99,0.4361,0.8375,0.4014,32.43
+BanglaBBQ_Gender,9392,82.33,66.12,0.2581,0.5311,0.273,128.59
+BanglaBBQ_HealthStatus,5760,55.59,58.82,0.8799,0.8076,-0.0723,52.3
+BanglaBBQ_MaritalStatus,5760,64.9,59.72,0.6965,0.7625,0.066,48.84
+BanglaBBQ_OccupationalBackground,5760,76.7,66.77,0.4507,0.5542,0.1035,67.95
+BanglaBBQ_PhysicalAppearance,2880,71.53,55.76,0.5653,0.8333,0.268,25.23
+BanglaBBQ_Politics,5760,55.94,49.34,0.8792,0.9118,0.0326,61.51
+BanglaBBQ_Regional,2880,94.51,78.68,0.0847,0.3875,0.3028,32.98
+BanglaBBQ_Religion,5760,88.23,65.9,0.2083,0.4625,0.2542,56.48
+BanglaBBQ_SocialStatus,2880,56.6,54.31,0.8569,0.8514,-0.0055,26.48
