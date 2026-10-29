@@ -1,5 +1,16 @@
-- **[2026-10-29] Convo 8bd72675-0f72-467d-8937-c55615ed3391**: **Model Selection (Mistral / Ministral vs. Qwen Under 10B)**:
+- **[2026-10-29] Convo 8bd72675-0f72-467d-8937-c55615ed3391**: **Model Selection & Full Canonical 61,312-Query Evaluations across Ministral 8B, Mistral-Nemo 12B, Qwen 2.5 3B, and Qwen 2.5 7B**:
   - Commenced architecture inquiry evaluating Mistral/Ministral and Qwen model families under 10B parameters for local/Modal execution and research benchmarking.
+  - Implemented decoupled downloaders and persistent volumes for mistralai/Ministral-3-3B-Instruct-2512, mistralai/Ministral-8B-Instruct-2410, mistralai/Mistral-Nemo-Instruct-2407, Qwen/Qwen2.5-3B-Instruct, and Qwen/Qwen2.5-7B-Instruct.
+  - Authored L40S bilingual smoke test suites and full-scale 61,312-query benchmark evaluators for all model candidates.
+  - Diagnosed Ministral 3B vLLM inspection failure: identified multimodal Mistral3ForConditionalGeneration (Pixtral) architecture.
+  - Executed complete 61,312-query canonical population benchmark on mistralai/Ministral-8B-Instruct-2410 (439.54s, 139.5 q/s): certified catastrophic cross-lingual safety collapse (+0.2397 global bias delta, Physical Appearance collapsing to 8.61% ambiguous accuracy and +0.9139 bias).
+  - Executed complete 61,312-query canonical benchmark on mistralai/Mistral-Nemo-Instruct-2407 (672.65s, 91.2 q/s): proved complete cross-lingual alignment stabilization with negative delta (-0.0222, ENG +0.2289 / BEN +0.2067) and 82.44% Bengali accuracy, demonstrating that the 128k Tekken tokenizer and 12.2B scale rescue Mistral.
+  - Executed complete 61,312-query canonical benchmark on Qwen/Qwen2.5-3B-Instruct (349.28s, 175.5 q/s): identified severe 3B capacity breakdown in low-resource ambiguity (BEN acc 57.89%, bias delta +0.3414).
+  - Executed complete 61,312-query canonical benchmark on Qwen/Qwen2.5-7B-Instruct (683.54s, 89.7 q/s): achieved SOTA English accuracy (92.05%) and strong Bengali capability (72.30%), but revealed persistent cross-lingual degradation (+0.3174 delta), empirically demonstrating the scaling paradox.
+  - Generated all JSON/CSV evaluation reports under metadata/eval_results/ and authored dedicated research logs 
+esearch_logs/2026-10-29_canonical_61312_ministral_8b_evaluation.md, 
+esearch_logs/2026-10-29_canonical_61312_mistral_nemo_12b_evaluation.md, and 
+esearch_logs/2026-10-29_canonical_61312_qwen2_5_3b_and_7b_evaluations.md.
 
 - **[2026-10-29] Convo f85eb6ef-7d20-49a3-934a-21decff7d0ac**: **Git Synchronization, Model Architecture Selection & Modal L40S Setup**:
   - Synchronized repository with `origin/main` via `git pull` (fast-forwarded `6226b57..39e8c04`) and pushed conversation tracking updates.
