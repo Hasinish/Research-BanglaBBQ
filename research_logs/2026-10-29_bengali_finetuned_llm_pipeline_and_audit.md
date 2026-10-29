@@ -124,7 +124,47 @@ Both models were evaluated across the entire canonical population benchmark (30,
 | **Bengali Ambiguous Bias** | **+0.9367** 🚨 *(Near-complete saturation)* | **+0.5415** | +0.6327 |
 | **Cross-Lingual Bias Delta** | **+0.2775** | **+0.2196** | +0.3414 |
 
-### B. Forensic Diagnostic Findings
+### B. Canonical Category-by-Category Population Breakdowns
+
+### Titulm 3.2 3B Instruct (hishab/titulm-llama-3.2-3b-v2.0-Instruct-v1.0)
+
+| Category | Queries | ENG Acc | BEN Acc | ENG Bias | BEN Bias | Delta Bias | ENG Disambig | BEN Disambig | ENG Ambig | BEN Ambig |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **BanglaBBQ_Age** | 5,840 | 32.50% | 25.92% | +0.6959 | +0.9740 | +0.2781 🚨 | 34.59% | 49.25% | 30.41% | 2.60% |
+| **BanglaBBQ_EducationalBackground** | 5,760 | 32.71% | 26.35% | +0.6847 | +0.9708 | +0.2861 🚨 | 33.89% | 49.79% | 31.53% | 2.92% |
+| **BanglaBBQ_Ethnicity** | 2,880 | 34.93% | 25.28% | +0.6556 | +0.8444 | +0.1888 🚨 | 35.42% | 35.00% | 34.44% | 15.56% |
+| **BanglaBBQ_Gender** | 9,392 | 31.60% | 26.13% | +0.7236 | +0.9740 | +0.2504 🚨 | 35.56% | 49.66% | 27.64% | 2.60% |
+| **BanglaBBQ_HealthStatus** | 5,760 | 33.37% | 26.81% | +0.6681 | +0.9674 | +0.2993 🚨 | 33.54% | 50.35% | 33.19% | 3.26% |
+| **BanglaBBQ_MaritalStatus** | 5,760 | 33.33% | 26.01% | +0.6667 | +0.9875 | +0.3208 🚨 | 33.33% | 50.76% | 33.33% | 1.25% |
+| **BanglaBBQ_OccupationalBackground** | 5,760 | 33.78% | 25.49% | +0.6674 | +0.9715 | +0.3041 🚨 | 34.31% | 48.12% | 33.26% | 2.85% |
+| **BanglaBBQ_PhysicalAppearance** | 2,880 | 32.71% | 26.60% | +0.6806 | +0.9861 | +0.3055 🚨 | 33.47% | 51.81% | 31.94% | 1.39% |
+| **BanglaBBQ_Politics** | 5,760 | 33.26% | 26.04% | +0.6722 | +0.9792 | +0.3070 🚨 | 33.75% | 50.00% | 32.78% | 2.08% |
+| **BanglaBBQ_Regional** | 2,880 | 34.03% | 28.33% | +0.6667 | +0.9417 | +0.2750 🚨 | 34.72% | 50.83% | 33.33% | 5.83% |
+| **BanglaBBQ_Religion** | 5,760 | 33.12% | 26.46% | +0.4375 | +0.6493 | +0.2118 🚨 | 33.47% | 51.88% | 32.78% | 1.04% |
+| **BanglaBBQ_SocialStatus** | 2,880 | 33.47% | 27.36% | +0.6667 | +0.9653 | +0.2986 🚨 | 33.61% | 51.25% | 33.33% | 3.47% |
+| **WEIGHTED GRAND TOTAL** | **61,312** | **33.03%** | **26.29%** | **+0.6592** | **+0.9367** | **+0.2775** | - | - | - | - |
+
+
+### BanglaLLM Qwen 2.5 3B Instruct (BanglaLLM/Bangla-s1k-qwen-2.5-3B-Instruct)
+
+| Category | Queries | ENG Acc | BEN Acc | ENG Bias | BEN Bias | Delta Bias | ENG Disambig | BEN Disambig | ENG Ambig | BEN Ambig |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **BanglaBBQ_Age** | 5,840 | 74.21% | 50.45% | +0.2884 | +0.5705 | +0.2821 🚨 | 77.26% | 57.95% | 71.16% | 42.95% |
+| **BanglaBBQ_EducationalBackground** | 5,760 | 72.78% | 56.28% | +0.5382 | +0.6924 | +0.1542 🚨 | 99.38% | 81.81% | 46.18% | 30.76% |
+| **BanglaBBQ_Ethnicity** | 2,880 | 90.14% | 74.65% | +0.1417 | +0.3486 | +0.2069 🚨 | 94.44% | 84.17% | 85.83% | 65.14% |
+| **BanglaBBQ_Gender** | 9,392 | 85.16% | 59.88% | +0.1124 | +0.4072 | +0.2948 🚨 | 81.56% | 60.48% | 88.76% | 59.28% |
+| **BanglaBBQ_HealthStatus** | 5,760 | 59.86% | 49.86% | +0.8028 | +0.7458 | -0.0570 | 100.00% | 74.31% | 19.72% | 25.42% |
+| **BanglaBBQ_MaritalStatus** | 5,760 | 74.10% | 61.28% | +0.5125 | +0.6236 | +0.1111 🚨 | 99.44% | 84.93% | 48.75% | 37.64% |
+| **BanglaBBQ_OccupationalBackground** | 5,760 | 95.24% | 65.35% | +0.0535 | +0.2812 | +0.2277 🚨 | 95.83% | 58.82% | 94.65% | 71.88% |
+| **BanglaBBQ_PhysicalAppearance** | 2,880 | 65.76% | 48.68% | +0.6722 | +0.8708 | +0.1986 🚨 | 98.75% | 84.44% | 32.78% | 12.92% |
+| **BanglaBBQ_Politics** | 5,760 | 86.35% | 53.54% | +0.2660 | +0.7021 | +0.4361 🚨 | 99.31% | 77.29% | 73.40% | 29.79% |
+| **BanglaBBQ_Regional** | 2,880 | 99.31% | 85.00% | +0.0028 | +0.2056 | +0.2028 🚨 | 98.89% | 90.56% | 99.72% | 79.44% |
+| **BanglaBBQ_Religion** | 5,760 | 95.87% | 62.47% | +0.0535 | +0.3792 | +0.3257 🚨 | 97.22% | 85.49% | 94.51% | 39.44% |
+| **BanglaBBQ_SocialStatus** | 2,880 | 68.19% | 55.83% | +0.6319 | +0.7694 | +0.1375 🚨 | 99.58% | 88.61% | 36.81% | 23.06% |
+| **WEIGHTED GRAND TOTAL** | **61,312** | **80.79%** | **59.15%** | **+0.3219** | **+0.5415** | **+0.2196** | - | - | - | - |
+
+
+### C. Forensic Diagnostic Findings
 
 1. **Catastrophic Reasoning Collapse in Titulm 3B**:
    - Titulm 3.2 3B completely collapsed into degenerate output distributions, achieving **33.03% in English** and **26.29% in Bengali** across all 12 categories (expected 3-choice random guess rate is 33.33%).
