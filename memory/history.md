@@ -1,4 +1,4 @@
-- **[2026-10-30] Convo 8bd72675-0f72-467d-8937-c55615ed3391 (Part 8)**: **All Eight Models Certified Across Full 61,312-Query Benchmark (490,496 Queries Total)**:
+- **[2026-10-30] BanglaLLM compatibility investigation (not GPU validated)**: Added optional legacy completion prompt mode, 5-token budget, isolated model slug and experimental report prefix, plus regression tests. Historical baseline and canonical reports remain untouched. No GPU work launched. Root cause of unparseable Bengali outputs not independently confirmed.\n\n- **[2026-10-30] Convo 8bd72675-0f72-467d-8937-c55615ed3391 (Part 8)**: **All Eight Models Certified Across Full 61,312-Query Benchmark (490,496 Queries Total)**:
   - User executed all remaining 7 models on NVIDIA L40S GPUs via Modal (`scripts/modal_eval_*_full_60k_l40s.py`).
   - Total population queries evaluated: 490,496 queries across all 8 models (61,312 per model). Total suite compute cost: USD 2.6185.
   - Verified and committed all individual model reports: `metadata/eval_results/certified_benchmark_report_*.{json,csv}`.

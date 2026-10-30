@@ -51,11 +51,13 @@ def get_hf_token() -> str:
     return ""
 
 
-def format_model_prompt(tokenizer: Any, row: Dict[str, Any], lang: str) -> str:
+def format_model_prompt(tokenizer: Any, row: Dict[str, Any], lang: str, prompt_mode: str = "chat") -> str:
     """
     Formats a benchmark record into the model's official instruction/chat format.
     Falls back to structured completion prompt if chat_template is unavailable.
     """
+    if prompt_mode not in ("chat", "legacy_completion"):
+        raise ValueError(f"Unknown prompt mode: {prompt_mode}")
     context = row["context"]
     question = row["question"]
     ans0 = row["ans0"]
@@ -84,7 +86,7 @@ def format_model_prompt(tokenizer: Any, row: Dict[str, Any], lang: str) -> str:
         )
 
     # Use native chat template if available
-    if hasattr(tokenizer, "apply_chat_template") and getattr(tokenizer, "chat_template", None):
+    if prompt_mode == "chat" and hasattr(tokenizer, "apply_chat_template") and getattr(tokenizer, "chat_template", None):
         messages = [{"role": "user", "content": user_msg}]
         return tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
     else:
@@ -124,6 +126,7 @@ def evaluate_chunk(
     checkpoint_file: Path,
     eval_volume: Optional[Any],
     sidecar_map: Dict[str, str],
+    prompt_mode: str = "chat",
 ) -> List[Dict[str, Any]]:
     """
     Evaluates or resumes a single category-language chunk.
@@ -161,7 +164,7 @@ def evaluate_chunk(
             print(f"    [CHECKPOINT READ ERROR] Failed reading {checkpoint_file}: {e}. Re-evaluating {cat_name} {lang}...")
 
     # 2. Build model prompts
-    prompts = [format_model_prompt(tokenizer, r, lang) for r in rows]
+    prompts = [format_model_prompt(tokenizer, r, lang, prompt_mode) for r in rows]
 
     # 3. vLLM Batch Inference
     outputs = llm.generate(prompts, sampling_params)
@@ -229,6 +232,9 @@ def run_full_benchmark_core(
     data_dir_path: str = "/root/Dataset_BanglaBBQ_New",
     metadata_dir_path: str = "/root/metadata",
     durable_eval_dir: str = "/eval_data",
+    prompt_mode: str = "chat",
+    generation_max_tokens: int = 16,
+    report_prefix: str = "certified_benchmark_report",
 ) -> Dict[str, Any]:
     """
     Executes the full 61,312-query benchmark across all 12 categories with continuous batching,
@@ -236,6 +242,10 @@ def run_full_benchmark_core(
     """
     import torch
     from vllm import LLM, SamplingParams
+    if prompt_mode not in ("chat", "legacy_completion") or generation_max_tokens < 1:
+        raise ValueError("Invalid evaluation protocol")
+    if report_prefix not in ("certified_benchmark_report", "experimental_benchmark_report"):
+        raise ValueError("Invalid report prefix")
 
     data_dir = Path(data_dir_path)
     if not data_dir.exists():
@@ -270,7 +280,7 @@ def run_full_benchmark_core(
 
     sampling_params = SamplingParams(
         temperature=0.0,
-        max_tokens=16,
+        max_tokens=generation_max_tokens,
     )
 
     all_classified_records = []
@@ -309,6 +319,7 @@ def run_full_benchmark_core(
             checkpoint_file=eng_ckpt,
             eval_volume=eval_volume,
             sidecar_map=sidecar_map,
+            prompt_mode=prompt_mode,
         )
 
         ben_records = evaluate_chunk(
@@ -322,6 +333,7 @@ def run_full_benchmark_core(
             checkpoint_file=ben_ckpt,
             eval_volume=eval_volume,
             sidecar_map=sidecar_map,
+            prompt_mode=prompt_mode,
         )
 
         cat_duration = time.time() - cat_start
@@ -423,12 +435,14 @@ def run_full_benchmark_core(
         },
         "category_breakdown": category_reports,
         "checkpoint_directory": str(checkpoint_root),
+        "report_prefix": report_prefix,
+        "evaluation_protocol": {"prompt_mode": prompt_mode, "max_tokens": generation_max_tokens, "status": "experimental" if prompt_mode == "legacy_completion" else "canonical"},
     }
 
     # Save summary report to durable volume
     report_vol_dir = Path(durable_eval_dir) / "reports"
     report_vol_dir.mkdir(parents=True, exist_ok=True)
-    report_vol_json = report_vol_dir / f"certified_benchmark_report_{model_slug}.json"
+    report_vol_json = report_vol_dir / f"{report_prefix}_{model_slug}.json"
     with open(report_vol_json, "w", encoding="utf-8") as f:
         json.dump(summary_payload, f, indent=2, ensure_ascii=False)
 
@@ -484,14 +498,15 @@ def print_and_save_final_report(result: Dict[str, Any], wall_time: float) -> Tup
     out_dir = REPO_ROOT / "metadata" / "eval_results"
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    json_path = out_dir / f"certified_benchmark_report_{model_slug}.json"
+    report_prefix = result.get("report_prefix", "certified_benchmark_report")
+    json_path = out_dir / f"{report_prefix}_{model_slug}.json"
     result["wall_time_seconds"] = round(wall_time, 2)
     result["estimated_gpu_cost_usd"] = round(l40s_cost, 4)
 
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(result, f, indent=2, ensure_ascii=False)
 
-    csv_path = out_dir / f"certified_benchmark_report_{model_slug}.csv"
+    csv_path = out_dir / f"{report_prefix}_{model_slug}.csv"
     with open(csv_path, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow([

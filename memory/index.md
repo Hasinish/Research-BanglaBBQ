@@ -5,6 +5,9 @@
 
 ---
 
+## Isolated BanglaLLM compatibility runner (experiment pending)
+- `scripts/modal_eval_banglallm_legacy_completion_l40s.py`: historical completion prompt/5-token budget with corrected scorer, separate predictions (`banglallm_qwen_3b_legacy_completion_v2`) and experimental report filenames. Not yet GPU validated.
+
 ## 1. Directory Structure Overview
 
 ```

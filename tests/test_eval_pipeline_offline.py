@@ -292,6 +292,34 @@ class TestEvalPipelineOffline(unittest.TestCase):
             self.assertEqual(pred, expected_pred, f"Failed for raw text: {raw_text}")
 
 
+    def test_07_banglallm_completion_compatibility(self):
+        """Legacy mode must bypass chat templating and preserve the exact completion suffix."""
+        row = self.sample_row_eng
+        tok = MockTokenizer()
+        self.assertTrue(format_model_prompt(tok, row, "ENG", "legacy_completion").endswith("Answer: ("))
+        self.assertTrue(format_model_prompt(tok, row, "BEN", "legacy_completion").endswith("উত্তর: ("))
+        self.assertNotIn("assistant:", format_model_prompt(tok, row, "ENG", "legacy_completion"))
+        self.assertIn("assistant:", format_model_prompt(tok, row, "ENG", "chat"))
+        with self.assertRaises(ValueError):
+            format_model_prompt(tok, row, "ENG", "invalid")
+        source = (REPO_ROOT / "scripts/modal_eval_banglallm_legacy_completion_l40s.py").read_text(encoding="utf-8")
+        self.assertIn('MODEL_SLUG = "banglallm_qwen_3b_legacy_completion_v2"', source)
+        self.assertIn('report_prefix="experimental_benchmark_report"', source)
+        self.assertIn('generation_max_tokens=5', source)
+
+    def test_08_legacy_checkpoint_records_exact_prompt(self):
+        """Independent checkpoint namespace and saved prompt can be audited."""
+        with tempfile.TemporaryDirectory() as td:
+            records = evaluate_chunk(
+                llm=MockLLM(["C"]), tokenizer=MockTokenizer(), sampling_params=None,
+                rows=[self.sample_row_eng], lang="BEN",
+                cat_name="BanglaBBQ_EducationalBackground", model_name="experimental",
+                checkpoint_file=Path(td) / "legacy.jsonl", eval_volume=None,
+                sidecar_map=self.sidecar_map, prompt_mode="legacy_completion")
+            self.assertEqual(records[0]["pred_choice"], 2)
+            self.assertTrue(records[0]["prompt"].endswith("উত্তর: ("))
+
+
 if __name__ == "__main__":
     unittest.main()
 
