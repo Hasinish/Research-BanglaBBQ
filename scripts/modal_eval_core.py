@@ -127,21 +127,38 @@ def evaluate_chunk(
 ) -> List[Dict[str, Any]]:
     """
     Evaluates or resumes a single category-language chunk.
-    If checkpoint exists on durable storage, loads without inference.
-    Otherwise generates, parses, classifies, writes checkpoint, and commits volume.
+    Before resuming, rigorously verifies:
+    1. Record counts match expected rows.
+    2. Checkpoint model identity strictly matches model_name.
+    3. Dataset example_id, question_index, and language strictly match input rows.
+    If valid, resumes without inference. If invalid/missing, regenerates, writes checkpoint,
+    and commits volume. A failed commit immediately raises RuntimeError to stop the run.
     """
-    # 1. Resume Check: verify if durable checkpoint already exists
+    # 1. Resume Check: verify if durable checkpoint already exists and passes strict validation
     if checkpoint_file.exists():
         try:
             with open(checkpoint_file, "r", encoding="utf-8") as f:
                 cached_records = [json.loads(line) for line in f if line.strip()]
-            if len(cached_records) == len(rows):
-                print(f"    [CHECKPOINT RESUME] Skipping {cat_name} {lang} ({len(cached_records)}/{len(rows)} records found).")
-                return cached_records
+
+            expected_count = len(rows)
+            actual_count = len(cached_records)
+
+            if actual_count != expected_count:
+                print(f"    [CHECKPOINT INVALID] Count mismatch for {cat_name} {lang}: found {actual_count}, expected {expected_count}. Re-evaluating...")
+            elif not all(r.get("model") == model_name for r in cached_records):
+                found_model = cached_records[0].get("model") if cached_records else "None"
+                print(f"    [CHECKPOINT INVALID] Model identity mismatch for {cat_name} {lang}: expected '{model_name}', found '{found_model}'. Re-evaluating...")
+            elif not all(r.get("language") == lang for r in cached_records):
+                print(f"    [CHECKPOINT INVALID] Language mismatch in checkpoint for {cat_name}: expected '{lang}'. Re-evaluating...")
+            elif [r.get("example_id") for r in cached_records] != [row.get("example_id") for row in rows]:
+                print(f"    [CHECKPOINT INVALID] Dataset example_id sequence mismatch for {cat_name} {lang}. Re-evaluating...")
+            elif [str(r.get("question_index")) for r in cached_records] != [str(row.get("question_index")) for row in rows]:
+                print(f"    [CHECKPOINT INVALID] Dataset question_index sequence mismatch for {cat_name} {lang}. Re-evaluating...")
             else:
-                print(f"    [CHECKPOINT INCOMPLETE] Found {len(cached_records)}/{len(rows)} records for {cat_name} {lang}. Re-evaluating...")
+                print(f"    [CHECKPOINT RESUME] Verified {cat_name} {lang}: model='{model_name}', {actual_count}/{expected_count} IDs certified. Skipping inference.")
+                return cached_records
         except Exception as e:
-            print(f"    [CHECKPOINT READ ERROR] {e}. Re-evaluating {cat_name} {lang}...")
+            print(f"    [CHECKPOINT READ ERROR] Failed reading {checkpoint_file}: {e}. Re-evaluating {cat_name} {lang}...")
 
     # 2. Build model prompts
     prompts = [format_model_prompt(tokenizer, r, lang) for r in rows]
@@ -191,12 +208,15 @@ def evaluate_chunk(
             f.write(json.dumps(full_record, ensure_ascii=False) + "\n")
             classified_records.append(full_record)
 
-    # 5. Commit durable storage volume
+    # 5. Commit durable storage volume - FAIL HARD ON COMMIT FAILURE
     if eval_volume is not None:
         try:
             eval_volume.commit()
         except Exception as e:
-            print(f"    [WARN] Volume commit failed: {e}")
+            raise RuntimeError(
+                f"FATAL: Durable checkpoint commit failed on eval_volume for {cat_name} {lang}! "
+                f"Aborting execution immediately to prevent uncommitted data loss: {e}"
+            ) from e
 
     return classified_records
 
@@ -415,8 +435,11 @@ def run_full_benchmark_core(
     if eval_volume is not None:
         try:
             eval_volume.commit()
-        except Exception:
-            pass
+        except Exception as e:
+            raise RuntimeError(
+                f"FATAL: Final report volume commit failed on eval_volume for {model_name}! "
+                f"Aborting execution to prevent uncommitted report loss: {e}"
+            ) from e
 
     return summary_payload
 
@@ -488,3 +511,4 @@ def print_and_save_final_report(result: Dict[str, Any], wall_time: float) -> Tup
     print(f"[+] Certified CSV Table:   {csv_path}")
 
     return json_path, csv_path
+

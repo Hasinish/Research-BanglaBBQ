@@ -179,5 +179,5 @@ aw_model_output and re-runs parse_prediction and classify_record_prediction from
 - 	ests/test_bbq_scoring_engine.py: **14/14 PASS**
 - 	ests/test_target_mapping_invariants.py: **61,312/61,312 PASS**
 - 	ests/test_drive_sync_safety.py: **24/24 files PASS**
-- 	ests/test_eval_pipeline_offline.py: **4/4 PASS**
+- 	ests/test_eval_pipeline_offline.py: **6/6 PASS** (includes volume commit RuntimeError fail-hard and strict checkpoint model/ID/count verification).
 - Zero GPU compute launched; pipeline certified ready for execution.

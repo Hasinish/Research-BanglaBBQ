@@ -62,6 +62,11 @@ class MockTokenizer:
         return res
 
 
+class MockFailingVolume:
+    def commit(self):
+        raise ConnectionResetError("Simulated network timeout during volume commit")
+
+
 class TestEvalPipelineOffline(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -134,11 +139,13 @@ class TestEvalPipelineOffline(unittest.TestCase):
         self.assertTrue(prompt_fallback.endswith("Answer: ("))
 
     def test_03_checkpointing_and_resume(self):
-        """Verifies that evaluate_chunk creates checkpoints and skips execution on resume."""
+        """Verifies that evaluate_chunk creates checkpoints and skips execution on verified resume."""
         with tempfile.TemporaryDirectory() as tmpdir:
             ckpt_path = Path(tmpdir) / "test_ckpt.jsonl"
             mock_llm = MockLLM(["(C) Unknown", "(A) Madrasa graduate"])
-            rows = [self.sample_row_eng, self.sample_row_eng]
+            row2 = dict(self.sample_row_eng)
+            row2["example_id"] = 101
+            rows = [self.sample_row_eng, row2]
 
             # 1. First run: generates and writes checkpoint
             records = evaluate_chunk(
@@ -181,7 +188,95 @@ class TestEvalPipelineOffline(unittest.TestCase):
             self.assertEqual(len(resumed_records), 2)
             self.assertEqual(resumed_records[0]["pred_choice"], 2)
 
-    def test_04_independent_reparsing_verification(self):
+    def test_04_checkpoint_verification_rejects_corrupted_data(self):
+        """Verifies that evaluate_chunk rejects checkpoints with model, ID, or count mismatches."""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            ckpt_path = Path(tmpdir) / "corrupt_ckpt.jsonl"
+            rows = [self.sample_row_eng]
+            mock_llm = MockLLM(["(C) Unknown"])
+
+            # A. Test count mismatch (empty file)
+            with open(ckpt_path, "w", encoding="utf-8") as f:
+                f.write("")  # 0 lines instead of 1
+
+            records = evaluate_chunk(
+                llm=mock_llm,
+                tokenizer=None,
+                sampling_params=None,
+                rows=rows,
+                lang="ENG",
+                cat_name="BanglaBBQ_EducationalBackground",
+                model_name="test-model",
+                checkpoint_file=ckpt_path,
+                eval_volume=None,
+                sidecar_map=self.sidecar_map,
+            )
+            self.assertEqual(len(records), 1)
+
+            # B. Test model identity mismatch
+            with open(ckpt_path, "w", encoding="utf-8") as f:
+                bad_record = dict(records[0])
+                bad_record["model"] = "DIFFERENT_MODEL_IDENTITY"
+                f.write(json.dumps(bad_record) + "\n")
+
+            # Running with model_name='test-model' must reject the checkpoint and regenerate
+            records_regenerated = evaluate_chunk(
+                llm=mock_llm,
+                tokenizer=None,
+                sampling_params=None,
+                rows=rows,
+                lang="ENG",
+                cat_name="BanglaBBQ_EducationalBackground",
+                model_name="test-model",
+                checkpoint_file=ckpt_path,
+                eval_volume=None,
+                sidecar_map=self.sidecar_map,
+            )
+            self.assertEqual(records_regenerated[0]["model"], "test-model")
+
+            # C. Test dataset example_id mismatch
+            with open(ckpt_path, "w", encoding="utf-8") as f:
+                bad_id_record = dict(records[0])
+                bad_id_record["example_id"] = 999999  # Mismatched ID
+                f.write(json.dumps(bad_id_record) + "\n")
+
+            records_id_fixed = evaluate_chunk(
+                llm=mock_llm,
+                tokenizer=None,
+                sampling_params=None,
+                rows=rows,
+                lang="ENG",
+                cat_name="BanglaBBQ_EducationalBackground",
+                model_name="test-model",
+                checkpoint_file=ckpt_path,
+                eval_volume=None,
+                sidecar_map=self.sidecar_map,
+            )
+            self.assertEqual(records_id_fixed[0]["example_id"], 100)
+
+    def test_05_failed_volume_commit_raises_runtime_error(self):
+        """Verifies that a failed volume commit aborts the run with RuntimeError instead of continuing."""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            ckpt_path = Path(tmpdir) / "commit_fail_ckpt.jsonl"
+            mock_llm = MockLLM(["(C) Unknown"])
+            failing_vol = MockFailingVolume()
+
+            with self.assertRaises(RuntimeError) as ctx:
+                evaluate_chunk(
+                    llm=mock_llm,
+                    tokenizer=None,
+                    sampling_params=None,
+                    rows=[self.sample_row_eng],
+                    lang="ENG",
+                    cat_name="BanglaBBQ_EducationalBackground",
+                    model_name="test-model",
+                    checkpoint_file=ckpt_path,
+                    eval_volume=failing_vol,
+                    sidecar_map=self.sidecar_map,
+                )
+            self.assertIn("FATAL: Durable checkpoint commit failed", str(ctx.exception))
+
+    def test_06_independent_reparsing_verification(self):
         """Verifies that re-parsing raw response strings bit-for-bit reproduces classifications."""
         test_cases = [
             ("(A)", 0),
@@ -199,3 +294,4 @@ class TestEvalPipelineOffline(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
