@@ -1,3 +1,12 @@
+- **[2026-10-30] Convo 8bd72675-0f72-467d-8937-c55615ed3391 (Part 8)**: **All Eight Models Certified Across Full 61,312-Query Benchmark (490,496 Queries Total)**:
+  - User executed all remaining 7 models on NVIDIA L40S GPUs via Modal (`scripts/modal_eval_*_full_60k_l40s.py`).
+  - Total population queries evaluated: 490,496 queries across all 8 models (61,312 per model). Total suite compute cost: USD 2.6185.
+  - Verified and committed all individual model reports: `metadata/eval_results/certified_benchmark_report_*.{json,csv}`.
+  - Generated master summary tables: `metadata/eval_results/certified_benchmark_master_summary.{json,csv}`.
+  - Documented major empirical findings: Google Gemma 2 9B IT leads overall accuracy (93.44% ENG / 84.68% BEN); Mistral-Nemo 12.2B achieves highest cross-lingual stability (5.12% accuracy drop, 0 unparseable); Qwen 2.5 and LLaMA 3.1 show severe Bengali ambiguous collapse; community fine-tunes fail instruction following (BanglaLLM 36k unparseable, TituLM 22.57% acc).
+  - Authored comprehensive research log: `research_logs/2026-10-30_canonical_61312_eight_model_certified_benchmark.md` and updated `research_logs/README.md`.
+  - All 192 prediction chunk files safely committed to Modal volume `banglabbq-eval-volume:predictions/`.
+
 - **[2026-10-30] Convo 8bd72675-0f72-467d-8937-c55615ed3391 (Part 7)**: **First Certified 61,312-Query Population Evaluation Completed (Qwen 2.5 7B)**:
   - Executed certified 61,312-query benchmark evaluation on Qwen/Qwen2.5-7B-Instruct on NVIDIA L40S GPU via Modal (scripts/modal_eval_qwen_7b_full_60k_l40s.py).
   - Proved durable volume checkpointing: automatically skipped already completed chunks for Age, Education, and Ethnicity (14,480 records resumed in 0.62s without GPU re-inference); evaluated remaining 9 categories across both languages to 100% completion.
