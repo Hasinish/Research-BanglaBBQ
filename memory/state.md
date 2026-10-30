@@ -1,6 +1,8 @@
 # state.md — Current Verified Progress Dashboard
 
 **Last Verified Date**: 2026-10-29  
+**Latest Forensic Milestone (Evaluation Scoring Audit & Certified BBQ Engine Built)**: 2026-10-30: Completed critical forensic audit of 61,312-query evaluation pipeline across all eight models. Proved that previous evaluators suffered from a fallthrough role bug in compute_metrics() (classifying almost all negative non-Unknown picks as biased because ans_role != 'non_target' was unconditionally true) and omitted s_dis. Confirmed zero sample-level predictions were saved to persistent storage, making offline rescoring physically impossible. Solved root cause by: (1) authoring metadata/sidecar_stereotype_target_map.json across all 214 themes (61,232/61,312 records cleanly mapped, 80 legacy Gender entries flagged non-directional); (2) engineering scripts/bbq_scoring_engine.py strictly implementing Parrish et al. (2022) BBQ formulas (s_amb, s_dis, acc_ambig, acc_disambig, unparseable_rate); (3) authoring tests/test_bbq_scoring_engine.py (14/14 unit tests PASS) and tests/test_target_mapping_invariants.py (61,312/61,312 records PASS). Workload to rerun certified suite on NVIDIA L40S estimated at <.02 for pilot, ~.35 for top 4 publication models, or ~.07 for all 8 models.
+
 **Latest Grand Empirical Milestone (Eight-Model Canonical 61,312-Query Benchmark Suite Certified)**: 2026-10-29: Fully completed and certified full-population 61,312-query benchmark evaluations across all 12 categories for EIGHT major models on NVIDIA L40S GPU:
 1. google/gemma-2-9b-it: 90.03% ENG / 86.92% BEN | Delta +0.0569 (Benchmark Champion 👑)
 2. mistralai/Mistral-Nemo-Instruct-2407: 87.56% ENG / 82.44% BEN | Delta -0.0222 (Perfect Cross-Lingual Alignment 🛡️)

@@ -1,3 +1,13 @@
+- **[2026-10-30] Convo 8bd72675-0f72-467d-8937-c55615ed3391 (Part 3)**: **Evaluation Recovery, Scoring Audit & Production BBQ Scoring Engine**:
+  - Executed urgent forensic audit on 61,312-query evaluation infrastructure across all eight models.
+  - Verified prediction recovery status: confirmed that sample-level model choices and raw outputs were not written to persistent Modal volumes or local disk; offline rescoring without inference is physically impossible.
+  - Diagnosed exact scoring bugs in compute_metrics(): identified fallthrough bug where ans_role != 'non_target' was unconditionally true for all negative polarity non-Unknown answers, causing raw non-Unknown rates to be classified as biased; diagnosed omission of disambiguated bias score s_dis.
+  - Constructed comprehensive sidecar target mapping metadata/sidecar_stereotype_target_map.json mapping all 214 themes: verified 61,232/61,312 records (99.87%) cleanly resolve to Target and Non-Target roles with 0 schema modifications; flagged 80 legacy intra-demographic Gender records as non-directional matching Alicia Parrish's BBQ protocol.
+  - Implemented production evaluation module scripts/bbq_scoring_engine.py strictly executing Parrish et al. (2022) BBQ formulas (s_dis, s_amb, accuracy, unparseable_rate, robust Bengali/English parsing).
+  - Authored automated test suite tests/test_bbq_scoring_engine.py (14/14 unit tests PASS) and tests/test_target_mapping_invariants.py (61,312/61,312 records verified PASS).
+  - Authored dedicated research log research_logs/2026-10-30_evaluation_scoring_audit_and_bbq_engine.md and updated research_logs/README.md.
+  - Calculated exact rerun costs on NVIDIA L40S GPU: <.02 for pilot, ~.35 for top 4 publication models, ~.07 for all 8 models.
+
 - **[2026-10-29] Convo 8bd72675-0f72-467d-8937-c55615ed3391 (Part 2)**: **Bengali LLM Ecosystem Audit, Closed-API Pricing Analysis, and 61K Benchmark Provisioning for Titulm 3B & BanglaLLM Qwen 3B**:
   - Investigated closed model API evaluation costs for 61,312 queries: computed input/output token volumes (~9.2M in / ~0.18M out); compared Gemini 2.0 Flash (~.74, 1500 RPD free tier limit = 41 days), Groq (free tier rate-limited to 6,000 TPM = impossible for 61k), and OpenRouter (~.49 on GPT-4o-mini).
   - Surveyed the open-source Bengali LLM landscape: identified top 10 models and established the empirical supremacy of google/gemma-2-9b-it (86.92% Bengali acc) and mistralai/Mistral-Nemo-Instruct-2407 (82.44% acc, -0.0222 delta).
