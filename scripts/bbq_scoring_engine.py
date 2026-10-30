@@ -20,6 +20,107 @@ DEFAULT_SIDECAR_PATH = Path(__file__).resolve().parent.parent / "metadata" / "si
 
 _SIDECAR_CACHE: Optional[Dict[str, str]] = None
 
+CATEGORY_ALIASES: Dict[str, str] = {
+    # 1. Age
+    "age": "BanglaBBQ_Age",
+    "banglabbq_age": "BanglaBBQ_Age",
+
+    # 2. EducationalBackground
+    "educationalbackground": "BanglaBBQ_EducationalBackground",
+    "educational_background": "BanglaBBQ_EducationalBackground",
+    "education": "BanglaBBQ_EducationalBackground",
+    "banglabbq_educationalbackground": "BanglaBBQ_EducationalBackground",
+    "banglabbq_educational_background": "BanglaBBQ_EducationalBackground",
+    "banglabbq_education": "BanglaBBQ_EducationalBackground",
+
+    # 3. Ethnicity
+    "ethnicity": "BanglaBBQ_Ethnicity",
+    "banglabbq_ethnicity": "BanglaBBQ_Ethnicity",
+
+    # 4. Gender
+    "gender": "BanglaBBQ_Gender",
+    "gender_identity": "BanglaBBQ_Gender",
+    "genderidentity": "BanglaBBQ_Gender",
+    "banglabbq_gender": "BanglaBBQ_Gender",
+    "banglabbq_gender_identity": "BanglaBBQ_Gender",
+    "banglabbq_genderidentity": "BanglaBBQ_Gender",
+
+    # 5. HealthStatus
+    "healthstatus": "BanglaBBQ_HealthStatus",
+    "health_status": "BanglaBBQ_HealthStatus",
+    "health": "BanglaBBQ_HealthStatus",
+    "banglabbq_healthstatus": "BanglaBBQ_HealthStatus",
+    "banglabbq_health_status": "BanglaBBQ_HealthStatus",
+    "banglabbq_health": "BanglaBBQ_HealthStatus",
+
+    # 6. MaritalStatus
+    "maritalstatus": "BanglaBBQ_MaritalStatus",
+    "marital_status": "BanglaBBQ_MaritalStatus",
+    "marital": "BanglaBBQ_MaritalStatus",
+    "banglabbq_maritalstatus": "BanglaBBQ_MaritalStatus",
+    "banglabbq_marital_status": "BanglaBBQ_MaritalStatus",
+    "banglabbq_marital": "BanglaBBQ_MaritalStatus",
+
+    # 7. OccupationalBackground
+    "occupationalbackground": "BanglaBBQ_OccupationalBackground",
+    "occupational_background": "BanglaBBQ_OccupationalBackground",
+    "occupation": "BanglaBBQ_OccupationalBackground",
+    "banglabbq_occupationalbackground": "BanglaBBQ_OccupationalBackground",
+    "banglabbq_occupational_background": "BanglaBBQ_OccupationalBackground",
+    "banglabbq_occupation": "BanglaBBQ_OccupationalBackground",
+
+    # 8. PhysicalAppearance
+    "physicalappearance": "BanglaBBQ_PhysicalAppearance",
+    "physical_appearance": "BanglaBBQ_PhysicalAppearance",
+    "appearance": "BanglaBBQ_PhysicalAppearance",
+    "banglabbq_physicalappearance": "BanglaBBQ_PhysicalAppearance",
+    "banglabbq_physical_appearance": "BanglaBBQ_PhysicalAppearance",
+    "banglabbq_appearance": "BanglaBBQ_PhysicalAppearance",
+
+    # 9. Politics
+    "politics": "BanglaBBQ_Politics",
+    "banglabbq_politics": "BanglaBBQ_Politics",
+
+    # 10. Regional
+    "regional": "BanglaBBQ_Regional",
+    "regional_affiliation": "BanglaBBQ_Regional",
+    "regionalaffiliation": "BanglaBBQ_Regional",
+    "banglabbq_regional": "BanglaBBQ_Regional",
+    "banglabbq_regional_affiliation": "BanglaBBQ_Regional",
+    "banglabbq_regionalaffiliation": "BanglaBBQ_Regional",
+
+    # 11. Religion
+    "religion": "BanglaBBQ_Religion",
+    "banglabbq_religion": "BanglaBBQ_Religion",
+
+    # 12. SocialStatus
+    "socialstatus": "BanglaBBQ_SocialStatus",
+    "social_status": "BanglaBBQ_SocialStatus",
+    "socioeconomic": "BanglaBBQ_SocialStatus",
+    "banglabbq_socialstatus": "BanglaBBQ_SocialStatus",
+    "banglabbq_social_status": "BanglaBBQ_SocialStatus",
+    "banglabbq_socioeconomic": "BanglaBBQ_SocialStatus",
+}
+
+
+def normalize_category_name(category: str) -> str:
+    """
+    Normalizes any dataset category string, folder name, or alias to its canonical
+    sidecar key prefix (e.g. 'Gender_identity' -> 'BanglaBBQ_Gender',
+    'Health_status' -> 'BanglaBBQ_HealthStatus').
+    """
+    if not category:
+        return ""
+    cleaned = category.strip().lower()
+    if cleaned in CATEGORY_ALIASES:
+        return CATEGORY_ALIASES[cleaned]
+    # Remove 'banglabbq_', underscores, spaces and retry
+    simplified = cleaned.replace("banglabbq_", "").replace("_", "").replace(" ", "")
+    for alias, canonical in CATEGORY_ALIASES.items():
+        if simplified == alias.replace("banglabbq_", "").replace("_", "").replace(" ", ""):
+            return canonical
+    return category
+
 
 def load_sidecar_map(path: Optional[Path] = None) -> Dict[str, str]:
     global _SIDECAR_CACHE
@@ -118,19 +219,11 @@ def resolve_theme_target(
     Raises ValueError if category/theme is completely missing from sidecar map.
     """
     s_map = sidecar_map or load_sidecar_map()
-    cat = category
-    if not cat.startswith("BanglaBBQ_"):
-        # Match against sidecar map prefixes
-        prefix_matches = [k for k in s_map.keys() if k.startswith(f"BanglaBBQ_{cat}")]
-        if prefix_matches:
-            cat = prefix_matches[0].split("::")[0]
-        else:
-            cat = f"BanglaBBQ_{cat}"
-
+    cat = normalize_category_name(category)
     key = f"{cat}::{question_index}"
 
     if key not in s_map:
-        raise ValueError(f"Unmapped theme key '{key}' in sidecar stereotype map! Refusing to guess.")
+        raise ValueError(f"Unmapped theme key '{key}' (original category: '{category}') in sidecar stereotype map! Refusing to guess.")
 
     target_role = s_map[key]
     non_unk_roles = [
@@ -144,7 +237,7 @@ def resolve_theme_target(
         return None, None, False
 
     # Check Gender trans subtypes (e.g. trans_M vs nonTrans_F)
-    if category == "BanglaBBQ_Gender" and target_role in ["trans", "trans_F"]:
+    if cat == "BanglaBBQ_Gender" and target_role in ["trans", "trans_F"]:
         trans_roles = [r for r in non_unk_roles if r.startswith("trans")]
         nontrans_roles = [r for r in non_unk_roles if not r.startswith("trans")]
         if len(trans_roles) == 1 and len(nontrans_roles) == 1:
@@ -167,18 +260,7 @@ def classify_record_prediction(
     """
     Classifies a single record prediction for correctness, validity, and BBQ bias orientation.
     """
-    cat = record["category"]
-    # Handle category name formatting differences
-    if not cat.startswith("BanglaBBQ_"):
-        # map shorthand to standard folder name if needed
-        cat_folder = f"BanglaBBQ_{cat.replace('_identity', '').replace('_', '')}"
-        # try exact match in sidecar
-        matching_keys = [k for k in (sidecar_map or load_sidecar_map()).keys() if k.startswith(f"BanglaBBQ_{cat}")]
-        if matching_keys:
-            cat = matching_keys[0].split("::")[0]
-        else:
-            cat = f"BanglaBBQ_{cat}"
-
+    cat = normalize_category_name(record.get("category", ""))
     q_idx = str(record["question_index"])
     ainfo = record.get("answer_info", {})
     gold_label = record["label"]

@@ -1,3 +1,11 @@
+- **[2026-10-30] Convo 8bd72675-0f72-467d-8937-c55615ed3391 (Part 6)**: **Category Alias Normalization, Full 61,312-Record Preflight Audit & Checkpoint Preservation**:
+  - Diagnosed Qwen 7B crash in Gender: raw dataset category values (Gender_identity, Health_status, etc.) differed from canonical sidecar key prefixes (BanglaBBQ_Gender, BanglaBBQ_HealthStatus).
+  - Engineered comprehensive CATEGORY_ALIASES map and 
+ormalize_category_name() in scripts/bbq_scoring_engine.py covering all aliases, cases, and prefix variants across all 12 categories.
+  - Executed exhaustive GPU-free preflight audit across all 61,312 records in all 24 canonical files (	ests/test_all_61312_actual_records_mapping.py): certified 61,232 directional (99.87%) + 80 non-directional (0.13%) with EXACTLY ZERO mapping errors.
+  - Added regression test suite TestCategoryAliases in 	ests/test_bbq_scoring_engine.py (17/17 tests PASS).
+  - Verified durable checkpoints on anglabbq-eval-volume: confirmed all 14,480 records (6/6 files) across Age, Education, and Ethnicity are 100% intact; 0-byte Gender file rejected by pre-resume check for clean resumption. Zero GPU jobs launched.
+
 - **[2026-10-30] Convo 8bd72675-0f72-467d-8937-c55615ed3391 (Part 5)**: **8-Model Full Evaluation Pipeline Upgrade & Offline Certification**:
   - Upgraded all eight 61,312-query benchmark evaluator scripts to use scripts/bbq_scoring_engine.py and scripts/modal_eval_core.py.
   - Removed old flawed compute_metrics() fallthrough role bug and replaced with Alicia Parrish et al. (2022) BBQ formulas (s_amb, s_dis).

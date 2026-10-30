@@ -181,3 +181,38 @@ aw_model_output and re-runs parse_prediction and classify_record_prediction from
 - 	ests/test_drive_sync_safety.py: **24/24 files PASS**
 - 	ests/test_eval_pipeline_offline.py: **6/6 PASS** (includes volume commit RuntimeError fail-hard and strict checkpoint model/ID/count verification).
 - Zero GPU compute launched; pipeline certified ready for execution.
+---
+
+## 10. Category Alias Normalization & 61,312-Record Preflight Invariant Certification
+
+During the manual execution of scripts/modal_eval_qwen_7b_full_60k_l40s.py, the run halted at category 4 (BanglaBBQ_Gender) with ValueError: Unmapped theme key 'BanglaBBQ_Gender_identity::7'.
+
+### Forensic Root Cause
+1. In canonical JSONLs, 
+ow['category'] uses legacy strings:
+   - Gender_identity (folder BanglaBBQ_Gender)
+   - Health_status (folder BanglaBBQ_HealthStatus)
+   - Marital_status (folder BanglaBBQ_MaritalStatus)
+   - Occupational_background (folder BanglaBBQ_OccupationalBackground)
+   - Physical_appearance (folder BanglaBBQ_PhysicalAppearance)
+   - Social_status (folder BanglaBBQ_SocialStatus)
+2. In sidecar_stereotype_target_map.json, keys use canonical prefixes (BanglaBBQ_Gender::7, BanglaBBQ_HealthStatus::1).
+3. Previous category formatting prepended BanglaBBQ_ directly, producing BanglaBBQ_Gender_identity::7 which failed sidecar lookup.
+
+### Resolution & Certification
+1. Engineered CATEGORY_ALIASES mapping and 
+ormalize_category_name() in scripts/bbq_scoring_engine.py, mapping all legacy strings and case variations to canonical sidecar prefixes.
+2. Authored 	ests/test_all_61312_actual_records_mapping.py auditing all 61,312 records across all 24 canonical files:
+   - Audited: **61,312 records**
+   - Cleanly Mapped Directional: **61,232 (99.87%)**
+   - Non-directional Identical: **80 (0.13%)**
+   - Total Mapping Errors: **EXACTLY 0**
+3. Verified existing checkpoints on anglabbq-eval-volume:
+   - BanglaBBQ_Age_ENG.jsonl: 2,920 records (verified intact)
+   - BanglaBBQ_Age_BEN.jsonl: 2,920 records (verified intact)
+   - BanglaBBQ_EducationalBackground_ENG.jsonl: 2,880 records (verified intact)
+   - BanglaBBQ_EducationalBackground_BEN.jsonl: 2,880 records (verified intact)
+   - BanglaBBQ_Ethnicity_ENG.jsonl: 1,440 records (verified intact)
+   - BanglaBBQ_Ethnicity_BEN.jsonl: 1,440 records (verified intact)
+   - Total preserved: **14,480 queries (23.6%)**.
+   - 0-byte BanglaBBQ_Gender_ENG.jsonl correctly rejected by pre-resume validation for seamless re-evaluation.
