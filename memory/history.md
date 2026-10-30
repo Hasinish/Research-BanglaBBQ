@@ -1,3 +1,14 @@
+- **[2026-10-30] Convo 8bd72675-0f72-467d-8937-c55615ed3391 (Part 7)**: **First Certified 61,312-Query Population Evaluation Completed (Qwen 2.5 7B)**:
+  - Executed certified 61,312-query benchmark evaluation on Qwen/Qwen2.5-7B-Instruct on NVIDIA L40S GPU via Modal (scripts/modal_eval_qwen_7b_full_60k_l40s.py).
+  - Proved durable volume checkpointing: automatically skipped already completed chunks for Age, Education, and Ethnicity (14,480 records resumed in 0.62s without GPU re-inference); evaluated remaining 9 categories across both languages to 100% completion.
+  - Achieved certified population metrics: ENG 91.54% / BEN 66.62% overall accuracy (Ambig: 87.40% ENG vs 47.07% BEN; Disambig: 95.69% ENG vs 86.16% BEN); s_amb ENG +0.0830 / BEN +0.0231 (Delta -0.0599); s_dis ENG +0.0009 / BEN +0.0055.
+  - Detected localized bias surges in Bengali: Politics (+0.1473 BEN vs +0.0347 ENG, Delta +0.1126) and Physical Appearance (+0.1042 BEN vs +0.0431 ENG, Delta +0.0611).
+  - Certified parsing robustness: exactly 81/61,312 outputs unparseable (0.13%, 100% English parse, 0.26% Bengali parse).
+  - Executed independent offline re-parsing verification across all 61,312 raw model outputs: 100% bit-for-bit parity certified.
+  - Total Wall Time on L40S: 611.77s (10.20 minutes, 100.2 q/s), GPU cost: USD 0.3059 (~USD 0.31).
+  - Generated metadata/eval_results/certified_benchmark_report_qwen2_5_7b.{json,csv} and authored 
+esearch_logs/2026-10-30_canonical_61312_qwen2_5_7b_certified_evaluation.md.
+
 - **[2026-10-30] Convo 8bd72675-0f72-467d-8937-c55615ed3391 (Part 6)**: **Category Alias Normalization, Full 61,312-Record Preflight Audit & Checkpoint Preservation**:
   - Diagnosed Qwen 7B crash in Gender: raw dataset category values (Gender_identity, Health_status, etc.) differed from canonical sidecar key prefixes (BanglaBBQ_Gender, BanglaBBQ_HealthStatus).
   - Engineered comprehensive CATEGORY_ALIASES map and 

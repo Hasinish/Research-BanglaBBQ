@@ -1,6 +1,9 @@
 # state.md — Current Verified Progress Dashboard
 
 **Last Verified Date**: 2026-10-29  
+**Latest Grand Empirical Milestone (First Certified 61,312-Query Benchmark Completed: Qwen 2.5 7B)**: 2026-10-30: Successfully executed and certified complete 61,312-query benchmark for Qwen/Qwen2.5-7B-Instruct on NVIDIA L40S GPU via Modal (scripts/modal_eval_qwen_7b_full_60k_l40s.py). Verified seamless resumption of Age, Education, and Ethnicity from anglabbq-eval-volume (14,480 queries resumed in <1s); completed all 12 categories with 100% bit-for-bit raw output re-parsing verification. Certified empirical population parameters: ENG 91.54% / BEN 66.62% overall accuracy (Ambig: 87.40% ENG vs 47.07% BEN; Disambig: 95.69% ENG vs 86.16% BEN); s_amb ENG +0.0830 / BEN +0.0231 (global delta -0.0599); s_dis ENG +0.0009 / BEN +0.0055. Identified severe localized Bengali bias surges in Politics (+0.1473 BEN, +0.1126 delta) and Physical Appearance (+0.1042 BEN, +0.0611 delta). Total wall time: 611.77s (100.2 q/s), GPU cost: USD 0.3059. Generated metadata/eval_results/certified_benchmark_report_qwen2_5_7b.{json,csv} and 
+esearch_logs/2026-10-30_canonical_61312_qwen2_5_7b_certified_evaluation.md.
+
 **Latest Forensic Resolution Milestone (Category Aliases Normalized & 61,312 Records Audited 0 Errors)**: 2026-10-30: Resolved evaluation crash where dataset category strings (Gender_identity, Health_status) caused unmapped theme exceptions. Implemented CATEGORY_ALIASES mapping and 
 ormalize_category_name() in scripts/bbq_scoring_engine.py. Executed GPU-free preflight across ALL 61,312 records in all 24 canonical files (	ests/test_all_61312_actual_records_mapping.py): certified 0 mapping errors. Verified 14,480 completed checkpoint records on Modal volume (anglabbq-eval-volume) for Qwen 7B (Age, Education, Ethnicity); preserved intact for seamless resumption.
 
