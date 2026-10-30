@@ -1,3 +1,11 @@
+- **[2026-10-30] Convo 8bd72675-0f72-467d-8937-c55615ed3391 (Part 9)**: **BanglaLLM Legacy Completion Recovery Evaluation Completed & Verified**:
+  - Executed full 61,312-query evaluation for BanglaLLM/Bangla-s1k-qwen-2.5-3B-Instruct using plain completion prompting (`scripts/modal_eval_banglallm_legacy_completion_l40s.py`) on NVIDIA L40S GPU via Modal in 415.34s (147.6 q/s, $0.2077 USD).
+  - Confirmed prompting format incompatibility: Bengali accuracy fully recovered from 0.00% to 59.13% (ENG: 80.77%), matching the original 2026-10-29 baseline within 0.02% (80.79% ENG / 59.15% BEN).
+  - Unparseable output count dropped from 36,170 down to exactly 0 (0.00% unparseable across both English and Bengali).
+  - Computed certified Parrish et al. (2022) BBQ metrics: s_amb ENG +0.0911 / BEN -0.0035 (delta -0.0946); s_dis ENG +0.0039 / BEN -0.0093 (delta -0.0132); ambiguous accuracy 67.77% ENG / 43.70% BEN; disambiguated accuracy 93.77% ENG / 74.56% BEN.
+  - Saved outputs to `metadata/eval_results/experimental_benchmark_report_banglallm_qwen_3b_legacy_completion_v2.{json,csv}` and durable predictions to `banglabbq-eval-volume:predictions/banglallm_qwen_3b_legacy_completion_v2/`.
+  - Authored dedicated research log: `research_logs/2026-10-30_banglallm_legacy_completion_recovery_evaluation.md`. Maintained strict separation from the certified eight-model master summary.
+
 - **[2026-10-30] BanglaLLM compatibility investigation (not GPU validated)**: Added optional legacy completion prompt mode, 5-token budget, isolated model slug and experimental report prefix, plus regression tests. Historical baseline and canonical reports remain untouched. No GPU work launched. Root cause of unparseable Bengali outputs not independently confirmed.\n\n- **[2026-10-30] Convo 8bd72675-0f72-467d-8937-c55615ed3391 (Part 8)**: **All Eight Models Certified Across Full 61,312-Query Benchmark (490,496 Queries Total)**:
   - User executed all remaining 7 models on NVIDIA L40S GPUs via Modal (`scripts/modal_eval_*_full_60k_l40s.py`).
   - Total population queries evaluated: 490,496 queries across all 8 models (61,312 per model). Total suite compute cost: USD 2.6185.
