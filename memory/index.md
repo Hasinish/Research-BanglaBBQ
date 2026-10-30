@@ -301,6 +301,8 @@ Contains specialized scripts documented in [`scripts/README.md`](file:///d:/Rese
 
 ### Modal Cloud Evaluation & Model Benchmarking Suites
 
+- [scripts/modal_eval_core.py](file:///d:/Research-BanglaBBQ/scripts/modal_eval_core.py): Unified evaluation core engine for all eight 61,312-query benchmarks on NVIDIA L40S GPU integrating scripts.bbq_scoring_engine, model-specific chat templates, durable checkpointing on anglabbq-eval-volume, automatic resume, and raw output re-parsing verification.
+
 - [`scripts/bbq_scoring_engine.py`](file:///d:/Research-BanglaBBQ/scripts/bbq_scoring_engine.py): Production BBQ evaluation engine implementing Parrish et al. (2022) formulas (s_amb, s_dis, accuracies, unparseable_rate, robust English/Bengali parsing, sidecar target mapping).
 - [`scripts/modal_download_titulm_3b.py`](file:///d:/Research-BanglaBBQ/scripts/modal_download_titulm_3b.py): Lightweight CPU-only downloader (`cpu=1.0, memory=2048`) pulling `hishab/titulm-llama-3.2-3b-v2.0-Instruct-v1.0` into persistent `titulm-3b-volume`.
 - [`scripts/modal_download_banglallm_qwen_3b.py`](file:///d:/Research-BanglaBBQ/scripts/modal_download_banglallm_qwen_3b.py): Lightweight CPU-only downloader (`cpu=1.0, memory=2048`) pulling `BanglaLLM/Bangla-s1k-qwen-2.5-3B-Instruct` into persistent `banglallm-qwen-3b-volume`.

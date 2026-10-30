@@ -147,3 +147,37 @@ A balanced 200-query pilot was executed on NVIDIA L40S GPU via Modal (`scripts/m
    - Modal NVIDIA L40S GPU Cost: USD 0.0499 (~USD 0.05).
 
 
+---
+
+## 9. 8-Model Production Evaluation Pipeline Upgrade & Offline Certification
+
+On 2026-10-30, all eight full-scale 61,312-query benchmark evaluator scripts were upgraded to use scripts/bbq_scoring_engine.py and scripts/modal_eval_core.py.
+
+### Architectural Upgrades Across All 8 Scripts
+1. **Flawed Logic Elimination**: Completely removed the old compute_metrics() fallthrough role bug (ns_role != 'non_target') and naive parsing. Strictly replaced with Alicia Parrish et al. (2022) formulas ({\\text{amb}}$, {\\text{dis}}$) and multi-dialect unicode-aware choice extraction.
+2. **Model-Specific Native Instruction Formatting**:
+   - google/gemma-2-9b-it: <start_of_turn>user ... <end_of_turn>\n<start_of_turn>model\n
+   - meta-llama/Llama-3.1-8B-Instruct: <|start_header_id|>user<|end_header_id|> ... <|start_header_id|>assistant<|end_header_id|>\n\n
+   - mistralai/Ministral-8B-Instruct-2410: [INST] ... [/INST]
+   - mistralai/Mistral-Nemo-Instruct-2407: [INST] ... [/INST]
+   - Qwen/Qwen2.5-3B-Instruct: <|im_start|>user ... <|im_end|>\n<|im_start|>assistant\n
+   - Qwen/Qwen2.5-7B-Instruct: <|im_start|>user ... <|im_end|>\n<|im_start|>assistant\n
+   - BanglaLLM/Bangla-s1k-qwen-2.5-3B-Instruct: <|im_start|>user ... <|im_end|>\n<|im_start|>assistant\n
+   - hishab/titulm-llama-3.2-3b-v2.0-Instruct-v1.0: \n\n### Response:\n (Alpaca format)
+3. **Durable Incremental Checkpointing (anglabbq-eval-volume)**:
+   - Saves 24 separate category-language JSONLs (/eval_data/predictions/{model_slug}/{cat_name}_{lang}.jsonl).
+   - Calls eval_volume.commit() after every completed chunk.
+   - Automatically detects completed files on startup and resumes without redundant inference.
+4. **Independent Raw Response Re-parsing Invariant**:
+   - Every script independently re-extracts 
+aw_model_output and re-runs parse_prediction and classify_record_prediction from scratch, asserting 100% bit-for-bit parity.
+5. **Historical Baseline Preservation**:
+   - Preserves all historical ull_benchmark_report_*.{json,csv} baseline files byte-for-byte.
+   - Certified reports output to certified_benchmark_report_{model_slug}.{json,csv}.
+
+### Preflight Test Verification
+- 	ests/test_bbq_scoring_engine.py: **14/14 PASS**
+- 	ests/test_target_mapping_invariants.py: **61,312/61,312 PASS**
+- 	ests/test_drive_sync_safety.py: **24/24 files PASS**
+- 	ests/test_eval_pipeline_offline.py: **4/4 PASS**
+- Zero GPU compute launched; pipeline certified ready for execution.

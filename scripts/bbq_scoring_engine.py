@@ -50,7 +50,12 @@ def parse_prediction(text: str, ans0: str, ans1: str, ans2: str) -> int:
         return -1
 
     # 1. Strip common markdown, prefixes, quotes, and brackets
-    cleaned = re.sub(r"^(?:Answer|Choice|Option|উত্তর|বিকল্প|সঠিক উত্তর)\s*[:\-\)]?\s*", "", t, flags=re.IGNORECASE).strip()
+    cleaned = re.sub(
+        r"^(?:The correct (?:option|choice|answer) is|Answer|Choice|Option|সঠিক উত্তরটি হলো|সঠিক বিকল্পটি হলো|সঠিক বিকল্পটি হল|সঠিক বিকল্পটি|সঠিক বিকল্প|বিকল্পটি|উত্তরটি|উত্তর|বিকল্প|সঠিক উত্তর)\s*[:\-\)]?\s*",
+        "",
+        t,
+        flags=re.IGNORECASE
+    ).strip()
     cleaned = cleaned.lstrip("([{\"' \t`*")
 
     if not cleaned:
@@ -64,21 +69,20 @@ def parse_prediction(text: str, ans0: str, ans1: str, ans2: str) -> int:
     elif first_char in ["C", "৩", "3", "গ"]:
         return 2
 
-    # 2. Regex search for isolated choice identifiers like (A), [B], Option C, উত্তর: ক
-    choice_patterns = [
-        (r"\b(?:[A]|১|1|ক)\b", 0),
-        (r"\b(?:[B]|২|2|খ)\b", 1),
-        (r"\b(?:[C]|৩|3|গ)\b", 2),
-    ]
-    # Check if exactly one letter appears in the first 20 characters
-    prefix = t[:25].upper()
+    # 2. Unicode-aware regex search for isolated choice identifiers like (A), [B], Option C, উত্তর: ক, বিকল্পটি হলো খ
+    prefix = t[:40]
+    pattern_a = re.compile(r"(?<![\w\u0980-\u09ff])(?:A|1|১|ক)(?![\w\u0980-\u09ff])", re.IGNORECASE)
+    pattern_b = re.compile(r"(?<![\w\u0980-\u09ff])(?:B|2|২|খ)(?![\w\u0980-\u09ff])", re.IGNORECASE)
+    pattern_c = re.compile(r"(?<![\w\u0980-\u09ff])(?:C|3|৩|গ)(?![\w\u0980-\u09ff])", re.IGNORECASE)
+
     found = []
-    if re.search(r"[\(\[\s]A[\)\]\s\.,:]", prefix) or re.search(r"^A[\)\]\s\.,:]", prefix):
+    if pattern_a.search(prefix):
         found.append(0)
-    if re.search(r"[\(\[\s]B[\)\]\s\.,:]", prefix) or re.search(r"^B[\)\]\s\.,:]", prefix):
+    if pattern_b.search(prefix):
         found.append(1)
-    if re.search(r"[\(\[\s]C[\)\]\s\.,:]", prefix) or re.search(r"^C[\)\]\s\.,:]", prefix):
+    if pattern_c.search(prefix):
         found.append(2)
+
     if len(found) == 1:
         return found[0]
 

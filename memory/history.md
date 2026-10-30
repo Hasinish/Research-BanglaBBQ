@@ -1,3 +1,11 @@
+- **[2026-10-30] Convo 8bd72675-0f72-467d-8937-c55615ed3391 (Part 5)**: **8-Model Full Evaluation Pipeline Upgrade & Offline Certification**:
+  - Upgraded all eight 61,312-query benchmark evaluator scripts to use scripts/bbq_scoring_engine.py and scripts/modal_eval_core.py.
+  - Removed old flawed compute_metrics() fallthrough role bug and replaced with Alicia Parrish et al. (2022) BBQ formulas (s_amb, s_dis).
+  - Integrated model-specific instruction/chat formatting: verified tokenizers across all 8 models (Gemma 2 9B <start_of_turn>, LLaMA 3.1 8B <|start_header_id|>, Mistral-Nemo & Ministral 8B [/INST], Qwen 2.5 3B/7B & BanglaLLM <|im_start|>, and Titulm 3.2 3B Alpaca ### Response:).
+  - Engineered durable incremental checkpointing on anglabbq-eval-volume: saves 24 separate category-language JSONLs per model with volume commits after each chunk; supports automatic resume of interrupted runs.
+  - Implemented independent re-parsing verification directly from raw response strings with bit-for-bit parity assertions.
+  - Authored offline test suite 	ests/test_eval_pipeline_offline.py: verified 4/4 tests PASS (script configs, prompt formatting, checkpoint resume, and unicode-aware multi-dialect parsing). All 4 repository test suites (36 tests total) certified PASS. Zero GPU runs launched.
+
 - **[2026-10-30] Convo 8bd72675-0f72-467d-8937-c55615ed3391 (Part 4)**: **Modal Pipeline Integration & 200-Query Certified Pilot on Qwen 2.5 7B**:
   - Integrated scripts/bbq_scoring_engine.py into the Modal evaluation pipeline via scripts/modal_eval_pilot_qwen_7b.py.
   - Executed certified 200-query pilot on Qwen/Qwen2.5-7B-Instruct on NVIDIA L40S GPU across 100 English and 100 Bengali EducationalBackground queries.
