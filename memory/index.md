@@ -30,6 +30,7 @@ Research-BanglaBBQ/
 │   ├── BanglaBBQ_Politics/
 │   ├── BanglaBBQ_Religion/
 │   ├── eval_4000/                   # Stratified 4,000 paired sample manifest and queries
+│   ├── eval_predictions/            # Persistent sample-level model outputs & parsed predictions (JSONL)
 │   └── eval_results/                # Empirical JSON & CSV evaluation benchmark reports
 ├── audits/                      # Independent Forensic QA Complete Packages (7 categories)
 │   ├── Ethnicity_forensic_QA_complete/

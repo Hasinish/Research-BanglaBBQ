@@ -107,6 +107,43 @@ To restore academic rigor conforming to NYU BBQ and PakBBQ standards:
 - `metadata/sidecar_stereotype_target_map.json`: Full 214-theme target mapping.
 - `metadata/theme_roles_audit.json`: Theme role audit dump.
 - `scripts/bbq_scoring_engine.py`: Production BBQ evaluation engine.
-- `tests/test_bbq_scoring_engine.py`: Unit test suite.
-- `tests/test_target_mapping_invariants.py`: Full-population invariant test suite.
-- **Git Commit SHA**: *Pending commit*
+- `scripts/modal_eval_pilot_qwen_7b.py`: Modal L40S pilot runner with persistent prediction logging.
+- `metadata/eval_predictions/pilot_qwen2_5_7b_predictions.jsonl`: 200 persisted sample predictions.
+- `metadata/eval_results/pilot_report_qwen2_5_7b.json`: Pilot summary report JSON.
+- `metadata/eval_results/pilot_report_qwen2_5_7b.csv`: Pilot summary report CSV.
+- `tests/test_bbq_scoring_engine.py`: Unit test suite (14/14 PASS).
+- `tests/test_target_mapping_invariants.py`: Full-population invariant test suite (61,312/61,312 PASS).
+
+---
+
+## 8. Empirical Pilot Verification (200 Queries on Qwen 2.5 7B)
+
+A balanced 200-query pilot was executed on NVIDIA L40S GPU via Modal (`scripts/modal_eval_pilot_qwen_7b.py`) on 2026-10-30.
+
+### Experimental Setup
+- **Model**: `Qwen/Qwen2.5-7B-Instruct` (bfloat16, vLLM continuous batching, max_model_len=2048, temperature=0.0).
+- **Dataset**: `BanglaBBQ_EducationalBackground` (100 English rows 0-99 + 100 Bengali rows 0-99).
+- **Balance**: Exactly 25 ambig+neg, 25 ambig+nonneg, 25 disambig+neg, 25 disambig+nonneg per language.
+- **Persistent Storage**: All 200 sample predictions (prompts, raw outputs, parsed choices, role alignments, directional bias flags) written to `metadata/eval_predictions/pilot_qwen2_5_7b_predictions.jsonl`.
+
+### Empirical Results Table
+
+| Metric | English (100) | Bengali (100) | Cross-Lingual Delta (BEN - ENG) |
+| :--- | :---: | :---: | :---: |
+| **Overall Accuracy** | 98.00% | 52.00% | -46.00% |
+| **Ambiguous Context Acc** | 96.00% | 6.00% | -90.00% |
+| **Disambiguated Context Acc** | 100.00% | 98.00% | -2.00% |
+| **s_amb (Ambiguous Bias)** | +0.0400 | +0.1000 | +0.0600 |
+| **s_dis (Disambiguated Bias)** | +0.0400 | 0.0000 | -0.0400 |
+| **Unknown Rate (Ambig)** | 96.00% | 6.00% | -90.00% |
+| **Unparseable Rate** | 0.00% (0/100) | 0.00% (0/100) | 0.00% |
+
+### Key Pilot Observations
+1. **Zero Parsing Failures**: Both English and Bengali yielded 100.0% valid parse rates (0 unparseable outputs).
+2. **Ambiguous Guardrail Collapse in Bengali**: In disambiguated contexts, Qwen 2.5 7B achieves 98.0% accuracy in Bengali (matching English 100.0%). However, in ambiguous contexts, Bengali accuracy collapses to 6.0% (vs 96.0% in English). The model completely abandons the "Unknown" option in Bengali and forces a demographic selection.
+3. **Bit-for-Bit Offline Invariant Verification**: Reloading `metadata/eval_predictions/pilot_qwen2_5_7b_predictions.jsonl` and rescoring offline through `scripts/bbq_scoring_engine.py` reproduced $s_{\text{amb}}$, $s_{\text{dis}}$, and accuracy with 100% bit-for-bit parity.
+4. **Execution Performance & Cost**:
+   - Total Wall-Clock Time: 99.83s (vLLM initialization + weight loading: ~96s, raw inference: 3.67s at 54.5 queries/sec).
+   - Modal NVIDIA L40S GPU Cost: USD 0.0499 (~USD 0.05).
+
+

@@ -1,3 +1,13 @@
+- **[2026-10-30] Convo 8bd72675-0f72-467d-8937-c55615ed3391 (Part 4)**: **Modal Pipeline Integration & 200-Query Certified Pilot on Qwen 2.5 7B**:
+  - Integrated scripts/bbq_scoring_engine.py into the Modal evaluation pipeline via scripts/modal_eval_pilot_qwen_7b.py.
+  - Executed certified 200-query pilot on Qwen/Qwen2.5-7B-Instruct on NVIDIA L40S GPU across 100 English and 100 Bengali EducationalBackground queries.
+  - Successfully logged all 200 raw model outputs, prompts, and parsed predictions into metadata/eval_predictions/pilot_qwen2_5_7b_predictions.jsonl.
+  - Generated pilot reports metadata/eval_results/pilot_report_qwen2_5_7b.json and .csv without touching or overwriting any historical benchmark reports.
+  - Executed automated independent bit-for-bit offline rescoring on the saved JSONL file: verified 100% invariant match for s_amb, s_dis, and accuracy.
+  - Certified zero unparseable outputs (0/200, 0.0% failure rate).
+  - Empirical pilot results: ENG Overall Acc 98.0%, Disambig Acc 100.0%, Ambig Acc 96.0%, s_amb +0.0400, s_dis +0.0400; BEN Overall Acc 52.0%, Disambig Acc 98.0%, Ambig Acc 6.0%, s_amb +0.1000, s_dis 0.0000; Ambig Acc drop of -90.0% and bias delta +0.0600.
+  - Actual runtime and costs on NVIDIA L40S (USD 1.80/hr): Wall time 99.83s (inference 3.67s, 54.5 q/s), GPU cost USD 0.0499 (~USD 0.05). Corrected project memory cost calculations.
+
 - **[2026-10-30] Convo 8bd72675-0f72-467d-8937-c55615ed3391 (Part 3)**: **Evaluation Recovery, Scoring Audit & Production BBQ Scoring Engine**:
   - Executed urgent forensic audit on 61,312-query evaluation infrastructure across all eight models.
   - Verified prediction recovery status: confirmed that sample-level model choices and raw outputs were not written to persistent Modal volumes or local disk; offline rescoring without inference is physically impossible.
@@ -6,7 +16,7 @@
   - Implemented production evaluation module scripts/bbq_scoring_engine.py strictly executing Parrish et al. (2022) BBQ formulas (s_dis, s_amb, accuracy, unparseable_rate, robust Bengali/English parsing).
   - Authored automated test suite tests/test_bbq_scoring_engine.py (14/14 unit tests PASS) and tests/test_target_mapping_invariants.py (61,312/61,312 records verified PASS).
   - Authored dedicated research log research_logs/2026-10-30_evaluation_scoring_audit_and_bbq_engine.md and updated research_logs/README.md.
-  - Calculated exact rerun costs on NVIDIA L40S GPU: <.02 for pilot, ~.35 for top 4 publication models, ~.07 for all 8 models.
+  - Calculated exact rerun costs on NVIDIA L40S GPU (USD 1.80/hr): ~USD 0.05 for pilot, ~USD 0.84 to ~USD 1.02 for top 4 publication models, ~USD 1.68 to ~USD 2.04 for all 8 models.
 
 - **[2026-10-29] Convo 8bd72675-0f72-467d-8937-c55615ed3391 (Part 2)**: **Bengali LLM Ecosystem Audit, Closed-API Pricing Analysis, and 61K Benchmark Provisioning for Titulm 3B & BanglaLLM Qwen 3B**:
   - Investigated closed model API evaluation costs for 61,312 queries: computed input/output token volumes (~9.2M in / ~0.18M out); compared Gemini 2.0 Flash (~.74, 1500 RPD free tier limit = 41 days), Groq (free tier rate-limited to 6,000 TPM = impossible for 61k), and OpenRouter (~.49 on GPT-4o-mini).

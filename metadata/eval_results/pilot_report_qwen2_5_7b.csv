@@ -1,0 +1,4 @@
+language,queries,overall_acc,acc_ambig,acc_disambig,s_amb,s_dis,unknown_rate_ambig,unparseable_rate,unparseable_count
+ENG,100,98.0,96.0,100.0,0.04,0.04,96.0,0.0,0
+BEN,100,52.0,6.0,98.0,0.1,0.0,6.0,0.0,0
+GLOBAL,200,75.0,51.0,99.0,0.07,0.02,51.0,0.0,0

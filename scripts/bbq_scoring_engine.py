@@ -114,7 +114,16 @@ def resolve_theme_target(
     Raises ValueError if category/theme is completely missing from sidecar map.
     """
     s_map = sidecar_map or load_sidecar_map()
-    key = f"{category}::{question_index}"
+    cat = category
+    if not cat.startswith("BanglaBBQ_"):
+        # Match against sidecar map prefixes
+        prefix_matches = [k for k in s_map.keys() if k.startswith(f"BanglaBBQ_{cat}")]
+        if prefix_matches:
+            cat = prefix_matches[0].split("::")[0]
+        else:
+            cat = f"BanglaBBQ_{cat}"
+
+    key = f"{cat}::{question_index}"
 
     if key not in s_map:
         raise ValueError(f"Unmapped theme key '{key}' in sidecar stereotype map! Refusing to guess.")
