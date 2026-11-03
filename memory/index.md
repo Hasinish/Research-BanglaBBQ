@@ -150,8 +150,8 @@ These are the canonical, working datasets currently under active research and ev
 
 ### J. Physical Appearance ([`BanglaBBQ_PhysicalAppearance/`](file:///d:/Research-BanglaBBQ/Dataset_BanglaBBQ_New/BanglaBBQ_PhysicalAppearance))
 
-- [`BanglaBBQ_Physical_Appearance_FINAL_english.jsonl`](file:///d:/Research-BanglaBBQ/Dataset_BanglaBBQ_New/BanglaBBQ_PhysicalAppearance/BanglaBBQ_Physical_Appearance_FINAL_english.jsonl): 1,440 final production English records.
-- [`BanglaBBQ_Physical_Appearance_FINAL_bengali.jsonl`](file:///d:/Research-BanglaBBQ/Dataset_BanglaBBQ_New/BanglaBBQ_PhysicalAppearance/BanglaBBQ_Physical_Appearance_FINAL_bengali.jsonl): 1,440 final parallel production Bengali records.
+- [BanglaBBQ_ENG_PhysicalAppearance.jsonl](file:///d:/Research-BanglaBBQ/Dataset_BanglaBBQ_New/BanglaBBQ_PhysicalAppearance/BanglaBBQ_ENG_PhysicalAppearance.jsonl): 1,440 final production English records across 10 themes and 3 waves (30 scenario families). Refined to require natural contextual inference rather than direct keyword matching.
+- [BanglaBBQ_BEN_PhysicalAppearance.jsonl](file:///d:/Research-BanglaBBQ/Dataset_BanglaBBQ_New/BanglaBBQ_PhysicalAppearance/BanglaBBQ_BEN_PhysicalAppearance.jsonl): 1,440 final parallel production Bengali records translated into authentic, conversational Bangladeshi Bengali. 180:180 position parity and 480/480/480 balanced labels verified.
 
 ### K. Regional Affiliation ([`BanglaBBQ_Regional/`](file:///d:/Research-BanglaBBQ/Dataset_BanglaBBQ_New/BanglaBBQ_Regional))
 
@@ -278,6 +278,8 @@ Contains specialized scripts documented in [`scripts/README.md`](file:///d:/Rese
 
 ### Production Expansion & 7-Category Validators
 
+- [scripts/refine_physical_appearance.py](file:///d:/Research-BanglaBBQ/scripts/refine_physical_appearance.py): Refinement engine for Physical Appearance; rewrites Sentence 3 outcome cues and question pairs across all 30 variations in English and Bengali to require natural contextual inference while preserving prefix, demographic entities, and counterfactual balance.
+- [scripts/sync_physical_appearance_sheets_20261103.py](file:///d:/Research-BanglaBBQ/scripts/sync_physical_appearance_sheets_20261103.py): Synchronization script for Physical Appearance worksheets (BanglaBBQ_ENG_PhysicalAppearance and BanglaBBQ_BEN_PhysicalAppearance); exports pre-sync backups, updates rows A2:O1441, verifies 100.0000% readback parity across 43,200 data cells, and validates 180:180 negative position balance.
 - [`scripts/validate_seven_final_categories.py`](file:///d:/Research-BanglaBBQ/scripts/validate_seven_final_categories.py): Generalized invariant validator for all 7 modernized categories supporting category-aware row counts (2,880 rows for Health Status, Marital Status, and Occupational Background; 1,440 rows for Physical Appearance, Social Status, Regional Affiliation, and Ethnicity). Validates schema, 6-way permutations, balanced labels, ambiguous Unknown entailment, and 14,400 tracked unique global IDs without collisions.
 - [`scripts/verify_seven_final_categories_live.py`](file:///d:/Research-BanglaBBQ/scripts/verify_seven_final_categories_live.py): Full live readback audit verifying all 14 worksheets across the master Google Spreadsheet (432,000 data cells total) against canonical exports, confirming 100.0000% parity, 0 cell mismatches, correct grid dimensions (2,881 rows for HS/MS/OB, 1,441 rows for PA/SS/RA/ETH), and 5 conditional formatting rules.
 - [`scripts/validate_expansion_append_files.py`](file:///d:/Research-BanglaBBQ/scripts/validate_expansion_append_files.py): Multi-gate standalone validator for the six candidate append files (Health Status, Marital Status, Occupational Background Q11–Q20; 8,640 records total) testing schema, permutations, 180:180 positional balance, and running a 9-fixture adversarial suite with 100% rejection rate.

@@ -1,6 +1,8 @@
 # state.md — Current Verified Progress Dashboard
 
-**Last Verified Date**: 2026-10-30  
+**Last Verified Date**: 2026-11-03  
+**Latest Milestone (Physical Appearance Contextual Inference & Conversational Bengali Refinement)**: 2026-11-03: Refined all 30 scenario families across 10 themes and 3 waves (1,440 English & 1,440 Bengali canonical records; 2,880 rows total) under Dataset_BanglaBBQ_New/BanglaBBQ_PhysicalAppearance/. Audited and eliminated direct verbatim keyword matching and superficial lexical leakage in questions and cue contexts, ensuring questions require natural contextual inference aligned with NYU BBQ and PakBBQ. Refined Bengali into authentic, idiomatic Bangladeshi Bengali syntax. Preserved 15-column schema, sequential IDs (0..1439), balanced gold labels (480/480/480), and 180:180 negative disambiguated introduction position balance. Verified 100% PASS on CI validator. Synchronized master Google Sheets (BanglaBBQ_ENG_PhysicalAppearance, BanglaBBQ_BEN_PhysicalAppearance) with 100.0000% live cell readback parity across all 43,200 cells (0 mismatches). Synchronized Google Drive benchmark folder with 100% dual-hash MD5 & SHA-256 parity across all 24 canonical files.
+
 **Latest Experimental Milestone (BanglaLLM Legacy Completion Recovery Evaluation Completed & Verified)**: 2026-10-30: Successfully evaluated `BanglaLLM/Bangla-s1k-qwen-2.5-3B-Instruct` across all 61,312 queries using plain completion prompting (`scripts/modal_eval_banglallm_legacy_completion_l40s.py`) on NVIDIA L40S GPU via Modal in 415.34s ($0.2077 USD). Confirmed the prompting format incompatibility hypothesis: Bengali accuracy completely recovered from 0.00% to 59.13% (ENG: 80.77%), replicating the original baseline (80.79% ENG / 59.15% BEN) within 0.02%. Unparseable count dropped from 36,170 down to exactly 0 (0.00%). Certified BBQ metrics: Ambiguous accuracy 67.77% ENG / 43.70% BEN (s_amb: +0.0911 ENG / -0.0035 BEN, delta: -0.0946); Disambiguated accuracy 93.77% ENG / 74.56% BEN (s_dis: +0.0039 ENG / -0.0093 BEN). Stored all 24 chunk files under `banglabbq-eval-volume:predictions/banglallm_qwen_3b_legacy_completion_v2/` and generated `metadata/eval_results/experimental_benchmark_report_banglallm_qwen_3b_legacy_completion_v2.{json,csv}`. Maintained strict scientific separation from the canonical eight-model chat-template benchmark suite.
 
 **Prior Pending Milestone**: 2026-10-30: An isolated runner `scripts/modal_eval_banglallm_legacy_completion_l40s.py` restores the original completion prompt and 5-token budget with corrected BBQ scoring. Saves to `predictions/banglallm_qwen_3b_legacy_completion_v2` and distinct `experimental_benchmark_report` outputs. No GPU work was launched. The exact cause of 100% Bengali parsing failures remains unverified until raw checkpoint inspection; do not silently replace the canonical reports. 
@@ -378,6 +380,16 @@ ormalize_category_name() in scripts/bbq_scoring_engine.py. Executed GPU-free pre
   - **Source-Verified: QUALIFIED / CALIBRATED** (All 20 sources re-audited, author order corrected in Q19, non-experimental DIRECT claims appropriately qualified).
   - **Linguistically Reviewed: PENDING EXTERNAL INDEPENDENT HUMAN REVIEW** (Syntactically verified; external colloquial review by native Bangladeshi speakers pending).
   - **Publication-Ready: NO** (Not until external human linguistic sign-off and formal peer review).
+
+---
+
+### H. Physical Appearance Contextual Inference & Conversational Bengali Refinement
+- **Contextual Inference & De-Leakage**: Audited all 30 scenario families across 10 themes and 3 waves (1,440 records/lang). Eliminated direct verbatim keyword matching and superficial lexical leakage where questions mechanically copied verbs/nouns from Sentence 3. Reframed questions to evaluate high-level social constructs (customer representation, executive presence, competence, professional standing) through simple, natural contextual inference (NYU BBQ & PakBBQ standard).
+- **Conversational Bangladeshi Bengali**: Rewrote all 30 Bengali cues and questions into natural, conversational Bangladeshi Bengali syntax, eliminating literal idioms (e.g., 'প্রারম্ভিক পদ', 'স্বভাবজাত নির্বাহী উপস্থিতি', 'করপোরেট পরিশীলন').
+- **Prefix & Invariant Preservation**: Kept Sentences 1 & 2 prefix 100% intact, guaranteeing 0 drift in demographic pairing, entity introduction, and counterfactual balance. Preserved 15-column schema, sequential IDs (0..1439), balanced gold labels (480/480/480), and exact 180 First / 180 Second (50.0% / 50.0%) negative introduction position balance.
+- **Validation**: 100% PASS on scripts/validate_seven_final_categories.py across all 14 canonical production files.
+- **Master Google Sheets 100% Parity**: Backed up pre-refinement live state (ackups/physical_appearance_pre_sync_20261103/); synchronized rows A2:O1441 across BanglaBBQ_ENG_PhysicalAppearance (984262367) and BanglaBBQ_BEN_PhysicalAppearance (934839633); verified 100.0000% bit-for-bit live cell readback parity across all 43,200 data cells (0 mismatches).
+- **Master Google Drive Synchronization**: Executed scripts/sync_drive_dataset.py, updating outdated Physical Appearance JSONLs in-place; verified 100% dual-hash MD5 & SHA-256 parity across all 24 canonical files in Google Drive folder 1_Ui3wfvYvEF9b8HWsMZc7QUB2iID8Ibe.
 
 ---
 

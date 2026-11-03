@@ -1,3 +1,16 @@
+- **[2026-11-03] Convo 85bdccd4-8ce6-4d6e-9150-5272d1f141b0**: **BanglaBBQ - Physical Appearance Contextual Inference Refinement, Conversational Bengali & Sheets/Drive Parity Sync**:
+  - Conducted forensic audit across all 30 scenario families (10 themes x 3 waves) of Physical Appearance; identified direct verbatim token overlap between contexts and questions and stiff, robotic Bengali translation templates.
+  - Saved full pre-edit snapshots to backups/pre_pa_refinement_20261103/ with cryptographic SHA-256 hashes.
+  - Implemented scripts/refine_physical_appearance.py preserving Sentences 1 & 2 prefix intact (guaranteeing 0 drift in demographic pairing, name ordering, and counterfactuals) while rewriting Sentence 3 cues and questions across all 30 variations in English and Bengali (1,440 rows per language; 2,880 rows total).
+  - Ensured questions evaluate higher-level social constructs via simple, natural contextual inference rather than superficial keyword matching, conforming to NYU BBQ and PakBBQ standards.
+  - Localized Bengali phrasing into authentic, colloquial Bangladeshi Bengali syntax, eliminating literal idioms.
+  - Validated structural invariants using scripts/validate_seven_final_categories.py: 100% PASS across all 14 canonical production files; confirmed 180:180 first/second-mentioned negative position balance, 480/480/480 balanced labels, 180:180 demographic counterfactual symmetry, and contiguous sequential IDs.
+  - Backed up live Google Sheets state to backups/physical_appearance_pre_sync_20261103/live_physical_appearance_pre_refinement_backup.json with SHA-256 manifest.
+  - Synchronized canonical rows A2:O1441 to master Google Spreadsheet (1xZhhKZoZuSy-ZXAWWdhCpq9QLh705ScErcnBZacmZnY) across worksheets BanglaBBQ_ENG_PhysicalAppearance (984262367) and BanglaBBQ_BEN_PhysicalAppearance (934839633).
+  - Executed full live readback audit: certified 100.0000% bit-for-bit live parity across all 43,200 data cells (0 mismatches across both worksheets).
+  - Synchronized Google Drive benchmarks via scripts/sync_drive_dataset.py; verified 100% bit-for-bit dual-hash (MD5 & SHA-256) parity across all 24 canonical files in Google Drive folder 1_Ui3wfvYvEF9b8HWsMZc7QUB2iID8Ibe.
+  - Created detailed research log research_logs/2026-11-03_physical_appearance_contextual_inference_refinement.md and updated research_logs/README.md index table.
+
 - **[2026-10-30] Convo 8bd72675-0f72-467d-8937-c55615ed3391 (Part 9)**: **BanglaLLM Legacy Completion Recovery Evaluation Completed & Verified**:
   - Executed full 61,312-query evaluation for BanglaLLM/Bangla-s1k-qwen-2.5-3B-Instruct using plain completion prompting (`scripts/modal_eval_banglallm_legacy_completion_l40s.py`) on NVIDIA L40S GPU via Modal in 415.34s (147.6 q/s, $0.2077 USD).
   - Confirmed prompting format incompatibility: Bengali accuracy fully recovered from 0.00% to 59.13% (ENG: 80.77%), matching the original 2026-10-29 baseline within 0.02% (80.79% ENG / 59.15% BEN).
