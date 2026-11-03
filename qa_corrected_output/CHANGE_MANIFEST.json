@@ -1,0 +1,208 @@
+{
+  "manifest_version": "2.0_final_verified",
+  "timestamp": "2026-11-03T23:25:00+06:00",
+  "git_baseline_sha": "18d62ee256e7329b6dac3b7fe87e7e0cdcddcadd",
+  "categories_audited": 9,
+  "total_files": 18,
+  "total_records": 43200,
+  "files": [
+    {
+      "category": "EducationalBackground",
+      "language": "ENG",
+      "filename": "BanglaBBQ_ENG_Education.jsonl",
+      "record_count": 2880,
+      "canonical_baseline_sha256": "c9c6d1c4130b12efa73cddb3c4103b523b4f22e8a49f898fe55de51e99262c49",
+      "input_fixed_sha256": "e7176d35dc7f62cd05397647df9f4b4c87df11d8501fdc0dfbe23524502c8256",
+      "candidate_output_sha256": "aa50925c8ab1841d74805fd80f7391137708568d317c56149b60cf346baf7ee6",
+      "modification_summary": "Corrective position rebalancing across 10/20 themes (30 families); Sentence 3 ordinals inverted; gold labels synchronized; exact 50.0% position balance achieved",
+      "qa_validation_status": "VERIFIED_PASS"
+    },
+    {
+      "category": "EducationalBackground",
+      "language": "BEN",
+      "filename": "BanglaBBQ_BEN_Education.jsonl",
+      "record_count": 2880,
+      "canonical_baseline_sha256": "f51fefa0cf1728b49ad218d5aaa627440b0e284f3483f02978ed9f488815b564",
+      "input_fixed_sha256": "38ea4f4891442c9f423b5c6496634c2b9a81182bd9b0a581f8ef8a2a6779b56f",
+      "candidate_output_sha256": "cd767f94b36f64421616b48cec7afb7274b25c3af3569de92f31d7e668a64d53",
+      "modification_summary": "Corrective position rebalancing across 10/20 themes (30 families); Sentence 3 ordinals inverted; gold labels synchronized; exact 50.0% position balance achieved",
+      "qa_validation_status": "VERIFIED_PASS"
+    },
+    {
+      "category": "Ethnicity",
+      "language": "ENG",
+      "filename": "BanglaBBQ_ENG_Ethnicity.jsonl",
+      "record_count": 1440,
+      "canonical_baseline_sha256": "7aeb145ff24dc91a9359275ae60fb56a795321012c004c777910b9838cf8cff9",
+      "input_fixed_sha256": "c7fbfa1fcbd08c654ad49f7a366447d450135442b576954e61fac091b07c1b54",
+      "candidate_output_sha256": "5d48240766fd3af5f0936ec0b8f87e1146b9dfa930bf7df445cbb4f98bd08da2",
+      "modification_summary": "Complete eradication of all placeholder defects (A/B, ক/খ) across contexts, questions, ans0..2; restored dignified terms (The Munda student, মুণ্ডা জনগোষ্ঠীর শিক্ষার্থী); verified entity mappings; exact 50.0% position balance",
+      "qa_validation_status": "VERIFIED_PASS"
+    },
+    {
+      "category": "Ethnicity",
+      "language": "BEN",
+      "filename": "BanglaBBQ_BEN_Ethnicity.jsonl",
+      "record_count": 1440,
+      "canonical_baseline_sha256": "dbca31740838e7608adcacac3b0961073cd3fd81a02d9cd6758450c5254a1d97",
+      "input_fixed_sha256": "e13646e79d906597277ffa91cf542fbf3ce9167c53fa35e29881afde6d0e331a",
+      "candidate_output_sha256": "971cdd8cf5b24cff0618edf36e6fa6369598f67ce4979937e4f3197ac5f3f845",
+      "modification_summary": "Complete eradication of all placeholder defects (A/B, ক/খ) across contexts, questions, ans0..2; restored dignified terms (The Munda student, মুণ্ডা জনগোষ্ঠীর শিক্ষার্থী); verified entity mappings; exact 50.0% position balance",
+      "qa_validation_status": "VERIFIED_PASS"
+    },
+    {
+      "category": "HealthStatus",
+      "language": "ENG",
+      "filename": "BanglaBBQ_ENG_HealthStatus.jsonl",
+      "record_count": 2880,
+      "canonical_baseline_sha256": "6815dbeda82730d8a71d676f527bb2494d5af7b483bbf24c7021d3eea714854d",
+      "input_fixed_sha256": "91f86e563b12f9b8697ed57ff686f904674d7d12bd0bbe03fc6648f6b5ab6081",
+      "candidate_output_sha256": "91f86e563b12f9b8697ed57ff686f904674d7d12bd0bbe03fc6648f6b5ab6081",
+      "modification_summary": "Preserved verified fixed file; validated exact 50.0% position balance; natural conversational Bengali without keyword shortcuts",
+      "qa_validation_status": "VERIFIED_PASS"
+    },
+    {
+      "category": "HealthStatus",
+      "language": "BEN",
+      "filename": "BanglaBBQ_BEN_HealthStatus.jsonl",
+      "record_count": 2880,
+      "canonical_baseline_sha256": "e6df073cefcc8cf54c8b5d06ce83d9c9c4e395add677c6174ecaec1b53f4ff51",
+      "input_fixed_sha256": "9705cb21e29418bf7e2c0754ead04d3510e09c531ab294fe251bfb917fbd8755",
+      "candidate_output_sha256": "9705cb21e29418bf7e2c0754ead04d3510e09c531ab294fe251bfb917fbd8755",
+      "modification_summary": "Preserved verified fixed file; validated exact 50.0% position balance; natural conversational Bengali without keyword shortcuts",
+      "qa_validation_status": "VERIFIED_PASS"
+    },
+    {
+      "category": "MaritalStatus",
+      "language": "ENG",
+      "filename": "BanglaBBQ_ENG_MaritalStatus.jsonl",
+      "record_count": 2880,
+      "canonical_baseline_sha256": "fcdca1459da2fbdfc8e6ecf7228556c10d4eba74add8534bd4be14e97dd2d774",
+      "input_fixed_sha256": "6c66aa26bda1144f170c83d1090e736eaf25ec01ee4e0f8c0d6928d897fe4e20",
+      "candidate_output_sha256": "6c66aa26bda1144f170c83d1090e736eaf25ec01ee4e0f8c0d6928d897fe4e20",
+      "modification_summary": "Preserved verified fixed file; validated exact 50.0% position balance; natural conversational Bengali without keyword shortcuts",
+      "qa_validation_status": "VERIFIED_PASS"
+    },
+    {
+      "category": "MaritalStatus",
+      "language": "BEN",
+      "filename": "BanglaBBQ_BEN_MaritalStatus.jsonl",
+      "record_count": 2880,
+      "canonical_baseline_sha256": "2926001b415b619b81a48d6487e43daa10ba821ec1c3744010f826655b7561c1",
+      "input_fixed_sha256": "cf10bab60853444614f6610cb168b95146951fb3095a13fd1b0533a068261822",
+      "candidate_output_sha256": "cf10bab60853444614f6610cb168b95146951fb3095a13fd1b0533a068261822",
+      "modification_summary": "Preserved verified fixed file; validated exact 50.0% position balance; natural conversational Bengali without keyword shortcuts",
+      "qa_validation_status": "VERIFIED_PASS"
+    },
+    {
+      "category": "OccupationalBackground",
+      "language": "ENG",
+      "filename": "BanglaBBQ_ENG_OccupationalBackground.jsonl",
+      "record_count": 2880,
+      "canonical_baseline_sha256": "a150ce63a5f7ac1adfa5815d6c32ddf9805c4844bd0a80520793925f34026c2a",
+      "input_fixed_sha256": "80088fe15c6840c4c348959a42834242c6d5afb9f557bda76413869b306ecc5c",
+      "candidate_output_sha256": "80088fe15c6840c4c348959a42834242c6d5afb9f557bda76413869b306ecc5c",
+      "modification_summary": "Preserved verified fixed file; validated exact 50.0% position balance (360/360) and balanced label distributions (960 each) across all 20 themes",
+      "qa_validation_status": "VERIFIED_PASS"
+    },
+    {
+      "category": "OccupationalBackground",
+      "language": "BEN",
+      "filename": "BanglaBBQ_BEN_OccupationalBackground.jsonl",
+      "record_count": 2880,
+      "canonical_baseline_sha256": "6771d8291be08b8e3a587c30d7e2fd9b1cc9d4b083ab9b7163cce5be7b92bba4",
+      "input_fixed_sha256": "08c5bfd508a7805e2e2ca7f28bcc5ede4e59e09e23bdba4544ecb0c90e5db2f6",
+      "candidate_output_sha256": "08c5bfd508a7805e2e2ca7f28bcc5ede4e59e09e23bdba4544ecb0c90e5db2f6",
+      "modification_summary": "Preserved verified fixed file; validated exact 50.0% position balance (360/360) and balanced label distributions (960 each) across all 20 themes",
+      "qa_validation_status": "VERIFIED_PASS"
+    },
+    {
+      "category": "Politics",
+      "language": "ENG",
+      "filename": "BanglaBBQ_ENG_Politics.jsonl",
+      "record_count": 2880,
+      "canonical_baseline_sha256": "001519f5782327c6498b6aa5ac0c145b8bcb2445a62de03c59b291ea513bab1c",
+      "input_fixed_sha256": "eca6199e485fb78de5d674f577a34734c3a501b4f565a2c0ed86b8701b255282",
+      "candidate_output_sha256": "eca6199e485fb78de5d674f577a34734c3a501b4f565a2c0ed86b8701b255282",
+      "modification_summary": "Preserved verified fixed file; audited 120/120 blocks (100% entity order match); balanced overall 50.0% position balance across all 1440 disambiguated questions",
+      "qa_validation_status": "VERIFIED_PASS"
+    },
+    {
+      "category": "Politics",
+      "language": "BEN",
+      "filename": "BanglaBBQ_BEN_Politics.jsonl",
+      "record_count": 2880,
+      "canonical_baseline_sha256": "355154a88e18ab80e1a8d14111bdee2b28b6863ce786779caa4666bf78089bc7",
+      "input_fixed_sha256": "18854ca85c728963757c8db35eca33cfb3f8eb360e5f3be09f18a895586b02ad",
+      "candidate_output_sha256": "18854ca85c728963757c8db35eca33cfb3f8eb360e5f3be09f18a895586b02ad",
+      "modification_summary": "Preserved verified fixed file; audited 120/120 blocks (100% entity order match); balanced overall 50.0% position balance across all 1440 disambiguated questions",
+      "qa_validation_status": "VERIFIED_PASS"
+    },
+    {
+      "category": "Regional",
+      "language": "ENG",
+      "filename": "BanglaBBQ_ENG_Regional.jsonl",
+      "record_count": 1440,
+      "canonical_baseline_sha256": "939a6fea261c0a71a34cac9514231aa315aac040b6ce1fb944912adffc469a68",
+      "input_fixed_sha256": "ca6fc6251bcc6a479479a17c890b6b72da83f9358989c89cdc27d972f0b289c9",
+      "candidate_output_sha256": "ca6fc6251bcc6a479479a17c890b6b72da83f9358989c89cdc27d972f0b289c9",
+      "modification_summary": "Preserved verified fixed file; 60/60 blocks matched; exact 50.0% position balance (180/180)",
+      "qa_validation_status": "VERIFIED_PASS"
+    },
+    {
+      "category": "Regional",
+      "language": "BEN",
+      "filename": "BanglaBBQ_BEN_Regional.jsonl",
+      "record_count": 1440,
+      "canonical_baseline_sha256": "024d8f36bbb53a57ba0cda73572ecd235836349dbf55ebc5f6926189551c1e45",
+      "input_fixed_sha256": "d9b2646df762927ab13470a6bcc92c189e8836a53e379899a43709a2fe33e910",
+      "candidate_output_sha256": "d9b2646df762927ab13470a6bcc92c189e8836a53e379899a43709a2fe33e910",
+      "modification_summary": "Preserved verified fixed file; 60/60 blocks matched; exact 50.0% position balance (180/180)",
+      "qa_validation_status": "VERIFIED_PASS"
+    },
+    {
+      "category": "Religion",
+      "language": "ENG",
+      "filename": "BanglaBBQ_ENG_Religion.jsonl",
+      "record_count": 2880,
+      "canonical_baseline_sha256": "099f0fdbfaa4b2b7fca95c0ba08967f5a900672a33fbfe30b4a66ef2d3c5b6a8",
+      "input_fixed_sha256": "8192ed07bf09a845524f5945d0b1bab8311ce508f13525686d7d95bde390cd94",
+      "candidate_output_sha256": "086ba035140428f38f5fa892b6a229f6b10093946cc2ad8b585de34df4c2bb5c",
+      "modification_summary": "Rebalanced entity introduction order in Sentence 1 while preserving all demographic group outcomes, labels, and narrative text; achieved exact 50.0% position balance (360/360)",
+      "qa_validation_status": "VERIFIED_PASS"
+    },
+    {
+      "category": "Religion",
+      "language": "BEN",
+      "filename": "BanglaBBQ_BEN_Religion.jsonl",
+      "record_count": 2880,
+      "canonical_baseline_sha256": "12fe2d25bdeb336af354ffa94efd92a394dd7703011588c347853c0c19fc9627",
+      "input_fixed_sha256": "ad1e5a635a7c01250a09d79bdceb68407a96fd578dc11f53b7dd4fb73dcb98af",
+      "candidate_output_sha256": "70aec0c041796ba0b52304dd49d0044759289b71407b69d32526aac67084a167",
+      "modification_summary": "Rebalanced entity introduction order in Sentence 1 while preserving all demographic group outcomes, labels, and narrative text; achieved exact 50.0% position balance (360/360)",
+      "qa_validation_status": "VERIFIED_PASS"
+    },
+    {
+      "category": "SocialStatus",
+      "language": "ENG",
+      "filename": "BanglaBBQ_ENG_SocialStatus.jsonl",
+      "record_count": 1440,
+      "canonical_baseline_sha256": "ab73bed7cd10c5d0075b770f62f4669aa9d79714b2c3b4b4491a4255238a9c83",
+      "input_fixed_sha256": "bae41e214a8a7fe3f9e38931cfe23d85515bb887e497fa3e70b8475621a24d78",
+      "candidate_output_sha256": "bae41e214a8a7fe3f9e38931cfe23d85515bb887e497fa3e70b8475621a24d78",
+      "modification_summary": "Preserved verified fixed file; validated exact 50.0% position balance (180/180); conversational Bangladeshi Bengali",
+      "qa_validation_status": "VERIFIED_PASS"
+    },
+    {
+      "category": "SocialStatus",
+      "language": "BEN",
+      "filename": "BanglaBBQ_BEN_SocialStatus.jsonl",
+      "record_count": 1440,
+      "canonical_baseline_sha256": "e7a084880cd3800a65b2e7dbe25261aea36fc4ae84a84160f536c291aca47fa8",
+      "input_fixed_sha256": "ba81a37d2af728c2e7adedd06cecd867f0f33061ab0a2d807999eea9c3acb600",
+      "candidate_output_sha256": "ba81a37d2af728c2e7adedd06cecd867f0f33061ab0a2d807999eea9c3acb600",
+      "modification_summary": "Preserved verified fixed file; validated exact 50.0% position balance (180/180); conversational Bangladeshi Bengali",
+      "qa_validation_status": "VERIFIED_PASS"
+    }
+  ]
+}
