@@ -1,3 +1,16 @@
+- **[2026-11-03] Convo 85bdccd4-8ce6-4d6e-9150-5272d1f141b0 (Part 2)**: **BanglaBBQ - Physical Appearance Corrective Semantic & Linguistic QA Overhaul**:
+  - Completed comprehensive corrective semantic and linguistic QA overhaul across all 30 scenario families (10 themes x 3 waves = 30 families; 1,440 English & 1,440 Bengali canonical records; 2,880 rows total) in `Dataset_BanglaBBQ_New/BanglaBBQ_PhysicalAppearance/`.
+  - Created pre-refinement backup snapshots in `backups/pre_corrective_pa_qa_20261103/` with cryptographic SHA-256 hashes.
+  - Eliminated keyword-matching shortcuts across all 30 families: verified 0 verbatim diagnostic phrase overlap between contexts and questions, requiring simple, natural contextual inference aligned with NYU BBQ and PakBBQ standards.
+  - Fixed logical inference and gold-answer validity: redesigned Sentence 3 cues to provide symmetric, independent factual justification for BOTH negative and non-negative questions. Eliminated non-sequitur leaps (no longer inferring someone is incompetent or unsuitable merely because another person was praised or chosen).
+  - Repaired Bengali naturalness: eradicated 1,440+ robotic hyphenated suffixes (`-র`, `-কে` -> `রাফির`, `নীলাকে`, `সাজিদের`, `তামিমের`, `হাসানের`), calques, and literal translationese. Phrased all contexts and questions in authentic, natural Bangladeshi Bengali.
+  - Fixed bilingual parity mismatches: EID 529 aligned ("unsuitable for the campaign" / "অনুপযুক্ত মনে করে বাদ দেন"); EID 1249 resolved by removing unilateral Bengali insertion of "কেবল চুলের রঙের কারণে".
+  - Preserved all benchmark invariants: 15-column schema, sequential IDs (0..1439), balanced gold labels (480/480/480), exact 180 First / 180 Second (50.0% / 50.0%) negative introduction position balance, and 180:180 demographic counterfactual symmetry.
+  - Validated structural invariants using `scripts/validate_seven_final_categories.py`: 100% PASS across all 14 canonical production files.
+  - Synchronized live Google Sheets (`BanglaBBQ_ENG_PhysicalAppearance` 984262367, `BanglaBBQ_BEN_PhysicalAppearance` 934839633) rows A2:O1441; verified 100.0000% bit-for-bit live cell readback parity across all 43,200 data cells (0 mismatches).
+  - Synchronized Google Drive benchmarks via `scripts/sync_drive_dataset.py`; certified 100% bit-for-bit dual-hash (MD5 & SHA-256) parity across all 24 canonical files in Google Drive folder `1_Ui3wfvYvEF9b8HWsMZc7QUB2iID8Ibe`.
+  - Authored comprehensive research log: `research_logs/2026-11-03_physical_appearance_corrective_semantic_linguistic_qa.md` and indexed in `research_logs/README.md`.
+
 - **[2026-11-03] Convo 85bdccd4-8ce6-4d6e-9150-5272d1f141b0**: **BanglaBBQ - Physical Appearance Contextual Inference Refinement, Conversational Bengali & Sheets/Drive Parity Sync**:
   - Conducted forensic audit across all 30 scenario families (10 themes x 3 waves) of Physical Appearance; identified direct verbatim token overlap between contexts and questions and stiff, robotic Bengali translation templates.
   - Saved full pre-edit snapshots to backups/pre_pa_refinement_20261103/ with cryptographic SHA-256 hashes.

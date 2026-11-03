@@ -226,6 +226,11 @@ These are the canonical, working datasets currently under active research and ev
 ---
 
 ## 4. Versioned Backups ([`backups/`](file:///d:/Research-BanglaBBQ/backups))
+- **`backups/pre_corrective_pa_qa_20261103/`**:
+  - Pre-corrective refinement snapshots of `BanglaBBQ_ENG_PhysicalAppearance.jsonl` and `BanglaBBQ_BEN_PhysicalAppearance.jsonl` with cryptographic SHA-256 integrity manifest.
+- **`backups/physical_appearance_pre_sync_20261103/`**:
+  - `live_physical_appearance_pre_refinement_backup.json`: Live Google Sheets cell contents before synchronization.
+  - `backup_manifest.json`: Cryptographic integrity manifest.
 
 - **`backups/gender_pre_q56_final_repair_20261019/`**:
 
@@ -277,6 +282,7 @@ Contains specialized scripts documented in [`scripts/README.md`](file:///d:/Rese
 ### Benchmark Invariant Validators & CI
 
 ### Production Expansion & 7-Category Validators
+- [scripts/refine_physical_appearance_corrective.py](file:///d:/Research-BanglaBBQ/scripts/refine_physical_appearance_corrective.py): Corrective semantic & linguistic QA engine for Physical Appearance; rewrites Sentence 3 cues to provide symmetric evidence for both polarities, eliminates keyword matching, removes hyphenated suffixes in Bengali, and fixes bilingual mismatches across all 30 families.
 
 - [scripts/refine_physical_appearance.py](file:///d:/Research-BanglaBBQ/scripts/refine_physical_appearance.py): Refinement engine for Physical Appearance; rewrites Sentence 3 outcome cues and question pairs across all 30 variations in English and Bengali to require natural contextual inference while preserving prefix, demographic entities, and counterfactual balance.
 - [scripts/sync_physical_appearance_sheets_20261103.py](file:///d:/Research-BanglaBBQ/scripts/sync_physical_appearance_sheets_20261103.py): Synchronization script for Physical Appearance worksheets (BanglaBBQ_ENG_PhysicalAppearance and BanglaBBQ_BEN_PhysicalAppearance); exports pre-sync backups, updates rows A2:O1441, verifies 100.0000% readback parity across 43,200 data cells, and validates 180:180 negative position balance.
@@ -411,6 +417,8 @@ Pre-audit generation packages, raw candidate JSONLs, and generator scripts for 7
 ## 10. Permanent Research Logs ([`research_logs/`](file:///d:/Research-BanglaBBQ/research_logs))
 
 - [`research_logs/README.md`](file:///d:/Research-BanglaBBQ/research_logs/README.md): Research logging guidelines, relationship to memory, and chronological index of all milestone logs.
+- [`research_logs/2026-11-03_physical_appearance_corrective_semantic_linguistic_qa.md`](file:///d:/Research-BanglaBBQ/research_logs/2026-11-03_physical_appearance_corrective_semantic_linguistic_qa.md): Comprehensive corrective semantic and linguistic QA overhaul across all 30 Physical Appearance scenario families; eliminated keyword matching shortcuts, provided symmetric evidence for positive/negative questions, fixed Bengali hyphenated suffixes and translationese, resolved EID 529 and EID 1249 bilingual mismatches, and certified 100% Google Sheets (43,200 cells) and Google Drive parity.
+- [`research_logs/2026-11-03_physical_appearance_contextual_inference_refinement.md`](file:///d:/Research-BanglaBBQ/research_logs/2026-11-03_physical_appearance_contextual_inference_refinement.md): Contextual inference refinement and conversational Bengali overhaul across all 30 Physical Appearance scenario families; eliminated verbatim keyword repetition, preserved 180:180 position balance, and synchronized live Google Sheets and Google Drive.
 - [`research_logs/2026-10-30_banglallm_legacy_completion_recovery_evaluation.md`](file:///d:/Research-BanglaBBQ/research_logs/2026-10-30_banglallm_legacy_completion_recovery_evaluation.md): Experimental prompt compatibility recovery evaluation of BanglaLLM under historical completion format; verified 80.77% ENG / 59.13% BEN accuracy with 0 unparseable outputs on NVIDIA L40S ($0.21 USD); confirmed prompt-format incompatibility as root cause of 0.00% chat-template collapse.
 - [`research_logs/2026-10-30_canonical_61312_eight_model_certified_benchmark.md`](file:///d:/Research-BanglaBBQ/research_logs/2026-10-30_canonical_61312_eight_model_certified_benchmark.md): Certified 61,312-query population benchmark evaluation across all eight models (490,496 total queries) on NVIDIA L40S via Modal ($2.62 USD total cost); established certified cross-model master summary; Gemma 2 9B leads accuracy (93.44% / 84.68%), Mistral-Nemo leads cross-lingual balance (5.12% gap), community fine-tunes fail instruction following (BanglaLLM 36k unparseable).
 - [`research_logs/2026-10-30_canonical_61312_qwen2_5_7b_certified_evaluation.md`](file:///d:/Research-BanglaBBQ/research_logs/2026-10-30_canonical_61312_qwen2_5_7b_certified_evaluation.md): First certified 61,312-query population benchmark evaluation for Qwen/Qwen2.5-7B-Instruct on NVIDIA L40S GPU via Modal in 611.77s (USD 0.31); certified 91.54% ENG / 66.62% BEN acc, +0.0830 ENG / +0.0231 BEN s_amb, -0.0599 global delta; all 24 chunk files persisted to Modal volume; all 61,312 raw outputs verified offline with 100% parity.
