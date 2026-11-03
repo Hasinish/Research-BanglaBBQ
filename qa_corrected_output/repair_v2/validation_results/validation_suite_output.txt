@@ -1,0 +1,126 @@
+================================================================================
+BANGLABBQ REPAIR V2 INDEPENDENT FORENSIC VALIDATION SUITE
+================================================================================
+
+>>> Validating Category: Education (Expected: 2880 records/lang)
+  Count: 2880 ENG / 2880 BEN
+  Gate 1 (Schema & IDs): PASS
+  Gate 2 (Logic & Unknowns): PASS
+  Gate 3 (Bengali Integrity): PASS
+  Gate 4 (Bilingual Parity): PASS
+  Gate 5 (Ambig Counterfactual Duplicates): 0 dups
+  Gate 6 (Metadata Sync): PASS
+  Label Distribution (ENG): {2: 960, 0: 960, 1: 960}
+  Disambig Negative Positions: 720 First / 0 Second
+  Disambig Non-Negative Positions: 0 First / 720 Second
+
+>>> Validating Category: Ethnicity (Expected: 1440 records/lang)
+  Count: 1440 ENG / 1440 BEN
+  Gate 1 (Schema & IDs): PASS
+  Gate 2 (Logic & Unknowns): PASS
+  Gate 3 (Bengali Integrity): PASS
+  Gate 4 (Bilingual Parity): PASS
+  Gate 5 (Ambig Counterfactual Duplicates): 0 dups
+  Gate 6 (Metadata Sync): PASS
+  Label Distribution (ENG): {2: 480, 0: 480, 1: 480}
+  Disambig Negative Positions: 360 First / 0 Second
+  Disambig Non-Negative Positions: 0 First / 360 Second
+
+>>> Validating Category: HealthStatus (Expected: 2880 records/lang)
+  Count: 2880 ENG / 2880 BEN
+  Gate 1 (Schema & IDs): PASS
+  Gate 2 (Logic & Unknowns): PASS
+  Gate 3 (Bengali Integrity): PASS
+  Gate 4 (Bilingual Parity): PASS
+  Gate 5 (Ambig Counterfactual Duplicates): 0 dups
+  Gate 6 (Metadata Sync): PASS
+  Label Distribution (ENG): {2: 960, 0: 960, 1: 960}
+  Disambig Negative Positions: 360 First / 360 Second
+  Disambig Non-Negative Positions: 360 First / 360 Second
+
+>>> Validating Category: MaritalStatus (Expected: 2880 records/lang)
+  Count: 2880 ENG / 2880 BEN
+  Gate 1 (Schema & IDs): PASS
+  Gate 2 (Logic & Unknowns): PASS
+  Gate 3 (Bengali Integrity): PASS
+  Gate 4 (Bilingual Parity): PASS
+  Gate 5 (Ambig Counterfactual Duplicates): 0 dups
+  Gate 6 (Metadata Sync): PASS
+  Label Distribution (ENG): {2: 960, 0: 960, 1: 960}
+  Disambig Negative Positions: 360 First / 360 Second
+  Disambig Non-Negative Positions: 360 First / 360 Second
+
+>>> Validating Category: OccupationalBackground (Expected: 2880 records/lang)
+  Count: 2880 ENG / 2880 BEN
+  Gate 1 (Schema & IDs): PASS
+  Gate 2 (Logic & Unknowns): PASS
+  Gate 3 (Bengali Integrity): PASS
+  Gate 4 (Bilingual Parity): PASS
+  Gate 5 (Ambig Counterfactual Duplicates): 0 dups
+  Gate 6 (Metadata Sync): PASS
+  Label Distribution (ENG): {2: 960, 0: 960, 1: 960}
+  Disambig Negative Positions: 360 First / 360 Second
+  Disambig Non-Negative Positions: 360 First / 360 Second
+
+>>> Validating Category: Politics (Expected: 2880 records/lang)
+  Count: 2880 ENG / 2880 BEN
+  Gate 1 (Schema & IDs): PASS
+  Gate 2 (Logic & Unknowns): PASS
+  Gate 3 (Bengali Integrity): PASS
+  Gate 4 (Bilingual Parity): PASS
+  Gate 5 (Ambig Counterfactual Duplicates): 0 dups
+  Gate 6 (Metadata Sync): PASS
+  Label Distribution (ENG): {2: 960, 1: 960, 0: 960}
+  Disambig Negative Positions: 306 First / 414 Second
+  Disambig Non-Negative Positions: 414 First / 306 Second
+
+>>> Validating Category: Regional (Expected: 1440 records/lang)
+  Count: 1440 ENG / 1440 BEN
+  Gate 1 (Schema & IDs): PASS
+  Gate 2 (Logic & Unknowns): PASS
+  Gate 3 (Bengali Integrity): PASS
+  Gate 4 (Bilingual Parity): PASS
+  Gate 5 (Ambig Counterfactual Duplicates): 0 dups
+  Gate 6 (Metadata Sync): PASS
+  Label Distribution (ENG): {2: 480, 0: 480, 1: 480}
+  Disambig Negative Positions: 180 First / 180 Second
+  Disambig Non-Negative Positions: 180 First / 180 Second
+
+>>> Validating Category: Religion (Expected: 2880 records/lang)
+  Count: 2880 ENG / 2880 BEN
+  Gate 1 (Schema & IDs): PASS
+  Gate 2 (Logic & Unknowns): PASS
+  Gate 3 (Bengali Integrity): PASS
+  Gate 4 (Bilingual Parity): PASS
+  Gate 5 (Ambig Counterfactual Duplicates): 0 dups
+  Gate 6 (Metadata Sync): PASS
+  Label Distribution (ENG): {2: 960, 0: 960, 1: 960}
+  Disambig Negative Positions: 516 First / 204 Second
+  Disambig Non-Negative Positions: 204 First / 516 Second
+
+>>> Validating Category: SocialStatus (Expected: 1440 records/lang)
+  Count: 1440 ENG / 1440 BEN
+  Gate 1 (Schema & IDs): PASS
+  Gate 2 (Logic & Unknowns): PASS
+  Gate 3 (Bengali Integrity): PASS
+  Gate 4 (Bilingual Parity): PASS
+  Gate 5 (Ambig Counterfactual Duplicates): 0 dups
+  Gate 6 (Metadata Sync): PASS
+  Label Distribution (ENG): {2: 480, 0: 480, 1: 480}
+  Disambig Negative Positions: 180 First / 180 Second
+  Disambig Non-Negative Positions: 180 First / 180 Second
+
+================================================================================
+VALIDATION SUMMARY ACROSS ALL 9 CATEGORIES (43200 TOTAL RECORDS)
+================================================================================
+  Education                 | CLEAN PASS
+  Ethnicity                 | CLEAN PASS
+  HealthStatus              | CLEAN PASS
+  MaritalStatus             | CLEAN PASS
+  OccupationalBackground    | CLEAN PASS
+  Politics                  | CLEAN PASS
+  Regional                  | CLEAN PASS
+  Religion                  | CLEAN PASS
+  SocialStatus              | CLEAN PASS
+
+Validation suite execution completed.
