@@ -1,0 +1,61 @@
+family_idx,start_row,end_row,status,target_entity,non_target_entity,modified_fields,refinement_notes
+0,0,47,REFINED,Opposition,nonOpposition,q_neg,Refined 1 question fields to eliminate lexical shortcuts
+1,48,95,REFINED,Opposition,nonOpposition,q_neg,Refined 1 question fields to eliminate lexical shortcuts
+2,96,143,REFINED,Opposition,nonOpposition,q_non,Refined 1 question fields to eliminate lexical shortcuts
+3,144,191,PASS_AS_IS,Opposition,nonOpposition,none,Verified natural everyday Bangladeshi Bengali
+4,192,239,REFINED,Opposition,nonOpposition,q_non,Refined 1 question fields to eliminate lexical shortcuts
+5,240,287,PASS_AS_IS,Opposition,nonOpposition,none,Verified natural everyday Bangladeshi Bengali
+6,288,335,PASS_AS_IS,Opposition,nonOpposition,none,Verified natural everyday Bangladeshi Bengali
+7,336,383,PASS_AS_IS,Opposition,nonOpposition,none,Verified natural everyday Bangladeshi Bengali
+8,384,431,PASS_AS_IS,Opposition,nonOpposition,none,Verified natural everyday Bangladeshi Bengali
+9,432,479,PASS_AS_IS,Opposition,nonOpposition,none,Verified natural everyday Bangladeshi Bengali
+10,480,527,PASS_AS_IS,Opposition,nonOpposition,none,Verified natural everyday Bangladeshi Bengali
+11,528,575,REFINED,Opposition,nonOpposition,q_non,Refined 1 question fields to eliminate lexical shortcuts
+12,576,623,REFINED,Opposition,nonOpposition,q_non,Refined 1 question fields to eliminate lexical shortcuts
+13,624,671,PASS_AS_IS,Opposition,nonOpposition,none,Verified natural everyday Bangladeshi Bengali
+14,672,719,REFINED,Opposition,nonOpposition,q_non,Refined 1 question fields to eliminate lexical shortcuts
+15,720,767,REFINED,Opposition,nonOpposition,"q_neg, q_non",Refined 2 question fields to eliminate lexical shortcuts
+16,768,815,REFINED,Opposition,nonOpposition,"q_neg, q_non",Refined 2 question fields to eliminate lexical shortcuts
+17,816,863,PASS_AS_IS,Opposition,nonOpposition,none,Verified natural everyday Bangladeshi Bengali
+18,864,911,REFINED,Opposition,nonOpposition,"q_neg, q_non",Refined 2 question fields to eliminate lexical shortcuts
+19,912,959,REFINED,Opposition,nonOpposition,"q_neg, q_non",Refined 2 question fields to eliminate lexical shortcuts
+20,960,1007,REFINED,Opposition,nonOpposition,q_neg,Refined 1 question fields to eliminate lexical shortcuts
+21,1008,1055,REFINED,Opposition,nonOpposition,q_neg,Refined 1 question fields to eliminate lexical shortcuts
+22,1056,1103,REFINED,Opposition,nonOpposition,q_neg,Refined 1 question fields to eliminate lexical shortcuts
+23,1104,1151,REFINED,Opposition,nonOpposition,q_neg,Refined 1 question fields to eliminate lexical shortcuts
+24,1152,1199,REFINED,Opposition,nonOpposition,q_non,Refined 1 question fields to eliminate lexical shortcuts
+25,1200,1247,REFINED,Opposition,nonOpposition,q_non,Refined 1 question fields to eliminate lexical shortcuts
+26,1248,1295,PASS_AS_IS,Opposition,nonOpposition,none,Verified natural everyday Bangladeshi Bengali
+27,1296,1343,PASS_AS_IS,Opposition,nonOpposition,none,Verified natural everyday Bangladeshi Bengali
+28,1344,1391,REFINED,Opposition,nonOpposition,q_non,Refined 1 question fields to eliminate lexical shortcuts
+29,1392,1439,REFINED,Opposition,nonOpposition,q_non,Refined 1 question fields to eliminate lexical shortcuts
+30,1440,1487,PASS_AS_IS,Opposition,nonOpposition,none,Verified natural everyday Bangladeshi Bengali
+31,1488,1535,PASS_AS_IS,Opposition,nonOpposition,none,Verified natural everyday Bangladeshi Bengali
+32,1536,1583,PASS_AS_IS,Opposition,nonOpposition,none,Verified natural everyday Bangladeshi Bengali
+33,1584,1631,PASS_AS_IS,Opposition,nonOpposition,none,Verified natural everyday Bangladeshi Bengali
+34,1632,1679,PASS_AS_IS,Opposition,nonOpposition,none,Verified natural everyday Bangladeshi Bengali
+35,1680,1727,PASS_AS_IS,Opposition,nonOpposition,none,Verified natural everyday Bangladeshi Bengali
+36,1728,1775,PASS_AS_IS,Opposition,nonOpposition,none,Verified natural everyday Bangladeshi Bengali
+37,1776,1823,PASS_AS_IS,Opposition,nonOpposition,none,Verified natural everyday Bangladeshi Bengali
+38,1824,1871,PASS_AS_IS,Opposition,nonOpposition,none,Verified natural everyday Bangladeshi Bengali
+39,1872,1919,PASS_AS_IS,Opposition,nonOpposition,none,Verified natural everyday Bangladeshi Bengali
+40,1920,1967,PASS_AS_IS,Opposition,nonOpposition,none,Verified natural everyday Bangladeshi Bengali
+41,1968,2015,PASS_AS_IS,Opposition,nonOpposition,none,Verified natural everyday Bangladeshi Bengali
+42,2016,2063,REFINED,Opposition,nonOpposition,q_non,Refined 1 question fields to eliminate lexical shortcuts
+43,2064,2111,REFINED,Opposition,nonOpposition,q_non,Refined 1 question fields to eliminate lexical shortcuts
+44,2112,2159,REFINED,Opposition,nonOpposition,q_non,Refined 1 question fields to eliminate lexical shortcuts
+45,2160,2207,REFINED,Opposition,nonOpposition,q_non,Refined 1 question fields to eliminate lexical shortcuts
+46,2208,2255,PASS_AS_IS,Opposition,nonOpposition,none,Verified natural everyday Bangladeshi Bengali
+47,2256,2303,PASS_AS_IS,Opposition,nonOpposition,none,Verified natural everyday Bangladeshi Bengali
+48,2304,2351,REFINED,Opposition,nonOpposition,q_non,Refined 1 question fields to eliminate lexical shortcuts
+49,2352,2399,REFINED,Opposition,nonOpposition,q_non,Refined 1 question fields to eliminate lexical shortcuts
+50,2400,2447,REFINED,Opposition,nonOpposition,"q_neg, q_non",Refined 2 question fields to eliminate lexical shortcuts
+51,2448,2495,REFINED,Opposition,nonOpposition,"q_neg, q_non",Refined 2 question fields to eliminate lexical shortcuts
+52,2496,2543,REFINED,Opposition,nonOpposition,"q_neg, q_non",Refined 2 question fields to eliminate lexical shortcuts
+53,2544,2591,REFINED,Opposition,nonOpposition,"q_neg, q_non",Refined 2 question fields to eliminate lexical shortcuts
+54,2592,2639,PASS_AS_IS,Opposition,nonOpposition,none,Verified natural everyday Bangladeshi Bengali
+55,2640,2687,PASS_AS_IS,Opposition,nonOpposition,none,Verified natural everyday Bangladeshi Bengali
+56,2688,2735,REFINED,Opposition,nonOpposition,"q_neg, q_non",Refined 2 question fields to eliminate lexical shortcuts
+57,2736,2783,REFINED,Opposition,nonOpposition,"q_neg, q_non",Refined 2 question fields to eliminate lexical shortcuts
+58,2784,2831,REFINED,Opposition,nonOpposition,"q_neg, q_non",Refined 2 question fields to eliminate lexical shortcuts
+59,2832,2879,REFINED,Opposition,nonOpposition,"q_neg, q_non",Refined 2 question fields to eliminate lexical shortcuts

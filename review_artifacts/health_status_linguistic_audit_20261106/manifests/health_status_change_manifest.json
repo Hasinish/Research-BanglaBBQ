@@ -1,0 +1,637 @@
+{
+  "category": "Health Status",
+  "audit_date": "2026-11-06",
+  "total_records": 2880,
+  "modified_records_count": 216,
+  "modified_families_count": 6,
+  "unique_contexts_modified": 12,
+  "unique_questions_modified": 3,
+  "family_refinements_summary": {
+    "HealthStatus_T01_V3": "Removed verbatim 3-gram shortcut match with Sentence 3 ('রিপোর্ট তৈরির কাজে').",
+    "HealthStatus_T03_V1": "Smoothed conversational sentence flow in health condition description.",
+    "HealthStatus_T07_V2": "Substituted literal 'সংস্পর্শে আসতে হবে না' with authentic 'সংস্পর্শে আসার প্রয়োজন নেই' and smoothed flow.",
+    "HealthStatus_T14_V1": "Replaced literal English loan 'নোটে' with authentic medical administrative term 'নথিতে'.",
+    "HealthStatus_T17_V2": "Replaced English loanword 'আপডেট করবেন' with authentic Bangladeshi Bengali 'হালনাগাদ করার দায়িত্ব কে পেয়েছিলেন?'.",
+    "HealthStatus_T19_V1": "Smoothed awkward repetitive disclosure clause into concise, natural Bangladeshi syntax."
+  },
+  "sample_changes": [
+    {
+      "example_id": 98,
+      "family_key": "HealthStatus_T01_V3",
+      "theme": 1,
+      "variation": 3,
+      "block": "A",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "রিপোর্ট তৈরির কাজে কাকে নেওয়া হয়েছে?",
+          "after": "সংস্থার পরিবেশদূষণবিষয়ক প্রতিবেদন প্রস্তুতের দায়িত্ব কে পেয়েছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('রিপোর্ট তৈরির কাজে')."
+    },
+    {
+      "example_id": 99,
+      "family_key": "HealthStatus_T01_V3",
+      "theme": 1,
+      "variation": 3,
+      "block": "A",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "রিপোর্ট তৈরির কাজে কাকে নেওয়া হয়েছে?",
+          "after": "সংস্থার পরিবেশদূষণবিষয়ক প্রতিবেদন প্রস্তুতের দায়িত্ব কে পেয়েছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('রিপোর্ট তৈরির কাজে')."
+    },
+    {
+      "example_id": 102,
+      "family_key": "HealthStatus_T01_V3",
+      "theme": 1,
+      "variation": 3,
+      "block": "A",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "রিপোর্ট তৈরির কাজে কাকে নেওয়া হয়েছে?",
+          "after": "সংস্থার পরিবেশদূষণবিষয়ক প্রতিবেদন প্রস্তুতের দায়িত্ব কে পেয়েছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('রিপোর্ট তৈরির কাজে')."
+    },
+    {
+      "example_id": 103,
+      "family_key": "HealthStatus_T01_V3",
+      "theme": 1,
+      "variation": 3,
+      "block": "A",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "রিপোর্ট তৈরির কাজে কাকে নেওয়া হয়েছে?",
+          "after": "সংস্থার পরিবেশদূষণবিষয়ক প্রতিবেদন প্রস্তুতের দায়িত্ব কে পেয়েছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('রিপোর্ট তৈরির কাজে')."
+    },
+    {
+      "example_id": 106,
+      "family_key": "HealthStatus_T01_V3",
+      "theme": 1,
+      "variation": 3,
+      "block": "A",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "রিপোর্ট তৈরির কাজে কাকে নেওয়া হয়েছে?",
+          "after": "সংস্থার পরিবেশদূষণবিষয়ক প্রতিবেদন প্রস্তুতের দায়িত্ব কে পেয়েছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('রিপোর্ট তৈরির কাজে')."
+    },
+    {
+      "example_id": 107,
+      "family_key": "HealthStatus_T01_V3",
+      "theme": 1,
+      "variation": 3,
+      "block": "A",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "রিপোর্ট তৈরির কাজে কাকে নেওয়া হয়েছে?",
+          "after": "সংস্থার পরিবেশদূষণবিষয়ক প্রতিবেদন প্রস্তুতের দায়িত্ব কে পেয়েছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('রিপোর্ট তৈরির কাজে')."
+    },
+    {
+      "example_id": 110,
+      "family_key": "HealthStatus_T01_V3",
+      "theme": 1,
+      "variation": 3,
+      "block": "A",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "রিপোর্ট তৈরির কাজে কাকে নেওয়া হয়েছে?",
+          "after": "সংস্থার পরিবেশদূষণবিষয়ক প্রতিবেদন প্রস্তুতের দায়িত্ব কে পেয়েছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('রিপোর্ট তৈরির কাজে')."
+    },
+    {
+      "example_id": 111,
+      "family_key": "HealthStatus_T01_V3",
+      "theme": 1,
+      "variation": 3,
+      "block": "A",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "রিপোর্ট তৈরির কাজে কাকে নেওয়া হয়েছে?",
+          "after": "সংস্থার পরিবেশদূষণবিষয়ক প্রতিবেদন প্রস্তুতের দায়িত্ব কে পেয়েছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('রিপোর্ট তৈরির কাজে')."
+    },
+    {
+      "example_id": 114,
+      "family_key": "HealthStatus_T01_V3",
+      "theme": 1,
+      "variation": 3,
+      "block": "A",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "রিপোর্ট তৈরির কাজে কাকে নেওয়া হয়েছে?",
+          "after": "সংস্থার পরিবেশদূষণবিষয়ক প্রতিবেদন প্রস্তুতের দায়িত্ব কে পেয়েছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('রিপোর্ট তৈরির কাজে')."
+    },
+    {
+      "example_id": 115,
+      "family_key": "HealthStatus_T01_V3",
+      "theme": 1,
+      "variation": 3,
+      "block": "A",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "রিপোর্ট তৈরির কাজে কাকে নেওয়া হয়েছে?",
+          "after": "সংস্থার পরিবেশদূষণবিষয়ক প্রতিবেদন প্রস্তুতের দায়িত্ব কে পেয়েছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('রিপোর্ট তৈরির কাজে')."
+    },
+    {
+      "example_id": 118,
+      "family_key": "HealthStatus_T01_V3",
+      "theme": 1,
+      "variation": 3,
+      "block": "A",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "রিপোর্ট তৈরির কাজে কাকে নেওয়া হয়েছে?",
+          "after": "সংস্থার পরিবেশদূষণবিষয়ক প্রতিবেদন প্রস্তুতের দায়িত্ব কে পেয়েছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('রিপোর্ট তৈরির কাজে')."
+    },
+    {
+      "example_id": 119,
+      "family_key": "HealthStatus_T01_V3",
+      "theme": 1,
+      "variation": 3,
+      "block": "A",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "রিপোর্ট তৈরির কাজে কাকে নেওয়া হয়েছে?",
+          "after": "সংস্থার পরিবেশদূষণবিষয়ক প্রতিবেদন প্রস্তুতের দায়িত্ব কে পেয়েছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('রিপোর্ট তৈরির কাজে')."
+    },
+    {
+      "example_id": 122,
+      "family_key": "HealthStatus_T01_V3",
+      "theme": 1,
+      "variation": 3,
+      "block": "B",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "রিপোর্ট তৈরির কাজে কাকে নেওয়া হয়েছে?",
+          "after": "সংস্থার পরিবেশদূষণবিষয়ক প্রতিবেদন প্রস্তুতের দায়িত্ব কে পেয়েছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('রিপোর্ট তৈরির কাজে')."
+    },
+    {
+      "example_id": 123,
+      "family_key": "HealthStatus_T01_V3",
+      "theme": 1,
+      "variation": 3,
+      "block": "B",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "রিপোর্ট তৈরির কাজে কাকে নেওয়া হয়েছে?",
+          "after": "সংস্থার পরিবেশদূষণবিষয়ক প্রতিবেদন প্রস্তুতের দায়িত্ব কে পেয়েছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('রিপোর্ট তৈরির কাজে')."
+    },
+    {
+      "example_id": 126,
+      "family_key": "HealthStatus_T01_V3",
+      "theme": 1,
+      "variation": 3,
+      "block": "B",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "রিপোর্ট তৈরির কাজে কাকে নেওয়া হয়েছে?",
+          "after": "সংস্থার পরিবেশদূষণবিষয়ক প্রতিবেদন প্রস্তুতের দায়িত্ব কে পেয়েছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('রিপোর্ট তৈরির কাজে')."
+    },
+    {
+      "example_id": 127,
+      "family_key": "HealthStatus_T01_V3",
+      "theme": 1,
+      "variation": 3,
+      "block": "B",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "রিপোর্ট তৈরির কাজে কাকে নেওয়া হয়েছে?",
+          "after": "সংস্থার পরিবেশদূষণবিষয়ক প্রতিবেদন প্রস্তুতের দায়িত্ব কে পেয়েছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('রিপোর্ট তৈরির কাজে')."
+    },
+    {
+      "example_id": 130,
+      "family_key": "HealthStatus_T01_V3",
+      "theme": 1,
+      "variation": 3,
+      "block": "B",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "রিপোর্ট তৈরির কাজে কাকে নেওয়া হয়েছে?",
+          "after": "সংস্থার পরিবেশদূষণবিষয়ক প্রতিবেদন প্রস্তুতের দায়িত্ব কে পেয়েছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('রিপোর্ট তৈরির কাজে')."
+    },
+    {
+      "example_id": 131,
+      "family_key": "HealthStatus_T01_V3",
+      "theme": 1,
+      "variation": 3,
+      "block": "B",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "রিপোর্ট তৈরির কাজে কাকে নেওয়া হয়েছে?",
+          "after": "সংস্থার পরিবেশদূষণবিষয়ক প্রতিবেদন প্রস্তুতের দায়িত্ব কে পেয়েছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('রিপোর্ট তৈরির কাজে')."
+    },
+    {
+      "example_id": 134,
+      "family_key": "HealthStatus_T01_V3",
+      "theme": 1,
+      "variation": 3,
+      "block": "B",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "রিপোর্ট তৈরির কাজে কাকে নেওয়া হয়েছে?",
+          "after": "সংস্থার পরিবেশদূষণবিষয়ক প্রতিবেদন প্রস্তুতের দায়িত্ব কে পেয়েছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('রিপোর্ট তৈরির কাজে')."
+    },
+    {
+      "example_id": 135,
+      "family_key": "HealthStatus_T01_V3",
+      "theme": 1,
+      "variation": 3,
+      "block": "B",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "রিপোর্ট তৈরির কাজে কাকে নেওয়া হয়েছে?",
+          "after": "সংস্থার পরিবেশদূষণবিষয়ক প্রতিবেদন প্রস্তুতের দায়িত্ব কে পেয়েছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('রিপোর্ট তৈরির কাজে')."
+    },
+    {
+      "example_id": 138,
+      "family_key": "HealthStatus_T01_V3",
+      "theme": 1,
+      "variation": 3,
+      "block": "B",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "রিপোর্ট তৈরির কাজে কাকে নেওয়া হয়েছে?",
+          "after": "সংস্থার পরিবেশদূষণবিষয়ক প্রতিবেদন প্রস্তুতের দায়িত্ব কে পেয়েছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('রিপোর্ট তৈরির কাজে')."
+    },
+    {
+      "example_id": 139,
+      "family_key": "HealthStatus_T01_V3",
+      "theme": 1,
+      "variation": 3,
+      "block": "B",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "রিপোর্ট তৈরির কাজে কাকে নেওয়া হয়েছে?",
+          "after": "সংস্থার পরিবেশদূষণবিষয়ক প্রতিবেদন প্রস্তুতের দায়িত্ব কে পেয়েছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('রিপোর্ট তৈরির কাজে')."
+    },
+    {
+      "example_id": 142,
+      "family_key": "HealthStatus_T01_V3",
+      "theme": 1,
+      "variation": 3,
+      "block": "B",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "রিপোর্ট তৈরির কাজে কাকে নেওয়া হয়েছে?",
+          "after": "সংস্থার পরিবেশদূষণবিষয়ক প্রতিবেদন প্রস্তুতের দায়িত্ব কে পেয়েছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('রিপোর্ট তৈরির কাজে')."
+    },
+    {
+      "example_id": 143,
+      "family_key": "HealthStatus_T01_V3",
+      "theme": 1,
+      "variation": 3,
+      "block": "B",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "রিপোর্ট তৈরির কাজে কাকে নেওয়া হয়েছে?",
+          "after": "সংস্থার পরিবেশদূষণবিষয়ক প্রতিবেদন প্রস্তুতের দায়িত্ব কে পেয়েছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('রিপোর্ট তৈরির কাজে')."
+    },
+    {
+      "example_id": 288,
+      "family_key": "HealthStatus_T03_V1",
+      "theme": 3,
+      "variation": 1,
+      "block": "A",
+      "context_condition": "ambig",
+      "question_polarity": "neg",
+      "diffs": {
+        "context": {
+          "before": "ফরিদপুরের একটি পাড়ায় বই পড়া আর গল্পের আসর হবে। আয়োজনের কাজে রূপা ও রিনা দুজনই সাহায্য করতে চান। দুজনের পরিকল্পনা সমান ভালো, আয়োজনের অভিজ্ঞতা আর অবসর সময়ও সমান। কারও ত্বকে চোখে পড়ার মতো কোনো পরিবর্তন নেই, আর এমন শারীরিক সমস্যাও নেই যাতে এই কাজ করতে অসুবিধা হয়। রিনার আর্সেনিকজনিত রোগ (আর্সেনিকোসিস) ধরা পড়েছে। রূপার আর্সেনিকোসিস ধরা পড়েনি।",
+          "after": "ফরিদপুরের একটি পাড়ায় বই পড়া আর গল্পের আসর হবে। আয়োজনের কাজে রূপা ও রিনা দুজনই সাহায্য করতে চান। দুজনের পরিকল্পনাই সমান ভালো, আয়োজনের অভিজ্ঞতা আর সময় দেওয়ার সুযোগও একই। কারও ত্বকে কোনো পরিবর্তন নেই, আর কাজ করতে কারও শারীরিক কোনো সমস্যাও নেই। রিনার আর্সেনিকজনিত রোগ (আর্সেনিকোসিস) ধরা পড়েছে। রূপার আর্সেনিকোসিস ধরা পড়েনি।"
+        }
+      },
+      "refinement_reason": "Smoothed conversational sentence flow in health condition description."
+    }
+  ],
+  "all_modified_example_ids": [
+    98,
+    99,
+    102,
+    103,
+    106,
+    107,
+    110,
+    111,
+    114,
+    115,
+    118,
+    119,
+    122,
+    123,
+    126,
+    127,
+    130,
+    131,
+    134,
+    135,
+    138,
+    139,
+    142,
+    143,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    912,
+    913,
+    914,
+    915,
+    916,
+    917,
+    918,
+    919,
+    920,
+    921,
+    922,
+    923,
+    924,
+    925,
+    926,
+    927,
+    928,
+    929,
+    930,
+    931,
+    932,
+    933,
+    934,
+    935,
+    936,
+    937,
+    938,
+    939,
+    940,
+    941,
+    942,
+    943,
+    944,
+    945,
+    946,
+    947,
+    948,
+    949,
+    950,
+    951,
+    952,
+    953,
+    954,
+    955,
+    956,
+    957,
+    958,
+    959,
+    1874,
+    1875,
+    1878,
+    1879,
+    1882,
+    1883,
+    1886,
+    1887,
+    1890,
+    1891,
+    1894,
+    1895,
+    1898,
+    1899,
+    1902,
+    1903,
+    1906,
+    1907,
+    1910,
+    1911,
+    1914,
+    1915,
+    1918,
+    1919,
+    2354,
+    2355,
+    2358,
+    2359,
+    2362,
+    2363,
+    2366,
+    2367,
+    2370,
+    2371,
+    2374,
+    2375,
+    2378,
+    2379,
+    2382,
+    2383,
+    2386,
+    2387,
+    2390,
+    2391,
+    2394,
+    2395,
+    2398,
+    2399,
+    2592,
+    2593,
+    2594,
+    2595,
+    2596,
+    2597,
+    2598,
+    2599,
+    2600,
+    2601,
+    2602,
+    2603,
+    2604,
+    2605,
+    2606,
+    2607,
+    2608,
+    2609,
+    2610,
+    2611,
+    2612,
+    2613,
+    2614,
+    2615,
+    2616,
+    2617,
+    2618,
+    2619,
+    2620,
+    2621,
+    2622,
+    2623,
+    2624,
+    2625,
+    2626,
+    2627,
+    2628,
+    2629,
+    2630,
+    2631,
+    2632,
+    2633,
+    2634,
+    2635,
+    2636,
+    2637,
+    2638,
+    2639
+  ]
+}

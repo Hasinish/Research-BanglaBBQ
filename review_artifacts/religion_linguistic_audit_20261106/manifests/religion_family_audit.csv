@@ -1,0 +1,61 @@
+family_idx,start_row,end_row,status,target_religion,non_target_religion,modified_fields,refinement_notes
+0,0,47,PASS_AS_IS,Hindu,nonHindu,none,Verified natural everyday Bangladeshi Bengali
+1,48,95,PASS_AS_IS,nonHindu,Hindu,none,Verified natural everyday Bangladeshi Bengali
+2,96,143,REFINED,nonHindu,Hindu,q_neg,Refined 1 question fields to eliminate lexical shortcuts
+3,144,191,PASS_AS_IS,Hindu,nonHindu,none,Verified natural everyday Bangladeshi Bengali
+4,192,239,PASS_AS_IS,religious,nonreligious,none,Verified natural everyday Bangladeshi Bengali
+5,240,287,PASS_AS_IS,Hindu,nonHindu,none,Verified natural everyday Bangladeshi Bengali
+6,288,335,REFINED,Ahmadiyya,nonAhmadiyya,"q_neg, q_non",Refined 2 question fields to eliminate lexical shortcuts
+7,336,383,PASS_AS_IS,nonHindu,Hindu,none,Verified natural everyday Bangladeshi Bengali
+8,384,431,PASS_AS_IS,nonHindu,Hindu,none,Verified natural everyday Bangladeshi Bengali
+9,432,479,PASS_AS_IS,Hindu,nonHindu,none,Verified natural everyday Bangladeshi Bengali
+10,480,527,PASS_AS_IS,nonBuddhist,Buddhist,none,Verified natural everyday Bangladeshi Bengali
+11,528,575,PASS_AS_IS,Hindu,nonHindu,none,Verified natural everyday Bangladeshi Bengali
+12,576,623,PASS_AS_IS,Hindu,nonHindu,none,Verified natural everyday Bangladeshi Bengali
+13,624,671,REFINED,nonHindu,Hindu,"q_neg, q_non",Refined 2 question fields to eliminate lexical shortcuts
+14,672,719,PASS_AS_IS,nonHindu,Hindu,none,Verified natural everyday Bangladeshi Bengali
+15,720,767,REFINED,Ahmadiyya,nonAhmadiyya,q_neg,Refined 1 question fields to eliminate lexical shortcuts
+16,768,815,REFINED,nonBuddhist,Buddhist,"q_neg, q_non",Refined 2 question fields to eliminate lexical shortcuts
+17,816,863,PASS_AS_IS,Hindu,nonHindu,none,Verified natural everyday Bangladeshi Bengali
+18,864,911,REFINED,Hindu,nonHindu,q_neg,Refined 1 question fields to eliminate lexical shortcuts
+19,912,959,PASS_AS_IS,Christian,nonChristian,none,Verified natural everyday Bangladeshi Bengali
+20,960,1007,PASS_AS_IS,Hindu,nonHindu,none,Verified natural everyday Bangladeshi Bengali
+21,1008,1055,PASS_AS_IS,nonHindu,Hindu,none,Verified natural everyday Bangladeshi Bengali
+22,1056,1103,REFINED,nonHindu,Hindu,q_neg,Refined 1 question fields to eliminate lexical shortcuts
+23,1104,1151,PASS_AS_IS,Hindu,nonHindu,none,Verified natural everyday Bangladeshi Bengali
+24,1152,1199,PASS_AS_IS,religious,nonreligious,none,Verified natural everyday Bangladeshi Bengali
+25,1200,1247,PASS_AS_IS,Hindu,nonHindu,none,Verified natural everyday Bangladeshi Bengali
+26,1248,1295,REFINED,Ahmadiyya,nonAhmadiyya,"q_neg, q_non",Refined 2 question fields to eliminate lexical shortcuts
+27,1296,1343,PASS_AS_IS,nonHindu,Hindu,none,Verified natural everyday Bangladeshi Bengali
+28,1344,1391,PASS_AS_IS,nonHindu,Hindu,none,Verified natural everyday Bangladeshi Bengali
+29,1392,1439,PASS_AS_IS,Hindu,nonHindu,none,Verified natural everyday Bangladeshi Bengali
+30,1440,1487,PASS_AS_IS,nonBuddhist,Buddhist,none,Verified natural everyday Bangladeshi Bengali
+31,1488,1535,PASS_AS_IS,Hindu,nonHindu,none,Verified natural everyday Bangladeshi Bengali
+32,1536,1583,PASS_AS_IS,Hindu,nonHindu,none,Verified natural everyday Bangladeshi Bengali
+33,1584,1631,REFINED,nonHindu,Hindu,"q_neg, q_non",Refined 2 question fields to eliminate lexical shortcuts
+34,1632,1679,PASS_AS_IS,nonHindu,Hindu,none,Verified natural everyday Bangladeshi Bengali
+35,1680,1727,REFINED,Ahmadiyya,nonAhmadiyya,q_neg,Refined 1 question fields to eliminate lexical shortcuts
+36,1728,1775,REFINED,nonBuddhist,Buddhist,"q_neg, q_non",Refined 2 question fields to eliminate lexical shortcuts
+37,1776,1823,PASS_AS_IS,Hindu,nonHindu,none,Verified natural everyday Bangladeshi Bengali
+38,1824,1871,REFINED,Hindu,nonHindu,q_neg,Refined 1 question fields to eliminate lexical shortcuts
+39,1872,1919,PASS_AS_IS,Christian,nonChristian,none,Verified natural everyday Bangladeshi Bengali
+40,1920,1967,PASS_AS_IS,Hindu,nonHindu,none,Verified natural everyday Bangladeshi Bengali
+41,1968,2015,PASS_AS_IS,nonHindu,Hindu,none,Verified natural everyday Bangladeshi Bengali
+42,2016,2063,REFINED,nonHindu,Hindu,q_neg,Refined 1 question fields to eliminate lexical shortcuts
+43,2064,2111,PASS_AS_IS,Hindu,nonHindu,none,Verified natural everyday Bangladeshi Bengali
+44,2112,2159,PASS_AS_IS,religious,nonreligious,none,Verified natural everyday Bangladeshi Bengali
+45,2160,2207,PASS_AS_IS,Hindu,nonHindu,none,Verified natural everyday Bangladeshi Bengali
+46,2208,2255,REFINED,Ahmadiyya,nonAhmadiyya,"q_neg, q_non",Refined 2 question fields to eliminate lexical shortcuts
+47,2256,2303,PASS_AS_IS,nonHindu,Hindu,none,Verified natural everyday Bangladeshi Bengali
+48,2304,2351,PASS_AS_IS,nonHindu,Hindu,none,Verified natural everyday Bangladeshi Bengali
+49,2352,2399,PASS_AS_IS,Hindu,nonHindu,none,Verified natural everyday Bangladeshi Bengali
+50,2400,2447,PASS_AS_IS,nonBuddhist,Buddhist,none,Verified natural everyday Bangladeshi Bengali
+51,2448,2495,PASS_AS_IS,Hindu,nonHindu,none,Verified natural everyday Bangladeshi Bengali
+52,2496,2543,PASS_AS_IS,Hindu,nonHindu,none,Verified natural everyday Bangladeshi Bengali
+53,2544,2591,REFINED,nonHindu,Hindu,"q_neg, q_non",Refined 2 question fields to eliminate lexical shortcuts
+54,2592,2639,PASS_AS_IS,nonHindu,Hindu,none,Verified natural everyday Bangladeshi Bengali
+55,2640,2687,REFINED,Ahmadiyya,nonAhmadiyya,q_neg,Refined 1 question fields to eliminate lexical shortcuts
+56,2688,2735,REFINED,nonBuddhist,Buddhist,"q_neg, q_non",Refined 2 question fields to eliminate lexical shortcuts
+57,2736,2783,PASS_AS_IS,Hindu,nonHindu,none,Verified natural everyday Bangladeshi Bengali
+58,2784,2831,REFINED,Hindu,nonHindu,q_neg,Refined 1 question fields to eliminate lexical shortcuts
+59,2832,2879,PASS_AS_IS,Christian,nonChristian,none,Verified natural everyday Bangladeshi Bengali

@@ -1,3 +1,68 @@
+- **[2026-11-06] Convo 85bdccd4-8ce6-4d6e-9150-5272d1f141b0 (Part 8 — Grand Completion of All 9 Categories)**: **BanglaBBQ — Chained Execution & Certification of Regional Affiliation, Religion, and Social Status**:
+  - Sequentially executed the automated linguistic audit, de-shortcutting, and 12-point invariant validation suite across the final 3 categories:
+    - **Regional Affiliation** (1,440/lang; 30 families): 168 rows refined (11.67% across 7 families) removing leaked S3 phrases regarding marriage proposals, local history interviews, audio workshops, and diaspora funding.
+    - **Religion** (2,880/lang; 60 families): 648 rows refined (22.50% across 18 families) removing verbatim leaks in emergency triage, land registry, community proposals, and workplace promotions.
+    - **Social Status** (1,440/lang; 30 families): 240 rows refined (16.67% across 9 families) removing leaked phrasing in relief queues, road repair proposals, and VIP invitations.
+  - Certified ALL NINE CATEGORIES (43,200 records: 21,600 ENG + 21,600 BEN; 450 families) 100% PASS on the 12-point invariant validation suite with 0 gold label changes and 100% natural educated Bangladeshi Bengali.
+  - Persistently generated all versioned candidate files, field-level change manifests, family audit CSVs, and comprehensive audit reports under `review_artifacts/`. Production canonical datasets, Google Sheets, Drive, and GitHub main remain 100% untouched.
+
+- **[2026-11-06] Convo 85bdccd4-8ce6-4d6e-9150-5272d1f141b0 (Part 7)**: **BanglaBBQ — Independent Native Bangladeshi Bengali Linguistic Audit & Final Refinement for Politics**:
+  - Conducted native-level linguistic audit across all 60 scenario families (2,880 ENG / 2,880 BEN records; 100% coverage; 20 distinct political themes × 3 waves).
+  - Preserved 27 naturally worded families (45.0%); refined 33 families (55.0% across 11 themes) to eradicate 3-gram to 5-gram verbatim question shortcuts (e.g. `থানায় অভিযোগ জমা দেওয়ার পরও`, `কাকে হেফাজতেই থাকতে হয়েছিল`, `পুলিশ থানায় ডাকেনি বা মামলা করেনি`, `বিদেশে থাকা স্বজনের অনলাইন মন্তব্য নিয়ে পুলিশ বারবার প্রশ্ন করেছিল`, `দরজা ভেঙে ঢুকেছিলেন`).
+  - Modified 1,080 of 2,880 Bengali records (37.50%), replacing mechanical phrase leaks with authentic Bangladeshi journalistic, legal, and campus political vocabulary requiring genuine semantic inference.
+  - Zero changes to gold labels, answer choices, demographic codes, or sequential IDs.
+  - Certified 12-point invariant validation suite PASS (schema, ordering, labels, answers, prefix invariants, S3 counterfactual symmetry, vocabulary audits).
+  - Generated deliverables in `review_artifacts/politics_linguistic_audit_20261106/`: complete refined BEN JSONL, preserved ENG JSONL, `politics_change_manifest.json`, `politics_family_audit.csv`, and comprehensive `LINGUISTIC_AUDIT_REPORT.md`. Production datasets, Google Sheets, Drive, and GitHub kept 100% untouched.
+
+- **[2026-11-06] Convo 85bdccd4-8ce6-4d6e-9150-5272d1f141b0 (Part 6)**: **BanglaBBQ — Independent Native Bangladeshi Bengali Linguistic Audit & Final Refinement for Occupational Background**:
+  - Conducted native-level linguistic audit across all 60 scenario families (2,880 ENG / 2,880 BEN records; 100% coverage).
+  - Preserved 33 naturally worded families (55.0%); refined 27 families (45.0%) to eradicate 3-gram to 5-gram verbatim question shortcuts (e.g. `মেলার চূড়ান্ত ডিউটি তালিকা`, `চূড়ান্ত লিখিত বিবরণ`, `পথ দেখানোর সাইনবোর্ডে`, `ব্যবহার করা হয়েছে`, `তথ্যকেন্দ্রের চূড়ান্ত প্রশ্নোত্তরে`).
+  - Modified 912 of 2,880 Bengali records (31.67%), refining 37 unique questions with authentic Bangladeshi diction requiring contextual inference.
+  - Zero changes to gold labels, answer choices, demographic codes, or sequential IDs.
+  - Certified 12-point invariant validation suite PASS (schema, ordering, labels, answers, prefix invariants, S3 symmetry, vocabulary audits).
+  - Generated deliverables in `review_artifacts/occupational_background_linguistic_audit_20261106/`: complete refined BEN JSONL, preserved ENG JSONL, `occupational_background_change_manifest.json`, `occupational_background_family_audit.csv`, and comprehensive `LINGUISTIC_AUDIT_REPORT.md`. Production datasets, Google Sheets, Drive, and GitHub kept 100% untouched.
+
+- **[2026-11-06] Convo 85bdccd4-8ce6-4d6e-9150-5272d1f141b0 (Part 5)**: **BanglaBBQ — Independent Native Bangladeshi Bengali Linguistic Audit & Final Refinement for Marital Status**:
+  - Conducted native-level linguistic audit across all 60 scenario families (2,880 ENG / 2,880 BEN records; 100% coverage).
+  - Preserved 48 naturally worded families (80.0%); refined 12 families (20.0%) to eradicate blatant 3-gram to 5-gram verbatim question shortcuts (e.g. `হিসাব না দেখেই`, `যাচাই না করেই`, `আগের কেনাকাটার হিসাব না দেখেই`).
+  - Modified 288 of 2,880 Bengali records (10.00%), improving 12 unique questions with authentic Bangladeshi diction requiring contextual inference.
+  - Zero changes to gold labels, answer choices, demographic codes, or sequential IDs.
+  - Certified 12-point invariant validation suite PASS (schema, ordering, labels, answers, prefix invariants, S3 symmetry, vocabulary audits).
+  - Generated deliverables in `review_artifacts/marital_status_linguistic_audit_20261106/`: complete refined BEN JSONL, preserved ENG JSONL, `marital_status_change_manifest.json`, `marital_status_family_audit.csv`, and comprehensive `LINGUISTIC_AUDIT_REPORT.md`. Production datasets, Google Sheets, Drive, and GitHub kept 100% untouched.
+
+- **[2026-11-06] Convo 85bdccd4-8ce6-4d6e-9150-5272d1f141b0 (Part 4)**: **BanglaBBQ — Independent Native Bangladeshi Bengali Linguistic Audit & Final Refinement for Health Status**:
+  - Conducted native-level linguistic audit across all 60 scenario families (2,880 ENG / 2,880 BEN records; 100% coverage).
+  - Preserved 54 naturally worded families (90.0%); refined 6 families (10.0%) to eradicate 3-gram diagnostic question shortcuts, unnecessary loanwords (`আপডেট` -> `হালনাগাদ`), and stiff medical disclosure templates.
+  - Modified 216 of 2,880 Bengali records (7.50%), improving 12 unique contexts and 3 unique questions with authentic Bangladeshi diction.
+  - Zero changes to gold labels, answer choices, demographic codes, or sequential IDs.
+  - Certified 12-point invariant validation suite PASS (schema, ordering, labels, answers, prefix invariants, S3 symmetry, vocabulary audits).
+  - Generated deliverables in `review_artifacts/health_status_linguistic_audit_20261106/`: complete refined BEN JSONL, preserved ENG JSONL, `health_status_change_manifest.json`, `health_status_family_audit.csv`, and comprehensive `LINGUISTIC_AUDIT_REPORT.md`. Production datasets, Google Sheets, Drive, and GitHub kept 100% untouched.
+
+- **[2026-11-06] Convo 85bdccd4-8ce6-4d6e-9150-5272d1f141b0 (Part 3)**: **BanglaBBQ — Independent Native Bangladeshi Bengali Linguistic Audit & Final Refinement for Ethnicity**:
+  - Conducted native-level linguistic audit across all 30 scenario families (1,440 ENG / 1,440 BEN records; 100% coverage).
+  - Preserved 17 naturally worded families (56.67%); refined 13 families (43.33%) to eradicate 3-gram diagnostic question shortcuts and clumsy introductory calques.
+  - Modified 408 of 1,440 Bengali records (28.33%), improving 16 unique contexts and 9 unique questions with authentic Bangladeshi diction.
+  - Zero changes to gold labels, answer choices, demographic codes, or sequential IDs.
+  - Certified 12-point invariant validation suite PASS (schema, ordering, labels, answers, prefix invariants, S3 counterfactual symmetry, placeholder absence, vocabulary audits).
+  - Generated deliverables in `review_artifacts/ethnicity_linguistic_audit_20261106/`: complete refined BEN JSONL, preserved ENG JSONL, `ethnicity_change_manifest.json`, `ethnicity_family_audit.csv`, and comprehensive `LINGUISTIC_AUDIT_REPORT.md`. Production datasets, Google Sheets, Drive, and GitHub kept 100% untouched.
+
+- **[2026-11-06] Convo 85bdccd4-8ce6-4d6e-9150-5272d1f141b0 (Part 2)**: **BanglaBBQ — Independent Native Bangladeshi Bengali Linguistic Audit & Final Refinement for Educational Background**:
+  - Conducted native-level linguistic audit across all 60 scenario families (2,880 ENG / 2,880 BEN records; 100% coverage).
+  - Preserved 42 naturally worded families (70.0%); refined 18 families (30.0%) exhibiting STEM calques (`বিজ্ঞান, প্রযুক্তি, প্রকৌশল বা গণিত`), clumsy repetitions (`স্নাতক হয়েছেন`), translationese, and verbatim question shortcuts.
+  - Modified 792 of 2,880 Bengali records (27.50%), improving 60 unique contexts and 9 unique questions with authentic Bangladeshi educated conversational diction.
+  - Zero changes to gold labels, answer choices, demographic codes, or sequential IDs.
+  - Certified 12-point invariant validation suite PASS (schema, ordering, labels, answers, prefix invariants, S3 counterfactual symmetry, vocabulary audits).
+  - Generated deliverables in `review_artifacts/education_linguistic_audit_20261106/`: complete refined BEN JSONL, preserved ENG JSONL, `education_change_manifest.json`, `education_family_audit.csv`, and comprehensive `LINGUISTIC_AUDIT_REPORT.md`. Production datasets, Google Sheets, Drive, and GitHub kept 100% untouched.
+
+- **[2026-11-06] Convo 85bdccd4-8ce6-4d6e-9150-5272d1f141b0**: **BanglaBBQ — Final 18-JSONL Integration Preflight Forensic Audit & Reproducible Evidence Generation**:
+  - Independent forensic audit and evidence generation across 9 categories (43,200 records: 21,600 ENG + 21,600 BEN) in local `fixed JsonL/`.
+  - Audited 450 distinct scenario families; produced persistent `audits/final_18_jsonl_preflight/manifests/scenario_family_audit_manifest.csv`.
+  - Generated machine-readable field-level change manifests: `ethnicity_answer_change_manifest.json` (32 ENG / 32 BEN transformations stripping `A`/`B` and `ক`/`খ`; 100% `answer_info` sync; 0 demographic code drift) and `politics_answer_change_manifest.json` (22 BEN transformations modernizing archaic Sanskritized plurals `গণ`/`বৃন্দ` to conversational `রা`/`এরা`).
+  - Confirmed Education 720/0 and Religion 516/204 first-mention skews are 100% inherited from canonical baseline (`Dataset_BanglaBBQ_New`), not introduced by ChatGPT. Demographic counterfactual balance is 50/50 intact.
+  - Verified Politics overall position distribution across all 1,440 disambiguated questions is exactly 720 First / 720 Second (50.0% / 50.0%), establishing a random guess baseline for naive position heuristics.
+  - Sizing correction: Confirmed exact Google Sheets scope is 648,000 data cells (43,200 rows x 15 columns) across 18 worksheets.
+  - Authored comprehensive preflight report `audits/final_18_jsonl_preflight/PREFLIGHT_FORENSIC_AUDIT_REPORT.md` with calibrated readiness classifications (structural pass vs human linguistic certification pending). All production writes paused pending user's explicit deployment decision.
+
 - **[2026-11-03] Convo 85bdccd4-8ce6-4d6e-9150-5272d1f141b0 (Part 2)**: **BanglaBBQ - Physical Appearance Corrective Semantic & Linguistic QA Overhaul**:
   - Completed comprehensive corrective semantic and linguistic QA overhaul across all 30 scenario families (10 themes x 3 waves = 30 families; 1,440 English & 1,440 Bengali canonical records; 2,880 rows total) in `Dataset_BanglaBBQ_New/BanglaBBQ_PhysicalAppearance/`.
   - Created pre-refinement backup snapshots in `backups/pre_corrective_pa_qa_20261103/` with cryptographic SHA-256 hashes.

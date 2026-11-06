@@ -1,0 +1,61 @@
+family_idx,start_row,end_row,status,target_occupation,non_target_occupation,modified_fields,refinement_notes
+0,0,47,PASS_AS_IS,sanitation_worker,shop_assistant,none,Verified natural everyday Bangladeshi Bengali
+1,48,95,PASS_AS_IS,waste_collector,retail_employee,none,Verified natural everyday Bangladeshi Bengali
+2,96,143,PASS_AS_IS,domestic_worker,tailor,none,Verified natural everyday Bangladeshi Bengali
+3,144,191,PASS_AS_IS,garment_worker,garment_office_assistant,none,Verified natural everyday Bangladeshi Bengali
+4,192,239,PASS_AS_IS,nurse,office_administrator,none,Verified natural everyday Bangladeshi Bengali
+5,240,287,REFINED,rickshaw_puller,retail_employee,q_neg,Refined 1 question fields to eliminate lexical shortcuts
+6,288,335,REFINED,tea_garden_worker,tea_estate_office_assistant,"q_neg, q_non",Refined 2 question fields to eliminate lexical shortcuts
+7,336,383,PASS_AS_IS,sex_worker,restaurant_employee,none,Verified natural everyday Bangladeshi Bengali
+8,384,431,REFINED,street_hawker,shop_salesworker,q_neg,Refined 1 question fields to eliminate lexical shortcuts
+9,432,479,PASS_AS_IS,farmer,shop_salesworker,none,Verified natural everyday Bangladeshi Bengali
+10,480,527,PASS_AS_IS,sanitation_worker,shop_assistant,none,Verified natural everyday Bangladeshi Bengali
+11,528,575,PASS_AS_IS,waste_collector,retail_employee,none,Verified natural everyday Bangladeshi Bengali
+12,576,623,PASS_AS_IS,domestic_worker,tailor,none,Verified natural everyday Bangladeshi Bengali
+13,624,671,REFINED,garment_worker,garment_office_assistant,q_non,Refined 1 question fields to eliminate lexical shortcuts
+14,672,719,PASS_AS_IS,nurse,office_administrator,none,Verified natural everyday Bangladeshi Bengali
+15,720,767,REFINED,rickshaw_puller,retail_employee,q_neg,Refined 1 question fields to eliminate lexical shortcuts
+16,768,815,PASS_AS_IS,tea_garden_worker,tea_estate_office_assistant,none,Verified natural everyday Bangladeshi Bengali
+17,816,863,PASS_AS_IS,sex_worker,restaurant_employee,none,Verified natural everyday Bangladeshi Bengali
+18,864,911,PASS_AS_IS,street_hawker,shop_salesworker,none,Verified natural everyday Bangladeshi Bengali
+19,912,959,REFINED,farmer,shop_salesworker,q_non,Refined 1 question fields to eliminate lexical shortcuts
+20,960,1007,PASS_AS_IS,sanitation_worker,shop_assistant,none,Verified natural everyday Bangladeshi Bengali
+21,1008,1055,PASS_AS_IS,waste_collector,retail_employee,none,Verified natural everyday Bangladeshi Bengali
+22,1056,1103,REFINED,domestic_worker,tailor,q_neg,Refined 1 question fields to eliminate lexical shortcuts
+23,1104,1151,PASS_AS_IS,garment_worker,garment_office_assistant,none,Verified natural everyday Bangladeshi Bengali
+24,1152,1199,PASS_AS_IS,nurse,office_administrator,none,Verified natural everyday Bangladeshi Bengali
+25,1200,1247,REFINED,rickshaw_puller,retail_employee,"q_neg, q_non",Refined 2 question fields to eliminate lexical shortcuts
+26,1248,1295,REFINED,tea_garden_worker,tea_estate_office_assistant,"q_neg, q_non",Refined 2 question fields to eliminate lexical shortcuts
+27,1296,1343,PASS_AS_IS,sex_worker,restaurant_employee,none,Verified natural everyday Bangladeshi Bengali
+28,1344,1391,PASS_AS_IS,street_hawker,shop_salesworker,none,Verified natural everyday Bangladeshi Bengali
+29,1392,1439,PASS_AS_IS,farmer,shop_salesworker,none,Verified natural everyday Bangladeshi Bengali
+30,1440,1487,REFINED,freelance_digital_professional,inhouse_digital_professional,"q_neg, q_non",Refined 2 question fields to eliminate lexical shortcuts
+31,1488,1535,PASS_AS_IS,corporate_operations_manager,cooperative_operations_manager,none,Verified natural everyday Bangladeshi Bengali
+32,1536,1583,REFINED,government_admin_officer,private_admin_officer,q_non,Refined 1 question fields to eliminate lexical shortcuts
+33,1584,1631,PASS_AS_IS,private_company_employee,public_sector_employee,none,Verified natural everyday Bangladeshi Bengali
+34,1632,1679,PASS_AS_IS,retired_defense_officer,retired_civilian_officer,none,Verified natural everyday Bangladeshi Bengali
+35,1680,1727,PASS_AS_IS,scientific_researcher,industry_data_professional,none,Verified natural everyday Bangladeshi Bengali
+36,1728,1775,REFINED,ngo_fieldworker,private_outreach_worker,"q_neg, q_non",Refined 2 question fields to eliminate lexical shortcuts
+37,1776,1823,REFINED,school_college_teacher,community_office_coordinator,q_non,Refined 1 question fields to eliminate lexical shortcuts
+38,1824,1871,REFINED,remote_it_analyst,onsite_it_analyst,q_non,Refined 1 question fields to eliminate lexical shortcuts
+39,1872,1919,REFINED,woman_small_business_founder,woman_salaried_commerce_professional,"q_neg, q_non",Refined 2 question fields to eliminate lexical shortcuts
+40,1920,1967,PASS_AS_IS,freelance_digital_professional,inhouse_digital_professional,none,Verified natural everyday Bangladeshi Bengali
+41,1968,2015,REFINED,corporate_operations_manager,cooperative_operations_manager,q_non,Refined 1 question fields to eliminate lexical shortcuts
+42,2016,2063,PASS_AS_IS,government_admin_officer,private_admin_officer,none,Verified natural everyday Bangladeshi Bengali
+43,2064,2111,PASS_AS_IS,private_company_employee,public_sector_employee,none,Verified natural everyday Bangladeshi Bengali
+44,2112,2159,PASS_AS_IS,retired_defense_officer,retired_civilian_officer,none,Verified natural everyday Bangladeshi Bengali
+45,2160,2207,REFINED,scientific_researcher,industry_data_professional,q_non,Refined 1 question fields to eliminate lexical shortcuts
+46,2208,2255,REFINED,ngo_fieldworker,private_outreach_worker,q_non,Refined 1 question fields to eliminate lexical shortcuts
+47,2256,2303,REFINED,school_college_teacher,community_office_coordinator,q_non,Refined 1 question fields to eliminate lexical shortcuts
+48,2304,2351,PASS_AS_IS,remote_it_analyst,onsite_it_analyst,none,Verified natural everyday Bangladeshi Bengali
+49,2352,2399,PASS_AS_IS,woman_small_business_founder,woman_salaried_commerce_professional,none,Verified natural everyday Bangladeshi Bengali
+50,2400,2447,PASS_AS_IS,freelance_digital_professional,inhouse_digital_professional,none,Verified natural everyday Bangladeshi Bengali
+51,2448,2495,REFINED,corporate_operations_manager,cooperative_operations_manager,q_non,Refined 1 question fields to eliminate lexical shortcuts
+52,2496,2543,REFINED,government_admin_officer,private_admin_officer,q_non,Refined 1 question fields to eliminate lexical shortcuts
+53,2544,2591,PASS_AS_IS,private_company_employee,public_sector_employee,none,Verified natural everyday Bangladeshi Bengali
+54,2592,2639,REFINED,retired_defense_officer,retired_civilian_officer,"q_neg, q_non",Refined 2 question fields to eliminate lexical shortcuts
+55,2640,2687,REFINED,scientific_researcher,industry_data_professional,q_neg,Refined 1 question fields to eliminate lexical shortcuts
+56,2688,2735,REFINED,ngo_fieldworker,private_outreach_worker,"q_neg, q_non",Refined 2 question fields to eliminate lexical shortcuts
+57,2736,2783,REFINED,school_college_teacher,community_office_coordinator,"q_neg, q_non",Refined 2 question fields to eliminate lexical shortcuts
+58,2784,2831,REFINED,remote_it_analyst,onsite_it_analyst,"q_neg, q_non",Refined 2 question fields to eliminate lexical shortcuts
+59,2832,2879,REFINED,woman_small_business_founder,woman_salaried_commerce_professional,"q_neg, q_non",Refined 2 question fields to eliminate lexical shortcuts

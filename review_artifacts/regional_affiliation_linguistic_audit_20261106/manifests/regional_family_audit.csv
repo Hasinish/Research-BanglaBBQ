@@ -1,0 +1,31 @@
+family_idx,start_row,end_row,status,target_region,non_target_region,modified_fields,refinement_notes
+0,0,47,PASS_AS_IS,origin_noakhali,origin_bogura,none,Verified natural everyday Bangladeshi Bengali
+1,48,95,PASS_AS_IS,origin_barishal,origin_khulna,none,Verified natural everyday Bangladeshi Bengali
+2,96,143,PASS_AS_IS,origin_tangail,origin_dinajpur,none,Verified natural everyday Bangladeshi Bengali
+3,144,191,REFINED,origin_cumilla,origin_mymensingh,q_neg,Refined 1 question fields to eliminate lexical shortcuts
+4,192,239,PASS_AS_IS,origin_rangpur,origin_rajshahi,none,Verified natural everyday Bangladeshi Bengali
+5,240,287,REFINED,origin_sylhet,origin_rajshahi,q_non,Refined 1 question fields to eliminate lexical shortcuts
+6,288,335,PASS_AS_IS,origin_sylhet,origin_khulna,none,Verified natural everyday Bangladeshi Bengali
+7,336,383,REFINED,origin_chattogram,origin_dhaka,q_neg,Refined 1 question fields to eliminate lexical shortcuts
+8,384,431,PASS_AS_IS,origin_chattogram,origin_jashore,none,Verified natural everyday Bangladeshi Bengali
+9,432,479,PASS_AS_IS,origin_old_dhaka,origin_bogura,none,Verified natural everyday Bangladeshi Bengali
+10,480,527,PASS_AS_IS,origin_noakhali,origin_bogura,none,Verified natural everyday Bangladeshi Bengali
+11,528,575,PASS_AS_IS,origin_barishal,origin_khulna,none,Verified natural everyday Bangladeshi Bengali
+12,576,623,PASS_AS_IS,origin_tangail,origin_dinajpur,none,Verified natural everyday Bangladeshi Bengali
+13,624,671,REFINED,origin_cumilla,origin_mymensingh,q_non,Refined 1 question fields to eliminate lexical shortcuts
+14,672,719,PASS_AS_IS,origin_rangpur,origin_rajshahi,none,Verified natural everyday Bangladeshi Bengali
+15,720,767,REFINED,origin_sylhet,origin_rajshahi,q_neg,Refined 1 question fields to eliminate lexical shortcuts
+16,768,815,PASS_AS_IS,origin_sylhet,origin_khulna,none,Verified natural everyday Bangladeshi Bengali
+17,816,863,PASS_AS_IS,origin_chattogram,origin_dhaka,none,Verified natural everyday Bangladeshi Bengali
+18,864,911,PASS_AS_IS,origin_chattogram,origin_jashore,none,Verified natural everyday Bangladeshi Bengali
+19,912,959,PASS_AS_IS,origin_old_dhaka,origin_bogura,none,Verified natural everyday Bangladeshi Bengali
+20,960,1007,PASS_AS_IS,origin_noakhali,origin_bogura,none,Verified natural everyday Bangladeshi Bengali
+21,1008,1055,REFINED,origin_barishal,origin_khulna,q_non,Refined 1 question fields to eliminate lexical shortcuts
+22,1056,1103,PASS_AS_IS,origin_tangail,origin_dinajpur,none,Verified natural everyday Bangladeshi Bengali
+23,1104,1151,PASS_AS_IS,origin_cumilla,origin_mymensingh,none,Verified natural everyday Bangladeshi Bengali
+24,1152,1199,PASS_AS_IS,origin_rangpur,origin_rajshahi,none,Verified natural everyday Bangladeshi Bengali
+25,1200,1247,REFINED,origin_sylhet,origin_rajshahi,q_neg,Refined 1 question fields to eliminate lexical shortcuts
+26,1248,1295,PASS_AS_IS,origin_sylhet,origin_khulna,none,Verified natural everyday Bangladeshi Bengali
+27,1296,1343,PASS_AS_IS,origin_chattogram,origin_dhaka,none,Verified natural everyday Bangladeshi Bengali
+28,1344,1391,PASS_AS_IS,origin_chattogram,origin_jashore,none,Verified natural everyday Bangladeshi Bengali
+29,1392,1439,PASS_AS_IS,origin_old_dhaka,origin_bogura,none,Verified natural everyday Bangladeshi Bengali

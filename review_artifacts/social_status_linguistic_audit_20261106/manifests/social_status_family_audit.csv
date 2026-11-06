@@ -1,0 +1,31 @@
+family_idx,start_row,end_row,status,target_status,non_target_status,modified_fields,refinement_notes
+0,0,47,PASS_AS_IS,low_income_background,affluent_background,none,Verified natural everyday Bangladeshi Bengali
+1,48,95,PASS_AS_IS,low_income_background,affluent_background,none,Verified natural everyday Bangladeshi Bengali
+2,96,143,PASS_AS_IS,low_income_background,affluent_background,none,Verified natural everyday Bangladeshi Bengali
+3,144,191,PASS_AS_IS,low_income_background,affluent_background,none,Verified natural everyday Bangladeshi Bengali
+4,192,239,PASS_AS_IS,low_income_background,affluent_background,none,Verified natural everyday Bangladeshi Bengali
+5,240,287,PASS_AS_IS,low_income_background,affluent_background,none,Verified natural everyday Bangladeshi Bengali
+6,288,335,REFINED,low_income_background,affluent_background,q_neg,Refined 1 question fields to eliminate lexical shortcuts
+7,336,383,REFINED,low_income_background,affluent_background,"q_neg, q_non",Refined 2 question fields to eliminate lexical shortcuts
+8,384,431,REFINED,low_income_background,affluent_background,q_non,Refined 1 question fields to eliminate lexical shortcuts
+9,432,479,PASS_AS_IS,low_income_background,affluent_background,none,Verified natural everyday Bangladeshi Bengali
+10,480,527,PASS_AS_IS,low_income_background,affluent_background,none,Verified natural everyday Bangladeshi Bengali
+11,528,575,PASS_AS_IS,low_income_background,affluent_background,none,Verified natural everyday Bangladeshi Bengali
+12,576,623,PASS_AS_IS,low_income_background,affluent_background,none,Verified natural everyday Bangladeshi Bengali
+13,624,671,PASS_AS_IS,low_income_background,affluent_background,none,Verified natural everyday Bangladeshi Bengali
+14,672,719,PASS_AS_IS,low_income_background,affluent_background,none,Verified natural everyday Bangladeshi Bengali
+15,720,767,PASS_AS_IS,low_income_background,affluent_background,none,Verified natural everyday Bangladeshi Bengali
+16,768,815,REFINED,low_income_background,affluent_background,q_non,Refined 1 question fields to eliminate lexical shortcuts
+17,816,863,PASS_AS_IS,low_income_background,affluent_background,none,Verified natural everyday Bangladeshi Bengali
+18,864,911,REFINED,low_income_background,affluent_background,q_non,Refined 1 question fields to eliminate lexical shortcuts
+19,912,959,PASS_AS_IS,low_income_background,affluent_background,none,Verified natural everyday Bangladeshi Bengali
+20,960,1007,PASS_AS_IS,low_income_background,affluent_background,none,Verified natural everyday Bangladeshi Bengali
+21,1008,1055,PASS_AS_IS,low_income_background,affluent_background,none,Verified natural everyday Bangladeshi Bengali
+22,1056,1103,PASS_AS_IS,low_income_background,affluent_background,none,Verified natural everyday Bangladeshi Bengali
+23,1104,1151,PASS_AS_IS,low_income_background,affluent_background,none,Verified natural everyday Bangladeshi Bengali
+24,1152,1199,REFINED,low_income_background,affluent_background,q_neg,Refined 1 question fields to eliminate lexical shortcuts
+25,1200,1247,PASS_AS_IS,low_income_background,affluent_background,none,Verified natural everyday Bangladeshi Bengali
+26,1248,1295,REFINED,low_income_background,affluent_background,q_non,Refined 1 question fields to eliminate lexical shortcuts
+27,1296,1343,PASS_AS_IS,low_income_background,affluent_background,none,Verified natural everyday Bangladeshi Bengali
+28,1344,1391,REFINED,low_income_background,affluent_background,q_non,Refined 1 question fields to eliminate lexical shortcuts
+29,1392,1439,REFINED,low_income_background,affluent_background,q_non,Refined 1 question fields to eliminate lexical shortcuts

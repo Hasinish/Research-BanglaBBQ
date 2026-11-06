@@ -1,0 +1,107 @@
+================================================================================
+BANGLABBQ COMPREHENSIVE PREFLIGHT FORENSIC AUDIT (REPRODUCIBLE RUNNER)
+================================================================================
+
+>>> AUDITING CATEGORY: EDUCATION (2880 rows/language)
+  Record Counts: 2880 ENG / 2880 BEN (Expected: 2880)
+  Gate 1 (Structure & Schema): PASS
+  Gate 2 (Logic & Unknowns):   PASS
+  Gate 3 (Canonical Diffs):    ENG={'context': 2880, 'question': 2880}, BEN={'context': 2880, 'question': 2880}
+    - Unexpected field changes: 0
+  Gate 4 (Bengali Naturalness): Bureaucratic=0, Broken=0
+  Gate 5 (Bilingual Parity):   Mismatches=0
+  Gate 6 (Ambig Duplicates):   0 duplicate counterfactual pairs
+  Gate 7 (Position Balance):   Neg: 720 First / 0 Second | NonNeg: 0 First / 720 Second
+
+>>> AUDITING CATEGORY: ETHNICITY (1440 rows/language)
+  Record Counts: 1440 ENG / 1440 BEN (Expected: 1440)
+  Gate 1 (Structure & Schema): PASS
+  Gate 2 (Logic & Unknowns):   PASS
+  Gate 3 (Canonical Diffs):    ENG={'answer_info': 1440, 'context': 1440, 'question': 1440, 'ans0': 960, 'ans1': 960, 'ans2': 960}, BEN={'answer_info': 1440, 'context': 1440, 'question': 1440, 'ans0': 960, 'ans1': 960, 'ans2': 960}
+    - Unexpected field changes: 8640
+  Gate 4 (Bengali Naturalness): Bureaucratic=0, Broken=0
+  Gate 5 (Bilingual Parity):   Mismatches=0
+  Gate 6 (Ambig Duplicates):   0 duplicate counterfactual pairs
+  Gate 7 (Position Balance):   Neg: 180 First / 180 Second | NonNeg: 180 First / 180 Second
+
+>>> AUDITING CATEGORY: HEALTHSTATUS (2880 rows/language)
+  Record Counts: 2880 ENG / 2880 BEN (Expected: 2880)
+  Gate 1 (Structure & Schema): PASS
+  Gate 2 (Logic & Unknowns):   PASS
+  Gate 3 (Canonical Diffs):    ENG={'context': 2880, 'question': 2880}, BEN={'context': 2880, 'question': 2880}
+    - Unexpected field changes: 0
+  Gate 4 (Bengali Naturalness): Bureaucratic=0, Broken=0
+  Gate 5 (Bilingual Parity):   Mismatches=0
+  Gate 6 (Ambig Duplicates):   0 duplicate counterfactual pairs
+  Gate 7 (Position Balance):   Neg: 360 First / 360 Second | NonNeg: 360 First / 360 Second
+
+>>> AUDITING CATEGORY: MARITALSTATUS (2880 rows/language)
+  Record Counts: 2880 ENG / 2880 BEN (Expected: 2880)
+  Gate 1 (Structure & Schema): PASS
+  Gate 2 (Logic & Unknowns):   PASS
+  Gate 3 (Canonical Diffs):    ENG={'context': 2880, 'question': 2880}, BEN={'context': 2880, 'question': 2880}
+    - Unexpected field changes: 0
+  Gate 4 (Bengali Naturalness): Bureaucratic=0, Broken=0
+  Gate 5 (Bilingual Parity):   Mismatches=0
+  Gate 6 (Ambig Duplicates):   0 duplicate counterfactual pairs
+  Gate 7 (Position Balance):   Neg: 360 First / 360 Second | NonNeg: 360 First / 360 Second
+
+>>> AUDITING CATEGORY: OCCUPATIONALBACKGROUND (2880 rows/language)
+  Record Counts: 2880 ENG / 2880 BEN (Expected: 2880)
+  Gate 1 (Structure & Schema): PASS
+  Gate 2 (Logic & Unknowns):   PASS
+  Gate 3 (Canonical Diffs):    ENG={'context': 2880, 'question': 2880}, BEN={'context': 2880, 'question': 2880}
+    - Unexpected field changes: 0
+  Gate 4 (Bengali Naturalness): Bureaucratic=0, Broken=0
+  Gate 5 (Bilingual Parity):   Mismatches=0
+  Gate 6 (Ambig Duplicates):   0 duplicate counterfactual pairs
+  Gate 7 (Position Balance):   Neg: 360 First / 360 Second | NonNeg: 360 First / 360 Second
+
+>>> AUDITING CATEGORY: POLITICS (2880 rows/language)
+  Record Counts: 2880 ENG / 2880 BEN (Expected: 2880)
+  Gate 1 (Structure & Schema): PASS
+  Gate 2 (Logic & Unknowns):   PASS
+  Gate 3 (Canonical Diffs):    ENG={'context': 2880, 'question': 2880}, BEN={'context': 2880, 'question': 2880, 'ans0': 1056, 'ans1': 1056, 'ans2': 1056}
+    - Unexpected field changes: 3168
+  Gate 4 (Bengali Naturalness): Bureaucratic=0, Broken=0
+  Gate 5 (Bilingual Parity):   Mismatches=0
+  Gate 6 (Ambig Duplicates):   0 duplicate counterfactual pairs
+  Gate 7 (Position Balance):   Neg: 306 First / 414 Second | NonNeg: 414 First / 306 Second
+
+>>> AUDITING CATEGORY: REGIONAL (1440 rows/language)
+  Record Counts: 1440 ENG / 1440 BEN (Expected: 1440)
+  Gate 1 (Structure & Schema): PASS
+  Gate 2 (Logic & Unknowns):   PASS
+  Gate 3 (Canonical Diffs):    ENG={'context': 1440, 'question': 1440}, BEN={'context': 1440, 'question': 1440}
+    - Unexpected field changes: 0
+  Gate 4 (Bengali Naturalness): Bureaucratic=0, Broken=0
+  Gate 5 (Bilingual Parity):   Mismatches=0
+  Gate 6 (Ambig Duplicates):   0 duplicate counterfactual pairs
+  Gate 7 (Position Balance):   Neg: 180 First / 180 Second | NonNeg: 180 First / 180 Second
+
+>>> AUDITING CATEGORY: RELIGION (2880 rows/language)
+  Record Counts: 2880 ENG / 2880 BEN (Expected: 2880)
+  Gate 1 (Structure & Schema): PASS
+  Gate 2 (Logic & Unknowns):   PASS
+  Gate 3 (Canonical Diffs):    ENG={'question': 2880, 'context': 528}, BEN={'context': 2880, 'question': 2880}
+    - Unexpected field changes: 0
+  Gate 4 (Bengali Naturalness): Bureaucratic=0, Broken=0
+  Gate 5 (Bilingual Parity):   Mismatches=0
+  Gate 6 (Ambig Duplicates):   0 duplicate counterfactual pairs
+  Gate 7 (Position Balance):   Neg: 516 First / 204 Second | NonNeg: 204 First / 516 Second
+
+>>> AUDITING CATEGORY: SOCIALSTATUS (1440 rows/language)
+  Record Counts: 1440 ENG / 1440 BEN (Expected: 1440)
+  Gate 1 (Structure & Schema): PASS
+  Gate 2 (Logic & Unknowns):   PASS
+  Gate 3 (Canonical Diffs):    ENG={'context': 1440, 'question': 1440}, BEN={'context': 1440, 'question': 1440}
+    - Unexpected field changes: 0
+  Gate 4 (Bengali Naturalness): Bureaucratic=0, Broken=0
+  Gate 5 (Bilingual Parity):   Mismatches=0
+  Gate 6 (Ambig Duplicates):   0 duplicate counterfactual pairs
+  Gate 7 (Position Balance):   Neg: 180 First / 180 Second | NonNeg: 180 First / 180 Second
+
+================================================================================
+AUDIT SUMMARY: 43200 TOTAL RECORDS | 648000 TOTAL DATA CELLS
+================================================================================
+Spreadsheet Parity Verification: Exactly 43200 rows x 15 columns = 648,000 data cells across 18 worksheets.

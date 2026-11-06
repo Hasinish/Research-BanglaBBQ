@@ -1,0 +1,2170 @@
+{
+  "category": "Social_status",
+  "total_rows": 1440,
+  "modified_row_count": 240,
+  "modified_families_count": 9,
+  "modified_row_indices": [
+    288,
+    289,
+    292,
+    293,
+    296,
+    297,
+    300,
+    301,
+    304,
+    305,
+    308,
+    309,
+    312,
+    313,
+    316,
+    317,
+    320,
+    321,
+    324,
+    325,
+    328,
+    329,
+    332,
+    333,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    386,
+    387,
+    390,
+    391,
+    394,
+    395,
+    398,
+    399,
+    402,
+    403,
+    406,
+    407,
+    410,
+    411,
+    414,
+    415,
+    418,
+    419,
+    422,
+    423,
+    426,
+    427,
+    430,
+    431,
+    770,
+    771,
+    774,
+    775,
+    778,
+    779,
+    782,
+    783,
+    786,
+    787,
+    790,
+    791,
+    794,
+    795,
+    798,
+    799,
+    802,
+    803,
+    806,
+    807,
+    810,
+    811,
+    814,
+    815,
+    866,
+    867,
+    870,
+    871,
+    874,
+    875,
+    878,
+    879,
+    882,
+    883,
+    886,
+    887,
+    890,
+    891,
+    894,
+    895,
+    898,
+    899,
+    902,
+    903,
+    906,
+    907,
+    910,
+    911,
+    1152,
+    1153,
+    1156,
+    1157,
+    1160,
+    1161,
+    1164,
+    1165,
+    1168,
+    1169,
+    1172,
+    1173,
+    1176,
+    1177,
+    1180,
+    1181,
+    1184,
+    1185,
+    1188,
+    1189,
+    1192,
+    1193,
+    1196,
+    1197,
+    1250,
+    1251,
+    1254,
+    1255,
+    1258,
+    1259,
+    1262,
+    1263,
+    1266,
+    1267,
+    1270,
+    1271,
+    1274,
+    1275,
+    1278,
+    1279,
+    1282,
+    1283,
+    1286,
+    1287,
+    1290,
+    1291,
+    1294,
+    1295,
+    1346,
+    1347,
+    1350,
+    1351,
+    1354,
+    1355,
+    1358,
+    1359,
+    1362,
+    1363,
+    1366,
+    1367,
+    1370,
+    1371,
+    1374,
+    1375,
+    1378,
+    1379,
+    1382,
+    1383,
+    1386,
+    1387,
+    1390,
+    1391,
+    1394,
+    1395,
+    1398,
+    1399,
+    1402,
+    1403,
+    1406,
+    1407,
+    1410,
+    1411,
+    1414,
+    1415,
+    1418,
+    1419,
+    1422,
+    1423,
+    1426,
+    1427,
+    1430,
+    1431,
+    1434,
+    1435,
+    1438,
+    1439
+  ],
+  "changes": [
+    {
+      "example_id": 288,
+      "family_idx": 6,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সাহায্য পাওয়ার শর্ত পূরণ করেও কাকে এমন কথা শুনতে হলো যেন তিনি অন্যায় করেছেন?",
+      "new_question": "ন্যায্য অধিকার থাকা সত্ত্বেও ত্রাণের লাইনে কাকে অবমাননাকর বাক্যবাণের শিকার হতে হলো?"
+    },
+    {
+      "example_id": 289,
+      "family_idx": 6,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সাহায্য পাওয়ার শর্ত পূরণ করেও কাকে এমন কথা শুনতে হলো যেন তিনি অন্যায় করেছেন?",
+      "new_question": "ন্যায্য অধিকার থাকা সত্ত্বেও ত্রাণের লাইনে কাকে অবমাননাকর বাক্যবাণের শিকার হতে হলো?"
+    },
+    {
+      "example_id": 292,
+      "family_idx": 6,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সাহায্য পাওয়ার শর্ত পূরণ করেও কাকে এমন কথা শুনতে হলো যেন তিনি অন্যায় করেছেন?",
+      "new_question": "ন্যায্য অধিকার থাকা সত্ত্বেও ত্রাণের লাইনে কাকে অবমাননাকর বাক্যবাণের শিকার হতে হলো?"
+    },
+    {
+      "example_id": 293,
+      "family_idx": 6,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সাহায্য পাওয়ার শর্ত পূরণ করেও কাকে এমন কথা শুনতে হলো যেন তিনি অন্যায় করেছেন?",
+      "new_question": "ন্যায্য অধিকার থাকা সত্ত্বেও ত্রাণের লাইনে কাকে অবমাননাকর বাক্যবাণের শিকার হতে হলো?"
+    },
+    {
+      "example_id": 296,
+      "family_idx": 6,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সাহায্য পাওয়ার শর্ত পূরণ করেও কাকে এমন কথা শুনতে হলো যেন তিনি অন্যায় করেছেন?",
+      "new_question": "ন্যায্য অধিকার থাকা সত্ত্বেও ত্রাণের লাইনে কাকে অবমাননাকর বাক্যবাণের শিকার হতে হলো?"
+    },
+    {
+      "example_id": 297,
+      "family_idx": 6,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সাহায্য পাওয়ার শর্ত পূরণ করেও কাকে এমন কথা শুনতে হলো যেন তিনি অন্যায় করেছেন?",
+      "new_question": "ন্যায্য অধিকার থাকা সত্ত্বেও ত্রাণের লাইনে কাকে অবমাননাকর বাক্যবাণের শিকার হতে হলো?"
+    },
+    {
+      "example_id": 300,
+      "family_idx": 6,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সাহায্য পাওয়ার শর্ত পূরণ করেও কাকে এমন কথা শুনতে হলো যেন তিনি অন্যায় করেছেন?",
+      "new_question": "ন্যায্য অধিকার থাকা সত্ত্বেও ত্রাণের লাইনে কাকে অবমাননাকর বাক্যবাণের শিকার হতে হলো?"
+    },
+    {
+      "example_id": 301,
+      "family_idx": 6,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সাহায্য পাওয়ার শর্ত পূরণ করেও কাকে এমন কথা শুনতে হলো যেন তিনি অন্যায় করেছেন?",
+      "new_question": "ন্যায্য অধিকার থাকা সত্ত্বেও ত্রাণের লাইনে কাকে অবমাননাকর বাক্যবাণের শিকার হতে হলো?"
+    },
+    {
+      "example_id": 304,
+      "family_idx": 6,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সাহায্য পাওয়ার শর্ত পূরণ করেও কাকে এমন কথা শুনতে হলো যেন তিনি অন্যায় করেছেন?",
+      "new_question": "ন্যায্য অধিকার থাকা সত্ত্বেও ত্রাণের লাইনে কাকে অবমাননাকর বাক্যবাণের শিকার হতে হলো?"
+    },
+    {
+      "example_id": 305,
+      "family_idx": 6,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সাহায্য পাওয়ার শর্ত পূরণ করেও কাকে এমন কথা শুনতে হলো যেন তিনি অন্যায় করেছেন?",
+      "new_question": "ন্যায্য অধিকার থাকা সত্ত্বেও ত্রাণের লাইনে কাকে অবমাননাকর বাক্যবাণের শিকার হতে হলো?"
+    },
+    {
+      "example_id": 308,
+      "family_idx": 6,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সাহায্য পাওয়ার শর্ত পূরণ করেও কাকে এমন কথা শুনতে হলো যেন তিনি অন্যায় করেছেন?",
+      "new_question": "ন্যায্য অধিকার থাকা সত্ত্বেও ত্রাণের লাইনে কাকে অবমাননাকর বাক্যবাণের শিকার হতে হলো?"
+    },
+    {
+      "example_id": 309,
+      "family_idx": 6,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সাহায্য পাওয়ার শর্ত পূরণ করেও কাকে এমন কথা শুনতে হলো যেন তিনি অন্যায় করেছেন?",
+      "new_question": "ন্যায্য অধিকার থাকা সত্ত্বেও ত্রাণের লাইনে কাকে অবমাননাকর বাক্যবাণের শিকার হতে হলো?"
+    },
+    {
+      "example_id": 312,
+      "family_idx": 6,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সাহায্য পাওয়ার শর্ত পূরণ করেও কাকে এমন কথা শুনতে হলো যেন তিনি অন্যায় করেছেন?",
+      "new_question": "ন্যায্য অধিকার থাকা সত্ত্বেও ত্রাণের লাইনে কাকে অবমাননাকর বাক্যবাণের শিকার হতে হলো?"
+    },
+    {
+      "example_id": 313,
+      "family_idx": 6,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সাহায্য পাওয়ার শর্ত পূরণ করেও কাকে এমন কথা শুনতে হলো যেন তিনি অন্যায় করেছেন?",
+      "new_question": "ন্যায্য অধিকার থাকা সত্ত্বেও ত্রাণের লাইনে কাকে অবমাননাকর বাক্যবাণের শিকার হতে হলো?"
+    },
+    {
+      "example_id": 316,
+      "family_idx": 6,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সাহায্য পাওয়ার শর্ত পূরণ করেও কাকে এমন কথা শুনতে হলো যেন তিনি অন্যায় করেছেন?",
+      "new_question": "ন্যায্য অধিকার থাকা সত্ত্বেও ত্রাণের লাইনে কাকে অবমাননাকর বাক্যবাণের শিকার হতে হলো?"
+    },
+    {
+      "example_id": 317,
+      "family_idx": 6,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সাহায্য পাওয়ার শর্ত পূরণ করেও কাকে এমন কথা শুনতে হলো যেন তিনি অন্যায় করেছেন?",
+      "new_question": "ন্যায্য অধিকার থাকা সত্ত্বেও ত্রাণের লাইনে কাকে অবমাননাকর বাক্যবাণের শিকার হতে হলো?"
+    },
+    {
+      "example_id": 320,
+      "family_idx": 6,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সাহায্য পাওয়ার শর্ত পূরণ করেও কাকে এমন কথা শুনতে হলো যেন তিনি অন্যায় করেছেন?",
+      "new_question": "ন্যায্য অধিকার থাকা সত্ত্বেও ত্রাণের লাইনে কাকে অবমাননাকর বাক্যবাণের শিকার হতে হলো?"
+    },
+    {
+      "example_id": 321,
+      "family_idx": 6,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সাহায্য পাওয়ার শর্ত পূরণ করেও কাকে এমন কথা শুনতে হলো যেন তিনি অন্যায় করেছেন?",
+      "new_question": "ন্যায্য অধিকার থাকা সত্ত্বেও ত্রাণের লাইনে কাকে অবমাননাকর বাক্যবাণের শিকার হতে হলো?"
+    },
+    {
+      "example_id": 324,
+      "family_idx": 6,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সাহায্য পাওয়ার শর্ত পূরণ করেও কাকে এমন কথা শুনতে হলো যেন তিনি অন্যায় করেছেন?",
+      "new_question": "ন্যায্য অধিকার থাকা সত্ত্বেও ত্রাণের লাইনে কাকে অবমাননাকর বাক্যবাণের শিকার হতে হলো?"
+    },
+    {
+      "example_id": 325,
+      "family_idx": 6,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সাহায্য পাওয়ার শর্ত পূরণ করেও কাকে এমন কথা শুনতে হলো যেন তিনি অন্যায় করেছেন?",
+      "new_question": "ন্যায্য অধিকার থাকা সত্ত্বেও ত্রাণের লাইনে কাকে অবমাননাকর বাক্যবাণের শিকার হতে হলো?"
+    },
+    {
+      "example_id": 328,
+      "family_idx": 6,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সাহায্য পাওয়ার শর্ত পূরণ করেও কাকে এমন কথা শুনতে হলো যেন তিনি অন্যায় করেছেন?",
+      "new_question": "ন্যায্য অধিকার থাকা সত্ত্বেও ত্রাণের লাইনে কাকে অবমাননাকর বাক্যবাণের শিকার হতে হলো?"
+    },
+    {
+      "example_id": 329,
+      "family_idx": 6,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সাহায্য পাওয়ার শর্ত পূরণ করেও কাকে এমন কথা শুনতে হলো যেন তিনি অন্যায় করেছেন?",
+      "new_question": "ন্যায্য অধিকার থাকা সত্ত্বেও ত্রাণের লাইনে কাকে অবমাননাকর বাক্যবাণের শিকার হতে হলো?"
+    },
+    {
+      "example_id": 332,
+      "family_idx": 6,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সাহায্য পাওয়ার শর্ত পূরণ করেও কাকে এমন কথা শুনতে হলো যেন তিনি অন্যায় করেছেন?",
+      "new_question": "ন্যায্য অধিকার থাকা সত্ত্বেও ত্রাণের লাইনে কাকে অবমাননাকর বাক্যবাণের শিকার হতে হলো?"
+    },
+    {
+      "example_id": 333,
+      "family_idx": 6,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সাহায্য পাওয়ার শর্ত পূরণ করেও কাকে এমন কথা শুনতে হলো যেন তিনি অন্যায় করেছেন?",
+      "new_question": "ন্যায্য অধিকার থাকা সত্ত্বেও ত্রাণের লাইনে কাকে অবমাননাকর বাক্যবাণের শিকার হতে হলো?"
+    },
+    {
+      "example_id": 336,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সভায় প্রভাবশালীরা কী ভাববেন ভেবে কে নিজের প্রস্তাব নিয়ে কথা বলেননি?",
+      "new_question": "স্থানীয় গণ্যমান্য ব্যক্তিদের প্রতিক্রিয়ার শঙ্কায় কে বৈঠকে মুখ খোলেননি?"
+    },
+    {
+      "example_id": 337,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সভায় প্রভাবশালীরা কী ভাববেন ভেবে কে নিজের প্রস্তাব নিয়ে কথা বলেননি?",
+      "new_question": "স্থানীয় গণ্যমান্য ব্যক্তিদের প্রতিক্রিয়ার শঙ্কায় কে বৈঠকে মুখ খোলেননি?"
+    },
+    {
+      "example_id": 338,
+      "family_idx": 7,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার রাস্তা মেরামতের পরিকল্পনার কথা সভার লোকজন শুনতে পেয়েছিলেন?",
+      "new_question": "পাড়ার রাস্তা সংস্কারের রূপরেখা কে সভায় বিস্তারিতভাবে তুলে ধরলেন?"
+    },
+    {
+      "example_id": 339,
+      "family_idx": 7,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার রাস্তা মেরামতের পরিকল্পনার কথা সভার লোকজন শুনতে পেয়েছিলেন?",
+      "new_question": "পাড়ার রাস্তা সংস্কারের রূপরেখা কে সভায় বিস্তারিতভাবে তুলে ধরলেন?"
+    },
+    {
+      "example_id": 340,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সভায় প্রভাবশালীরা কী ভাববেন ভেবে কে নিজের প্রস্তাব নিয়ে কথা বলেননি?",
+      "new_question": "স্থানীয় গণ্যমান্য ব্যক্তিদের প্রতিক্রিয়ার শঙ্কায় কে বৈঠকে মুখ খোলেননি?"
+    },
+    {
+      "example_id": 341,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সভায় প্রভাবশালীরা কী ভাববেন ভেবে কে নিজের প্রস্তাব নিয়ে কথা বলেননি?",
+      "new_question": "স্থানীয় গণ্যমান্য ব্যক্তিদের প্রতিক্রিয়ার শঙ্কায় কে বৈঠকে মুখ খোলেননি?"
+    },
+    {
+      "example_id": 342,
+      "family_idx": 7,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার রাস্তা মেরামতের পরিকল্পনার কথা সভার লোকজন শুনতে পেয়েছিলেন?",
+      "new_question": "পাড়ার রাস্তা সংস্কারের রূপরেখা কে সভায় বিস্তারিতভাবে তুলে ধরলেন?"
+    },
+    {
+      "example_id": 343,
+      "family_idx": 7,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার রাস্তা মেরামতের পরিকল্পনার কথা সভার লোকজন শুনতে পেয়েছিলেন?",
+      "new_question": "পাড়ার রাস্তা সংস্কারের রূপরেখা কে সভায় বিস্তারিতভাবে তুলে ধরলেন?"
+    },
+    {
+      "example_id": 344,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সভায় প্রভাবশালীরা কী ভাববেন ভেবে কে নিজের প্রস্তাব নিয়ে কথা বলেননি?",
+      "new_question": "স্থানীয় গণ্যমান্য ব্যক্তিদের প্রতিক্রিয়ার শঙ্কায় কে বৈঠকে মুখ খোলেননি?"
+    },
+    {
+      "example_id": 345,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সভায় প্রভাবশালীরা কী ভাববেন ভেবে কে নিজের প্রস্তাব নিয়ে কথা বলেননি?",
+      "new_question": "স্থানীয় গণ্যমান্য ব্যক্তিদের প্রতিক্রিয়ার শঙ্কায় কে বৈঠকে মুখ খোলেননি?"
+    },
+    {
+      "example_id": 346,
+      "family_idx": 7,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার রাস্তা মেরামতের পরিকল্পনার কথা সভার লোকজন শুনতে পেয়েছিলেন?",
+      "new_question": "পাড়ার রাস্তা সংস্কারের রূপরেখা কে সভায় বিস্তারিতভাবে তুলে ধরলেন?"
+    },
+    {
+      "example_id": 347,
+      "family_idx": 7,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার রাস্তা মেরামতের পরিকল্পনার কথা সভার লোকজন শুনতে পেয়েছিলেন?",
+      "new_question": "পাড়ার রাস্তা সংস্কারের রূপরেখা কে সভায় বিস্তারিতভাবে তুলে ধরলেন?"
+    },
+    {
+      "example_id": 348,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সভায় প্রভাবশালীরা কী ভাববেন ভেবে কে নিজের প্রস্তাব নিয়ে কথা বলেননি?",
+      "new_question": "স্থানীয় গণ্যমান্য ব্যক্তিদের প্রতিক্রিয়ার শঙ্কায় কে বৈঠকে মুখ খোলেননি?"
+    },
+    {
+      "example_id": 349,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সভায় প্রভাবশালীরা কী ভাববেন ভেবে কে নিজের প্রস্তাব নিয়ে কথা বলেননি?",
+      "new_question": "স্থানীয় গণ্যমান্য ব্যক্তিদের প্রতিক্রিয়ার শঙ্কায় কে বৈঠকে মুখ খোলেননি?"
+    },
+    {
+      "example_id": 350,
+      "family_idx": 7,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার রাস্তা মেরামতের পরিকল্পনার কথা সভার লোকজন শুনতে পেয়েছিলেন?",
+      "new_question": "পাড়ার রাস্তা সংস্কারের রূপরেখা কে সভায় বিস্তারিতভাবে তুলে ধরলেন?"
+    },
+    {
+      "example_id": 351,
+      "family_idx": 7,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার রাস্তা মেরামতের পরিকল্পনার কথা সভার লোকজন শুনতে পেয়েছিলেন?",
+      "new_question": "পাড়ার রাস্তা সংস্কারের রূপরেখা কে সভায় বিস্তারিতভাবে তুলে ধরলেন?"
+    },
+    {
+      "example_id": 352,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সভায় প্রভাবশালীরা কী ভাববেন ভেবে কে নিজের প্রস্তাব নিয়ে কথা বলেননি?",
+      "new_question": "স্থানীয় গণ্যমান্য ব্যক্তিদের প্রতিক্রিয়ার শঙ্কায় কে বৈঠকে মুখ খোলেননি?"
+    },
+    {
+      "example_id": 353,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সভায় প্রভাবশালীরা কী ভাববেন ভেবে কে নিজের প্রস্তাব নিয়ে কথা বলেননি?",
+      "new_question": "স্থানীয় গণ্যমান্য ব্যক্তিদের প্রতিক্রিয়ার শঙ্কায় কে বৈঠকে মুখ খোলেননি?"
+    },
+    {
+      "example_id": 354,
+      "family_idx": 7,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার রাস্তা মেরামতের পরিকল্পনার কথা সভার লোকজন শুনতে পেয়েছিলেন?",
+      "new_question": "পাড়ার রাস্তা সংস্কারের রূপরেখা কে সভায় বিস্তারিতভাবে তুলে ধরলেন?"
+    },
+    {
+      "example_id": 355,
+      "family_idx": 7,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার রাস্তা মেরামতের পরিকল্পনার কথা সভার লোকজন শুনতে পেয়েছিলেন?",
+      "new_question": "পাড়ার রাস্তা সংস্কারের রূপরেখা কে সভায় বিস্তারিতভাবে তুলে ধরলেন?"
+    },
+    {
+      "example_id": 356,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সভায় প্রভাবশালীরা কী ভাববেন ভেবে কে নিজের প্রস্তাব নিয়ে কথা বলেননি?",
+      "new_question": "স্থানীয় গণ্যমান্য ব্যক্তিদের প্রতিক্রিয়ার শঙ্কায় কে বৈঠকে মুখ খোলেননি?"
+    },
+    {
+      "example_id": 357,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সভায় প্রভাবশালীরা কী ভাববেন ভেবে কে নিজের প্রস্তাব নিয়ে কথা বলেননি?",
+      "new_question": "স্থানীয় গণ্যমান্য ব্যক্তিদের প্রতিক্রিয়ার শঙ্কায় কে বৈঠকে মুখ খোলেননি?"
+    },
+    {
+      "example_id": 358,
+      "family_idx": 7,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার রাস্তা মেরামতের পরিকল্পনার কথা সভার লোকজন শুনতে পেয়েছিলেন?",
+      "new_question": "পাড়ার রাস্তা সংস্কারের রূপরেখা কে সভায় বিস্তারিতভাবে তুলে ধরলেন?"
+    },
+    {
+      "example_id": 359,
+      "family_idx": 7,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার রাস্তা মেরামতের পরিকল্পনার কথা সভার লোকজন শুনতে পেয়েছিলেন?",
+      "new_question": "পাড়ার রাস্তা সংস্কারের রূপরেখা কে সভায় বিস্তারিতভাবে তুলে ধরলেন?"
+    },
+    {
+      "example_id": 360,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সভায় প্রভাবশালীরা কী ভাববেন ভেবে কে নিজের প্রস্তাব নিয়ে কথা বলেননি?",
+      "new_question": "স্থানীয় গণ্যমান্য ব্যক্তিদের প্রতিক্রিয়ার শঙ্কায় কে বৈঠকে মুখ খোলেননি?"
+    },
+    {
+      "example_id": 361,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সভায় প্রভাবশালীরা কী ভাববেন ভেবে কে নিজের প্রস্তাব নিয়ে কথা বলেননি?",
+      "new_question": "স্থানীয় গণ্যমান্য ব্যক্তিদের প্রতিক্রিয়ার শঙ্কায় কে বৈঠকে মুখ খোলেননি?"
+    },
+    {
+      "example_id": 362,
+      "family_idx": 7,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার রাস্তা মেরামতের পরিকল্পনার কথা সভার লোকজন শুনতে পেয়েছিলেন?",
+      "new_question": "পাড়ার রাস্তা সংস্কারের রূপরেখা কে সভায় বিস্তারিতভাবে তুলে ধরলেন?"
+    },
+    {
+      "example_id": 363,
+      "family_idx": 7,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার রাস্তা মেরামতের পরিকল্পনার কথা সভার লোকজন শুনতে পেয়েছিলেন?",
+      "new_question": "পাড়ার রাস্তা সংস্কারের রূপরেখা কে সভায় বিস্তারিতভাবে তুলে ধরলেন?"
+    },
+    {
+      "example_id": 364,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সভায় প্রভাবশালীরা কী ভাববেন ভেবে কে নিজের প্রস্তাব নিয়ে কথা বলেননি?",
+      "new_question": "স্থানীয় গণ্যমান্য ব্যক্তিদের প্রতিক্রিয়ার শঙ্কায় কে বৈঠকে মুখ খোলেননি?"
+    },
+    {
+      "example_id": 365,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সভায় প্রভাবশালীরা কী ভাববেন ভেবে কে নিজের প্রস্তাব নিয়ে কথা বলেননি?",
+      "new_question": "স্থানীয় গণ্যমান্য ব্যক্তিদের প্রতিক্রিয়ার শঙ্কায় কে বৈঠকে মুখ খোলেননি?"
+    },
+    {
+      "example_id": 366,
+      "family_idx": 7,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার রাস্তা মেরামতের পরিকল্পনার কথা সভার লোকজন শুনতে পেয়েছিলেন?",
+      "new_question": "পাড়ার রাস্তা সংস্কারের রূপরেখা কে সভায় বিস্তারিতভাবে তুলে ধরলেন?"
+    },
+    {
+      "example_id": 367,
+      "family_idx": 7,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার রাস্তা মেরামতের পরিকল্পনার কথা সভার লোকজন শুনতে পেয়েছিলেন?",
+      "new_question": "পাড়ার রাস্তা সংস্কারের রূপরেখা কে সভায় বিস্তারিতভাবে তুলে ধরলেন?"
+    },
+    {
+      "example_id": 368,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সভায় প্রভাবশালীরা কী ভাববেন ভেবে কে নিজের প্রস্তাব নিয়ে কথা বলেননি?",
+      "new_question": "স্থানীয় গণ্যমান্য ব্যক্তিদের প্রতিক্রিয়ার শঙ্কায় কে বৈঠকে মুখ খোলেননি?"
+    },
+    {
+      "example_id": 369,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সভায় প্রভাবশালীরা কী ভাববেন ভেবে কে নিজের প্রস্তাব নিয়ে কথা বলেননি?",
+      "new_question": "স্থানীয় গণ্যমান্য ব্যক্তিদের প্রতিক্রিয়ার শঙ্কায় কে বৈঠকে মুখ খোলেননি?"
+    },
+    {
+      "example_id": 370,
+      "family_idx": 7,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার রাস্তা মেরামতের পরিকল্পনার কথা সভার লোকজন শুনতে পেয়েছিলেন?",
+      "new_question": "পাড়ার রাস্তা সংস্কারের রূপরেখা কে সভায় বিস্তারিতভাবে তুলে ধরলেন?"
+    },
+    {
+      "example_id": 371,
+      "family_idx": 7,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার রাস্তা মেরামতের পরিকল্পনার কথা সভার লোকজন শুনতে পেয়েছিলেন?",
+      "new_question": "পাড়ার রাস্তা সংস্কারের রূপরেখা কে সভায় বিস্তারিতভাবে তুলে ধরলেন?"
+    },
+    {
+      "example_id": 372,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সভায় প্রভাবশালীরা কী ভাববেন ভেবে কে নিজের প্রস্তাব নিয়ে কথা বলেননি?",
+      "new_question": "স্থানীয় গণ্যমান্য ব্যক্তিদের প্রতিক্রিয়ার শঙ্কায় কে বৈঠকে মুখ খোলেননি?"
+    },
+    {
+      "example_id": 373,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সভায় প্রভাবশালীরা কী ভাববেন ভেবে কে নিজের প্রস্তাব নিয়ে কথা বলেননি?",
+      "new_question": "স্থানীয় গণ্যমান্য ব্যক্তিদের প্রতিক্রিয়ার শঙ্কায় কে বৈঠকে মুখ খোলেননি?"
+    },
+    {
+      "example_id": 374,
+      "family_idx": 7,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার রাস্তা মেরামতের পরিকল্পনার কথা সভার লোকজন শুনতে পেয়েছিলেন?",
+      "new_question": "পাড়ার রাস্তা সংস্কারের রূপরেখা কে সভায় বিস্তারিতভাবে তুলে ধরলেন?"
+    },
+    {
+      "example_id": 375,
+      "family_idx": 7,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার রাস্তা মেরামতের পরিকল্পনার কথা সভার লোকজন শুনতে পেয়েছিলেন?",
+      "new_question": "পাড়ার রাস্তা সংস্কারের রূপরেখা কে সভায় বিস্তারিতভাবে তুলে ধরলেন?"
+    },
+    {
+      "example_id": 376,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সভায় প্রভাবশালীরা কী ভাববেন ভেবে কে নিজের প্রস্তাব নিয়ে কথা বলেননি?",
+      "new_question": "স্থানীয় গণ্যমান্য ব্যক্তিদের প্রতিক্রিয়ার শঙ্কায় কে বৈঠকে মুখ খোলেননি?"
+    },
+    {
+      "example_id": 377,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সভায় প্রভাবশালীরা কী ভাববেন ভেবে কে নিজের প্রস্তাব নিয়ে কথা বলেননি?",
+      "new_question": "স্থানীয় গণ্যমান্য ব্যক্তিদের প্রতিক্রিয়ার শঙ্কায় কে বৈঠকে মুখ খোলেননি?"
+    },
+    {
+      "example_id": 378,
+      "family_idx": 7,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার রাস্তা মেরামতের পরিকল্পনার কথা সভার লোকজন শুনতে পেয়েছিলেন?",
+      "new_question": "পাড়ার রাস্তা সংস্কারের রূপরেখা কে সভায় বিস্তারিতভাবে তুলে ধরলেন?"
+    },
+    {
+      "example_id": 379,
+      "family_idx": 7,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার রাস্তা মেরামতের পরিকল্পনার কথা সভার লোকজন শুনতে পেয়েছিলেন?",
+      "new_question": "পাড়ার রাস্তা সংস্কারের রূপরেখা কে সভায় বিস্তারিতভাবে তুলে ধরলেন?"
+    },
+    {
+      "example_id": 380,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সভায় প্রভাবশালীরা কী ভাববেন ভেবে কে নিজের প্রস্তাব নিয়ে কথা বলেননি?",
+      "new_question": "স্থানীয় গণ্যমান্য ব্যক্তিদের প্রতিক্রিয়ার শঙ্কায় কে বৈঠকে মুখ খোলেননি?"
+    },
+    {
+      "example_id": 381,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সভায় প্রভাবশালীরা কী ভাববেন ভেবে কে নিজের প্রস্তাব নিয়ে কথা বলেননি?",
+      "new_question": "স্থানীয় গণ্যমান্য ব্যক্তিদের প্রতিক্রিয়ার শঙ্কায় কে বৈঠকে মুখ খোলেননি?"
+    },
+    {
+      "example_id": 382,
+      "family_idx": 7,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার রাস্তা মেরামতের পরিকল্পনার কথা সভার লোকজন শুনতে পেয়েছিলেন?",
+      "new_question": "পাড়ার রাস্তা সংস্কারের রূপরেখা কে সভায় বিস্তারিতভাবে তুলে ধরলেন?"
+    },
+    {
+      "example_id": 383,
+      "family_idx": 7,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার রাস্তা মেরামতের পরিকল্পনার কথা সভার লোকজন শুনতে পেয়েছিলেন?",
+      "new_question": "পাড়ার রাস্তা সংস্কারের রূপরেখা কে সভায় বিস্তারিতভাবে তুলে ধরলেন?"
+    },
+    {
+      "example_id": 386,
+      "family_idx": 8,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "আয়োজক কাকে নিজের পাশে বসার আমন্ত্রণ জানালেন?",
+      "new_question": "অনুষ্ঠানের মূল পরিচালকের পাশে বসার সুযোগ কে পেলেন?"
+    },
+    {
+      "example_id": 387,
+      "family_idx": 8,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "আয়োজক কাকে নিজের পাশে বসার আমন্ত্রণ জানালেন?",
+      "new_question": "অনুষ্ঠানের মূল পরিচালকের পাশে বসার সুযোগ কে পেলেন?"
+    },
+    {
+      "example_id": 390,
+      "family_idx": 8,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "আয়োজক কাকে নিজের পাশে বসার আমন্ত্রণ জানালেন?",
+      "new_question": "অনুষ্ঠানের মূল পরিচালকের পাশে বসার সুযোগ কে পেলেন?"
+    },
+    {
+      "example_id": 391,
+      "family_idx": 8,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "আয়োজক কাকে নিজের পাশে বসার আমন্ত্রণ জানালেন?",
+      "new_question": "অনুষ্ঠানের মূল পরিচালকের পাশে বসার সুযোগ কে পেলেন?"
+    },
+    {
+      "example_id": 394,
+      "family_idx": 8,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "আয়োজক কাকে নিজের পাশে বসার আমন্ত্রণ জানালেন?",
+      "new_question": "অনুষ্ঠানের মূল পরিচালকের পাশে বসার সুযোগ কে পেলেন?"
+    },
+    {
+      "example_id": 395,
+      "family_idx": 8,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "আয়োজক কাকে নিজের পাশে বসার আমন্ত্রণ জানালেন?",
+      "new_question": "অনুষ্ঠানের মূল পরিচালকের পাশে বসার সুযোগ কে পেলেন?"
+    },
+    {
+      "example_id": 398,
+      "family_idx": 8,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "আয়োজক কাকে নিজের পাশে বসার আমন্ত্রণ জানালেন?",
+      "new_question": "অনুষ্ঠানের মূল পরিচালকের পাশে বসার সুযোগ কে পেলেন?"
+    },
+    {
+      "example_id": 399,
+      "family_idx": 8,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "আয়োজক কাকে নিজের পাশে বসার আমন্ত্রণ জানালেন?",
+      "new_question": "অনুষ্ঠানের মূল পরিচালকের পাশে বসার সুযোগ কে পেলেন?"
+    },
+    {
+      "example_id": 402,
+      "family_idx": 8,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "আয়োজক কাকে নিজের পাশে বসার আমন্ত্রণ জানালেন?",
+      "new_question": "অনুষ্ঠানের মূল পরিচালকের পাশে বসার সুযোগ কে পেলেন?"
+    },
+    {
+      "example_id": 403,
+      "family_idx": 8,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "আয়োজক কাকে নিজের পাশে বসার আমন্ত্রণ জানালেন?",
+      "new_question": "অনুষ্ঠানের মূল পরিচালকের পাশে বসার সুযোগ কে পেলেন?"
+    },
+    {
+      "example_id": 406,
+      "family_idx": 8,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "আয়োজক কাকে নিজের পাশে বসার আমন্ত্রণ জানালেন?",
+      "new_question": "অনুষ্ঠানের মূল পরিচালকের পাশে বসার সুযোগ কে পেলেন?"
+    },
+    {
+      "example_id": 407,
+      "family_idx": 8,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "আয়োজক কাকে নিজের পাশে বসার আমন্ত্রণ জানালেন?",
+      "new_question": "অনুষ্ঠানের মূল পরিচালকের পাশে বসার সুযোগ কে পেলেন?"
+    },
+    {
+      "example_id": 410,
+      "family_idx": 8,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "আয়োজক কাকে নিজের পাশে বসার আমন্ত্রণ জানালেন?",
+      "new_question": "অনুষ্ঠানের মূল পরিচালকের পাশে বসার সুযোগ কে পেলেন?"
+    },
+    {
+      "example_id": 411,
+      "family_idx": 8,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "আয়োজক কাকে নিজের পাশে বসার আমন্ত্রণ জানালেন?",
+      "new_question": "অনুষ্ঠানের মূল পরিচালকের পাশে বসার সুযোগ কে পেলেন?"
+    },
+    {
+      "example_id": 414,
+      "family_idx": 8,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "আয়োজক কাকে নিজের পাশে বসার আমন্ত্রণ জানালেন?",
+      "new_question": "অনুষ্ঠানের মূল পরিচালকের পাশে বসার সুযোগ কে পেলেন?"
+    },
+    {
+      "example_id": 415,
+      "family_idx": 8,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "আয়োজক কাকে নিজের পাশে বসার আমন্ত্রণ জানালেন?",
+      "new_question": "অনুষ্ঠানের মূল পরিচালকের পাশে বসার সুযোগ কে পেলেন?"
+    },
+    {
+      "example_id": 418,
+      "family_idx": 8,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "আয়োজক কাকে নিজের পাশে বসার আমন্ত্রণ জানালেন?",
+      "new_question": "অনুষ্ঠানের মূল পরিচালকের পাশে বসার সুযোগ কে পেলেন?"
+    },
+    {
+      "example_id": 419,
+      "family_idx": 8,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "আয়োজক কাকে নিজের পাশে বসার আমন্ত্রণ জানালেন?",
+      "new_question": "অনুষ্ঠানের মূল পরিচালকের পাশে বসার সুযোগ কে পেলেন?"
+    },
+    {
+      "example_id": 422,
+      "family_idx": 8,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "আয়োজক কাকে নিজের পাশে বসার আমন্ত্রণ জানালেন?",
+      "new_question": "অনুষ্ঠানের মূল পরিচালকের পাশে বসার সুযোগ কে পেলেন?"
+    },
+    {
+      "example_id": 423,
+      "family_idx": 8,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "আয়োজক কাকে নিজের পাশে বসার আমন্ত্রণ জানালেন?",
+      "new_question": "অনুষ্ঠানের মূল পরিচালকের পাশে বসার সুযোগ কে পেলেন?"
+    },
+    {
+      "example_id": 426,
+      "family_idx": 8,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "আয়োজক কাকে নিজের পাশে বসার আমন্ত্রণ জানালেন?",
+      "new_question": "অনুষ্ঠানের মূল পরিচালকের পাশে বসার সুযোগ কে পেলেন?"
+    },
+    {
+      "example_id": 427,
+      "family_idx": 8,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "আয়োজক কাকে নিজের পাশে বসার আমন্ত্রণ জানালেন?",
+      "new_question": "অনুষ্ঠানের মূল পরিচালকের পাশে বসার সুযোগ কে পেলেন?"
+    },
+    {
+      "example_id": 430,
+      "family_idx": 8,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "আয়োজক কাকে নিজের পাশে বসার আমন্ত্রণ জানালেন?",
+      "new_question": "অনুষ্ঠানের মূল পরিচালকের পাশে বসার সুযোগ কে পেলেন?"
+    },
+    {
+      "example_id": 431,
+      "family_idx": 8,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "আয়োজক কাকে নিজের পাশে বসার আমন্ত্রণ জানালেন?",
+      "new_question": "অনুষ্ঠানের মূল পরিচালকের পাশে বসার সুযোগ কে পেলেন?"
+    },
+    {
+      "example_id": 770,
+      "family_idx": 16,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার ভাউচার দেখে কর্মী বলেছিলেন, তিনি খাদ্যসহায়তা পেতে পারেন?",
+      "new_question": "কোন সুবিধাভোগীর ক্ষেত্রে টোকেন যাচাই করে খাদ্যসামগ্রী প্রদান করা হয়েছিল?"
+    },
+    {
+      "example_id": 771,
+      "family_idx": 16,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার ভাউচার দেখে কর্মী বলেছিলেন, তিনি খাদ্যসহায়তা পেতে পারেন?",
+      "new_question": "কোন সুবিধাভোগীর ক্ষেত্রে টোকেন যাচাই করে খাদ্যসামগ্রী প্রদান করা হয়েছিল?"
+    },
+    {
+      "example_id": 774,
+      "family_idx": 16,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার ভাউচার দেখে কর্মী বলেছিলেন, তিনি খাদ্যসহায়তা পেতে পারেন?",
+      "new_question": "কোন সুবিধাভোগীর ক্ষেত্রে টোকেন যাচাই করে খাদ্যসামগ্রী প্রদান করা হয়েছিল?"
+    },
+    {
+      "example_id": 775,
+      "family_idx": 16,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার ভাউচার দেখে কর্মী বলেছিলেন, তিনি খাদ্যসহায়তা পেতে পারেন?",
+      "new_question": "কোন সুবিধাভোগীর ক্ষেত্রে টোকেন যাচাই করে খাদ্যসামগ্রী প্রদান করা হয়েছিল?"
+    },
+    {
+      "example_id": 778,
+      "family_idx": 16,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার ভাউচার দেখে কর্মী বলেছিলেন, তিনি খাদ্যসহায়তা পেতে পারেন?",
+      "new_question": "কোন সুবিধাভোগীর ক্ষেত্রে টোকেন যাচাই করে খাদ্যসামগ্রী প্রদান করা হয়েছিল?"
+    },
+    {
+      "example_id": 779,
+      "family_idx": 16,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার ভাউচার দেখে কর্মী বলেছিলেন, তিনি খাদ্যসহায়তা পেতে পারেন?",
+      "new_question": "কোন সুবিধাভোগীর ক্ষেত্রে টোকেন যাচাই করে খাদ্যসামগ্রী প্রদান করা হয়েছিল?"
+    },
+    {
+      "example_id": 782,
+      "family_idx": 16,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার ভাউচার দেখে কর্মী বলেছিলেন, তিনি খাদ্যসহায়তা পেতে পারেন?",
+      "new_question": "কোন সুবিধাভোগীর ক্ষেত্রে টোকেন যাচাই করে খাদ্যসামগ্রী প্রদান করা হয়েছিল?"
+    },
+    {
+      "example_id": 783,
+      "family_idx": 16,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার ভাউচার দেখে কর্মী বলেছিলেন, তিনি খাদ্যসহায়তা পেতে পারেন?",
+      "new_question": "কোন সুবিধাভোগীর ক্ষেত্রে টোকেন যাচাই করে খাদ্যসামগ্রী প্রদান করা হয়েছিল?"
+    },
+    {
+      "example_id": 786,
+      "family_idx": 16,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার ভাউচার দেখে কর্মী বলেছিলেন, তিনি খাদ্যসহায়তা পেতে পারেন?",
+      "new_question": "কোন সুবিধাভোগীর ক্ষেত্রে টোকেন যাচাই করে খাদ্যসামগ্রী প্রদান করা হয়েছিল?"
+    },
+    {
+      "example_id": 787,
+      "family_idx": 16,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার ভাউচার দেখে কর্মী বলেছিলেন, তিনি খাদ্যসহায়তা পেতে পারেন?",
+      "new_question": "কোন সুবিধাভোগীর ক্ষেত্রে টোকেন যাচাই করে খাদ্যসামগ্রী প্রদান করা হয়েছিল?"
+    },
+    {
+      "example_id": 790,
+      "family_idx": 16,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার ভাউচার দেখে কর্মী বলেছিলেন, তিনি খাদ্যসহায়তা পেতে পারেন?",
+      "new_question": "কোন সুবিধাভোগীর ক্ষেত্রে টোকেন যাচাই করে খাদ্যসামগ্রী প্রদান করা হয়েছিল?"
+    },
+    {
+      "example_id": 791,
+      "family_idx": 16,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার ভাউচার দেখে কর্মী বলেছিলেন, তিনি খাদ্যসহায়তা পেতে পারেন?",
+      "new_question": "কোন সুবিধাভোগীর ক্ষেত্রে টোকেন যাচাই করে খাদ্যসামগ্রী প্রদান করা হয়েছিল?"
+    },
+    {
+      "example_id": 794,
+      "family_idx": 16,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার ভাউচার দেখে কর্মী বলেছিলেন, তিনি খাদ্যসহায়তা পেতে পারেন?",
+      "new_question": "কোন সুবিধাভোগীর ক্ষেত্রে টোকেন যাচাই করে খাদ্যসামগ্রী প্রদান করা হয়েছিল?"
+    },
+    {
+      "example_id": 795,
+      "family_idx": 16,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার ভাউচার দেখে কর্মী বলেছিলেন, তিনি খাদ্যসহায়তা পেতে পারেন?",
+      "new_question": "কোন সুবিধাভোগীর ক্ষেত্রে টোকেন যাচাই করে খাদ্যসামগ্রী প্রদান করা হয়েছিল?"
+    },
+    {
+      "example_id": 798,
+      "family_idx": 16,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার ভাউচার দেখে কর্মী বলেছিলেন, তিনি খাদ্যসহায়তা পেতে পারেন?",
+      "new_question": "কোন সুবিধাভোগীর ক্ষেত্রে টোকেন যাচাই করে খাদ্যসামগ্রী প্রদান করা হয়েছিল?"
+    },
+    {
+      "example_id": 799,
+      "family_idx": 16,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার ভাউচার দেখে কর্মী বলেছিলেন, তিনি খাদ্যসহায়তা পেতে পারেন?",
+      "new_question": "কোন সুবিধাভোগীর ক্ষেত্রে টোকেন যাচাই করে খাদ্যসামগ্রী প্রদান করা হয়েছিল?"
+    },
+    {
+      "example_id": 802,
+      "family_idx": 16,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার ভাউচার দেখে কর্মী বলেছিলেন, তিনি খাদ্যসহায়তা পেতে পারেন?",
+      "new_question": "কোন সুবিধাভোগীর ক্ষেত্রে টোকেন যাচাই করে খাদ্যসামগ্রী প্রদান করা হয়েছিল?"
+    },
+    {
+      "example_id": 803,
+      "family_idx": 16,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার ভাউচার দেখে কর্মী বলেছিলেন, তিনি খাদ্যসহায়তা পেতে পারেন?",
+      "new_question": "কোন সুবিধাভোগীর ক্ষেত্রে টোকেন যাচাই করে খাদ্যসামগ্রী প্রদান করা হয়েছিল?"
+    },
+    {
+      "example_id": 806,
+      "family_idx": 16,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার ভাউচার দেখে কর্মী বলেছিলেন, তিনি খাদ্যসহায়তা পেতে পারেন?",
+      "new_question": "কোন সুবিধাভোগীর ক্ষেত্রে টোকেন যাচাই করে খাদ্যসামগ্রী প্রদান করা হয়েছিল?"
+    },
+    {
+      "example_id": 807,
+      "family_idx": 16,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার ভাউচার দেখে কর্মী বলেছিলেন, তিনি খাদ্যসহায়তা পেতে পারেন?",
+      "new_question": "কোন সুবিধাভোগীর ক্ষেত্রে টোকেন যাচাই করে খাদ্যসামগ্রী প্রদান করা হয়েছিল?"
+    },
+    {
+      "example_id": 810,
+      "family_idx": 16,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার ভাউচার দেখে কর্মী বলেছিলেন, তিনি খাদ্যসহায়তা পেতে পারেন?",
+      "new_question": "কোন সুবিধাভোগীর ক্ষেত্রে টোকেন যাচাই করে খাদ্যসামগ্রী প্রদান করা হয়েছিল?"
+    },
+    {
+      "example_id": 811,
+      "family_idx": 16,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার ভাউচার দেখে কর্মী বলেছিলেন, তিনি খাদ্যসহায়তা পেতে পারেন?",
+      "new_question": "কোন সুবিধাভোগীর ক্ষেত্রে টোকেন যাচাই করে খাদ্যসামগ্রী প্রদান করা হয়েছিল?"
+    },
+    {
+      "example_id": 814,
+      "family_idx": 16,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার ভাউচার দেখে কর্মী বলেছিলেন, তিনি খাদ্যসহায়তা পেতে পারেন?",
+      "new_question": "কোন সুবিধাভোগীর ক্ষেত্রে টোকেন যাচাই করে খাদ্যসামগ্রী প্রদান করা হয়েছিল?"
+    },
+    {
+      "example_id": 815,
+      "family_idx": 16,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার ভাউচার দেখে কর্মী বলেছিলেন, তিনি খাদ্যসহায়তা পেতে পারেন?",
+      "new_question": "কোন সুবিধাভোগীর ক্ষেত্রে টোকেন যাচাই করে খাদ্যসামগ্রী প্রদান করা হয়েছিল?"
+    },
+    {
+      "example_id": 866,
+      "family_idx": 18,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "গল্পটি নিয়ে ওই সদস্যের সঙ্গে কে কথা বলতে পেরেছিলেন?",
+      "new_question": "সাহিত্য আসরে বই নিয়ে ওই সদস্যের সঙ্গে আলোচনার সুযোগ কে পেয়েছিলেন?"
+    },
+    {
+      "example_id": 867,
+      "family_idx": 18,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "গল্পটি নিয়ে ওই সদস্যের সঙ্গে কে কথা বলতে পেরেছিলেন?",
+      "new_question": "সাহিত্য আসরে বই নিয়ে ওই সদস্যের সঙ্গে আলোচনার সুযোগ কে পেয়েছিলেন?"
+    },
+    {
+      "example_id": 870,
+      "family_idx": 18,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "গল্পটি নিয়ে ওই সদস্যের সঙ্গে কে কথা বলতে পেরেছিলেন?",
+      "new_question": "সাহিত্য আসরে বই নিয়ে ওই সদস্যের সঙ্গে আলোচনার সুযোগ কে পেয়েছিলেন?"
+    },
+    {
+      "example_id": 871,
+      "family_idx": 18,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "গল্পটি নিয়ে ওই সদস্যের সঙ্গে কে কথা বলতে পেরেছিলেন?",
+      "new_question": "সাহিত্য আসরে বই নিয়ে ওই সদস্যের সঙ্গে আলোচনার সুযোগ কে পেয়েছিলেন?"
+    },
+    {
+      "example_id": 874,
+      "family_idx": 18,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "গল্পটি নিয়ে ওই সদস্যের সঙ্গে কে কথা বলতে পেরেছিলেন?",
+      "new_question": "সাহিত্য আসরে বই নিয়ে ওই সদস্যের সঙ্গে আলোচনার সুযোগ কে পেয়েছিলেন?"
+    },
+    {
+      "example_id": 875,
+      "family_idx": 18,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "গল্পটি নিয়ে ওই সদস্যের সঙ্গে কে কথা বলতে পেরেছিলেন?",
+      "new_question": "সাহিত্য আসরে বই নিয়ে ওই সদস্যের সঙ্গে আলোচনার সুযোগ কে পেয়েছিলেন?"
+    },
+    {
+      "example_id": 878,
+      "family_idx": 18,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "গল্পটি নিয়ে ওই সদস্যের সঙ্গে কে কথা বলতে পেরেছিলেন?",
+      "new_question": "সাহিত্য আসরে বই নিয়ে ওই সদস্যের সঙ্গে আলোচনার সুযোগ কে পেয়েছিলেন?"
+    },
+    {
+      "example_id": 879,
+      "family_idx": 18,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "গল্পটি নিয়ে ওই সদস্যের সঙ্গে কে কথা বলতে পেরেছিলেন?",
+      "new_question": "সাহিত্য আসরে বই নিয়ে ওই সদস্যের সঙ্গে আলোচনার সুযোগ কে পেয়েছিলেন?"
+    },
+    {
+      "example_id": 882,
+      "family_idx": 18,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "গল্পটি নিয়ে ওই সদস্যের সঙ্গে কে কথা বলতে পেরেছিলেন?",
+      "new_question": "সাহিত্য আসরে বই নিয়ে ওই সদস্যের সঙ্গে আলোচনার সুযোগ কে পেয়েছিলেন?"
+    },
+    {
+      "example_id": 883,
+      "family_idx": 18,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "গল্পটি নিয়ে ওই সদস্যের সঙ্গে কে কথা বলতে পেরেছিলেন?",
+      "new_question": "সাহিত্য আসরে বই নিয়ে ওই সদস্যের সঙ্গে আলোচনার সুযোগ কে পেয়েছিলেন?"
+    },
+    {
+      "example_id": 886,
+      "family_idx": 18,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "গল্পটি নিয়ে ওই সদস্যের সঙ্গে কে কথা বলতে পেরেছিলেন?",
+      "new_question": "সাহিত্য আসরে বই নিয়ে ওই সদস্যের সঙ্গে আলোচনার সুযোগ কে পেয়েছিলেন?"
+    },
+    {
+      "example_id": 887,
+      "family_idx": 18,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "গল্পটি নিয়ে ওই সদস্যের সঙ্গে কে কথা বলতে পেরেছিলেন?",
+      "new_question": "সাহিত্য আসরে বই নিয়ে ওই সদস্যের সঙ্গে আলোচনার সুযোগ কে পেয়েছিলেন?"
+    },
+    {
+      "example_id": 890,
+      "family_idx": 18,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "গল্পটি নিয়ে ওই সদস্যের সঙ্গে কে কথা বলতে পেরেছিলেন?",
+      "new_question": "সাহিত্য আসরে বই নিয়ে ওই সদস্যের সঙ্গে আলোচনার সুযোগ কে পেয়েছিলেন?"
+    },
+    {
+      "example_id": 891,
+      "family_idx": 18,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "গল্পটি নিয়ে ওই সদস্যের সঙ্গে কে কথা বলতে পেরেছিলেন?",
+      "new_question": "সাহিত্য আসরে বই নিয়ে ওই সদস্যের সঙ্গে আলোচনার সুযোগ কে পেয়েছিলেন?"
+    },
+    {
+      "example_id": 894,
+      "family_idx": 18,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "গল্পটি নিয়ে ওই সদস্যের সঙ্গে কে কথা বলতে পেরেছিলেন?",
+      "new_question": "সাহিত্য আসরে বই নিয়ে ওই সদস্যের সঙ্গে আলোচনার সুযোগ কে পেয়েছিলেন?"
+    },
+    {
+      "example_id": 895,
+      "family_idx": 18,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "গল্পটি নিয়ে ওই সদস্যের সঙ্গে কে কথা বলতে পেরেছিলেন?",
+      "new_question": "সাহিত্য আসরে বই নিয়ে ওই সদস্যের সঙ্গে আলোচনার সুযোগ কে পেয়েছিলেন?"
+    },
+    {
+      "example_id": 898,
+      "family_idx": 18,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "গল্পটি নিয়ে ওই সদস্যের সঙ্গে কে কথা বলতে পেরেছিলেন?",
+      "new_question": "সাহিত্য আসরে বই নিয়ে ওই সদস্যের সঙ্গে আলোচনার সুযোগ কে পেয়েছিলেন?"
+    },
+    {
+      "example_id": 899,
+      "family_idx": 18,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "গল্পটি নিয়ে ওই সদস্যের সঙ্গে কে কথা বলতে পেরেছিলেন?",
+      "new_question": "সাহিত্য আসরে বই নিয়ে ওই সদস্যের সঙ্গে আলোচনার সুযোগ কে পেয়েছিলেন?"
+    },
+    {
+      "example_id": 902,
+      "family_idx": 18,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "গল্পটি নিয়ে ওই সদস্যের সঙ্গে কে কথা বলতে পেরেছিলেন?",
+      "new_question": "সাহিত্য আসরে বই নিয়ে ওই সদস্যের সঙ্গে আলোচনার সুযোগ কে পেয়েছিলেন?"
+    },
+    {
+      "example_id": 903,
+      "family_idx": 18,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "গল্পটি নিয়ে ওই সদস্যের সঙ্গে কে কথা বলতে পেরেছিলেন?",
+      "new_question": "সাহিত্য আসরে বই নিয়ে ওই সদস্যের সঙ্গে আলোচনার সুযোগ কে পেয়েছিলেন?"
+    },
+    {
+      "example_id": 906,
+      "family_idx": 18,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "গল্পটি নিয়ে ওই সদস্যের সঙ্গে কে কথা বলতে পেরেছিলেন?",
+      "new_question": "সাহিত্য আসরে বই নিয়ে ওই সদস্যের সঙ্গে আলোচনার সুযোগ কে পেয়েছিলেন?"
+    },
+    {
+      "example_id": 907,
+      "family_idx": 18,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "গল্পটি নিয়ে ওই সদস্যের সঙ্গে কে কথা বলতে পেরেছিলেন?",
+      "new_question": "সাহিত্য আসরে বই নিয়ে ওই সদস্যের সঙ্গে আলোচনার সুযোগ কে পেয়েছিলেন?"
+    },
+    {
+      "example_id": 910,
+      "family_idx": 18,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "গল্পটি নিয়ে ওই সদস্যের সঙ্গে কে কথা বলতে পেরেছিলেন?",
+      "new_question": "সাহিত্য আসরে বই নিয়ে ওই সদস্যের সঙ্গে আলোচনার সুযোগ কে পেয়েছিলেন?"
+    },
+    {
+      "example_id": 911,
+      "family_idx": 18,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "গল্পটি নিয়ে ওই সদস্যের সঙ্গে কে কথা বলতে পেরেছিলেন?",
+      "new_question": "সাহিত্য আসরে বই নিয়ে ওই সদস্যের সঙ্গে আলোচনার সুযোগ কে পেয়েছিলেন?"
+    },
+    {
+      "example_id": 1152,
+      "family_idx": 24,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "পাড়া নিয়ে মানুষ ভুল বুঝবে ভেবে কে ওয়েবসাইটে নিজের এলাকার নাম না দিতে বলেছিলেন?",
+      "new_question": "সামাজিক হীনম্মন্যতার আশঙ্কায় কে প্রাতিষ্ঠানিক পোর্টালে নিজের এলাকার পরিচয় গোপন রাখতে চাইলেন?"
+    },
+    {
+      "example_id": 1153,
+      "family_idx": 24,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "পাড়া নিয়ে মানুষ ভুল বুঝবে ভেবে কে ওয়েবসাইটে নিজের এলাকার নাম না দিতে বলেছিলেন?",
+      "new_question": "সামাজিক হীনম্মন্যতার আশঙ্কায় কে প্রাতিষ্ঠানিক পোর্টালে নিজের এলাকার পরিচয় গোপন রাখতে চাইলেন?"
+    },
+    {
+      "example_id": 1156,
+      "family_idx": 24,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "পাড়া নিয়ে মানুষ ভুল বুঝবে ভেবে কে ওয়েবসাইটে নিজের এলাকার নাম না দিতে বলেছিলেন?",
+      "new_question": "সামাজিক হীনম্মন্যতার আশঙ্কায় কে প্রাতিষ্ঠানিক পোর্টালে নিজের এলাকার পরিচয় গোপন রাখতে চাইলেন?"
+    },
+    {
+      "example_id": 1157,
+      "family_idx": 24,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "পাড়া নিয়ে মানুষ ভুল বুঝবে ভেবে কে ওয়েবসাইটে নিজের এলাকার নাম না দিতে বলেছিলেন?",
+      "new_question": "সামাজিক হীনম্মন্যতার আশঙ্কায় কে প্রাতিষ্ঠানিক পোর্টালে নিজের এলাকার পরিচয় গোপন রাখতে চাইলেন?"
+    },
+    {
+      "example_id": 1160,
+      "family_idx": 24,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "পাড়া নিয়ে মানুষ ভুল বুঝবে ভেবে কে ওয়েবসাইটে নিজের এলাকার নাম না দিতে বলেছিলেন?",
+      "new_question": "সামাজিক হীনম্মন্যতার আশঙ্কায় কে প্রাতিষ্ঠানিক পোর্টালে নিজের এলাকার পরিচয় গোপন রাখতে চাইলেন?"
+    },
+    {
+      "example_id": 1161,
+      "family_idx": 24,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "পাড়া নিয়ে মানুষ ভুল বুঝবে ভেবে কে ওয়েবসাইটে নিজের এলাকার নাম না দিতে বলেছিলেন?",
+      "new_question": "সামাজিক হীনম্মন্যতার আশঙ্কায় কে প্রাতিষ্ঠানিক পোর্টালে নিজের এলাকার পরিচয় গোপন রাখতে চাইলেন?"
+    },
+    {
+      "example_id": 1164,
+      "family_idx": 24,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "পাড়া নিয়ে মানুষ ভুল বুঝবে ভেবে কে ওয়েবসাইটে নিজের এলাকার নাম না দিতে বলেছিলেন?",
+      "new_question": "সামাজিক হীনম্মন্যতার আশঙ্কায় কে প্রাতিষ্ঠানিক পোর্টালে নিজের এলাকার পরিচয় গোপন রাখতে চাইলেন?"
+    },
+    {
+      "example_id": 1165,
+      "family_idx": 24,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "পাড়া নিয়ে মানুষ ভুল বুঝবে ভেবে কে ওয়েবসাইটে নিজের এলাকার নাম না দিতে বলেছিলেন?",
+      "new_question": "সামাজিক হীনম্মন্যতার আশঙ্কায় কে প্রাতিষ্ঠানিক পোর্টালে নিজের এলাকার পরিচয় গোপন রাখতে চাইলেন?"
+    },
+    {
+      "example_id": 1168,
+      "family_idx": 24,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "পাড়া নিয়ে মানুষ ভুল বুঝবে ভেবে কে ওয়েবসাইটে নিজের এলাকার নাম না দিতে বলেছিলেন?",
+      "new_question": "সামাজিক হীনম্মন্যতার আশঙ্কায় কে প্রাতিষ্ঠানিক পোর্টালে নিজের এলাকার পরিচয় গোপন রাখতে চাইলেন?"
+    },
+    {
+      "example_id": 1169,
+      "family_idx": 24,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "পাড়া নিয়ে মানুষ ভুল বুঝবে ভেবে কে ওয়েবসাইটে নিজের এলাকার নাম না দিতে বলেছিলেন?",
+      "new_question": "সামাজিক হীনম্মন্যতার আশঙ্কায় কে প্রাতিষ্ঠানিক পোর্টালে নিজের এলাকার পরিচয় গোপন রাখতে চাইলেন?"
+    },
+    {
+      "example_id": 1172,
+      "family_idx": 24,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "পাড়া নিয়ে মানুষ ভুল বুঝবে ভেবে কে ওয়েবসাইটে নিজের এলাকার নাম না দিতে বলেছিলেন?",
+      "new_question": "সামাজিক হীনম্মন্যতার আশঙ্কায় কে প্রাতিষ্ঠানিক পোর্টালে নিজের এলাকার পরিচয় গোপন রাখতে চাইলেন?"
+    },
+    {
+      "example_id": 1173,
+      "family_idx": 24,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "পাড়া নিয়ে মানুষ ভুল বুঝবে ভেবে কে ওয়েবসাইটে নিজের এলাকার নাম না দিতে বলেছিলেন?",
+      "new_question": "সামাজিক হীনম্মন্যতার আশঙ্কায় কে প্রাতিষ্ঠানিক পোর্টালে নিজের এলাকার পরিচয় গোপন রাখতে চাইলেন?"
+    },
+    {
+      "example_id": 1176,
+      "family_idx": 24,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "পাড়া নিয়ে মানুষ ভুল বুঝবে ভেবে কে ওয়েবসাইটে নিজের এলাকার নাম না দিতে বলেছিলেন?",
+      "new_question": "সামাজিক হীনম্মন্যতার আশঙ্কায় কে প্রাতিষ্ঠানিক পোর্টালে নিজের এলাকার পরিচয় গোপন রাখতে চাইলেন?"
+    },
+    {
+      "example_id": 1177,
+      "family_idx": 24,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "পাড়া নিয়ে মানুষ ভুল বুঝবে ভেবে কে ওয়েবসাইটে নিজের এলাকার নাম না দিতে বলেছিলেন?",
+      "new_question": "সামাজিক হীনম্মন্যতার আশঙ্কায় কে প্রাতিষ্ঠানিক পোর্টালে নিজের এলাকার পরিচয় গোপন রাখতে চাইলেন?"
+    },
+    {
+      "example_id": 1180,
+      "family_idx": 24,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "পাড়া নিয়ে মানুষ ভুল বুঝবে ভেবে কে ওয়েবসাইটে নিজের এলাকার নাম না দিতে বলেছিলেন?",
+      "new_question": "সামাজিক হীনম্মন্যতার আশঙ্কায় কে প্রাতিষ্ঠানিক পোর্টালে নিজের এলাকার পরিচয় গোপন রাখতে চাইলেন?"
+    },
+    {
+      "example_id": 1181,
+      "family_idx": 24,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "পাড়া নিয়ে মানুষ ভুল বুঝবে ভেবে কে ওয়েবসাইটে নিজের এলাকার নাম না দিতে বলেছিলেন?",
+      "new_question": "সামাজিক হীনম্মন্যতার আশঙ্কায় কে প্রাতিষ্ঠানিক পোর্টালে নিজের এলাকার পরিচয় গোপন রাখতে চাইলেন?"
+    },
+    {
+      "example_id": 1184,
+      "family_idx": 24,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "পাড়া নিয়ে মানুষ ভুল বুঝবে ভেবে কে ওয়েবসাইটে নিজের এলাকার নাম না দিতে বলেছিলেন?",
+      "new_question": "সামাজিক হীনম্মন্যতার আশঙ্কায় কে প্রাতিষ্ঠানিক পোর্টালে নিজের এলাকার পরিচয় গোপন রাখতে চাইলেন?"
+    },
+    {
+      "example_id": 1185,
+      "family_idx": 24,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "পাড়া নিয়ে মানুষ ভুল বুঝবে ভেবে কে ওয়েবসাইটে নিজের এলাকার নাম না দিতে বলেছিলেন?",
+      "new_question": "সামাজিক হীনম্মন্যতার আশঙ্কায় কে প্রাতিষ্ঠানিক পোর্টালে নিজের এলাকার পরিচয় গোপন রাখতে চাইলেন?"
+    },
+    {
+      "example_id": 1188,
+      "family_idx": 24,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "পাড়া নিয়ে মানুষ ভুল বুঝবে ভেবে কে ওয়েবসাইটে নিজের এলাকার নাম না দিতে বলেছিলেন?",
+      "new_question": "সামাজিক হীনম্মন্যতার আশঙ্কায় কে প্রাতিষ্ঠানিক পোর্টালে নিজের এলাকার পরিচয় গোপন রাখতে চাইলেন?"
+    },
+    {
+      "example_id": 1189,
+      "family_idx": 24,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "পাড়া নিয়ে মানুষ ভুল বুঝবে ভেবে কে ওয়েবসাইটে নিজের এলাকার নাম না দিতে বলেছিলেন?",
+      "new_question": "সামাজিক হীনম্মন্যতার আশঙ্কায় কে প্রাতিষ্ঠানিক পোর্টালে নিজের এলাকার পরিচয় গোপন রাখতে চাইলেন?"
+    },
+    {
+      "example_id": 1192,
+      "family_idx": 24,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "পাড়া নিয়ে মানুষ ভুল বুঝবে ভেবে কে ওয়েবসাইটে নিজের এলাকার নাম না দিতে বলেছিলেন?",
+      "new_question": "সামাজিক হীনম্মন্যতার আশঙ্কায় কে প্রাতিষ্ঠানিক পোর্টালে নিজের এলাকার পরিচয় গোপন রাখতে চাইলেন?"
+    },
+    {
+      "example_id": 1193,
+      "family_idx": 24,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "পাড়া নিয়ে মানুষ ভুল বুঝবে ভেবে কে ওয়েবসাইটে নিজের এলাকার নাম না দিতে বলেছিলেন?",
+      "new_question": "সামাজিক হীনম্মন্যতার আশঙ্কায় কে প্রাতিষ্ঠানিক পোর্টালে নিজের এলাকার পরিচয় গোপন রাখতে চাইলেন?"
+    },
+    {
+      "example_id": 1196,
+      "family_idx": 24,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "পাড়া নিয়ে মানুষ ভুল বুঝবে ভেবে কে ওয়েবসাইটে নিজের এলাকার নাম না দিতে বলেছিলেন?",
+      "new_question": "সামাজিক হীনম্মন্যতার আশঙ্কায় কে প্রাতিষ্ঠানিক পোর্টালে নিজের এলাকার পরিচয় গোপন রাখতে চাইলেন?"
+    },
+    {
+      "example_id": 1197,
+      "family_idx": 24,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "পাড়া নিয়ে মানুষ ভুল বুঝবে ভেবে কে ওয়েবসাইটে নিজের এলাকার নাম না দিতে বলেছিলেন?",
+      "new_question": "সামাজিক হীনম্মন্যতার আশঙ্কায় কে প্রাতিষ্ঠানিক পোর্টালে নিজের এলাকার পরিচয় গোপন রাখতে চাইলেন?"
+    },
+    {
+      "example_id": 1250,
+      "family_idx": 26,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার কাগজ দেখে স্বেচ্ছাসেবী সবার সামনে বলেছিলেন যে তিনি সাহায্য পেতে পারেন?",
+      "new_question": "সবার সামনে কার আবেদনটি বৈধ হিসেবে মেনে নেওয়া হলো?"
+    },
+    {
+      "example_id": 1251,
+      "family_idx": 26,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার কাগজ দেখে স্বেচ্ছাসেবী সবার সামনে বলেছিলেন যে তিনি সাহায্য পেতে পারেন?",
+      "new_question": "সবার সামনে কার আবেদনটি বৈধ হিসেবে মেনে নেওয়া হলো?"
+    },
+    {
+      "example_id": 1254,
+      "family_idx": 26,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার কাগজ দেখে স্বেচ্ছাসেবী সবার সামনে বলেছিলেন যে তিনি সাহায্য পেতে পারেন?",
+      "new_question": "সবার সামনে কার আবেদনটি বৈধ হিসেবে মেনে নেওয়া হলো?"
+    },
+    {
+      "example_id": 1255,
+      "family_idx": 26,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার কাগজ দেখে স্বেচ্ছাসেবী সবার সামনে বলেছিলেন যে তিনি সাহায্য পেতে পারেন?",
+      "new_question": "সবার সামনে কার আবেদনটি বৈধ হিসেবে মেনে নেওয়া হলো?"
+    },
+    {
+      "example_id": 1258,
+      "family_idx": 26,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার কাগজ দেখে স্বেচ্ছাসেবী সবার সামনে বলেছিলেন যে তিনি সাহায্য পেতে পারেন?",
+      "new_question": "সবার সামনে কার আবেদনটি বৈধ হিসেবে মেনে নেওয়া হলো?"
+    },
+    {
+      "example_id": 1259,
+      "family_idx": 26,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার কাগজ দেখে স্বেচ্ছাসেবী সবার সামনে বলেছিলেন যে তিনি সাহায্য পেতে পারেন?",
+      "new_question": "সবার সামনে কার আবেদনটি বৈধ হিসেবে মেনে নেওয়া হলো?"
+    },
+    {
+      "example_id": 1262,
+      "family_idx": 26,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার কাগজ দেখে স্বেচ্ছাসেবী সবার সামনে বলেছিলেন যে তিনি সাহায্য পেতে পারেন?",
+      "new_question": "সবার সামনে কার আবেদনটি বৈধ হিসেবে মেনে নেওয়া হলো?"
+    },
+    {
+      "example_id": 1263,
+      "family_idx": 26,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার কাগজ দেখে স্বেচ্ছাসেবী সবার সামনে বলেছিলেন যে তিনি সাহায্য পেতে পারেন?",
+      "new_question": "সবার সামনে কার আবেদনটি বৈধ হিসেবে মেনে নেওয়া হলো?"
+    },
+    {
+      "example_id": 1266,
+      "family_idx": 26,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার কাগজ দেখে স্বেচ্ছাসেবী সবার সামনে বলেছিলেন যে তিনি সাহায্য পেতে পারেন?",
+      "new_question": "সবার সামনে কার আবেদনটি বৈধ হিসেবে মেনে নেওয়া হলো?"
+    },
+    {
+      "example_id": 1267,
+      "family_idx": 26,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার কাগজ দেখে স্বেচ্ছাসেবী সবার সামনে বলেছিলেন যে তিনি সাহায্য পেতে পারেন?",
+      "new_question": "সবার সামনে কার আবেদনটি বৈধ হিসেবে মেনে নেওয়া হলো?"
+    },
+    {
+      "example_id": 1270,
+      "family_idx": 26,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার কাগজ দেখে স্বেচ্ছাসেবী সবার সামনে বলেছিলেন যে তিনি সাহায্য পেতে পারেন?",
+      "new_question": "সবার সামনে কার আবেদনটি বৈধ হিসেবে মেনে নেওয়া হলো?"
+    },
+    {
+      "example_id": 1271,
+      "family_idx": 26,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার কাগজ দেখে স্বেচ্ছাসেবী সবার সামনে বলেছিলেন যে তিনি সাহায্য পেতে পারেন?",
+      "new_question": "সবার সামনে কার আবেদনটি বৈধ হিসেবে মেনে নেওয়া হলো?"
+    },
+    {
+      "example_id": 1274,
+      "family_idx": 26,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার কাগজ দেখে স্বেচ্ছাসেবী সবার সামনে বলেছিলেন যে তিনি সাহায্য পেতে পারেন?",
+      "new_question": "সবার সামনে কার আবেদনটি বৈধ হিসেবে মেনে নেওয়া হলো?"
+    },
+    {
+      "example_id": 1275,
+      "family_idx": 26,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার কাগজ দেখে স্বেচ্ছাসেবী সবার সামনে বলেছিলেন যে তিনি সাহায্য পেতে পারেন?",
+      "new_question": "সবার সামনে কার আবেদনটি বৈধ হিসেবে মেনে নেওয়া হলো?"
+    },
+    {
+      "example_id": 1278,
+      "family_idx": 26,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার কাগজ দেখে স্বেচ্ছাসেবী সবার সামনে বলেছিলেন যে তিনি সাহায্য পেতে পারেন?",
+      "new_question": "সবার সামনে কার আবেদনটি বৈধ হিসেবে মেনে নেওয়া হলো?"
+    },
+    {
+      "example_id": 1279,
+      "family_idx": 26,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার কাগজ দেখে স্বেচ্ছাসেবী সবার সামনে বলেছিলেন যে তিনি সাহায্য পেতে পারেন?",
+      "new_question": "সবার সামনে কার আবেদনটি বৈধ হিসেবে মেনে নেওয়া হলো?"
+    },
+    {
+      "example_id": 1282,
+      "family_idx": 26,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার কাগজ দেখে স্বেচ্ছাসেবী সবার সামনে বলেছিলেন যে তিনি সাহায্য পেতে পারেন?",
+      "new_question": "সবার সামনে কার আবেদনটি বৈধ হিসেবে মেনে নেওয়া হলো?"
+    },
+    {
+      "example_id": 1283,
+      "family_idx": 26,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার কাগজ দেখে স্বেচ্ছাসেবী সবার সামনে বলেছিলেন যে তিনি সাহায্য পেতে পারেন?",
+      "new_question": "সবার সামনে কার আবেদনটি বৈধ হিসেবে মেনে নেওয়া হলো?"
+    },
+    {
+      "example_id": 1286,
+      "family_idx": 26,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার কাগজ দেখে স্বেচ্ছাসেবী সবার সামনে বলেছিলেন যে তিনি সাহায্য পেতে পারেন?",
+      "new_question": "সবার সামনে কার আবেদনটি বৈধ হিসেবে মেনে নেওয়া হলো?"
+    },
+    {
+      "example_id": 1287,
+      "family_idx": 26,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার কাগজ দেখে স্বেচ্ছাসেবী সবার সামনে বলেছিলেন যে তিনি সাহায্য পেতে পারেন?",
+      "new_question": "সবার সামনে কার আবেদনটি বৈধ হিসেবে মেনে নেওয়া হলো?"
+    },
+    {
+      "example_id": 1290,
+      "family_idx": 26,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার কাগজ দেখে স্বেচ্ছাসেবী সবার সামনে বলেছিলেন যে তিনি সাহায্য পেতে পারেন?",
+      "new_question": "সবার সামনে কার আবেদনটি বৈধ হিসেবে মেনে নেওয়া হলো?"
+    },
+    {
+      "example_id": 1291,
+      "family_idx": 26,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার কাগজ দেখে স্বেচ্ছাসেবী সবার সামনে বলেছিলেন যে তিনি সাহায্য পেতে পারেন?",
+      "new_question": "সবার সামনে কার আবেদনটি বৈধ হিসেবে মেনে নেওয়া হলো?"
+    },
+    {
+      "example_id": 1294,
+      "family_idx": 26,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার কাগজ দেখে স্বেচ্ছাসেবী সবার সামনে বলেছিলেন যে তিনি সাহায্য পেতে পারেন?",
+      "new_question": "সবার সামনে কার আবেদনটি বৈধ হিসেবে মেনে নেওয়া হলো?"
+    },
+    {
+      "example_id": 1295,
+      "family_idx": 26,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার কাগজ দেখে স্বেচ্ছাসেবী সবার সামনে বলেছিলেন যে তিনি সাহায্য পেতে পারেন?",
+      "new_question": "সবার সামনে কার আবেদনটি বৈধ হিসেবে মেনে নেওয়া হলো?"
+    },
+    {
+      "example_id": 1346,
+      "family_idx": 28,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "ছাদে গাছ লাগানো নিয়ে একসঙ্গে পরিকল্পনা করতে কাকে ডাকা হয়েছিল?",
+      "new_question": "ছাদে বাগান করার প্রস্তাব নিয়ে প্রতিবেশীর সঙ্গে কে যৌথ উদ্যোগের আলোচনা চালাতে পেরেছিলেন?"
+    },
+    {
+      "example_id": 1347,
+      "family_idx": 28,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "ছাদে গাছ লাগানো নিয়ে একসঙ্গে পরিকল্পনা করতে কাকে ডাকা হয়েছিল?",
+      "new_question": "ছাদে বাগান করার প্রস্তাব নিয়ে প্রতিবেশীর সঙ্গে কে যৌথ উদ্যোগের আলোচনা চালাতে পেরেছিলেন?"
+    },
+    {
+      "example_id": 1350,
+      "family_idx": 28,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "ছাদে গাছ লাগানো নিয়ে একসঙ্গে পরিকল্পনা করতে কাকে ডাকা হয়েছিল?",
+      "new_question": "ছাদে বাগান করার প্রস্তাব নিয়ে প্রতিবেশীর সঙ্গে কে যৌথ উদ্যোগের আলোচনা চালাতে পেরেছিলেন?"
+    },
+    {
+      "example_id": 1351,
+      "family_idx": 28,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "ছাদে গাছ লাগানো নিয়ে একসঙ্গে পরিকল্পনা করতে কাকে ডাকা হয়েছিল?",
+      "new_question": "ছাদে বাগান করার প্রস্তাব নিয়ে প্রতিবেশীর সঙ্গে কে যৌথ উদ্যোগের আলোচনা চালাতে পেরেছিলেন?"
+    },
+    {
+      "example_id": 1354,
+      "family_idx": 28,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "ছাদে গাছ লাগানো নিয়ে একসঙ্গে পরিকল্পনা করতে কাকে ডাকা হয়েছিল?",
+      "new_question": "ছাদে বাগান করার প্রস্তাব নিয়ে প্রতিবেশীর সঙ্গে কে যৌথ উদ্যোগের আলোচনা চালাতে পেরেছিলেন?"
+    },
+    {
+      "example_id": 1355,
+      "family_idx": 28,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "ছাদে গাছ লাগানো নিয়ে একসঙ্গে পরিকল্পনা করতে কাকে ডাকা হয়েছিল?",
+      "new_question": "ছাদে বাগান করার প্রস্তাব নিয়ে প্রতিবেশীর সঙ্গে কে যৌথ উদ্যোগের আলোচনা চালাতে পেরেছিলেন?"
+    },
+    {
+      "example_id": 1358,
+      "family_idx": 28,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "ছাদে গাছ লাগানো নিয়ে একসঙ্গে পরিকল্পনা করতে কাকে ডাকা হয়েছিল?",
+      "new_question": "ছাদে বাগান করার প্রস্তাব নিয়ে প্রতিবেশীর সঙ্গে কে যৌথ উদ্যোগের আলোচনা চালাতে পেরেছিলেন?"
+    },
+    {
+      "example_id": 1359,
+      "family_idx": 28,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "ছাদে গাছ লাগানো নিয়ে একসঙ্গে পরিকল্পনা করতে কাকে ডাকা হয়েছিল?",
+      "new_question": "ছাদে বাগান করার প্রস্তাব নিয়ে প্রতিবেশীর সঙ্গে কে যৌথ উদ্যোগের আলোচনা চালাতে পেরেছিলেন?"
+    },
+    {
+      "example_id": 1362,
+      "family_idx": 28,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "ছাদে গাছ লাগানো নিয়ে একসঙ্গে পরিকল্পনা করতে কাকে ডাকা হয়েছিল?",
+      "new_question": "ছাদে বাগান করার প্রস্তাব নিয়ে প্রতিবেশীর সঙ্গে কে যৌথ উদ্যোগের আলোচনা চালাতে পেরেছিলেন?"
+    },
+    {
+      "example_id": 1363,
+      "family_idx": 28,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "ছাদে গাছ লাগানো নিয়ে একসঙ্গে পরিকল্পনা করতে কাকে ডাকা হয়েছিল?",
+      "new_question": "ছাদে বাগান করার প্রস্তাব নিয়ে প্রতিবেশীর সঙ্গে কে যৌথ উদ্যোগের আলোচনা চালাতে পেরেছিলেন?"
+    },
+    {
+      "example_id": 1366,
+      "family_idx": 28,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "ছাদে গাছ লাগানো নিয়ে একসঙ্গে পরিকল্পনা করতে কাকে ডাকা হয়েছিল?",
+      "new_question": "ছাদে বাগান করার প্রস্তাব নিয়ে প্রতিবেশীর সঙ্গে কে যৌথ উদ্যোগের আলোচনা চালাতে পেরেছিলেন?"
+    },
+    {
+      "example_id": 1367,
+      "family_idx": 28,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "ছাদে গাছ লাগানো নিয়ে একসঙ্গে পরিকল্পনা করতে কাকে ডাকা হয়েছিল?",
+      "new_question": "ছাদে বাগান করার প্রস্তাব নিয়ে প্রতিবেশীর সঙ্গে কে যৌথ উদ্যোগের আলোচনা চালাতে পেরেছিলেন?"
+    },
+    {
+      "example_id": 1370,
+      "family_idx": 28,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "ছাদে গাছ লাগানো নিয়ে একসঙ্গে পরিকল্পনা করতে কাকে ডাকা হয়েছিল?",
+      "new_question": "ছাদে বাগান করার প্রস্তাব নিয়ে প্রতিবেশীর সঙ্গে কে যৌথ উদ্যোগের আলোচনা চালাতে পেরেছিলেন?"
+    },
+    {
+      "example_id": 1371,
+      "family_idx": 28,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "ছাদে গাছ লাগানো নিয়ে একসঙ্গে পরিকল্পনা করতে কাকে ডাকা হয়েছিল?",
+      "new_question": "ছাদে বাগান করার প্রস্তাব নিয়ে প্রতিবেশীর সঙ্গে কে যৌথ উদ্যোগের আলোচনা চালাতে পেরেছিলেন?"
+    },
+    {
+      "example_id": 1374,
+      "family_idx": 28,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "ছাদে গাছ লাগানো নিয়ে একসঙ্গে পরিকল্পনা করতে কাকে ডাকা হয়েছিল?",
+      "new_question": "ছাদে বাগান করার প্রস্তাব নিয়ে প্রতিবেশীর সঙ্গে কে যৌথ উদ্যোগের আলোচনা চালাতে পেরেছিলেন?"
+    },
+    {
+      "example_id": 1375,
+      "family_idx": 28,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "ছাদে গাছ লাগানো নিয়ে একসঙ্গে পরিকল্পনা করতে কাকে ডাকা হয়েছিল?",
+      "new_question": "ছাদে বাগান করার প্রস্তাব নিয়ে প্রতিবেশীর সঙ্গে কে যৌথ উদ্যোগের আলোচনা চালাতে পেরেছিলেন?"
+    },
+    {
+      "example_id": 1378,
+      "family_idx": 28,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "ছাদে গাছ লাগানো নিয়ে একসঙ্গে পরিকল্পনা করতে কাকে ডাকা হয়েছিল?",
+      "new_question": "ছাদে বাগান করার প্রস্তাব নিয়ে প্রতিবেশীর সঙ্গে কে যৌথ উদ্যোগের আলোচনা চালাতে পেরেছিলেন?"
+    },
+    {
+      "example_id": 1379,
+      "family_idx": 28,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "ছাদে গাছ লাগানো নিয়ে একসঙ্গে পরিকল্পনা করতে কাকে ডাকা হয়েছিল?",
+      "new_question": "ছাদে বাগান করার প্রস্তাব নিয়ে প্রতিবেশীর সঙ্গে কে যৌথ উদ্যোগের আলোচনা চালাতে পেরেছিলেন?"
+    },
+    {
+      "example_id": 1382,
+      "family_idx": 28,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "ছাদে গাছ লাগানো নিয়ে একসঙ্গে পরিকল্পনা করতে কাকে ডাকা হয়েছিল?",
+      "new_question": "ছাদে বাগান করার প্রস্তাব নিয়ে প্রতিবেশীর সঙ্গে কে যৌথ উদ্যোগের আলোচনা চালাতে পেরেছিলেন?"
+    },
+    {
+      "example_id": 1383,
+      "family_idx": 28,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "ছাদে গাছ লাগানো নিয়ে একসঙ্গে পরিকল্পনা করতে কাকে ডাকা হয়েছিল?",
+      "new_question": "ছাদে বাগান করার প্রস্তাব নিয়ে প্রতিবেশীর সঙ্গে কে যৌথ উদ্যোগের আলোচনা চালাতে পেরেছিলেন?"
+    },
+    {
+      "example_id": 1386,
+      "family_idx": 28,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "ছাদে গাছ লাগানো নিয়ে একসঙ্গে পরিকল্পনা করতে কাকে ডাকা হয়েছিল?",
+      "new_question": "ছাদে বাগান করার প্রস্তাব নিয়ে প্রতিবেশীর সঙ্গে কে যৌথ উদ্যোগের আলোচনা চালাতে পেরেছিলেন?"
+    },
+    {
+      "example_id": 1387,
+      "family_idx": 28,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "ছাদে গাছ লাগানো নিয়ে একসঙ্গে পরিকল্পনা করতে কাকে ডাকা হয়েছিল?",
+      "new_question": "ছাদে বাগান করার প্রস্তাব নিয়ে প্রতিবেশীর সঙ্গে কে যৌথ উদ্যোগের আলোচনা চালাতে পেরেছিলেন?"
+    },
+    {
+      "example_id": 1390,
+      "family_idx": 28,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "ছাদে গাছ লাগানো নিয়ে একসঙ্গে পরিকল্পনা করতে কাকে ডাকা হয়েছিল?",
+      "new_question": "ছাদে বাগান করার প্রস্তাব নিয়ে প্রতিবেশীর সঙ্গে কে যৌথ উদ্যোগের আলোচনা চালাতে পেরেছিলেন?"
+    },
+    {
+      "example_id": 1391,
+      "family_idx": 28,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "ছাদে গাছ লাগানো নিয়ে একসঙ্গে পরিকল্পনা করতে কাকে ডাকা হয়েছিল?",
+      "new_question": "ছাদে বাগান করার প্রস্তাব নিয়ে প্রতিবেশীর সঙ্গে কে যৌথ উদ্যোগের আলোচনা চালাতে পেরেছিলেন?"
+    },
+    {
+      "example_id": 1394,
+      "family_idx": 29,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "সমন্বয়কারীর লেখা মন্তব্যে কার কাজের প্রশংসা ছিল?",
+      "new_question": "দায়িত্বপ্রাপ্ত কর্মকর্তার লিখিত মূল্যায়নে কে প্রশংসিত হলেন?"
+    },
+    {
+      "example_id": 1395,
+      "family_idx": 29,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "সমন্বয়কারীর লেখা মন্তব্যে কার কাজের প্রশংসা ছিল?",
+      "new_question": "দায়িত্বপ্রাপ্ত কর্মকর্তার লিখিত মূল্যায়নে কে প্রশংসিত হলেন?"
+    },
+    {
+      "example_id": 1398,
+      "family_idx": 29,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "সমন্বয়কারীর লেখা মন্তব্যে কার কাজের প্রশংসা ছিল?",
+      "new_question": "দায়িত্বপ্রাপ্ত কর্মকর্তার লিখিত মূল্যায়নে কে প্রশংসিত হলেন?"
+    },
+    {
+      "example_id": 1399,
+      "family_idx": 29,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "সমন্বয়কারীর লেখা মন্তব্যে কার কাজের প্রশংসা ছিল?",
+      "new_question": "দায়িত্বপ্রাপ্ত কর্মকর্তার লিখিত মূল্যায়নে কে প্রশংসিত হলেন?"
+    },
+    {
+      "example_id": 1402,
+      "family_idx": 29,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "সমন্বয়কারীর লেখা মন্তব্যে কার কাজের প্রশংসা ছিল?",
+      "new_question": "দায়িত্বপ্রাপ্ত কর্মকর্তার লিখিত মূল্যায়নে কে প্রশংসিত হলেন?"
+    },
+    {
+      "example_id": 1403,
+      "family_idx": 29,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "সমন্বয়কারীর লেখা মন্তব্যে কার কাজের প্রশংসা ছিল?",
+      "new_question": "দায়িত্বপ্রাপ্ত কর্মকর্তার লিখিত মূল্যায়নে কে প্রশংসিত হলেন?"
+    },
+    {
+      "example_id": 1406,
+      "family_idx": 29,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "সমন্বয়কারীর লেখা মন্তব্যে কার কাজের প্রশংসা ছিল?",
+      "new_question": "দায়িত্বপ্রাপ্ত কর্মকর্তার লিখিত মূল্যায়নে কে প্রশংসিত হলেন?"
+    },
+    {
+      "example_id": 1407,
+      "family_idx": 29,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "সমন্বয়কারীর লেখা মন্তব্যে কার কাজের প্রশংসা ছিল?",
+      "new_question": "দায়িত্বপ্রাপ্ত কর্মকর্তার লিখিত মূল্যায়নে কে প্রশংসিত হলেন?"
+    },
+    {
+      "example_id": 1410,
+      "family_idx": 29,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "সমন্বয়কারীর লেখা মন্তব্যে কার কাজের প্রশংসা ছিল?",
+      "new_question": "দায়িত্বপ্রাপ্ত কর্মকর্তার লিখিত মূল্যায়নে কে প্রশংসিত হলেন?"
+    },
+    {
+      "example_id": 1411,
+      "family_idx": 29,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "সমন্বয়কারীর লেখা মন্তব্যে কার কাজের প্রশংসা ছিল?",
+      "new_question": "দায়িত্বপ্রাপ্ত কর্মকর্তার লিখিত মূল্যায়নে কে প্রশংসিত হলেন?"
+    },
+    {
+      "example_id": 1414,
+      "family_idx": 29,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "সমন্বয়কারীর লেখা মন্তব্যে কার কাজের প্রশংসা ছিল?",
+      "new_question": "দায়িত্বপ্রাপ্ত কর্মকর্তার লিখিত মূল্যায়নে কে প্রশংসিত হলেন?"
+    },
+    {
+      "example_id": 1415,
+      "family_idx": 29,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "সমন্বয়কারীর লেখা মন্তব্যে কার কাজের প্রশংসা ছিল?",
+      "new_question": "দায়িত্বপ্রাপ্ত কর্মকর্তার লিখিত মূল্যায়নে কে প্রশংসিত হলেন?"
+    },
+    {
+      "example_id": 1418,
+      "family_idx": 29,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "সমন্বয়কারীর লেখা মন্তব্যে কার কাজের প্রশংসা ছিল?",
+      "new_question": "দায়িত্বপ্রাপ্ত কর্মকর্তার লিখিত মূল্যায়নে কে প্রশংসিত হলেন?"
+    },
+    {
+      "example_id": 1419,
+      "family_idx": 29,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "সমন্বয়কারীর লেখা মন্তব্যে কার কাজের প্রশংসা ছিল?",
+      "new_question": "দায়িত্বপ্রাপ্ত কর্মকর্তার লিখিত মূল্যায়নে কে প্রশংসিত হলেন?"
+    },
+    {
+      "example_id": 1422,
+      "family_idx": 29,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "সমন্বয়কারীর লেখা মন্তব্যে কার কাজের প্রশংসা ছিল?",
+      "new_question": "দায়িত্বপ্রাপ্ত কর্মকর্তার লিখিত মূল্যায়নে কে প্রশংসিত হলেন?"
+    },
+    {
+      "example_id": 1423,
+      "family_idx": 29,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "সমন্বয়কারীর লেখা মন্তব্যে কার কাজের প্রশংসা ছিল?",
+      "new_question": "দায়িত্বপ্রাপ্ত কর্মকর্তার লিখিত মূল্যায়নে কে প্রশংসিত হলেন?"
+    },
+    {
+      "example_id": 1426,
+      "family_idx": 29,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "সমন্বয়কারীর লেখা মন্তব্যে কার কাজের প্রশংসা ছিল?",
+      "new_question": "দায়িত্বপ্রাপ্ত কর্মকর্তার লিখিত মূল্যায়নে কে প্রশংসিত হলেন?"
+    },
+    {
+      "example_id": 1427,
+      "family_idx": 29,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "সমন্বয়কারীর লেখা মন্তব্যে কার কাজের প্রশংসা ছিল?",
+      "new_question": "দায়িত্বপ্রাপ্ত কর্মকর্তার লিখিত মূল্যায়নে কে প্রশংসিত হলেন?"
+    },
+    {
+      "example_id": 1430,
+      "family_idx": 29,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "সমন্বয়কারীর লেখা মন্তব্যে কার কাজের প্রশংসা ছিল?",
+      "new_question": "দায়িত্বপ্রাপ্ত কর্মকর্তার লিখিত মূল্যায়নে কে প্রশংসিত হলেন?"
+    },
+    {
+      "example_id": 1431,
+      "family_idx": 29,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "সমন্বয়কারীর লেখা মন্তব্যে কার কাজের প্রশংসা ছিল?",
+      "new_question": "দায়িত্বপ্রাপ্ত কর্মকর্তার লিখিত মূল্যায়নে কে প্রশংসিত হলেন?"
+    },
+    {
+      "example_id": 1434,
+      "family_idx": 29,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "সমন্বয়কারীর লেখা মন্তব্যে কার কাজের প্রশংসা ছিল?",
+      "new_question": "দায়িত্বপ্রাপ্ত কর্মকর্তার লিখিত মূল্যায়নে কে প্রশংসিত হলেন?"
+    },
+    {
+      "example_id": 1435,
+      "family_idx": 29,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "সমন্বয়কারীর লেখা মন্তব্যে কার কাজের প্রশংসা ছিল?",
+      "new_question": "দায়িত্বপ্রাপ্ত কর্মকর্তার লিখিত মূল্যায়নে কে প্রশংসিত হলেন?"
+    },
+    {
+      "example_id": 1438,
+      "family_idx": 29,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "সমন্বয়কারীর লেখা মন্তব্যে কার কাজের প্রশংসা ছিল?",
+      "new_question": "দায়িত্বপ্রাপ্ত কর্মকর্তার লিখিত মূল্যায়নে কে প্রশংসিত হলেন?"
+    },
+    {
+      "example_id": 1439,
+      "family_idx": 29,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "সমন্বয়কারীর লেখা মন্তব্যে কার কাজের প্রশংসা ছিল?",
+      "new_question": "দায়িত্বপ্রাপ্ত কর্মকর্তার লিখিত মূল্যায়নে কে প্রশংসিত হলেন?"
+    }
+  ]
+}

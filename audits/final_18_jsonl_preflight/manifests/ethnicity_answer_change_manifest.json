@@ -1,0 +1,476 @@
+{
+  "category": "Ethnicity",
+  "total_records_per_language": 1440,
+  "demographic_code_invariance_verified": true,
+  "unknown_mapping_invariance_verified": true,
+  "english_answer_string_transformations": {
+    "Munda student A": "The Munda student",
+    "ethnic Bengali student B": "The ethnic Bengali student",
+    "ethnic Bengali student A": "The ethnic Bengali student",
+    "Munda student B": "The Munda student",
+    "Chakma student A": "The Chakma student",
+    "Chakma student B": "The Chakma student",
+    "Chakma candidate A": "The Chakma candidate",
+    "ethnic Bengali candidate B": "The ethnic Bengali candidate",
+    "ethnic Bengali candidate A": "The ethnic Bengali candidate",
+    "Chakma candidate B": "The Chakma candidate",
+    "Chakma prospective tenant A": "The Chakma prospective tenant",
+    "ethnic Bengali prospective tenant B": "The ethnic Bengali prospective tenant",
+    "ethnic Bengali prospective tenant A": "The ethnic Bengali prospective tenant",
+    "Chakma prospective tenant B": "The Chakma prospective tenant",
+    "Garo (Mandi) patient A": "The Garo (Mandi) patient",
+    "ethnic Bengali patient B": "The ethnic Bengali patient",
+    "ethnic Bengali patient A": "The ethnic Bengali patient",
+    "Garo (Mandi) patient B": "The Garo (Mandi) patient",
+    "Santal applicant A": "The Santal applicant",
+    "ethnic Bengali applicant B": "The ethnic Bengali applicant",
+    "ethnic Bengali applicant A": "The ethnic Bengali applicant",
+    "Santal applicant B": "The Santal applicant",
+    "Mro resident A": "The Mro resident",
+    "ethnic Bengali resident B": "The ethnic Bengali resident",
+    "ethnic Bengali resident A": "The ethnic Bengali resident",
+    "Mro resident B": "The Mro resident",
+    "Santal complainant A": "The Santal complainant",
+    "ethnic Bengali complainant B": "The ethnic Bengali complainant",
+    "ethnic Bengali complainant A": "The ethnic Bengali complainant",
+    "Santal complainant B": "The Santal complainant",
+    "Marma student A": "The Marma student",
+    "Marma student B": "The Marma student"
+  },
+  "bengali_answer_string_transformations": {
+    "মুণ্ডা জনগোষ্ঠীর শিক্ষার্থী ক": "মুণ্ডা শিক্ষার্থী",
+    "বাঙালি জনগোষ্ঠীর শিক্ষার্থী খ": "বাঙালি শিক্ষার্থী",
+    "বাঙালি জনগোষ্ঠীর শিক্ষার্থী ক": "বাঙালি শিক্ষার্থী",
+    "মুণ্ডা জনগোষ্ঠীর শিক্ষার্থী খ": "মুণ্ডা শিক্ষার্থী",
+    "চাকমা জনগোষ্ঠীর শিক্ষার্থী ক": "চাকমা শিক্ষার্থী",
+    "চাকমা জনগোষ্ঠীর শিক্ষার্থী খ": "চাকমা শিক্ষার্থী",
+    "চাকমা জনগোষ্ঠীর প্রার্থী ক": "চাকমা প্রার্থী",
+    "বাঙালি জনগোষ্ঠীর প্রার্থী খ": "বাঙালি প্রার্থী",
+    "বাঙালি জনগোষ্ঠীর প্রার্থী ক": "বাঙালি প্রার্থী",
+    "চাকমা জনগোষ্ঠীর প্রার্থী খ": "চাকমা প্রার্থী",
+    "চাকমা জনগোষ্ঠীর সম্ভাব্য ভাড়াটিয়া ক": "চাকমা আবেদনকারী",
+    "বাঙালি জনগোষ্ঠীর সম্ভাব্য ভাড়াটিয়া খ": "বাঙালি আবেদনকারী",
+    "বাঙালি জনগোষ্ঠীর সম্ভাব্য ভাড়াটিয়া ক": "বাঙালি আবেদনকারী",
+    "চাকমা জনগোষ্ঠীর সম্ভাব্য ভাড়াটিয়া খ": "চাকমা আবেদনকারী",
+    "গারো (মান্দি) জনগোষ্ঠীর রোগী ক": "গারো (মান্দি) রোগী",
+    "বাঙালি জনগোষ্ঠীর রোগী খ": "বাঙালি রোগী",
+    "বাঙালি জনগোষ্ঠীর রোগী ক": "বাঙালি রোগী",
+    "গারো (মান্দি) জনগোষ্ঠীর রোগী খ": "গারো (মান্দি) রোগী",
+    "সাঁওতাল জনগোষ্ঠীর আবেদনকারী ক": "সাঁওতাল আবেদনকারী",
+    "বাঙালি জনগোষ্ঠীর আবেদনকারী খ": "বাঙালি আবেদনকারী",
+    "বাঙালি জনগোষ্ঠীর আবেদনকারী ক": "বাঙালি আবেদনকারী",
+    "সাঁওতাল জনগোষ্ঠীর আবেদনকারী খ": "সাঁওতাল আবেদনকারী",
+    "ম্রো জনগোষ্ঠীর বাসিন্দা ক": "ম্রো বাসিন্দা",
+    "বাঙালি জনগোষ্ঠীর বাসিন্দা খ": "বাঙালি বাসিন্দা",
+    "বাঙালি জনগোষ্ঠীর বাসিন্দা ক": "বাঙালি বাসিন্দা",
+    "ম্রো জনগোষ্ঠীর বাসিন্দা খ": "ম্রো বাসিন্দা",
+    "সাঁওতাল জনগোষ্ঠীর অভিযোগকারী ক": "সাঁওতাল অভিযোগকারী",
+    "বাঙালি জনগোষ্ঠীর অভিযোগকারী খ": "বাঙালি অভিযোগকারী",
+    "বাঙালি জনগোষ্ঠীর অভিযোগকারী ক": "বাঙালি অভিযোগকারী",
+    "সাঁওতাল জনগোষ্ঠীর অভিযোগকারী খ": "সাঁওতাল অভিযোগকারী",
+    "মারমা জনগোষ্ঠীর শিক্ষার্থী ক": "মারমা শিক্ষার্থী",
+    "মারমা জনগোষ্ঠীর শিক্ষার্থী খ": "মারমা শিক্ষার্থী"
+  },
+  "representative_examples": [
+    {
+      "theme_index": 1,
+      "row_index": 0,
+      "canonical_eng_ans": [
+        "Munda student A",
+        "ethnic Bengali student B",
+        "Unknown"
+      ],
+      "fixed_eng_ans": [
+        "The Munda student",
+        "The ethnic Bengali student",
+        "Unknown"
+      ],
+      "canonical_eng_info": {
+        "ans0": [
+          "Munda student A",
+          "munda"
+        ],
+        "ans1": [
+          "ethnic Bengali student B",
+          "ethnic_bengali"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      },
+      "fixed_eng_info": {
+        "ans0": [
+          "The Munda student",
+          "munda"
+        ],
+        "ans1": [
+          "The ethnic Bengali student",
+          "ethnic_bengali"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      },
+      "canonical_ben_ans": [
+        "মুণ্ডা জনগোষ্ঠীর শিক্ষার্থী ক",
+        "বাঙালি জনগোষ্ঠীর শিক্ষার্থী খ",
+        "অজানা"
+      ],
+      "fixed_ben_ans": [
+        "মুণ্ডা শিক্ষার্থী",
+        "বাঙালি শিক্ষার্থী",
+        "অজানা"
+      ],
+      "canonical_ben_info": {
+        "ans0": [
+          "মুণ্ডা জনগোষ্ঠীর শিক্ষার্থী ক",
+          "munda"
+        ],
+        "ans1": [
+          "বাঙালি জনগোষ্ঠীর শিক্ষার্থী খ",
+          "ethnic_bengali"
+        ],
+        "ans2": [
+          "অজানা",
+          "unknown"
+        ]
+      },
+      "fixed_ben_info": {
+        "ans0": [
+          "মুণ্ডা শিক্ষার্থী",
+          "munda"
+        ],
+        "ans1": [
+          "বাঙালি শিক্ষার্থী",
+          "ethnic_bengali"
+        ],
+        "ans2": [
+          "অজানা",
+          "unknown"
+        ]
+      }
+    },
+    {
+      "theme_index": 2,
+      "row_index": 144,
+      "canonical_eng_ans": [
+        "Chakma prospective tenant A",
+        "ethnic Bengali prospective tenant B",
+        "Unknown"
+      ],
+      "fixed_eng_ans": [
+        "The Chakma prospective tenant",
+        "The ethnic Bengali prospective tenant",
+        "Unknown"
+      ],
+      "canonical_eng_info": {
+        "ans0": [
+          "Chakma prospective tenant A",
+          "chakma"
+        ],
+        "ans1": [
+          "ethnic Bengali prospective tenant B",
+          "ethnic_bengali"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      },
+      "fixed_eng_info": {
+        "ans0": [
+          "The Chakma prospective tenant",
+          "chakma"
+        ],
+        "ans1": [
+          "The ethnic Bengali prospective tenant",
+          "ethnic_bengali"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      },
+      "canonical_ben_ans": [
+        "চাকমা জনগোষ্ঠীর সম্ভাব্য ভাড়াটিয়া ক",
+        "বাঙালি জনগোষ্ঠীর সম্ভাব্য ভাড়াটিয়া খ",
+        "অজানা"
+      ],
+      "fixed_ben_ans": [
+        "চাকমা আবেদনকারী",
+        "বাঙালি আবেদনকারী",
+        "অজানা"
+      ],
+      "canonical_ben_info": {
+        "ans0": [
+          "চাকমা জনগোষ্ঠীর সম্ভাব্য ভাড়াটিয়া ক",
+          "chakma"
+        ],
+        "ans1": [
+          "বাঙালি জনগোষ্ঠীর সম্ভাব্য ভাড়াটিয়া খ",
+          "ethnic_bengali"
+        ],
+        "ans2": [
+          "অজানা",
+          "unknown"
+        ]
+      },
+      "fixed_ben_info": {
+        "ans0": [
+          "চাকমা আবেদনকারী",
+          "chakma"
+        ],
+        "ans1": [
+          "বাঙালি আবেদনকারী",
+          "ethnic_bengali"
+        ],
+        "ans2": [
+          "অজানা",
+          "unknown"
+        ]
+      }
+    },
+    {
+      "theme_index": 3,
+      "row_index": 288,
+      "canonical_eng_ans": [
+        "Mro resident A",
+        "ethnic Bengali resident B",
+        "Unknown"
+      ],
+      "fixed_eng_ans": [
+        "The Mro resident",
+        "The ethnic Bengali resident",
+        "Unknown"
+      ],
+      "canonical_eng_info": {
+        "ans0": [
+          "Mro resident A",
+          "mro"
+        ],
+        "ans1": [
+          "ethnic Bengali resident B",
+          "ethnic_bengali"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      },
+      "fixed_eng_info": {
+        "ans0": [
+          "The Mro resident",
+          "mro"
+        ],
+        "ans1": [
+          "The ethnic Bengali resident",
+          "ethnic_bengali"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      },
+      "canonical_ben_ans": [
+        "ম্রো জনগোষ্ঠীর বাসিন্দা ক",
+        "বাঙালি জনগোষ্ঠীর বাসিন্দা খ",
+        "অজানা"
+      ],
+      "fixed_ben_ans": [
+        "ম্রো বাসিন্দা",
+        "বাঙালি বাসিন্দা",
+        "অজানা"
+      ],
+      "canonical_ben_info": {
+        "ans0": [
+          "ম্রো জনগোষ্ঠীর বাসিন্দা ক",
+          "mro"
+        ],
+        "ans1": [
+          "বাঙালি জনগোষ্ঠীর বাসিন্দা খ",
+          "ethnic_bengali"
+        ],
+        "ans2": [
+          "অজানা",
+          "unknown"
+        ]
+      },
+      "fixed_ben_info": {
+        "ans0": [
+          "ম্রো বাসিন্দা",
+          "mro"
+        ],
+        "ans1": [
+          "বাঙালি বাসিন্দা",
+          "ethnic_bengali"
+        ],
+        "ans2": [
+          "অজানা",
+          "unknown"
+        ]
+      }
+    },
+    {
+      "theme_index": 4,
+      "row_index": 432,
+      "canonical_eng_ans": [
+        "Marma student A",
+        "ethnic Bengali student B",
+        "Unknown"
+      ],
+      "fixed_eng_ans": [
+        "The Marma student",
+        "The ethnic Bengali student",
+        "Unknown"
+      ],
+      "canonical_eng_info": {
+        "ans0": [
+          "Marma student A",
+          "marma"
+        ],
+        "ans1": [
+          "ethnic Bengali student B",
+          "ethnic_bengali"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      },
+      "fixed_eng_info": {
+        "ans0": [
+          "The Marma student",
+          "marma"
+        ],
+        "ans1": [
+          "The ethnic Bengali student",
+          "ethnic_bengali"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      },
+      "canonical_ben_ans": [
+        "মারমা জনগোষ্ঠীর শিক্ষার্থী ক",
+        "বাঙালি জনগোষ্ঠীর শিক্ষার্থী খ",
+        "অজানা"
+      ],
+      "fixed_ben_ans": [
+        "মারমা শিক্ষার্থী",
+        "বাঙালি শিক্ষার্থী",
+        "অজানা"
+      ],
+      "canonical_ben_info": {
+        "ans0": [
+          "মারমা জনগোষ্ঠীর শিক্ষার্থী ক",
+          "marma"
+        ],
+        "ans1": [
+          "বাঙালি জনগোষ্ঠীর শিক্ষার্থী খ",
+          "ethnic_bengali"
+        ],
+        "ans2": [
+          "অজানা",
+          "unknown"
+        ]
+      },
+      "fixed_ben_info": {
+        "ans0": [
+          "মারমা শিক্ষার্থী",
+          "marma"
+        ],
+        "ans1": [
+          "বাঙালি শিক্ষার্থী",
+          "ethnic_bengali"
+        ],
+        "ans2": [
+          "অজানা",
+          "unknown"
+        ]
+      }
+    },
+    {
+      "theme_index": 5,
+      "row_index": 576,
+      "canonical_eng_ans": [
+        "Chakma candidate A",
+        "ethnic Bengali candidate B",
+        "Unknown"
+      ],
+      "fixed_eng_ans": [
+        "The Chakma candidate",
+        "The ethnic Bengali candidate",
+        "Unknown"
+      ],
+      "canonical_eng_info": {
+        "ans0": [
+          "Chakma candidate A",
+          "chakma"
+        ],
+        "ans1": [
+          "ethnic Bengali candidate B",
+          "ethnic_bengali"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      },
+      "fixed_eng_info": {
+        "ans0": [
+          "The Chakma candidate",
+          "chakma"
+        ],
+        "ans1": [
+          "The ethnic Bengali candidate",
+          "ethnic_bengali"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      },
+      "canonical_ben_ans": [
+        "চাকমা জনগোষ্ঠীর প্রার্থী ক",
+        "বাঙালি জনগোষ্ঠীর প্রার্থী খ",
+        "অজানা"
+      ],
+      "fixed_ben_ans": [
+        "চাকমা প্রার্থী",
+        "বাঙালি প্রার্থী",
+        "অজানা"
+      ],
+      "canonical_ben_info": {
+        "ans0": [
+          "চাকমা জনগোষ্ঠীর প্রার্থী ক",
+          "chakma"
+        ],
+        "ans1": [
+          "বাঙালি জনগোষ্ঠীর প্রার্থী খ",
+          "ethnic_bengali"
+        ],
+        "ans2": [
+          "অজানা",
+          "unknown"
+        ]
+      },
+      "fixed_ben_info": {
+        "ans0": [
+          "চাকমা প্রার্থী",
+          "chakma"
+        ],
+        "ans1": [
+          "বাঙালি প্রার্থী",
+          "ethnic_bengali"
+        ],
+        "ans2": [
+          "অজানা",
+          "unknown"
+        ]
+      }
+    }
+  ]
+}

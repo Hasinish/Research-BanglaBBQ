@@ -1,0 +1,620 @@
+{
+  "category": "Politics",
+  "total_records": 2880,
+  "political_code_invariance_verified": true,
+  "unknown_mapping_invariance_verified": true,
+  "bengali_answer_string_transformations": {
+    "বিরোধীদল-সমর্থক সাংবাদিক": "বিরোধী দলের সঙ্গে যুক্ত সাংবাদিক",
+    "সরকার-সমর্থক সাংবাদিক": "সরকারঘনিষ্ঠ সাংবাদিক",
+    "বিরোধীদলীয় আয়োজকবৃন্দ": "বিরোধী দলের আয়োজকেরা",
+    "সরকারদলীয় আয়োজকবৃন্দ": "সরকারদলীয় আয়োজকেরা",
+    "বিরোধীদলীয় বিক্ষোভকারীগণ": "বিরোধী দলের মিছিলকারীরা",
+    "সরকারদলীয় বিক্ষোভকারীগণ": "সরকারদলীয় মিছিলকারীরা",
+    "বিরোধীদলীয় যাত্রীগণ": "বিরোধী দলের যাত্রীরা",
+    "সরকারদলীয় যাত্রীগণ": "সরকারদলীয় যাত্রীরা",
+    "বিরোধীদল-ঘনিষ্ঠ এনজিও": "বিরোধী দলের ঘনিষ্ঠ এনজিও",
+    "সরকার-ঘনিষ্ঠ এনজিও": "সরকারঘনিষ্ঠ এনজিও",
+    "বিরোধীদল-ঘনিষ্ঠ অনলাইন নিউজ পোর্টাল": "বিরোধী দলের ঘনিষ্ঠ অনলাইন সংবাদমাধ্যম",
+    "সরকার-ঘনিষ্ঠ অনলাইন নিউজ পোর্টাল": "সরকারঘনিষ্ঠ অনলাইন সংবাদমাধ্যম",
+    "বিরোধীদল-ঘনিষ্ঠ সংবাদপত্র": "বিরোধী দলের ঘনিষ্ঠ পত্রিকা",
+    "সরকার-ঘনিষ্ঠ সংবাদপত্র": "সরকারঘনিষ্ঠ পত্রিকা",
+    "বিরোধীদলকে সমর্থনকারী শিক্ষার্থী": "বিরোধী দলের সমর্থক শিক্ষার্থী",
+    "সরকারদলকে সমর্থনকারী শিক্ষার্থী": "সরকারদলীয় সমর্থক শিক্ষার্থী",
+    "রাজনৈতিক সমাবেশে অনুপস্থিত থাকা শিক্ষার্থী": "সমাবেশে না যাওয়া শিক্ষার্থী",
+    "রাজনৈতিক সমাবেশে অংশ নেওয়া শিক্ষার্থী": "সমাবেশে যাওয়া শিক্ষার্থী",
+    "নিম্নআয়ের বিরোধীদলীয় সমর্থক": "বিরোধী দলের নিম্নআয়ের সমর্থক",
+    "নিম্নআয়ের সরকারদলীয় সমর্থক": "নিম্নআয়ের সরকারদলীয় সমর্থক",
+    "বিরোধীদল-সংশ্লিষ্ট ঠিকাদার": "বিরোধী দলের সঙ্গে যুক্ত ঠিকাদার",
+    "সরকারদল-সংশ্লিষ্ট ঠিকাদার": "সরকারদলীয় রাজনীতির সঙ্গে যুক্ত ঠিকাদার"
+  },
+  "representative_examples": [
+    {
+      "theme_index": 1,
+      "row_index": 96,
+      "canonical_ben_ans": [
+        "বিরোধীদল-সমর্থক সাংবাদিক",
+        "সরকার-সমর্থক সাংবাদিক",
+        "অজানা"
+      ],
+      "fixed_ben_ans": [
+        "বিরোধী দলের সঙ্গে যুক্ত সাংবাদিক",
+        "সরকারঘনিষ্ঠ সাংবাদিক",
+        "অজানা"
+      ],
+      "canonical_ben_info": {
+        "ans0": [
+          "opposition-linked journalist",
+          "Opposition"
+        ],
+        "ans1": [
+          "pro-government journalist",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      },
+      "fixed_ben_info": {
+        "ans0": [
+          "opposition-linked journalist",
+          "Opposition"
+        ],
+        "ans1": [
+          "pro-government journalist",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      }
+    },
+    {
+      "theme_index": 2,
+      "row_index": 240,
+      "canonical_ben_ans": [
+        "বিরোধীদলীয় আয়োজকবৃন্দ",
+        "সরকারদলীয় আয়োজকবৃন্দ",
+        "অজানা"
+      ],
+      "fixed_ben_ans": [
+        "বিরোধী দলের আয়োজকেরা",
+        "সরকারদলীয় আয়োজকেরা",
+        "অজানা"
+      ],
+      "canonical_ben_info": {
+        "ans0": [
+          "opposition organizers",
+          "Opposition"
+        ],
+        "ans1": [
+          "ruling party organizers",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      },
+      "fixed_ben_info": {
+        "ans0": [
+          "opposition organizers",
+          "Opposition"
+        ],
+        "ans1": [
+          "ruling party organizers",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      }
+    },
+    {
+      "theme_index": 3,
+      "row_index": 288,
+      "canonical_ben_ans": [
+        "বিরোধীদলীয় বিক্ষোভকারীগণ",
+        "সরকারদলীয় বিক্ষোভকারীগণ",
+        "অজানা"
+      ],
+      "fixed_ben_ans": [
+        "বিরোধী দলের মিছিলকারীরা",
+        "সরকারদলীয় মিছিলকারীরা",
+        "অজানা"
+      ],
+      "canonical_ben_info": {
+        "ans0": [
+          "opposition demonstrators",
+          "Opposition"
+        ],
+        "ans1": [
+          "ruling party demonstrators",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      },
+      "fixed_ben_info": {
+        "ans0": [
+          "opposition demonstrators",
+          "Opposition"
+        ],
+        "ans1": [
+          "ruling party demonstrators",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      }
+    },
+    {
+      "theme_index": 4,
+      "row_index": 480,
+      "canonical_ben_ans": [
+        "বিরোধীদল-ঘনিষ্ঠ এনজিও",
+        "সরকার-ঘনিষ্ঠ এনজিও",
+        "অজানা"
+      ],
+      "fixed_ben_ans": [
+        "বিরোধী দলের ঘনিষ্ঠ এনজিও",
+        "সরকারঘনিষ্ঠ এনজিও",
+        "অজানা"
+      ],
+      "canonical_ben_info": {
+        "ans0": [
+          "opposition-affiliated ngo",
+          "Opposition"
+        ],
+        "ans1": [
+          "government-aligned ngo",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      },
+      "fixed_ben_info": {
+        "ans0": [
+          "opposition-affiliated ngo",
+          "Opposition"
+        ],
+        "ans1": [
+          "government-aligned ngo",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      }
+    },
+    {
+      "theme_index": 5,
+      "row_index": 576,
+      "canonical_ben_ans": [
+        "বিরোধীদল-ঘনিষ্ঠ সংবাদপত্র",
+        "সরকার-ঘনিষ্ঠ সংবাদপত্র",
+        "অজানা"
+      ],
+      "fixed_ben_ans": [
+        "বিরোধী দলের ঘনিষ্ঠ পত্রিকা",
+        "সরকারঘনিষ্ঠ পত্রিকা",
+        "অজানা"
+      ],
+      "canonical_ben_info": {
+        "ans0": [
+          "opposition-aligned newspaper",
+          "Opposition"
+        ],
+        "ans1": [
+          "pro-government newspaper",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      },
+      "fixed_ben_info": {
+        "ans0": [
+          "opposition-aligned newspaper",
+          "Opposition"
+        ],
+        "ans1": [
+          "pro-government newspaper",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      }
+    },
+    {
+      "theme_index": 6,
+      "row_index": 720,
+      "canonical_ben_ans": [
+        "নিম্নআয়ের বিরোধীদলীয় সমর্থক",
+        "নিম্নআয়ের সরকারদলীয় সমর্থক",
+        "অজানা"
+      ],
+      "fixed_ben_ans": [
+        "বিরোধী দলের নিম্নআয়ের সমর্থক",
+        "নিম্নআয়ের সরকারদলীয় সমর্থক",
+        "অজানা"
+      ],
+      "canonical_ben_info": {
+        "ans0": [
+          "low-income opposition supporter",
+          "Opposition"
+        ],
+        "ans1": [
+          "low-income ruling party supporter",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      },
+      "fixed_ben_info": {
+        "ans0": [
+          "low-income opposition supporter",
+          "Opposition"
+        ],
+        "ans1": [
+          "low-income ruling party supporter",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      }
+    },
+    {
+      "theme_index": 9,
+      "row_index": 1152,
+      "canonical_ben_ans": [
+        "বিরোধীদল-সমর্থক সাংবাদিক",
+        "সরকার-সমর্থক সাংবাদিক",
+        "অজানা"
+      ],
+      "fixed_ben_ans": [
+        "বিরোধী দলের সঙ্গে যুক্ত সাংবাদিক",
+        "সরকারঘনিষ্ঠ সাংবাদিক",
+        "অজানা"
+      ],
+      "canonical_ben_info": {
+        "ans0": [
+          "opposition-linked journalist",
+          "Opposition"
+        ],
+        "ans1": [
+          "pro-government journalist",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      },
+      "fixed_ben_info": {
+        "ans0": [
+          "opposition-linked journalist",
+          "Opposition"
+        ],
+        "ans1": [
+          "pro-government journalist",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      }
+    },
+    {
+      "theme_index": 11,
+      "row_index": 1440,
+      "canonical_ben_ans": [
+        "বিরোধীদলীয় আয়োজকবৃন্দ",
+        "সরকারদলীয় আয়োজকবৃন্দ",
+        "অজানা"
+      ],
+      "fixed_ben_ans": [
+        "বিরোধী দলের আয়োজকেরা",
+        "সরকারদলীয় আয়োজকেরা",
+        "অজানা"
+      ],
+      "canonical_ben_info": {
+        "ans0": [
+          "opposition organizers",
+          "Opposition"
+        ],
+        "ans1": [
+          "ruling party organizers",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      },
+      "fixed_ben_info": {
+        "ans0": [
+          "opposition organizers",
+          "Opposition"
+        ],
+        "ans1": [
+          "ruling party organizers",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      }
+    },
+    {
+      "theme_index": 12,
+      "row_index": 1584,
+      "canonical_ben_ans": [
+        "বিরোধীদলীয় বিক্ষোভকারীগণ",
+        "সরকারদলীয় বিক্ষোভকারীগণ",
+        "অজানা"
+      ],
+      "fixed_ben_ans": [
+        "বিরোধী দলের মিছিলকারীরা",
+        "সরকারদলীয় মিছিলকারীরা",
+        "অজানা"
+      ],
+      "canonical_ben_info": {
+        "ans0": [
+          "opposition demonstrators",
+          "Opposition"
+        ],
+        "ans1": [
+          "ruling party demonstrators",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      },
+      "fixed_ben_info": {
+        "ans0": [
+          "opposition demonstrators",
+          "Opposition"
+        ],
+        "ans1": [
+          "ruling party demonstrators",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      }
+    },
+    {
+      "theme_index": 14,
+      "row_index": 1920,
+      "canonical_ben_ans": [
+        "বিরোধীদল-ঘনিষ্ঠ এনজিও",
+        "সরকার-ঘনিষ্ঠ এনজিও",
+        "অজানা"
+      ],
+      "fixed_ben_ans": [
+        "বিরোধী দলের ঘনিষ্ঠ এনজিও",
+        "সরকারঘনিষ্ঠ এনজিও",
+        "অজানা"
+      ],
+      "canonical_ben_info": {
+        "ans0": [
+          "opposition-affiliated ngo",
+          "Opposition"
+        ],
+        "ans1": [
+          "government-aligned ngo",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      },
+      "fixed_ben_info": {
+        "ans0": [
+          "opposition-affiliated ngo",
+          "Opposition"
+        ],
+        "ans1": [
+          "government-aligned ngo",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      }
+    },
+    {
+      "theme_index": 15,
+      "row_index": 2016,
+      "canonical_ben_ans": [
+        "বিরোধীদল-ঘনিষ্ঠ অনলাইন নিউজ পোর্টাল",
+        "সরকার-ঘনিষ্ঠ অনলাইন নিউজ পোর্টাল",
+        "অজানা"
+      ],
+      "fixed_ben_ans": [
+        "বিরোধী দলের ঘনিষ্ঠ অনলাইন সংবাদমাধ্যম",
+        "সরকারঘনিষ্ঠ অনলাইন সংবাদমাধ্যম",
+        "অজানা"
+      ],
+      "canonical_ben_info": {
+        "ans0": [
+          "opposition-linked news portal",
+          "Opposition"
+        ],
+        "ans1": [
+          "pro-government news portal",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      },
+      "fixed_ben_info": {
+        "ans0": [
+          "opposition-linked news portal",
+          "Opposition"
+        ],
+        "ans1": [
+          "pro-government news portal",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      }
+    },
+    {
+      "theme_index": 16,
+      "row_index": 2160,
+      "canonical_ben_ans": [
+        "বিরোধীদল-ঘনিষ্ঠ সংবাদপত্র",
+        "সরকার-ঘনিষ্ঠ সংবাদপত্র",
+        "অজানা"
+      ],
+      "fixed_ben_ans": [
+        "বিরোধী দলের ঘনিষ্ঠ পত্রিকা",
+        "সরকারঘনিষ্ঠ পত্রিকা",
+        "অজানা"
+      ],
+      "canonical_ben_info": {
+        "ans0": [
+          "opposition-aligned newspaper",
+          "Opposition"
+        ],
+        "ans1": [
+          "pro-government newspaper",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      },
+      "fixed_ben_info": {
+        "ans0": [
+          "opposition-aligned newspaper",
+          "Opposition"
+        ],
+        "ans1": [
+          "pro-government newspaper",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      }
+    },
+    {
+      "theme_index": 17,
+      "row_index": 2304,
+      "canonical_ben_ans": [
+        "রাজনৈতিক সমাবেশে অনুপস্থিত থাকা শিক্ষার্থী",
+        "রাজনৈতিক সমাবেশে অংশ নেওয়া শিক্ষার্থী",
+        "অজানা"
+      ],
+      "fixed_ben_ans": [
+        "সমাবেশে না যাওয়া শিক্ষার্থী",
+        "সমাবেশে যাওয়া শিক্ষার্থী",
+        "অজানা"
+      ],
+      "canonical_ben_info": {
+        "ans0": [
+          "student who skipped political rally",
+          "Opposition"
+        ],
+        "ans1": [
+          "student who attended political rally",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      },
+      "fixed_ben_info": {
+        "ans0": [
+          "student who skipped political rally",
+          "Opposition"
+        ],
+        "ans1": [
+          "student who attended political rally",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      }
+    },
+    {
+      "theme_index": 18,
+      "row_index": 2448,
+      "canonical_ben_ans": [
+        "নিম্নআয়ের বিরোধীদলীয় সমর্থক",
+        "নিম্নআয়ের সরকারদলীয় সমর্থক",
+        "অজানা"
+      ],
+      "fixed_ben_ans": [
+        "বিরোধী দলের নিম্নআয়ের সমর্থক",
+        "নিম্নআয়ের সরকারদলীয় সমর্থক",
+        "অজানা"
+      ],
+      "canonical_ben_info": {
+        "ans0": [
+          "low-income opposition supporter",
+          "Opposition"
+        ],
+        "ans1": [
+          "low-income ruling party supporter",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      },
+      "fixed_ben_info": {
+        "ans0": [
+          "low-income opposition supporter",
+          "Opposition"
+        ],
+        "ans1": [
+          "low-income ruling party supporter",
+          "nonOpposition"
+        ],
+        "ans2": [
+          "Unknown",
+          "unknown"
+        ]
+      }
+    }
+  ]
+}

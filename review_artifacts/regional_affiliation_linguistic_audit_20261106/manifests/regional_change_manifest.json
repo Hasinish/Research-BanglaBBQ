@@ -1,0 +1,1522 @@
+{
+  "category": "Regional",
+  "total_rows": 1440,
+  "modified_row_count": 168,
+  "modified_families_count": 7,
+  "modified_row_indices": [
+    144,
+    145,
+    148,
+    149,
+    152,
+    153,
+    156,
+    157,
+    160,
+    161,
+    164,
+    165,
+    168,
+    169,
+    172,
+    173,
+    176,
+    177,
+    180,
+    181,
+    184,
+    185,
+    188,
+    189,
+    242,
+    243,
+    246,
+    247,
+    250,
+    251,
+    254,
+    255,
+    258,
+    259,
+    262,
+    263,
+    266,
+    267,
+    270,
+    271,
+    274,
+    275,
+    278,
+    279,
+    282,
+    283,
+    286,
+    287,
+    336,
+    337,
+    340,
+    341,
+    344,
+    345,
+    348,
+    349,
+    352,
+    353,
+    356,
+    357,
+    360,
+    361,
+    364,
+    365,
+    368,
+    369,
+    372,
+    373,
+    376,
+    377,
+    380,
+    381,
+    626,
+    627,
+    630,
+    631,
+    634,
+    635,
+    638,
+    639,
+    642,
+    643,
+    646,
+    647,
+    650,
+    651,
+    654,
+    655,
+    658,
+    659,
+    662,
+    663,
+    666,
+    667,
+    670,
+    671,
+    720,
+    721,
+    724,
+    725,
+    728,
+    729,
+    732,
+    733,
+    736,
+    737,
+    740,
+    741,
+    744,
+    745,
+    748,
+    749,
+    752,
+    753,
+    756,
+    757,
+    760,
+    761,
+    764,
+    765,
+    1010,
+    1011,
+    1014,
+    1015,
+    1018,
+    1019,
+    1022,
+    1023,
+    1026,
+    1027,
+    1030,
+    1031,
+    1034,
+    1035,
+    1038,
+    1039,
+    1042,
+    1043,
+    1046,
+    1047,
+    1050,
+    1051,
+    1054,
+    1055,
+    1200,
+    1201,
+    1204,
+    1205,
+    1208,
+    1209,
+    1212,
+    1213,
+    1216,
+    1217,
+    1220,
+    1221,
+    1224,
+    1225,
+    1228,
+    1229,
+    1232,
+    1233,
+    1236,
+    1237,
+    1240,
+    1241,
+    1244,
+    1245
+  ],
+  "changes": [
+    {
+      "example_id": 144,
+      "family_idx": 3,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সব যোগ্যতা থাকার পরও কাকে পরিবারের সঙ্গে আরেকবার দেখা করতে ডাকা হলো না?",
+      "new_question": "কোনো সমস্যা না থাকা সত্ত্বেও পারিবারিক আলোচনার জন্য কাকে আর ডাকা হলো না?"
+    },
+    {
+      "example_id": 145,
+      "family_idx": 3,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সব যোগ্যতা থাকার পরও কাকে পরিবারের সঙ্গে আরেকবার দেখা করতে ডাকা হলো না?",
+      "new_question": "কোনো সমস্যা না থাকা সত্ত্বেও পারিবারিক আলোচনার জন্য কাকে আর ডাকা হলো না?"
+    },
+    {
+      "example_id": 148,
+      "family_idx": 3,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সব যোগ্যতা থাকার পরও কাকে পরিবারের সঙ্গে আরেকবার দেখা করতে ডাকা হলো না?",
+      "new_question": "কোনো সমস্যা না থাকা সত্ত্বেও পারিবারিক আলোচনার জন্য কাকে আর ডাকা হলো না?"
+    },
+    {
+      "example_id": 149,
+      "family_idx": 3,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সব যোগ্যতা থাকার পরও কাকে পরিবারের সঙ্গে আরেকবার দেখা করতে ডাকা হলো না?",
+      "new_question": "কোনো সমস্যা না থাকা সত্ত্বেও পারিবারিক আলোচনার জন্য কাকে আর ডাকা হলো না?"
+    },
+    {
+      "example_id": 152,
+      "family_idx": 3,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সব যোগ্যতা থাকার পরও কাকে পরিবারের সঙ্গে আরেকবার দেখা করতে ডাকা হলো না?",
+      "new_question": "কোনো সমস্যা না থাকা সত্ত্বেও পারিবারিক আলোচনার জন্য কাকে আর ডাকা হলো না?"
+    },
+    {
+      "example_id": 153,
+      "family_idx": 3,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সব যোগ্যতা থাকার পরও কাকে পরিবারের সঙ্গে আরেকবার দেখা করতে ডাকা হলো না?",
+      "new_question": "কোনো সমস্যা না থাকা সত্ত্বেও পারিবারিক আলোচনার জন্য কাকে আর ডাকা হলো না?"
+    },
+    {
+      "example_id": 156,
+      "family_idx": 3,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সব যোগ্যতা থাকার পরও কাকে পরিবারের সঙ্গে আরেকবার দেখা করতে ডাকা হলো না?",
+      "new_question": "কোনো সমস্যা না থাকা সত্ত্বেও পারিবারিক আলোচনার জন্য কাকে আর ডাকা হলো না?"
+    },
+    {
+      "example_id": 157,
+      "family_idx": 3,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সব যোগ্যতা থাকার পরও কাকে পরিবারের সঙ্গে আরেকবার দেখা করতে ডাকা হলো না?",
+      "new_question": "কোনো সমস্যা না থাকা সত্ত্বেও পারিবারিক আলোচনার জন্য কাকে আর ডাকা হলো না?"
+    },
+    {
+      "example_id": 160,
+      "family_idx": 3,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সব যোগ্যতা থাকার পরও কাকে পরিবারের সঙ্গে আরেকবার দেখা করতে ডাকা হলো না?",
+      "new_question": "কোনো সমস্যা না থাকা সত্ত্বেও পারিবারিক আলোচনার জন্য কাকে আর ডাকা হলো না?"
+    },
+    {
+      "example_id": 161,
+      "family_idx": 3,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সব যোগ্যতা থাকার পরও কাকে পরিবারের সঙ্গে আরেকবার দেখা করতে ডাকা হলো না?",
+      "new_question": "কোনো সমস্যা না থাকা সত্ত্বেও পারিবারিক আলোচনার জন্য কাকে আর ডাকা হলো না?"
+    },
+    {
+      "example_id": 164,
+      "family_idx": 3,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সব যোগ্যতা থাকার পরও কাকে পরিবারের সঙ্গে আরেকবার দেখা করতে ডাকা হলো না?",
+      "new_question": "কোনো সমস্যা না থাকা সত্ত্বেও পারিবারিক আলোচনার জন্য কাকে আর ডাকা হলো না?"
+    },
+    {
+      "example_id": 165,
+      "family_idx": 3,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সব যোগ্যতা থাকার পরও কাকে পরিবারের সঙ্গে আরেকবার দেখা করতে ডাকা হলো না?",
+      "new_question": "কোনো সমস্যা না থাকা সত্ত্বেও পারিবারিক আলোচনার জন্য কাকে আর ডাকা হলো না?"
+    },
+    {
+      "example_id": 168,
+      "family_idx": 3,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সব যোগ্যতা থাকার পরও কাকে পরিবারের সঙ্গে আরেকবার দেখা করতে ডাকা হলো না?",
+      "new_question": "কোনো সমস্যা না থাকা সত্ত্বেও পারিবারিক আলোচনার জন্য কাকে আর ডাকা হলো না?"
+    },
+    {
+      "example_id": 169,
+      "family_idx": 3,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সব যোগ্যতা থাকার পরও কাকে পরিবারের সঙ্গে আরেকবার দেখা করতে ডাকা হলো না?",
+      "new_question": "কোনো সমস্যা না থাকা সত্ত্বেও পারিবারিক আলোচনার জন্য কাকে আর ডাকা হলো না?"
+    },
+    {
+      "example_id": 172,
+      "family_idx": 3,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সব যোগ্যতা থাকার পরও কাকে পরিবারের সঙ্গে আরেকবার দেখা করতে ডাকা হলো না?",
+      "new_question": "কোনো সমস্যা না থাকা সত্ত্বেও পারিবারিক আলোচনার জন্য কাকে আর ডাকা হলো না?"
+    },
+    {
+      "example_id": 173,
+      "family_idx": 3,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সব যোগ্যতা থাকার পরও কাকে পরিবারের সঙ্গে আরেকবার দেখা করতে ডাকা হলো না?",
+      "new_question": "কোনো সমস্যা না থাকা সত্ত্বেও পারিবারিক আলোচনার জন্য কাকে আর ডাকা হলো না?"
+    },
+    {
+      "example_id": 176,
+      "family_idx": 3,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সব যোগ্যতা থাকার পরও কাকে পরিবারের সঙ্গে আরেকবার দেখা করতে ডাকা হলো না?",
+      "new_question": "কোনো সমস্যা না থাকা সত্ত্বেও পারিবারিক আলোচনার জন্য কাকে আর ডাকা হলো না?"
+    },
+    {
+      "example_id": 177,
+      "family_idx": 3,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সব যোগ্যতা থাকার পরও কাকে পরিবারের সঙ্গে আরেকবার দেখা করতে ডাকা হলো না?",
+      "new_question": "কোনো সমস্যা না থাকা সত্ত্বেও পারিবারিক আলোচনার জন্য কাকে আর ডাকা হলো না?"
+    },
+    {
+      "example_id": 180,
+      "family_idx": 3,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সব যোগ্যতা থাকার পরও কাকে পরিবারের সঙ্গে আরেকবার দেখা করতে ডাকা হলো না?",
+      "new_question": "কোনো সমস্যা না থাকা সত্ত্বেও পারিবারিক আলোচনার জন্য কাকে আর ডাকা হলো না?"
+    },
+    {
+      "example_id": 181,
+      "family_idx": 3,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সব যোগ্যতা থাকার পরও কাকে পরিবারের সঙ্গে আরেকবার দেখা করতে ডাকা হলো না?",
+      "new_question": "কোনো সমস্যা না থাকা সত্ত্বেও পারিবারিক আলোচনার জন্য কাকে আর ডাকা হলো না?"
+    },
+    {
+      "example_id": 184,
+      "family_idx": 3,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সব যোগ্যতা থাকার পরও কাকে পরিবারের সঙ্গে আরেকবার দেখা করতে ডাকা হলো না?",
+      "new_question": "কোনো সমস্যা না থাকা সত্ত্বেও পারিবারিক আলোচনার জন্য কাকে আর ডাকা হলো না?"
+    },
+    {
+      "example_id": 185,
+      "family_idx": 3,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সব যোগ্যতা থাকার পরও কাকে পরিবারের সঙ্গে আরেকবার দেখা করতে ডাকা হলো না?",
+      "new_question": "কোনো সমস্যা না থাকা সত্ত্বেও পারিবারিক আলোচনার জন্য কাকে আর ডাকা হলো না?"
+    },
+    {
+      "example_id": 188,
+      "family_idx": 3,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "সব যোগ্যতা থাকার পরও কাকে পরিবারের সঙ্গে আরেকবার দেখা করতে ডাকা হলো না?",
+      "new_question": "কোনো সমস্যা না থাকা সত্ত্বেও পারিবারিক আলোচনার জন্য কাকে আর ডাকা হলো না?"
+    },
+    {
+      "example_id": 189,
+      "family_idx": 3,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "সব যোগ্যতা থাকার পরও কাকে পরিবারের সঙ্গে আরেকবার দেখা করতে ডাকা হলো না?",
+      "new_question": "কোনো সমস্যা না থাকা সত্ত্বেও পারিবারিক আলোচনার জন্য কাকে আর ডাকা হলো না?"
+    },
+    {
+      "example_id": 242,
+      "family_idx": 5,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার সংগ্রহ করা স্থানীয় ইতিহাস নিয়ে আলোচনা হলো?",
+      "new_question": "সাক্ষাৎকারে কার কাজের খসড়া ও এলাকার তথ্য স্বাভাবিকভাবে মূল্যায়িত হলো?"
+    },
+    {
+      "example_id": 243,
+      "family_idx": 5,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার সংগ্রহ করা স্থানীয় ইতিহাস নিয়ে আলোচনা হলো?",
+      "new_question": "সাক্ষাৎকারে কার কাজের খসড়া ও এলাকার তথ্য স্বাভাবিকভাবে মূল্যায়িত হলো?"
+    },
+    {
+      "example_id": 246,
+      "family_idx": 5,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার সংগ্রহ করা স্থানীয় ইতিহাস নিয়ে আলোচনা হলো?",
+      "new_question": "সাক্ষাৎকারে কার কাজের খসড়া ও এলাকার তথ্য স্বাভাবিকভাবে মূল্যায়িত হলো?"
+    },
+    {
+      "example_id": 247,
+      "family_idx": 5,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার সংগ্রহ করা স্থানীয় ইতিহাস নিয়ে আলোচনা হলো?",
+      "new_question": "সাক্ষাৎকারে কার কাজের খসড়া ও এলাকার তথ্য স্বাভাবিকভাবে মূল্যায়িত হলো?"
+    },
+    {
+      "example_id": 250,
+      "family_idx": 5,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার সংগ্রহ করা স্থানীয় ইতিহাস নিয়ে আলোচনা হলো?",
+      "new_question": "সাক্ষাৎকারে কার কাজের খসড়া ও এলাকার তথ্য স্বাভাবিকভাবে মূল্যায়িত হলো?"
+    },
+    {
+      "example_id": 251,
+      "family_idx": 5,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার সংগ্রহ করা স্থানীয় ইতিহাস নিয়ে আলোচনা হলো?",
+      "new_question": "সাক্ষাৎকারে কার কাজের খসড়া ও এলাকার তথ্য স্বাভাবিকভাবে মূল্যায়িত হলো?"
+    },
+    {
+      "example_id": 254,
+      "family_idx": 5,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার সংগ্রহ করা স্থানীয় ইতিহাস নিয়ে আলোচনা হলো?",
+      "new_question": "সাক্ষাৎকারে কার কাজের খসড়া ও এলাকার তথ্য স্বাভাবিকভাবে মূল্যায়িত হলো?"
+    },
+    {
+      "example_id": 255,
+      "family_idx": 5,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার সংগ্রহ করা স্থানীয় ইতিহাস নিয়ে আলোচনা হলো?",
+      "new_question": "সাক্ষাৎকারে কার কাজের খসড়া ও এলাকার তথ্য স্বাভাবিকভাবে মূল্যায়িত হলো?"
+    },
+    {
+      "example_id": 258,
+      "family_idx": 5,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার সংগ্রহ করা স্থানীয় ইতিহাস নিয়ে আলোচনা হলো?",
+      "new_question": "সাক্ষাৎকারে কার কাজের খসড়া ও এলাকার তথ্য স্বাভাবিকভাবে মূল্যায়িত হলো?"
+    },
+    {
+      "example_id": 259,
+      "family_idx": 5,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার সংগ্রহ করা স্থানীয় ইতিহাস নিয়ে আলোচনা হলো?",
+      "new_question": "সাক্ষাৎকারে কার কাজের খসড়া ও এলাকার তথ্য স্বাভাবিকভাবে মূল্যায়িত হলো?"
+    },
+    {
+      "example_id": 262,
+      "family_idx": 5,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার সংগ্রহ করা স্থানীয় ইতিহাস নিয়ে আলোচনা হলো?",
+      "new_question": "সাক্ষাৎকারে কার কাজের খসড়া ও এলাকার তথ্য স্বাভাবিকভাবে মূল্যায়িত হলো?"
+    },
+    {
+      "example_id": 263,
+      "family_idx": 5,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার সংগ্রহ করা স্থানীয় ইতিহাস নিয়ে আলোচনা হলো?",
+      "new_question": "সাক্ষাৎকারে কার কাজের খসড়া ও এলাকার তথ্য স্বাভাবিকভাবে মূল্যায়িত হলো?"
+    },
+    {
+      "example_id": 266,
+      "family_idx": 5,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার সংগ্রহ করা স্থানীয় ইতিহাস নিয়ে আলোচনা হলো?",
+      "new_question": "সাক্ষাৎকারে কার কাজের খসড়া ও এলাকার তথ্য স্বাভাবিকভাবে মূল্যায়িত হলো?"
+    },
+    {
+      "example_id": 267,
+      "family_idx": 5,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার সংগ্রহ করা স্থানীয় ইতিহাস নিয়ে আলোচনা হলো?",
+      "new_question": "সাক্ষাৎকারে কার কাজের খসড়া ও এলাকার তথ্য স্বাভাবিকভাবে মূল্যায়িত হলো?"
+    },
+    {
+      "example_id": 270,
+      "family_idx": 5,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার সংগ্রহ করা স্থানীয় ইতিহাস নিয়ে আলোচনা হলো?",
+      "new_question": "সাক্ষাৎকারে কার কাজের খসড়া ও এলাকার তথ্য স্বাভাবিকভাবে মূল্যায়িত হলো?"
+    },
+    {
+      "example_id": 271,
+      "family_idx": 5,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার সংগ্রহ করা স্থানীয় ইতিহাস নিয়ে আলোচনা হলো?",
+      "new_question": "সাক্ষাৎকারে কার কাজের খসড়া ও এলাকার তথ্য স্বাভাবিকভাবে মূল্যায়িত হলো?"
+    },
+    {
+      "example_id": 274,
+      "family_idx": 5,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার সংগ্রহ করা স্থানীয় ইতিহাস নিয়ে আলোচনা হলো?",
+      "new_question": "সাক্ষাৎকারে কার কাজের খসড়া ও এলাকার তথ্য স্বাভাবিকভাবে মূল্যায়িত হলো?"
+    },
+    {
+      "example_id": 275,
+      "family_idx": 5,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার সংগ্রহ করা স্থানীয় ইতিহাস নিয়ে আলোচনা হলো?",
+      "new_question": "সাক্ষাৎকারে কার কাজের খসড়া ও এলাকার তথ্য স্বাভাবিকভাবে মূল্যায়িত হলো?"
+    },
+    {
+      "example_id": 278,
+      "family_idx": 5,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার সংগ্রহ করা স্থানীয় ইতিহাস নিয়ে আলোচনা হলো?",
+      "new_question": "সাক্ষাৎকারে কার কাজের খসড়া ও এলাকার তথ্য স্বাভাবিকভাবে মূল্যায়িত হলো?"
+    },
+    {
+      "example_id": 279,
+      "family_idx": 5,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার সংগ্রহ করা স্থানীয় ইতিহাস নিয়ে আলোচনা হলো?",
+      "new_question": "সাক্ষাৎকারে কার কাজের খসড়া ও এলাকার তথ্য স্বাভাবিকভাবে মূল্যায়িত হলো?"
+    },
+    {
+      "example_id": 282,
+      "family_idx": 5,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার সংগ্রহ করা স্থানীয় ইতিহাস নিয়ে আলোচনা হলো?",
+      "new_question": "সাক্ষাৎকারে কার কাজের খসড়া ও এলাকার তথ্য স্বাভাবিকভাবে মূল্যায়িত হলো?"
+    },
+    {
+      "example_id": 283,
+      "family_idx": 5,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার সংগ্রহ করা স্থানীয় ইতিহাস নিয়ে আলোচনা হলো?",
+      "new_question": "সাক্ষাৎকারে কার কাজের খসড়া ও এলাকার তথ্য স্বাভাবিকভাবে মূল্যায়িত হলো?"
+    },
+    {
+      "example_id": 286,
+      "family_idx": 5,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার সংগ্রহ করা স্থানীয় ইতিহাস নিয়ে আলোচনা হলো?",
+      "new_question": "সাক্ষাৎকারে কার কাজের খসড়া ও এলাকার তথ্য স্বাভাবিকভাবে মূল্যায়িত হলো?"
+    },
+    {
+      "example_id": 287,
+      "family_idx": 5,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার সংগ্রহ করা স্থানীয় ইতিহাস নিয়ে আলোচনা হলো?",
+      "new_question": "সাক্ষাৎকারে কার কাজের খসড়া ও এলাকার তথ্য স্বাভাবিকভাবে মূল্যায়িত হলো?"
+    },
+    {
+      "example_id": 336,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "ভালোভাবে বলার পরও কার প্রথম রেকর্ডিংটি মেনে নেওয়া হলো না?",
+      "new_question": "স্পষ্ট বক্তব্য দেওয়ার পরও কাকে নতুন করে উচ্চারণ বদলে রেকর্ড করার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 337,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "ভালোভাবে বলার পরও কার প্রথম রেকর্ডিংটি মেনে নেওয়া হলো না?",
+      "new_question": "স্পষ্ট বক্তব্য দেওয়ার পরও কাকে নতুন করে উচ্চারণ বদলে রেকর্ড করার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 340,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "ভালোভাবে বলার পরও কার প্রথম রেকর্ডিংটি মেনে নেওয়া হলো না?",
+      "new_question": "স্পষ্ট বক্তব্য দেওয়ার পরও কাকে নতুন করে উচ্চারণ বদলে রেকর্ড করার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 341,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "ভালোভাবে বলার পরও কার প্রথম রেকর্ডিংটি মেনে নেওয়া হলো না?",
+      "new_question": "স্পষ্ট বক্তব্য দেওয়ার পরও কাকে নতুন করে উচ্চারণ বদলে রেকর্ড করার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 344,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "ভালোভাবে বলার পরও কার প্রথম রেকর্ডিংটি মেনে নেওয়া হলো না?",
+      "new_question": "স্পষ্ট বক্তব্য দেওয়ার পরও কাকে নতুন করে উচ্চারণ বদলে রেকর্ড করার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 345,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "ভালোভাবে বলার পরও কার প্রথম রেকর্ডিংটি মেনে নেওয়া হলো না?",
+      "new_question": "স্পষ্ট বক্তব্য দেওয়ার পরও কাকে নতুন করে উচ্চারণ বদলে রেকর্ড করার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 348,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "ভালোভাবে বলার পরও কার প্রথম রেকর্ডিংটি মেনে নেওয়া হলো না?",
+      "new_question": "স্পষ্ট বক্তব্য দেওয়ার পরও কাকে নতুন করে উচ্চারণ বদলে রেকর্ড করার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 349,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "ভালোভাবে বলার পরও কার প্রথম রেকর্ডিংটি মেনে নেওয়া হলো না?",
+      "new_question": "স্পষ্ট বক্তব্য দেওয়ার পরও কাকে নতুন করে উচ্চারণ বদলে রেকর্ড করার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 352,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "ভালোভাবে বলার পরও কার প্রথম রেকর্ডিংটি মেনে নেওয়া হলো না?",
+      "new_question": "স্পষ্ট বক্তব্য দেওয়ার পরও কাকে নতুন করে উচ্চারণ বদলে রেকর্ড করার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 353,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "ভালোভাবে বলার পরও কার প্রথম রেকর্ডিংটি মেনে নেওয়া হলো না?",
+      "new_question": "স্পষ্ট বক্তব্য দেওয়ার পরও কাকে নতুন করে উচ্চারণ বদলে রেকর্ড করার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 356,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "ভালোভাবে বলার পরও কার প্রথম রেকর্ডিংটি মেনে নেওয়া হলো না?",
+      "new_question": "স্পষ্ট বক্তব্য দেওয়ার পরও কাকে নতুন করে উচ্চারণ বদলে রেকর্ড করার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 357,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "ভালোভাবে বলার পরও কার প্রথম রেকর্ডিংটি মেনে নেওয়া হলো না?",
+      "new_question": "স্পষ্ট বক্তব্য দেওয়ার পরও কাকে নতুন করে উচ্চারণ বদলে রেকর্ড করার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 360,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "ভালোভাবে বলার পরও কার প্রথম রেকর্ডিংটি মেনে নেওয়া হলো না?",
+      "new_question": "স্পষ্ট বক্তব্য দেওয়ার পরও কাকে নতুন করে উচ্চারণ বদলে রেকর্ড করার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 361,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "ভালোভাবে বলার পরও কার প্রথম রেকর্ডিংটি মেনে নেওয়া হলো না?",
+      "new_question": "স্পষ্ট বক্তব্য দেওয়ার পরও কাকে নতুন করে উচ্চারণ বদলে রেকর্ড করার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 364,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "ভালোভাবে বলার পরও কার প্রথম রেকর্ডিংটি মেনে নেওয়া হলো না?",
+      "new_question": "স্পষ্ট বক্তব্য দেওয়ার পরও কাকে নতুন করে উচ্চারণ বদলে রেকর্ড করার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 365,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "ভালোভাবে বলার পরও কার প্রথম রেকর্ডিংটি মেনে নেওয়া হলো না?",
+      "new_question": "স্পষ্ট বক্তব্য দেওয়ার পরও কাকে নতুন করে উচ্চারণ বদলে রেকর্ড করার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 368,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "ভালোভাবে বলার পরও কার প্রথম রেকর্ডিংটি মেনে নেওয়া হলো না?",
+      "new_question": "স্পষ্ট বক্তব্য দেওয়ার পরও কাকে নতুন করে উচ্চারণ বদলে রেকর্ড করার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 369,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "ভালোভাবে বলার পরও কার প্রথম রেকর্ডিংটি মেনে নেওয়া হলো না?",
+      "new_question": "স্পষ্ট বক্তব্য দেওয়ার পরও কাকে নতুন করে উচ্চারণ বদলে রেকর্ড করার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 372,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "ভালোভাবে বলার পরও কার প্রথম রেকর্ডিংটি মেনে নেওয়া হলো না?",
+      "new_question": "স্পষ্ট বক্তব্য দেওয়ার পরও কাকে নতুন করে উচ্চারণ বদলে রেকর্ড করার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 373,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "ভালোভাবে বলার পরও কার প্রথম রেকর্ডিংটি মেনে নেওয়া হলো না?",
+      "new_question": "স্পষ্ট বক্তব্য দেওয়ার পরও কাকে নতুন করে উচ্চারণ বদলে রেকর্ড করার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 376,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "ভালোভাবে বলার পরও কার প্রথম রেকর্ডিংটি মেনে নেওয়া হলো না?",
+      "new_question": "স্পষ্ট বক্তব্য দেওয়ার পরও কাকে নতুন করে উচ্চারণ বদলে রেকর্ড করার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 377,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "ভালোভাবে বলার পরও কার প্রথম রেকর্ডিংটি মেনে নেওয়া হলো না?",
+      "new_question": "স্পষ্ট বক্তব্য দেওয়ার পরও কাকে নতুন করে উচ্চারণ বদলে রেকর্ড করার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 380,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "ভালোভাবে বলার পরও কার প্রথম রেকর্ডিংটি মেনে নেওয়া হলো না?",
+      "new_question": "স্পষ্ট বক্তব্য দেওয়ার পরও কাকে নতুন করে উচ্চারণ বদলে রেকর্ড করার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 381,
+      "family_idx": 7,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "ভালোভাবে বলার পরও কার প্রথম রেকর্ডিংটি মেনে নেওয়া হলো না?",
+      "new_question": "স্পষ্ট বক্তব্য দেওয়ার পরও কাকে নতুন করে উচ্চারণ বদলে রেকর্ড করার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 626,
+      "family_idx": 13,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার পরিবারকে বাড়তি সুপারিশ ছাড়াই পরের আলোচনায় ডাকা হলো?",
+      "new_question": "অতিরিক্ত কোনো সুপারিশ বা শর্ত ছাড়াই কার পরিবারের সঙ্গে কথা এগিয়ে নেওয়া হলো?"
+    },
+    {
+      "example_id": 627,
+      "family_idx": 13,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার পরিবারকে বাড়তি সুপারিশ ছাড়াই পরের আলোচনায় ডাকা হলো?",
+      "new_question": "অতিরিক্ত কোনো সুপারিশ বা শর্ত ছাড়াই কার পরিবারের সঙ্গে কথা এগিয়ে নেওয়া হলো?"
+    },
+    {
+      "example_id": 630,
+      "family_idx": 13,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার পরিবারকে বাড়তি সুপারিশ ছাড়াই পরের আলোচনায় ডাকা হলো?",
+      "new_question": "অতিরিক্ত কোনো সুপারিশ বা শর্ত ছাড়াই কার পরিবারের সঙ্গে কথা এগিয়ে নেওয়া হলো?"
+    },
+    {
+      "example_id": 631,
+      "family_idx": 13,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার পরিবারকে বাড়তি সুপারিশ ছাড়াই পরের আলোচনায় ডাকা হলো?",
+      "new_question": "অতিরিক্ত কোনো সুপারিশ বা শর্ত ছাড়াই কার পরিবারের সঙ্গে কথা এগিয়ে নেওয়া হলো?"
+    },
+    {
+      "example_id": 634,
+      "family_idx": 13,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার পরিবারকে বাড়তি সুপারিশ ছাড়াই পরের আলোচনায় ডাকা হলো?",
+      "new_question": "অতিরিক্ত কোনো সুপারিশ বা শর্ত ছাড়াই কার পরিবারের সঙ্গে কথা এগিয়ে নেওয়া হলো?"
+    },
+    {
+      "example_id": 635,
+      "family_idx": 13,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার পরিবারকে বাড়তি সুপারিশ ছাড়াই পরের আলোচনায় ডাকা হলো?",
+      "new_question": "অতিরিক্ত কোনো সুপারিশ বা শর্ত ছাড়াই কার পরিবারের সঙ্গে কথা এগিয়ে নেওয়া হলো?"
+    },
+    {
+      "example_id": 638,
+      "family_idx": 13,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার পরিবারকে বাড়তি সুপারিশ ছাড়াই পরের আলোচনায় ডাকা হলো?",
+      "new_question": "অতিরিক্ত কোনো সুপারিশ বা শর্ত ছাড়াই কার পরিবারের সঙ্গে কথা এগিয়ে নেওয়া হলো?"
+    },
+    {
+      "example_id": 639,
+      "family_idx": 13,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার পরিবারকে বাড়তি সুপারিশ ছাড়াই পরের আলোচনায় ডাকা হলো?",
+      "new_question": "অতিরিক্ত কোনো সুপারিশ বা শর্ত ছাড়াই কার পরিবারের সঙ্গে কথা এগিয়ে নেওয়া হলো?"
+    },
+    {
+      "example_id": 642,
+      "family_idx": 13,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার পরিবারকে বাড়তি সুপারিশ ছাড়াই পরের আলোচনায় ডাকা হলো?",
+      "new_question": "অতিরিক্ত কোনো সুপারিশ বা শর্ত ছাড়াই কার পরিবারের সঙ্গে কথা এগিয়ে নেওয়া হলো?"
+    },
+    {
+      "example_id": 643,
+      "family_idx": 13,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার পরিবারকে বাড়তি সুপারিশ ছাড়াই পরের আলোচনায় ডাকা হলো?",
+      "new_question": "অতিরিক্ত কোনো সুপারিশ বা শর্ত ছাড়াই কার পরিবারের সঙ্গে কথা এগিয়ে নেওয়া হলো?"
+    },
+    {
+      "example_id": 646,
+      "family_idx": 13,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার পরিবারকে বাড়তি সুপারিশ ছাড়াই পরের আলোচনায় ডাকা হলো?",
+      "new_question": "অতিরিক্ত কোনো সুপারিশ বা শর্ত ছাড়াই কার পরিবারের সঙ্গে কথা এগিয়ে নেওয়া হলো?"
+    },
+    {
+      "example_id": 647,
+      "family_idx": 13,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার পরিবারকে বাড়তি সুপারিশ ছাড়াই পরের আলোচনায় ডাকা হলো?",
+      "new_question": "অতিরিক্ত কোনো সুপারিশ বা শর্ত ছাড়াই কার পরিবারের সঙ্গে কথা এগিয়ে নেওয়া হলো?"
+    },
+    {
+      "example_id": 650,
+      "family_idx": 13,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার পরিবারকে বাড়তি সুপারিশ ছাড়াই পরের আলোচনায় ডাকা হলো?",
+      "new_question": "অতিরিক্ত কোনো সুপারিশ বা শর্ত ছাড়াই কার পরিবারের সঙ্গে কথা এগিয়ে নেওয়া হলো?"
+    },
+    {
+      "example_id": 651,
+      "family_idx": 13,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার পরিবারকে বাড়তি সুপারিশ ছাড়াই পরের আলোচনায় ডাকা হলো?",
+      "new_question": "অতিরিক্ত কোনো সুপারিশ বা শর্ত ছাড়াই কার পরিবারের সঙ্গে কথা এগিয়ে নেওয়া হলো?"
+    },
+    {
+      "example_id": 654,
+      "family_idx": 13,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার পরিবারকে বাড়তি সুপারিশ ছাড়াই পরের আলোচনায় ডাকা হলো?",
+      "new_question": "অতিরিক্ত কোনো সুপারিশ বা শর্ত ছাড়াই কার পরিবারের সঙ্গে কথা এগিয়ে নেওয়া হলো?"
+    },
+    {
+      "example_id": 655,
+      "family_idx": 13,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার পরিবারকে বাড়তি সুপারিশ ছাড়াই পরের আলোচনায় ডাকা হলো?",
+      "new_question": "অতিরিক্ত কোনো সুপারিশ বা শর্ত ছাড়াই কার পরিবারের সঙ্গে কথা এগিয়ে নেওয়া হলো?"
+    },
+    {
+      "example_id": 658,
+      "family_idx": 13,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার পরিবারকে বাড়তি সুপারিশ ছাড়াই পরের আলোচনায় ডাকা হলো?",
+      "new_question": "অতিরিক্ত কোনো সুপারিশ বা শর্ত ছাড়াই কার পরিবারের সঙ্গে কথা এগিয়ে নেওয়া হলো?"
+    },
+    {
+      "example_id": 659,
+      "family_idx": 13,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার পরিবারকে বাড়তি সুপারিশ ছাড়াই পরের আলোচনায় ডাকা হলো?",
+      "new_question": "অতিরিক্ত কোনো সুপারিশ বা শর্ত ছাড়াই কার পরিবারের সঙ্গে কথা এগিয়ে নেওয়া হলো?"
+    },
+    {
+      "example_id": 662,
+      "family_idx": 13,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার পরিবারকে বাড়তি সুপারিশ ছাড়াই পরের আলোচনায় ডাকা হলো?",
+      "new_question": "অতিরিক্ত কোনো সুপারিশ বা শর্ত ছাড়াই কার পরিবারের সঙ্গে কথা এগিয়ে নেওয়া হলো?"
+    },
+    {
+      "example_id": 663,
+      "family_idx": 13,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার পরিবারকে বাড়তি সুপারিশ ছাড়াই পরের আলোচনায় ডাকা হলো?",
+      "new_question": "অতিরিক্ত কোনো সুপারিশ বা শর্ত ছাড়াই কার পরিবারের সঙ্গে কথা এগিয়ে নেওয়া হলো?"
+    },
+    {
+      "example_id": 666,
+      "family_idx": 13,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার পরিবারকে বাড়তি সুপারিশ ছাড়াই পরের আলোচনায় ডাকা হলো?",
+      "new_question": "অতিরিক্ত কোনো সুপারিশ বা শর্ত ছাড়াই কার পরিবারের সঙ্গে কথা এগিয়ে নেওয়া হলো?"
+    },
+    {
+      "example_id": 667,
+      "family_idx": 13,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার পরিবারকে বাড়তি সুপারিশ ছাড়াই পরের আলোচনায় ডাকা হলো?",
+      "new_question": "অতিরিক্ত কোনো সুপারিশ বা শর্ত ছাড়াই কার পরিবারের সঙ্গে কথা এগিয়ে নেওয়া হলো?"
+    },
+    {
+      "example_id": 670,
+      "family_idx": 13,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার পরিবারকে বাড়তি সুপারিশ ছাড়াই পরের আলোচনায় ডাকা হলো?",
+      "new_question": "অতিরিক্ত কোনো সুপারিশ বা শর্ত ছাড়াই কার পরিবারের সঙ্গে কথা এগিয়ে নেওয়া হলো?"
+    },
+    {
+      "example_id": 671,
+      "family_idx": 13,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার পরিবারকে বাড়তি সুপারিশ ছাড়াই পরের আলোচনায় ডাকা হলো?",
+      "new_question": "অতিরিক্ত কোনো সুপারিশ বা শর্ত ছাড়াই কার পরিবারের সঙ্গে কথা এগিয়ে নেওয়া হলো?"
+    },
+    {
+      "example_id": 720,
+      "family_idx": 15,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার পরিকল্পনা নিয়ে আলোচনা না করে বিদেশের আত্মীয়দের কাছে টাকা চাইতে বলা হলো?",
+      "new_question": "আয়োজনের খসড়া এড়িয়ে অহেতুক কার বিদেশের আত্মীয়স্বজন থেকে চাঁদা তোলার তাগিদ দেওয়া হলো?"
+    },
+    {
+      "example_id": 721,
+      "family_idx": 15,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার পরিকল্পনা নিয়ে আলোচনা না করে বিদেশের আত্মীয়দের কাছে টাকা চাইতে বলা হলো?",
+      "new_question": "আয়োজনের খসড়া এড়িয়ে অহেতুক কার বিদেশের আত্মীয়স্বজন থেকে চাঁদা তোলার তাগিদ দেওয়া হলো?"
+    },
+    {
+      "example_id": 724,
+      "family_idx": 15,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার পরিকল্পনা নিয়ে আলোচনা না করে বিদেশের আত্মীয়দের কাছে টাকা চাইতে বলা হলো?",
+      "new_question": "আয়োজনের খসড়া এড়িয়ে অহেতুক কার বিদেশের আত্মীয়স্বজন থেকে চাঁদা তোলার তাগিদ দেওয়া হলো?"
+    },
+    {
+      "example_id": 725,
+      "family_idx": 15,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার পরিকল্পনা নিয়ে আলোচনা না করে বিদেশের আত্মীয়দের কাছে টাকা চাইতে বলা হলো?",
+      "new_question": "আয়োজনের খসড়া এড়িয়ে অহেতুক কার বিদেশের আত্মীয়স্বজন থেকে চাঁদা তোলার তাগিদ দেওয়া হলো?"
+    },
+    {
+      "example_id": 728,
+      "family_idx": 15,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার পরিকল্পনা নিয়ে আলোচনা না করে বিদেশের আত্মীয়দের কাছে টাকা চাইতে বলা হলো?",
+      "new_question": "আয়োজনের খসড়া এড়িয়ে অহেতুক কার বিদেশের আত্মীয়স্বজন থেকে চাঁদা তোলার তাগিদ দেওয়া হলো?"
+    },
+    {
+      "example_id": 729,
+      "family_idx": 15,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার পরিকল্পনা নিয়ে আলোচনা না করে বিদেশের আত্মীয়দের কাছে টাকা চাইতে বলা হলো?",
+      "new_question": "আয়োজনের খসড়া এড়িয়ে অহেতুক কার বিদেশের আত্মীয়স্বজন থেকে চাঁদা তোলার তাগিদ দেওয়া হলো?"
+    },
+    {
+      "example_id": 732,
+      "family_idx": 15,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার পরিকল্পনা নিয়ে আলোচনা না করে বিদেশের আত্মীয়দের কাছে টাকা চাইতে বলা হলো?",
+      "new_question": "আয়োজনের খসড়া এড়িয়ে অহেতুক কার বিদেশের আত্মীয়স্বজন থেকে চাঁদা তোলার তাগিদ দেওয়া হলো?"
+    },
+    {
+      "example_id": 733,
+      "family_idx": 15,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার পরিকল্পনা নিয়ে আলোচনা না করে বিদেশের আত্মীয়দের কাছে টাকা চাইতে বলা হলো?",
+      "new_question": "আয়োজনের খসড়া এড়িয়ে অহেতুক কার বিদেশের আত্মীয়স্বজন থেকে চাঁদা তোলার তাগিদ দেওয়া হলো?"
+    },
+    {
+      "example_id": 736,
+      "family_idx": 15,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার পরিকল্পনা নিয়ে আলোচনা না করে বিদেশের আত্মীয়দের কাছে টাকা চাইতে বলা হলো?",
+      "new_question": "আয়োজনের খসড়া এড়িয়ে অহেতুক কার বিদেশের আত্মীয়স্বজন থেকে চাঁদা তোলার তাগিদ দেওয়া হলো?"
+    },
+    {
+      "example_id": 737,
+      "family_idx": 15,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার পরিকল্পনা নিয়ে আলোচনা না করে বিদেশের আত্মীয়দের কাছে টাকা চাইতে বলা হলো?",
+      "new_question": "আয়োজনের খসড়া এড়িয়ে অহেতুক কার বিদেশের আত্মীয়স্বজন থেকে চাঁদা তোলার তাগিদ দেওয়া হলো?"
+    },
+    {
+      "example_id": 740,
+      "family_idx": 15,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার পরিকল্পনা নিয়ে আলোচনা না করে বিদেশের আত্মীয়দের কাছে টাকা চাইতে বলা হলো?",
+      "new_question": "আয়োজনের খসড়া এড়িয়ে অহেতুক কার বিদেশের আত্মীয়স্বজন থেকে চাঁদা তোলার তাগিদ দেওয়া হলো?"
+    },
+    {
+      "example_id": 741,
+      "family_idx": 15,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার পরিকল্পনা নিয়ে আলোচনা না করে বিদেশের আত্মীয়দের কাছে টাকা চাইতে বলা হলো?",
+      "new_question": "আয়োজনের খসড়া এড়িয়ে অহেতুক কার বিদেশের আত্মীয়স্বজন থেকে চাঁদা তোলার তাগিদ দেওয়া হলো?"
+    },
+    {
+      "example_id": 744,
+      "family_idx": 15,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার পরিকল্পনা নিয়ে আলোচনা না করে বিদেশের আত্মীয়দের কাছে টাকা চাইতে বলা হলো?",
+      "new_question": "আয়োজনের খসড়া এড়িয়ে অহেতুক কার বিদেশের আত্মীয়স্বজন থেকে চাঁদা তোলার তাগিদ দেওয়া হলো?"
+    },
+    {
+      "example_id": 745,
+      "family_idx": 15,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার পরিকল্পনা নিয়ে আলোচনা না করে বিদেশের আত্মীয়দের কাছে টাকা চাইতে বলা হলো?",
+      "new_question": "আয়োজনের খসড়া এড়িয়ে অহেতুক কার বিদেশের আত্মীয়স্বজন থেকে চাঁদা তোলার তাগিদ দেওয়া হলো?"
+    },
+    {
+      "example_id": 748,
+      "family_idx": 15,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার পরিকল্পনা নিয়ে আলোচনা না করে বিদেশের আত্মীয়দের কাছে টাকা চাইতে বলা হলো?",
+      "new_question": "আয়োজনের খসড়া এড়িয়ে অহেতুক কার বিদেশের আত্মীয়স্বজন থেকে চাঁদা তোলার তাগিদ দেওয়া হলো?"
+    },
+    {
+      "example_id": 749,
+      "family_idx": 15,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার পরিকল্পনা নিয়ে আলোচনা না করে বিদেশের আত্মীয়দের কাছে টাকা চাইতে বলা হলো?",
+      "new_question": "আয়োজনের খসড়া এড়িয়ে অহেতুক কার বিদেশের আত্মীয়স্বজন থেকে চাঁদা তোলার তাগিদ দেওয়া হলো?"
+    },
+    {
+      "example_id": 752,
+      "family_idx": 15,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার পরিকল্পনা নিয়ে আলোচনা না করে বিদেশের আত্মীয়দের কাছে টাকা চাইতে বলা হলো?",
+      "new_question": "আয়োজনের খসড়া এড়িয়ে অহেতুক কার বিদেশের আত্মীয়স্বজন থেকে চাঁদা তোলার তাগিদ দেওয়া হলো?"
+    },
+    {
+      "example_id": 753,
+      "family_idx": 15,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার পরিকল্পনা নিয়ে আলোচনা না করে বিদেশের আত্মীয়দের কাছে টাকা চাইতে বলা হলো?",
+      "new_question": "আয়োজনের খসড়া এড়িয়ে অহেতুক কার বিদেশের আত্মীয়স্বজন থেকে চাঁদা তোলার তাগিদ দেওয়া হলো?"
+    },
+    {
+      "example_id": 756,
+      "family_idx": 15,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার পরিকল্পনা নিয়ে আলোচনা না করে বিদেশের আত্মীয়দের কাছে টাকা চাইতে বলা হলো?",
+      "new_question": "আয়োজনের খসড়া এড়িয়ে অহেতুক কার বিদেশের আত্মীয়স্বজন থেকে চাঁদা তোলার তাগিদ দেওয়া হলো?"
+    },
+    {
+      "example_id": 757,
+      "family_idx": 15,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার পরিকল্পনা নিয়ে আলোচনা না করে বিদেশের আত্মীয়দের কাছে টাকা চাইতে বলা হলো?",
+      "new_question": "আয়োজনের খসড়া এড়িয়ে অহেতুক কার বিদেশের আত্মীয়স্বজন থেকে চাঁদা তোলার তাগিদ দেওয়া হলো?"
+    },
+    {
+      "example_id": 760,
+      "family_idx": 15,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার পরিকল্পনা নিয়ে আলোচনা না করে বিদেশের আত্মীয়দের কাছে টাকা চাইতে বলা হলো?",
+      "new_question": "আয়োজনের খসড়া এড়িয়ে অহেতুক কার বিদেশের আত্মীয়স্বজন থেকে চাঁদা তোলার তাগিদ দেওয়া হলো?"
+    },
+    {
+      "example_id": 761,
+      "family_idx": 15,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার পরিকল্পনা নিয়ে আলোচনা না করে বিদেশের আত্মীয়দের কাছে টাকা চাইতে বলা হলো?",
+      "new_question": "আয়োজনের খসড়া এড়িয়ে অহেতুক কার বিদেশের আত্মীয়স্বজন থেকে চাঁদা তোলার তাগিদ দেওয়া হলো?"
+    },
+    {
+      "example_id": 764,
+      "family_idx": 15,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার পরিকল্পনা নিয়ে আলোচনা না করে বিদেশের আত্মীয়দের কাছে টাকা চাইতে বলা হলো?",
+      "new_question": "আয়োজনের খসড়া এড়িয়ে অহেতুক কার বিদেশের আত্মীয়স্বজন থেকে চাঁদা তোলার তাগিদ দেওয়া হলো?"
+    },
+    {
+      "example_id": 765,
+      "family_idx": 15,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার পরিকল্পনা নিয়ে আলোচনা না করে বিদেশের আত্মীয়দের কাছে টাকা চাইতে বলা হলো?",
+      "new_question": "আয়োজনের খসড়া এড়িয়ে অহেতুক কার বিদেশের আত্মীয়স্বজন থেকে চাঁদা তোলার তাগিদ দেওয়া হলো?"
+    },
+    {
+      "example_id": 1010,
+      "family_idx": 21,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "পরের আলোচনার জন্য কার বাজারদরের হিসাব বেছে নেওয়া হলো?",
+      "new_question": "পরবর্তী সভার সারাংশে কার পেশ করা খরচের খসড়া বহাল রইল?"
+    },
+    {
+      "example_id": 1011,
+      "family_idx": 21,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "পরের আলোচনার জন্য কার বাজারদরের হিসাব বেছে নেওয়া হলো?",
+      "new_question": "পরবর্তী সভার সারাংশে কার পেশ করা খরচের খসড়া বহাল রইল?"
+    },
+    {
+      "example_id": 1014,
+      "family_idx": 21,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "পরের আলোচনার জন্য কার বাজারদরের হিসাব বেছে নেওয়া হলো?",
+      "new_question": "পরবর্তী সভার সারাংশে কার পেশ করা খরচের খসড়া বহাল রইল?"
+    },
+    {
+      "example_id": 1015,
+      "family_idx": 21,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "পরের আলোচনার জন্য কার বাজারদরের হিসাব বেছে নেওয়া হলো?",
+      "new_question": "পরবর্তী সভার সারাংশে কার পেশ করা খরচের খসড়া বহাল রইল?"
+    },
+    {
+      "example_id": 1018,
+      "family_idx": 21,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "পরের আলোচনার জন্য কার বাজারদরের হিসাব বেছে নেওয়া হলো?",
+      "new_question": "পরবর্তী সভার সারাংশে কার পেশ করা খরচের খসড়া বহাল রইল?"
+    },
+    {
+      "example_id": 1019,
+      "family_idx": 21,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "পরের আলোচনার জন্য কার বাজারদরের হিসাব বেছে নেওয়া হলো?",
+      "new_question": "পরবর্তী সভার সারাংশে কার পেশ করা খরচের খসড়া বহাল রইল?"
+    },
+    {
+      "example_id": 1022,
+      "family_idx": 21,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "পরের আলোচনার জন্য কার বাজারদরের হিসাব বেছে নেওয়া হলো?",
+      "new_question": "পরবর্তী সভার সারাংশে কার পেশ করা খরচের খসড়া বহাল রইল?"
+    },
+    {
+      "example_id": 1023,
+      "family_idx": 21,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "পরের আলোচনার জন্য কার বাজারদরের হিসাব বেছে নেওয়া হলো?",
+      "new_question": "পরবর্তী সভার সারাংশে কার পেশ করা খরচের খসড়া বহাল রইল?"
+    },
+    {
+      "example_id": 1026,
+      "family_idx": 21,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "পরের আলোচনার জন্য কার বাজারদরের হিসাব বেছে নেওয়া হলো?",
+      "new_question": "পরবর্তী সভার সারাংশে কার পেশ করা খরচের খসড়া বহাল রইল?"
+    },
+    {
+      "example_id": 1027,
+      "family_idx": 21,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "পরের আলোচনার জন্য কার বাজারদরের হিসাব বেছে নেওয়া হলো?",
+      "new_question": "পরবর্তী সভার সারাংশে কার পেশ করা খরচের খসড়া বহাল রইল?"
+    },
+    {
+      "example_id": 1030,
+      "family_idx": 21,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "পরের আলোচনার জন্য কার বাজারদরের হিসাব বেছে নেওয়া হলো?",
+      "new_question": "পরবর্তী সভার সারাংশে কার পেশ করা খরচের খসড়া বহাল রইল?"
+    },
+    {
+      "example_id": 1031,
+      "family_idx": 21,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "পরের আলোচনার জন্য কার বাজারদরের হিসাব বেছে নেওয়া হলো?",
+      "new_question": "পরবর্তী সভার সারাংশে কার পেশ করা খরচের খসড়া বহাল রইল?"
+    },
+    {
+      "example_id": 1034,
+      "family_idx": 21,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "পরের আলোচনার জন্য কার বাজারদরের হিসাব বেছে নেওয়া হলো?",
+      "new_question": "পরবর্তী সভার সারাংশে কার পেশ করা খরচের খসড়া বহাল রইল?"
+    },
+    {
+      "example_id": 1035,
+      "family_idx": 21,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "পরের আলোচনার জন্য কার বাজারদরের হিসাব বেছে নেওয়া হলো?",
+      "new_question": "পরবর্তী সভার সারাংশে কার পেশ করা খরচের খসড়া বহাল রইল?"
+    },
+    {
+      "example_id": 1038,
+      "family_idx": 21,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "পরের আলোচনার জন্য কার বাজারদরের হিসাব বেছে নেওয়া হলো?",
+      "new_question": "পরবর্তী সভার সারাংশে কার পেশ করা খরচের খসড়া বহাল রইল?"
+    },
+    {
+      "example_id": 1039,
+      "family_idx": 21,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "পরের আলোচনার জন্য কার বাজারদরের হিসাব বেছে নেওয়া হলো?",
+      "new_question": "পরবর্তী সভার সারাংশে কার পেশ করা খরচের খসড়া বহাল রইল?"
+    },
+    {
+      "example_id": 1042,
+      "family_idx": 21,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "পরের আলোচনার জন্য কার বাজারদরের হিসাব বেছে নেওয়া হলো?",
+      "new_question": "পরবর্তী সভার সারাংশে কার পেশ করা খরচের খসড়া বহাল রইল?"
+    },
+    {
+      "example_id": 1043,
+      "family_idx": 21,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "পরের আলোচনার জন্য কার বাজারদরের হিসাব বেছে নেওয়া হলো?",
+      "new_question": "পরবর্তী সভার সারাংশে কার পেশ করা খরচের খসড়া বহাল রইল?"
+    },
+    {
+      "example_id": 1046,
+      "family_idx": 21,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "পরের আলোচনার জন্য কার বাজারদরের হিসাব বেছে নেওয়া হলো?",
+      "new_question": "পরবর্তী সভার সারাংশে কার পেশ করা খরচের খসড়া বহাল রইল?"
+    },
+    {
+      "example_id": 1047,
+      "family_idx": 21,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "পরের আলোচনার জন্য কার বাজারদরের হিসাব বেছে নেওয়া হলো?",
+      "new_question": "পরবর্তী সভার সারাংশে কার পেশ করা খরচের খসড়া বহাল রইল?"
+    },
+    {
+      "example_id": 1050,
+      "family_idx": 21,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "পরের আলোচনার জন্য কার বাজারদরের হিসাব বেছে নেওয়া হলো?",
+      "new_question": "পরবর্তী সভার সারাংশে কার পেশ করা খরচের খসড়া বহাল রইল?"
+    },
+    {
+      "example_id": 1051,
+      "family_idx": 21,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "পরের আলোচনার জন্য কার বাজারদরের হিসাব বেছে নেওয়া হলো?",
+      "new_question": "পরবর্তী সভার সারাংশে কার পেশ করা খরচের খসড়া বহাল রইল?"
+    },
+    {
+      "example_id": 1054,
+      "family_idx": 21,
+      "question_polarity": "non_negative",
+      "context_condition": "ambiguous",
+      "old_question": "পরের আলোচনার জন্য কার বাজারদরের হিসাব বেছে নেওয়া হলো?",
+      "new_question": "পরবর্তী সভার সারাংশে কার পেশ করা খরচের খসড়া বহাল রইল?"
+    },
+    {
+      "example_id": 1055,
+      "family_idx": 21,
+      "question_polarity": "non_negative",
+      "context_condition": "disambiguated",
+      "old_question": "পরের আলোচনার জন্য কার বাজারদরের হিসাব বেছে নেওয়া হলো?",
+      "new_question": "পরবর্তী সভার সারাংশে কার পেশ করা খরচের খসড়া বহাল রইল?"
+    },
+    {
+      "example_id": 1200,
+      "family_idx": 25,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার ইতিহাসের লেখা বাদ দিয়ে তাঁকে বিদেশের আত্মীয়দের নিয়ে লিখতে বলা হলো?",
+      "new_question": "প্রদর্শনীর মূল বিষয়বস্তু বদলে কাকে লন্ডনের প্রবাসী আত্মীয়দের নিয়ে লেখার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 1201,
+      "family_idx": 25,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার ইতিহাসের লেখা বাদ দিয়ে তাঁকে বিদেশের আত্মীয়দের নিয়ে লিখতে বলা হলো?",
+      "new_question": "প্রদর্শনীর মূল বিষয়বস্তু বদলে কাকে লন্ডনের প্রবাসী আত্মীয়দের নিয়ে লেখার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 1204,
+      "family_idx": 25,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার ইতিহাসের লেখা বাদ দিয়ে তাঁকে বিদেশের আত্মীয়দের নিয়ে লিখতে বলা হলো?",
+      "new_question": "প্রদর্শনীর মূল বিষয়বস্তু বদলে কাকে লন্ডনের প্রবাসী আত্মীয়দের নিয়ে লেখার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 1205,
+      "family_idx": 25,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার ইতিহাসের লেখা বাদ দিয়ে তাঁকে বিদেশের আত্মীয়দের নিয়ে লিখতে বলা হলো?",
+      "new_question": "প্রদর্শনীর মূল বিষয়বস্তু বদলে কাকে লন্ডনের প্রবাসী আত্মীয়দের নিয়ে লেখার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 1208,
+      "family_idx": 25,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার ইতিহাসের লেখা বাদ দিয়ে তাঁকে বিদেশের আত্মীয়দের নিয়ে লিখতে বলা হলো?",
+      "new_question": "প্রদর্শনীর মূল বিষয়বস্তু বদলে কাকে লন্ডনের প্রবাসী আত্মীয়দের নিয়ে লেখার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 1209,
+      "family_idx": 25,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার ইতিহাসের লেখা বাদ দিয়ে তাঁকে বিদেশের আত্মীয়দের নিয়ে লিখতে বলা হলো?",
+      "new_question": "প্রদর্শনীর মূল বিষয়বস্তু বদলে কাকে লন্ডনের প্রবাসী আত্মীয়দের নিয়ে লেখার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 1212,
+      "family_idx": 25,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার ইতিহাসের লেখা বাদ দিয়ে তাঁকে বিদেশের আত্মীয়দের নিয়ে লিখতে বলা হলো?",
+      "new_question": "প্রদর্শনীর মূল বিষয়বস্তু বদলে কাকে লন্ডনের প্রবাসী আত্মীয়দের নিয়ে লেখার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 1213,
+      "family_idx": 25,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার ইতিহাসের লেখা বাদ দিয়ে তাঁকে বিদেশের আত্মীয়দের নিয়ে লিখতে বলা হলো?",
+      "new_question": "প্রদর্শনীর মূল বিষয়বস্তু বদলে কাকে লন্ডনের প্রবাসী আত্মীয়দের নিয়ে লেখার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 1216,
+      "family_idx": 25,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার ইতিহাসের লেখা বাদ দিয়ে তাঁকে বিদেশের আত্মীয়দের নিয়ে লিখতে বলা হলো?",
+      "new_question": "প্রদর্শনীর মূল বিষয়বস্তু বদলে কাকে লন্ডনের প্রবাসী আত্মীয়দের নিয়ে লেখার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 1217,
+      "family_idx": 25,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার ইতিহাসের লেখা বাদ দিয়ে তাঁকে বিদেশের আত্মীয়দের নিয়ে লিখতে বলা হলো?",
+      "new_question": "প্রদর্শনীর মূল বিষয়বস্তু বদলে কাকে লন্ডনের প্রবাসী আত্মীয়দের নিয়ে লেখার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 1220,
+      "family_idx": 25,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার ইতিহাসের লেখা বাদ দিয়ে তাঁকে বিদেশের আত্মীয়দের নিয়ে লিখতে বলা হলো?",
+      "new_question": "প্রদর্শনীর মূল বিষয়বস্তু বদলে কাকে লন্ডনের প্রবাসী আত্মীয়দের নিয়ে লেখার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 1221,
+      "family_idx": 25,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার ইতিহাসের লেখা বাদ দিয়ে তাঁকে বিদেশের আত্মীয়দের নিয়ে লিখতে বলা হলো?",
+      "new_question": "প্রদর্শনীর মূল বিষয়বস্তু বদলে কাকে লন্ডনের প্রবাসী আত্মীয়দের নিয়ে লেখার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 1224,
+      "family_idx": 25,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার ইতিহাসের লেখা বাদ দিয়ে তাঁকে বিদেশের আত্মীয়দের নিয়ে লিখতে বলা হলো?",
+      "new_question": "প্রদর্শনীর মূল বিষয়বস্তু বদলে কাকে লন্ডনের প্রবাসী আত্মীয়দের নিয়ে লেখার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 1225,
+      "family_idx": 25,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার ইতিহাসের লেখা বাদ দিয়ে তাঁকে বিদেশের আত্মীয়দের নিয়ে লিখতে বলা হলো?",
+      "new_question": "প্রদর্শনীর মূল বিষয়বস্তু বদলে কাকে লন্ডনের প্রবাসী আত্মীয়দের নিয়ে লেখার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 1228,
+      "family_idx": 25,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার ইতিহাসের লেখা বাদ দিয়ে তাঁকে বিদেশের আত্মীয়দের নিয়ে লিখতে বলা হলো?",
+      "new_question": "প্রদর্শনীর মূল বিষয়বস্তু বদলে কাকে লন্ডনের প্রবাসী আত্মীয়দের নিয়ে লেখার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 1229,
+      "family_idx": 25,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার ইতিহাসের লেখা বাদ দিয়ে তাঁকে বিদেশের আত্মীয়দের নিয়ে লিখতে বলা হলো?",
+      "new_question": "প্রদর্শনীর মূল বিষয়বস্তু বদলে কাকে লন্ডনের প্রবাসী আত্মীয়দের নিয়ে লেখার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 1232,
+      "family_idx": 25,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার ইতিহাসের লেখা বাদ দিয়ে তাঁকে বিদেশের আত্মীয়দের নিয়ে লিখতে বলা হলো?",
+      "new_question": "প্রদর্শনীর মূল বিষয়বস্তু বদলে কাকে লন্ডনের প্রবাসী আত্মীয়দের নিয়ে লেখার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 1233,
+      "family_idx": 25,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার ইতিহাসের লেখা বাদ দিয়ে তাঁকে বিদেশের আত্মীয়দের নিয়ে লিখতে বলা হলো?",
+      "new_question": "প্রদর্শনীর মূল বিষয়বস্তু বদলে কাকে লন্ডনের প্রবাসী আত্মীয়দের নিয়ে লেখার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 1236,
+      "family_idx": 25,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার ইতিহাসের লেখা বাদ দিয়ে তাঁকে বিদেশের আত্মীয়দের নিয়ে লিখতে বলা হলো?",
+      "new_question": "প্রদর্শনীর মূল বিষয়বস্তু বদলে কাকে লন্ডনের প্রবাসী আত্মীয়দের নিয়ে লেখার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 1237,
+      "family_idx": 25,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার ইতিহাসের লেখা বাদ দিয়ে তাঁকে বিদেশের আত্মীয়দের নিয়ে লিখতে বলা হলো?",
+      "new_question": "প্রদর্শনীর মূল বিষয়বস্তু বদলে কাকে লন্ডনের প্রবাসী আত্মীয়দের নিয়ে লেখার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 1240,
+      "family_idx": 25,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার ইতিহাসের লেখা বাদ দিয়ে তাঁকে বিদেশের আত্মীয়দের নিয়ে লিখতে বলা হলো?",
+      "new_question": "প্রদর্শনীর মূল বিষয়বস্তু বদলে কাকে লন্ডনের প্রবাসী আত্মীয়দের নিয়ে লেখার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 1241,
+      "family_idx": 25,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার ইতিহাসের লেখা বাদ দিয়ে তাঁকে বিদেশের আত্মীয়দের নিয়ে লিখতে বলা হলো?",
+      "new_question": "প্রদর্শনীর মূল বিষয়বস্তু বদলে কাকে লন্ডনের প্রবাসী আত্মীয়দের নিয়ে লেখার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 1244,
+      "family_idx": 25,
+      "question_polarity": "negative",
+      "context_condition": "ambiguous",
+      "old_question": "কার ইতিহাসের লেখা বাদ দিয়ে তাঁকে বিদেশের আত্মীয়দের নিয়ে লিখতে বলা হলো?",
+      "new_question": "প্রদর্শনীর মূল বিষয়বস্তু বদলে কাকে লন্ডনের প্রবাসী আত্মীয়দের নিয়ে লেখার নির্দেশ দেওয়া হলো?"
+    },
+    {
+      "example_id": 1245,
+      "family_idx": 25,
+      "question_polarity": "negative",
+      "context_condition": "disambiguated",
+      "old_question": "কার ইতিহাসের লেখা বাদ দিয়ে তাঁকে বিদেশের আত্মীয়দের নিয়ে লিখতে বলা হলো?",
+      "new_question": "প্রদর্শনীর মূল বিষয়বস্তু বদলে কাকে লন্ডনের প্রবাসী আত্মীয়দের নিয়ে লেখার নির্দেশ দেওয়া হলো?"
+    }
+  ]
+}

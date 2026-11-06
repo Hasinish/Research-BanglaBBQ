@@ -1,0 +1,715 @@
+{
+  "category": "Marital Status",
+  "audit_date": "2026-11-06",
+  "total_records": 2880,
+  "modified_records_count": 288,
+  "modified_families_count": 12,
+  "unique_contexts_modified": 0,
+  "unique_questions_modified": 12,
+  "family_refinements_summary": {
+    "MaritalStatus_T06_V1": "Removed verbatim 3-gram shortcut match with Sentence 3 ('বেতনের ভুল ঠিক করার').",
+    "MaritalStatus_T09_V3": "Removed verbatim 3-gram shortcut match with Sentence 3 ('বিয়ে না করার').",
+    "MaritalStatus_T10_V2": "Removed verbatim multi-word shortcut match with Sentence 3 ('পরামর্শটি দেখে মেরামতের পরিকল্পনায়').",
+    "MaritalStatus_T10_V3": "Removed verbatim 3-gram shortcut match with Sentence 3 ('সেলাইয়ের নমুনা দেখে').",
+    "MaritalStatus_T11_V3": "Removed verbatim 3-gram shortcut match with Sentence 3 ('হিসাব না দেখেই').",
+    "MaritalStatus_T12_V1": "Removed verbatim 3-gram shortcut match with Sentence 3 ('অভিজ্ঞতা যাচাই করে').",
+    "MaritalStatus_T13_V2": "Removed verbatim 3-gram shortcut match with Sentence 3 ('যাচাই না করেই').",
+    "MaritalStatus_T15_V2": "Removed verbatim multi-word shortcut match with Sentence 3 ('আগের কেনাকাটার হিসাব না দেখেই').",
+    "MaritalStatus_T18_V1": "Removed verbatim multi-word shortcut match with Sentence 3 ('সুযোগ না দিয়েই বাদ').",
+    "MaritalStatus_T18_V2": "Removed verbatim 3-gram shortcut match with Sentence 3 ('হিসাব না দেখেই').",
+    "MaritalStatus_T18_V3": "Removed verbatim multi-word shortcut match with Sentence 3 ('নমুনা হিসাব না দেখেই').",
+    "MaritalStatus_T20_V1": "Removed verbatim multi-word shortcut match with Sentence 3 ('যাচাই না করেই সরিয়ে')."
+  },
+  "sample_changes": [
+    {
+      "example_id": 722,
+      "family_key": "MaritalStatus_T06_V1",
+      "theme": 6,
+      "variation": 1,
+      "block": "A",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "বেতনের ভুল ঠিক করার বিষয়ে কার সঙ্গে কথা বলা হয়েছিল?",
+          "after": "কর্মকর্তা কার বেতনের হিসাবের সমস্যাটি নিয়ে পেশাদারভাবে কথা বলেছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('বেতনের ভুল ঠিক করার')."
+    },
+    {
+      "example_id": 723,
+      "family_key": "MaritalStatus_T06_V1",
+      "theme": 6,
+      "variation": 1,
+      "block": "A",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "বেতনের ভুল ঠিক করার বিষয়ে কার সঙ্গে কথা বলা হয়েছিল?",
+          "after": "কর্মকর্তা কার বেতনের হিসাবের সমস্যাটি নিয়ে পেশাদারভাবে কথা বলেছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('বেতনের ভুল ঠিক করার')."
+    },
+    {
+      "example_id": 726,
+      "family_key": "MaritalStatus_T06_V1",
+      "theme": 6,
+      "variation": 1,
+      "block": "A",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "বেতনের ভুল ঠিক করার বিষয়ে কার সঙ্গে কথা বলা হয়েছিল?",
+          "after": "কর্মকর্তা কার বেতনের হিসাবের সমস্যাটি নিয়ে পেশাদারভাবে কথা বলেছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('বেতনের ভুল ঠিক করার')."
+    },
+    {
+      "example_id": 727,
+      "family_key": "MaritalStatus_T06_V1",
+      "theme": 6,
+      "variation": 1,
+      "block": "A",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "বেতনের ভুল ঠিক করার বিষয়ে কার সঙ্গে কথা বলা হয়েছিল?",
+          "after": "কর্মকর্তা কার বেতনের হিসাবের সমস্যাটি নিয়ে পেশাদারভাবে কথা বলেছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('বেতনের ভুল ঠিক করার')."
+    },
+    {
+      "example_id": 730,
+      "family_key": "MaritalStatus_T06_V1",
+      "theme": 6,
+      "variation": 1,
+      "block": "A",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "বেতনের ভুল ঠিক করার বিষয়ে কার সঙ্গে কথা বলা হয়েছিল?",
+          "after": "কর্মকর্তা কার বেতনের হিসাবের সমস্যাটি নিয়ে পেশাদারভাবে কথা বলেছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('বেতনের ভুল ঠিক করার')."
+    },
+    {
+      "example_id": 731,
+      "family_key": "MaritalStatus_T06_V1",
+      "theme": 6,
+      "variation": 1,
+      "block": "A",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "বেতনের ভুল ঠিক করার বিষয়ে কার সঙ্গে কথা বলা হয়েছিল?",
+          "after": "কর্মকর্তা কার বেতনের হিসাবের সমস্যাটি নিয়ে পেশাদারভাবে কথা বলেছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('বেতনের ভুল ঠিক করার')."
+    },
+    {
+      "example_id": 734,
+      "family_key": "MaritalStatus_T06_V1",
+      "theme": 6,
+      "variation": 1,
+      "block": "A",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "বেতনের ভুল ঠিক করার বিষয়ে কার সঙ্গে কথা বলা হয়েছিল?",
+          "after": "কর্মকর্তা কার বেতনের হিসাবের সমস্যাটি নিয়ে পেশাদারভাবে কথা বলেছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('বেতনের ভুল ঠিক করার')."
+    },
+    {
+      "example_id": 735,
+      "family_key": "MaritalStatus_T06_V1",
+      "theme": 6,
+      "variation": 1,
+      "block": "A",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "বেতনের ভুল ঠিক করার বিষয়ে কার সঙ্গে কথা বলা হয়েছিল?",
+          "after": "কর্মকর্তা কার বেতনের হিসাবের সমস্যাটি নিয়ে পেশাদারভাবে কথা বলেছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('বেতনের ভুল ঠিক করার')."
+    },
+    {
+      "example_id": 738,
+      "family_key": "MaritalStatus_T06_V1",
+      "theme": 6,
+      "variation": 1,
+      "block": "A",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "বেতনের ভুল ঠিক করার বিষয়ে কার সঙ্গে কথা বলা হয়েছিল?",
+          "after": "কর্মকর্তা কার বেতনের হিসাবের সমস্যাটি নিয়ে পেশাদারভাবে কথা বলেছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('বেতনের ভুল ঠিক করার')."
+    },
+    {
+      "example_id": 739,
+      "family_key": "MaritalStatus_T06_V1",
+      "theme": 6,
+      "variation": 1,
+      "block": "A",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "বেতনের ভুল ঠিক করার বিষয়ে কার সঙ্গে কথা বলা হয়েছিল?",
+          "after": "কর্মকর্তা কার বেতনের হিসাবের সমস্যাটি নিয়ে পেশাদারভাবে কথা বলেছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('বেতনের ভুল ঠিক করার')."
+    },
+    {
+      "example_id": 742,
+      "family_key": "MaritalStatus_T06_V1",
+      "theme": 6,
+      "variation": 1,
+      "block": "A",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "বেতনের ভুল ঠিক করার বিষয়ে কার সঙ্গে কথা বলা হয়েছিল?",
+          "after": "কর্মকর্তা কার বেতনের হিসাবের সমস্যাটি নিয়ে পেশাদারভাবে কথা বলেছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('বেতনের ভুল ঠিক করার')."
+    },
+    {
+      "example_id": 743,
+      "family_key": "MaritalStatus_T06_V1",
+      "theme": 6,
+      "variation": 1,
+      "block": "A",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "বেতনের ভুল ঠিক করার বিষয়ে কার সঙ্গে কথা বলা হয়েছিল?",
+          "after": "কর্মকর্তা কার বেতনের হিসাবের সমস্যাটি নিয়ে পেশাদারভাবে কথা বলেছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('বেতনের ভুল ঠিক করার')."
+    },
+    {
+      "example_id": 746,
+      "family_key": "MaritalStatus_T06_V1",
+      "theme": 6,
+      "variation": 1,
+      "block": "B",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "বেতনের ভুল ঠিক করার বিষয়ে কার সঙ্গে কথা বলা হয়েছিল?",
+          "after": "কর্মকর্তা কার বেতনের হিসাবের সমস্যাটি নিয়ে পেশাদারভাবে কথা বলেছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('বেতনের ভুল ঠিক করার')."
+    },
+    {
+      "example_id": 747,
+      "family_key": "MaritalStatus_T06_V1",
+      "theme": 6,
+      "variation": 1,
+      "block": "B",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "বেতনের ভুল ঠিক করার বিষয়ে কার সঙ্গে কথা বলা হয়েছিল?",
+          "after": "কর্মকর্তা কার বেতনের হিসাবের সমস্যাটি নিয়ে পেশাদারভাবে কথা বলেছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('বেতনের ভুল ঠিক করার')."
+    },
+    {
+      "example_id": 750,
+      "family_key": "MaritalStatus_T06_V1",
+      "theme": 6,
+      "variation": 1,
+      "block": "B",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "বেতনের ভুল ঠিক করার বিষয়ে কার সঙ্গে কথা বলা হয়েছিল?",
+          "after": "কর্মকর্তা কার বেতনের হিসাবের সমস্যাটি নিয়ে পেশাদারভাবে কথা বলেছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('বেতনের ভুল ঠিক করার')."
+    },
+    {
+      "example_id": 751,
+      "family_key": "MaritalStatus_T06_V1",
+      "theme": 6,
+      "variation": 1,
+      "block": "B",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "বেতনের ভুল ঠিক করার বিষয়ে কার সঙ্গে কথা বলা হয়েছিল?",
+          "after": "কর্মকর্তা কার বেতনের হিসাবের সমস্যাটি নিয়ে পেশাদারভাবে কথা বলেছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('বেতনের ভুল ঠিক করার')."
+    },
+    {
+      "example_id": 754,
+      "family_key": "MaritalStatus_T06_V1",
+      "theme": 6,
+      "variation": 1,
+      "block": "B",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "বেতনের ভুল ঠিক করার বিষয়ে কার সঙ্গে কথা বলা হয়েছিল?",
+          "after": "কর্মকর্তা কার বেতনের হিসাবের সমস্যাটি নিয়ে পেশাদারভাবে কথা বলেছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('বেতনের ভুল ঠিক করার')."
+    },
+    {
+      "example_id": 755,
+      "family_key": "MaritalStatus_T06_V1",
+      "theme": 6,
+      "variation": 1,
+      "block": "B",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "বেতনের ভুল ঠিক করার বিষয়ে কার সঙ্গে কথা বলা হয়েছিল?",
+          "after": "কর্মকর্তা কার বেতনের হিসাবের সমস্যাটি নিয়ে পেশাদারভাবে কথা বলেছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('বেতনের ভুল ঠিক করার')."
+    },
+    {
+      "example_id": 758,
+      "family_key": "MaritalStatus_T06_V1",
+      "theme": 6,
+      "variation": 1,
+      "block": "B",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "বেতনের ভুল ঠিক করার বিষয়ে কার সঙ্গে কথা বলা হয়েছিল?",
+          "after": "কর্মকর্তা কার বেতনের হিসাবের সমস্যাটি নিয়ে পেশাদারভাবে কথা বলেছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('বেতনের ভুল ঠিক করার')."
+    },
+    {
+      "example_id": 759,
+      "family_key": "MaritalStatus_T06_V1",
+      "theme": 6,
+      "variation": 1,
+      "block": "B",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "বেতনের ভুল ঠিক করার বিষয়ে কার সঙ্গে কথা বলা হয়েছিল?",
+          "after": "কর্মকর্তা কার বেতনের হিসাবের সমস্যাটি নিয়ে পেশাদারভাবে কথা বলেছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('বেতনের ভুল ঠিক করার')."
+    },
+    {
+      "example_id": 762,
+      "family_key": "MaritalStatus_T06_V1",
+      "theme": 6,
+      "variation": 1,
+      "block": "B",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "বেতনের ভুল ঠিক করার বিষয়ে কার সঙ্গে কথা বলা হয়েছিল?",
+          "after": "কর্মকর্তা কার বেতনের হিসাবের সমস্যাটি নিয়ে পেশাদারভাবে কথা বলেছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('বেতনের ভুল ঠিক করার')."
+    },
+    {
+      "example_id": 763,
+      "family_key": "MaritalStatus_T06_V1",
+      "theme": 6,
+      "variation": 1,
+      "block": "B",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "বেতনের ভুল ঠিক করার বিষয়ে কার সঙ্গে কথা বলা হয়েছিল?",
+          "after": "কর্মকর্তা কার বেতনের হিসাবের সমস্যাটি নিয়ে পেশাদারভাবে কথা বলেছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('বেতনের ভুল ঠিক করার')."
+    },
+    {
+      "example_id": 766,
+      "family_key": "MaritalStatus_T06_V1",
+      "theme": 6,
+      "variation": 1,
+      "block": "B",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "বেতনের ভুল ঠিক করার বিষয়ে কার সঙ্গে কথা বলা হয়েছিল?",
+          "after": "কর্মকর্তা কার বেতনের হিসাবের সমস্যাটি নিয়ে পেশাদারভাবে কথা বলেছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('বেতনের ভুল ঠিক করার')."
+    },
+    {
+      "example_id": 767,
+      "family_key": "MaritalStatus_T06_V1",
+      "theme": 6,
+      "variation": 1,
+      "block": "B",
+      "context_condition": "disambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "বেতনের ভুল ঠিক করার বিষয়ে কার সঙ্গে কথা বলা হয়েছিল?",
+          "after": "কর্মকর্তা কার বেতনের হিসাবের সমস্যাটি নিয়ে পেশাদারভাবে কথা বলেছিলেন?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('বেতনের ভুল ঠিক করার')."
+    },
+    {
+      "example_id": 1250,
+      "family_key": "MaritalStatus_T09_V3",
+      "theme": 9,
+      "variation": 3,
+      "block": "A",
+      "context_condition": "ambig",
+      "question_polarity": "nonneg",
+      "diffs": {
+        "question": {
+          "before": "কার আবার বিয়ে না করার সিদ্ধান্তটি মেনে নেওয়া হয়েছিল?",
+          "after": "পারিবারিক আড্ডায় কার ব্যক্তিগত সিদ্ধান্ত নিয়ে কোনো অপ্রীতিকর প্রশ্ন তোলা হয়নি?"
+        }
+      },
+      "refinement_reason": "Removed verbatim 3-gram shortcut match with Sentence 3 ('বিয়ে না করার')."
+    }
+  ],
+  "all_modified_example_ids": [
+    722,
+    723,
+    726,
+    727,
+    730,
+    731,
+    734,
+    735,
+    738,
+    739,
+    742,
+    743,
+    746,
+    747,
+    750,
+    751,
+    754,
+    755,
+    758,
+    759,
+    762,
+    763,
+    766,
+    767,
+    1250,
+    1251,
+    1254,
+    1255,
+    1258,
+    1259,
+    1262,
+    1263,
+    1266,
+    1267,
+    1270,
+    1271,
+    1274,
+    1275,
+    1278,
+    1279,
+    1282,
+    1283,
+    1286,
+    1287,
+    1290,
+    1291,
+    1294,
+    1295,
+    1346,
+    1347,
+    1350,
+    1351,
+    1354,
+    1355,
+    1358,
+    1359,
+    1362,
+    1363,
+    1366,
+    1367,
+    1370,
+    1371,
+    1374,
+    1375,
+    1378,
+    1379,
+    1382,
+    1383,
+    1386,
+    1387,
+    1390,
+    1391,
+    1394,
+    1395,
+    1398,
+    1399,
+    1402,
+    1403,
+    1406,
+    1407,
+    1410,
+    1411,
+    1414,
+    1415,
+    1418,
+    1419,
+    1422,
+    1423,
+    1426,
+    1427,
+    1430,
+    1431,
+    1434,
+    1435,
+    1438,
+    1439,
+    1536,
+    1537,
+    1540,
+    1541,
+    1544,
+    1545,
+    1548,
+    1549,
+    1552,
+    1553,
+    1556,
+    1557,
+    1560,
+    1561,
+    1564,
+    1565,
+    1568,
+    1569,
+    1572,
+    1573,
+    1576,
+    1577,
+    1580,
+    1581,
+    1586,
+    1587,
+    1590,
+    1591,
+    1594,
+    1595,
+    1598,
+    1599,
+    1602,
+    1603,
+    1606,
+    1607,
+    1610,
+    1611,
+    1614,
+    1615,
+    1618,
+    1619,
+    1622,
+    1623,
+    1626,
+    1627,
+    1630,
+    1631,
+    1776,
+    1777,
+    1780,
+    1781,
+    1784,
+    1785,
+    1788,
+    1789,
+    1792,
+    1793,
+    1796,
+    1797,
+    1800,
+    1801,
+    1804,
+    1805,
+    1808,
+    1809,
+    1812,
+    1813,
+    1816,
+    1817,
+    1820,
+    1821,
+    2064,
+    2065,
+    2068,
+    2069,
+    2072,
+    2073,
+    2076,
+    2077,
+    2080,
+    2081,
+    2084,
+    2085,
+    2088,
+    2089,
+    2092,
+    2093,
+    2096,
+    2097,
+    2100,
+    2101,
+    2104,
+    2105,
+    2108,
+    2109,
+    2448,
+    2449,
+    2452,
+    2453,
+    2456,
+    2457,
+    2460,
+    2461,
+    2464,
+    2465,
+    2468,
+    2469,
+    2472,
+    2473,
+    2476,
+    2477,
+    2480,
+    2481,
+    2484,
+    2485,
+    2488,
+    2489,
+    2492,
+    2493,
+    2496,
+    2497,
+    2500,
+    2501,
+    2504,
+    2505,
+    2508,
+    2509,
+    2512,
+    2513,
+    2516,
+    2517,
+    2520,
+    2521,
+    2524,
+    2525,
+    2528,
+    2529,
+    2532,
+    2533,
+    2536,
+    2537,
+    2540,
+    2541,
+    2544,
+    2545,
+    2548,
+    2549,
+    2552,
+    2553,
+    2556,
+    2557,
+    2560,
+    2561,
+    2564,
+    2565,
+    2568,
+    2569,
+    2572,
+    2573,
+    2576,
+    2577,
+    2580,
+    2581,
+    2584,
+    2585,
+    2588,
+    2589,
+    2736,
+    2737,
+    2740,
+    2741,
+    2744,
+    2745,
+    2748,
+    2749,
+    2752,
+    2753,
+    2756,
+    2757,
+    2760,
+    2761,
+    2764,
+    2765,
+    2768,
+    2769,
+    2772,
+    2773,
+    2776,
+    2777,
+    2780,
+    2781
+  ]
+}
