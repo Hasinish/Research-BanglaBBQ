@@ -26,3 +26,4 @@ for title in ['BanglaBBQ_ENG_Politics', 'BanglaBBQ_BEN_Politics']:
 body = {'requests': requests}
 res = service.spreadsheets().batchUpdate(spreadsheetId=SPREADSHEET_ID, body=body).execute()
 print('Successfully trimmed columns P:Z in Politics sheets:', res)
+
