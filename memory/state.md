@@ -10,7 +10,7 @@
 2. **Local Production Promotion**: Promoted all 18 audited files into `Dataset_BanglaBBQ_New/` and synchronized `fixed JsonL/`. Verified all 61,312 canonical records pass production mapping tests (`tests/test_all_61312_actual_records_mapping.py`) with 0 errors. Stored pre-promotion backup in `backups/pre_production_promotion_20261106/`.
 3. **Google Drive Synchronization (`scripts/sync_drive_dataset.py`)**: Synchronized all 24 canonical files across 12 categories in Google Drive folder `1_Ui3wfvYvEF9b8HWsMZc7QUB2iID8Ibe`. Updated 18 outdated files in-place. Certified 100% bit-for-bit MD5 checksum and SHA-256 custom property match for all 24 canonical benchmarks.
 4. **Master Google Spreadsheet Synchronization (`scripts/sync_all_18_sheets.py`)**: Synchronized all 18 worksheets (43,200 rows x 15 columns = 648,000 data cells) in master spreadsheet `1xZhhKZoZuSy-ZXAWWdhCpq9QLh705ScErcnBZacmZnY`. Exact 15-column grid bounds and bit-identical parity certified.
-5. **BDBBQ Official Publication Repo Sync (`BDBBQ-Research/BDBBQ`)**: Deployed 18 distinct commits (`945966b`..`4228ccb`) restoring accidentally wiped datasets (Health, Marital, Politics) and updating stale benchmarks with Hasin's refined native Bengali datasets. Pushed to remote `main`.
+5. **BDBBQ Official Publication Repo Sync (`BDBBQ-Research/BDBBQ`)**: Deployed 18 distinct dataset commits (`945966b`..`4228ccb`) restoring accidentally wiped datasets and updating stale benchmarks with Hasin's refined native Bengali datasets. Staged and deployed complete `analysis/` evaluation suite (`1a25550`) containing 9 model evaluators, BBQ scoring engine, target map, certified CSV/JSON results, and comprehensive README. All 19 commits pushed to remote `main`.
 
 
 

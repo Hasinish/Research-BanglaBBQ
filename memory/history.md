@@ -1,8 +1,12 @@
-- **[2026-11-06] Convo 85bdccd4-8ce6-4d6e-9150-5272d1f141b0 (Part 10 — BDBBQ-Research/BDBBQ 18-Commit Deployment)**: **Official Publication Repository Restored & Synchronized**:
+- **[2026-11-06] Convo 85bdccd4-8ce6-4d6e-9150-5272d1f141b0 (Part 10 — BDBBQ-Research/BDBBQ 19-Commit Full Deployment)**: **Official Publication Repository Restored, Updated & Analysis Suite Deployed**:
   - Identified critical data loss in `https://github.com/BDBBQ-Research/BDBBQ`: commit `d95b3e6` by a collaborator had accidentally truncated Health Status, Marital Status, and Politics to 2-byte empty files (17,286 line deletion).
-  - Deployed an automated orchestrator (`scripts/deploy_18_commits_to_bdbbq.py`) creating exactly 18 distinct, granular commits across all 9 categories (21,600 ENG + 21,600 BEN = 43,200 records).
-  - Successfully pushed all 18 commits (`945966b`..`4228ccb`) to `BDBBQ-Research/BDBBQ` on `main`. Restored missing benchmarks and updated stale files with Hasin's verified native Bangladeshi Bengali refinements.
-  - Standing by for instructions regarding the `analysis/` folder deployment.
+  - Deployed an automated orchestrator (`scripts/deploy_18_commits_to_bdbbq.py`) creating exactly 18 distinct, granular commits across all 9 categories (21,600 ENG + 21,600 BEN = 43,200 records). Pushed commits `945966b`..`4228ccb` to `main`.
+  - Staged and deployed the complete `analysis/` evaluation suite in a single atomic commit (`1a25550`):
+    - `analysis/scripts/`: `bbq_scoring_engine.py`, `modal_eval_core.py`, and 9 model evaluator scripts (Gemma 2 9B, Mistral-Nemo 12.2B, Qwen 2.5 7B, LLaMA 3.1 8B, Ministral 8B, Qwen 2.5 3B, BanglaLLM ChatML, TituLM 3B, and BanglaLLM Legacy Completion).
+    - `analysis/results/`: 20 certified CSV and JSON reports including master summary.
+    - `analysis/sidecar_stereotype_target_map.json`: 214-theme stereotype target mapping.
+    - `analysis/README.md`: Comprehensive documentation on BBQ bias metrics, benchmark results table, and reproduction instructions.
+  - Successfully pushed all 19 commits to `https://github.com/BDBBQ-Research/BDBBQ` on `main`.
 
 - **[2026-11-06] Convo 85bdccd4-8ce6-4d6e-9150-5272d1f141b0 (Part 9 — Full Production Deployment & Multi-Platform Synchronization)**: **BanglaBBQ — Local Dataset Promotion, GitHub Main, Google Drive & Master Google Spreadsheet Synchronized**:
   - **Local Promotion**: Successfully promoted all 18 audited & refined JSONL candidate datasets into canonical production directory `Dataset_BanglaBBQ_New/` and synchronized `fixed JsonL/` (43,200 records). Verified all 61,312 canonical records pass `tests/test_all_61312_actual_records_mapping.py` with 0 errors. Stored pre-promotion backup in `backups/pre_production_promotion_20261106/`.
