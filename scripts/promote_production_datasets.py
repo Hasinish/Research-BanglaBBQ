@@ -145,3 +145,4 @@ for item in PROMOTION_MAP:
     print(f"  VERIFIED {dst_ben}: {b_count} rows [✓]")
 
 print("\nAll 18 production files successfully promoted and verified!")
+

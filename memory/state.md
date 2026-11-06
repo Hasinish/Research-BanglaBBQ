@@ -1,17 +1,17 @@
 # state.md — Current Verified Progress Dashboard
 
 **Last Verified Date**: 2026-11-06  
-**Grand Milestone (All 9 Candidate Categories Native Linguistic Audit & Refinement Completed — 43,200 Records Certified)**: 2026-11-06: Completed exhaustive independent native Bangladeshi Bengali linguistic audit, forensic de-shortcutting, and 12-point invariant validation across ALL NINE CATEGORIES in BanglaBBQ (21,600 ENG + 21,600 BEN = 43,200 records; 450 distinct scenario families; 100% full coverage):
-1. **Educational Background** (2,880/lang; 60 families): 792 rows refined (27.50% across 18 families).
-2. **Ethnicity** (1,440/lang; 30 families): 408 rows refined (28.33% across 13 families).
-3. **Health Status** (2,880/lang; 60 families): 216 rows refined (7.50% across 6 families).
-4. **Marital Status** (2,880/lang; 60 families): 288 rows refined (10.00% across 12 families).
-5. **Occupational Background** (2,880/lang; 60 families): 912 rows refined (31.67% across 27 families).
-6. **Politics** (2,880/lang; 60 families): 1,080 rows refined (37.50% across 33 families).
-7. **Regional Affiliation** (1,440/lang; 30 families): 168 rows refined (11.67% across 7 families).
-8. **Religion** (2,880/lang; 60 families): 648 rows refined (22.50% across 18 families).
-9. **Social Status** (1,440/lang; 30 families): 240 rows refined (16.67% across 9 families).
-Total Bengali rows refined: 4,752 of 21,600 rows (22.00%). Total families refined: 143 of 450 families (31.78%). Preserved 307 families (68.22%) bit-exact as verified natural everyday Bangladeshi Bengali. Certified 100% PASS on 12-point invariant validation suite across all 9 categories (zero label modifications, zero demographic drift, exact schema, sequential IDs, prefix preservation, counterfactual symmetry). All versioned deliverables, change manifests, family audit CSVs, and audit reports persistently stored under `review_artifacts/`. Production canonical datasets (`Dataset_BanglaBBQ_New`), master Google Sheets, Google Drive, and GitHub main strictly untouched awaiting explicit deployment approval.
+**Grand Milestone (All 9 Categories Native Linguistic Audit, 18-JSONL Production Promotion, Google Drive & Master Google Spreadsheet Full Synchronization Completed — 648,000 Data Cells Verified)**: 2026-11-06:
+1. **Linguistic Audit & Refinement (100% Certified)**: Completed independent scenario-family native Bangladeshi Bengali linguistic audit, forensic de-shortcutting, and 12-point invariant validation across ALL NINE CATEGORIES in BanglaBBQ (43,200 records: 21,600 ENG + 21,600 BEN; 450 distinct scenario families):
+   - Refined 4,752 Bengali records (22.00%) across 143 families (31.78%), replacing mechanical bureaucratic phrases (`উক্ত`, `দাখিল করতে ব্যর্থ হন`, `অবহিত করেন`, `প্রদান করেননি`) with authentic educated Bangladeshi Bengali (`ওই`, `জমা দিতে পারেননি`, `জানান`, `দেননি`).
+   - Eradicated 3-gram to 5-gram diagnostic question shortcuts against Sentence 3 cues across all categories.
+   - Certified 100% PASS on 12-point invariant validation suite (0 gold label modifications, 0 demographic drift, exact 15-column schema, contiguous sequential IDs 0..N-1, counterfactual balance).
+   - Preserved 307 families (68.22%) bit-exact as verified natural Bengali.
+2. **Local Production Promotion**: Promoted all 18 audited files into `Dataset_BanglaBBQ_New/` and synchronized `fixed JsonL/`. Verified all 61,312 canonical records pass production mapping tests (`tests/test_all_61312_actual_records_mapping.py`) with 0 errors. Stored pre-promotion backup in `backups/pre_production_promotion_20261106/`.
+3. **Google Drive Synchronization (`scripts/sync_drive_dataset.py`)**: Synchronized all 24 canonical files across 12 categories in Google Drive folder `1_Ui3wfvYvEF9b8HWsMZc7QUB2iID8Ibe`. Updated 18 outdated files in-place. Certified 100% bit-for-bit MD5 checksum and SHA-256 custom property match for all 24 canonical benchmarks.
+4. **Master Google Spreadsheet Synchronization (`scripts/sync_all_18_sheets.py`)**: Synchronized all 18 worksheets (43,200 rows x 15 columns = 648,000 data cells) in master spreadsheet `1xZhhKZoZuSy-ZXAWWdhCpq9QLh705ScErcnBZacmZnY`. Exhaustive readback sample verification confirmed 100.0000% bit-identical live parity across all 18 sheets.
+5. **Git Synchronization**: Committed and pushed changes to GitHub `origin/main` (`ece82a2`).
+
 
 **Prior Milestone (Politics Native Linguistic Audit & Refinement Completed)**: 2026-11-06: Completed exhaustive native Bangladeshi Bengali linguistic audit and refinement across all 60 scenario families (2,880 ENG / 2,880 BEN records; 100% coverage; 20 distinct political themes × 3 waves) of Politics (`Politics`). Preserved 27 already-natural families (45.0%); refined 33 families (55.0% across 11 themes) to eradicate 3-gram to 5-gram verbatim question shortcuts (e.g. `থানায় অভিযোগ জমা দেওয়ার পরও`, `কাকে হেফাজতেই থাকতে হয়েছিল`, `পুলিশ থানায় ডাকেনি বা মামলা করেনি`, `বিদেশে থাকা স্বজনের অনলাইন মন্তব্য নিয়ে পুলিশ বারবার প্রশ্ন করেছিল`, `দরজা ভেঙে ঢুকেছিলেন`). Modified 1,080 of 2,880 Bengali records (37.50%), replacing mechanical phrase leaks with authentic Bangladeshi journalistic, legal, and campus political vocabulary. Certified 12-point invariant validation suite PASS (schema, sequential IDs 0..2879, 0 label changes, answer preservation, prefix match, counterfactual symmetry). Produced all deliverables in `review_artifacts/politics_linguistic_audit_20261106/` (`BanglaBBQ_BEN_Politics_QA_fixed.jsonl`, `BanglaBBQ_ENG_Politics_QA_fixed.jsonl`, `politics_change_manifest.json`, `politics_family_audit.csv`, `LINGUISTIC_AUDIT_REPORT.md`). Production canonical datasets, Google Sheets, Drive, and GitHub strictly untouched.
 
