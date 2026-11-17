@@ -1,0 +1,21 @@
+category,language,v2_filename,baseline_path,v1_records,v2_records,total_modified_rows,context_changes,question_changes,other_field_changes,other_field_breakdown,sample_other_field_eids
+Education,ENG,BanglaBBQ_ENG_Education_QA_fixed.jsonl,fixed JsonL\BanglaBBQ_ENG_Education_QA_fixed.jsonl,2880,2880,2880,1440,2880,0,{},{}
+Education,BEN,BanglaBBQ_BEN_Education_QA_fixed.jsonl,fixed JsonL\BanglaBBQ_BEN_Education_QA_fixed.jsonl,2880,2880,2880,1440,2880,0,{},{}
+Ethnicity,ENG,BanglaBBQ_ENG_Ethnicity_QA_fixed.jsonl,fixed JsonL\BanglaBBQ_ENG_Ethnicity_QA_fixed.jsonl,1440,1440,1392,696,1392,0,{},{}
+Ethnicity,BEN,BanglaBBQ_BEN_Ethnicity_QA_fixed.jsonl,fixed JsonL\BanglaBBQ_BEN_Ethnicity_QA_fixed.jsonl,1440,1440,1392,696,1392,0,{},{}
+HealthStatus,ENG,BanglaBBQ_ENG_HealthStatus_QA_fixed.jsonl,fixed JsonL\BanglaBBQ_ENG_HealthStatus_QA_fixed.jsonl,2880,2880,2832,1416,2832,0,{},{}
+HealthStatus,BEN,BanglaBBQ_BEN_HealthStatus_QA_fixed.jsonl,fixed JsonL\BanglaBBQ_BEN_HealthStatus_QA_fixed.jsonl,2880,2880,2832,1416,2832,0,{},{}
+MaritalStatus,ENG,BanglaBBQ_ENG_MaritalStatus_QA_fixed.jsonl,fixed JsonL\BanglaBBQ_ENG_MaritalStatus_QA_fixed.jsonl,2880,2880,2880,1440,2880,0,{},{}
+MaritalStatus,BEN,BanglaBBQ_BEN_MaritalStatus_QA_fixed.jsonl,fixed JsonL\BanglaBBQ_BEN_MaritalStatus_QA_fixed.jsonl,2880,2880,2880,1440,2880,0,{},{}
+OccupationalBackground,ENG,BanglaBBQ_ENG_OccupationalBackground_QA_fixed.jsonl,fixed JsonL\BanglaBBQ_ENG_OccupationalBackground_QA_fixed.jsonl,2880,2880,2880,1440,2880,0,{},{}
+OccupationalBackground,BEN,BanglaBBQ_BEN_OccupationalBackground_QA_fixed.jsonl,fixed JsonL\BanglaBBQ_BEN_OccupationalBackground_QA_fixed.jsonl,2880,2880,2880,1440,2880,0,{},{}
+PhysicalAppearance,ENG,BanglaBBQ_ENG_PhysicalAppearance_QA_fixed.jsonl,Dataset_BanglaBBQ_New\BanglaBBQ_PhysicalAppearance\BanglaBBQ_ENG_PhysicalAppearance.jsonl,1440,1440,1440,720,1440,0,{},{}
+PhysicalAppearance,BEN,BanglaBBQ_BEN_PhysicalAppearance_QA_fixed.jsonl,Dataset_BanglaBBQ_New\BanglaBBQ_PhysicalAppearance\BanglaBBQ_BEN_PhysicalAppearance.jsonl,1440,1440,1440,720,1440,0,{},{}
+Politics,ENG,BanglaBBQ_ENG_Politics_QA_fixed.jsonl,fixed JsonL\BanglaBBQ_ENG_Politics_QA_fixed.jsonl,2880,2880,2880,1440,2880,0,{},{}
+Politics,BEN,BanglaBBQ_BEN_Politics_QA_fixed.jsonl,fixed JsonL\BanglaBBQ_BEN_Politics_QA_fixed.jsonl,2880,2880,2880,1440,2880,0,{},{}
+Regional,ENG,BanglaBBQ_ENG_Regional_QA_fixed.jsonl,fixed JsonL\BanglaBBQ_ENG_Regional_QA_fixed.jsonl,1440,1440,1440,720,1440,0,{},{}
+Regional,BEN,BanglaBBQ_BEN_Regional_QA_fixed.jsonl,fixed JsonL\BanglaBBQ_BEN_Regional_QA_fixed.jsonl,1440,1440,1440,720,1440,0,{},{}
+Religion,ENG,BanglaBBQ_ENG_Religion_QA_fixed.jsonl,fixed JsonL\BanglaBBQ_ENG_Religion_QA_fixed.jsonl,2880,2880,2880,1440,2880,0,{},{}
+Religion,BEN,BanglaBBQ_BEN_Religion_QA_fixed.jsonl,fixed JsonL\BanglaBBQ_BEN_Religion_QA_fixed.jsonl,2880,2880,2880,1440,2880,0,{},{}
+SocialStatus,ENG,BanglaBBQ_ENG_SocialStatus_QA_fixed.jsonl,fixed JsonL\BanglaBBQ_ENG_SocialStatus_QA_fixed.jsonl,1440,1440,1440,720,1440,0,{},{}
+SocialStatus,BEN,BanglaBBQ_BEN_SocialStatus_QA_fixed.jsonl,fixed JsonL\BanglaBBQ_BEN_SocialStatus_QA_fixed.jsonl,1440,1440,1440,720,1440,0,{},{}

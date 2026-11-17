@@ -1,0 +1,165 @@
+{
+  "v2_untouched_all": true,
+  "files": {
+    "BanglaBBQ_ENG_Education_QA_fixed.jsonl": {
+      "v1_sha256": "2fdf05a428a04d6c5df3c6bcda925ff1bd4d4ff13ea9217e70046c5bd3de73d5",
+      "v2_sha256_before": "36bf8425d61faf67b509355f9c048bebd89c8db1886d30dc2574128b70bb3c7a",
+      "v2_sha256_after": "36bf8425d61faf67b509355f9c048bebd89c8db1886d30dc2574128b70bb3c7a",
+      "v2_untouched": true,
+      "v21_sha256": "36bf8425d61faf67b509355f9c048bebd89c8db1886d30dc2574128b70bb3c7a",
+      "changed_from_v2": false
+    },
+    "BanglaBBQ_BEN_Education_QA_fixed.jsonl": {
+      "v1_sha256": "00d56efae76d45b9722c383abf95bd8a0ce4f26be5b57cc6c448ce35eedcfd18",
+      "v2_sha256_before": "9f95195e2ed8a2d6509cada6c633bb90da17cf69bbca3bee0fc24eb1d74627a1",
+      "v2_sha256_after": "9f95195e2ed8a2d6509cada6c633bb90da17cf69bbca3bee0fc24eb1d74627a1",
+      "v2_untouched": true,
+      "v21_sha256": "ac3693ef9bbf3454e8de84c40c633b660b25b42948e1544bf8a88146afd59fa6",
+      "changed_from_v2": true
+    },
+    "BanglaBBQ_ENG_Ethnicity_QA_fixed.jsonl": {
+      "v1_sha256": "536493d7f3b91b816298e85abed87de489cbf11901e90170b7a2127d8bb729f9",
+      "v2_sha256_before": "f2cc1f025debd94024d04c4929c0d0fbf30ea8ee08c012d45da6091b23a09cf9",
+      "v2_sha256_after": "f2cc1f025debd94024d04c4929c0d0fbf30ea8ee08c012d45da6091b23a09cf9",
+      "v2_untouched": true,
+      "v21_sha256": "555918dc09288aeea0e52be61f6e4c08e6cbe244bae01380f0dc03932e08ff8b",
+      "changed_from_v2": true
+    },
+    "BanglaBBQ_BEN_Ethnicity_QA_fixed.jsonl": {
+      "v1_sha256": "51d7bd89d3352096cfd05fa4bfcacc6d084fe592bdfbae71050cbf69ec5dfb7d",
+      "v2_sha256_before": "bcd1a133538606a9d7bde321455428d6407549389e74c005f35b6deaf3533e2a",
+      "v2_sha256_after": "bcd1a133538606a9d7bde321455428d6407549389e74c005f35b6deaf3533e2a",
+      "v2_untouched": true,
+      "v21_sha256": "b97829e7bc97d8383dcc418799f6caaee127cdf8e7b4f42239677627dd97b21b",
+      "changed_from_v2": true
+    },
+    "BanglaBBQ_ENG_HealthStatus_QA_fixed.jsonl": {
+      "v1_sha256": "347f331af164d642ad275a990dc0855610e6ccc1a805c95fb972008edd5f214a",
+      "v2_sha256_before": "67d7c5a93c54ecc6a7353e1191829e258927d6983c5b2929d8ac4e332c6de6fd",
+      "v2_sha256_after": "67d7c5a93c54ecc6a7353e1191829e258927d6983c5b2929d8ac4e332c6de6fd",
+      "v2_untouched": true,
+      "v21_sha256": "294cfe6db06b425bab559a0c239cf957d41537a038aa0b4e4ce42f502f9c8760",
+      "changed_from_v2": true
+    },
+    "BanglaBBQ_BEN_HealthStatus_QA_fixed.jsonl": {
+      "v1_sha256": "95df708344b573a6d4c8f8c04079dbc0bf856e402cab81707022004874d5b74f",
+      "v2_sha256_before": "37f0df769586d2db7856e0db50e326a18f1b6cd7b1c4a1e5c96670423e0596dd",
+      "v2_sha256_after": "37f0df769586d2db7856e0db50e326a18f1b6cd7b1c4a1e5c96670423e0596dd",
+      "v2_untouched": true,
+      "v21_sha256": "39d8aed9146b3e492a3ff8d375376927b3c7763a416cf387f12b84f09975c892",
+      "changed_from_v2": true
+    },
+    "BanglaBBQ_ENG_MaritalStatus_QA_fixed.jsonl": {
+      "v1_sha256": "c32cb5e824cb2120e53b25fe6fe8345ef33b2461bb711b0e34dd98fdf98c951f",
+      "v2_sha256_before": "1321ebf0c313d13581c345c3fc025428f8791ba657d02108fecb2ead34e2f286",
+      "v2_sha256_after": "1321ebf0c313d13581c345c3fc025428f8791ba657d02108fecb2ead34e2f286",
+      "v2_untouched": true,
+      "v21_sha256": "02ac806d5035e52fcac79ade0191ec507c3795dabc7a9a93e82d5b76da05c3b3",
+      "changed_from_v2": true
+    },
+    "BanglaBBQ_BEN_MaritalStatus_QA_fixed.jsonl": {
+      "v1_sha256": "5d7a61d125b6aae623c5f198bbe7757a03167b7ab163689f2aba57ec1f974691",
+      "v2_sha256_before": "ca1f99c4ae5b23c05efd792007a543f65d642f9feb850f9ae36c1c86fa84d7b1",
+      "v2_sha256_after": "ca1f99c4ae5b23c05efd792007a543f65d642f9feb850f9ae36c1c86fa84d7b1",
+      "v2_untouched": true,
+      "v21_sha256": "1808a9137429db1877ecde5411e7c6b9547b24fb39ecce351a67528fb5c004f8",
+      "changed_from_v2": true
+    },
+    "BanglaBBQ_ENG_OccupationalBackground_QA_fixed.jsonl": {
+      "v1_sha256": "38b49bc0583aa29facd3c6c193793754aadae3849054b0d168ff331365edf073",
+      "v2_sha256_before": "4bddaa647c678086dced8d5251d5f56e6244019feb6a52e1aed18b8042e880f1",
+      "v2_sha256_after": "4bddaa647c678086dced8d5251d5f56e6244019feb6a52e1aed18b8042e880f1",
+      "v2_untouched": true,
+      "v21_sha256": "4bddaa647c678086dced8d5251d5f56e6244019feb6a52e1aed18b8042e880f1",
+      "changed_from_v2": false
+    },
+    "BanglaBBQ_BEN_OccupationalBackground_QA_fixed.jsonl": {
+      "v1_sha256": "fa83992ff05371fad776d6e4305988b641b75e582050b07283948ebaea562204",
+      "v2_sha256_before": "c1283d353a613b8f014f99a3ec668b7172e9894e6c236b76aeddb65a20f228f7",
+      "v2_sha256_after": "c1283d353a613b8f014f99a3ec668b7172e9894e6c236b76aeddb65a20f228f7",
+      "v2_untouched": true,
+      "v21_sha256": "b3f6caf6a939b1a7bd8ecdf76674683c87d11e40ec800c78216dd2e8176fc474",
+      "changed_from_v2": true
+    },
+    "BanglaBBQ_ENG_PhysicalAppearance_QA_fixed.jsonl": {
+      "v1_sha256": "6ba7806435d0136fb9d1918113c906841571f1d8b2df4bfc89fb667f481f946f",
+      "v2_sha256_before": "36c1b17e709cd3be9f80621a9091f2c497ecaff617d42592f96e9dd379e1ec92",
+      "v2_sha256_after": "36c1b17e709cd3be9f80621a9091f2c497ecaff617d42592f96e9dd379e1ec92",
+      "v2_untouched": true,
+      "v21_sha256": "36c1b17e709cd3be9f80621a9091f2c497ecaff617d42592f96e9dd379e1ec92",
+      "changed_from_v2": false
+    },
+    "BanglaBBQ_BEN_PhysicalAppearance_QA_fixed.jsonl": {
+      "v1_sha256": "23de8b2eafe5f092333948212868999eafafcdc2890cd275e33702530b2a04f2",
+      "v2_sha256_before": "a0d7a85a17c6c2077356a7cabb1feb6b4995c21531b4514127d5b574a85a3e3b",
+      "v2_sha256_after": "a0d7a85a17c6c2077356a7cabb1feb6b4995c21531b4514127d5b574a85a3e3b",
+      "v2_untouched": true,
+      "v21_sha256": "f3b4af8a0cdc153134af24ecf6a45bac3437da936b142574163784b5eb12e0fa",
+      "changed_from_v2": true
+    },
+    "BanglaBBQ_ENG_Politics_QA_fixed.jsonl": {
+      "v1_sha256": "b64bb72e4fb73226afe017970d3be4c2257cc9a2a19386a3a97eee1ff8e4b149",
+      "v2_sha256_before": "de73750686e86984439c1dc3ad064cb541ff3b018dd6d3e8b58de41bab71a0e4",
+      "v2_sha256_after": "de73750686e86984439c1dc3ad064cb541ff3b018dd6d3e8b58de41bab71a0e4",
+      "v2_untouched": true,
+      "v21_sha256": "de73750686e86984439c1dc3ad064cb541ff3b018dd6d3e8b58de41bab71a0e4",
+      "changed_from_v2": false
+    },
+    "BanglaBBQ_BEN_Politics_QA_fixed.jsonl": {
+      "v1_sha256": "126d967d2f9898eddda482157e42490754db543ec35cb2d1eafceab4d49cc362",
+      "v2_sha256_before": "ad2268e1700e6924592ea5f7d4ca6b6189bebdfbd4d03be6c19c869156adb522",
+      "v2_sha256_after": "ad2268e1700e6924592ea5f7d4ca6b6189bebdfbd4d03be6c19c869156adb522",
+      "v2_untouched": true,
+      "v21_sha256": "ad2268e1700e6924592ea5f7d4ca6b6189bebdfbd4d03be6c19c869156adb522",
+      "changed_from_v2": false
+    },
+    "BanglaBBQ_ENG_Regional_QA_fixed.jsonl": {
+      "v1_sha256": "aecb074e53ffc93611ca144cb89b0151bb9909b19d8a3d75bdeeaa71549592d3",
+      "v2_sha256_before": "5382c049c7d65601b312972bc74ebbbb7161619f8e4e982875b3d208411f3b50",
+      "v2_sha256_after": "5382c049c7d65601b312972bc74ebbbb7161619f8e4e982875b3d208411f3b50",
+      "v2_untouched": true,
+      "v21_sha256": "25018689274fc9d611a402e73244e86d528b4b3db54721980fb08fcc1bcba5f4",
+      "changed_from_v2": true
+    },
+    "BanglaBBQ_BEN_Regional_QA_fixed.jsonl": {
+      "v1_sha256": "c95be726598df84b0d49ea52681ded4ea5bccb84e3c04a18ee01d5e93010e47f",
+      "v2_sha256_before": "87f9ae9b5048600c29ea377ca5fdacbeb9f38e3ff56cff6afa4f419547cfa5fb",
+      "v2_sha256_after": "87f9ae9b5048600c29ea377ca5fdacbeb9f38e3ff56cff6afa4f419547cfa5fb",
+      "v2_untouched": true,
+      "v21_sha256": "55d0cf5c3f78144837611dd2912129a07558e654106a3f4988a62f1ba57c6e21",
+      "changed_from_v2": true
+    },
+    "BanglaBBQ_ENG_Religion_QA_fixed.jsonl": {
+      "v1_sha256": "53084712e3c0a2de510d5db5bf523e1ca1adeb3cf230a2aa03ff10df7a9868af",
+      "v2_sha256_before": "bb4f032270d9e4e75c73346f2aebd165521c825458021e8e80319653a359e9f1",
+      "v2_sha256_after": "bb4f032270d9e4e75c73346f2aebd165521c825458021e8e80319653a359e9f1",
+      "v2_untouched": true,
+      "v21_sha256": "be2f40099a9427f120c7f65ba2666fde78292979426ebe5c0b8caaedd73ad8d1",
+      "changed_from_v2": true
+    },
+    "BanglaBBQ_BEN_Religion_QA_fixed.jsonl": {
+      "v1_sha256": "b814d7a586521403ed4258e379acf6e9692cc5dd5e2c6bacb60ab6ffd07c1476",
+      "v2_sha256_before": "589fa794415238de7562084aa9d2d4bd6fc991e75448da2fe9297d76cb21d097",
+      "v2_sha256_after": "589fa794415238de7562084aa9d2d4bd6fc991e75448da2fe9297d76cb21d097",
+      "v2_untouched": true,
+      "v21_sha256": "24851692c55f1d63af6cffeab862f956d1e495bd3744cc4334b50274512a4d61",
+      "changed_from_v2": true
+    },
+    "BanglaBBQ_ENG_SocialStatus_QA_fixed.jsonl": {
+      "v1_sha256": "012c9543224d1d5a781844f9a169f62bf665091fa6f30269c88f05b3c6586140",
+      "v2_sha256_before": "0fdcaf1e93615dcde518f94a6db3aeaf403465e14893b81552eae1d8ed800b5e",
+      "v2_sha256_after": "0fdcaf1e93615dcde518f94a6db3aeaf403465e14893b81552eae1d8ed800b5e",
+      "v2_untouched": true,
+      "v21_sha256": "38e0289c8403e1d70618616ac37d1e3b52f55f043cdc258e130a997b1e13cbfe",
+      "changed_from_v2": true
+    },
+    "BanglaBBQ_BEN_SocialStatus_QA_fixed.jsonl": {
+      "v1_sha256": "e56a2b674b7c7994468031916dfc1e881c180fa8742cab52d49164d2d2b59124",
+      "v2_sha256_before": "57080e2ab4ebdbffa25655b5304cbe2451f2f94c9f1c5a3804ebc22bdda8d4fa",
+      "v2_sha256_after": "57080e2ab4ebdbffa25655b5304cbe2451f2f94c9f1c5a3804ebc22bdda8d4fa",
+      "v2_untouched": true,
+      "v21_sha256": "a954331758d417d5adbf74694816862ca2b0cc52acdf3da0d3f8a773261a07d5",
+      "changed_from_v2": true
+    }
+  }
+}

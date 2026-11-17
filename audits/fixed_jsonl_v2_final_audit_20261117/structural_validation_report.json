@@ -1,0 +1,628 @@
+{
+  "v2_directory": "D:\\Research-BanglaBBQ\\fixed jsonL v2",
+  "total_expected_files": 20,
+  "actual_files_found": 20,
+  "overall_status": "PASS",
+  "files": {
+    "BanglaBBQ_ENG_Education_QA_fixed.jsonl": {
+      "category": "Education",
+      "language": "ENG",
+      "status": "PASS",
+      "record_count": 2880,
+      "expected_count": 2880,
+      "utf8_ok": true,
+      "json_errors": 0,
+      "schema_errors": 0,
+      "seq_id_errors": 0,
+      "ambig_label_errors": 0,
+      "disambig_label_errors": 0,
+      "answer_info_structure_errors": 0,
+      "answer_info_text_mismatch_inherited": 0,
+      "block_order_errors": 0,
+      "perm_errors": 0,
+      "unintended_duplicates": 0,
+      "label_distribution": {
+        "2": 960,
+        "0": 960,
+        "1": 960
+      },
+      "condition_distribution": {
+        "ambig": 1440,
+        "disambig": 1440
+      },
+      "polarity_distribution": {
+        "neg": 1440,
+        "nonneg": 1440
+      }
+    },
+    "BanglaBBQ_BEN_Education_QA_fixed.jsonl": {
+      "category": "Education",
+      "language": "BEN",
+      "status": "PASS",
+      "record_count": 2880,
+      "expected_count": 2880,
+      "utf8_ok": true,
+      "json_errors": 0,
+      "schema_errors": 0,
+      "seq_id_errors": 0,
+      "ambig_label_errors": 0,
+      "disambig_label_errors": 0,
+      "answer_info_structure_errors": 0,
+      "answer_info_text_mismatch_inherited": 0,
+      "block_order_errors": 0,
+      "perm_errors": 0,
+      "unintended_duplicates": 0,
+      "label_distribution": {
+        "2": 960,
+        "0": 960,
+        "1": 960
+      },
+      "condition_distribution": {
+        "ambig": 1440,
+        "disambig": 1440
+      },
+      "polarity_distribution": {
+        "neg": 1440,
+        "nonneg": 1440
+      }
+    },
+    "BanglaBBQ_ENG_Ethnicity_QA_fixed.jsonl": {
+      "category": "Ethnicity",
+      "language": "ENG",
+      "status": "PASS",
+      "record_count": 1440,
+      "expected_count": 1440,
+      "utf8_ok": true,
+      "json_errors": 0,
+      "schema_errors": 0,
+      "seq_id_errors": 0,
+      "ambig_label_errors": 0,
+      "disambig_label_errors": 0,
+      "answer_info_structure_errors": 0,
+      "answer_info_text_mismatch_inherited": 0,
+      "block_order_errors": 0,
+      "perm_errors": 0,
+      "unintended_duplicates": 0,
+      "label_distribution": {
+        "2": 480,
+        "0": 480,
+        "1": 480
+      },
+      "condition_distribution": {
+        "ambig": 720,
+        "disambig": 720
+      },
+      "polarity_distribution": {
+        "neg": 720,
+        "nonneg": 720
+      }
+    },
+    "BanglaBBQ_BEN_Ethnicity_QA_fixed.jsonl": {
+      "category": "Ethnicity",
+      "language": "BEN",
+      "status": "PASS",
+      "record_count": 1440,
+      "expected_count": 1440,
+      "utf8_ok": true,
+      "json_errors": 0,
+      "schema_errors": 0,
+      "seq_id_errors": 0,
+      "ambig_label_errors": 0,
+      "disambig_label_errors": 0,
+      "answer_info_structure_errors": 0,
+      "answer_info_text_mismatch_inherited": 0,
+      "block_order_errors": 0,
+      "perm_errors": 0,
+      "unintended_duplicates": 0,
+      "label_distribution": {
+        "2": 480,
+        "0": 480,
+        "1": 480
+      },
+      "condition_distribution": {
+        "ambig": 720,
+        "disambig": 720
+      },
+      "polarity_distribution": {
+        "neg": 720,
+        "nonneg": 720
+      }
+    },
+    "BanglaBBQ_ENG_HealthStatus_QA_fixed.jsonl": {
+      "category": "HealthStatus",
+      "language": "ENG",
+      "status": "PASS",
+      "record_count": 2880,
+      "expected_count": 2880,
+      "utf8_ok": true,
+      "json_errors": 0,
+      "schema_errors": 0,
+      "seq_id_errors": 0,
+      "ambig_label_errors": 0,
+      "disambig_label_errors": 0,
+      "answer_info_structure_errors": 0,
+      "answer_info_text_mismatch_inherited": 0,
+      "block_order_errors": 0,
+      "perm_errors": 0,
+      "unintended_duplicates": 0,
+      "label_distribution": {
+        "2": 960,
+        "0": 960,
+        "1": 960
+      },
+      "condition_distribution": {
+        "ambig": 1440,
+        "disambig": 1440
+      },
+      "polarity_distribution": {
+        "neg": 1440,
+        "nonneg": 1440
+      }
+    },
+    "BanglaBBQ_BEN_HealthStatus_QA_fixed.jsonl": {
+      "category": "HealthStatus",
+      "language": "BEN",
+      "status": "PASS",
+      "record_count": 2880,
+      "expected_count": 2880,
+      "utf8_ok": true,
+      "json_errors": 0,
+      "schema_errors": 0,
+      "seq_id_errors": 0,
+      "ambig_label_errors": 0,
+      "disambig_label_errors": 0,
+      "answer_info_structure_errors": 0,
+      "answer_info_text_mismatch_inherited": 0,
+      "block_order_errors": 0,
+      "perm_errors": 0,
+      "unintended_duplicates": 0,
+      "label_distribution": {
+        "2": 960,
+        "0": 960,
+        "1": 960
+      },
+      "condition_distribution": {
+        "ambig": 1440,
+        "disambig": 1440
+      },
+      "polarity_distribution": {
+        "neg": 1440,
+        "nonneg": 1440
+      }
+    },
+    "BanglaBBQ_ENG_MaritalStatus_QA_fixed.jsonl": {
+      "category": "MaritalStatus",
+      "language": "ENG",
+      "status": "PASS",
+      "record_count": 2880,
+      "expected_count": 2880,
+      "utf8_ok": true,
+      "json_errors": 0,
+      "schema_errors": 0,
+      "seq_id_errors": 0,
+      "ambig_label_errors": 0,
+      "disambig_label_errors": 0,
+      "answer_info_structure_errors": 0,
+      "answer_info_text_mismatch_inherited": 0,
+      "block_order_errors": 0,
+      "perm_errors": 0,
+      "unintended_duplicates": 0,
+      "label_distribution": {
+        "2": 960,
+        "0": 960,
+        "1": 960
+      },
+      "condition_distribution": {
+        "ambig": 1440,
+        "disambig": 1440
+      },
+      "polarity_distribution": {
+        "neg": 1440,
+        "nonneg": 1440
+      }
+    },
+    "BanglaBBQ_BEN_MaritalStatus_QA_fixed.jsonl": {
+      "category": "MaritalStatus",
+      "language": "BEN",
+      "status": "PASS",
+      "record_count": 2880,
+      "expected_count": 2880,
+      "utf8_ok": true,
+      "json_errors": 0,
+      "schema_errors": 0,
+      "seq_id_errors": 0,
+      "ambig_label_errors": 0,
+      "disambig_label_errors": 0,
+      "answer_info_structure_errors": 0,
+      "answer_info_text_mismatch_inherited": 1440,
+      "block_order_errors": 0,
+      "perm_errors": 0,
+      "unintended_duplicates": 0,
+      "label_distribution": {
+        "2": 960,
+        "0": 960,
+        "1": 960
+      },
+      "condition_distribution": {
+        "ambig": 1440,
+        "disambig": 1440
+      },
+      "polarity_distribution": {
+        "neg": 1440,
+        "nonneg": 1440
+      }
+    },
+    "BanglaBBQ_ENG_OccupationalBackground_QA_fixed.jsonl": {
+      "category": "OccupationalBackground",
+      "language": "ENG",
+      "status": "PASS",
+      "record_count": 2880,
+      "expected_count": 2880,
+      "utf8_ok": true,
+      "json_errors": 0,
+      "schema_errors": 0,
+      "seq_id_errors": 0,
+      "ambig_label_errors": 0,
+      "disambig_label_errors": 0,
+      "answer_info_structure_errors": 0,
+      "answer_info_text_mismatch_inherited": 0,
+      "block_order_errors": 0,
+      "perm_errors": 0,
+      "unintended_duplicates": 0,
+      "label_distribution": {
+        "2": 960,
+        "0": 960,
+        "1": 960
+      },
+      "condition_distribution": {
+        "ambig": 1440,
+        "disambig": 1440
+      },
+      "polarity_distribution": {
+        "neg": 1440,
+        "nonneg": 1440
+      }
+    },
+    "BanglaBBQ_BEN_OccupationalBackground_QA_fixed.jsonl": {
+      "category": "OccupationalBackground",
+      "language": "BEN",
+      "status": "PASS",
+      "record_count": 2880,
+      "expected_count": 2880,
+      "utf8_ok": true,
+      "json_errors": 0,
+      "schema_errors": 0,
+      "seq_id_errors": 0,
+      "ambig_label_errors": 0,
+      "disambig_label_errors": 0,
+      "answer_info_structure_errors": 0,
+      "answer_info_text_mismatch_inherited": 0,
+      "block_order_errors": 0,
+      "perm_errors": 0,
+      "unintended_duplicates": 0,
+      "label_distribution": {
+        "2": 960,
+        "0": 960,
+        "1": 960
+      },
+      "condition_distribution": {
+        "ambig": 1440,
+        "disambig": 1440
+      },
+      "polarity_distribution": {
+        "neg": 1440,
+        "nonneg": 1440
+      }
+    },
+    "BanglaBBQ_ENG_PhysicalAppearance_QA_fixed.jsonl": {
+      "category": "PhysicalAppearance",
+      "language": "ENG",
+      "status": "PASS",
+      "record_count": 1440,
+      "expected_count": 1440,
+      "utf8_ok": true,
+      "json_errors": 0,
+      "schema_errors": 0,
+      "seq_id_errors": 0,
+      "ambig_label_errors": 0,
+      "disambig_label_errors": 0,
+      "answer_info_structure_errors": 0,
+      "answer_info_text_mismatch_inherited": 0,
+      "block_order_errors": 0,
+      "perm_errors": 0,
+      "unintended_duplicates": 0,
+      "label_distribution": {
+        "2": 480,
+        "0": 480,
+        "1": 480
+      },
+      "condition_distribution": {
+        "ambig": 720,
+        "disambig": 720
+      },
+      "polarity_distribution": {
+        "neg": 720,
+        "nonneg": 720
+      }
+    },
+    "BanglaBBQ_BEN_PhysicalAppearance_QA_fixed.jsonl": {
+      "category": "PhysicalAppearance",
+      "language": "BEN",
+      "status": "PASS",
+      "record_count": 1440,
+      "expected_count": 1440,
+      "utf8_ok": true,
+      "json_errors": 0,
+      "schema_errors": 0,
+      "seq_id_errors": 0,
+      "ambig_label_errors": 0,
+      "disambig_label_errors": 0,
+      "answer_info_structure_errors": 0,
+      "answer_info_text_mismatch_inherited": 0,
+      "block_order_errors": 0,
+      "perm_errors": 0,
+      "unintended_duplicates": 0,
+      "label_distribution": {
+        "2": 480,
+        "0": 480,
+        "1": 480
+      },
+      "condition_distribution": {
+        "ambig": 720,
+        "disambig": 720
+      },
+      "polarity_distribution": {
+        "neg": 720,
+        "nonneg": 720
+      }
+    },
+    "BanglaBBQ_ENG_Politics_QA_fixed.jsonl": {
+      "category": "Politics",
+      "language": "ENG",
+      "status": "PASS",
+      "record_count": 2880,
+      "expected_count": 2880,
+      "utf8_ok": true,
+      "json_errors": 0,
+      "schema_errors": 0,
+      "seq_id_errors": 0,
+      "ambig_label_errors": 0,
+      "disambig_label_errors": 0,
+      "answer_info_structure_errors": 0,
+      "answer_info_text_mismatch_inherited": 2880,
+      "block_order_errors": 0,
+      "perm_errors": 0,
+      "unintended_duplicates": 0,
+      "label_distribution": {
+        "2": 960,
+        "1": 960,
+        "0": 960
+      },
+      "condition_distribution": {
+        "ambig": 1440,
+        "disambig": 1440
+      },
+      "polarity_distribution": {
+        "neg": 1440,
+        "nonneg": 1440
+      }
+    },
+    "BanglaBBQ_BEN_Politics_QA_fixed.jsonl": {
+      "category": "Politics",
+      "language": "BEN",
+      "status": "PASS",
+      "record_count": 2880,
+      "expected_count": 2880,
+      "utf8_ok": true,
+      "json_errors": 0,
+      "schema_errors": 0,
+      "seq_id_errors": 0,
+      "ambig_label_errors": 0,
+      "disambig_label_errors": 0,
+      "answer_info_structure_errors": 0,
+      "answer_info_text_mismatch_inherited": 2880,
+      "block_order_errors": 0,
+      "perm_errors": 0,
+      "unintended_duplicates": 0,
+      "label_distribution": {
+        "2": 960,
+        "1": 960,
+        "0": 960
+      },
+      "condition_distribution": {
+        "ambig": 1440,
+        "disambig": 1440
+      },
+      "polarity_distribution": {
+        "neg": 1440,
+        "nonneg": 1440
+      }
+    },
+    "BanglaBBQ_ENG_Regional_QA_fixed.jsonl": {
+      "category": "Regional",
+      "language": "ENG",
+      "status": "PASS",
+      "record_count": 1440,
+      "expected_count": 1440,
+      "utf8_ok": true,
+      "json_errors": 0,
+      "schema_errors": 0,
+      "seq_id_errors": 0,
+      "ambig_label_errors": 0,
+      "disambig_label_errors": 0,
+      "answer_info_structure_errors": 0,
+      "answer_info_text_mismatch_inherited": 0,
+      "block_order_errors": 0,
+      "perm_errors": 0,
+      "unintended_duplicates": 0,
+      "label_distribution": {
+        "2": 480,
+        "0": 480,
+        "1": 480
+      },
+      "condition_distribution": {
+        "ambig": 720,
+        "disambig": 720
+      },
+      "polarity_distribution": {
+        "neg": 720,
+        "nonneg": 720
+      }
+    },
+    "BanglaBBQ_BEN_Regional_QA_fixed.jsonl": {
+      "category": "Regional",
+      "language": "BEN",
+      "status": "PASS",
+      "record_count": 1440,
+      "expected_count": 1440,
+      "utf8_ok": true,
+      "json_errors": 0,
+      "schema_errors": 0,
+      "seq_id_errors": 0,
+      "ambig_label_errors": 0,
+      "disambig_label_errors": 0,
+      "answer_info_structure_errors": 0,
+      "answer_info_text_mismatch_inherited": 0,
+      "block_order_errors": 0,
+      "perm_errors": 0,
+      "unintended_duplicates": 0,
+      "label_distribution": {
+        "2": 480,
+        "0": 480,
+        "1": 480
+      },
+      "condition_distribution": {
+        "ambig": 720,
+        "disambig": 720
+      },
+      "polarity_distribution": {
+        "neg": 720,
+        "nonneg": 720
+      }
+    },
+    "BanglaBBQ_ENG_Religion_QA_fixed.jsonl": {
+      "category": "Religion",
+      "language": "ENG",
+      "status": "PASS",
+      "record_count": 2880,
+      "expected_count": 2880,
+      "utf8_ok": true,
+      "json_errors": 0,
+      "schema_errors": 0,
+      "seq_id_errors": 0,
+      "ambig_label_errors": 0,
+      "disambig_label_errors": 0,
+      "answer_info_structure_errors": 0,
+      "answer_info_text_mismatch_inherited": 2880,
+      "block_order_errors": 0,
+      "perm_errors": 0,
+      "unintended_duplicates": 0,
+      "label_distribution": {
+        "2": 960,
+        "0": 960,
+        "1": 960
+      },
+      "condition_distribution": {
+        "ambig": 1440,
+        "disambig": 1440
+      },
+      "polarity_distribution": {
+        "neg": 1440,
+        "nonneg": 1440
+      }
+    },
+    "BanglaBBQ_BEN_Religion_QA_fixed.jsonl": {
+      "category": "Religion",
+      "language": "BEN",
+      "status": "PASS",
+      "record_count": 2880,
+      "expected_count": 2880,
+      "utf8_ok": true,
+      "json_errors": 0,
+      "schema_errors": 0,
+      "seq_id_errors": 0,
+      "ambig_label_errors": 0,
+      "disambig_label_errors": 0,
+      "answer_info_structure_errors": 0,
+      "answer_info_text_mismatch_inherited": 2880,
+      "block_order_errors": 0,
+      "perm_errors": 0,
+      "unintended_duplicates": 0,
+      "label_distribution": {
+        "2": 960,
+        "0": 960,
+        "1": 960
+      },
+      "condition_distribution": {
+        "ambig": 1440,
+        "disambig": 1440
+      },
+      "polarity_distribution": {
+        "neg": 1440,
+        "nonneg": 1440
+      }
+    },
+    "BanglaBBQ_ENG_SocialStatus_QA_fixed.jsonl": {
+      "category": "SocialStatus",
+      "language": "ENG",
+      "status": "PASS",
+      "record_count": 1440,
+      "expected_count": 1440,
+      "utf8_ok": true,
+      "json_errors": 0,
+      "schema_errors": 0,
+      "seq_id_errors": 0,
+      "ambig_label_errors": 0,
+      "disambig_label_errors": 0,
+      "answer_info_structure_errors": 0,
+      "answer_info_text_mismatch_inherited": 0,
+      "block_order_errors": 0,
+      "perm_errors": 0,
+      "unintended_duplicates": 0,
+      "label_distribution": {
+        "2": 480,
+        "0": 480,
+        "1": 480
+      },
+      "condition_distribution": {
+        "ambig": 720,
+        "disambig": 720
+      },
+      "polarity_distribution": {
+        "neg": 720,
+        "nonneg": 720
+      }
+    },
+    "BanglaBBQ_BEN_SocialStatus_QA_fixed.jsonl": {
+      "category": "SocialStatus",
+      "language": "BEN",
+      "status": "PASS",
+      "record_count": 1440,
+      "expected_count": 1440,
+      "utf8_ok": true,
+      "json_errors": 0,
+      "schema_errors": 0,
+      "seq_id_errors": 0,
+      "ambig_label_errors": 0,
+      "disambig_label_errors": 0,
+      "answer_info_structure_errors": 0,
+      "answer_info_text_mismatch_inherited": 0,
+      "block_order_errors": 0,
+      "perm_errors": 0,
+      "unintended_duplicates": 0,
+      "label_distribution": {
+        "2": 480,
+        "0": 480,
+        "1": 480
+      },
+      "condition_distribution": {
+        "ambig": 720,
+        "disambig": 720
+      },
+      "polarity_distribution": {
+        "neg": 720,
+        "nonneg": 720
+      }
+    }
+  }
+}
