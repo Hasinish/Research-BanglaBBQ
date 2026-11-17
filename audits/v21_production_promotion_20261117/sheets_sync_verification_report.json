@@ -1,0 +1,227 @@
+{
+  "spreadsheet_id": "1xZhhKZoZuSy-ZXAWWdhCpq9QLh705ScErcnBZacmZnY",
+  "overall_status": "PASS",
+  "total_expected_data_cells": 691200,
+  "total_verified_data_cells": 691200,
+  "total_cell_mismatches": 0,
+  "worksheets": {
+    "BanglaBBQ_ENG_Education": {
+      "sheetId": 1544720708,
+      "status": "PASS",
+      "expected_data_rows": 2880,
+      "actual_total_rows_read": 2881,
+      "header_ok": true,
+      "metadata_formatting_preserved": true,
+      "cell_mismatches_count": 0,
+      "sample_mismatches": []
+    },
+    "BanglaBBQ_BEN_Education": {
+      "sheetId": 641606675,
+      "status": "PASS",
+      "expected_data_rows": 2880,
+      "actual_total_rows_read": 2881,
+      "header_ok": true,
+      "metadata_formatting_preserved": true,
+      "cell_mismatches_count": 0,
+      "sample_mismatches": []
+    },
+    "BanglaBBQ_ENG_Ethnicity": {
+      "sheetId": 210887456,
+      "status": "PASS",
+      "expected_data_rows": 1440,
+      "actual_total_rows_read": 1441,
+      "header_ok": true,
+      "metadata_formatting_preserved": true,
+      "cell_mismatches_count": 0,
+      "sample_mismatches": []
+    },
+    "BanglaBBQ_BEN_Ethnicity": {
+      "sheetId": 1845601757,
+      "status": "PASS",
+      "expected_data_rows": 1440,
+      "actual_total_rows_read": 1441,
+      "header_ok": true,
+      "metadata_formatting_preserved": true,
+      "cell_mismatches_count": 0,
+      "sample_mismatches": []
+    },
+    "BanglaBBQ_ENG_HealthStatus": {
+      "sheetId": 577820949,
+      "status": "PASS",
+      "expected_data_rows": 2880,
+      "actual_total_rows_read": 2881,
+      "header_ok": true,
+      "metadata_formatting_preserved": true,
+      "cell_mismatches_count": 0,
+      "sample_mismatches": []
+    },
+    "BanglaBBQ_BEN_HealthStatus": {
+      "sheetId": 1261981579,
+      "status": "PASS",
+      "expected_data_rows": 2880,
+      "actual_total_rows_read": 2881,
+      "header_ok": true,
+      "metadata_formatting_preserved": true,
+      "cell_mismatches_count": 0,
+      "sample_mismatches": []
+    },
+    "BanglaBBQ_ENG_MaritalStatus": {
+      "sheetId": 2049623557,
+      "status": "PASS",
+      "expected_data_rows": 2880,
+      "actual_total_rows_read": 2881,
+      "header_ok": true,
+      "metadata_formatting_preserved": true,
+      "cell_mismatches_count": 0,
+      "sample_mismatches": []
+    },
+    "BanglaBBQ_BEN_MaritalStatus": {
+      "sheetId": 1929463163,
+      "status": "PASS",
+      "expected_data_rows": 2880,
+      "actual_total_rows_read": 2881,
+      "header_ok": true,
+      "metadata_formatting_preserved": true,
+      "cell_mismatches_count": 0,
+      "sample_mismatches": []
+    },
+    "BanglaBBQ_ENG_OccupationalBackground": {
+      "sheetId": 1499154542,
+      "status": "PASS",
+      "expected_data_rows": 2880,
+      "actual_total_rows_read": 2881,
+      "header_ok": true,
+      "metadata_formatting_preserved": true,
+      "cell_mismatches_count": 0,
+      "sample_mismatches": []
+    },
+    "BanglaBBQ_BEN_OccupationalBackground": {
+      "sheetId": 934780717,
+      "status": "PASS",
+      "expected_data_rows": 2880,
+      "actual_total_rows_read": 2881,
+      "header_ok": true,
+      "metadata_formatting_preserved": true,
+      "cell_mismatches_count": 0,
+      "sample_mismatches": []
+    },
+    "BanglaBBQ_ENG_PhysicalAppearance": {
+      "sheetId": 984262367,
+      "status": "PASS",
+      "expected_data_rows": 1440,
+      "actual_total_rows_read": 1441,
+      "header_ok": true,
+      "metadata_formatting_preserved": true,
+      "cell_mismatches_count": 0,
+      "sample_mismatches": []
+    },
+    "BanglaBBQ_BEN_PhysicalAppearance": {
+      "sheetId": 934839633,
+      "status": "PASS",
+      "expected_data_rows": 1440,
+      "actual_total_rows_read": 1441,
+      "header_ok": true,
+      "metadata_formatting_preserved": true,
+      "cell_mismatches_count": 0,
+      "sample_mismatches": []
+    },
+    "BanglaBBQ_ENG_Politics": {
+      "sheetId": 1888499205,
+      "status": "PASS",
+      "expected_data_rows": 2880,
+      "actual_total_rows_read": 2881,
+      "header_ok": true,
+      "metadata_formatting_preserved": true,
+      "cell_mismatches_count": 0,
+      "sample_mismatches": []
+    },
+    "BanglaBBQ_BEN_Politics": {
+      "sheetId": 2128232344,
+      "status": "PASS",
+      "expected_data_rows": 2880,
+      "actual_total_rows_read": 2881,
+      "header_ok": true,
+      "metadata_formatting_preserved": true,
+      "cell_mismatches_count": 0,
+      "sample_mismatches": []
+    },
+    "BanglaBBQ_ENG_Regional": {
+      "sheetId": 1321419120,
+      "status": "PASS",
+      "expected_data_rows": 1440,
+      "actual_total_rows_read": 1441,
+      "header_ok": true,
+      "metadata_formatting_preserved": true,
+      "cell_mismatches_count": 0,
+      "sample_mismatches": []
+    },
+    "BanglaBBQ_BEN_Regional": {
+      "sheetId": 786932138,
+      "status": "PASS",
+      "expected_data_rows": 1440,
+      "actual_total_rows_read": 1441,
+      "header_ok": true,
+      "metadata_formatting_preserved": true,
+      "cell_mismatches_count": 0,
+      "sample_mismatches": []
+    },
+    "BanglaBBQ_ENG_Religion": {
+      "sheetId": 804112545,
+      "status": "PASS",
+      "expected_data_rows": 2880,
+      "actual_total_rows_read": 2881,
+      "header_ok": true,
+      "metadata_formatting_preserved": true,
+      "cell_mismatches_count": 0,
+      "sample_mismatches": []
+    },
+    "BanglaBBQ_BEN_Religion": {
+      "sheetId": 860941009,
+      "status": "PASS",
+      "expected_data_rows": 2880,
+      "actual_total_rows_read": 2881,
+      "header_ok": true,
+      "metadata_formatting_preserved": true,
+      "cell_mismatches_count": 0,
+      "sample_mismatches": []
+    },
+    "BanglaBBQ_ENG_SocialStatus": {
+      "sheetId": 1061280109,
+      "status": "PASS",
+      "expected_data_rows": 1440,
+      "actual_total_rows_read": 1441,
+      "header_ok": true,
+      "metadata_formatting_preserved": true,
+      "cell_mismatches_count": 0,
+      "sample_mismatches": []
+    },
+    "BanglaBBQ_BEN_SocialStatus": {
+      "sheetId": 1761692098,
+      "status": "PASS",
+      "expected_data_rows": 1440,
+      "actual_total_rows_read": 1441,
+      "header_ok": true,
+      "metadata_formatting_preserved": true,
+      "cell_mismatches_count": 0,
+      "sample_mismatches": []
+    }
+  },
+  "untouched_age_gender": {
+    "BanglaBBQ_ENG_Age": {
+      "sheetId": 0,
+      "metadata_unchanged": true
+    },
+    "BanglaBBQ_BEN_Age": {
+      "sheetId": 1006819770,
+      "metadata_unchanged": true
+    },
+    "BanglaBBQ_ENG_Gender": {
+      "sheetId": 1990010101,
+      "metadata_unchanged": true
+    },
+    "BanglaBBQ_BEN_Gender": {
+      "sheetId": 1990010102,
+      "metadata_unchanged": true
+    }
+  }
+}

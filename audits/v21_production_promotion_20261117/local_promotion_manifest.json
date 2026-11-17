@@ -1,0 +1,183 @@
+{
+  "promoted_files": {
+    "BanglaBBQ_EducationalBackground/BanglaBBQ_ENG_Education.jsonl": {
+      "source_v21_file": "BanglaBBQ_ENG_Education_QA_fixed.jsonl",
+      "v21_sha256": "36bf8425d61faf67b509355f9c048bebd89c8db1886d30dc2574128b70bb3c7a",
+      "canonical_sha256": "36bf8425d61faf67b509355f9c048bebd89c8db1886d30dc2574128b70bb3c7a",
+      "bit_identical": true,
+      "bytes": 3264296,
+      "records": 2880
+    },
+    "BanglaBBQ_EducationalBackground/BanglaBBQ_BEN_Education.jsonl": {
+      "source_v21_file": "BanglaBBQ_BEN_Education_QA_fixed.jsonl",
+      "v21_sha256": "ac3693ef9bbf3454e8de84c40c633b660b25b42948e1544bf8a88146afd59fa6",
+      "canonical_sha256": "ac3693ef9bbf3454e8de84c40c633b660b25b42948e1544bf8a88146afd59fa6",
+      "bit_identical": true,
+      "bytes": 5925632,
+      "records": 2880
+    },
+    "BanglaBBQ_Ethnicity/BanglaBBQ_ENG_Ethnicity.jsonl": {
+      "source_v21_file": "BanglaBBQ_ENG_Ethnicity_QA_fixed.jsonl",
+      "v21_sha256": "555918dc09288aeea0e52be61f6e4c08e6cbe244bae01380f0dc03932e08ff8b",
+      "canonical_sha256": "555918dc09288aeea0e52be61f6e4c08e6cbe244bae01380f0dc03932e08ff8b",
+      "bit_identical": true,
+      "bytes": 1634130,
+      "records": 1440
+    },
+    "BanglaBBQ_Ethnicity/BanglaBBQ_BEN_Ethnicity.jsonl": {
+      "source_v21_file": "BanglaBBQ_BEN_Ethnicity_QA_fixed.jsonl",
+      "v21_sha256": "b97829e7bc97d8383dcc418799f6caaee127cdf8e7b4f42239677627dd97b21b",
+      "canonical_sha256": "b97829e7bc97d8383dcc418799f6caaee127cdf8e7b4f42239677627dd97b21b",
+      "bit_identical": true,
+      "bytes": 2688042,
+      "records": 1440
+    },
+    "BanglaBBQ_HealthStatus/BanglaBBQ_ENG_HealthStatus.jsonl": {
+      "source_v21_file": "BanglaBBQ_ENG_HealthStatus_QA_fixed.jsonl",
+      "v21_sha256": "294cfe6db06b425bab559a0c239cf957d41537a038aa0b4e4ce42f502f9c8760",
+      "canonical_sha256": "294cfe6db06b425bab559a0c239cf957d41537a038aa0b4e4ce42f502f9c8760",
+      "bit_identical": true,
+      "bytes": 3435546,
+      "records": 2880
+    },
+    "BanglaBBQ_HealthStatus/BanglaBBQ_BEN_HealthStatus.jsonl": {
+      "source_v21_file": "BanglaBBQ_BEN_HealthStatus_QA_fixed.jsonl",
+      "v21_sha256": "39d8aed9146b3e492a3ff8d375376927b3c7763a416cf387f12b84f09975c892",
+      "canonical_sha256": "39d8aed9146b3e492a3ff8d375376927b3c7763a416cf387f12b84f09975c892",
+      "bit_identical": true,
+      "bytes": 6309570,
+      "records": 2880
+    },
+    "BanglaBBQ_MaritalStatus/BanglaBBQ_ENG_MaritalStatus.jsonl": {
+      "source_v21_file": "BanglaBBQ_ENG_MaritalStatus_QA_fixed.jsonl",
+      "v21_sha256": "02ac806d5035e52fcac79ade0191ec507c3795dabc7a9a93e82d5b76da05c3b3",
+      "canonical_sha256": "02ac806d5035e52fcac79ade0191ec507c3795dabc7a9a93e82d5b76da05c3b3",
+      "bit_identical": true,
+      "bytes": 3079386,
+      "records": 2880
+    },
+    "BanglaBBQ_MaritalStatus/BanglaBBQ_BEN_MaritalStatus.jsonl": {
+      "source_v21_file": "BanglaBBQ_BEN_MaritalStatus_QA_fixed.jsonl",
+      "v21_sha256": "1808a9137429db1877ecde5411e7c6b9547b24fb39ecce351a67528fb5c004f8",
+      "canonical_sha256": "1808a9137429db1877ecde5411e7c6b9547b24fb39ecce351a67528fb5c004f8",
+      "bit_identical": true,
+      "bytes": 5170890,
+      "records": 2880
+    },
+    "BanglaBBQ_OccupationalBackground/BanglaBBQ_ENG_OccupationalBackground.jsonl": {
+      "source_v21_file": "BanglaBBQ_ENG_OccupationalBackground_QA_fixed.jsonl",
+      "v21_sha256": "4bddaa647c678086dced8d5251d5f56e6244019feb6a52e1aed18b8042e880f1",
+      "canonical_sha256": "4bddaa647c678086dced8d5251d5f56e6244019feb6a52e1aed18b8042e880f1",
+      "bit_identical": true,
+      "bytes": 3617610,
+      "records": 2880
+    },
+    "BanglaBBQ_OccupationalBackground/BanglaBBQ_BEN_OccupationalBackground.jsonl": {
+      "source_v21_file": "BanglaBBQ_BEN_OccupationalBackground_QA_fixed.jsonl",
+      "v21_sha256": "b3f6caf6a939b1a7bd8ecdf76674683c87d11e40ec800c78216dd2e8176fc474",
+      "canonical_sha256": "b3f6caf6a939b1a7bd8ecdf76674683c87d11e40ec800c78216dd2e8176fc474",
+      "bit_identical": true,
+      "bytes": 7366578,
+      "records": 2880
+    },
+    "BanglaBBQ_PhysicalAppearance/BanglaBBQ_ENG_PhysicalAppearance.jsonl": {
+      "source_v21_file": "BanglaBBQ_ENG_PhysicalAppearance_QA_fixed.jsonl",
+      "v21_sha256": "36c1b17e709cd3be9f80621a9091f2c497ecaff617d42592f96e9dd379e1ec92",
+      "canonical_sha256": "36c1b17e709cd3be9f80621a9091f2c497ecaff617d42592f96e9dd379e1ec92",
+      "bit_identical": true,
+      "bytes": 1360074,
+      "records": 1440
+    },
+    "BanglaBBQ_PhysicalAppearance/BanglaBBQ_BEN_PhysicalAppearance.jsonl": {
+      "source_v21_file": "BanglaBBQ_BEN_PhysicalAppearance_QA_fixed.jsonl",
+      "v21_sha256": "f3b4af8a0cdc153134af24ecf6a45bac3437da936b142574163784b5eb12e0fa",
+      "canonical_sha256": "f3b4af8a0cdc153134af24ecf6a45bac3437da936b142574163784b5eb12e0fa",
+      "bit_identical": true,
+      "bytes": 2300658,
+      "records": 1440
+    },
+    "BanglaBBQ_Politics/BanglaBBQ_ENG_Politics.jsonl": {
+      "source_v21_file": "BanglaBBQ_ENG_Politics_QA_fixed.jsonl",
+      "v21_sha256": "de73750686e86984439c1dc3ad064cb541ff3b018dd6d3e8b58de41bab71a0e4",
+      "canonical_sha256": "de73750686e86984439c1dc3ad064cb541ff3b018dd6d3e8b58de41bab71a0e4",
+      "bit_identical": true,
+      "bytes": 3153296,
+      "records": 2880
+    },
+    "BanglaBBQ_Politics/BanglaBBQ_BEN_Politics.jsonl": {
+      "source_v21_file": "BanglaBBQ_BEN_Politics_QA_fixed.jsonl",
+      "v21_sha256": "ad2268e1700e6924592ea5f7d4ca6b6189bebdfbd4d03be6c19c869156adb522",
+      "canonical_sha256": "ad2268e1700e6924592ea5f7d4ca6b6189bebdfbd4d03be6c19c869156adb522",
+      "bit_identical": true,
+      "bytes": 4930556,
+      "records": 2880
+    },
+    "BanglaBBQ_Regional/BanglaBBQ_ENG_Regional.jsonl": {
+      "source_v21_file": "BanglaBBQ_ENG_Regional_QA_fixed.jsonl",
+      "v21_sha256": "25018689274fc9d611a402e73244e86d528b4b3db54721980fb08fcc1bcba5f4",
+      "canonical_sha256": "25018689274fc9d611a402e73244e86d528b4b3db54721980fb08fcc1bcba5f4",
+      "bit_identical": true,
+      "bytes": 1536834,
+      "records": 1440
+    },
+    "BanglaBBQ_Regional/BanglaBBQ_BEN_Regional.jsonl": {
+      "source_v21_file": "BanglaBBQ_BEN_Regional_QA_fixed.jsonl",
+      "v21_sha256": "55d0cf5c3f78144837611dd2912129a07558e654106a3f4988a62f1ba57c6e21",
+      "canonical_sha256": "55d0cf5c3f78144837611dd2912129a07558e654106a3f4988a62f1ba57c6e21",
+      "bit_identical": true,
+      "bytes": 2667258,
+      "records": 1440
+    },
+    "BanglaBBQ_Religion/BanglaBBQ_ENG_Religion.jsonl": {
+      "source_v21_file": "BanglaBBQ_ENG_Religion_QA_fixed.jsonl",
+      "v21_sha256": "be2f40099a9427f120c7f65ba2666fde78292979426ebe5c0b8caaedd73ad8d1",
+      "canonical_sha256": "be2f40099a9427f120c7f65ba2666fde78292979426ebe5c0b8caaedd73ad8d1",
+      "bit_identical": true,
+      "bytes": 2912984,
+      "records": 2880
+    },
+    "BanglaBBQ_Religion/BanglaBBQ_BEN_Religion.jsonl": {
+      "source_v21_file": "BanglaBBQ_BEN_Religion_QA_fixed.jsonl",
+      "v21_sha256": "24851692c55f1d63af6cffeab862f956d1e495bd3744cc4334b50274512a4d61",
+      "canonical_sha256": "24851692c55f1d63af6cffeab862f956d1e495bd3744cc4334b50274512a4d61",
+      "bit_identical": true,
+      "bytes": 4490192,
+      "records": 2880
+    },
+    "BanglaBBQ_SocialStatus/BanglaBBQ_ENG_SocialStatus.jsonl": {
+      "source_v21_file": "BanglaBBQ_ENG_SocialStatus_QA_fixed.jsonl",
+      "v21_sha256": "38e0289c8403e1d70618616ac37d1e3b52f55f043cdc258e130a997b1e13cbfe",
+      "canonical_sha256": "38e0289c8403e1d70618616ac37d1e3b52f55f043cdc258e130a997b1e13cbfe",
+      "bit_identical": true,
+      "bytes": 1637586,
+      "records": 1440
+    },
+    "BanglaBBQ_SocialStatus/BanglaBBQ_BEN_SocialStatus.jsonl": {
+      "source_v21_file": "BanglaBBQ_BEN_SocialStatus_QA_fixed.jsonl",
+      "v21_sha256": "a954331758d417d5adbf74694816862ca2b0cc52acdf3da0d3f8a773261a07d5",
+      "canonical_sha256": "a954331758d417d5adbf74694816862ca2b0cc52acdf3da0d3f8a773261a07d5",
+      "bit_identical": true,
+      "bytes": 2700378,
+      "records": 1440
+    }
+  },
+  "untouched_age_gender_after": {
+    "BanglaBBQ_Age/BanglaBBQ_ENG_Age.jsonl": {
+      "sha256": "72e135ef87c8bf2b73002a9d81512e84bd707a5aa40cab22a9296aa8a173e39a",
+      "unchanged": true
+    },
+    "BanglaBBQ_Age/BanglaBBQ_BEN_Age.jsonl": {
+      "sha256": "d844932f2fc64bf31bd51980016482c429f986fdb44e05ebdaf2ef1401b59b1d",
+      "unchanged": true
+    },
+    "BanglaBBQ_Gender/BanglaBBQ_ENG_Gender.jsonl": {
+      "sha256": "b7ef4a13f4e1134c592e70349e01122ec62467717396ae6aaabcf6286db085dd",
+      "unchanged": true
+    },
+    "BanglaBBQ_Gender/BanglaBBQ_BEN_Gender.jsonl": {
+      "sha256": "ae564aa6579a8444371cc298159b23ebf5f2cb0248ccbd0bc06542da619467c8",
+      "unchanged": true
+    }
+  },
+  "scoring_engine_errors": 0
+}
