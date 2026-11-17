@@ -94,7 +94,12 @@ Following targeted repairs and 13-point revalidation of `fixed JsonL v2.1/` (`au
 
 ---
 
-## 6. Automated Validation & Remaining Limitations
+## 6. GitHub Remote Parity & Commit Verification
+
+- **Production Promotion Commit**: `2e480cc` (`feat(dataset): promote BanglaBBQ V2.1 across 10 categories`, pushed cleanly to `Hasinish/Research-BanglaBBQ` `origin/main`).
+- **Post-Push Remote Verification**: `git fetch origin main` + SHA-256 comparison across all 24 canonical JSONLs confirmed **20/20** exact byte-for-byte match (`exact_byte=20`), **4/4** untouched Age/Gender LF-normalized match (`lf_normalized=4`), **0 mismatches**.
+
+## 7. Automated Validation & Remaining Limitations
 
 - `scripts/sync_drive_dataset.py --validate-only`: 24/24 canonical JSONLs certified (61,312 records, 0 defects).
 - `tests/test_all_61312_actual_records_mapping.py`: 61,312/61,312 records mapped (0 errors).
